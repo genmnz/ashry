@@ -16,6 +16,7 @@ Usage:  python3 fetch_sequences.py ACC [ACC ...]
 from __future__ import annotations
 
 import json
+import os
 import subprocess
 import sys
 import urllib.request
@@ -36,8 +37,7 @@ def gh_code_search(query: str) -> list[tuple[str, str, str]]:
             ["gh", "api", "-X", "GET", "search/code", "-f", f"q={query}",
              "--jq", '.items[] | "\\(.repository.full_name)\\t\\(.path)"'],
             capture_output=True, text=True, timeout=90,
-            env={"GH_PAGER": "cat", "PATH": "/usr/bin:/bin:/usr/local/bin",
-                 "HOME": str(Path.home())},
+            env={**os.environ, "GH_PAGER": "cat"},
         )
     except Exception:
         return []

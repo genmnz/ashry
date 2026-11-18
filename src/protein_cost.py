@@ -133,6 +133,23 @@ class ProteinSpec:
         seq = self.mature if mature else self.sequence
         return sum(RESIDUE_MASS[a] for a in seq if a in RESIDUE_MASS) + WATER
 
+    def mw_product(self, mature: bool = True, mannose_per_glycan: float = 9.0,
+                   n_glyc: int | None = None) -> float:
+        """Mass of the molecule that actually leaves the cell and is sold.
+
+        The post-translational load is paid for in metabolites, so it must also be
+        credited to the product mass; otherwise the yield of every glycoprotein is
+        understated. Residue masses: HexNAc 203.195, Hex 162.142, phosphate
+        (HPO3) 79.980, haem b 616.487; each disulfide removes 2 x 1.008 Da.
+        """
+        sites = self.n_glyc(mature) if n_glyc is None else n_glyc
+        glycan = sites * (2 * 203.1950 + mannose_per_glycan * 162.1424)
+        return (self.mw(mature)
+                + glycan
+                + self.phosphoserines * 79.9799
+                + self.haem_per_chain * 616.4873
+                - self.disulfide_bonds * 2.0159)
+
     def sequons(self, mature: bool = True) -> int:
         seq = self.mature if mature else self.sequence
         return len(re.findall(r"(?=N[^P][ST])", seq))
@@ -196,7 +213,10 @@ def add_protein_reactions(
     """
     comp = spec.composition(mature)
     length = spec.length(mature)
-    mw = spec.mw(mature)
+    # The product mass must include whatever the cell was charged for, or the
+    # yield of a glycoprotein is understated by the mass of its own glycans.
+    mw = (spec.mw_product(mature, mannose_per_glycan=mannose_per_glycan)
+          if charge_ptms else spec.mw(mature))
 
     prot = Metabolite(f"prot_{spec.name}_c", compartment="c",
                       name=f"{spec.name} polypeptide")

@@ -1,0 +1,23 @@
+{
+  "status": "ok",
+  "n_rows": 37,
+  "n_proteins": 25,
+  "loo_rmse_log10": 0.9428079087678074,
+  "baseline_rmse_log10": 0.9150029267637382,
+  "skill_vs_baseline": -0.030387861274293826,
+  "spearman_rho": 0.3869973693708674,
+  "spearman_p": 0.017969406177025804,
+  "pearson_r": 0.26410240733220813,
+  "pearson_p": 0.11421573802650022,
+  "coefficients": {
+    "log_length": 0.14041535851161935,
+    "disulfides_per_100aa": -0.22603784707711705,
+    "sequons_per_100aa": -0.0385421693691998,
+    "disorder_fraction": -0.027875445201925975,
+    "gravy": -0.08774897234009577,
+    "abs_net_charge": -0.03131208391103553,
+    "theoretical_yield": 0.04867417163641067,
+    "fed_batch": 0.24906833403939968
+  },
+  "alpha": 18.873918221350976
+}
