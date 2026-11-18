@@ -1,0 +1,541 @@
+protein,category,reaction,name,subsystem,genes,flux_start,flux_end,fold_change,direction,monotonic
+alpha_s1_casein,dairy-casein,H2Otm,"H2O transport, mitochondrial","Transport, Mitochondrial",,-71.85332051490872,-44.95830542896959,0.6256955852115599,attenuate,up
+alpha_s1_casein,dairy-casein,ATPtm_H,"ADP/ATP transporter, mitochondrial","Transport, Mitochondrial",PAS_chr4_0210,54.449036355334826,32.22156369454413,0.5917747282847388,attenuate,down
+alpha_s1_casein,dairy-casein,PIt2m,"phosphate transporter, mitochondrial","Transport, Mitochondrial",PAS_chr1-4_0615,54.2828721090621,32.142262058596415,0.5921253023240551,attenuate,down
+alpha_s1_casein,dairy-casein,ATPS3m,"ATP synthase, mitochondrial",Oxidative Phosphorylation,PAS_chr1-1_0191;PAS_chr1-1_0315;PAS_chr1-1_0484;PAS_chr1-4_0445;PAS_chr1-4_0465;PAS_chr2-1_0612;PAS_chr2-1_0751;PAS_chr2-2_0119;PAS_chr2-2_0165;PAS_chr3_0059;PAS_chr3_0460;PAS_chr3_0576;PAS_chr3_0819;PAS_chr4_0892,53.50351208931141,32.38010714531367,0.6051959185644257,attenuate,down
+alpha_s1_casein,dairy-casein,CYOR_u6m,ubiquinol-6 cytochrome c reductase,Oxidative Phosphorylation,PAS_chr1-1_0322;PAS_chr1-4_0313;PAS_chr2-1_0850;PAS_chr4_0018,21.865908381860248,12.952075906374526,0.5923410855009091,attenuate,down
+alpha_s1_casein,dairy-casein,NADH2_u6mh,"NADH dehydrogenase, mitochondrial",Oxidative Phosphorylation,PAS_chr1-1_0124;PAS_chr1-1_0172;PAS_chr1-3_0117;PAS_chr1-3_0210;PAS_chr1-4_0039;PAS_chr1-4_0274;PAS_chr1-4_0371;PAS_chr1-4_0575;PAS_chr2-1_0359;PAS_chr2-1_0456;PAS_chr2-2_0035;PAS_chr2-2_0169;PAS_chr2-2_0235;PAS_chr2-2_0366;PAS_chr2-2_0462;PAS_chr3_0104;PAS_chr3_0585;PAS_chr3_0619;PAS_chr3_0808;PAS_chr3_0907;PAS_chr3_0911;PAS_chr3_1188;PAS_chr3_1199;PAS_chr4_0120;PAS_chr4_0142;PAS_chr4_0245;PAS_chr4_0283;PAS_chr4_0355;PAS_chr4_0535;PAS_chr4_0960,20.70464951652102,12.951993285751877,0.6255596490738466,attenuate,down
+alpha_s1_casein,dairy-casein,GLUDxi,glutamate dehydrogenase (NAD),Glutamate metabolism,PAS_chr2-1_0311,5.157699231019227,0.0,0.0,attenuate,down
+alpha_s1_casein,dairy-casein,ASPTA,aspartate transaminase,Alanine and Aspartate Metabolism,PAS_chr4_0974,11.394603906724369,6.4250208154787884,0.5638652179640181,attenuate,down
+alpha_s1_casein,dairy-casein,MDHm,"malate dehydrogenase, mitochondrial",Citric Acid Cycle,PAS_chr2-1_0238,14.385565821468184,9.542477080930999,0.6633369308762509,attenuate,down
+alpha_s1_casein,dairy-casein,H2Ot,H2O transport via diffusion,"Transport, Extracellular",PAS_chr3_0763,-24.994714757565916,-29.66187201266317,1.1867257658415367,amplify,down
+alpha_s1_casein,dairy-casein,Ex_h2o,H2O exchange,Exchange reaction,,24.994714757565916,29.66187201266317,1.1867257658415367,amplify,up
+alpha_s1_casein,dairy-casein,O2t,o2 transport (diffusion),"Transport, Extracellular",,11.071745181412583,6.410184296086118,0.5789678312726737,attenuate,down
+alpha_s1_casein,dairy-casein,Ex_o2,Oxygen exchange,Exchange reaction,,-11.071745181412583,-6.410184296086118,0.5789678312726737,attenuate,up
+alpha_s1_casein,dairy-casein,O2tm,O2 transport (diffusion),"Transport, Mitochondrial",,10.932956887406672,6.476037956023573,0.592340939666845,attenuate,down
+alpha_s1_casein,dairy-casein,CYOOm,"cytochrome c oxidase, mitochondrial",Oxidative Phosphorylation,PAS_chr2-1_0115;PAS_chr2-1_0226;PAS_chr2-1_0344;PAS_chr2-1_0363;PAS_chr2-2_0092;PAS_chr2-2_0266;PAS_chr3_0428;PAS_chr3_0615;PAS_chr3_0745;PAS_chr3_0824;PAS_chr4_0018;PAS_chr4_0422;PAS_chr4_0449;PAS_chr4_0744,10.932954190930124,6.476037953187263,0.5923410855009091,attenuate,down
+alpha_s1_casein,dairy-casein,CO2t,CO2 transporter via diffusion,"Transport, Extracellular",,-6.398835358100273,-2.6513216841432805,0.41434441359504237,attenuate,up
+alpha_s1_casein,dairy-casein,Ex_co2,CO2 exchange,Exchange reaction,,6.398835358100273,2.6513216841432805,0.41434441359504237,attenuate,down
+alpha_s1_casein,dairy-casein,ASPTAm,aspartate transaminase,Alanine and Aspartate Metabolism,PAS_chr1-1_0200,-12.208102454081235,-8.637392597973353,0.7075131152004566,attenuate,up
+alpha_s1_casein,dairy-casein,ASPGLU2m,Aspartate-glutamate transporter,"Transport, Mitochondrial",PAS_chr3_0434;PAS_chr4_0592,12.208102454081235,8.637392597973353,0.7075131152004566,attenuate,down
+alpha_s1_casein,dairy-casein,ENO,enolase,Glycolysis/Gluconeogenesis,PAS_chr3_0082,5.954447731044388,8.795870674521117,1.477193363989502,amplify,up
+alpha_s1_casein,dairy-casein,PGM,phosphoglycerate mutase,Glycolysis/Gluconeogenesis,PAS_chr1-1_0427;PAS_chr2-2_0177;PAS_chr3_0693;PAS_chr3_0826,-5.954447731044388,-8.795870674521117,1.477193363989502,amplify,down
+alpha_s1_casein,dairy-casein,NH4t,ammonia reversible transport,"Transport, Extracellular",PAS_chr1-4_0394;PAS_chr2-2_0391,4.181790657710144,7.000361074268214,1.6740104054136122,amplify,up
+alpha_s1_casein,dairy-casein,Ex_nh4,Ammonium exchange,Exchange reaction,,-4.181790657710144,-7.000361074268214,1.6740104054136122,amplify,down
+alpha_s1_casein,dairy-casein,Ex_h,H+ exchange,Exchange reaction,,4.381862187738945,7.053371237515234,1.60967436567301,amplify,up
+alpha_s1_casein,dairy-casein,PGK,phosphoglycerate kinase,Glycolysis/Gluconeogenesis,PAS_chr1-4_0292,-6.436122706346786,-9.037056459085681,1.404115003925277,amplify,down
+alpha_s1_casein,dairy-casein,GAPD,glyceraldehyde-3-phosphate dehydrogenase,Glycolysis/Gluconeogenesis,PAS_chr2-1_0437,6.4361227063467865,9.037056459085681,1.4041150039252768,amplify,up
+alpha_s1_casein,dairy-casein,Ht,H+ diffusion,"Transport, Extracellular",,-4.551456457362133,-7.0535496266021775,1.549734616310088,amplify,down
+alpha_s1_casein,dairy-casein,PC,pyruvate carboxylase,Pyruvate metabolism,PAS_chr2-2_0024,1.6933687432881026,3.928894494621092,2.3201647663533413,amplify,up
+alpha_s1_casein,dairy-casein,PYK,pyruvate kinase,Glycolysis/Gluconeogenesis,PAS_chr2-1_0769,5.625451544218407,7.739530289048063,1.37580605364958,amplify,up
+alpha_s1_casein,dairy-casein,HCO3E,HCO3 equilibration reaction,Other,,2.2314970166823405,4.0878596783740715,1.8318911689389854,amplify,up
+alpha_s1_casein,dairy-casein,GLUDyi,glutamate dehydrogenase (NADP),Glutamate metabolism,PAS_chr1-1_0107,8.43984410748856,6.864423899008185,0.8133353900361115,attenuate,down
+alpha_s1_casein,dairy-casein,ADK1,adenylate kinase,Nucleotide Metabolism,PAS_chr3_0257,0.8092851899649296,2.291447990834205,2.8314468363538263,amplify,up
+alpha_s1_casein,dairy-casein,TPI,triose-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr3_0951,8.293627910827336,9.699006745898613,1.1694528438195972,amplify,up
+alpha_s1_casein,dairy-casein,FBA,fructose-bisphosphate aldolase,Glycolysis/Gluconeogenesis,PAS_chr1-1_0072;PAS_chr1-1_0319,-1.6950007239923013,-0.300981293040105,0.1775700085432365,attenuate,up
+alpha_s1_casein,dairy-casein,FBP,fructose-bisphosphatase,Glycolysis/Gluconeogenesis,PAS_chr3_0868,1.695000723992301,0.30098129304010496,0.1775700085432365,attenuate,down
+alpha_s1_casein,dairy-casein,NDPK2,nucleoside-diphosphate kinase (ATP:UDP),Nucleotide Metabolism,PAS_chr2-2_0059,1.2632169892595446,0.0013287248785413363,0.0010518579862674189,attenuate,down
+alpha_s1_casein,dairy-casein,G6PI,Glucose-6-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr1-4_0042;PAS_chr3_0456,-1.1818285132279975,-0.0012431157600374188,0.0010518579862674187,attenuate,up
+alpha_s1_casein,dairy-casein,G6PI3,Glucose-6-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr3_0456,-1.1818285132279975,-0.0012431157600374188,0.0010518579862674187,attenuate,up
+alpha_s1_casein,dairy-casein,GALU,UTP-glucose-1-phosphate uridylyltransferase,Galactose metabolism,PAS_chr1-3_0122,1.1749957728118334,0.0012359286874625843,0.0010518579862674184,attenuate,down
+alpha_s1_casein,dairy-casein,PGMT,phosphoglucomutase,Galactose metabolism,PAS_chr1-4_0264;PAS_chr2-1_0771,-1.1749957728118334,-0.0012359286874625843,0.0010518579862674184,attenuate,up
+alpha_s1_casein,dairy-casein,SUCD2_u6m,"succinate dehydrogenase (ubiquinone-6), mitochondrial",Citric Acid Cycle,PAS_chr1-4_0487;PAS_chr2-2_0283;PAS_chr3_1111;PAS_chr4_0733,1.1612581912200945,8.261991356699136e-05,7.114689411162338e-05,attenuate,down
+alpha_s1_casein,dairy-casein,FUMm,"fumarase, mitochondrial",Citric Acid Cycle,PAS_chr3_0647,1.1612581912200943,8.261991356699137e-05,7.11468941116234e-05,attenuate,down
+alpha_s1_casein,dairy-casein,ACtp,"acetate transport, peroxisomal","Transport, Peroxisomal",,0.0,1.1021687160920954,inf,amplify,up
+alpha_s1_casein,dairy-casein,CITtap,citrate/malate antiport into peroxisome,"Transport, Peroxisomal",,1.1949833025270594e-16,1.1021687160920957,inf,amplify,up
+alpha_s1_casein,dairy-casein,ACSp,acetyl-CoA synthetase,Pyruvate Metabolism,PAS_chr2-1_0767,0.0,1.1021687160920954,inf,amplify,up
+alpha_s1_casein,dairy-casein,PPItx,"Diphosphate transporter, peroxisome","Transport, Peroxisomal",,1.2953444851702333e-17,1.1021687160920954,inf,amplify,up
+alpha_s1_casein,dairy-casein,ATP2tp_H,"AMP/ATP transporter, peroxisomal","Transport, Peroxisomal",PAS_chr4_0122;PAS_chr4_0347,-3.23916458239028e-17,1.1021687160920954,inf,amplify,up
+alpha_s1_casein,dairy-casein,CSp,citrate synthase,Citric Acid Cycle,PAS_chr1-1_0475,0.0,1.1021687160920954,inf,amplify,up
+alpha_s1_casein,dairy-casein,AKGDbm,oxoglutarate dehydrogenase (dihydrolipoamide S-succinyltransferase),Citric Acid Cycle,PAS_chr1-3_0094;PAS_chr2-1_0089;PAS_chr2-2_0048,1.0827115483789171,0.0,0.0,attenuate,down
+alpha_s1_casein,dairy-casein,AKGDam,oxoglutarate dehydrogenase (lipoamide),Citric Acid Cycle,PAS_chr1-3_0094;PAS_chr2-1_0089;PAS_chr2-2_0048,1.082711548378917,0.0,0.0,attenuate,down
+alpha_s1_casein,dairy-casein,THRAi,Threonine aldolase,Threonine and Lysine Metabolism,PAS_chr4_0112,0.0,0.9705820683548659,inf,amplify,up
+alpha_s1_casein,dairy-casein,ALDD2x,"aldehyde dehydrogenase (acetaldehyde, NAD)",Pyruvate Metabolism,PAS_chr2-1_0453,0.0,0.9705820683548658,inf,amplify,up
+alpha_s1_casein,dairy-casein,CITtam,"citrate transport, mitochondrial","Transport, Mitochondrial",PAS_chr1-4_0420;PAS_chr3_0177;PAS_chr3_0769,0.16449809341240013,0.9984692612211569,6.0697923028078735,amplify,up
+alpha_s1_casein,dairy-casein,13GS,"1,3-beta-glucan synthase",Carbohydrate metabolism,PAS_chr1-3_0225;PAS_chr1-3_0226;PAS_chr2-1_0263;PAS_chr2-1_0661;PAS_chr3_0184;PAS_chr3_0306;PAS_chr3_0602,0.7415502631118347,0.0007800055664728887,0.0010518579862674184,attenuate,down
+alpha_s1_casein,dairy-casein,COF,Cofactor composition (mmol/g DCW),Biomass Composition,,0.6741191370149363,0.0007090775979648727,0.001051857986267436,attenuate,down
+alpha_s1_casein,dairy-casein,growth,Growth,"Transport, Extracellular",,0.6741191370149362,0.0007090775979648608,0.0010518579862674184,attenuate,down
+alpha_s1_casein,dairy-casein,Ex_biomass,Biomass exchange,Exchange reaction,,0.6741191370149362,0.0007090775979648608,0.0010518579862674184,attenuate,down
+alpha_s1_casein,dairy-casein,BIOMASS_glyc,Biomass composition (g/g)- Glycerol,"Transport, Peroxisomal",,0.6741191370149362,0.0007090775979648607,0.0010518579862674184,attenuate,down
+alpha_s1_casein,dairy-casein,CRNCARtp,"carnitine-acetylcarnitine carrier, peroxisomal","Transport, Peroxisomal",,0.5467429826750192,0.0,0.0,attenuate,down
+alpha_s1_casein,dairy-casein,CSNATp,"carnitine O-acetyltransferase, reverse direction, peroxisomal",Fatty Acid Degradation,PAS_chr3_0069,0.5467429826750192,0.0,0.0,attenuate,down
+alpha_s2_casein,dairy-casein,H2Otm,"H2O transport, mitochondrial","Transport, Mitochondrial",,-71.85331824711233,-43.76059833139436,0.6090268257465344,attenuate,up
+alpha_s2_casein,dairy-casein,PIt2m,"phosphate transporter, mitochondrial","Transport, Mitochondrial",PAS_chr1-4_0615,54.28287029101166,32.198910405912656,0.593168899015354,attenuate,down
+alpha_s2_casein,dairy-casein,ATPtm_H,"ADP/ATP transporter, mitochondrial","Transport, Mitochondrial",PAS_chr4_0210,54.44903456797758,32.43661527669173,0.5957243417455976,attenuate,down
+alpha_s2_casein,dairy-casein,ATPS3m,"ATP synthase, mitochondrial",Oxidative Phosphorylation,PAS_chr1-1_0191;PAS_chr1-1_0315;PAS_chr1-1_0484;PAS_chr1-4_0445;PAS_chr1-4_0465;PAS_chr2-1_0612;PAS_chr2-1_0751;PAS_chr2-2_0119;PAS_chr2-2_0165;PAS_chr3_0059;PAS_chr3_0460;PAS_chr3_0576;PAS_chr3_0819;PAS_chr4_0892,53.50351153139884,32.587659109179754,0.6090751462183094,attenuate,down
+alpha_s2_casein,dairy-casein,CYOR_u6m,ubiquinol-6 cytochrome c reductase,Oxidative Phosphorylation,PAS_chr1-1_0322;PAS_chr1-4_0313;PAS_chr2-1_0850;PAS_chr4_0018,21.865908222213914,13.035096691644975,0.5961379037712423,attenuate,down
+alpha_s2_casein,dairy-casein,NADH2_u6mh,"NADH dehydrogenase, mitochondrial",Oxidative Phosphorylation,PAS_chr1-1_0124;PAS_chr1-1_0172;PAS_chr1-3_0117;PAS_chr1-3_0210;PAS_chr1-4_0039;PAS_chr1-4_0274;PAS_chr1-4_0371;PAS_chr1-4_0575;PAS_chr2-1_0359;PAS_chr2-1_0456;PAS_chr2-2_0035;PAS_chr2-2_0169;PAS_chr2-2_0235;PAS_chr2-2_0366;PAS_chr2-2_0462;PAS_chr3_0104;PAS_chr3_0585;PAS_chr3_0619;PAS_chr3_0808;PAS_chr3_0907;PAS_chr3_0911;PAS_chr3_1188;PAS_chr3_1199;PAS_chr4_0120;PAS_chr4_0142;PAS_chr4_0245;PAS_chr4_0283;PAS_chr4_0355;PAS_chr4_0535;PAS_chr4_0960,20.70464919805306,13.035014071712283,0.6295694240952422,attenuate,down
+alpha_s2_casein,dairy-casein,ASPTA,aspartate transaminase,Alanine and Aspartate Metabolism,PAS_chr4_0974,11.066969421832535,5.160210576031225,0.46627133222680994,attenuate,down
+alpha_s2_casein,dairy-casein,MDHm,"malate dehydrogenase, mitochondrial",Citric Acid Cycle,PAS_chr2-1_0238,14.057931498640992,8.50757417448135,0.6051796578539165,attenuate,down
+alpha_s2_casein,dairy-casein,O2t,o2 transport (diffusion),"Transport, Extracellular",,11.071745127323409,6.442244568810019,0.581863517875924,attenuate,down
+alpha_s2_casein,dairy-casein,Ex_o2,Oxygen exchange,Exchange reaction,,-11.071745127323409,-6.442244568810019,0.581863517875924,attenuate,up
+alpha_s2_casein,dairy-casein,H2Ot,H2O transport via diffusion,"Transport, Extracellular",PAS_chr3_0763,-24.994709956169082,-29.49669916643505,1.18011768162786,amplify,down
+alpha_s2_casein,dairy-casein,Ex_h2o,H2O exchange,Exchange reaction,,24.994709956169086,29.49669916643505,1.18011768162786,amplify,up
+alpha_s2_casein,dairy-casein,ASPGLU2m,Aspartate-glutamate transporter,"Transport, Mitochondrial",PAS_chr3_0434;PAS_chr4_0592,11.880467446638239,7.461932291121187,0.6280840652640023,attenuate,down
+alpha_s2_casein,dairy-casein,ASPTAm,aspartate transaminase,Alanine and Aspartate Metabolism,PAS_chr1-1_0200,-11.880467446638237,-7.461932291121186,0.6280840652640024,attenuate,up
+alpha_s2_casein,dairy-casein,O2tm,O2 transport (diffusion),"Transport, Mitochondrial",,10.932956807584006,6.517548348658799,0.5961377570007125,attenuate,down
+alpha_s2_casein,dairy-casein,CYOOm,"cytochrome c oxidase, mitochondrial",Oxidative Phosphorylation,PAS_chr2-1_0115;PAS_chr2-1_0226;PAS_chr2-1_0344;PAS_chr2-1_0363;PAS_chr2-2_0092;PAS_chr2-2_0266;PAS_chr3_0428;PAS_chr3_0615;PAS_chr3_0745;PAS_chr3_0824;PAS_chr4_0018;PAS_chr4_0422;PAS_chr4_0449;PAS_chr4_0744,10.932954111106957,6.517548345822488,0.5961379037712423,attenuate,down
+alpha_s2_casein,dairy-casein,MDH,malate dehydrogenase,Citric Acid Cycle,PAS_chr4_0815,-12.486966768449767,-8.280892832782051,0.6631628790512196,attenuate,up
+alpha_s2_casein,dairy-casein,AKGMALtm,alpha-ketoglutarate/malate transporter,"Transport, Mitochondrial",PAS_chr3_0040,13.24051787769236,9.301261530184833,0.7024847227354761,attenuate,down
+alpha_s2_casein,dairy-casein,CO2t,CO2 transporter via diffusion,"Transport, Extracellular",,-6.39883705062874,-2.7378095967729412,0.42786049638565626,attenuate,up
+alpha_s2_casein,dairy-casein,Ex_co2,CO2 exchange,Exchange reaction,,6.39883705062874,2.7378095967729412,0.42786049638565626,attenuate,down
+alpha_s2_casein,dairy-casein,TPI,triose-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr3_0951,6.598627455031026,9.74670592075423,1.4770808000871452,amplify,up
+alpha_s2_casein,dairy-casein,NH4t,ammonia reversible transport,"Transport, Extracellular",PAS_chr1-4_0394;PAS_chr2-2_0391,4.181788063105118,7.2224262095245555,1.7271143588663034,amplify,up
+alpha_s2_casein,dairy-casein,Ex_nh4,Ammonium exchange,Exchange reaction,,-4.181788063105117,-7.222426209524555,1.7271143588663034,amplify,down
+alpha_s2_casein,dairy-casein,PGM,phosphoglycerate mutase,Glycolysis/Gluconeogenesis,PAS_chr1-1_0427;PAS_chr2-2_0177;PAS_chr3_0693;PAS_chr3_0826,-5.954449115258855,-8.958090060271065,1.504436411643033,amplify,down
+alpha_s2_casein,dairy-casein,ENO,enolase,Glycolysis/Gluconeogenesis,PAS_chr3_0082,5.954449115258855,8.958090060271063,1.5044364116430327,amplify,up
+alpha_s2_casein,dairy-casein,GLUDxi,glutamate dehydrogenase (NAD),Glutamate metabolism,PAS_chr2-1_0311,2.9727431906653234,0.0,0.0,attenuate,down
+alpha_s2_casein,dairy-casein,GAPD,glyceraldehyde-3-phosphate dehydrogenase,Glycolysis/Gluconeogenesis,PAS_chr2-1_0437,6.4361231686874305,9.166303887482236,1.424196468469946,amplify,up
+alpha_s2_casein,dairy-casein,PGK,phosphoglycerate kinase,Glycolysis/Gluconeogenesis,PAS_chr1-4_0292,-6.436123168687431,-9.166303887482236,1.4241964684699457,amplify,down
+alpha_s2_casein,dairy-casein,Ex_h,H+ exchange,Exchange reaction,,4.381861650191407,6.870537753066298,1.5679494930576325,amplify,up
+alpha_s2_casein,dairy-casein,PC,pyruvate carboxylase,Pyruvate metabolism,PAS_chr2-2_0024,1.6933692257547561,4.0878980938863965,2.4140618783622743,amplify,up
+alpha_s2_casein,dairy-casein,PYK,pyruvate kinase,Glycolysis/Gluconeogenesis,PAS_chr2-1_0769,5.62545286766265,7.951747130150697,1.4135301312113937,amplify,up
+alpha_s2_casein,dairy-casein,Ht,H+ diffusion,"Transport, Extracellular",,-4.551453931246822,-6.870716140067405,1.5095651288258223,amplify,down
+alpha_s2_casein,dairy-casein,HCO3E,HCO3 equilibration reaction,Other,,2.231497599034017,4.239363659455484,1.8997841007270826,amplify,up
+alpha_s2_casein,dairy-casein,DHAPtx,Dihydroxyacetone phosphate transport from peroxisomes,"Transport, Peroxisomal",,8.30466671982166,10.0,1.2041422416304681,amplify,up
+alpha_s2_casein,dairy-casein,GLYCDy,Glycerol dehydrogenase (NADP-dependent),Glycerolipid Metabolism,PAS_chr1-1_0360,8.30466671982166,9.999999999999998,1.204142241630468,amplify,up
+alpha_s2_casein,dairy-casein,DHAtx,Dihydroxyacetone peroxisomal transport,"Transport, Peroxisomal",,-8.30466671982166,-9.999999999999998,1.204142241630468,amplify,down
+alpha_s2_casein,dairy-casein,DHAKx,Dihydroxyacetone kinase,Methanol Metabolism,PAS_chr3_0841,8.304666719821661,10.0,1.204142241630468,amplify,up
+alpha_s2_casein,dairy-casein,ATPtp_H,"ADP/ATP transporter, peroxisomal","Transport, Peroxisomal",PAS_chr4_0122;PAS_chr4_0347,8.304666719821661,9.999999999999998,1.2041422416304677,amplify,up
+alpha_s2_casein,dairy-casein,FBA2,D-Fructose 1-phosphate D-glyceraldehyde-3-phosphate-lyase,Glycolysis/Gluconeogenesis,PAS_chr1-1_0072,-1.6950005888401556,0.0,0.0,attenuate,up
+alpha_s2_casein,dairy-casein,FRUK,fructose-1-phosphate kinase,Fructose and Mannose Metabolism,,1.6950005888401554,0.0,0.0,attenuate,down
+alpha_s2_casein,dairy-casein,ALCD19,alcohol dehydrogenase (glycerol),Glycerolipid Metabolism,,1.6950005888401554,0.0,0.0,attenuate,down
+alpha_s2_casein,dairy-casein,ADK1,adenylate kinase,Nucleotide Metabolism,PAS_chr3_0257,0.8092833176172696,2.427347955755039,2.9993797016621473,amplify,up
+alpha_s2_casein,dairy-casein,ASADi,"aspartate-semialdehyde dehydrogenase, irreversible",Alanine and Aspartate Metabolism,PAS_chr3_0471,0.1709325987272037,1.6219979383624235,9.489108282680572,amplify,up
+alpha_s2_casein,dairy-casein,ASPKi,"aspartate kinase, irreversible",Alanine and Aspartate Metabolism,PAS_chr4_0150,0.17093259872720368,1.6219979383624235,9.489108282680574,amplify,up
+alpha_s2_casein,dairy-casein,HSDxi,"homoserine dehydrogenase (NADH), irreversible",Glycine and Serine Metabolism,PAS_chr1-4_0049,0.1709325987272037,1.6219979383624235,9.489108282680572,amplify,up
+alpha_s2_casein,dairy-casein,FBP,fructose-bisphosphatase,Glycolysis/Gluconeogenesis,PAS_chr3_0868,1.6950005887572153,0.2532821181817118,0.1494289263742497,attenuate,down
+alpha_s2_casein,dairy-casein,THRS,threonine synthase,Threonine and Lysine Metabolism,PAS_chr2-1_0269,0.17093192460356904,1.521376491239957,8.900481842513525,amplify,up
+alpha_s2_casein,dairy-casein,HSK,homoserine kinase,Glycine and Serine Metabolism,PAS_chr3_0899,0.17093192460356904,1.5213764912399568,8.900481842513523,amplify,up
+alpha_s2_casein,dairy-casein,NDPK2,nucleoside-diphosphate kinase (ATP:UDP),Nucleotide Metabolism,PAS_chr2-2_0059,1.2632172234653578,0.00132872518611716,0.0010518580347345927,attenuate,down
+alpha_s2_casein,dairy-casein,G6PI,Glucose-6-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr1-4_0042;PAS_chr3_0456,-1.1818287323440406,-0.0012431160477962772,0.0010518580347345925,attenuate,up
+alpha_s2_casein,dairy-casein,G6PI3,Glucose-6-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr3_0456,-1.1818287323440406,-0.0012431160477962772,0.0010518580347345925,attenuate,up
+alpha_s2_casein,dairy-casein,GALU,UTP-glucose-1-phosphate uridylyltransferase,Galactose metabolism,PAS_chr1-3_0122,1.174995990661057,0.0012359289735577653,0.0010518580347345927,attenuate,down
+alpha_s2_casein,dairy-casein,PGMT,phosphoglucomutase,Galactose metabolism,PAS_chr1-4_0264;PAS_chr2-1_0771,-1.174995990661057,-0.0012359289735577653,0.0010518580347345927,attenuate,up
+alpha_s2_casein,dairy-casein,SUCD2_u6m,"succinate dehydrogenase (ubiquinone-6), mitochondrial",Citric Acid Cycle,PAS_chr1-4_0487;PAS_chr2-2_0283;PAS_chr3_1111;PAS_chr4_0733,1.161258350041594,8.261922361424803e-05,7.11462902387645e-05,attenuate,down
+alpha_s2_casein,dairy-casein,FUMm,"fumarase, mitochondrial",Citric Acid Cycle,PAS_chr3_0647,1.161258350041594,8.261922361424803e-05,7.11462902387645e-05,attenuate,down
+alpha_s2_casein,dairy-casein,AKGDbm,oxoglutarate dehydrogenase (dihydrolipoamide S-succinyltransferase),Citric Acid Cycle,PAS_chr1-3_0094;PAS_chr2-1_0089;PAS_chr2-2_0048,1.082711692637531,0.0,0.0,attenuate,down
+alpha_s2_casein,dairy-casein,AKGDam,oxoglutarate dehydrogenase (lipoamide),Citric Acid Cycle,PAS_chr1-3_0094;PAS_chr2-1_0089;PAS_chr2-2_0048,1.0827116926375309,0.0,0.0,attenuate,down
+alpha_s2_casein,dairy-casein,ACtp,"acetate transport, peroxisomal","Transport, Peroxisomal",,-1.2063432949027288e-16,0.9672158371355669,inf,amplify,up
+alpha_s2_casein,dairy-casein,ATP2tp_H,"AMP/ATP transporter, peroxisomal","Transport, Peroxisomal",PAS_chr4_0122;PAS_chr4_0347,-6.533859250159452e-17,0.9672158371355669,inf,amplify,up
+alpha_s2_casein,dairy-casein,ACSp,acetyl-CoA synthetase,Pyruvate Metabolism,PAS_chr2-1_0767,0.0,0.9672158371355669,inf,amplify,up
+beta_casein,dairy-casein,H2Otm,"H2O transport, mitochondrial","Transport, Mitochondrial",,-71.85332152606166,-42.78007078438365,0.5953805596706764,attenuate,up
+beta_casein,dairy-casein,PIt2m,"phosphate transporter, mitochondrial","Transport, Mitochondrial",PAS_chr1-4_0615,54.28287210903844,30.478859886287623,0.5614820790076194,attenuate,down
+beta_casein,dairy-casein,ATPtm_H,"ADP/ATP transporter, mitochondrial","Transport, Mitochondrial",PAS_chr4_0210,54.4490363553107,30.82859688081504,0.5661917812400029,attenuate,down
+beta_casein,dairy-casein,ATPS3m,"ATP synthase, mitochondrial",Oxidative Phosphorylation,PAS_chr1-1_0191;PAS_chr1-1_0315;PAS_chr1-1_0484;PAS_chr1-4_0445;PAS_chr1-4_0465;PAS_chr2-1_0612;PAS_chr2-1_0751;PAS_chr2-2_0119;PAS_chr2-2_0165;PAS_chr3_0059;PAS_chr3_0460;PAS_chr3_0576;PAS_chr3_0819;PAS_chr4_0892,53.503512426350404,30.928616100451134,0.5780670221048672,attenuate,down
+beta_casein,dairy-casein,CYOR_u6m,ubiquinol-6 cytochrome c reductase,Oxidative Phosphorylation,PAS_chr1-1_0322;PAS_chr1-4_0313;PAS_chr2-1_0850;PAS_chr4_0018,21.865908381850797,12.371479488429854,0.5657884992648402,attenuate,down
+beta_casein,dairy-casein,NADH2_u6mh,"NADH dehydrogenase, mitochondrial",Oxidative Phosphorylation,PAS_chr1-1_0124;PAS_chr1-1_0172;PAS_chr1-3_0117;PAS_chr1-3_0210;PAS_chr1-4_0039;PAS_chr1-4_0274;PAS_chr1-4_0371;PAS_chr1-4_0575;PAS_chr2-1_0359;PAS_chr2-1_0456;PAS_chr2-2_0035;PAS_chr2-2_0169;PAS_chr2-2_0235;PAS_chr2-2_0366;PAS_chr2-2_0462;PAS_chr3_0104;PAS_chr3_0585;PAS_chr3_0619;PAS_chr3_0808;PAS_chr3_0907;PAS_chr3_0911;PAS_chr3_1188;PAS_chr3_1199;PAS_chr4_0120;PAS_chr4_0142;PAS_chr4_0245;PAS_chr4_0283;PAS_chr4_0355;PAS_chr4_0535;PAS_chr4_0960,20.704649853574203,12.371396867806348,0.5975178018125575,attenuate,down
+beta_casein,dairy-casein,ASPTA,aspartate transaminase,Alanine and Aspartate Metabolism,PAS_chr4_0974,11.066972819699801,5.0135337555581,0.4530176261600411,attenuate,down
+beta_casein,dairy-casein,MDHm,"malate dehydrogenase, mitochondrial",Citric Acid Cycle,PAS_chr2-1_0238,14.057934060326804,8.162017672942842,0.5805986596549094,attenuate,down
+beta_casein,dairy-casein,O2t,o2 transport (diffusion),"Transport, Extracellular",,11.071745181407737,6.110979544056184,0.5519436587393707,attenuate,down
+beta_casein,dairy-casein,Ex_o2,Oxygen exchange,Exchange reaction,,-11.071745181407737,-6.110979544056184,0.5519436587393707,attenuate,up
+beta_casein,dairy-casein,MTHFD2i,methylenetetrahydrofolate dehydrogenase (NAD),Folate Metabolism,PAS_chr1-3_0220,4.894769824792465,0.0,0.0,attenuate,down
+beta_casein,dairy-casein,MTHFD,methylenetetrahydrofolate dehydrogenase (NADP),Folate Metabolism,PAS_chr1-3_0220,-5.263632170122531,-0.49235927505799393,0.09353983316933266,attenuate,up
+beta_casein,dairy-casein,O2tm,O2 transport (diffusion),"Transport, Mitochondrial",,10.932956887401945,6.185739747051237,0.5657883599796383,attenuate,down
+beta_casein,dairy-casein,CYOOm,"cytochrome c oxidase, mitochondrial",Oxidative Phosphorylation,PAS_chr2-1_0115;PAS_chr2-1_0226;PAS_chr2-1_0344;PAS_chr2-1_0363;PAS_chr2-2_0092;PAS_chr2-2_0266;PAS_chr3_0428;PAS_chr3_0615;PAS_chr3_0745;PAS_chr3_0824;PAS_chr4_0018;PAS_chr4_0422;PAS_chr4_0449;PAS_chr4_0744,10.932954190925399,6.185739744214926,0.5657884992648402,attenuate,down
+beta_casein,dairy-casein,ASPTAm,aspartate transaminase,Alanine and Aspartate Metabolism,PAS_chr1-1_0200,-11.880471367060919,-7.163042008555393,0.6029257415168907,attenuate,up
+beta_casein,dairy-casein,ASPGLU2m,Aspartate-glutamate transporter,"Transport, Mitochondrial",PAS_chr3_0434;PAS_chr4_0592,11.880471367060919,7.163042008555393,0.6029257415168907,attenuate,down
+beta_casein,dairy-casein,MDH,malate dehydrogenase,Citric Acid Cycle,PAS_chr4_0815,-12.486969060474953,-7.936967060556974,0.6356199828891931,attenuate,up
+beta_casein,dairy-casein,H2Ot,H2O transport via diffusion,"Transport, Extracellular",PAS_chr3_0763,-24.994714757584305,-29.047913039201315,1.1621622139291317,amplify,down
+beta_casein,dairy-casein,Ex_h2o,H2O exchange,Exchange reaction,,24.99471475758431,29.047913039201315,1.1621622139291314,amplify,up
+beta_casein,dairy-casein,AKGMALtm,alpha-ketoglutarate/malate transporter,"Transport, Mitochondrial",PAS_chr3_0040,13.240521377104308,9.735858159302367,0.735307763343651,attenuate,down
+beta_casein,dairy-casein,GLUDyi,glutamate dehydrogenase (NADP),Glutamate metabolism,PAS_chr1-1_0107,3.2821448764723016,6.683302823705904,2.0362607609476453,amplify,up
+beta_casein,dairy-casein,CO2t,CO2 transporter via diffusion,"Transport, Extracellular",,-6.398835358089638,-3.0089470402990472,0.4702335459366099,attenuate,up
+beta_casein,dairy-casein,Ex_co2,CO2 exchange,Exchange reaction,,6.398835358089638,3.0089470402990472,0.4702335459366099,attenuate,down
+beta_casein,dairy-casein,ENO,enolase,Glycolysis/Gluconeogenesis,PAS_chr3_0082,5.954447731045658,9.2181790866103,1.548116551355049,amplify,up
+beta_casein,dairy-casein,PGM,phosphoglycerate mutase,Glycolysis/Gluconeogenesis,PAS_chr1-1_0427;PAS_chr2-2_0177;PAS_chr3_0693;PAS_chr3_0826,-5.954447731045658,-9.2181790866103,1.548116551355049,amplify,down
+beta_casein,dairy-casein,PYK,pyruvate kinase,Glycolysis/Gluconeogenesis,PAS_chr2-1_0769,5.625451544219206,8.518708602667905,1.514315523955024,amplify,up
+beta_casein,dairy-casein,GAPD,glyceraldehyde-3-phosphate dehydrogenase,Glycolysis/Gluconeogenesis,PAS_chr2-1_0437,6.436122706348533,9.30544979033669,1.4458160937730224,amplify,up
+beta_casein,dairy-casein,PGK,phosphoglycerate kinase,Glycolysis/Gluconeogenesis,PAS_chr1-4_0292,-6.436122706348533,-9.30544979033669,1.4458160937730224,amplify,down
+beta_casein,dairy-casein,NH4t,ammonia reversible transport,"Transport, Extracellular",PAS_chr1-4_0394;PAS_chr2-2_0391,4.181790657713234,6.696018162380027,1.6012322735547144,amplify,up
+beta_casein,dairy-casein,Ex_nh4,Ammonium exchange,Exchange reaction,,-4.181790657713234,-6.696018162380027,1.6012322735547144,amplify,down
+beta_casein,dairy-casein,PC,pyruvate carboxylase,Pyruvate metabolism,PAS_chr2-2_0024,1.6933687432916718,4.14753854371458,2.4492825677485612,amplify,up
+beta_casein,dairy-casein,Ex_h,H+ exchange,Exchange reaction,,4.381862187728966,6.596353691122943,1.5053768029481787,amplify,up
+beta_casein,dairy-casein,Ht,H+ diffusion,"Transport, Extracellular",,-4.551456457372039,-6.596532080211671,1.4493233412190956,amplify,down
+beta_casein,dairy-casein,HCO3E,HCO3 equilibration reaction,Other,,2.231497016685432,4.247979496338517,1.903645608564729,amplify,up
+beta_casein,dairy-casein,HSDxi,"homoserine dehydrogenase (NADH), irreversible",Glycine and Serine Metabolism,PAS_chr1-4_0049,0.1709325673172189,1.6993952334003652,9.941904343170634,amplify,up
+beta_casein,dairy-casein,ASADi,"aspartate-semialdehyde dehydrogenase, irreversible",Alanine and Aspartate Metabolism,PAS_chr3_0471,0.17093256731721895,1.699395233400365,9.941904343170629,amplify,up
+beta_casein,dairy-casein,ASPKi,"aspartate kinase, irreversible",Alanine and Aspartate Metabolism,PAS_chr4_0150,0.17093256731721895,1.699395233400365,9.941904343170629,amplify,up
+beta_casein,dairy-casein,TPI,triose-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr3_0951,8.293627910828315,9.781809482997048,1.1794367420590133,amplify,up
+beta_casein,dairy-casein,FBA,fructose-bisphosphate aldolase,Glycolysis/Gluconeogenesis,PAS_chr1-1_0072;PAS_chr1-1_0319,-1.6950007239913245,-0.21817855594154598,0.12871885707977,attenuate,up
+beta_casein,dairy-casein,FBP,fructose-bisphosphatase,Glycolysis/Gluconeogenesis,PAS_chr3_0868,1.6950007239913243,0.21817855594154595,0.12871885707977,attenuate,down
+beta_casein,dairy-casein,CITtam,"citrate transport, mitochondrial","Transport, Mitochondrial",PAS_chr1-4_0420;PAS_chr3_0177;PAS_chr3_0769,0.1644987675323627,1.5738404806869049,9.567491017081785,amplify,up
+beta_casein,dairy-casein,HSK,homoserine kinase,Glycine and Serine Metabolism,PAS_chr3_0899,0.1709318931980819,1.5495610964160302,9.065371402751294,amplify,up
+beta_casein,dairy-casein,THRS,threonine synthase,Threonine and Lysine Metabolism,PAS_chr2-1_0269,0.1709318931980819,1.5495610964160302,9.065371402751294,amplify,up
+beta_casein,dairy-casein,NDPK1,nucleoside-diphosphate kinase (ATP:GDP),Nucleotide Metabolism,PAS_chr2-1_0769;PAS_chr2-2_0059,0.9069696909969082,2.274331283145611,2.507615530840671,amplify,up
+beta_casein,dairy-casein,ADK3,adentylate kinase (GTP),Nucleotide Metabolism,PAS_chr3_0257,0.8092851899650636,2.149384885301997,2.655905374216455,amplify,up
+beta_casein,dairy-casein,NDPK2,nucleoside-diphosphate kinase (ATP:UDP),Nucleotide Metabolism,PAS_chr2-2_0059,1.2632169892584248,0.001328724892386189,0.0010518579972283468,attenuate,down
+beta_casein,dairy-casein,G6PI3,Glucose-6-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr3_0456,-1.1818285132269497,-0.0012431157729902544,0.001051857997228347,attenuate,up
+beta_casein,dairy-casein,G6PI,Glucose-6-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr1-4_0042;PAS_chr3_0456,-1.1818285132269495,-0.0012431157729902542,0.001051857997228347,attenuate,up
+beta_casein,dairy-casein,GALU,UTP-glucose-1-phosphate uridylyltransferase,Galactose metabolism,PAS_chr1-3_0122,1.1749957728107918,0.001235928700340533,0.0010518579972283468,attenuate,down
+beta_casein,dairy-casein,PGMT,phosphoglucomutase,Galactose metabolism,PAS_chr1-4_0264;PAS_chr2-1_0771,-1.1749957728107918,-0.001235928700340533,0.0010518579972283468,attenuate,up
+beta_casein,dairy-casein,SUCD2_u6m,"succinate dehydrogenase (ubiquinone-6), mitochondrial",Citric Acid Cycle,PAS_chr1-4_0487;PAS_chr2-2_0283;PAS_chr3_1111;PAS_chr4_0733,1.1612578541574605,8.261991442786206e-05,7.114691550379751e-05,attenuate,down
+beta_casein,dairy-casein,FUMm,"fumarase, mitochondrial",Citric Acid Cycle,PAS_chr3_0647,1.1612578541574605,8.261991442786206e-05,7.114691550379751e-05,attenuate,down
+beta_casein,dairy-casein,AKGDam,oxoglutarate dehydrogenase (lipoamide),Citric Acid Cycle,PAS_chr1-3_0094;PAS_chr2-1_0089;PAS_chr2-2_0048,1.0827112113163484,0.0,0.0,attenuate,down
+beta_casein,dairy-casein,AKGDbm,oxoglutarate dehydrogenase (dihydrolipoamide S-succinyltransferase),Citric Acid Cycle,PAS_chr1-3_0094;PAS_chr2-1_0089;PAS_chr2-2_0048,1.0827112113163484,0.0,0.0,attenuate,down
+beta_casein,dairy-casein,THRAi,Threonine aldolase,Threonine and Lysine Metabolism,PAS_chr4_0112,0.0,1.0748565049575776,inf,amplify,up
+beta_casein,dairy-casein,PUTA3,puta3,Arginine and proline metabolism,PAS_chr2-1_0853;PAS_chr4_0254,-0.11221461981964885,-0.8740235671855459,7.788856466209796,amplify,down
+beta_casein,dairy-casein,G5SADsm,L-glutamate 5-semialdehyde dehydratase (spontaneous),Arginine and proline metabolism,,0.11221461981964885,0.8740235671855459,7.788856466209796,amplify,up
+beta_casein,dairy-casein,P5CRm,pyrroline-5-carboxylate reductase (m),Arginine and proline metabolism,PAS_chr4_0398,0.11221461981964885,0.8740235671855457,7.788856466209795,amplify,up
+beta_casein,dairy-casein,1PYR5Ctm,1-Pyrroline-5-carboxylate transport into mitochondria,"Transport, Mitochondrial",,0.11221461981964885,0.8740235671855457,7.788856466209795,amplify,up
+beta_casein,dairy-casein,ACALDtm,acetaldehyde mitochondrial diffusion,"Transport, Mitochondrial",,0.0,-0.7564735448274779,inf,amplify,down
+kappa_casein,dairy-casein,H2Otm,"H2O transport, mitochondrial","Transport, Mitochondrial",,-71.85331824315372,-42.86293340675453,0.5965338060199964,attenuate,up
+kappa_casein,dairy-casein,PIt2m,"phosphate transporter, mitochondrial","Transport, Mitochondrial",PAS_chr1-4_0615,54.28287028819067,30.691854234578585,0.5654058835067837,attenuate,down
+kappa_casein,dairy-casein,ATPtm_H,"ADP/ATP transporter, mitochondrial","Transport, Mitochondrial",PAS_chr4_0210,54.44903456527054,30.965455147164135,0.5687053112033499,attenuate,down
+kappa_casein,dairy-casein,ATPS3m,"ATP synthase, mitochondrial",Oxidative Phosphorylation,PAS_chr1-1_0191;PAS_chr1-1_0315;PAS_chr1-1_0484;PAS_chr1-4_0445;PAS_chr1-4_0465;PAS_chr2-1_0612;PAS_chr2-1_0751;PAS_chr2-2_0119;PAS_chr2-2_0165;PAS_chr3_0059;PAS_chr3_0460;PAS_chr3_0576;PAS_chr3_0819;PAS_chr4_0892,53.50351152857732,31.127931927393025,0.5817923167672268,attenuate,down
+kappa_casein,dairy-casein,CYOR_u6m,ubiquinol-6 cytochrome c reductase,Oxidative Phosphorylation,PAS_chr1-1_0322;PAS_chr1-4_0313;PAS_chr2-1_0850;PAS_chr4_0018,21.8659082211294,12.451205819206265,0.5694346511147639,attenuate,down
+kappa_casein,dairy-casein,NADH2_u6mh,"NADH dehydrogenase, mitochondrial",Oxidative Phosphorylation,PAS_chr1-1_0124;PAS_chr1-1_0172;PAS_chr1-3_0117;PAS_chr1-3_0210;PAS_chr1-4_0039;PAS_chr1-4_0274;PAS_chr1-4_0371;PAS_chr1-4_0575;PAS_chr2-1_0359;PAS_chr2-1_0456;PAS_chr2-2_0035;PAS_chr2-2_0169;PAS_chr2-2_0235;PAS_chr2-2_0366;PAS_chr2-2_0462;PAS_chr3_0104;PAS_chr3_0585;PAS_chr3_0619;PAS_chr3_0808;PAS_chr3_0907;PAS_chr3_0911;PAS_chr3_1188;PAS_chr3_1199;PAS_chr4_0120;PAS_chr4_0142;PAS_chr4_0245;PAS_chr4_0283;PAS_chr4_0355;PAS_chr4_0535;PAS_chr4_0960,20.704649196883214,12.451123198583623,0.6013684694767956,attenuate,down
+kappa_casein,dairy-casein,TPI,triose-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr3_0951,3.1279533875503067,9.420609557988701,3.011748702996678,amplify,up
+kappa_casein,dairy-casein,ASPTA,aspartate transaminase,Alanine and Aspartate Metabolism,PAS_chr4_0974,11.394603603305498,5.3950562358291645,0.47347467482450156,attenuate,down
+kappa_casein,dairy-casein,MDHm,"malate dehydrogenase, mitochondrial",Citric Acid Cycle,PAS_chr2-1_0238,14.385565679136818,8.903710772783345,0.6189336569292003,attenuate,down
+kappa_casein,dairy-casein,H2Ot,H2O transport via diffusion,"Transport, Extracellular",PAS_chr3_0763,-25.871082283560767,-30.90750618186656,1.194673877308414,amplify,down
+kappa_casein,dairy-casein,Ex_h2o,H2O exchange,Exchange reaction,,25.87108228356077,30.90750618186656,1.1946738773084138,amplify,up
+kappa_casein,dairy-casein,O2t,o2 transport (diffusion),"Transport, Extracellular",,11.071745126779495,6.1608159065387635,0.5564448816327473,attenuate,down
+kappa_casein,dairy-casein,Ex_o2,Oxygen exchange,Exchange reaction,,-11.071745126779495,-6.1608159065387635,0.5564448816327473,attenuate,up
+kappa_casein,dairy-casein,GLYCDy,Glycerol dehydrogenase (NADP-dependent),Glycerolipid Metabolism,PAS_chr1-1_0360,4.822955324627871,9.660480094867598,2.0030208543582106,amplify,up
+kappa_casein,dairy-casein,DHAK,Dihydroxyacetone kinase,Methanol Metabolism,PAS_chr3_0841,4.822955324627871,9.660480094867598,2.0030208543582106,amplify,up
+kappa_casein,dairy-casein,ALCD19,alcohol dehydrogenase (glycerol),Glycerolipid Metabolism,,5.165674656322007,0.3395079454892761,0.06572383436377852,attenuate,down
+kappa_casein,dairy-casein,FRUK,fructose-1-phosphate kinase,Fructose and Mannose Metabolism,,5.165674656322006,0.3395079454892761,0.06572383436377853,attenuate,down
+kappa_casein,dairy-casein,FBA2,D-Fructose 1-phosphate D-glyceraldehyde-3-phosphate-lyase,Glycolysis/Gluconeogenesis,PAS_chr1-1_0072,-5.165674656322006,-0.3395079454892761,0.06572383436377853,attenuate,up
+kappa_casein,dairy-casein,ASPGLU2m,Aspartate-glutamate transporter,"Transport, Mitochondrial",PAS_chr3_0434;PAS_chr4_0592,12.208101627373313,7.447875661417741,0.6100764794354206,attenuate,down
+kappa_casein,dairy-casein,ASPTAm,aspartate transaminase,Alanine and Aspartate Metabolism,PAS_chr1-1_0200,-12.208101627373312,-7.44787566141774,0.6100764794354206,attenuate,up
+kappa_casein,dairy-casein,O2tm,O2 transport (diffusion),"Transport, Mitochondrial",,10.932956807041746,6.225602912439443,0.5694345109302572,attenuate,down
+kappa_casein,dairy-casein,CYOOm,"cytochrome c oxidase, mitochondrial",Oxidative Phosphorylation,PAS_chr2-1_0115;PAS_chr2-1_0226;PAS_chr2-1_0344;PAS_chr2-1_0363;PAS_chr2-2_0092;PAS_chr2-2_0266;PAS_chr3_0428;PAS_chr3_0615;PAS_chr3_0745;PAS_chr3_0824;PAS_chr4_0018;PAS_chr4_0422;PAS_chr4_0449;PAS_chr4_0744,10.932954110564697,6.225602909603132,0.5694346511147639,attenuate,down
+kappa_casein,dairy-casein,MDH,malate dehydrogenase,Citric Acid Cycle,PAS_chr4_0815,-12.814600950003364,-8.643646760212299,0.6745154838559394,attenuate,up
+kappa_casein,dairy-casein,ILEt6,L-isoleucine transport in via proton antiport (vacuolar),"Transport, Vacuolar",PAS_chr3_0226,6.572792477860552,10.574758007845626,1.6088683833340371,amplify,up
+kappa_casein,dairy-casein,ILEt7,"L-isoleucine transport out via proton symport, vacuolar","Transport, Vacuolar",PAS_chr2-2_0343;PAS_chr3_0226;PAS_chr3_0295,6.572792477860552,10.574758007845626,1.6088683833340371,amplify,up
+kappa_casein,dairy-casein,CO2t,CO2 transporter via diffusion,"Transport, Extracellular",,-6.398837049403869,-2.4111200448687216,0.3768059768131378,attenuate,up
+kappa_casein,dairy-casein,Ex_co2,CO2 exchange,Exchange reaction,,6.398837049403869,2.411120044868722,0.37680597681313793,attenuate,down
+kappa_casein,dairy-casein,AKGMALtm,alpha-ketoglutarate/malate transporter,"Transport, Mitochondrial",PAS_chr3_0040,13.568152058105861,9.702778829114393,0.7151142460345421,attenuate,down
+kappa_casein,dairy-casein,GLUDyi,glutamate dehydrogenase (NADP),Glutamate metabolism,PAS_chr1-1_0107,3.282143799697886,6.873447864681662,2.0941946130801297,amplify,up
+kappa_casein,dairy-casein,FBA,fructose-bisphosphate aldolase,Glycolysis/Gluconeogenesis,PAS_chr1-1_0072;PAS_chr1-1_0319,3.4706740674829666,0.09963741002854123,0.02870837424984743,attenuate,down
+kappa_casein,dairy-casein,NH4t,ammonia reversible transport,"Transport, Extracellular",PAS_chr1-4_0394;PAS_chr2-2_0391,4.181788062438762,7.244427199488961,1.7323755033305324,amplify,up
+kappa_casein,dairy-casein,Ex_nh4,Ammonium exchange,Exchange reaction,,-4.181788062438762,-7.24442719948896,1.7323755033305321,amplify,down
+kappa_casein,dairy-casein,ENO,enolase,Glycolysis/Gluconeogenesis,PAS_chr3_0082,5.95444911569379,8.803138237217734,1.4784135469418695,amplify,up
+kappa_casein,dairy-casein,PGM,phosphoglycerate mutase,Glycolysis/Gluconeogenesis,PAS_chr1-1_0427;PAS_chr2-2_0177;PAS_chr3_0693;PAS_chr3_0826,-5.95444911569379,-8.803138237217732,1.478413546941869,amplify,down
+kappa_casein,dairy-casein,PGK,phosphoglycerate kinase,Glycolysis/Gluconeogenesis,PAS_chr1-4_0292,-6.436123169122242,-9.206233244246992,1.4304004137792996,amplify,down
+kappa_casein,dairy-casein,GAPD,glyceraldehyde-3-phosphate dehydrogenase,Glycolysis/Gluconeogenesis,PAS_chr2-1_0437,6.436123169122242,9.20623324424699,1.4304004137792994,amplify,up
+kappa_casein,dairy-casein,PItv,"Inorganic phosphate exchange, diffusion","Transport, Vacuolar",PAS_chr3_0495,4.381861651907034,7.049838671897084,1.6088683833340374,amplify,up
+kappa_casein,dairy-casein,ATPS3v,"ATP synthase, vacuole",Oxidative Phosphorylation,PAS_c131_0021;PAS_chr1-1_0195;PAS_chr1-1_0309;PAS_chr1-3_0066;PAS_chr2-1_0246;PAS_chr2-1_0687;PAS_chr2-2_0227;PAS_chr3_0704;PAS_chr3_1040;PAS_chr3_1093;PAS_chr3_1236;PAS_chr4_0255;PAS_chr4_0674;PAS_chr4_0990,4.381861651907034,7.049838671897084,1.6088683833340374,amplify,up
+kappa_casein,dairy-casein,Ex_pi,Phosphate exchange,Exchange reaction,,-4.551453256515986,-7.0500170602752235,1.5489595658666218,amplify,down
+kappa_casein,dairy-casein,PIt2r,phosphate reversible transport via symport,"Transport, Extracellular",PAS_chr2-1_0235;PAS_chr3_0495;PAS_chr4_0337,4.551453256515986,7.050017060275223,1.5489595658666215,amplify,up
+kappa_casein,dairy-casein,Ht,H+ diffusion,"Transport, Extracellular",,-4.5514539306352475,-7.0500170609843,1.5489593366048477,amplify,down
+kappa_casein,dairy-casein,PYK,pyruvate kinase,Glycolysis/Gluconeogenesis,PAS_chr2-1_0769,5.625452867869985,7.893730299285343,1.4032168582143354,amplify,up
+kappa_casein,dairy-casein,PC,pyruvate carboxylase,Pyruvate metabolism,PAS_chr2-2_0024,1.6933692257795985,3.774075628496921,2.228737578929014,amplify,up
+kappa_casein,dairy-casein,HCO3E,HCO3 equilibration reaction,Other,,2.23149759894473,3.936974141709239,1.7642744243018793,amplify,up
+kappa_casein,dairy-casein,FBP,fructose-bisphosphatase,Glycolysis/Gluconeogenesis,PAS_chr3_0868,1.6950005888390391,0.2398705354607348,0.14151649093233054,attenuate,down
+kappa_casein,dairy-casein,NDPK2,nucleoside-diphosphate kinase (ATP:UDP),Nucleotide Metabolism,PAS_chr2-2_0059,1.263217223464462,0.0013287248785075496,0.001051857791222501,attenuate,down
+kappa_casein,dairy-casein,HSDxi,"homoserine dehydrogenase (NADH), irreversible",Glycine and Serine Metabolism,PAS_chr1-4_0049,0.17093259900887536,1.4028136226693586,8.20682322039999,amplify,up
+kappa_casein,dairy-casein,ASADi,"aspartate-semialdehyde dehydrogenase, irreversible",Alanine and Aspartate Metabolism,PAS_chr3_0471,0.1709325990088754,1.4028136226693586,8.206823220399988,amplify,up
+kappa_casein,dairy-casein,ASPKi,"aspartate kinase, irreversible",Alanine and Aspartate Metabolism,PAS_chr4_0150,0.17093259900887536,1.4028136226693584,8.206823220399988,amplify,up
+kappa_casein,dairy-casein,G6PI,Glucose-6-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr1-4_0042;PAS_chr3_0456,-1.1818287323432022,-0.0012431157600058093,0.0010518577912225014,attenuate,up
+kappa_casein,dairy-casein,G6PI3,Glucose-6-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr3_0456,-1.1818287323432022,-0.0012431157600058095,0.0010518577912225014,attenuate,up
+kappa_casein,dairy-casein,PGMT,phosphoglucomutase,Galactose metabolism,PAS_chr1-4_0264;PAS_chr2-1_0771,-1.1749959906602236,-0.0012359286874311576,0.0010518577912225014,attenuate,up
+kappa_casein,dairy-casein,GALU,UTP-glucose-1-phosphate uridylyltransferase,Galactose metabolism,PAS_chr1-3_0122,1.1749959906602234,0.0012359286874311579,0.0010518577912225018,attenuate,down
+kappa_casein,dairy-casein,HSK,homoserine kinase,Glycine and Serine Metabolism,PAS_chr3_0899,0.17093192488961337,1.3378588713531685,7.826851960025304,amplify,up
+kappa_casein,dairy-casein,THRS,threonine synthase,Threonine and Lysine Metabolism,PAS_chr2-1_0269,0.1709319248896134,1.3378588713531687,7.826851960025304,amplify,up
+kappa_casein,dairy-casein,SUCD2_u6m,"succinate dehydrogenase (ubiquinone-6), mitochondrial",Citric Acid Cycle,PAS_chr1-4_0487;PAS_chr2-2_0283;PAS_chr3_1111;PAS_chr4_0733,1.1612583501269262,8.261991356489038e-05,7.114688437405851e-05,attenuate,down
+kappa_casein,dairy-casein,FUMm,"fumarase, mitochondrial",Citric Acid Cycle,PAS_chr3_0647,1.1612583501269262,8.261991356489038e-05,7.114688437405851e-05,attenuate,down
+kappa_casein,dairy-casein,AKGDam,oxoglutarate dehydrogenase (lipoamide),Citric Acid Cycle,PAS_chr1-3_0094;PAS_chr2-1_0089;PAS_chr2-2_0048,1.0827116927229177,0.0,0.0,attenuate,down
+kappa_casein,dairy-casein,AKGDbm,oxoglutarate dehydrogenase (dihydrolipoamide S-succinyltransferase),Citric Acid Cycle,PAS_chr1-3_0094;PAS_chr2-1_0089;PAS_chr2-2_0048,1.0827116927229177,0.0,0.0,attenuate,down
+kappa_casein,dairy-casein,ADK1,adenylate kinase,Nucleotide Metabolism,PAS_chr3_0257,0.8092833176520399,1.5981651189798252,1.9747906377417428,amplify,up
+beta_lactoglobulin,dairy-whey,H2Otm,"H2O transport, mitochondrial","Transport, Mitochondrial",,-71.85332152606213,-42.49750263842748,0.5914479906543093,attenuate,up
+beta_lactoglobulin,dairy-whey,ATPtm_H,"ADP/ATP transporter, mitochondrial","Transport, Mitochondrial",PAS_chr4_0210,54.449036355311236,30.652280541053223,0.562953590969535,attenuate,down
+beta_lactoglobulin,dairy-whey,PIt2m,"phosphate transporter, mitochondrial","Transport, Mitochondrial",PAS_chr1-4_0615,54.28287210903895,30.553460719912984,0.5628563768427676,attenuate,down
+beta_lactoglobulin,dairy-whey,ATPS3m,"ATP synthase, mitochondrial",Oxidative Phosphorylation,PAS_chr1-1_0191;PAS_chr1-1_0315;PAS_chr1-1_0484;PAS_chr1-4_0445;PAS_chr1-4_0465;PAS_chr2-1_0612;PAS_chr2-1_0751;PAS_chr2-2_0119;PAS_chr2-2_0165;PAS_chr3_0059;PAS_chr3_0460;PAS_chr3_0576;PAS_chr3_0819;PAS_chr4_0892,53.503512426350845,30.751082407497773,0.5747488531678652,attenuate,down
+beta_lactoglobulin,dairy-whey,CYOR_u6m,ubiquinol-6 cytochrome c reductase,Oxidative Phosphorylation,PAS_chr1-1_0322;PAS_chr1-4_0313;PAS_chr2-1_0850;PAS_chr4_0018,21.865908381851014,12.300466011248167,0.5625408190888476,attenuate,down
+beta_lactoglobulin,dairy-whey,NADH2_u6mh,"NADH dehydrogenase, mitochondrial",Oxidative Phosphorylation,PAS_chr1-1_0124;PAS_chr1-1_0172;PAS_chr1-3_0117;PAS_chr1-3_0210;PAS_chr1-4_0039;PAS_chr1-4_0274;PAS_chr1-4_0371;PAS_chr1-4_0575;PAS_chr2-1_0359;PAS_chr2-1_0456;PAS_chr2-2_0035;PAS_chr2-2_0169;PAS_chr2-2_0235;PAS_chr2-2_0366;PAS_chr2-2_0462;PAS_chr3_0104;PAS_chr3_0585;PAS_chr3_0619;PAS_chr3_0808;PAS_chr3_0907;PAS_chr3_0911;PAS_chr3_1188;PAS_chr3_1199;PAS_chr4_0120;PAS_chr4_0142;PAS_chr4_0245;PAS_chr4_0283;PAS_chr4_0355;PAS_chr4_0535;PAS_chr4_0960,20.70464985357432,12.30038339062552,0.5940879694955121,attenuate,down
+beta_lactoglobulin,dairy-whey,TPI,triose-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr3_0951,3.0724510982486293,9.80089000907845,3.18992546851769,amplify,up
+beta_lactoglobulin,dairy-whey,ASPTA,aspartate transaminase,Alanine and Aspartate Metabolism,PAS_chr4_0974,11.393379133367791,4.884592626466166,0.42872202963567313,attenuate,down
+beta_lactoglobulin,dairy-whey,MDHm,"malate dehydrogenase, mitochondrial",Citric Acid Cycle,PAS_chr2-1_0238,14.384341048113773,8.878135858769504,0.617208381605614,attenuate,down
+beta_lactoglobulin,dairy-whey,FRUK,fructose-1-phosphate kinase,Fructose and Mannose Metabolism,,5.2211768125797375,0.0,0.0,attenuate,down
+beta_lactoglobulin,dairy-whey,FBA2,D-Fructose 1-phosphate D-glyceraldehyde-3-phosphate-lyase,Glycolysis/Gluconeogenesis,PAS_chr1-1_0072,-5.221176812579737,0.0,0.0,attenuate,up
+beta_lactoglobulin,dairy-whey,ALCD19,alcohol dehydrogenase (glycerol),Glycerolipid Metabolism,,5.221176812579737,0.0,0.0,attenuate,down
+beta_lactoglobulin,dairy-whey,DHAPtx,Dihydroxyacetone phosphate transport from peroxisomes,"Transport, Peroxisomal",,4.778823187420262,9.999999999999998,2.0925653885508724,amplify,up
+beta_lactoglobulin,dairy-whey,GLYCDy,Glycerol dehydrogenase (NADP-dependent),Glycerolipid Metabolism,PAS_chr1-1_0360,4.778823187420261,9.999999999999996,2.0925653885508724,amplify,up
+beta_lactoglobulin,dairy-whey,DHAtx,Dihydroxyacetone peroxisomal transport,"Transport, Peroxisomal",,-4.778823187420261,-9.999999999999996,2.0925653885508724,amplify,down
+beta_lactoglobulin,dairy-whey,ATPtp_H,"ADP/ATP transporter, peroxisomal","Transport, Peroxisomal",PAS_chr4_0122;PAS_chr4_0347,4.778823187420262,9.999999999999996,2.092565388550872,amplify,up
+beta_lactoglobulin,dairy-whey,DHAKx,Dihydroxyacetone kinase,Methanol Metabolism,PAS_chr3_0841,4.778823187420262,9.999999999999996,2.092565388550872,amplify,up
+beta_lactoglobulin,dairy-whey,O2t,o2 transport (diffusion),"Transport, Extracellular",,11.071745181407842,6.035278501645511,0.5451063407582948,attenuate,down
+beta_lactoglobulin,dairy-whey,Ex_o2,Oxygen exchange,Exchange reaction,,-11.071745181407842,-6.035278501645511,0.5451063407582948,attenuate,up
+beta_lactoglobulin,dairy-whey,O2tm,O2 transport (diffusion),"Transport, Mitochondrial",,10.932956887402055,6.1502330084603924,0.5625406806046449,attenuate,down
+beta_lactoglobulin,dairy-whey,CYOOm,"cytochrome c oxidase, mitochondrial",Oxidative Phosphorylation,PAS_chr2-1_0115;PAS_chr2-1_0226;PAS_chr2-1_0344;PAS_chr2-1_0363;PAS_chr2-2_0092;PAS_chr2-2_0266;PAS_chr3_0428;PAS_chr3_0615;PAS_chr3_0745;PAS_chr3_0824;PAS_chr4_0018;PAS_chr4_0422;PAS_chr4_0449;PAS_chr4_0744,10.932954190925507,6.150233005624083,0.5625408190888475,attenuate,down
+beta_lactoglobulin,dairy-whey,ASPTAm,aspartate transaminase,Alanine and Aspartate Metabolism,PAS_chr1-1_0200,-12.206878354847722,-8.264522422759027,0.6770381568910232,attenuate,up
+beta_lactoglobulin,dairy-whey,ASPGLU2m,Aspartate-glutamate transporter,"Transport, Mitochondrial",PAS_chr3_0434;PAS_chr4_0592,12.206878354847724,8.264522422759029,0.6770381568910232,attenuate,down
+beta_lactoglobulin,dairy-whey,Ex_h2o,H2O exchange,Exchange reaction,,24.994714757582557,28.868797591473065,1.1549960810301003,amplify,up
+beta_lactoglobulin,dairy-whey,H2Ot,H2O transport via diffusion,"Transport, Extracellular",PAS_chr3_0763,-24.994714757582557,-28.86879759147306,1.1549960810301,amplify,down
+beta_lactoglobulin,dairy-whey,FBA,fructose-bisphosphate aldolase,Glycolysis/Gluconeogenesis,PAS_chr1-1_0072;PAS_chr1-1_0319,3.5261760885884406,-0.19909802986026645,0.05646287220442447,attenuate,down
+beta_lactoglobulin,dairy-whey,GLUDyi,glutamate dehydrogenase (NADP),Glutamate metabolism,PAS_chr1-1_0107,3.282144876471876,6.915843865274204,2.107111089108398,amplify,up
+beta_lactoglobulin,dairy-whey,CO2t,CO2 transporter via diffusion,"Transport, Extracellular",,-6.3988353580902055,-3.1074314170858357,0.48562453058852867,attenuate,up
+beta_lactoglobulin,dairy-whey,Ex_co2,CO2 exchange,Exchange reaction,,6.3988353580902055,3.1074314170858357,0.48562453058852867,attenuate,down
+beta_lactoglobulin,dairy-whey,PGM,phosphoglycerate mutase,Glycolysis/Gluconeogenesis,PAS_chr1-1_0427;PAS_chr2-2_0177;PAS_chr3_0693;PAS_chr3_0826,-5.9544477310460255,-9.245643138397183,1.5527289105572497,amplify,down
+beta_lactoglobulin,dairy-whey,ENO,enolase,Glycolysis/Gluconeogenesis,PAS_chr3_0082,5.954447731046025,9.245643138397181,1.5527289105572497,amplify,up
+beta_lactoglobulin,dairy-whey,GAPD,glyceraldehyde-3-phosphate dehydrogenase,Glycolysis/Gluconeogenesis,PAS_chr2-1_0437,6.436122706348671,9.404305917770568,1.461175671572272,amplify,up
+beta_lactoglobulin,dairy-whey,PGK,phosphoglycerate kinase,Glycolysis/Gluconeogenesis,PAS_chr1-4_0292,-6.436122706348671,-9.404305917770568,1.461175671572272,amplify,down
+beta_lactoglobulin,dairy-whey,PYK,pyruvate kinase,Glycolysis/Gluconeogenesis,PAS_chr2-1_0769,5.625451544219551,8.587579981757305,1.5265583418955047,amplify,up
+beta_lactoglobulin,dairy-whey,Ex_nh4,Ammonium exchange,Exchange reaction,,-4.181790657712578,-6.778884773445698,1.6210483327144165,amplify,down
+beta_lactoglobulin,dairy-whey,NH4t,ammonia reversible transport,"Transport, Extracellular",PAS_chr1-4_0394;PAS_chr2-2_0391,4.181790657712579,6.778884773445698,1.6210483327144163,amplify,up
+beta_lactoglobulin,dairy-whey,PC,pyruvate carboxylase,Pyruvate metabolism,PAS_chr2-2_0024,1.6933687432917908,3.828781910793444,2.2610443980149055,amplify,up
+beta_lactoglobulin,dairy-whey,Ex_h,H+ exchange,Exchange reaction,,4.381862187729079,6.450236670595486,1.472030929831308,amplify,up
+beta_lactoglobulin,dairy-whey,Ht,H+ diffusion,"Transport, Extracellular",,-4.551456457371418,-6.450415059682617,1.4172199866343214,amplify,down
+beta_lactoglobulin,dairy-whey,HCO3E,HCO3 equilibration reaction,Other,,2.2314970166855823,3.928005510221435,1.7602557748679664,amplify,up
+beta_lactoglobulin,dairy-whey,ADK3,adentylate kinase (GTP),Nucleotide Metabolism,PAS_chr3_0257,0.8092851899647141,2.315377287168121,2.8610152711049546,amplify,up
+beta_lactoglobulin,dairy-whey,FBP,fructose-bisphosphatase,Glycolysis/Gluconeogenesis,PAS_chr3_0868,1.695000723991297,0.19909802986026645,0.11746191434741164,attenuate,down
+beta_lactoglobulin,dairy-whey,HSDxi,"homoserine dehydrogenase (NADH), irreversible",Glycine and Serine Metabolism,PAS_chr1-4_0049,0.17093256731722806,1.6571076659126907,9.69451106901893,amplify,up
+beta_lactoglobulin,dairy-whey,ASADi,"aspartate-semialdehyde dehydrogenase, irreversible",Alanine and Aspartate Metabolism,PAS_chr3_0471,0.17093256731722806,1.6571076659126904,9.694511069018928,amplify,up
+beta_lactoglobulin,dairy-whey,ASPKi,"aspartate kinase, irreversible",Alanine and Aspartate Metabolism,PAS_chr4_0150,0.17093256731722806,1.6571076659126904,9.694511069018928,amplify,up
+beta_lactoglobulin,dairy-whey,NDPK1,nucleoside-diphosphate kinase (ATP:GDP),Nucleotide Metabolism,PAS_chr2-1_0769;PAS_chr2-2_0059,0.9556763770983344,2.381302979844832,2.491746198723721,amplify,up
+beta_lactoglobulin,dairy-whey,HSK,homoserine kinase,Glycine and Serine Metabolism,PAS_chr3_0899,0.17093189319809102,1.5255424861979672,8.924855728532963,amplify,up
+beta_lactoglobulin,dairy-whey,THRS,threonine synthase,Threonine and Lysine Metabolism,PAS_chr2-1_0269,0.17093189319809102,1.5255424861979672,8.924855728532963,amplify,up
+beta_lactoglobulin,dairy-whey,NDPK2,nucleoside-diphosphate kinase (ATP:UDP),Nucleotide Metabolism,PAS_chr2-2_0059,1.2632169892585012,0.001328724878509957,0.001051857986243447,attenuate,down
+beta_lactoglobulin,dairy-whey,G6PI,Glucose-6-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr1-4_0042;PAS_chr3_0456,-1.1818285132270214,-0.0012431157600080612,0.0010518579862434465,attenuate,up
+beta_lactoglobulin,dairy-whey,G6PI3,Glucose-6-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr3_0456,-1.1818285132270214,-0.0012431157600080614,0.0010518579862434467,attenuate,up
+beta_lactoglobulin,dairy-whey,GALU,UTP-glucose-1-phosphate uridylyltransferase,Galactose metabolism,PAS_chr1-3_0122,1.1749957728108629,0.0012359286874333965,0.0010518579862434465,attenuate,down
+beta_lactoglobulin,dairy-whey,PGMT,phosphoglucomutase,Galactose metabolism,PAS_chr1-4_0264;PAS_chr2-1_0771,-1.1749957728108629,-0.0012359286874333965,0.0010518579862434465,attenuate,up
+beta_lactoglobulin,dairy-whey,FUMm,"fumarase, mitochondrial",Citric Acid Cycle,PAS_chr3_0647,1.1612578541575573,8.261991356503988e-05,7.114691476078504e-05,attenuate,down
+beta_lactoglobulin,dairy-whey,SUCD1m,succinate dehydrogenase,Oxidative Phosphorylation,PAS_chr3_0225,1.1612578541575573,8.261991356503989e-05,7.114691476078505e-05,attenuate,down
+beta_lactoglobulin,dairy-whey,SUCD3_u6m,"succinate dehydrogenase (ubiquinone-6), mitochondrial",Oxidative Phosphorylation,PAS_chr1-4_0487;PAS_chr2-2_0283;PAS_chr3_0424;PAS_chr3_1111;PAS_chr4_0733,1.1612578541575573,8.261991356503989e-05,7.114691476078505e-05,attenuate,down
+beta_lactoglobulin,dairy-whey,AKGDam,oxoglutarate dehydrogenase (lipoamide),Citric Acid Cycle,PAS_chr1-3_0094;PAS_chr2-1_0089;PAS_chr2-2_0048,1.082711211316441,0.0,0.0,attenuate,down
+beta_lactoglobulin,dairy-whey,AKGDbm,oxoglutarate dehydrogenase (dihydrolipoamide S-succinyltransferase),Citric Acid Cycle,PAS_chr1-3_0094;PAS_chr2-1_0089;PAS_chr2-2_0048,1.082711211316441,0.0,0.0,attenuate,down
+beta_lactoglobulin,dairy-whey,CITtam,"citrate transport, mitochondrial","Transport, Mitochondrial",PAS_chr1-4_0420;PAS_chr3_0177;PAS_chr3_0769,0.16449876753237258,1.163230997948208,7.071366037555811,amplify,up
+beta_lactoglobulin,dairy-whey,THRAi,Threonine aldolase,Threonine and Lysine Metabolism,PAS_chr4_0112,0.0,0.9332983662627993,inf,amplify,up
+alpha_lactalbumin,dairy-whey,H2Otm,"H2O transport, mitochondrial","Transport, Mitochondrial",,-73.0145765932807,-41.30181177214063,0.5656652917705409,attenuate,up
+alpha_lactalbumin,dairy-whey,PIt2m,"phosphate transporter, mitochondrial","Transport, Mitochondrial",PAS_chr1-4_0615,54.28287028819074,30.087222953926975,0.5542673553220796,attenuate,down
+alpha_lactalbumin,dairy-whey,ATPtm_H,"ADP/ATP transporter, mitochondrial","Transport, Mitochondrial",PAS_chr4_0210,54.44903456527059,30.563682973461493,0.5613264443986309,attenuate,down
+alpha_lactalbumin,dairy-whey,ATPS3m,"ATP synthase, mitochondrial",Oxidative Phosphorylation,PAS_chr1-1_0191;PAS_chr1-1_0315;PAS_chr1-1_0484;PAS_chr1-4_0445;PAS_chr1-4_0465;PAS_chr2-1_0612;PAS_chr2-1_0751;PAS_chr2-2_0119;PAS_chr2-2_0165;PAS_chr3_0059;PAS_chr3_0460;PAS_chr3_0576;PAS_chr3_0819;PAS_chr4_0892,53.50351152857736,30.603516360405074,0.5719907999694391,attenuate,down
+alpha_lactalbumin,dairy-whey,CYOR_u6m,ubiquinol-6 cytochrome c reductase,Oxidative Phosphorylation,PAS_chr1-1_0322;PAS_chr1-4_0313;PAS_chr2-1_0850;PAS_chr4_0018,21.865908221129427,12.241439592411083,0.559841350682244,attenuate,down
+alpha_lactalbumin,dairy-whey,NADH2_u6mh,"NADH dehydrogenase, mitochondrial",Oxidative Phosphorylation,PAS_chr1-1_0124;PAS_chr1-1_0172;PAS_chr1-3_0117;PAS_chr1-3_0210;PAS_chr1-4_0039;PAS_chr1-4_0274;PAS_chr1-4_0371;PAS_chr1-4_0575;PAS_chr2-1_0359;PAS_chr2-1_0456;PAS_chr2-2_0035;PAS_chr2-2_0169;PAS_chr2-2_0235;PAS_chr2-2_0366;PAS_chr2-2_0462;PAS_chr3_0104;PAS_chr3_0585;PAS_chr3_0619;PAS_chr3_0808;PAS_chr3_0907;PAS_chr3_0911;PAS_chr3_1188;PAS_chr3_1199;PAS_chr4_0120;PAS_chr4_0142;PAS_chr4_0245;PAS_chr4_0283;PAS_chr4_0355;PAS_chr4_0535;PAS_chr4_0960,20.70464919688321,12.241356971788443,0.5912371108239403,attenuate,down
+alpha_lactalbumin,dairy-whey,O2t,o2 transport (diffusion),"Transport, Extracellular",,11.071745126779511,6.021643071104735,0.5438747913858705,attenuate,down
+alpha_lactalbumin,dairy-whey,Ex_o2,Oxygen exchange,Exchange reaction,,-11.071745126779511,-6.021643071104735,0.5438747913858705,attenuate,up
+alpha_lactalbumin,dairy-whey,GLUDxi,glutamate dehydrogenase (NAD),Glutamate metabolism,PAS_chr2-1_0311,4.874512318120922,0.0,0.0,attenuate,down
+alpha_lactalbumin,dairy-whey,O2tm,O2 transport (diffusion),"Transport, Mitochondrial",,10.932956807041759,6.1207197990418525,0.5598412128638052,attenuate,down
+alpha_lactalbumin,dairy-whey,CYOOm,"cytochrome c oxidase, mitochondrial",Oxidative Phosphorylation,PAS_chr2-1_0115;PAS_chr2-1_0226;PAS_chr2-1_0344;PAS_chr2-1_0363;PAS_chr2-2_0092;PAS_chr2-2_0266;PAS_chr3_0428;PAS_chr3_0615;PAS_chr3_0745;PAS_chr3_0824;PAS_chr4_0018;PAS_chr4_0422;PAS_chr4_0449;PAS_chr4_0744,10.932954110564712,6.120719796205542,0.5598413506822442,attenuate,down
+alpha_lactalbumin,dairy-whey,ASPTA,aspartate transaminase,Alanine and Aspartate Metabolism,PAS_chr4_0974,11.121191263447118,6.448029166788191,0.5797966255630751,attenuate,down
+alpha_lactalbumin,dairy-whey,MDHm,"malate dehydrogenase, mitochondrial",Citric Acid Cycle,PAS_chr2-1_0238,14.38552521836011,9.73881786941465,0.6769872994963777,attenuate,down
+alpha_lactalbumin,dairy-whey,CO2t,CO2 transporter via diffusion,"Transport, Extracellular",,-6.398837049404038,-2.3515714845874207,0.36749982323841746,attenuate,up
+alpha_lactalbumin,dairy-whey,Ex_co2,CO2 exchange,Exchange reaction,,6.398837049404038,2.3515714845874207,0.36749982323841746,attenuate,down
+alpha_lactalbumin,dairy-whey,Ex_h2o,H2O exchange,Exchange reaction,,24.994709953178997,28.791894486665008,1.151919527796043,amplify,up
+alpha_lactalbumin,dairy-whey,H2Ot,H2O transport via diffusion,"Transport, Extracellular",PAS_chr3_0763,-24.994709953178997,-28.791894486665004,1.151919527796043,amplify,down
+alpha_lactalbumin,dairy-whey,ASPTAm,aspartate transaminase,Alanine and Aspartate Metabolism,PAS_chr1-1_0200,-12.20806116659656,-8.669212802828401,0.7101219992695416,attenuate,up
+alpha_lactalbumin,dairy-whey,ASPGLU2m,Aspartate-glutamate transporter,"Transport, Mitochondrial",PAS_chr3_0434;PAS_chr4_0592,12.20806116659656,8.669212802828401,0.7101219992695416,attenuate,down
+alpha_lactalbumin,dairy-whey,AKGMALtm,alpha-ketoglutarate/malate transporter,"Transport, Mitochondrial",PAS_chr3_0040,13.56811159732914,10.257813228792756,0.7560236481849094,attenuate,down
+alpha_lactalbumin,dairy-whey,MDH,malate dehydrogenase,Citric Acid Cycle,PAS_chr4_0815,-12.81456048922675,-9.579729481127929,0.7475659808373174,attenuate,up
+alpha_lactalbumin,dairy-whey,NH4t,ammonia reversible transport,"Transport, Extracellular",PAS_chr1-4_0394;PAS_chr2-2_0391,4.181788062438533,6.513408656324972,1.5575654622072832,amplify,up
+alpha_lactalbumin,dairy-whey,Ex_nh4,Ammonium exchange,Exchange reaction,,-4.181788062438533,-6.513408656324972,1.5575654622072832,amplify,down
+alpha_lactalbumin,dairy-whey,PGK,phosphoglycerate kinase,Glycolysis/Gluconeogenesis,PAS_chr1-4_0292,-6.4361231691222605,-8.183783073710329,1.271539226124911,amplify,down
+alpha_lactalbumin,dairy-whey,GAPD,glyceraldehyde-3-phosphate dehydrogenase,Glycolysis/Gluconeogenesis,PAS_chr2-1_0437,6.436123169122261,8.183783073710329,1.2715392261249108,amplify,up
+alpha_lactalbumin,dairy-whey,ENO,enolase,Glycolysis/Gluconeogenesis,PAS_chr3_0082,5.954449115693889,7.505955033752009,1.2605624614322226,amplify,up
+alpha_lactalbumin,dairy-whey,PGM,phosphoglycerate mutase,Glycolysis/Gluconeogenesis,PAS_chr1-1_0427;PAS_chr2-2_0177;PAS_chr3_0693;PAS_chr3_0826,-5.954449115693888,-7.5059550337520085,1.2605624614322226,amplify,down
+alpha_lactalbumin,dairy-whey,PC,pyruvate carboxylase,Pyruvate metabolism,PAS_chr2-2_0024,1.6933692257796302,3.1317003143397364,1.849390119215079,amplify,up
+alpha_lactalbumin,dairy-whey,ADK1,adenylate kinase,Nucleotide Metabolism,PAS_chr3_0257,0.8092833176519484,2.178506969552486,2.6918965485081268,amplify,up
+alpha_lactalbumin,dairy-whey,Ex_h,H+ exchange,Exchange reaction,,4.38186165190685,5.64045922425077,1.2872289616437838,amplify,up
+alpha_lactalbumin,dairy-whey,FUM,fumarase,Citric Acid Cycle,PAS_chr3_0647,1.3983874048776077,0.1590883882867205,0.11376560438961086,attenuate,down
+alpha_lactalbumin,dairy-whey,NDPK2,nucleoside-diphosphate kinase (ATP:UDP),Nucleotide Metabolism,PAS_chr2-2_0059,1.2652971577766416,0.08070908348364975,0.0637866630677258,attenuate,down
+alpha_lactalbumin,dairy-whey,PGI,glucose-6-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr3_0456,-1.1818287323432166,-0.0012431157599845004,0.001051857791204458,attenuate,up
+alpha_lactalbumin,dairy-whey,GALU,UTP-glucose-1-phosphate uridylyltransferase,Galactose metabolism,PAS_chr1-3_0122,1.174995990660238,0.0012359286874099706,0.0010518577912044568,attenuate,down
+alpha_lactalbumin,dairy-whey,PGMT,phosphoglucomutase,Galactose metabolism,PAS_chr1-4_0264;PAS_chr2-1_0771,-1.174995990660238,-0.0012359286874099708,0.001051857791204457,attenuate,up
+alpha_lactalbumin,dairy-whey,SUCD2_u6m,"succinate dehydrogenase (ubiquinone-6), mitochondrial",Citric Acid Cycle,PAS_chr1-4_0487;PAS_chr2-2_0283;PAS_chr3_1111;PAS_chr4_0733,1.1612583501269564,8.261991356317902e-05,7.114688437258295e-05,attenuate,down
+alpha_lactalbumin,dairy-whey,SUCFUMtm,"succinate-fumarate transport, mitochondrial","Transport, Mitochondrial",PAS_chr2-1_0166;PAS_chr4_0688;PAS_chr4_0877,1.1612583501269564,8.261991356317902e-05,7.114688437258295e-05,attenuate,down
+alpha_lactalbumin,dairy-whey,Ht,H+ diffusion,"Transport, Extracellular",,-4.551453930635013,-5.640637613337982,1.2393045605431423,amplify,down
+alpha_lactalbumin,dairy-whey,AKGDam,oxoglutarate dehydrogenase (lipoamide),Citric Acid Cycle,PAS_chr1-3_0094;PAS_chr2-1_0089;PAS_chr2-2_0048,1.0827116927229485,0.0,0.0,attenuate,down
+alpha_lactalbumin,dairy-whey,AKGDbm,oxoglutarate dehydrogenase (dihydrolipoamide S-succinyltransferase),Citric Acid Cycle,PAS_chr1-3_0094;PAS_chr2-1_0089;PAS_chr2-2_0048,1.0827116927229485,0.0,0.0,attenuate,down
+alpha_lactalbumin,dairy-whey,ASPKi,"aspartate kinase, irreversible",Alanine and Aspartate Metabolism,PAS_chr4_0150,0.17093259900887772,1.1857273125446388,6.9368120500119215,amplify,up
+alpha_lactalbumin,dairy-whey,ASADi,"aspartate-semialdehyde dehydrogenase, irreversible",Alanine and Aspartate Metabolism,PAS_chr3_0471,0.17093259900887772,1.1857273125446386,6.936812050011921,amplify,up
+alpha_lactalbumin,dairy-whey,CSNATr,carnitine O-acetyltransferase,Fatty Acid Biosynthesis,PAS_chr1-4_0074;PAS_chr3_0761,-0.5467437581634705,0.46772642681949705,0.8554764820555151,attenuate,up
+alpha_lactalbumin,dairy-whey,HSK,homoserine kinase,Glycine and Serine Metabolism,PAS_chr3_0899,0.17093192488961573,1.146016467299553,6.70451975568418,amplify,up
+alpha_lactalbumin,dairy-whey,THRS,threonine synthase,Threonine and Lysine Metabolism,PAS_chr2-1_0269,0.17093192488961576,1.146016467299553,6.704519755684179,amplify,up
+alpha_lactalbumin,dairy-whey,HCO3E,HCO3 equilibration reaction,Other,,2.2314975989447667,3.1719554342667453,1.4214469402820344,amplify,up
+alpha_lactalbumin,dairy-whey,PYK,pyruvate kinase,Glycolysis/Gluconeogenesis,PAS_chr2-1_0769,5.625452867870079,6.553070926764815,1.1648966013372632,amplify,up
+alpha_lactalbumin,dairy-whey,TPI,triose-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr3_0951,8.293628043872316,9.217653125924917,1.1114138561754419,amplify,up
+alpha_lactalbumin,dairy-whey,FBP,fructose-bisphosphatase,Glycolysis/Gluconeogenesis,PAS_chr3_0868,1.6950005888390274,0.7823349130137887,0.4615543606091846,attenuate,down
+alpha_lactalbumin,dairy-whey,FBA,fructose-bisphosphate aldolase,Glycolysis/Gluconeogenesis,PAS_chr1-1_0072;PAS_chr1-1_0319,-1.6950005888390274,-0.7823349130137888,0.46155436060918464,attenuate,up
+alpha_lactalbumin,dairy-whey,13GS,"1,3-beta-glucan synthase",Carbohydrate metabolism,PAS_chr1-3_0225;PAS_chr1-3_0226;PAS_chr2-1_0263;PAS_chr2-1_0661;PAS_chr3_0184;PAS_chr3_0306;PAS_chr3_0602,0.7415504005978969,0.0007800055664397358,0.0010518577912045268,attenuate,down
+alpha_lactalbumin,dairy-whey,COF,Cofactor composition (mmol/g DCW),Biomass Composition,,0.6741192619990273,0.0007090775979346193,0.0010518577912043735,attenuate,down
+alpha_lactalbumin,dairy-whey,growth,Growth,"Transport, Extracellular",,0.6741192619990272,0.0007090775979355549,0.0010518577912057617,attenuate,down
+alpha_lactalbumin,dairy-whey,Ex_biomass,Biomass exchange,Exchange reaction,,0.6741192619990272,0.0007090775979355549,0.0010518577912057617,attenuate,down
+alpha_lactalbumin,dairy-whey,BIOMASS_glyc,Biomass composition (g/g)- Glycerol,"Transport, Peroxisomal",,0.6741192619990272,0.0007090775979355549,0.0010518577912057617,attenuate,down
+alpha_lactalbumin,dairy-whey,HSDxi,"homoserine dehydrogenase (NADH), irreversible",Glycine and Serine Metabolism,PAS_chr1-4_0049,0.0,0.6659669688580865,inf,amplify,up
+alpha_lactalbumin,dairy-whey,ALDD2x,"aldehyde dehydrogenase (acetaldehyde, NAD)",Pyruvate Metabolism,PAS_chr2-1_0453,0.0,0.5503814557249779,inf,amplify,up
+alpha_lactalbumin,dairy-whey,THRAi,Threonine aldolase,Threonine and Lysine Metabolism,PAS_chr4_0112,0.0,0.5503814557249779,inf,amplify,up
+alpha_lactalbumin,dairy-whey,ACS,acetyl-CoA synthetase,Pyruvate Metabolism,PAS_chr2-1_0767;PAS_chr3_0403,0.0,0.5475390007581729,inf,amplify,up
+alpha_lactalbumin,dairy-whey,CSNATp,"carnitine O-acetyltransferase, reverse direction, peroxisomal",Fatty Acid Degradation,PAS_chr3_0069,0.5467437581634707,0.0,0.0,attenuate,down
+ovalbumin,egg,H2Otm,"H2O transport, mitochondrial","Transport, Mitochondrial",,-72.15570325587016,-42.15250622247182,0.5841881420377195,attenuate,up
+ovalbumin,egg,PIt2m,"phosphate transporter, mitochondrial","Transport, Mitochondrial",PAS_chr1-4_0615,54.28287163642919,29.932011033888067,0.551408024880554,attenuate,down
+ovalbumin,egg,ATPtm_H,"ADP/ATP transporter, mitochondrial","Transport, Mitochondrial",PAS_chr4_0210,54.44903591350906,30.139808997049702,0.5535416466312836,attenuate,down
+ovalbumin,egg,ATPS3m,"ATP synthase, mitochondrial",Oxidative Phosphorylation,PAS_chr1-1_0191;PAS_chr1-1_0315;PAS_chr1-1_0484;PAS_chr1-4_0445;PAS_chr1-4_0465;PAS_chr2-1_0612;PAS_chr2-1_0751;PAS_chr2-2_0119;PAS_chr2-2_0165;PAS_chr3_0059;PAS_chr3_0460;PAS_chr3_0576;PAS_chr3_0819;PAS_chr4_0892,53.604306083403294,30.34760521900005,0.5661411822360318,attenuate,down
+ovalbumin,egg,CYOR_u6m,ubiquinol-6 cytochrome c reductase,Oxidative Phosphorylation,PAS_chr1-1_0322;PAS_chr1-4_0313;PAS_chr2-1_0850;PAS_chr4_0018,21.865908221129402,12.139075135855522,0.555159886938761,attenuate,down
+ovalbumin,egg,NADH2_u6mh,"NADH dehydrogenase, mitochondrial",Oxidative Phosphorylation,PAS_chr1-1_0124;PAS_chr1-1_0172;PAS_chr1-3_0117;PAS_chr1-3_0210;PAS_chr1-4_0039;PAS_chr1-4_0274;PAS_chr1-4_0371;PAS_chr1-4_0575;PAS_chr2-1_0359;PAS_chr2-1_0456;PAS_chr2-2_0035;PAS_chr2-2_0169;PAS_chr2-2_0235;PAS_chr2-2_0366;PAS_chr2-2_0462;PAS_chr3_0104;PAS_chr3_0585;PAS_chr3_0619;PAS_chr3_0808;PAS_chr3_0907;PAS_chr3_0911;PAS_chr3_1188;PAS_chr3_1199;PAS_chr4_0120;PAS_chr4_0142;PAS_chr4_0245;PAS_chr4_0283;PAS_chr4_0355;PAS_chr4_0535;PAS_chr4_0960,20.80544375170918,12.138992515216767,0.5834527088238405,attenuate,down
+ovalbumin,egg,O2t,o2 transport (diffusion),"Transport, Extracellular",,11.071745126779497,5.917405481419977,0.5344600524724332,attenuate,down
+ovalbumin,egg,Ex_o2,Oxygen exchange,Exchange reaction,,-11.071745126779497,-5.917405481419977,0.5344600524724332,attenuate,up
+ovalbumin,egg,MTHFD,methylenetetrahydrofolate dehydrogenase (NADP),Folate Metabolism,PAS_chr1-3_0220,-5.1989700599623685,-0.2924923828403258,0.05625967825682053,attenuate,up
+ovalbumin,egg,O2tm,O2 transport (diffusion),"Transport, Mitochondrial",,10.93295680704175,6.069537570764071,0.5551597502749462,attenuate,down
+ovalbumin,egg,CYOOm,"cytochrome c oxidase, mitochondrial",Oxidative Phosphorylation,PAS_chr2-1_0115;PAS_chr2-1_0226;PAS_chr2-1_0344;PAS_chr2-1_0363;PAS_chr2-2_0092;PAS_chr2-2_0266;PAS_chr3_0428;PAS_chr3_0615;PAS_chr3_0745;PAS_chr3_0824;PAS_chr4_0018;PAS_chr4_0422;PAS_chr4_0449;PAS_chr4_0744,10.932954110564701,6.06953756792776,0.5551598869387608,attenuate,down
+ovalbumin,egg,MTHFD2i,methylenetetrahydrofolate dehydrogenase (NAD),Folate Metabolism,PAS_chr1-3_0220,4.830065837228024,0.0,0.0,attenuate,down
+ovalbumin,egg,ASPTA,aspartate transaminase,Alanine and Aspartate Metabolism,PAS_chr4_0974,11.369353086480317,6.596303555516144,0.5801828393701689,attenuate,down
+ovalbumin,egg,H2Ot,H2O transport via diffusion,"Transport, Extracellular",PAS_chr3_0763,-24.994709953179118,-29.11709939893232,1.1649304774280396,amplify,down
+ovalbumin,egg,Ex_h2o,H2O exchange,Exchange reaction,,24.99470995317912,29.117099398932325,1.1649304774280396,amplify,up
+ovalbumin,egg,CO2t,CO2 transporter via diffusion,"Transport, Extracellular",,-6.398837049403952,-2.6204952828201273,0.40952680347817655,attenuate,up
+ovalbumin,egg,Ex_co2,CO2 exchange,Exchange reaction,,6.398837049403952,2.6204952828201273,0.40952680347817655,attenuate,down
+ovalbumin,egg,GLUDyi,glutamate dehydrogenase (NADP),Glutamate metabolism,PAS_chr1-1_0107,3.2821437996978067,6.675427399519399,2.0338619533166153,amplify,up
+ovalbumin,egg,Ex_nh4,Ammonium exchange,Exchange reaction,,-4.181788062438645,-6.953816249385715,1.662881079948977,amplify,down
+ovalbumin,egg,NH4t,ammonia reversible transport,"Transport, Extracellular",PAS_chr1-4_0394;PAS_chr2-2_0391,4.181788062438646,6.953816249385715,1.6628810799489768,amplify,up
+ovalbumin,egg,GAPD,glyceraldehyde-3-phosphate dehydrogenase,Glycolysis/Gluconeogenesis,PAS_chr2-1_0437,6.4361231691222525,8.893388886064134,1.3817928359001557,amplify,up
+ovalbumin,egg,PGK,phosphoglycerate kinase,Glycolysis/Gluconeogenesis,PAS_chr1-4_0292,-6.4361231691222525,-8.893388886064132,1.3817928359001552,amplify,down
+ovalbumin,egg,ENO,enolase,Glycolysis/Gluconeogenesis,PAS_chr3_0082,5.954449115693837,8.103142788084504,1.3608551573188299,amplify,up
+ovalbumin,egg,PGM,phosphoglycerate mutase,Glycolysis/Gluconeogenesis,PAS_chr1-1_0427;PAS_chr2-2_0177;PAS_chr3_0693;PAS_chr3_0826,-5.954449115693837,-8.103142788084504,1.3608551573188299,amplify,down
+ovalbumin,egg,Ex_h,H+ exchange,Exchange reaction,,4.381861651907054,6.331070937239629,1.4448358803122525,amplify,up
+ovalbumin,egg,Ht,H+ diffusion,"Transport, Extracellular",,-4.551453930635169,-6.331249324234228,1.391038868177818,amplify,down
+ovalbumin,egg,PYK,pyruvate kinase,Glycolysis/Gluconeogenesis,PAS_chr2-1_0769,5.625452867870024,7.189128281062394,1.277964361255848,amplify,up
+ovalbumin,egg,TPI,triose-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr3_0951,8.293628043872316,9.601359246724392,1.1576790273128157,amplify,up
+ovalbumin,egg,NDPK2,nucleoside-diphosphate kinase (ATP:UDP),Nucleotide Metabolism,PAS_chr2-2_0059,1.2652971577766345,0.029017835650995943,0.022933613240691812,attenuate,down
+ovalbumin,egg,PC,pyruvate carboxylase,Pyruvate metabolism,PAS_chr2-2_0024,1.693369225779603,2.879592104165434,1.7005104736326546,amplify,up
+ovalbumin,egg,G6PI3,Glucose-6-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr3_0456,-1.1818287323432102,-0.0012431160024401788,0.001051857996357437,attenuate,up
+ovalbumin,egg,G6PI,Glucose-6-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr1-4_0042;PAS_chr3_0456,-1.18182873234321,-0.0012431160024401788,0.001051857996357437,attenuate,up
+ovalbumin,egg,GALU,UTP-glucose-1-phosphate uridylyltransferase,Galactose metabolism,PAS_chr1-3_0122,1.1749959906602316,0.0012359289284638929,0.0010518579963574369,attenuate,down
+ovalbumin,egg,PGMT,phosphoglucomutase,Galactose metabolism,PAS_chr1-4_0264;PAS_chr2-1_0771,-1.1749959906602316,-0.0012359289284638929,0.0010518579963574369,attenuate,up
+ovalbumin,egg,FBA,fructose-bisphosphate aldolase,Glycolysis/Gluconeogenesis,PAS_chr1-1_0072;PAS_chr1-1_0319,-1.5347842411009125,-0.39862879221199676,0.259729531706722,attenuate,up
+ovalbumin,egg,FBP,fructose-bisphosphatase,Glycolysis/Gluconeogenesis,PAS_chr3_0868,1.5347842411009125,0.39862879221199676,0.259729531706722,attenuate,down
+ovalbumin,egg,FUMm,"fumarase, mitochondrial",Citric Acid Cycle,PAS_chr3_0647,1.0604637953009621,8.261992967743306e-05,7.790924126173051e-05,attenuate,down
+ovalbumin,egg,SUCD1m,succinate dehydrogenase,Oxidative Phosphorylation,PAS_chr3_0225,1.0604637953009621,8.261992967743306e-05,7.790924126173051e-05,attenuate,down
+ovalbumin,egg,SUCD3_u6m,"succinate dehydrogenase (ubiquinone-6), mitochondrial",Oxidative Phosphorylation,PAS_chr1-4_0487;PAS_chr2-2_0283;PAS_chr3_0424;PAS_chr3_1111;PAS_chr4_0733,1.0604637953009621,8.261992967743306e-05,7.790924126173051e-05,attenuate,down
+ovalbumin,egg,ICDHym,Isocitrate dehydrogenase (NADP+),Citric Acid Cycle,PAS_chr1-1_0233,0.0,1.036876294641141,inf,amplify,up
+ovalbumin,egg,ADK1,adenylate kinase,Nucleotide Metabolism,PAS_chr3_0257,0.8092839917712544,1.8268337442756006,2.2573457066378726,amplify,up
+ovalbumin,egg,AKGDam,oxoglutarate dehydrogenase (lipoamide),Citric Acid Cycle,PAS_chr1-3_0094;PAS_chr2-1_0089;PAS_chr2-2_0048,0.9819171378969541,0.0,0.0,attenuate,down
+ovalbumin,egg,AKGDbm,oxoglutarate dehydrogenase (dihydrolipoamide S-succinyltransferase),Citric Acid Cycle,PAS_chr1-3_0094;PAS_chr2-1_0089;PAS_chr2-2_0048,0.9819171378969541,0.0,0.0,attenuate,down
+ovalbumin,egg,HSDxi,"homoserine dehydrogenase (NADH), irreversible",Glycine and Serine Metabolism,PAS_chr1-4_0049,0.1709325990088768,1.106421233040604,6.472850933385421,amplify,up
+ovalbumin,egg,ASADi,"aspartate-semialdehyde dehydrogenase, irreversible",Alanine and Aspartate Metabolism,PAS_chr3_0471,0.17093259900887686,1.1064212330406038,6.472850933385417,amplify,up
+ovalbumin,egg,ASPKi,"aspartate kinase, irreversible",Alanine and Aspartate Metabolism,PAS_chr4_0150,0.17093259900887683,1.1064212330406038,6.472850933385418,amplify,up
+ovalbumin,egg,HCO3E,HCO3 equilibration reaction,Other,,2.231497598944737,3.087810059181466,1.383738911770138,amplify,up
+ovalbumin,egg,13GS,"1,3-beta-glucan synthase",Carbohydrate metabolism,PAS_chr1-3_0225;PAS_chr1-3_0226;PAS_chr2-1_0263;PAS_chr2-1_0661;PAS_chr3_0184;PAS_chr3_0306;PAS_chr3_0602,0.7415504005978925,0.0007800057185709896,0.001051857996357485,attenuate,down
+ovalbumin,egg,HSK,homoserine kinase,Glycine and Serine Metabolism,PAS_chr3_0899,0.1709319248896148,0.8710606300948293,5.095950511628221,amplify,up
+ovalbumin,egg,THRS,threonine synthase,Threonine and Lysine Metabolism,PAS_chr2-1_0269,0.1709319248896148,0.8710606300948291,5.095950511628221,amplify,up
+ovalbumin,egg,COF,Cofactor composition (mmol/g DCW),Biomass Composition,,0.6741192619990234,0.0007090777362322459,0.0010518579963574356,attenuate,down
+ovalbumin,egg,Ex_biomass,Biomass exchange,Exchange reaction,,0.6741192619990234,0.0007090777362329157,0.0010518579963584291,attenuate,down
+ovalbumin,egg,growth,Growth,"Transport, Extracellular",,0.6741192619990233,0.0007090777362329157,0.0010518579963584294,attenuate,down
+ovalbumin,egg,BIOMASS_glyc,Biomass composition (g/g)- Glycerol,"Transport, Peroxisomal",,0.6741192619990233,0.0007090777362329157,0.0010518579963584294,attenuate,down
+ovalbumin,egg,DHAD1,"dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylbutanoate)",Pantothenate and CoA biosynthesis,PAS_chr1-4_0458,0.33174064140754483,0.8724870096577175,2.630027499663098,amplify,up
+ovalbumin,egg,ACLSm,"acetolactate synthase, mitochondrial","Valine, Leucine, and Isoleucine Metabolism",PAS_chr2-1_0864;PAS_chr4_0228,0.33174064140754483,0.8724870096577175,2.630027499663098,amplify,up
+ovalbumin,egg,KARA1im,"acetohydroxy acid isomeroreductase, mitochondrial","Valine, Leucine, and Isoleucine Metabolism",PAS_chr1-1_0432,0.3317406414075449,0.8724870096577175,2.6300274996630977,amplify,up
+ovalbumin,egg,ALATA_L,L-alanine transaminase,Alanine and Aspartate Metabolism,PAS_chr3_0482,-0.303889532042117,-0.7617100233743435,2.5065359055170604,amplify,down
+ovalbumin,egg,GLCS2,glycogen synthase (UDPGlc),Carbohydrate metabolism,PAS_chr3_0781;PAS_chr4_0847,0.42799434213953397,0.00045018927117520337,0.0010518579963574226,attenuate,down
+ovalbumin,egg,THRD_L,L-threonine deaminase,Threonine and Lysine Metabolism,PAS_chr1-4_0243;PAS_chr2-2_0408,0.0,0.3462054684181624,inf,amplify,up
+leghemoglobin_c2,heme,H2Otm,"H2O transport, mitochondrial","Transport, Mitochondrial",,-72.23425534039387,-41.73919142441978,0.577830992065048,attenuate,up
+leghemoglobin_c2,heme,PIt2m,"phosphate transporter, mitochondrial","Transport, Mitochondrial",PAS_chr1-4_0615,54.28287213082766,29.899287804328747,0.5508051919630964,attenuate,down
+leghemoglobin_c2,heme,ATPtm_H,"ADP/ATP transporter, mitochondrial","Transport, Mitochondrial",PAS_chr4_0210,54.44903643086367,30.067818566673026,0.5522194796753006,attenuate,down
+leghemoglobin_c2,heme,ATPS3m,"ATP synthase, mitochondrial",Oxidative Phosphorylation,PAS_chr1-1_0191;PAS_chr1-1_0315;PAS_chr1-1_0484;PAS_chr1-4_0445;PAS_chr1-4_0465;PAS_chr2-1_0612;PAS_chr2-1_0751;PAS_chr2-2_0119;PAS_chr2-2_0165;PAS_chr3_0059;PAS_chr3_0460;PAS_chr3_0576;PAS_chr3_0819;PAS_chr4_0892,53.60430654870357,30.39991610571928,0.5671170482934735,attenuate,down
+leghemoglobin_c2,heme,CYOR_u6m,ubiquinol-6 cytochrome c reductase,Oxidative Phosphorylation,PAS_chr1-1_0322;PAS_chr1-4_0313;PAS_chr2-1_0850;PAS_chr4_0018,21.865908439895275,12.041971672756258,0.5507190202436397,attenuate,down
+leghemoglobin_c2,heme,NADH2_u6mh,"NADH dehydrogenase, mitochondrial",Oxidative Phosphorylation,PAS_chr1-1_0124;PAS_chr1-1_0172;PAS_chr1-3_0117;PAS_chr1-3_0210;PAS_chr1-4_0039;PAS_chr1-4_0274;PAS_chr1-4_0371;PAS_chr1-4_0575;PAS_chr2-1_0359;PAS_chr2-1_0456;PAS_chr2-2_0035;PAS_chr2-2_0169;PAS_chr2-2_0235;PAS_chr2-2_0366;PAS_chr2-2_0462;PAS_chr3_0104;PAS_chr3_0585;PAS_chr3_0619;PAS_chr3_0808;PAS_chr3_0907;PAS_chr3_0911;PAS_chr3_1188;PAS_chr3_1199;PAS_chr4_0120;PAS_chr4_0142;PAS_chr4_0245;PAS_chr4_0283;PAS_chr4_0355;PAS_chr4_0535;PAS_chr4_0960,20.805443888860644,12.336958596584891,0.5929678146972952,attenuate,down
+leghemoglobin_c2,heme,MDHm,"malate dehydrogenase, mitochondrial",Citric Acid Cycle,PAS_chr2-1_0238,14.687949513997902,9.203152433619076,0.6265784359381337,attenuate,down
+leghemoglobin_c2,heme,ASPTA,aspartate transaminase,Alanine and Aspartate Metabolism,PAS_chr4_0974,11.898577074121006,6.914090466878593,0.5810854881056745,attenuate,down
+leghemoglobin_c2,heme,O2t,o2 transport (diffusion),"Transport, Extracellular",,11.071745254930683,6.094899210902713,0.5504912794293578,attenuate,down
+leghemoglobin_c2,heme,Ex_o2,Oxygen exchange,Exchange reaction,,-11.071745254930683,-6.094899210902713,0.5504912794293578,attenuate,up
+leghemoglobin_c2,heme,CYOOm,"cytochrome c oxidase, mitochondrial",Oxidative Phosphorylation,PAS_chr2-1_0115;PAS_chr2-1_0226;PAS_chr2-1_0344;PAS_chr2-1_0363;PAS_chr2-2_0092;PAS_chr2-2_0266;PAS_chr3_0428;PAS_chr3_0615;PAS_chr3_0745;PAS_chr3_0824;PAS_chr4_0018;PAS_chr4_0422;PAS_chr4_0449;PAS_chr4_0744,10.932954219947637,6.020985836378129,0.5507190202436397,attenuate,down
+leghemoglobin_c2,heme,O2tm,O2 transport (diffusion),"Transport, Mitochondrial",,10.932956916487909,6.076311378799055,0.5557793216614085,attenuate,down
+leghemoglobin_c2,heme,MTHFD2i,methylenetetrahydrofolate dehydrogenase (NAD),Folate Metabolism,PAS_chr1-3_0220,5.157699698583028,0.5964513364856633,0.11564289728801505,attenuate,down
+leghemoglobin_c2,heme,H2Ot,H2O transport via diffusion,"Transport, Extracellular",PAS_chr3_0763,-25.871079036692375,-30.402754934173682,1.17516377616311,amplify,down
+leghemoglobin_c2,heme,Ex_h2o,H2O exchange,Exchange reaction,,25.87107903669238,30.402754934173686,1.1751637761631097,amplify,up
+leghemoglobin_c2,heme,MTHFD,methylenetetrahydrofolate dehydrogenase (NADP),Folate Metabolism,PAS_chr1-3_0220,-5.198969745611997,-0.7236032246352424,0.13918204183549512,attenuate,up
+leghemoglobin_c2,heme,ASPGLU2m,Aspartate-glutamate transporter,"Transport, Mitochondrial",PAS_chr3_0434;PAS_chr4_0592,12.712075208841492,8.829600562722097,0.6945837259191907,attenuate,down
+leghemoglobin_c2,heme,ASPTAm,aspartate transaminase,Alanine and Aspartate Metabolism,PAS_chr1-1_0200,-12.71207520884149,-8.829600562722097,0.6945837259191908,attenuate,up
+leghemoglobin_c2,heme,Ex_co2,CO2 exchange,Exchange reaction,,6.398837895927901,2.644358371686486,0.41325603409476985,attenuate,down
+leghemoglobin_c2,heme,CO2t,CO2 transporter via diffusion,"Transport, Extracellular",,-6.398837895927901,-2.6443583716864865,0.4132560340947699,attenuate,up
+leghemoglobin_c2,heme,TYRt6,L-tyrosine transport in via proton antiport (vacuolar),"Transport, Vacuolar",PAS_chr3_0226;PAS_chr3_0519;PAS_chr3_1201,6.572793367581876,10.297464007843594,1.566680014410984,amplify,up
+leghemoglobin_c2,heme,TYRt7,"L-tyrosine transport out via proton symport, vacuolar","Transport, Vacuolar",PAS_chr2-2_0343;PAS_chr3_0295,6.572793367581876,10.297464007843594,1.566680014410984,amplify,up
+leghemoglobin_c2,heme,AKGMALtm,alpha-ketoglutarate/malate transporter,"Transport, Mitochondrial",PAS_chr3_0040,14.072125992757897,10.58497614158113,0.7521945260459294,attenuate,down
+leghemoglobin_c2,heme,GLUDyi,glutamate dehydrogenase (NADP),Glutamate metabolism,PAS_chr1-1_0107,3.2821432389718233,6.733121930285423,2.051440610615966,amplify,up
+leghemoglobin_c2,heme,ENO,enolase,Glycolysis/Gluconeogenesis,PAS_chr3_0082,5.954450030685019,8.672385760458432,1.4564545366519321,amplify,up
+leghemoglobin_c2,heme,PGM,phosphoglycerate mutase,Glycolysis/Gluconeogenesis,PAS_chr1-1_0427;PAS_chr2-2_0177;PAS_chr3_0693;PAS_chr3_0826,-5.954450030685019,-8.672385760458432,1.4564545366519321,amplify,down
+leghemoglobin_c2,heme,PGK,phosphoglycerate kinase,Glycolysis/Gluconeogenesis,PAS_chr1-4_0292,-6.436123812224895,-9.135631802557015,1.4194307115727984,amplify,down
+leghemoglobin_c2,heme,GAPD,glyceraldehyde-3-phosphate dehydrogenase,Glycolysis/Gluconeogenesis,PAS_chr2-1_0437,6.436123812224896,9.135631802557015,1.4194307115727982,amplify,up
+leghemoglobin_c2,heme,NH4t,ammonia reversible transport,"Transport, Extracellular",PAS_chr1-4_0394;PAS_chr2-2_0391,4.181786613729204,6.680347093110388,1.5974863641244084,amplify,up
+leghemoglobin_c2,heme,Ex_nh4,Ammonium exchange,Exchange reaction,,-4.181786613729204,-6.680347093110388,1.5974863641244084,amplify,down
+leghemoglobin_c2,heme,PItv,"Inorganic phosphate exchange, diffusion","Transport, Vacuolar",PAS_chr3_0495,4.3818622450545845,6.864976005229062,1.5666800144109838,amplify,up
+leghemoglobin_c2,heme,ATPS3v,"ATP synthase, vacuole",Oxidative Phosphorylation,PAS_c131_0021;PAS_chr1-1_0195;PAS_chr1-1_0309;PAS_chr1-3_0066;PAS_chr2-1_0246;PAS_chr2-1_0687;PAS_chr2-2_0227;PAS_chr3_0704;PAS_chr3_1040;PAS_chr3_1093;PAS_chr3_1236;PAS_chr4_0255;PAS_chr4_0674;PAS_chr4_0990,4.3818622450545845,6.864976005229062,1.5666800144109838,amplify,up
+leghemoglobin_c2,heme,PIt2r,phosphate reversible transport via symport,"Transport, Extracellular",PAS_chr2-1_0235;PAS_chr3_0495;PAS_chr4_0337,4.551453198554535,6.865154393606971,1.5083434002545009,amplify,up
+leghemoglobin_c2,heme,Ex_pi,Phosphate exchange,Exchange reaction,,-4.551453198554536,-6.8651543936069706,1.5083434002545004,amplify,down
+leghemoglobin_c2,heme,Ht,H+ diffusion,"Transport, Extracellular",,-4.551453872673888,-6.865154394316049,1.5083431770083846,amplify,down
+leghemoglobin_c2,heme,PYK,pyruvate kinase,Glycolysis/Gluconeogenesis,PAS_chr2-1_0769,5.625453737397488,7.639296297612392,1.35798757828672,amplify,up
+leghemoglobin_c2,heme,PC,pyruvate carboxylase,Pyruvate metabolism,PAS_chr2-2_0024,1.693369621890016,3.3913897468909044,2.0027463012509235,amplify,up
+leghemoglobin_c2,heme,TPI,triose-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr3_0951,8.293628263345811,9.72772472314344,1.1729154495790106,amplify,up
+leghemoglobin_c2,heme,SUCOASm,Succinate--CoA ligase (ADP-forming),Citric Acid Cycle,PAS_chr2-2_0407;PAS_chr3_0831,-0.9819118155861011,0.29506955012389846,0.30050514255984595,attenuate,up
+leghemoglobin_c2,heme,FUMm,"fumarase, mitochondrial",Citric Acid Cycle,PAS_chr3_0647,0.9819124900406953,-0.2949869245377108,0.30042078854245463,attenuate,down
+leghemoglobin_c2,heme,NDPK2,nucleoside-diphosphate kinase (ATP:UDP),Nucleotide Metabolism,PAS_chr2-2_0059,1.263217393522186,0.0013287248785401695,0.0010518576496443984,attenuate,down
+leghemoglobin_c2,heme,FBA,fructose-bisphosphate aldolase,Glycolysis/Gluconeogenesis,PAS_chr1-1_0072;PAS_chr1-1_0319,-1.4934102228598902,-0.27226331579526875,0.18230979782225057,attenuate,up
+leghemoglobin_c2,heme,FBP,fructose-bisphosphatase,Glycolysis/Gluconeogenesis,PAS_chr3_0868,1.4934102228598891,0.27226331579526875,0.1823097978222507,attenuate,down
+leghemoglobin_c2,heme,HCO3E,HCO3 equilibration reaction,Other,,2.2314980675413514,3.42883947446932,1.5365639452456217,amplify,up
+leghemoglobin_c2,heme,ASADi,"aspartate-semialdehyde dehydrogenase, irreversible",Alanine and Aspartate Metabolism,PAS_chr3_0471,0.17093262245773377,1.3615788118395336,7.96558779864393,amplify,up
+leghemoglobin_c2,heme,ASPKi,"aspartate kinase, irreversible",Alanine and Aspartate Metabolism,PAS_chr4_0150,0.1709326224577338,1.3615788118395336,7.965587798643929,amplify,up
+leghemoglobin_c2,heme,HSDxi,"homoserine dehydrogenase (NADH), irreversible",Glycine and Serine Metabolism,PAS_chr1-4_0049,0.17093262245773377,1.3615788118395336,7.96558779864393,amplify,up
+leghemoglobin_c2,heme,PGI,glucose-6-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr3_0456,-1.181828891444187,-0.0012431157600363272,0.0010518576496443982,attenuate,up
+leghemoglobin_c2,heme,GALU,UTP-glucose-1-phosphate uridylyltransferase,Galactose metabolism,PAS_chr1-3_0122,1.1749961488413667,0.0012359286874614993,0.001051857649644398,attenuate,down
+leghemoglobin_c2,heme,PGMT,phosphoglucomutase,Galactose metabolism,PAS_chr1-4_0264;PAS_chr2-1_0771,-1.1749961488413667,-0.0012359286874614993,0.001051857649644398,attenuate,up
+leghemoglobin_c2,heme,HSK,homoserine kinase,Glycine and Serine Metabolism,PAS_chr3_0899,0.1709319481523667,1.3246733589430648,7.749711936602202,amplify,up
+leghemoglobin_c2,heme,THRS,threonine synthase,Threonine and Lysine Metabolism,PAS_chr2-1_0269,0.1709319481523667,1.3246733589430648,7.749711936602202,amplify,up
+leghemoglobin_c2,heme,ADK4,adentylate kinase (ITP),Nucleotide Metabolism,PAS_chr3_0257,0.9269736829755678,1.9523942167290032,2.106202422556221,amplify,up
+leghemoglobin_c2,heme,NDPK9,nucleoside-diphosphate kinase (ATP:IDP),Nucleotide Metabolism,PAS_chr2-2_0059,0.9269736829755677,1.9523942167290027,2.1062024225562204,amplify,up
+leghemoglobin_c2,heme,AKGDam,oxoglutarate dehydrogenase (lipoamide),Citric Acid Cycle,PAS_chr1-3_0094;PAS_chr2-1_0089;PAS_chr2-2_0048,0.9819172088761682,0.0,0.0,attenuate,down
+leghemoglobin_c2,heme,AKGDbm,oxoglutarate dehydrogenase (dihydrolipoamide S-succinyltransferase),Citric Acid Cycle,PAS_chr1-3_0094;PAS_chr2-1_0089;PAS_chr2-2_0048,0.9819172088761682,0.0,0.0,attenuate,down
+leghemoglobin_c2,heme,SUCD3_u6m,"succinate dehydrogenase (ubiquinone-6), mitochondrial",Oxidative Phosphorylation,PAS_chr1-4_0487;PAS_chr2-2_0283;PAS_chr3_0424;PAS_chr3_1111;PAS_chr4_0733,0.9819124900406954,0.0,0.0,attenuate,down
+leghemoglobin_c2,heme,SUCD1m,succinate dehydrogenase,Oxidative Phosphorylation,PAS_chr3_0225,0.9819124900406951,0.0,0.0,attenuate,down
+leghemoglobin_c2,heme,PPItx,"Diphosphate transporter, peroxisome","Transport, Peroxisomal",,-1.0137221689535154e-12,0.9182413615347889,inf,amplify,up
+leghemoglobin_c2,heme,ATP2tp_H,"AMP/ATP transporter, peroxisomal","Transport, Peroxisomal",PAS_chr4_0122;PAS_chr4_0347,-1.0136886693055666e-12,0.9182413615347889,inf,amplify,up
+lactoferrin_bovine,dairy-whey,H2Otm,"H2O transport, mitochondrial","Transport, Mitochondrial",,-71.85331751174283,-43.060301437499305,0.5992806307163487,attenuate,up
+lactoferrin_bovine,dairy-whey,PIt2m,"phosphate transporter, mitochondrial","Transport, Mitochondrial",PAS_chr1-4_0615,54.28287073606202,30.72183237599048,0.5659581366904548,attenuate,down
+lactoferrin_bovine,dairy-whey,ATPtm_H,"ADP/ATP transporter, mitochondrial","Transport, Mitochondrial",PAS_chr4_0210,54.449035014455816,31.11643653174558,0.5714782001826919,attenuate,down
+lactoferrin_bovine,dairy-whey,ATPS3m,"ATP synthase, mitochondrial",Oxidative Phosphorylation,PAS_chr1-1_0191;PAS_chr1-1_0315;PAS_chr1-1_0484;PAS_chr1-4_0445;PAS_chr1-4_0465;PAS_chr2-1_0612;PAS_chr2-1_0751;PAS_chr2-2_0119;PAS_chr2-2_0165;PAS_chr3_0059;PAS_chr3_0460;PAS_chr3_0576;PAS_chr3_0819;PAS_chr4_0892,53.50351035945942,31.391862903258403,0.5867252950760514,attenuate,down
+lactoferrin_bovine,dairy-whey,CYOR_u6m,ubiquinol-6 cytochrome c reductase,Oxidative Phosphorylation,PAS_chr1-1_0322;PAS_chr1-4_0313;PAS_chr2-1_0850;PAS_chr4_0018,21.86590786193914,12.55677820955259,0.5742628336694644,attenuate,down
+lactoferrin_bovine,dairy-whey,NADH2_u6mh,"NADH dehydrogenase, mitochondrial",Oxidative Phosphorylation,PAS_chr1-1_0124;PAS_chr1-1_0172;PAS_chr1-3_0117;PAS_chr1-3_0210;PAS_chr1-4_0039;PAS_chr1-4_0274;PAS_chr1-4_0371;PAS_chr1-4_0575;PAS_chr2-1_0359;PAS_chr2-1_0456;PAS_chr2-2_0035;PAS_chr2-2_0169;PAS_chr2-2_0235;PAS_chr2-2_0366;PAS_chr2-2_0462;PAS_chr3_0104;PAS_chr3_0585;PAS_chr3_0619;PAS_chr3_0808;PAS_chr3_0907;PAS_chr3_0911;PAS_chr3_1188;PAS_chr3_1199;PAS_chr4_0120;PAS_chr4_0142;PAS_chr4_0245;PAS_chr4_0283;PAS_chr4_0355;PAS_chr4_0535;PAS_chr4_0960,20.704648566550695,12.556695588929513,0.6064674581927185,attenuate,down
+lactoferrin_bovine,dairy-whey,TPI,triose-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr3_0951,3.071226020015573,8.577934858125099,2.7930001902242294,amplify,up
+lactoferrin_bovine,dairy-whey,O2t,o2 transport (diffusion),"Transport, Extracellular",,11.071745285231835,6.1966944781458295,0.5596854261460799,attenuate,down
+lactoferrin_bovine,dairy-whey,Ex_o2,Oxygen exchange,Exchange reaction,,-11.071745285231835,-6.1966944781458295,0.5596854261460799,attenuate,up
+lactoferrin_bovine,dairy-whey,O2tm,O2 transport (diffusion),"Transport, Mitochondrial",,10.932956627446638,6.278389107612605,0.5742626922941435,attenuate,down
+lactoferrin_bovine,dairy-whey,CYOOm,"cytochrome c oxidase, mitochondrial",Oxidative Phosphorylation,PAS_chr2-1_0115;PAS_chr2-1_0226;PAS_chr2-1_0344;PAS_chr2-1_0363;PAS_chr2-2_0092;PAS_chr2-2_0266;PAS_chr3_0428;PAS_chr3_0615;PAS_chr3_0745;PAS_chr3_0824;PAS_chr4_0018;PAS_chr4_0422;PAS_chr4_0449;PAS_chr4_0744,10.932953930969571,6.278389104776295,0.5742628336694643,attenuate,down
+lactoferrin_bovine,dairy-whey,ATPtp_H,"ADP/ATP transporter, peroxisomal","Transport, Peroxisomal",PAS_chr4_0122;PAS_chr4_0347,4.7772652970783005,9.254294441667527,1.937153133891749,amplify,up
+lactoferrin_bovine,dairy-whey,DHAtx,Dihydroxyacetone peroxisomal transport,"Transport, Peroxisomal",,-4.7772652970783005,-9.254294441667527,1.937153133891749,amplify,down
+lactoferrin_bovine,dairy-whey,DHAKx,Dihydroxyacetone kinase,Methanol Metabolism,PAS_chr3_0841,4.7772652970783005,9.254294441667527,1.937153133891749,amplify,up
+lactoferrin_bovine,dairy-whey,GLYCDy,Glycerol dehydrogenase (NADP-dependent),Glycerolipid Metabolism,PAS_chr1-1_0360,4.7772652970783005,9.254294441667525,1.9371531338917487,amplify,up
+lactoferrin_bovine,dairy-whey,DHAPtx,Dihydroxyacetone phosphate transport from peroxisomes,"Transport, Peroxisomal",,4.7772652970783005,9.254294441667525,1.9371531338917487,amplify,up
+lactoferrin_bovine,dairy-whey,FRUK,fructose-1-phosphate kinase,Fructose and Mannose Metabolism,,5.222402011581142,0.7457052083884936,0.14278969844428405,attenuate,down
+lactoferrin_bovine,dairy-whey,FBA2,D-Fructose 1-phosphate D-glyceraldehyde-3-phosphate-lyase,Glycolysis/Gluconeogenesis,PAS_chr1-1_0072,-5.222402011581141,-0.7457052083884936,0.14278969844428407,attenuate,up
+lactoferrin_bovine,dairy-whey,ALCD19,alcohol dehydrogenase (glycerol),Glycerolipid Metabolism,,5.22240201158114,0.7457052083884937,0.1427896984442841,attenuate,down
+lactoferrin_bovine,dairy-whey,MDHm,"malate dehydrogenase, mitochondrial",Citric Acid Cycle,PAS_chr2-1_0238,14.385564550813463,10.069586328453788,0.6999785300664048,attenuate,down
+lactoferrin_bovine,dairy-whey,H2Ot,H2O transport via diffusion,"Transport, Extracellular",PAS_chr3_0763,-24.994708500211775,-29.233335728524015,1.169580982641839,amplify,down
+lactoferrin_bovine,dairy-whey,Ex_h2o,H2O exchange,Exchange reaction,,24.99470850021178,29.233335728524015,1.1695809826418389,amplify,up
+lactoferrin_bovine,dairy-whey,ASPTA,aspartate transaminase,Alanine and Aspartate Metabolism,PAS_chr4_0974,11.394601853140271,7.359034837769257,0.645835188681135,attenuate,down
+lactoferrin_bovine,dairy-whey,CO2t,CO2 transporter via diffusion,"Transport, Extracellular",,-6.398836873750209,-2.3874474814444313,0.3731064767783655,attenuate,up
+lactoferrin_bovine,dairy-whey,Ex_co2,CO2 exchange,Exchange reaction,,6.398836873750209,2.3874474814444313,0.3731064767783655,attenuate,down
+lactoferrin_bovine,dairy-whey,FBA,fructose-bisphosphate aldolase,Glycolysis/Gluconeogenesis,PAS_chr1-1_0072;PAS_chr1-1_0319,3.5274014105476605,0.06935723596343724,0.01966241657556884,attenuate,down
+lactoferrin_bovine,dairy-whey,GLUDyi,glutamate dehydrogenase (NADP),Glutamate metabolism,PAS_chr1-1_0107,3.2821444989527233,6.4748782002992415,1.9727584213203488,amplify,up
+lactoferrin_bovine,dairy-whey,MDH,malate dehydrogenase,Citric Acid Cycle,PAS_chr4_0815,-12.814599547556314,-9.719571651650755,0.7584764249230271,attenuate,up
+lactoferrin_bovine,dairy-whey,ASPTAm,aspartate transaminase,Alanine and Aspartate Metabolism,PAS_chr1-1_0200,-12.208100557218868,-9.269050432779682,0.7592541025801698,attenuate,up
+lactoferrin_bovine,dairy-whey,ASPGLU2m,Aspartate-glutamate transporter,"Transport, Mitochondrial",PAS_chr3_0434;PAS_chr4_0592,12.208100557218868,9.269050432779682,0.7592541025801698,attenuate,down
+lactoferrin_bovine,dairy-whey,NH4t,ammonia reversible transport,"Transport, Extracellular",PAS_chr1-4_0394;PAS_chr2-2_0391,4.181787419941055,7.1096520769086,1.7001466987551497,amplify,up
+lactoferrin_bovine,dairy-whey,Ex_nh4,Ammonium exchange,Exchange reaction,,-4.181787419941055,-7.109652076908599,1.7001466987551495,amplify,down
+lactoferrin_bovine,dairy-whey,AKGMALtm,alpha-ketoglutarate/malate transporter,"Transport, Mitochondrial",PAS_chr3_0040,13.56815099784996,11.078111233221994,0.8164790644633493,attenuate,down
+lactoferrin_bovine,dairy-whey,GAPD,glyceraldehyde-3-phosphate dehydrogenase,Glycolysis/Gluconeogenesis,PAS_chr2-1_0437,6.436123143230484,8.384239185720581,1.3026847061711562,amplify,up
+lactoferrin_bovine,dairy-whey,PGK,phosphoglycerate kinase,Glycolysis/Gluconeogenesis,PAS_chr1-4_0292,-6.436123143230484,-8.384239185720581,1.3026847061711562,amplify,down
+lactoferrin_bovine,dairy-whey,ENO,enolase,Glycolysis/Gluconeogenesis,PAS_chr3_0082,5.95444908621656,7.79445646688239,1.3090138741676545,amplify,up
+lactoferrin_bovine,dairy-whey,PGM,phosphoglycerate mutase,Glycolysis/Gluconeogenesis,PAS_chr1-1_0427;PAS_chr2-2_0177;PAS_chr3_0693;PAS_chr3_0826,-5.954449086216561,-7.794456466882389,1.3090138741676542,amplify,down
+lactoferrin_bovine,dairy-whey,Ex_h,H+ exchange,Exchange reaction,,4.381863699688648,6.023614358579124,1.3746694948560654,amplify,up
+lactoferrin_bovine,dairy-whey,Ht,H+ diffusion,"Transport, Extracellular",,-4.551455313205894,-6.023792746957929,1.32348717771217,amplify,down
+lactoferrin_bovine,dairy-whey,ADK1,adenylate kinase,Nucleotide Metabolism,PAS_chr3_0257,0.8092846717459156,2.110773739255152,2.6081968594579465,amplify,up
+lactoferrin_bovine,dairy-whey,PC,pyruvate carboxylase,Pyruvate metabolism,PAS_chr2-2_0024,1.693369238494784,2.9744755232629942,1.7565427879786988,amplify,up
+lactoferrin_bovine,dairy-whey,PYK,pyruvate kinase,Glycolysis/Gluconeogenesis,PAS_chr2-1_0769,5.6254528357886855,6.886423584295978,1.2241545321445229,amplify,up
+lactoferrin_bovine,dairy-whey,NDPK2,nucleoside-diphosphate kinase (ATP:UDP),Nucleotide Metabolism,PAS_chr2-2_0059,1.2652971668031907,0.07573147213287929,0.05985271612060668,attenuate,down
+lactoferrin_bovine,dairy-whey,G6PI3,Glucose-6-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr3_0456,-1.181828740778645,-0.001243115766508011,0.0010518577892165554,attenuate,up
+lactoferrin_bovine,dairy-whey,G6PI,Glucose-6-phosphate isomerase,Glycolysis/Gluconeogenesis,PAS_chr1-4_0042;PAS_chr3_0456,-1.181828740773498,-0.001243115766508011,0.0010518577892211364,attenuate,up
+lactoferrin_bovine,dairy-whey,GALU,UTP-glucose-1-phosphate uridylyltransferase,Galactose metabolism,PAS_chr1-3_0122,1.1749959990417498,0.0012359286938957669,0.0010518577892211633,attenuate,down
+lactoferrin_bovine,dairy-whey,PGMT,phosphoglucomutase,Galactose metabolism,PAS_chr1-4_0264;PAS_chr2-1_0771,-1.1749959990417498,-0.001235928693895767,0.0010518577892211633,attenuate,up
+lactoferrin_bovine,dairy-whey,SUCD3_u6m,"succinate dehydrogenase (ubiquinone-6), mitochondrial",Oxidative Phosphorylation,PAS_chr1-4_0487;PAS_chr2-2_0283;PAS_chr3_0424;PAS_chr3_1111;PAS_chr4_0733,1.1612586212691791,8.261991399702485e-05,7.114686813409982e-05,attenuate,down
+lactoferrin_bovine,dairy-whey,FUMm,"fumarase, mitochondrial",Citric Acid Cycle,PAS_chr3_0647,1.161258621269179,8.261991399702486e-05,7.114686813409984e-05,attenuate,down
+lactoferrin_bovine,dairy-whey,SUCD1m,succinate dehydrogenase,Oxidative Phosphorylation,PAS_chr3_0225,1.161258621269179,8.261991399702485e-05,7.114686813409983e-05,attenuate,down
+lactoferrin_bovine,dairy-whey,AKGDam,oxoglutarate dehydrogenase (lipoamide),Citric Acid Cycle,PAS_chr1-3_0094;PAS_chr2-1_0089;PAS_chr2-2_0048,1.0827119637562612,0.0,0.0,attenuate,down
+lactoferrin_bovine,dairy-whey,AKGDbm,oxoglutarate dehydrogenase (dihydrolipoamide S-succinyltransferase),Citric Acid Cycle,PAS_chr1-3_0094;PAS_chr2-1_0089;PAS_chr2-2_0048,1.082711963756261,0.0,0.0,attenuate,down
+lactoferrin_bovine,dairy-whey,HCO3E,HCO3 equilibration reaction,Other,,2.2314976155008712,3.250323627761452,1.4565660322392502,amplify,up
+lactoferrin_bovine,dairy-whey,FBP,fructose-bisphosphatase,Glycolysis/Gluconeogenesis,PAS_chr3_0868,1.6950006010334817,0.6763479724250563,0.3990252109720026,attenuate,down
+lactoferrin_bovine,dairy-whey,HSDxi,"homoserine dehydrogenase (NADH), irreversible",Glycine and Serine Metabolism,PAS_chr1-4_0049,0.17093260032271648,1.0760534402742583,6.295191427748108,amplify,up
+lactoferrin_bovine,dairy-whey,ASADi,"aspartate-semialdehyde dehydrogenase, irreversible",Alanine and Aspartate Metabolism,PAS_chr3_0471,0.17093260032271648,1.076053440274258,6.295191427748107,amplify,up
+lactoferrin_bovine,dairy-whey,ASPKi,"aspartate kinase, irreversible",Alanine and Aspartate Metabolism,PAS_chr4_0150,0.17093260032271648,1.076053440274258,6.295191427748107,amplify,up
+lactoferrin_bovine,dairy-whey,HSK,homoserine kinase,Glycine and Serine Metabolism,PAS_chr3_0899,0.17093192620344966,1.0462714566531655,6.120983246908793,amplify,up
+lactoferrin_bovine,dairy-whey,THRS,threonine synthase,Threonine and Lysine Metabolism,PAS_chr2-1_0269,0.17093192620344969,1.0462714566531655,6.120983246908792,amplify,up
+lactoferrin_bovine,dairy-whey,CITtam,"citrate transport, mitochondrial","Transport, Mitochondrial",PAS_chr1-4_0420;PAS_chr3_0177;PAS_chr3_0769,0.16449812514797363,1.008524899095587,6.130920326224828,amplify,up
