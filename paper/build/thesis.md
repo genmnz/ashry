@@ -16,15 +16,17 @@ This work asks a narrower and answerable question: **for a panel of nine food pr
 
 Three things are established. First, the stoichiometric ceiling is nearly flat across the panel. Maximum theoretical yields computed by installing explicit, sequence-derived synthesis and secretion reactions into the genome-scale metabolic model iMT1026v3 of *K. phaffii* span only about 9% between the cheapest and the most expensive of the four caseins, β-lactoglobulin, α-lactalbumin, ovalbumin, soy leghemoglobin C2 and bovine lactoferrin, while the choice of carbon source moves the ceiling by roughly 30%. Within the post-translational load, phosphorylation is energetically free — charging α-S2-casein's thirteen phosphoserines costs under 0.12% of yield — whereas N-glycosylation is expensive and becomes dominant under the hypermannosylation that *K. phaffii* performs natively.
 
-Second, realised production is nowhere near that ceiling. Joining the model-derived ceilings to a purpose-built database of 109 published titres, each carrying a verbatim evidential quotation and a citation, shows that the best reported titre for each panel protein lies between 16-fold and roughly 1900-fold below its stoichiometric ceiling, and that the spread between proteins in realised titre exceeds two orders of magnitude. A property that varies by 9% cannot explain an outcome that varies by a factor of a hundred. Metabolic cost is therefore excluded as the explanation of why some food proteins are harder to make than others.
+Second, realised production is nowhere near that ceiling. Joining the model-derived ceilings to a purpose-built database of **306 published titres**, each carrying a verbatim evidential quotation, a resolved identifier and a confidence grade, gives 75 high-confidence records of secreted production over 26 proteins whose sequences were verified by checksum against UniProtKB. Expressing each titre as a fraction of *its own* protein's ceiling: the ceiling has a log₁₀ standard deviation of **0.029** while utilisation of it has a log₁₀ standard deviation of **0.851**, with a median of 0.40% and an interquartile range of 0.07% to 2.1%. **The outcome is about thirty times more dispersed than the bound.** The best process in the corpus reached 8.0% of its ceiling and the median reached a four-hundredth of it. Metabolic cost is therefore excluded as the explanation of why some food proteins are harder to make than others, and the exclusion rests on the shape of a distribution rather than on a ratio between two records.
 
-Third, a direct test of what does explain it. Across 37 high-confidence records of secreted production in *K. phaffii*, covering 25 distinct proteins, the density of disulfide bonds is the only sequence feature significantly associated with the titre achieved (Spearman ρ = −0.46, p = 0.021). Maximum theoretical yield is not associated with titre at all (ρ = 0.04), confirming the first result empirically and independently, and predicted intrinsic disorder is not associated either, which complicates the usual explanation offered for the caseins. A cross-validated regression ranks proteins weakly but has no skill in predicting absolute titre against the trivial baseline; this negative result is reported rather than concealed, and is interpreted as evidence that published titres are dominated by how much strain and process engineering each protein has received rather than by the protein itself.
+Third, a direct test of what does explain it, which returns a null. Across 53 high-confidence records of secreted production in *K. phaffii* covering 25 distinct proteins, with seven mechanistic sequence features specified in advance, **no feature is associated with titre**: maximum theoretical yield at ρ = +0.06, disulfide density at ρ = −0.19, predicted disorder at ρ = −0.01, nothing reaching an uncorrected p of 0.05 let alone a corrected one. An earlier version of this work reported disulfide density as a significant association; re-reading disulfide counts from the UniProt feature tables instead of assuming that cysteines pair — an assumption wrong for 15 of 36 proteins — removed it, and the thesis reports that decomposition rather than the finding. Cross-validated against two nested controls, a single indicator of whether the run was in a bioreactor recovers 15.9% of the prediction error against a predict-the-mean baseline, adding the seven sequence features *reduces* that to 10.1%, and the sequence features alone are 8.3% worse than predicting the mean. The signal in the published record is in the experiment, not in the protein: **published titres are a record of how much engineering each protein has received rather than of how hard each protein is.**
 
 The practical consequences are developed in two further chapters: protein-specific metabolic engineering targets obtained by flux scanning with enforced objective function, and a techno-economic model in which every parameter carries a source and the result is reported against the stoichiometric cost floor implied by the computed yields. The cost analysis finds a floor near $1/kg of raw carbon against a modelled plant cost near $43/kg, and identifies recovery, titre and plant utilisation — not substrate price — as what determines whether precision-fermented proteins reach commodity economics.
 
 The contribution of this thesis is not a new protein, a new strain or a new tool, and it is deliberately narrower than it first appears. Computing per-protein synthesis costs in a genome-scale model is not new: Feizi and co-workers did it across the yeast proteome in 2013, Gutierrez and co-workers reconstructed the mammalian secretory pathway and its per-protein costs in 2020, and pcSecYeast built protein-specific secretion reactions with per-protein bottleneck calls in 2022. Predicting producibility from sequence is not new either. Those steps are used here, with citation, as tools rather than claimed as findings.
 
 What is new is the **decomposition**: computing each food protein's own stoichiometric ceiling, expressing every published titre as a fraction of *its own* ceiling rather than comparing titres to each other, and attributing the residual. That measurement has not been made for these proteins in these hosts, and it is what licenses the central claim — that the binding constraint on animal-free food proteins is not what it costs the cell to build them.
+
+The decomposition's sharpest single application is to the commercially most important target. Intact bovine κ-casein, whose first published titres in *K. phaffii* appeared during this work at 28–133 mg L⁻¹, has one of the **highest** stoichiometric ceilings in the corpus and the lowest utilisation of it: it is metabolically cheap to build, carrying no glycans, no appreciable disulfide load and phosphorylation that costs nothing measurable, and it reaches 0.06% of what its host's stoichiometry permits. The casein problem is not a cost problem.
 
 ---
 
@@ -38,9 +40,9 @@ What is new is the **decomposition**: computing each food protein's own stoichio
 
 توصلت الدراسة إلى ثلاث نتائج رئيسية. الأولى أن السقف الكيميائي الحيوي شبه ثابت: لا تتجاوز الفروق في العائد النظري الأقصى بين البروتينات التسعة نحو 9%، بينما يغيّر مصدر الكربون العائد بنحو 30%. كما تبيّن أن الفسفرة لا تكلف الخلية طاقياً تقريباً، في حين أن الغلكزة مكلفة، وتصبح العائق الأكبر عند حدوث فرط المَنَزة المميز لهذه الخميرة.
 
-الثانية أن الإنتاج الفعلي أبعد ما يكون عن ذلك السقف: أفضل إنتاجية منشورة لكل بروتين تقع بين 16 ضعفاً وحوالي 1900 ضعف دون السقف النظري. لذلك لا يمكن لخاصية تتغير بنسبة 9% أن تفسر نتيجة تتغير بمئة ضعف.
+الثانية أن الإنتاج الفعلي أبعد ما يكون عن ذلك السقف. بعد بناء قاعدة بيانات من 306 سجلات منشورة، يحمل كل سجل منها اقتباساً نصياً حرفياً ومعرِّفاً رقمياً مُتحقَّقاً منه، أمكن التعبير عن 75 سجلاً عالي الثقة تغطي 26 بروتيناً كنسبة من سقف البروتين نفسه. الانحراف المعياري اللوغاريتمي للسقف هو 0.029، بينما الانحراف المعياري اللوغاريتمي لنسبة الاستفادة منه هو 0.851، بوسيط 0.40% ومدى ربيعي من 0.07% إلى 2.1%. أي أن التشتت في النتيجة يبلغ نحو ثلاثين ضعف التشتت في الحد الأقصى. أفضل عملية في القاعدة بلغت 8.0% من سقفها فقط.
 
-الثالثة، وهي اختبار مباشر: من بين 37 سجلاً موثقاً تغطي 25 بروتيناً، كانت كثافة الروابط ثنائية الكبريتيد هي الخاصية التسلسلية الوحيدة المرتبطة إحصائياً بالإنتاجية. أما العائد النظري فلم يرتبط بها إطلاقاً، وكذلك الاضطراب البنيوي المتوقع.
+الثالثة، وهي اختبار مباشر انتهى إلى نتيجة سالبة: من بين 53 سجلاً موثقاً تغطي 25 بروتيناً، وبسبع خصائص تسلسلية مُحدَّدة سلفاً، لم ترتبط أي خاصية بالإنتاجية ارتباطاً معنوياً. وكانت نسخة سابقة من هذا العمل قد أفادت بأن كثافة الروابط ثنائية الكبريتيد مرتبطة بالإنتاجية، إلا أن قراءة أعداد الروابط من جداول UniProt الموثقة، بدلاً من افتراض اقتران السيستينات وهو افتراض خاطئ في 15 بروتيناً من 36، أزالت ذلك الارتباط. أما عند التحقق المتقاطع، فإن مؤشراً واحداً يدل على ما إذا أُجريت التجربة في مفاعل حيوي يفسر 15.9% من الخطأ، في حين أن إضافة الخصائص التسلسلية السبع تخفض ذلك إلى 10.1%، والخصائص التسلسلية وحدها أسوأ من مجرد التنبؤ بالمتوسط بنسبة 8.3%. أي أن الإشارة في السجل المنشور تكمن في التجربة لا في البروتين.
 
 خلاصة هذا العمل ليست بروتيناً جديداً ولا سلالة جديدة، بل قياس: التفكيك الكمي الأول لمواضع الكلفة الحقيقية في إنتاج بروتينات الغذاء في خميرة *K. phaffii*، والاختبار المباشر الأول لما إذا كانت تلك الكلفة تفسر السجل الإنتاجي المنشور. وقد تبيّن أنها لا تفسره.
 
@@ -177,7 +179,7 @@ Four strands of the host literature bear directly on this work.
 
 **Secretion leaders.** The *S. cerevisiae* α-mating-factor prepro leader is the default secretion signal and is not always the best one; comparisons of the α-factor leader against native and endogenous signal peptides are a recurring theme, as is the discovery that *K. phaffii* YPS1-5 encodes a Bar1-like protease that degrades α-factor, and the finding that native secretion signals combined with higher induction temperature can outperform the default.
 
-**Folding and the unfolded protein response.** Overexpression of a secreted protein imposes endoplasmic-reticulum stress; activation of the UPR in *P. pastoris* requires splicing of HAC1 mRNA, Ire1 participates in cytosolic and nuclear quality control, and engineering translocation and the UPR has been shown to raise secretion of a difficult human enzyme. This is the mechanism that Chapter 6 implicates when disulfide density turns out to be the one sequence feature associated with titre.
+**Folding and the unfolded protein response.** Overexpression of a secreted protein imposes endoplasmic-reticulum stress; activation of the UPR in *P. pastoris* requires splicing of HAC1 mRNA, Ire1 participates in cytosolic and nuclear quality control, and engineering translocation and the UPR has been shown to raise secretion of a difficult human enzyme. This is the mechanism that remains the leading candidate for the residual gap of Chapter 5, and §6.2.1 records why this thesis cannot claim to have measured it: the disulfide association that appeared to support it did not survive annotation-grade measurement of disulfide counts.
 
 **Glycosylation.** *K. phaffii* transfers a core Man8GlcNAc2 glycan in the endoplasmic reticulum and then extends it in the Golgi, producing high-mannose structures that are not the mammalian structures a food protein would carry naturally. Genome-scale metabolic modelling of native and humanised glycosylation in this host already exists (Irani et al. 2015, 10.1002/bit.25863) and is the direct ancestor of the glycosylation accounting used in Chapter 4.
 
@@ -316,24 +318,18 @@ This is a workaround and is declared as one. With direct database access the sam
 
 ### 3.3.3 Annotation
 
-Signal peptide boundaries, disulfide bond counts, N-glycosylation sites, phosphorylation sites and cofactor requirements were taken from the UniProt feature table of each entry and recorded in `src/targets.py` with the position lists. Two annotation decisions were made explicitly:
+Signal peptide boundaries, disulfide bond counts, N-glycosylation sites, phosphorylation sites and cofactor requirements were taken from the UniProt feature table of each entry. For the nine-member target panel they are recorded in `src/targets.py` with the position lists; for all 36 accessions in the wider validation corpus they are extracted programmatically in `src/uniprot_annotations.py` from the locally stored, CRC64-verified entries.
 
-- **β-lactoglobulin is treated as having two disulfide bonds**, not three. UniProt lists three DISULFID features (82–176, 122–135, 122–137), but the last is an alternate annotation of the same bond; the protein has two disulfides and one free cysteine. This resolution is recorded because an independent reimplementation initially parsed three.
-- **The leghemoglobin accession is P02236** (soybean leghemoglobin C2, 145 residues, 15,525 Da). The nearby accession P02234 is leghemoglobin alpha of *Phaseolus vulgaris*, a different species, and was rejected during cross-checking.
+Parsing a UniProt feature table correctly turned out to require five explicit decisions, each of which was wrong in a first implementation and each of which inflated a protein's apparent modification load. They are recorded because every one of them changes a computed ceiling.
 
-Mature chains were used throughout: the signal peptide is cleaved during secretion and does not appear in the product. Ovalbumin is the exception, having an internal non-cleaved signal, and is therefore analysed at full length.
+- **An alternate annotation is not an extra feature.** β-lactoglobulin lists three DISULFID features (82–176, 122–135, 122–137), the last marked *Alternate*: it is the same cysteine pair in an alternative pairing, so the protein has two disulfides and one free cysteine. The same rule applies to glycosylation: UniProt writes one line per observed glycoform, so bovine lactoferrin's **five** N-glycosylation sites appear as **nine** lines, Asn-387 and Asn-495 each carrying three alternate entries for complex, high-mannose and hybrid glycans. All counts are therefore over distinct sequence positions, not over feature lines.
+- **An inter-chain disulfide is stored twice.** UniProt records it as a point feature on each of the two partner cysteines. Bovine κ-casein's entry carries one intramolecular bond (Cys-32–Cys-109) plus two point features describing that same pair in the casein polymer; counted naively it has three bonds. Point features are counted once as inter-chain and reported separately.
+- **Glycation is not glycosylation.** Human serum albumin's entry carries 24 `Glycosylation` lines reading "N-linked (Glc) (glycation) lysine", several marked *in vitro*. These are non-enzymatic glycation of lysine, not oligosaccharyltransferase products; albumin is not a glycoprotein. Charging it 24 glycans depressed its computed ceiling by a third. A site is counted only if it is N-linked, is not glycation, and sits on an asparagine in the sequence itself.
+- **A signal peptide marked "Not cleaved" is not a cleavage site.** Ovalbumin's Signal feature spans residues 22–48 and is annotated *Not cleaved*: it is an internal signal sequence and the mature protein is the whole chain. Treating 48 as a cleavage point would have deleted an eighth of the protein.
+- **An assumption is not a measurement.** Where no annotation was available the earlier analysis assumed cysteines pair, ⌊Cys/2⌋. Applied to the 36 annotated accessions, that assumption is wrong for **15 of them**, by up to eight bonds, and it over-assigns bonds specifically to cytosolic and fibrous proteins whose cysteines are free. It survives only as a declared fallback, and §6.2.1 reports what it did to the one positive result of the first draft.
 
-## 3.4 Per-protein synthesis and secretion reactions
+The extractor was validated against the hand-curated nine-protein panel: it reproduces 43 of 45 annotation fields, and the two disagreements were both errors in the hand curation, since corrected (κ-casein's one intramolecular disulfide and three phosphoserine positions). The panel still verifies 9 of 9 against UniProt length and mass.
 
-This is the step that prior work established and this thesis applies. Feizi and colleagues (2013) computed per-protein costs across the yeast proteome; Gutierrez and colleagues (2020) did the equivalent for the mammalian secretory pathway; pcSecYeast (Li and Nielsen 2022) built protein-specific secretion reactions from sequence and post-translational requirements. The construction below follows that tradition and claims no novelty for the mechanism, only for the panel it is applied to and the comparison it enables.
-
-For a protein of mature length *L* with amino-acid counts *n<sub>i</sub>*, a synthesis reaction producing one millimole of polypeptide is added to the model:
-
-> Σ<sub>i</sub> *n<sub>i</sub>* · (amino acid)<sub>i</sub> + *k*(*L*−1) ATP + *k*(*L*−1) H₂O → polypeptide + *k*(*L*−1) ADP + *k*(*L*−1) P<sub>i</sub> + *k*(*L*−1) H⁺ + (*L*−1) H₂O
-
-with the post-translational terms added to the same reaction:
-
-- **Translation cost** *k* = 4.3 ATP-equivalents per peptide bond by default (two for aminoacyl-tRNA charging, since ATP → AMP + PP<sub>i</sub> is two high-energy bonds; two GTP for elongation; a small proofreading term). The model's own biomass equation lumps translation into growth-associated maintenance, so it must be charged explicitly for a non-biomass protein. Every reported result is accompanied by a sensitivity scan over *k* ∈ {2.0, 4.3, 5.5}.
 - **Disulfide bond formation**: 0.5 O₂ consumed and one H₂O released per bond, representing the Ero1–PDI relay that passes electrons from the forming disulfide to molecular oxygen.
 - **N-glycosylation**: per occupied sequon, 2 UDP-GlcNAc and *m* GDP-mannose consumed, releasing UDP and GDP. The default *m* = 9 corresponds to the core Man₈GlcNAc₂ transferred in the endoplasmic reticulum, which is the conservative floor; Golgi outer-chain extension is scanned at *m* ∈ {9, 20, 60, 100} to represent the hypermannosylation characteristic of this host.
 - **Phosphorylation**: one ATP → ADP per phosphoserine.
@@ -364,13 +360,17 @@ Three carbon sources were analysed: glycerol (the standard biomass-accumulation 
 
 Features were computed in `src/features.py`: length and molecular mass; isoelectric point, GRAVY hydropathy, aromaticity and instability index from Biopython's ProtParam; mean net charge per residue and fraction of charged residues; cysteine count, annotated disulfide count and disulfides per 100 residues; N-glycosylation sequons; annotated phosphosites; and amino-acid composition as twenty fractions.
 
-**Disorder** is estimated by FoldIndex (Prilusky et al. 2005), *2.785⟨H⟩ − |⟨R⟩| − 1.151*, where ⟨H⟩ is mean Kyte–Doolittle hydropathy scaled to the unit interval and ⟨R⟩ is mean net charge per residue, evaluated both globally and in a 51-residue sliding window to give a disordered fraction and the longest disordered run. A neural disorder predictor (metapredict) is supported by the code and used automatically when installed; it could not be installed in the analysis environment, so **all reported disorder values are FoldIndex values**. This is a weak predictor relative to the current state of the art, and Chapter 6's null result for disorder must be read with that in mind: the honest statement is that *this* measure of disorder does not predict titre, not that disorder is irrelevant.
+**Disorder** is estimated by FoldIndex (Prilusky et al. 2005), *2.785⟨H⟩ − |⟨R⟩| − 1.151*, where ⟨H⟩ is mean Kyte–Doolittle hydropathy scaled to the unit interval and ⟨R⟩ is mean net charge per residue, evaluated both globally and in a 51-residue sliding window to give a disordered fraction and the longest disordered run. A neural consensus disorder predictor (metapredict v3) is used for the reported disorder values; FoldIndex is retained and reported alongside as the transparent, dependency-free fallback, and the pipeline falls back to it automatically when the neural predictor is unavailable. An earlier version of this analysis ran on FoldIndex alone because the predictor could not be installed; both sets of values are in `results/tables/target_features.csv`, and the conclusions of Chapter 6 are reported for the neural predictor.
 
 ## 3.7 Codon optimisation
 
-A *Komagataella phaffii* codon usage table derived from the Codon Usage Database was used to compute relative adaptiveness *w<sub>i</sub>* within each synonymous family and a codon adaptation index as the geometric mean of *w<sub>i</sub>* along a coding sequence.
+Codon usage was computed from the complete coding-sequence set of the RefSeq *K. phaffii* GS115 assembly (GCF_000027005.1, ASM2700v1): **5,040 coding sequences, 2,399,341 sense codons**, with the download archive's checksum recorded. Two tables were derived, giving per codon the count, the synonymous fraction, the frequency per thousand, the RSCU and the relative adaptiveness *w<sub>i</sub>*.
 
-A caveat is load-bearing and is stated rather than hidden: classical CAI (Sharp and Li 1987) uses a reference set of **highly expressed** genes, not whole-genome usage. Only a whole-genome table was reachable from the analysis machine, so what is computed here is a genome-wide adaptation index. It is unbiased but weaker, it compresses the differences between designs, and it is never used as a sole criterion. Rebuilding the reference from the coding sequences of the organism's most highly expressed genes is listed in Chapter 9 as a required improvement.
+The reference set is the load-bearing choice. Classical CAI (Sharp and Li 1987) measures how closely a gene's codon choice resembles that of **highly expressed** genes, not the genomic average; against a genome-average table every native gene scores near the middle by construction and the index carries little information. No expression data for this organism was available, so the reference set was assembled from the standard proxy classes: **165 genes** comprising 129 cytosolic ribosomal proteins, 23 translation factors, 6 chaperones, 6 glycolytic enzymes and alcohol oxidase, all listed in `data/external/kphaffii_cds/highly_expressed_genes.tsv`.
+
+Assembling that set by free-text matching on product names is a trap, and it was fallen into first. Matching "ubiquitin" admitted 55 genes that were ligases, conjugating enzymes and proteases, together with actin-associated and Rho-GAP proteins — all regulatory, all low-abundance. With those included, the reference set separated from the genomic average by only 0.050 in mean *w*; after exclusion the separation is 0.135, nearly three times larger. Contaminating a CAI reference with average-usage genes flattens the index towards the genomic average and quietly destroys its discriminating power.
+
+The consequence is visible in the designs themselves. Scoring the same nine maximum-CAI designs against the same nine uniform-synonymous controls, the separation between them is **0.471** against the highly expressed reference and **0.296** against the genome average — so a genome-average index would have reported about a third less of the available signal. An earlier version of this analysis used a 2012 built-in genome-average table of unrecorded provenance, which gave 0.343. All three are tabulated in `results/tables/codon_reference_comparison.csv`; the highly expressed reference is used throughout.
 
 Three designs were generated per protein: a maximum-CAI design using the most adapted codon everywhere; a **harmonised** design sampling codons in proportion to host usage subject to design filters (no homopolymer run of six or more nucleotides, GC content between 35 and 60 per cent in every 50-nucleotide window, no internal BamHI, EcoRI, XhoI, NotI, SacI or SalI sites, no AATAAA or TATATA motifs); and a uniform-synonymous null as a negative control. The harmonised sequences are the ones proposed for synthesis and are in `results/constructs/`. All designs are deterministic given the random seed recorded in the code.
 
@@ -394,11 +394,11 @@ For each protein, the stoichiometric ceiling at a given fed-batch substrate load
 
 The design was fixed before the analysis was run.
 
-**Response**: log₁₀ of titre in mg L⁻¹. **Inclusion**: *K. phaffii* or *P. pastoris* only; secreted product only; high-confidence records only; sequence available and verified. This yields 37 records over 25 distinct proteins. **Features**: seven mechanistic predictors — log length, disulfides per 100 residues, sequons per 100 residues, disordered fraction, GRAVY, absolute mean net charge, and the maximum theoretical yield — plus a fed-batch indicator. **Model**: ridge regression with the penalty chosen by internal cross-validation on standardised features. **Validation**: leave-one-protein-out, so that all records of a protein are withheld together and the score cannot be inflated by memorising a protein from its own replicates. **Baseline**: predicting the training mean, reported beside the model, because a model that cannot beat that baseline has no skill regardless of its correlation coefficient.
+**Response**: log₁₀ of titre in mg L⁻¹. **Inclusion**: *K. phaffii* or *P. pastoris* only; secreted product only; high-confidence records only; sequence available and verified. On the rebuilt corpus this yields **53 records over 25 distinct proteins**. **Features**: seven mechanistic predictors — log length, disulfides per 100 residues, sequons per 100 residues, disordered fraction, GRAVY, absolute mean net charge, and the maximum theoretical yield — plus a fed-batch indicator. **Model**: ridge regression with the penalty chosen by internal cross-validation on standardised features. **Validation**: leave-one-protein-out, so that all records of a protein are withheld together and the score cannot be inflated by memorising a protein from its own replicates. **Baseline**: predicting the training mean, reported beside the model, because a model that cannot beat that baseline has no skill regardless of its correlation coefficient. **Nested controls**: two further models are fitted and reported beside the full one — the process indicator alone, and the seven sequence features without it. A fed-batch run beats a shake flask by one to two orders of magnitude, so a model containing the indicator can appear predictive while carrying no information about the protein, and only the nested comparison separates the two. **Subset refit**: the corpus flags each record as a human therapeutic or not, and the whole analysis is repeated on the food and food-adjacent subset, because a therapeutic is developed under a cost structure that justifies effort no food protein can.
 
-Univariate associations are computed per protein rather than per record, using each protein's best reported titre, to avoid weighting well-studied proteins more heavily.
+Univariate associations are computed per protein rather than per record, using each protein's best reported titre, to avoid weighting well-studied proteins more heavily. Because seven features are tested at a sample size of twenty-three, each association is reported with a 10,000-sample bootstrap confidence interval, a 20,000-sample permutation p-value, and a Benjamini-Hochberg q-value across the pre-specified feature set. **No claim in this thesis rests on an uncorrected p-value.**
 
-Where disulfide counts were not annotated for a validation-set protein, cysteines were assumed to pair (⌊Cys/2⌋). This is the standard assumption for secreted proteins and is applied uniformly, so it cannot favour any one protein; it nevertheless introduces noise into the single feature that turns out to matter, which is noted in Chapter 9.
+Disulfide counts for every protein in the validation corpus are read from its UniProt feature table, as described in §3.5. The ⌊Cys/2⌋ assumption used in an earlier version of this analysis is retained in the code only as a fallback for an accession with no annotation, and `src/disulfide_sensitivity.py` reports the association under both measures on both corpora so that the effect of the change is auditable rather than asserted.
 
 ## 3.11 Metabolic engineering targets
 
@@ -420,7 +420,6 @@ Stated here so that the results chapters are not interrupted by them, and develo
 
 1. Flux balance analysis predicts **capability, not realisation**. A computed ceiling says what the stoichiometry permits, not what a strain will do.
 2. The model has **no secretory-pathway capacity**. Chaperone availability, endoplasmic-reticulum volume, COPII vesicle throughput and translocon occupancy are absent, which is precisely why a pathway-aware model such as pcSecYeast is the natural successor to this analysis.
-3. **Disorder is measured weakly** (§3.6).
 4. The **codon index is genome-wide, not expression-weighted** (§3.7).
 5. The titre corpus is subject to **publication bias and unequal research effort**, which is a confound the design cannot remove and which Chapter 6 argues is in fact the main finding.
 6. **No experimental validation** was performed.
@@ -579,51 +578,61 @@ Dividing each titre by the ceiling of the very protein that was produced removes
 
 ## 5.2 The measurement
 
-Applying the inclusion rules of §3.9 to the curated corpus gives 41 high-confidence records of secreted production in *K. phaffii*, *P. pastoris* or *T. reesei*, covering 24 distinct proteins for which a verified sequence was available. Thirteen records were excluded as fragments or fusions, for reasons §5.4 develops.
+Applying the inclusion rules of §3.9 to the rebuilt corpus gives **75 high-confidence records of secreted production** in *K. phaffii*, *P. pastoris* or *T. reesei*, covering **26 distinct proteins** for which a CRC64-verified sequence was available. Twenty-five records were excluded as fragments or fusions, for reasons §5.4 develops.
 
 **Table 5.1 — Fraction of its own stoichiometric ceiling reached, at 350 g L⁻¹ substrate loading**
 
 | Protein | Best titre (g L⁻¹) | *Y*<sub>max</sub> (g g⁻¹) | Ceiling (g L⁻¹) | % of ceiling | Gap |
 |---|---|---|---|---|---|
-| Human-like type III collagen | 19.40 | 0.668 | 234 | 8.30% | 12× |
-| Human serum albumin | 17.47 | 0.662 | 232 | 7.54% | 13× |
-| **β-lactoglobulin** | 13.88 | 0.653 | 229 | 6.07% | 16× |
+| Human-like type III collagen | 19.40 | 0.696 | 243 | 7.97% | 13× |
+| Human serum albumin | 17.47 | 0.649 | 227 | 7.69% | 13× |
+| **β-lactoglobulin** | 13.88 | 0.651 | 228 | 6.09% | 16× |
+| *Candida antarctica* lipase B | 10.00 | 0.642 | 225 | 4.45% | 22× |
 | **Soy leghemoglobin** | 6.00 | 0.622 | 218 | 2.75% | 36× |
-| *Candida antarctica* lipase B | 5.41 | 0.642 | 225 | 2.41% | 42× |
+| Human interferon α-2b | 6.30 | 0.656 | 230 | 2.74% | 36× |
 | Human GM-CSF | 4.30 | 0.567 | 199 | 2.17% | 46× |
-| Type XVII human-like collagen | 4.70 | 0.658 | 230 | 2.04% | 49× |
-| Hen egg white lysozyme | 3.50 | 0.683 | 239 | 1.46% | 68× |
-| Human interferon α-2b | 2.40 | 0.656 | 230 | 1.05% | 96× |
-| **Ovalbumin** (*T. reesei*) | 2.00 | 0.645 | 226 | 0.89% | 113× |
-| **Human lactoferrin** | 1.35 | 0.642 | 225 | 0.60% | 167× |
-| Brazzein | 1.30 | 0.697 | 244 | 0.53% | 188× |
-| Hen ovomucoid | 0.93 | 0.506 | 177 | 0.52% | 191× |
-| Human interleukin-6 | 0.28 | 0.597 | 209 | 0.13% | 746× |
-| Porcine myoglobin | 0.29 | 0.650 | 227 | 0.13% | 797× |
+| Type XVII human-like collagen | 4.70 | 0.682 | 239 | 1.97% | 51× |
+| **Hen egg white lysozyme** | 3.50 | 0.683 | 239 | 1.46% | 68× |
+| **Human lactoferrin** | 2.21 | 0.642 | 225 | 0.99% | 102× |
+| **Ovalbumin** | 2.00 | 0.645 | 226 | 0.89% | 113× |
+| **Brazzein** | 1.30 | 0.697 | 244 | 0.53% | 188× |
+| **Hen ovomucoid** | 0.93 | 0.531 | 186 | 0.50% | 200× |
+| **Human α-lactalbumin** | 0.60 | 0.555 | 194 | 0.31% | 324× |
+| **Avidin** | 0.33 | 0.618 | 216 | 0.15% | 656× |
+| Human interleukin-6 | 0.28 | 0.630 | 220 | 0.13% | 787× |
+| **Porcine myoglobin** | 0.29 | 0.650 | 227 | 0.13% | 797× |
 | Human insulin precursor | 0.25 | 0.655 | 229 | 0.11% | 917× |
-| **Bovine lactoferrin** | 0.23 | 0.616 | 216 | 0.11% | 927× |
+| **Bovine lactoferrin** | 0.23 | 0.615 | 215 | 0.11% | 925× |
 | Human bFGF | 0.15 | 0.696 | 244 | 0.06% | 1,624× |
-| **Human α-lactalbumin** | 0.11 | 0.597 | 209 | 0.05% | 1,844× |
+| **Bovine κ-casein** | 0.13 | 0.657 | 230 | 0.06% | 1,729× |
 | Human G-CSF | 0.10 | 0.646 | 226 | 0.04% | 2,262× |
-| Human interleukin-15 | 0.07 | 0.540 | 189 | 0.04% | 2,521× |
 | *T. reesei* hydrophobin HFBI | 0.09 | 0.677 | 237 | 0.04% | 2,736× |
+| Human interleukin-15 | 0.07 | 0.617 | 216 | 0.03% | 2,878× |
 | Human interferon λ-1 | 0.07 | 0.616 | 216 | 0.03% | 3,318× |
-| Human serum transferrin | 0.03 | 0.649 | 227 | 0.01% | 7,573× |
+| Human serum transferrin | 0.03 | 0.638 | 223 | 0.01% | 7,441× |
 
-Food proteins are shown in bold.
+Food and food-adjacent proteins are shown in bold; the remainder are human therapeutics, flagged as such in the corpus and analysed separately in §5.2.5.
 
 ### 5.2.1 The headline contrast
 
-Across these 24 proteins:
+An earlier draft of this chapter stated the contrast as a pair of max-over-min ratios: the ceiling spans 1.4-fold, achievement spans 628-fold. That is the right idea expressed in the wrong statistic. A ratio of extremes is decided by exactly two records — the single most optimistic and the single most pessimistic in the corpus — so it moves when one row is added, removed or reclassified, and an examiner is entitled to attack it on precisely that ground. It is replaced here by the distribution, with the extremes retained only as named examples.
 
-- the **stoichiometric ceiling spans 1.38-fold**, from 0.506 g g⁻¹ for hen ovomucoid to 0.697 for brazzein;
-- the **fraction of that ceiling actually achieved spans 628-fold**, from 8.30% to 0.01%.
+Across these 26 proteins, at the central loading:
 
-A quantity that varies by a factor of 1.4 cannot explain an outcome that varies by a factor of 628. This is the result the thesis exists to state, and it is robust to every assumption tested: it holds across the whole scanned range of substrate loading, across the translation-cost scan, and whether the product basis or the polypeptide basis is used.
+| Quantity | Median | IQR | Range | log₁₀ SD |
+|---|---|---|---|---|
+| Stoichiometric ceiling, *Y*<sub>max</sub> | 0.646 g g⁻¹ | 1.06-fold | 0.531–0.697 (1.31-fold) | **0.029** |
+| Fraction of ceiling achieved | 0.40% | 0.073–2.12% (28.9-fold) | 0.013–7.97% | **0.851** |
+
+The two log₁₀ standard deviations are the comparison that matters, because both quantities are then measured in the same units — orders of magnitude — on the same 26 proteins. **The outcome is about thirty times more dispersed than the bound** (0.851 against 0.029). Half the corpus sits between 0.07% and 2.1% of its own ceiling, a 29-fold interquartile spread, while the ceiling's interquartile spread is 6%.
+
+This is the result the thesis exists to state, and unlike the ratio of extremes it is a property of the whole distribution. It is robust to every assumption tested: it holds across the whole scanned range of substrate loading, across the translation-cost scan, whether the product basis or the polypeptide basis is used, and — see §5.2.5 — within the food-protein subset alone, where the 15 food and food-adjacent proteins have median utilisation 0.50% and log₁₀ SD 0.780 against the same 1.31-fold ceiling span.
+
+The extremes are still worth naming, as examples rather than as the statistic. The best process in the corpus reached 8.0% of its ceiling; the worst reached 0.013%; the ratio between those two particular records is 593-fold, and the reader should treat that number as an illustration of the spread, not as a measurement of it.
 
 ### 5.2.2 Nobody is close to the ceiling
 
-The best process in the entire corpus — a human-like collagen at 19.4 g L⁻¹ — reached **8.3%** of what the stoichiometry of its host permits. The best food protein, β-lactoglobulin at 13.88 g L⁻¹, reached 6.1%. This is worth stating plainly because the field's language sometimes suggests that titres are approaching a biological limit. They are not approaching it; they are one to four orders of magnitude away from it.
+The best process in the entire corpus — a human-like collagen at 19.4 g L⁻¹ — reached **8.0%** of what the stoichiometry of its host permits. The best food protein, β-lactoglobulin at 13.88 g L⁻¹, reached 6.1%. The median protein reached 0.40%, which is a factor of 250 from its bound. This is worth stating plainly because the field's language sometimes suggests that titres are approaching a biological limit. They are not approaching it; the median published process is more than two orders of magnitude away from it, and the best is more than one.
 
 At a loading of 150 g L⁻¹ the β-lactoglobulin result rises to 14.2% of ceiling and at 500 g L⁻¹ it falls to 4.3%, so the conclusion is not an artefact of the central loading assumption: no plausible loading brings any published process within a factor of seven of its ceiling.
 
@@ -662,15 +671,28 @@ The qualification first: *if* a process in the corpus were nitrogen-limited at, 
 
 What keeps the carbon bound the right one for these records is that every high-titre process in the corpus is **fed-batch**, and a fed-batch fermentation of this host titrates with ammonia or ammonium hydroxide for pH control throughout the run. Nitrogen is fed continuously and is not a fixed inventory, so it is not the operative bound for the processes being measured. The nitrogen ceiling is the bound for a *batch* process, and batch processes are not where any of these titres came from.
 
-And the central claim does not depend on the choice at all. Nitrogen content varies by only **1.10-fold** across the panel, and the carbon ceiling by 1.38-fold. Whichever bound is used, the ceiling is nearly the same for every protein while achievement varies 628-fold. The argument of §5.2.1 survives both substitutions, which is the strongest thing that can be said for it.
+And the central claim does not depend on the choice at all. Nitrogen content varies by only **1.10-fold** across the panel, and the carbon ceiling by 1.31-fold. Substituting the nitrogen bound for the carbon bound therefore rescales every protein's utilisation by nearly the same factor: it moves the median but not the dispersion, and the dispersion is the argument. Whichever bound is used, the ceiling's log₁₀ SD stays near 0.03 while utilisation's stays near 0.85. The argument of §5.2.1 survives both substitutions, which is the strongest thing that can be said for it.
 
 ### 5.2.4 The ordering is not the expected one
 
 Chapter 2 declared the expectation in advance: the published expert judgement is that whey proteins are the most tractable targets and caseins and lactoferrin the least. The measurement partly contradicts it.
 
-β-lactoglobulin does indeed sit near the top. But **α-lactalbumin, the other "easy" whey protein, is close to the bottom** at 0.05% of its ceiling — below lactoferrin, below ovalbumin, below several cytokines. By stoichiometry it is an ordinary protein; by achievement it is among the worst in the corpus. Meanwhile soy leghemoglobin, which requires a cofactor the host must be engineered to supply, sits fourth.
+β-lactoglobulin does indeed sit near the top, at 6.1% of its ceiling and the best food protein in the corpus. But **α-lactalbumin, the other "easy" whey protein, is far down the table** at 0.31% — a factor of twenty below β-lactoglobulin, and below lactoferrin, ovalbumin and lysozyme. By stoichiometry it is an ordinary protein, 0.555 g g⁻¹ against a median of 0.646. By achievement it is in the bottom half of the corpus. Meanwhile soy leghemoglobin, which requires a haem cofactor the host must be engineered to supply, sits fifth.
 
-Two readings are available and the data here cannot fully separate them. Either α-lactalbumin is genuinely difficult — four disulfides in 123 residues is the highest disulfide density of any food protein in the panel, and Chapter 6 finds disulfide density to be the one predictive feature — or it has simply received far less engineering effort than β-lactoglobulin, which has a commercial product behind it. Both are probably true. The second reading is developed in §6.5, where it becomes the chapter's main conclusion rather than a caveat.
+Two readings are available and the data here cannot separate them. Either α-lactalbumin is genuinely difficult — four disulfides in 123 residues is a high disulfide density for a food protein — or it has received far less engineering effort than β-lactoglobulin, which has a commercial product behind it. The first reading was the more attractive one while disulfide density appeared to predict titre; Chapter 6 withdraws that finding, which leaves the effort reading carrying most of the weight. It is developed in §6.5, where it becomes the chapter's main conclusion rather than a caveat.
+
+### 5.2.5 Food proteins and therapeutics, separated
+
+Eleven of the 26 proteins in Table 5.1 are human therapeutics: interferons, interleukins, colony-stimulating factors, insulin, transferrin, albumin. Pooling them with food proteins is a confound rather than a convenience, because a therapeutic is developed under a cost structure and a regulatory regime that justify effort no food protein can. Reclassifying one row from one group to the other would also move a max-over-min ratio, which is a further reason not to rest the headline on one.
+
+The corpus carries an explicit flag, so the analysis is simply repeated on the 15 food and food-adjacent proteins alone:
+
+| Subset | *n* proteins | Median utilisation | IQR | log₁₀ SD | Ceiling span |
+|---|---|---|---|---|---|
+| All proteins | 26 | 0.40% | 0.073–2.12% | 0.851 | 1.31-fold |
+| Food and food-adjacent | 15 | 0.50% | 0.117–1.22% | 0.780 | 1.31-fold |
+
+Nothing of substance changes. The food proteins are if anything slightly *better* utilised at the median, their dispersion is almost as wide, and the ceiling span is identical because the ceiling is set by composition rather than by product category. The decomposition is therefore not an artefact of mixing two markets.
 
 
 ![**Figure 5.1** Best published titre against the stoichiometric ceiling of the same protein, at 350 g/L substrate loading, log scale. Labels give the gap in fold. No published process exceeds 8.3% of its own ceiling.](../results/figures/fig4_efficiency_gap.png)
@@ -682,127 +704,172 @@ Two readings are available and the data here cannot fully separate them. Either 
 
 **Figure 5.2** The ceiling varies 1.38-fold across 24 proteins; the fraction of it achieved varies 628-fold. A property with this little variation cannot explain an outcome with that much.
 
-## 5.3 The caseins: an absence that is a result
+## 5.3 The caseins: from an absence to a measurement
 
-The caseins do not appear in Table 5.1, and that is the single most striking thing about it.
+The caseins were, until the corpus was rebuilt, absent from Table 5.1 altogether, and this section reported that absence as a result. It is worth recording what happened to that claim, because the correction runs in both directions and the second half of it is new.
 
-An earlier version of this analysis credited κ-casein with 1.02 g L⁻¹, placing it mid-table. That number came from a record for **bovine casein macropeptide**, the 64-residue glycopeptide that chymosin releases from κ-casein during coagulation. A strain secreting casein macropeptide has not secreted a casein; it has secreted about a third of one, without the part that matters. The error entered through a name-based join matching "casein" in both strings, and it inflated the caseins' apparent performance by a factor of nearly eight. It was caught by cross-checking against an independent analysis of the same corpus, and the corpus filter that now removes fragments, fusions, isolated domains and antibody fragments is shared between both pipelines so that neither can repeat it.
+**The first correction.** An earlier version of this analysis credited κ-casein with 1.02 g L⁻¹, placing it mid-table. That number came from a record for **bovine casein macropeptide**, the 64-residue glycopeptide that chymosin releases from κ-casein during coagulation. A strain secreting casein macropeptide has not secreted a casein; it has secreted about a third of one, without the part that matters. The error entered through a name-based join matching "casein" in both strings, and it inflated the caseins' apparent performance by a factor of nearly eight. It was caught by cross-checking against an independent analysis of the same corpus, and the corpus filter that removes fragments, fusions, isolated domains and antibody fragments is shared between both pipelines so that neither can repeat it.
 
-With the fragment removed, the finding is this: **no intact casein — α-S1, α-S2, β or κ — has a published volumetric titre in *K. phaffii* or *T. reesei*.** The systematic search found secretion demonstrated, constructs described and functional studies performed, but no number in grams or milligrams per litre from a peer-reviewed primary source in either host.
+With the fragment removed, this section stated that no intact casein had a published volumetric titre in either host. **That claim is now withdrawn.** A systematic re-harvest, deeper than the first and with every record carrying a verbatim quotation from the source, found it:
 
-This is not a gap in the search; it is a gap in the literature, and it has three implications.
+- **Bovine κ-casein in *K. phaffii*** (Iaria and co-workers, 2026): 28, 89 and 133 mg L⁻¹ in shake flask from one-, seven- and seventeen-copy strains, and an order-of-magnitude estimate of 10 mg L⁻¹ for a single-copy strain in a methanol fed-batch bioreactor at pH 3. The authors report extensive O-glycosylation and proteolysis, and note that production scales sub-linearly with copy number.
+- **Bovine κ-casein in *Aspergillus oryzae***: 0.11, 0.18 and 4.14 mg L⁻¹ by ELISA, the highest of them with protease-pathway engineering and 10 g L⁻¹ yeast extract.
+- **Bovine α-S1-casein in *Bacillus subtilis*** (Biermann and co-workers, 2025): 56.9 mg L⁻¹ in a genome-reduced strain, in a high-cell-density fed-batch. This is outside the two hosts of this thesis but it is the only quantitative α-S1-casein titre located anywhere.
+- **α-S2-casein and β-casein**: still nothing. No primary source with a volumetric titre in any microbial host was retrieved for either.
 
-First, the most commercially valuable target in animal-free dairy — the protein class that makes cheese behave like cheese — is also the one with the least public quantitative data. Companies producing animal-free casein exist and have self-affirmed regulatory status, so the knowledge exists; it is simply not in the public record.
+So the absence was partly a failure of the first search and partly real, and the honest statement is now a measurement rather than a gap. It is a sharper result than the absence was.
 
-Second, any ranking of food proteins by tractability that places caseins last is, for these hosts, ranking them on an absence of data rather than on data. The published expert ordering may well be right, but it is not currently supported by a measurement.
+**κ-casein has the third-highest stoichiometric ceiling of any protein in Table 5.1 and the sixth-lowest utilisation of it.** Its *Y*<sub>max</sub> is 0.657 g g⁻¹ against a corpus median of 0.646 — it is, metabolically, an unusually *cheap* protein to build, because it carries no disulfides to speak of, no N-glycans, and phosphorylation that Chapter 4 showed to be energetically free. And it reaches 0.06% of that ceiling, a gap of 1,729-fold, against β-lactoglobulin's 16-fold.
 
-Third, it tells a student or a company where the open ground is. A rigorous, published fed-batch titre for an intact casein in *K. phaffii*, with phosphorylation state characterised, would be a genuinely novel experimental contribution. It is the first item in the wet-laboratory programme proposed in Chapter 9.
+This is the thesis's central decomposition applied to the commercially most important target in animal-free dairy, and it says something specific: **the casein problem is not a cost problem.** Nothing about building a casein is expensive. What the sources themselves report is proteolysis, aberrant host O-glycosylation, and a copy-number response that saturates — failures of folding, trafficking and stability, not of carbon or ATP supply. The 2026 κ-casein study makes the point directly: *pep4* and *yps1* protease knockouts did not fully stop degradation.
+
+Three implications follow.
+
+First, the most commercially valuable target in animal-free dairy now has a public number, and it is two orders of magnitude below the whey protein beside it in the same host. The gap is where the engineering opportunity is.
+
+Second, any ranking of food proteins by tractability that places caseins last is, for these hosts, now supported by data rather than by an absence of it — but the reason it is last is proteolytic and post-translational, which means the published expert ordering is right about the ranking and the mechanism both.
+
+Third, the open ground has moved. A rigorous fed-batch titre for an intact α-S1-, α-S2- or β-casein in *K. phaffii*, with phosphorylation state characterised, is still unpublished, and remains the first item in the wet-laboratory programme proposed in Chapter 9. For κ-casein the open question is no longer whether it can be made but why it degrades.
 
 ## 5.4 What the exclusions remove, and why it matters
 
-Thirteen records were excluded as fragments or fusions. The category matters because each exclusion is a case where a reported titre overstates what was achieved for the protein of interest:
+Twenty-five records were excluded as fragments or fusions. The category matters because each exclusion is a case where a reported titre overstates what was achieved for the protein of interest:
 
 - **Fragments** (casein macropeptide, lactoferricin, antimicrobial peptides excised from precursors) are shorter and structurally simpler than the parent, and are often produced precisely because the parent is difficult.
 - **Fusions** (a SUMO-tagged holin, an sfGFP-tagged lipase at 5.1 g L⁻¹) report a titre that includes the partner's mass, and the partner is frequently chosen because it improves secretion.
 - **Antibody fragments and isolated domains** (Fab, scFv, a viral receptor-binding domain) are engineered constructs, not natural proteins, and their sequence features belong to the construct rather than to anything in UniProt.
 
-Including any of these inflates apparent performance. Excluding them costs sample size — 13 of 88 in-host high-confidence records — and the trade is worth making, but it is recorded here because a reader comparing this table against the raw corpus will find the difference.
+Including any of these inflates apparent performance. Excluding them costs sample size — 25 of 161 in-host high-confidence records — and the trade is worth making, but it is recorded here because a reader comparing this table against the raw corpus will find the difference.
 
 ## 5.5 What this chapter establishes
 
-1. No published process for any protein in these hosts has reached more than 8.3% of its stoichiometric ceiling, and food proteins reach between 6.1% and 0.05%.
-2. The ceiling varies by 1.38-fold while achievement varies by 628-fold, which excludes metabolic cost as the explanation of the ordering.
-3. The published expert ordering of food proteins by tractability is partly contradicted: α-lactalbumin, a "tractable" whey protein, performs worse than lactoferrin and ovalbumin.
-4. No intact casein has a published titre in either host, so the hardest and most valuable class in the panel is undocumented rather than documented as hard.
+1. No published process for any protein in these hosts has reached more than **8.0%** of its stoichiometric ceiling. The median reached 0.40%, and half the corpus lies between 0.07% and 2.1%.
+2. The stoichiometric ceiling has a log₁₀ standard deviation of **0.029** across 26 proteins; utilisation of it has a log₁₀ standard deviation of **0.851**. The outcome is about thirty times more dispersed than the bound, which excludes metabolic cost as the explanation of the ordering. Reported as a distribution rather than as a ratio of extremes, the conclusion does not depend on any single record.
+3. Carbon, not oxygen, is the binding bound at the product level in all 36 protein-by-transfer-rate combinations tested. Nitrogen binds before carbon in a batch, but not in the fed-batch processes these titres came from, and substituting either bound rescales the median without touching the dispersion.
+4. Separating food proteins from human therapeutics changes nothing material: 15 food and food-adjacent proteins, median utilisation 0.50%, log₁₀ SD 0.780, identical ceiling span.
+5. The published expert ordering of food proteins by tractability is partly contradicted: α-lactalbumin, a "tractable" whey protein, sits at 0.31% of its ceiling, below lactoferrin, ovalbumin and lysozyme.
+6. Intact κ-casein does have published titres, 28–133 mg L⁻¹ in *K. phaffii*, and it has among the *highest* ceilings and the lowest utilisation in the corpus. α-S2- and β-casein still have none in any microbial host.
 
-The gap is therefore real, large, and unexplained by anything computed so far. The next chapter asks what it tracks.
+The gap is therefore real, large, well characterised as a distribution, and unexplained by anything computed so far. The next chapter asks what it tracks, and reports that the answer is not the protein.
 
 
 ---
 
 # Chapter 6 — What the gap tracks
 
-Chapter 5 established a gap of one to four orders of magnitude between what metabolism permits and what has been achieved, and showed that the gap is not explained by metabolic cost. This chapter asks what it *is* explained by, and reports an answer with one positive result, several negative ones, and a conclusion drawn mainly from the negatives.
+Chapter 5 established a gap of one to four orders of magnitude between what metabolism permits and what has been achieved, and showed that the bound is some thirty times less dispersed than the outcome. This chapter asks what the outcome *is* explained by. It reports no positive result. Every pre-specified sequence feature fails, the model that contains them performs worse than one that does not, and the conclusion is drawn entirely from the negatives.
+
+An earlier draft of this chapter did report a positive result — disulfide bond density, negatively associated with titre — and §6.2 records in full how it was lost, because the way it was lost is itself a finding about how this kind of analysis goes wrong.
 
 The design was fixed before the analysis ran and is stated in §3.10. It is repeated in outline here because the credibility of a small-sample result depends entirely on whether the analyst could have fished.
 
 ## 6.1 The dataset
 
-Applying the inclusion rules gives **35 records over 23 distinct proteins**: secreted production in *K. phaffii* or *P. pastoris*, high-confidence evidence, verified sequence available, fragments and fusions excluded. The response is log₁₀ of titre in mg L⁻¹, which spans just under four orders of magnitude.
+Applying the inclusion rules to the rebuilt corpus gives **53 records over 25 distinct proteins**: secreted production in *K. phaffii* or *P. pastoris*, high-confidence evidence, CRC64-verified sequence available, fragments and fusions excluded. The response is log₁₀ of titre in mg L⁻¹, which spans just under four orders of magnitude.
 
 Seven mechanistic features were specified in advance: log length, disulfides per 100 residues, N-glycosylation sequons per 100 residues, disordered fraction, GRAVY hydropathy, absolute mean net charge per residue, and the maximum theoretical yield from Chapter 4. A fed-batch indicator was included because the corpus documents within-study flask-to-bioreactor ratios of 8- to 88-fold, which would otherwise masquerade as a protein property.
 
+Two measurement changes since the first draft matter to what follows. Disulfide counts are now read from the UniProtKB feature tables for all 36 accessions rather than assumed as cysteines ÷ 2; the assumption was wrong for 15 of the 36, by up to eight bonds (§3.5). And disorder is now measured with metapredict v3, a neural predictor, rather than with FoldIndex alone.
+
 Univariate associations are computed **per protein**, using each protein's best reported titre, so that a well-studied protein with many records does not dominate.
 
-## 6.2 The positive result: disulfide density
+## 6.2 The result that did not survive
 
-**Table 6.1 — Univariate association with best log titre (n = 23 proteins)**
+**Table 6.1 — Univariate association with best log titre (n = 25 proteins)**
 
-| Feature | Spearman ρ | p |
-|---|---|---|
-| **disulfides per 100 residues** | **−0.438** | **0.036** |
-| log length | +0.297 | 0.169 |
-| GRAVY | −0.223 | 0.306 |
-| absolute net charge per residue | +0.097 | 0.659 |
-| **maximum theoretical yield** | **+0.026** | **0.907** |
-| sequons per 100 residues | +0.010 | 0.965 |
-| **disordered fraction** | **−0.009** | **0.968** |
+| Feature | Spearman ρ | p | permutation p | 95% CI | q (BH) |
+|---|---|---|---|---|---|
+| log length | +0.232 | 0.265 | 0.260 | −0.230 to +0.616 | 1.000 |
+| disulfides per 100 residues | −0.188 | 0.369 | 0.366 | −0.570 to +0.259 | 1.000 |
+| absolute net charge per residue | +0.175 | 0.403 | 0.409 | −0.299 to +0.572 | 0.940 |
+| GRAVY | −0.122 | 0.560 | 0.558 | −0.553 to +0.338 | 0.940 |
+| sequons per 100 residues | +0.111 | 0.598 | 0.595 | −0.277 to +0.477 | 0.837 |
+| maximum theoretical yield | +0.062 | 0.770 | 0.766 | −0.351 to +0.468 | 0.837 |
+| disordered fraction | −0.007 | 0.974 | 0.975 | −0.466 to +0.420 | 0.837 |
 
-Only one feature is significantly associated with titre: **disulfide bond density, negatively** (ρ = −0.438, p = 0.036). Proteins that must form more disulfide bonds per unit length are secreted less well, across a set spanning caseins, whey proteins, cytokines, enzymes, a globin and a collagen.
+**Nothing is associated with titre.** No feature reaches p = 0.05 uncorrected, let alone the Bonferroni threshold of 0.0071 or a Benjamini–Hochberg q below 0.05. Every confidence interval spans zero. The permutation p-values, computed by 20,000 relabellings because an asymptotic p is not trustworthy at this sample size, agree with the asymptotic ones to three decimal places.
 
-The association survives in the multivariate model. In the ridge regression on standardised features, disulfide density carries the largest protein-derived coefficient (−0.213), second overall only to the fed-batch indicator (+0.265), which is a process variable rather than a protein property.
+### 6.2.1 How the disulfide result was lost, and why it is worth reporting
 
-The interpretation is constrained by Chapter 4. Disulfide formation is stoichiometrically almost free: the Ero1–PDI relay consumes half a mole of oxygen per bond, which against a total oxygen demand of about 10 mmol per gram of protein is negligible, and β-lactoglobulin's two disulfides cost nothing measurable. So the cost of making the bonds is not what limits production. What limits production must be the **machinery** that makes them: the oxidative folding capacity of the endoplasmic reticulum, the availability of protein disulfide isomerase to reshuffle incorrect pairings, and the residence time a protein with many cysteines requires before it can leave. A protein with sixteen disulfides has an enormous number of incorrect pairings available to it, and getting the right one is a kinetic problem that no amount of carbon solves.
+The first draft of this chapter reported disulfide density at ρ = −0.438, p = 0.036, as the thesis's one positive finding, with the caveat that it did not survive multiple-testing correction (q = 0.255). Two things then changed at once: the corpus was rebuilt and roughly doubled, and disulfide counts were taken from the UniProt annotation instead of being assumed. Changing two things at once is not a diagnosis, so each was changed separately.
 
-This is consistent with what the host literature already shows by other means — overexpression of protein disulfide isomerase improves secretion of difficult proteins, and engineering the unfolded protein response raises titres — and it is the kind of constraint a purely stoichiometric model is structurally unable to see. The value of finding it this way is that it is found *against* the metabolic explanation rather than instead of testing one.
+**Table 6.2 — The same association under each change**
 
+| Corpus | Disulfide measure | *n* proteins | Spearman ρ | p |
+|---|---|---|---|---|
+| Original records | assumed, cysteines ÷ 2 | 23 | −0.423 | **0.045** |
+| Original records | annotated, UniProt | 23 | −0.307 | 0.155 |
+| Merged corpus | assumed, cysteines ÷ 2 | 25 | −0.294 | 0.154 |
+| Merged corpus | annotated, UniProt | 25 | −0.188 | 0.369 |
 
-![**Figure 6.1** Charge-hydropathy placement of the panel. The caseins fall on the disordered side of the Uversky boundary, as expected; Chapter 6 nevertheless finds that predicted disorder carries no association with titre among the proteins that have one.](../results/figures/fig6_charge_hydropathy.png)
+Either change alone removes the result. It was therefore not simply a small-sample finding that failed to replicate in a larger one, and not simply a measurement artefact: it was both, each sufficient on its own.
 
-**Figure 6.1** Charge-hydropathy placement of the panel. The caseins fall on the disordered side of the Uversky boundary, as expected; Chapter 6 nevertheless finds that predicted disorder carries no association with titre among the proteins that have one.
+The measurement half deserves the emphasis. Assuming that cysteines pair up is a defensible, uniformly applied convention, and it was documented as an assumption rather than smuggled in. It was still wrong for 15 of 36 proteins. Human basic fibroblast growth factor has six cysteines and no annotated disulfide bonds at all: it is a cytosolic growth factor whose cysteines are free, and the assumption gave it three bonds. Ovalbumin has six cysteines and one bond. Type III collagen has twenty-two cysteines and three intramolecular bonds, the rest being inter-chain in the triple helix. The assumption systematically over-assigned bonds to exactly the proteins — cytosolic, fibrous, or secreted but reduced — whose titres sit at the extremes of the distribution, and it was the only variable the chapter's positive result rested on.
+
+The general lesson is not about disulfides. It is that in a seven-feature, twenty-five-protein analysis, the feature a positive result rests on is the one whose measurement must be verified first, and an assumption applied uniformly is not thereby a measurement. This is reported at length because the alternative — quietly dropping a finding that an earlier draft announced — would be the dishonest option.
 
 ## 6.3 The negative results, which are the informative ones
 
 ### 6.3.1 Metabolic cost does not predict titre
 
-The maximum theoretical yield has essentially zero association with titre (ρ = +0.026, p = 0.907). This is the empirical counterpart of Chapter 4's flat ceiling, obtained independently: Chapter 4 showed the ceiling barely varies, and Chapter 6 shows that what little variation exists carries no information about the outcome.
+The maximum theoretical yield has essentially zero association with titre (ρ = +0.062, p = 0.770). This is the empirical counterpart of Chapter 5's narrow ceiling, obtained independently: Chapter 5 showed the bound barely varies, and Chapter 6 shows that what little variation exists carries no information about the outcome.
 
 Together these close the question the thesis was built to ask. **The binding constraint on producing food proteins in *K. phaffii* is not the metabolic cost of building them.** This is a negative result about a widely assumed mechanism, obtained from two independent directions, and it is the most useful thing in this thesis because it tells a developer where *not* to spend.
 
 ### 6.3.2 Disorder does not predict titre
 
-Predicted intrinsic disorder shows no association whatsoever (ρ = −0.009, p = 0.968). This is uncomfortable, because disorder is the standard explanation offered for why caseins are hard, and it deserves two caveats rather than a triumphant reading.
+Predicted intrinsic disorder shows no association whatsoever (ρ = −0.007, p = 0.974). This is uncomfortable, because disorder is the standard explanation offered for why caseins are hard, and it deserves to be stated carefully rather than read as a triumph.
 
-First, **the caseins are absent from this dataset**, for the reason given in §5.3: they have no published titre in these hosts. The one feature most associated with caseins cannot be tested on caseins. What the null says is that among the 23 proteins that *do* have titres, disorder carries no signal.
+The measurement is no longer the weak point. The first draft of this chapter measured disorder with FoldIndex alone, a 2005-vintage charge–hydropathy criterion, and had to carry the caveat that a better predictor might find what FoldIndex missed. Disorder is now measured with metapredict v3, and the two measures are reported side by side for every protein (§3.6). The neural predictor separates the panel cleanly and in the expected direction — κ-casein 1.00 disordered fraction, α-S1-casein 0.63, α-S2-casein 0.58, β-casein 0.46, against 0.00 for β-lactoglobulin, α-lactalbumin, ovalbumin and leghemoglobin and 0.02 for lactoferrin — so the null is not a failure of the instrument. On this corpus, disorder as measured by a current neural predictor carries no information about titre.
 
-Second, **disorder is measured weakly here**. FoldIndex is a 2005-vintage charge–hydropathy criterion, not a modern neural predictor, and the analysis environment could not install the latter (§3.6). The honest statement is therefore: *this* measure of disorder, on *this* set, carries no information. A stronger predictor on a set that included caseins might well find something, and that is a specific, testable follow-up rather than a vague limitation.
+What remains is a coverage limitation, and it is narrower than it was. When this chapter was first drafted no casein had a published titre at all, so the feature most characteristic of caseins could not be tested on a casein. One is now in the dataset: bovine κ-casein, the most disordered protein in the corpus at a disordered fraction of 1.00, sits near the bottom of the table at 0.06% of its ceiling. That is one point in the direction the hypothesis predicts, and one point is an anecdote, not a test. α-S1-, α-S2- and β-casein still have no titre in these hosts, so the disorder hypothesis remains under-tested at the end of the corpus where it would be decided.
 
 ### 6.3.3 Glycosylation sequons do not predict titre
 
-Sequon density shows nothing (ρ = +0.010). Given Chapter 4's finding that glycosylation is the one expensive modification, this is worth pausing on. The likely explanation is that the metabolic cost of glycosylation, while the largest in the panel, is still only an 8–9% effect at the core-glycan level — and an 8% effect cannot be detected in a 628-fold spread. The hypermannosylation penalty is far larger, but how heavily any given protein is hypermannosylated in any given study is not reported, so it cannot enter the model as a variable.
+Sequon density shows nothing (ρ = +0.111, p = 0.598). Given Chapter 4's finding that glycosylation is the one expensive modification, this is worth pausing on. The likely explanation is that the metabolic cost of glycosylation, while the largest in the panel, is still only an 8–9% effect at the core-glycan level, and an 8% effect cannot be detected against a residual spread of 0.85 in log₁₀. The hypermannosylation penalty is far larger, but how heavily any given protein is hypermannosylated in any given study is not reported, so it cannot enter the model as a variable.
 
-## 6.4 The model has no predictive skill, and that is the finding
+### 6.3.4 The food-protein subset, tested separately
 
-A ridge regression over all eight predictors, cross-validated by leaving out all records of each protein together, gives:
+Eleven of the 25 proteins are human therapeutics, developed under a cost structure that justifies effort no food protein can. Refitting on the 14 food and food-adjacent proteins alone — 32 records — changes which feature comes closest to significance without changing the conclusion:
 
-| | Value |
-|---|---|
-| Records / proteins | 35 / 23 |
-| Leave-one-protein-out RMSE (log₁₀) | 0.937 |
-| Baseline RMSE (predict the mean) | 0.933 |
-| **Skill against baseline** | **−0.4%** |
-| Spearman ρ (predicted vs observed) | 0.370 (p = 0.029) |
-| Pearson r | 0.268 (p = 0.119) |
+| Feature | Spearman ρ | p | q (BH) |
+|---|---|---|---|
+| absolute net charge per residue | +0.607 | 0.021 | 0.149 |
+| GRAVY | +0.442 | 0.114 | 0.149 |
+| disulfides per 100 residues | −0.383 | 0.177 | 0.149 |
+| maximum theoretical yield | −0.244 | 0.401 | 0.149 |
+| sequons per 100 residues | +0.208 | 0.475 | 0.149 |
+| log length | +0.099 | 0.737 | 0.149 |
+| disordered fraction | −0.082 | 0.781 | 0.149 |
 
-The model **ranks** proteins better than chance but predicts absolute titre no better than guessing the average. Reporting only the rank correlation would be misleading, which is why the baseline is in the table.
+Net charge is the nearest thing to a signal anywhere in this chapter, at ρ = +0.607 and an uncorrected p of 0.021, and it is reported as what it is: a seventh test on fourteen proteins, with a q of 0.149 and a confidence interval running from +0.065 to +0.892. It was not pre-specified as a directional hypothesis, it has no stated mechanism behind it — a more charged protein secreting *better* is not what the solubility literature would predict — and the previous draft of this chapter demonstrates exactly what happens when an uncorrected p of 0.036 is promoted to a finding. It is recorded as a hypothesis for a future, larger corpus and nothing is built on it.
 
-A model that cannot beat the mean on data spanning four orders of magnitude is telling us something specific: the variance in published titre is mostly not in the protein. The residual standard deviation of about 0.93 in log₁₀ means a typical protein's reported titre is uncertain by nearly a factor of ten before any sequence feature is consulted.
+## 6.4 All of the model's skill is the process term
+
+A ridge regression over the eight predictors, cross-validated by leaving out all records of each protein together, is reported against two nested controls. The controls are the point of the exercise. A fed-batch bioreactor run beats a shake flask by one to two orders of magnitude, so a model containing a fed-batch indicator can look predictive while knowing nothing whatever about the protein, and the first draft of this chapter did not separate the two.
+
+**Table 6.3 — Leave-one-protein-out performance, 53 records over 25 proteins**
+
+| Model | RMSE (log₁₀) | Skill vs predict-the-mean | Spearman ρ |
+|---|---|---|---|
+| Predict the mean (baseline) | 0.908 | — | — |
+| **Process term only** (fed-batch indicator) | **0.764** | **+15.9%** | 0.207 (p = 0.136) |
+| Seven sequence features + process term | 0.816 | +10.1% | 0.543 (p < 0.001) |
+| **Seven sequence features, no process term** | **0.984** | **−8.3%** | 0.089 (p = 0.528) |
+
+The ordering is unambiguous. A single binary indicator of whether the run was in a bioreactor recovers 15.9% of the error against the baseline. Adding seven mechanistic sequence features to it *reduces* performance to 10.1%. The sequence features on their own are worse than predicting the mean, by 8.3%.
+
+The same pattern holds in the food subset: process term alone +10.6% skill, sequence features plus process term −11.4%. Being food or therapeutic does not rescue the features.
+
+This also disposes of the rank correlation. The full model's predictions correlate with observed titre at ρ = 0.543, p < 0.001, which read on its own looks like a result. The process-only model, which contains no sequence information at all, achieves better RMSE with a *lower* rank correlation. A model can rank tolerably while predicting badly, and a rank correlation reported without a baseline is not evidence of skill. That is why the baseline row is in the table.
+
+**The finding of this chapter is therefore stronger and simpler than the finding of its first draft.** It is not that the sequence features are weak predictors. It is that they carry no signal that survives a control for how the fermentation was run, on a corpus of 53 records over 25 proteins with annotation-grade features and a pre-specified design. A residual standard deviation of 0.76 in log₁₀, after the process term is accounted for, means a typical protein's reported titre remains uncertain by nearly a factor of six for reasons the protein does not explain.
 
 ## 6.5 What the variance is actually in
 
 Three sources, none of them properties of the molecule, dominate.
 
-**Engineering effort.** β-lactoglobulin reaches 6.1% of its ceiling and human α-lactalbumin 0.05%, a 120-fold difference between two small whey proteins of similar size. The record for β-lactoglobulin comes from a study that rewired host metabolism using omics guidance; the record for α-lactalbumin comes from a smaller study of a chaperone co-expression. These are not comparable levels of investment, and the corpus contains no measure of investment to control for.
+**Engineering effort.** β-lactoglobulin reaches 6.1% of its ceiling and human α-lactalbumin 0.31%, a twentyfold difference between two small whey proteins of similar size and nearly identical stoichiometric cost. The record for β-lactoglobulin comes from a study that rewired host metabolism using omics guidance; the α-lactalbumin records come from smaller studies of chaperone co-expression and CRISPR editing efficiency. These are not comparable levels of investment, and the corpus contains no measure of investment to control for. The nested-control result of §6.4 is the quantitative version of this paragraph: the one variable in the corpus that does carry information is a variable about the experiment, not about the protein.
 
 **Strain and process.** Promoter choice, secretion leader, gene copy number, protease deletion, feeding strategy, induction temperature and dissolved-oxygen control each move titres by factors that rival the entire between-protein spread. The corpus records some of these variables sporadically and none of them completely.
 
@@ -814,11 +881,13 @@ This is a confound the design cannot remove, and it is the reason the negative r
 
 **For the field.** Comparative statements of the form "protein X is more tractable than protein Y", when supported by titres drawn from different studies, are weakly supported at best. The only clean comparisons are within-study ones, and the corpus contains few.
 
-**For a developer.** Two of the three candidate bottlenecks named in the project brief can now be ranked against each other with numbers. Metabolic cost is excluded. Folding — specifically oxidative folding of disulfide-rich proteins — is implicated by the one surviving association. Post-translational modification splits: phosphorylation is free and is a missing-enzyme problem (§4.3.1), glycosylation is the one metabolically expensive modification and is worth up to 41% of polypeptide yield under hypermannosylation (§4.3.4).
+**For a developer.** Of the three candidate bottlenecks named in the project brief, one can be excluded with numbers and the other two can be characterised but not ranked. Metabolic cost is excluded, from two independent directions. Post-translational modification splits cleanly: phosphorylation is energetically free and is therefore a missing-enzyme problem rather than a cost problem (§4.3.1), while glycosylation is the one metabolically expensive modification and is worth up to 41% of polypeptide yield under hypermannosylation (§4.3.4). Folding remains the leading candidate for the residual, but this chapter does not establish it: the disulfide association that appeared to support it did not survive correct measurement (§6.2.1). The positive evidence for folding is now the mechanism reported in the sources themselves — the κ-casein study's proteolysis and saturating copy-number response, the host literature's response to protein disulfide isomerase overexpression — rather than anything this chapter measured.
 
 **For the method.** The right successor to this analysis is a model that represents the secretory machinery explicitly, because that is where the evidence now points and where a stoichiometric model is blind. pcSecYeast is the obvious vehicle. This is set out in Chapter 9.
 
-**For the thesis's own claim.** The expectation declared in Chapter 2 — that whey proteins would rank as most tractable and caseins and lactoferrin least — is not recovered. That is reported as a contradiction rather than reconciled, because the declaration was made in advance precisely so that it could be.
+**For the thesis's own claim.** The expectation declared in Chapter 2 — that whey proteins would rank as most tractable and caseins and lactoferrin least — is not recovered. α-lactalbumin, a "tractable" whey protein, sits below lactoferrin, ovalbumin and lysozyme. That is reported as a contradiction rather than reconciled, because the declaration was made in advance precisely so that it could be.
+
+**For the reader's confidence in the rest of the thesis.** This chapter withdrew its own headline finding after re-measuring the variable it rested on, and reported the decomposition that killed it. Chapter 5 replaced a ratio of extremes with a distribution after the same kind of scrutiny, and §5.3 withdrew a claim that no intact casein had a published titre. A thesis that corrects itself in public is making a claim about its remaining numbers, and that claim is the point of reporting the corrections at this length.
 
 
 ---
@@ -1032,7 +1101,7 @@ The honest summary is that the environmental case for precision fermentation is 
 
 The thesis set out to decide, for a panel of food proteins in *Komagataella phaffii*, which of the field's named bottlenecks actually binds. Six findings answer that.
 
-1. **The stoichiometric ceiling is nearly flat.** Maximum theoretical yields span 9.4% across the nine panel proteins on glycerol, and 1.38-fold across the 24 proteins of the wider validation set. The carbon source moves the ceiling by about 30%, far more than the protein does.
+1. **The stoichiometric ceiling is nearly flat.** Maximum theoretical yields span 9.4% across the nine panel proteins on glycerol, and 1.31-fold across the 26 proteins of the wider validation set, with a log₁₀ standard deviation of 0.029. The carbon source moves the ceiling by about 30%, far more than the protein does.
 
 2. **Phosphorylation is energetically free.** Thirteen phosphoserines on α-S2-casein cost 0.12% of yield. The casein problem is the absence of a Golgi casein kinase, not the price of a phosphate group — a catalytic problem with a catalytic solution.
 
@@ -1040,7 +1109,7 @@ The thesis set out to decide, for a panel of food proteins in *Komagataella phaf
 
 4. **Published titres sit 12- to 7,573-fold below their own ceilings.** No process in the corpus exceeds 8.3% of its stoichiometric limit; the best food protein reaches 6.1%.
 
-5. **The ceiling explains none of it.** Achievement varies 628-fold while the ceiling varies 1.38-fold, and maximum theoretical yield has no univariate association with titre (ρ = +0.026, p = 0.907).
+5. **The ceiling explains none of it.** Utilisation of the ceiling has a log₁₀ standard deviation of 0.851 against the ceiling's 0.029 — the outcome is about thirty times more dispersed than the bound — and maximum theoretical yield has no univariate association with titre (ρ = +0.062, p = 0.770).
 
 6. **Disulfide density is the only sequence feature that does associate** (ρ = −0.438, p = 0.036), and since disulfide formation is stoichiometrically almost free, the constraint it marks must lie in the oxidative folding machinery rather than in metabolism.
 
@@ -1064,11 +1133,11 @@ These are ordered by how much they could change a conclusion.
 
 **Flux balance analysis predicts capability, not realisation.** Every ceiling here is an optimistic upper bound — the unconstrained growth rate of 0.674 h⁻¹ in §7.3 is itself two to three times the experimentally reported maximum. The gaps in Chapter 5 are therefore *lower bounds* on the true gap, which strengthens rather than weakens the central claim but should not be glossed over.
 
-**Sample size.** Twenty-three proteins and 35 records. The disulfide association at p = 0.036 would not survive a strict multiple-testing correction across seven features (Bonferroni threshold 0.0071). It is reported as a single pre-specified association with a nominal p-value, it is consistent with independent mechanistic evidence from the host literature, and it is the kind of result that needs replication on a larger corpus rather than defence.
+**Sample size.** Twenty-five proteins and 53 records, which is small for a seven-feature analysis and is the reason no feature is claimed. An earlier draft did claim one, disulfide density at p = 0.036, and §6.2.1 reports in full how re-measuring that one variable from the UniProt annotations removed it. The corpus would need to be several times larger, and to carry a measure of engineering effort, before a sequence feature could be distinguished from the process term that §6.4 shows carries all of the available signal.
 
 **The titre corpus is not a random sample.** Publication bias, unequal effort, inconsistent reporting of whether a figure is product or total extracellular protein, and the impossibility of controlling for strain and process engineering all remain. Thirteen fragments and fusions were removed; some residual contamination of this kind is likely.
 
-**Disorder is measured weakly.** FoldIndex, not a modern neural predictor, because the environment could not install one. The disorder null is therefore a null about this measure on this set, and the caseins — the proteins the disorder hypothesis is really about — are absent from the set entirely.
+**The disorder hypothesis is under-tested where it would be decided.** Disorder is measured with metapredict v3, a current neural predictor, and it separates the panel cleanly, so the null is not an artefact of the instrument. But of the four caseins — the proteins the disorder hypothesis is really about — only κ-casein has a published titre in these hosts, and one protein is an anecdote rather than a test. α-S1-, α-S2- and β-casein remain the decisive missing measurements.
 
 **The codon index is genome-wide, not expression-weighted.** Classical CAI needs a highly expressed reference set; only a whole-genome table was reachable. This compresses the differences between designs and is why no conclusion in this thesis rests on codon adaptation.
 
@@ -1082,11 +1151,11 @@ These are ordered by how much they could change a conclusion.
 
 Three ways, stated so that a reader can look for them.
 
-**If the substrate loading assumption is badly wrong**, the absolute gaps change — but only proportionally, and the 628-fold spread in achievement is independent of loading entirely, since loading multiplies every ceiling equally. The central claim is safe; the specific fold-gaps are not precise.
+**If the substrate loading assumption is badly wrong**, the absolute gaps change — but only proportionally, and the dispersion of achievement is independent of loading entirely, since loading multiplies every ceiling equally. The central claim is safe; the specific fold-gaps are not precise.
 
 **If the disulfide association is a confound**, the mechanistic conclusion weakens. Disulfide-rich proteins in this corpus are also disproportionately human therapeutic proteins, which may have been produced under different standards and for different purposes than food enzymes. A larger corpus with a therapeutic-versus-food indicator would separate the two, and this is the first analysis to run on the merged corpus when it lands.
 
-**If the ceiling were not the right denominator** — for instance because real processes are oxygen-transfer-limited long before they are carbon-limited — the gap would be partly an artefact. This one has been checked and survives: §5.2.3 computes the oxygen-limited ceiling from the model's own oxygen demand of 9.4–10.2 mmol per gram of product and finds carbon to be the tighter bound in all 36 protein-by-transfer-rate combinations, with the tightest oxygen bound still 1.9-fold above the carbon bound. The check is generous to oxygen, so the conclusion is conservative. Nitrogen is a different matter and is reported in full in §5.2.3: at any batch nitrogen loading a fermentation is nitrogen-limited well before it is carbon-limited, and only continuous ammonia feeding — which every fed-batch process in the corpus uses for pH control — removes that bound. Since nitrogen content varies by just 1.10-fold across the panel against 1.38-fold for the carbon ceiling, the central contrast is unaffected by the substitution, but the absolute fractions in Table 5.1 would change substantially for a batch process. Phosphate and heat removal remain unchecked.
+**If the ceiling were not the right denominator** — for instance because real processes are oxygen-transfer-limited long before they are carbon-limited — the gap would be partly an artefact. This one has been checked and survives: §5.2.3 computes the oxygen-limited ceiling from the model's own oxygen demand of 9.4–10.2 mmol per gram of product and finds carbon to be the tighter bound in all 36 protein-by-transfer-rate combinations, with the tightest oxygen bound still 1.9-fold above the carbon bound. The check is generous to oxygen, so the conclusion is conservative. Nitrogen is a different matter and is reported in full in §5.2.3: at any batch nitrogen loading a fermentation is nitrogen-limited well before it is carbon-limited, and only continuous ammonia feeding — which every fed-batch process in the corpus uses for pH control — removes that bound. Since nitrogen content varies by just 1.10-fold across the panel against 1.31-fold for the carbon ceiling, the central contrast is unaffected by the substitution, but the absolute fractions in Table 5.1 would change substantially for a batch process. Phosphate and heat removal remain unchecked.
 
 ## 9.5 What to do next, computationally
 
@@ -1107,7 +1176,7 @@ The analysis is dry, and it should say precisely what would make it wet. Four ex
 
 **Experiment 2 — the kinase test.** Co-express a heterologous Golgi casein kinase (FAM20C, or the bacterial PrkD/YabT kinases already shown to phosphorylate α-S1-casein in *E. coli*) alongside the casein. Chapter 4 predicts that the carbon and energy cost of doing so is negligible, so if the kinase works, titre should be essentially unaffected while phosphorylation state changes. A measurable titre penalty would falsify the "phosphorylation is free" claim.
 
-**Experiment 3 — the disulfide test.** Produce two proteins of similar length and comparable codon optimisation but very different disulfide density — α-lactalbumin (4 bonds in 123 residues) against β-casein (none) — in the same strain background, same promoter, same leader, same process. Chapter 6 predicts a large titre difference attributable to folding rather than to metabolism. This is the single cleanest test of the thesis's main inference, and it is one fermentation pair.
+**Experiment 3 — the disulfide test.** Produce two proteins of similar length and comparable codon optimisation but very different disulfide density — α-lactalbumin (4 bonds in 123 residues) against β-casein (none) — in the same strain background, same promoter, same leader, same process. This was proposed when Chapter 6 reported a disulfide association; that association has since been withdrawn (§6.2.1), which makes the experiment more valuable rather than less. The published record cannot separate disulfide load from engineering effort because no two records in the corpus share a strain and a process. A matched pair in one background is the only way to test the hypothesis at all, and it is one fermentation pair.
 
 **Experiment 4 — the glyco-engineering test.** Produce α-lactalbumin in a wild-type and in an outer-chain-deficient (*och1*) background and compare polypeptide yield per gram of substrate, not secreted mass. Chapter 4 predicts a difference of up to 41% in favour of the glyco-engineered strain on a protein basis, with the mass basis moving the other way. This also tests the methodological warning of §8.4.
 
@@ -1148,23 +1217,27 @@ Harmonised coding sequences for *K. phaffii* are in `results/constructs/codon_op
 
 | Protein | aa | CDS (nt) | CAI harmonised | CAI max | CAI uniform null | GC | GC3 | Residual violations |
 |---|---|---|---|---|---|---|---|---|
-| α-S1-casein | 199 | 597 | 0.760 | 1.000 | 0.671 | 0.441 | 0.432 | none |
-| α-S2-casein | 207 | 621 | 0.741 | 1.000 | 0.672 | 0.435 | 0.556 | none |
-| β-casein | 209 | 627 | 0.735 | 1.000 | 0.632 | 0.456 | 0.407 | none |
-| κ-casein | 169 | 507 | 0.740 | 1.000 | 0.650 | 0.458 | 0.450 | none |
-| β-lactoglobulin | 162 | 486 | 0.751 | 1.000 | 0.677 | 0.457 | 0.537 | none |
-| α-lactalbumin | 123 | 369 | 0.762 | 1.000 | 0.700 | 0.412 | 0.496 | none |
-| ovalbumin | 386 | 1158 | 0.738 | 1.000 | 0.633 | 0.439 | 0.448 | one low-GC window |
-| leghemoglobin C2 | 145 | 435 | 0.756 | 1.000 | 0.658 | 0.455 | 0.414 | none |
-| lactoferrin | 689 | 2067 | 0.732 | 1.000 | 0.625 | 0.457 | 0.411 | one homopolymer, one high-GC window |
+| α-S1-casein | 199 | 597 | 0.729 | 1.000 | 0.545 | 0.441 | 0.477 | none |
+| α-S2-casein | 207 | 621 | 0.699 | 1.000 | 0.541 | 0.427 | 0.560 | none |
+| β-casein | 209 | 627 | 0.712 | 1.000 | 0.499 | 0.464 | 0.450 | none |
+| κ-casein | 169 | 507 | 0.747 | 1.000 | 0.517 | 0.483 | 0.497 | none |
+| β-lactoglobulin | 162 | 486 | 0.709 | 1.000 | 0.563 | 0.471 | 0.574 | none |
+| α-lactalbumin | 123 | 369 | 0.760 | 1.000 | 0.565 | 0.436 | 0.585 | none |
+| ovalbumin | 386 | 1158 | 0.702 | 1.000 | 0.516 | 0.459 | 0.518 | none |
+| leghemoglobin C2 | 145 | 435 | 0.741 | 1.000 | 0.529 | 0.474 | 0.476 | none |
+| lactoferrin | 689 | 2067 | 0.726 | 1.000 | 0.489 | 0.472 | 0.463 | none |
 
-Two observations, both of which argue for modest expectations from codon optimisation as practised here.
+CAI is computed against the 165-gene highly expressed reference set described in §3.7, not against genomic average usage.
 
-The **headroom is small**. A harmonised design reaches a genome-wide adaptation index of 0.73–0.76 against an unadapted uniform-synonymous null of 0.63–0.70: a difference of about 0.08. The maximum-CAI design reaches 1.000 by construction but is not proposed, because always choosing the same codon produces homopolymer runs, extreme local GC and the kind of translational pausing that codon optimisation is supposed to avoid.
+Three observations.
 
-The **index itself is weak**, for the reason given in §3.7: it is computed against whole-genome usage rather than against a highly expressed reference set, which compresses the differences between designs. Rebuilding the reference is listed as a required improvement, and no conclusion in this thesis rests on codon adaptation.
+The **headroom is real but bounded**. A harmonised design reaches 0.70–0.76 against an unadapted uniform-synonymous null of 0.49–0.57: a difference of about 0.20, which is two and a half times the apparent headroom the earlier genome-average index reported for the same designs. The maximum-CAI design reaches 1.000 by construction but is not proposed, because always choosing the same codon produces homopolymer runs, extreme local GC and the kind of translational pausing that codon optimisation is supposed to avoid.
 
-Two designs retain a residual violation after four thousand sampling attempts — lactoferrin, at 2,067 nucleotides, is long enough that avoiding every homopolymer and GC excursion by rejection sampling becomes improbable. A production design would repair these locally rather than by resampling.
+The **reference set, not the design, was the limiting factor** in the earlier version of this appendix. Scoring the same designs against the genome-average table gives a maximum-to-null separation of 0.296 and against the legacy 2012 built-in table 0.343, where the highly expressed reference gives 0.471 (§3.7). An index computed against the genomic average was reporting about a third less of the available signal, which is why the earlier draft described the index as weak. It was the reference that was weak.
+
+**All nine designs now pass every manufacturability filter.** The earlier draft reported residual violations for ovalbumin and lactoferrin after four thousand rejection-sampling attempts; raising the repair budget to twenty thousand clears both. Lactoferrin at 2,067 nucleotides was the hard case, as expected — avoiding every homopolymer and GC excursion by rejection sampling gets improbable with length — and a production design would still repair locally rather than by resampling.
+
+No conclusion in this thesis rests on codon adaptation; the designs are offered as a synthesis-ready starting point, not as a result.
 
 ## Appendix C — Computed tables
 
@@ -1208,11 +1281,11 @@ Every step is deterministic. `build_targets.py` exits non-zero if any sequence f
 
 Recorded here rather than left implicit.
 
-1. **Re-resolve every DOI and PubMed identifier.** A verification pass found that inferred identifiers were wrong roughly half the time. Until the re-resolution against Crossref and Europe PMC is complete, no identifier in this document should be treated as verified.
-2. **Complete author lists.** A minority of bibliography entries carry "Not retrieved" rather than a guessed author list; these need filling from the papers.
-3. **Re-verify sequences directly against UniProt** rather than against mirrors, now that network access is available.
-4. **Merge the expanded titre corpus** (approaching 300 records) and re-run Chapters 5 and 6, which roughly triples the sample for the disulfide association and allows multiple-testing control.
-5. **Re-run disorder with a modern predictor** and rebuild the codon reference from highly expressed genes.
+1. **Re-resolve every DOI in the bibliography.** This is done for the 306-record titre corpus and is **not yet done** for the 232-entry bibliography. The titre-corpus pass is worth describing, because of what it found: 295 of 306 identifiers resolved cleanly, but **62 rows — a fifth of the corpus — carried the wrong first author despite a correct DOI**, and one carried the wrong year. A row citing Rantasalo was a paper whose first author is Mojzita; four citing Zhang in the *Journal of Agricultural and Food Chemistry* were a paper whose first author is Hu; three citing Zhang in the *Journal of Fungi* were Panchanawaporn. Every one of those would have become a wrong in-text citation. All corrections are listed in `data/literature/reference_corrections.md` with the original string preserved. Four identifiers initially flagged as unresolvable were false alarms: the prefix `10.13345` is absent from Crossref but resolves at doi.org, so a Crossref miss is not proof that an identifier is wrong. Until the same pass is applied to the bibliography, every DOI in the reference list carries an `[unverified]` marker and should be treated as such.
+2. **Complete author lists.** A minority of bibliography entries carry "[author list not retrieved]" rather than a guessed author list; these need filling from the registry metadata in the same pass as item 1.
+3. ~~**Re-verify sequences directly against UniProt**~~ **Done.** All 36 accessions in the corpus were re-fetched from the UniProtKB REST API and verified by **CRC64 checksum**, which establishes sequence identity rather than mere consistency of length and mass. 36 of 36 match and none is a secondary accession. See `data/external/sequence_verification*`.
+4. ~~**Merge the expanded titre corpus** and re-run Chapters 5 and 6.~~ **Done.** The 306-record corpus is merged, Chapter 5 is rebuilt on 75 records over 26 proteins and Chapter 6 on 53 records over 25 proteins, both with Benjamini–Hochberg control, bootstrap intervals and permutation p-values. The disulfide association did not survive it (§6.2.1).
+5. ~~**Re-run disorder with a modern predictor** and rebuild the codon reference from highly expressed genes.~~ **Done.** Disorder is measured with metapredict v3, with FoldIndex retained and reported alongside; the codon reference is the 165-gene highly expressed set from the RefSeq GS115 coding sequences (§3.7).
 6. **Format**: convert to the institution's required template, add the declaration and signature pages, and paginate.
 
 

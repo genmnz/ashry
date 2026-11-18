@@ -24,23 +24,27 @@ Harmonised coding sequences for *K. phaffii* are in `results/constructs/codon_op
 
 | Protein | aa | CDS (nt) | CAI harmonised | CAI max | CAI uniform null | GC | GC3 | Residual violations |
 |---|---|---|---|---|---|---|---|---|
-| α-S1-casein | 199 | 597 | 0.760 | 1.000 | 0.671 | 0.441 | 0.432 | none |
-| α-S2-casein | 207 | 621 | 0.741 | 1.000 | 0.672 | 0.435 | 0.556 | none |
-| β-casein | 209 | 627 | 0.735 | 1.000 | 0.632 | 0.456 | 0.407 | none |
-| κ-casein | 169 | 507 | 0.740 | 1.000 | 0.650 | 0.458 | 0.450 | none |
-| β-lactoglobulin | 162 | 486 | 0.751 | 1.000 | 0.677 | 0.457 | 0.537 | none |
-| α-lactalbumin | 123 | 369 | 0.762 | 1.000 | 0.700 | 0.412 | 0.496 | none |
-| ovalbumin | 386 | 1158 | 0.738 | 1.000 | 0.633 | 0.439 | 0.448 | one low-GC window |
-| leghemoglobin C2 | 145 | 435 | 0.756 | 1.000 | 0.658 | 0.455 | 0.414 | none |
-| lactoferrin | 689 | 2067 | 0.732 | 1.000 | 0.625 | 0.457 | 0.411 | one homopolymer, one high-GC window |
+| α-S1-casein | 199 | 597 | 0.729 | 1.000 | 0.545 | 0.441 | 0.477 | none |
+| α-S2-casein | 207 | 621 | 0.699 | 1.000 | 0.541 | 0.427 | 0.560 | none |
+| β-casein | 209 | 627 | 0.712 | 1.000 | 0.499 | 0.464 | 0.450 | none |
+| κ-casein | 169 | 507 | 0.747 | 1.000 | 0.517 | 0.483 | 0.497 | none |
+| β-lactoglobulin | 162 | 486 | 0.709 | 1.000 | 0.563 | 0.471 | 0.574 | none |
+| α-lactalbumin | 123 | 369 | 0.760 | 1.000 | 0.565 | 0.436 | 0.585 | none |
+| ovalbumin | 386 | 1158 | 0.702 | 1.000 | 0.516 | 0.459 | 0.518 | none |
+| leghemoglobin C2 | 145 | 435 | 0.741 | 1.000 | 0.529 | 0.474 | 0.476 | none |
+| lactoferrin | 689 | 2067 | 0.726 | 1.000 | 0.489 | 0.472 | 0.463 | none |
 
-Two observations, both of which argue for modest expectations from codon optimisation as practised here.
+CAI is computed against the 165-gene highly expressed reference set described in §3.7, not against genomic average usage.
 
-The **headroom is small**. A harmonised design reaches a genome-wide adaptation index of 0.73–0.76 against an unadapted uniform-synonymous null of 0.63–0.70: a difference of about 0.08. The maximum-CAI design reaches 1.000 by construction but is not proposed, because always choosing the same codon produces homopolymer runs, extreme local GC and the kind of translational pausing that codon optimisation is supposed to avoid.
+Three observations.
 
-The **index itself is weak**, for the reason given in §3.7: it is computed against whole-genome usage rather than against a highly expressed reference set, which compresses the differences between designs. Rebuilding the reference is listed as a required improvement, and no conclusion in this thesis rests on codon adaptation.
+The **headroom is real but bounded**. A harmonised design reaches 0.70–0.76 against an unadapted uniform-synonymous null of 0.49–0.57: a difference of about 0.20, which is two and a half times the apparent headroom the earlier genome-average index reported for the same designs. The maximum-CAI design reaches 1.000 by construction but is not proposed, because always choosing the same codon produces homopolymer runs, extreme local GC and the kind of translational pausing that codon optimisation is supposed to avoid.
 
-Two designs retain a residual violation after four thousand sampling attempts — lactoferrin, at 2,067 nucleotides, is long enough that avoiding every homopolymer and GC excursion by rejection sampling becomes improbable. A production design would repair these locally rather than by resampling.
+The **reference set, not the design, was the limiting factor** in the earlier version of this appendix. Scoring the same designs against the genome-average table gives a maximum-to-null separation of 0.296 and against the legacy 2012 built-in table 0.343, where the highly expressed reference gives 0.471 (§3.7). An index computed against the genomic average was reporting about a third less of the available signal, which is why the earlier draft described the index as weak. It was the reference that was weak.
+
+**All nine designs now pass every manufacturability filter.** The earlier draft reported residual violations for ovalbumin and lactoferrin after four thousand rejection-sampling attempts; raising the repair budget to twenty thousand clears both. Lactoferrin at 2,067 nucleotides was the hard case, as expected — avoiding every homopolymer and GC excursion by rejection sampling gets improbable with length — and a production design would still repair locally rather than by resampling.
+
+No conclusion in this thesis rests on codon adaptation; the designs are offered as a synthesis-ready starting point, not as a result.
 
 ## Appendix C — Computed tables
 
@@ -84,9 +88,9 @@ Every step is deterministic. `build_targets.py` exits non-zero if any sequence f
 
 Recorded here rather than left implicit.
 
-1. **Re-resolve every DOI and PubMed identifier.** A verification pass found that inferred identifiers were wrong roughly half the time. Until the re-resolution against Crossref and Europe PMC is complete, no identifier in this document should be treated as verified.
-2. **Complete author lists.** A minority of bibliography entries carry "Not retrieved" rather than a guessed author list; these need filling from the papers.
-3. **Re-verify sequences directly against UniProt** rather than against mirrors, now that network access is available.
-4. **Merge the expanded titre corpus** (approaching 300 records) and re-run Chapters 5 and 6, which roughly triples the sample for the disulfide association and allows multiple-testing control.
-5. **Re-run disorder with a modern predictor** and rebuild the codon reference from highly expressed genes.
+1. **Re-resolve every DOI in the bibliography.** This is done for the 306-record titre corpus and is **not yet done** for the 232-entry bibliography. The titre-corpus pass is worth describing, because of what it found: 295 of 306 identifiers resolved cleanly, but **62 rows — a fifth of the corpus — carried the wrong first author despite a correct DOI**, and one carried the wrong year. A row citing Rantasalo was a paper whose first author is Mojzita; four citing Zhang in the *Journal of Agricultural and Food Chemistry* were a paper whose first author is Hu; three citing Zhang in the *Journal of Fungi* were Panchanawaporn. Every one of those would have become a wrong in-text citation. All corrections are listed in `data/literature/reference_corrections.md` with the original string preserved. Four identifiers initially flagged as unresolvable were false alarms: the prefix `10.13345` is absent from Crossref but resolves at doi.org, so a Crossref miss is not proof that an identifier is wrong. Until the same pass is applied to the bibliography, every DOI in the reference list carries an `[unverified]` marker and should be treated as such.
+2. **Complete author lists.** A minority of bibliography entries carry "[author list not retrieved]" rather than a guessed author list; these need filling from the registry metadata in the same pass as item 1.
+3. ~~**Re-verify sequences directly against UniProt**~~ **Done.** All 36 accessions in the corpus were re-fetched from the UniProtKB REST API and verified by **CRC64 checksum**, which establishes sequence identity rather than mere consistency of length and mass. 36 of 36 match and none is a secondary accession. See `data/external/sequence_verification*`.
+4. ~~**Merge the expanded titre corpus** and re-run Chapters 5 and 6.~~ **Done.** The 306-record corpus is merged, Chapter 5 is rebuilt on 75 records over 26 proteins and Chapter 6 on 53 records over 25 proteins, both with Benjamini–Hochberg control, bootstrap intervals and permutation p-values. The disulfide association did not survive it (§6.2.1).
+5. ~~**Re-run disorder with a modern predictor** and rebuild the codon reference from highly expressed genes.~~ **Done.** Disorder is measured with metapredict v3, with FoldIndex retained and reported alongside; the codon reference is the 165-gene highly expressed set from the RefSeq GS115 coding sequences (§3.7).
 6. **Format**: convert to the institution's required template, add the declaration and signature pages, and paginate.
