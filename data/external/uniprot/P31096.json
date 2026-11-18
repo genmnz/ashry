@@ -1,0 +1,2220 @@
+{
+ "entryType": "UniProtKB reviewed (Swiss-Prot)",
+ "primaryAccession": "P31096",
+ "secondaryAccessions": [
+  "Q56NM9",
+  "Q8SPS6"
+ ],
+ "uniProtkbId": "OSTP_BOVIN",
+ "entryAudit": {
+  "firstPublicDate": "1993-07-01",
+  "lastAnnotationUpdateDate": "2026-11-04",
+  "lastSequenceUpdateDate": "2006-06-27",
+  "entryVersion": 133,
+  "sequenceVersion": 2
+ },
+ "annotationScore": 5.0,
+ "organism": {
+  "scientificName": "Bos taurus",
+  "commonName": "Bovine",
+  "taxonId": 9913,
+  "lineage": [
+   "Eukaryota",
+   "Metazoa",
+   "Chordata",
+   "Craniata",
+   "Vertebrata",
+   "Euteleostomi",
+   "Mammalia",
+   "Eutheria",
+   "Laurasiatheria",
+   "Artiodactyla",
+   "Ruminantia",
+   "Pecora",
+   "Bovidae",
+   "Bovinae",
+   "Bos"
+  ]
+ },
+ "proteinExistence": "1: Evidence at protein level",
+ "proteinDescription": {
+  "recommendedName": {
+   "fullName": {
+    "value": "Osteopontin"
+   }
+  },
+  "alternativeNames": [
+   {
+    "fullName": {
+     "value": "Bone sialoprotein 1"
+    }
+   },
+   {
+    "fullName": {
+     "value": "Secreted phosphoprotein 1"
+    },
+    "shortNames": [
+     {
+      "value": "SPP-1"
+     }
+    ]
+   }
+  ],
+  "flag": "Precursor"
+ },
+ "genes": [
+  {
+   "geneName": {
+    "value": "SPP1"
+   },
+   "synonyms": [
+    {
+     "value": "OPN"
+    }
+   ]
+  }
+ ],
+ "comments": [
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000305",
+       "source": "PubMed",
+       "id": "9880554"
+      }
+     ],
+     "value": "Major non-collagenous bone protein that binds tightly to hydroxyapatite (Probable). Appears to form an integral part of the mineralized matrix (Probable). Probably important to cell-matrix interaction (Probable)"
+    }
+   ],
+   "commentType": "FUNCTION"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000250",
+       "source": "UniProtKB",
+       "id": "P10923"
+      }
+     ],
+     "value": "Acts as a cytokine involved in enhancing production of interferon-gamma and interleukin-12 and reducing production of interleukin-10 and is essential in the pathway that leads to type I immunity"
+    }
+   ],
+   "commentType": "FUNCTION"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000250",
+       "source": "UniProtKB",
+       "id": "P10923"
+      }
+     ],
+     "value": "Interacts (via N-terminus) with integrin ITGA9:ITGB1"
+    }
+   ],
+   "commentType": "SUBUNIT"
+  },
+  {
+   "commentType": "SUBCELLULAR LOCATION",
+   "subcellularLocations": [
+    {
+     "location": {
+      "evidences": [
+       {
+        "evidenceCode": "ECO:0000250",
+        "source": "UniProtKB",
+        "id": "P10451"
+       }
+      ],
+      "value": "Secreted",
+      "id": "SL-0243"
+     }
+    }
+   ]
+  },
+  {
+   "texts": [
+    {
+     "value": "Bone, inner ear, kidney, uterus, lung, brain, epidermis"
+    }
+   ],
+   "commentType": "TISSUE SPECIFICITY"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000250",
+       "source": "UniProtKB",
+       "id": "P10451"
+      },
+      {
+       "evidenceCode": "ECO:0000250",
+       "source": "UniProtKB",
+       "id": "P10923"
+      }
+     ],
+     "value": "Extensively phosphorylated by FAM20C in the extracellular medium at multiple sites within the S-x-E/pS motif (By similarity). The phosphorylated form inhibits hydroxyapatite crystallization. Dephosphorylation via a mechanism involving ALPL/TNAP promotes hydroxyapatite crystallization (By similarity)"
+    }
+   ],
+   "commentType": "PTM"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "9880554"
+      }
+     ],
+     "value": "Forms covalent cross-links mediated by transglutaminase TGM2, between a glutamine and the epsilon-amino group of a lysine residue, forming homopolymers and heteropolymers, increasing its collagen binding properties"
+    }
+   ],
+   "commentType": "PTM"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000250",
+       "source": "UniProtKB",
+       "id": "P10451"
+      }
+     ],
+     "value": "O-glycosylated"
+    }
+   ],
+   "commentType": "PTM"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000305"
+      }
+     ],
+     "value": "Belongs to the osteopontin family"
+    }
+   ],
+   "commentType": "SIMILARITY"
+  }
+ ],
+ "features": [
+  {
+   "type": "Signal",
+   "location": {
+    "start": {
+     "value": 1,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 16,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8320368"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8663267"
+    }
+   ]
+  },
+  {
+   "type": "Chain",
+   "location": {
+    "start": {
+     "value": 17,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 278,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Osteopontin",
+   "featureId": "PRO_0000020320"
+  },
+  {
+   "type": "Region",
+   "location": {
+    "start": {
+     "value": 38,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 278,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Disordered",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Motif",
+   "location": {
+    "start": {
+     "value": 152,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 154,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Cell attachment site"
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 49,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 63,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Polar residues",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 71,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 82,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Polar residues",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 83,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 95,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Acidic residues",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 111,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 122,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Basic and acidic residues",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 182,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 196,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Basic and acidic residues",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 203,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 222,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Basic and acidic residues",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 228,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 243,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Polar residues",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 244,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 271,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Basic and acidic residues",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Site",
+   "location": {
+    "start": {
+     "value": 79,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 79,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Not glycosylated"
+  },
+  {
+   "type": "Site",
+   "location": {
+    "start": {
+     "value": 101,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 101,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Not glycosylated"
+  },
+  {
+   "type": "Site",
+   "location": {
+    "start": {
+     "value": 209,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 209,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Not glycosylated"
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 23,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 23,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 24,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 24,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 26,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 26,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 27,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 27,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 60,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 60,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 62,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 62,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 63,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 63,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 66,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 66,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphothreonine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "P10451"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 76,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 76,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 78,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 78,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 81,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 81,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 95,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 95,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 100,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 100,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 103,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 103,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 115,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 115,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 118,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 118,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "P10451"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 121,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 121,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 124,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 124,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 178,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 178,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphothreonine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 183,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 183,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphothreonine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "P10451"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 184,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 184,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 188,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 188,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 199,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 199,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "P10451"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 205,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 205,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 208,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 208,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphothreonine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "P10451"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 210,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 210,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 214,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 214,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "P10451"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 228,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 228,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "P10451"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 233,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 233,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 237,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 237,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "P10451"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 240,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 240,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 245,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 245,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 256,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 256,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 267,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 267,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 272,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 272,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 274,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 274,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8535240"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 275,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 275,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "P10451"
+    }
+   ]
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 131,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 131,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "O-linked (GalNAc...) threonine",
+   "featureId": ""
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 140,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 140,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "O-linked (GalNAc...) threonine",
+   "featureId": ""
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 145,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 145,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "O-linked (GalNAc...) threonine",
+   "featureId": ""
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 205,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 205,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "O-linked (Xyl...) (chondroitin sulfate) serine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "P10451"
+    }
+   ],
+   "featureId": ""
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 272,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 272,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "O-linked (Xyl...) (chondroitin sulfate) serine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "P10451"
+    }
+   ],
+   "featureId": ""
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 27,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 27,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 6; AA sequence",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "S",
+    "alternativeSequences": [
+     "K"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 42,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 42,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 1; AAA30462",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "T",
+    "alternativeSequences": [
+     "I"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 56,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 56,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 1; AAA30462",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "A",
+    "alternativeSequences": [
+     "T"
+    ]
+   }
+  }
+ ],
+ "keywords": [
+  {
+   "id": "KW-0091",
+   "category": "Biological process",
+   "name": "Biomineralization"
+  },
+  {
+   "id": "KW-0130",
+   "category": "Biological process",
+   "name": "Cell adhesion"
+  },
+  {
+   "id": "KW-0202",
+   "category": "Molecular function",
+   "name": "Cytokine"
+  },
+  {
+   "id": "KW-0903",
+   "category": "Technical term",
+   "name": "Direct protein sequencing"
+  },
+  {
+   "id": "KW-0325",
+   "category": "PTM",
+   "name": "Glycoprotein"
+  },
+  {
+   "id": "KW-0597",
+   "category": "PTM",
+   "name": "Phosphoprotein"
+  },
+  {
+   "id": "KW-0654",
+   "category": "PTM",
+   "name": "Proteoglycan"
+  },
+  {
+   "id": "KW-1185",
+   "category": "Technical term",
+   "name": "Reference proteome"
+  },
+  {
+   "id": "KW-0964",
+   "category": "Cellular component",
+   "name": "Secreted"
+  },
+  {
+   "id": "KW-0730",
+   "category": "Ligand",
+   "name": "Sialic acid"
+  },
+  {
+   "id": "KW-0732",
+   "category": "Domain",
+   "name": "Signal"
+  }
+ ],
+ "references": [
+  {
+   "referenceNumber": 1,
+   "citation": {
+    "id": "1721033",
+    "citationType": "journal article",
+    "authors": [
+     "Kerr J.M.",
+     "Fisher L.W.",
+     "Termine J.D.",
+     "Young M.F."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "1721033"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/0378-1119(91)90439-i"
+     }
+    ],
+    "title": "The cDNA cloning and RNA distribution of bovine osteopontin.",
+    "publicationDate": "1991",
+    "journal": "Gene",
+    "firstPage": "237",
+    "lastPage": "243",
+    "volume": "108"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [MRNA]"
+   ]
+  },
+  {
+   "referenceNumber": 2,
+   "citation": {
+    "id": "CI-DI3I7DGLGBN1K",
+    "citationType": "submission",
+    "authors": [
+     "Lee T.Y.",
+     "Ju S.K.",
+     "Nam M.S."
+    ],
+    "title": "Cloning of osteopontin (OPN) in Korean native cattle.",
+    "publicationDate": "MAR-2002",
+    "submissionDatabase": "EMBL/GenBank/DDBJ databases"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [MRNA]"
+   ],
+   "referenceComments": [
+    {
+     "value": "Korean",
+     "type": "STRAIN"
+    },
+    {
+     "value": "Kidney",
+     "type": "TISSUE"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 3,
+   "citation": {
+    "id": "15867146",
+    "citationType": "journal article",
+    "authors": [
+     "Schnabel R.D.",
+     "Kim J.J.",
+     "Ashwell M.S.",
+     "Sonstegard T.S.",
+     "Van Tassell C.P.",
+     "Connor E.E.",
+     "Taylor J.F."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "15867146"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1073/pnas.0502398102"
+     }
+    ],
+    "title": "Fine-mapping milk production quantitative trait loci on BTA6: Analysis of the bovine osteopontin gene.",
+    "publicationDate": "2005",
+    "journal": "Proc. Natl. Acad. Sci. U.S.A.",
+    "firstPage": "6896",
+    "lastPage": "6901",
+    "volume": "102"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+   ]
+  },
+  {
+   "referenceNumber": 4,
+   "citation": {
+    "id": "15998908",
+    "citationType": "journal article",
+    "authors": [
+     "Cohen-Zinder M.",
+     "Seroussi E.",
+     "Larkin D.M.",
+     "Loor J.J.",
+     "Everts-van der Wind A.",
+     "Lee J.-H.",
+     "Drackley J.K.",
+     "Band M.R.",
+     "Hernandez A.G.",
+     "Shani M.",
+     "Lewin H.A.",
+     "Weller J.I.",
+     "Ron M."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "15998908"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1101/gr.3806705"
+     }
+    ],
+    "title": "Identification of a missense mutation in the bovine ABCG2 gene with a major effect on the QTL on chromosome 6 affecting milk yield and composition in Holstein cattle.",
+    "publicationDate": "2005",
+    "journal": "Genome Res.",
+    "firstPage": "936",
+    "lastPage": "944",
+    "volume": "15"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+   ],
+   "referenceComments": [
+    {
+     "value": "Holstein",
+     "type": "STRAIN"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 5,
+   "citation": {
+    "id": "8320368",
+    "citationType": "journal article",
+    "authors": [
+     "Soerensen E.S.",
+     "Petersen T.E."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "8320368"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1017/s0022029900027503"
+     }
+    ],
+    "title": "Purification and characterization of three proteins isolated from the proteose peptone fraction of bovine milk.",
+    "publicationDate": "1993",
+    "journal": "J. Dairy Res.",
+    "firstPage": "189",
+    "lastPage": "197",
+    "volume": "60"
+   },
+   "referencePositions": [
+    "PROTEIN SEQUENCE OF 17-22; 44-54; 168-182 AND 221-243"
+   ],
+   "referenceComments": [
+    {
+     "value": "Milk",
+     "type": "TISSUE"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 6,
+   "citation": {
+    "id": "8663267",
+    "citationType": "journal article",
+    "authors": [
+     "Salih E.",
+     "Zhou H.-Y.",
+     "Glimcher M.J."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "8663267"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1074/jbc.271.28.16897"
+     }
+    ],
+    "title": "Phosphorylation of purified bovine bone sialoprotein and osteopontin by protein kinases.",
+    "publicationDate": "1996",
+    "journal": "J. Biol. Chem.",
+    "firstPage": "16897",
+    "lastPage": "16905",
+    "volume": "271"
+   },
+   "referencePositions": [
+    "PROTEIN SEQUENCE OF 17-28",
+    "PHOSPHORYLATION"
+   ]
+  },
+  {
+   "referenceNumber": 7,
+   "citation": {
+    "id": "8535240",
+    "citationType": "journal article",
+    "authors": [
+     "Soerensen E.S.",
+     "Hoejrup P.",
+     "Petersen T.E."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "8535240"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1002/pro.5560041009"
+     }
+    ],
+    "title": "Posttranslational modifications of bovine osteopontin: identification of twenty-eight phosphorylation and three O-glycosylation sites.",
+    "publicationDate": "1995",
+    "journal": "Protein Sci.",
+    "firstPage": "2040",
+    "lastPage": "2049",
+    "volume": "4"
+   },
+   "referencePositions": [
+    "PHOSPHORYLATION AT SER-23; SER-24; SER-26; SER-27; SER-60; SER-62; SER-63; SER-76; SER-78; SER-81; SER-95; SER-100; SER-103; SER-115; SER-121; SER-124; THR-178; SER-184; SER-188; SER-205; SER-210; SER-233; SER-240; SER-245; SER-256; SER-267; SER-272 AND SER-274"
+   ],
+   "referenceComments": [
+    {
+     "value": "Milk",
+     "type": "TISSUE"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 8,
+   "citation": {
+    "id": "9880554",
+    "citationType": "journal article",
+    "authors": [
+     "Kaartinen M.T.",
+     "Pirhonen A.",
+     "Linnala-Kankkunen A.",
+     "Maeenpaeae P.H."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "9880554"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1074/jbc.274.3.1729"
+     }
+    ],
+    "title": "Cross-linking of osteopontin by tissue transglutaminase increases its collagen binding properties.",
+    "publicationDate": "1999",
+    "journal": "J. Biol. Chem.",
+    "firstPage": "1729",
+    "lastPage": "1735",
+    "volume": "274"
+   },
+   "referencePositions": [
+    "FUNCTION",
+    "TRANSGLUTAMINATION"
+   ]
+  }
+ ],
+ "uniProtKBCrossReferences": [
+  {
+   "database": "EMBL",
+   "id": "M66236",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAA30462.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "mRNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "AF492837",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAL99081.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "mRNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "AY878328",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAX62809.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "AJ871176",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "CAI38798.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "PIR",
+   "id": "JS0638",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "JS0638"
+    }
+   ]
+  },
+  {
+   "database": "RefSeq",
+   "id": "NP_776612.1",
+   "properties": [
+    {
+     "key": "NucleotideSequenceId",
+     "value": "NM_174187.2"
+    }
+   ]
+  },
+  {
+   "database": "AlphaFoldDB",
+   "id": "P31096",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "ELM",
+   "id": "P31096",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "FunCoup",
+   "id": "P31096",
+   "properties": [
+    {
+     "key": "Number of interactors",
+     "value": "257"
+    }
+   ]
+  },
+  {
+   "database": "STRING",
+   "id": "9913.ENSBTAP00000062863",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "GlyCosmos",
+   "id": "P31096",
+   "properties": [
+    {
+     "key": "glycosylation",
+     "value": "5 sites, No reported glycans"
+    }
+   ]
+  },
+  {
+   "database": "GlyGen",
+   "id": "P31096",
+   "properties": [
+    {
+     "key": "glycosylation",
+     "value": "6 sites"
+    }
+   ]
+  },
+  {
+   "database": "iPTMnet",
+   "id": "P31096",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PaxDb",
+   "id": "9913-ENSBTAP00000062863",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PeptideAtlas",
+   "id": "P31096",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "GeneID",
+   "id": "281499",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "KEGG",
+   "id": "bta:281499",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "CTD",
+   "id": "6696",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "eggNOG",
+   "id": "ENOG502S5R4",
+   "properties": [
+    {
+     "key": "ToxonomicScope",
+     "value": "Eukaryota"
+    }
+   ]
+  },
+  {
+   "database": "InParanoid",
+   "id": "P31096",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "OrthoDB",
+   "id": "9047304at2759",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Proteomes",
+   "id": "UP000009136",
+   "properties": [
+    {
+     "key": "Component",
+     "value": "Unplaced"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0005576",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "C:extracellular region"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "ISS:UniProtKB"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0005178",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:integrin binding"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "ISS:UniProtKB"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0030282",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:bone mineralization"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IBA:GO_Central"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0007155",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:cell adhesion"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IBA:GO_Central"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR002038",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Osteopontin"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR019841",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Osteopontin_CS"
+    }
+   ]
+  },
+  {
+   "database": "PANTHER",
+   "id": "PTHR10607",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "OSTEOPONTIN"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PANTHER",
+   "id": "PTHR10607:SF1",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "OSTEOPONTIN"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "Pfam",
+   "id": "PF00865",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Osteopontin"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PRINTS",
+   "id": "PR00216",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "OSTEOPONTIN"
+    }
+   ]
+  },
+  {
+   "database": "SMART",
+   "id": "SM00017",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "OSTEO"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PROSITE",
+   "id": "PS00884",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "OSTEOPONTIN"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  }
+ ],
+ "sequence": {
+  "value": "MRIAVICFCLLGIASALPVKPTSSGSSEEKQLNNKYPDAVATWLKPDPSQKQTFLAPQNSVSSEETDDNKQNTLPSKSNESPEQTDDLDDDDDNSQDVNSNDSDDAETTDDPDHSDESHHSDESDEVDFPTDIPTIAVFTPFIPTESANDGRGDSVAYGLKSRSKKFRRSNVQSPDATEEDFTSHIESEEMHDAPKKTSQLTDHSKETNSSELSKELTPKAKDKNKHSNLIESQENSKLSQEFHSLEDKLDLDHKSEEDKHLKIRISHELDSASSEVN",
+  "length": 278,
+  "molWeight": 30904,
+  "crc64": "8170204507864E87",
+  "md5": "35D6FCD1EB81B9769EFB9EC4E628CC9A"
+ },
+ "extraAttributes": {
+  "countByCommentType": {
+   "FUNCTION": 2,
+   "SUBUNIT": 1,
+   "SUBCELLULAR LOCATION": 1,
+   "TISSUE SPECIFICITY": 1,
+   "PTM": 3,
+   "SIMILARITY": 1
+  },
+  "countByFeatureType": {
+   "Signal": 1,
+   "Chain": 1,
+   "Region": 1,
+   "Motif": 1,
+   "Compositional bias": 8,
+   "Site": 3,
+   "Modified residue": 37,
+   "Glycosylation": 5,
+   "Sequence conflict": 3
+  },
+  "uniParcId": "UPI000016C265"
+ }
+}

@@ -42,6 +42,16 @@ CONF_RANK = {"high": 3, "medium": 2, "low": 1, "": 0}
 
 # protein name normalisation: map the many spellings onto one label
 PROTEIN_CANON = [
+    # Fragments and single domains MUST be matched before the parent protein,
+    # otherwise a name like "bovine casein macropeptide (kappa-casein
+    # fragment)" is pooled with intact kappa-casein. That pooling is not
+    # harmless: the macropeptide reaches 1,020 mg/L in K. phaffii while
+    # intact kappa-casein reaches 133 mg/L, so pooling inflates the casein
+    # figure 7.7-fold and destroys the comparison the analysis rests on.
+    (r"macropeptide|caseinomacropeptide|\bcmp\b|\bgmp\b",
+     "casein macropeptide (fragment)"),
+    (r"\bn-?lobe\b|\bc-?lobe\b|domain ?3|single domain|lactoferricin",
+     "protein fragment or single domain"),
     (r"beta[- ]?lactoglob|b[- ]?lg\b|blg\b", "beta-lactoglobulin"),
     (r"alpha[- ]?lactalb|a[- ]?la\b", "alpha-lactalbumin"),
     (r"alpha[- ]?s1[- ]?casein|as1[- ]?casein", "alpha-s1-casein"),
@@ -169,6 +179,9 @@ def main():
     for r in rows:
         r["protein_canonical"] = canon(r.get("protein_name"), PROTEIN_CANON)
         r["host_canonical"] = canon(r.get("host_species"), HOST_CANON)
+        r["is_fragment"] = ("yes" if ("fragment" in r["protein_canonical"]
+                                      or "domain" in r["protein_canonical"])
+                            else "no")
 
     groups = defaultdict(list)
     for r in rows:

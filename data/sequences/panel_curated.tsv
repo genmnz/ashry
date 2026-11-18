@@ -1,0 +1,21 @@
+name	accession	secreted	ptm_required	haem	category	rationale
+beta_lactoglobulin_bovine	P02754	yes	none	0	dairy-whey	Globular, two disulfides plus one free cysteine, no essential PTM. The best-characterised precision-fermentation whey target.
+alpha_lactalbumin_bovine	P00711	yes	none	0	dairy-whey	Globular, four disulfides, calcium-binding; no PTM required for function.
+alpha_lactalbumin_human	P00709	yes	none	0	dairy-whey	Human variant, titers reported in K. phaffii.
+alpha_s1_casein_bovine	P02662	yes	phosphorylation	0	dairy-casein	Intrinsically disordered phosphoprotein; the phosphoserines nucleate colloidal calcium phosphate, so phosphorylation is functionally required, not incidental.
+alpha_s2_casein_bovine	P02663	yes	phosphorylation	0	dairy-casein	As alpha-S1, most heavily phosphorylated of the caseins.
+beta_casein_bovine	P02666	yes	phosphorylation	0	dairy-casein	Disordered, five phosphoserines, amphiphilic; the dominant casein by mass in bovine milk.
+kappa_casein_bovine	P02668	yes	phosphorylation+O-glycosylation	0	dairy-casein	Micelle-stabilising; carries O-glycans on the C-terminal macropeptide as well as phosphoserines. The only casein with disulfides.
+lactoferrin_bovine	P24627	yes	N-glycosylation	0	dairy-whey	Large, 16 disulfides, iron-binding, heavily N-glycosylated.
+lactoferrin_human	P02788	yes	N-glycosylation	0	dairy-whey	Human variant; titers reported in K. phaffii and Y. lipolytica.
+osteopontin_bovine	P31096	yes	phosphorylation	0	dairy-whey	Extensively phosphorylated and disordered; a useful extreme for the PTM axis.
+ovalbumin_chicken	P01012	yes	none	0	egg	The egg-white reference target; one disulfide, one sequon, no essential PTM.
+ovotransferrin_chicken	P02789	yes	N-glycosylation	0	egg	Large, 15 disulfides, iron-binding.
+ovomucoid_chicken	P01005	yes	N-glycosylation	0	egg	Nine disulfides and six sequons in 186 residues: the densest secretory load in the panel.
+lysozyme_c_chicken	P00698	yes	none	0	egg	Small, four disulfides, a classical high-titer secretory benchmark.
+avidin_chicken	P02701	yes	none	0	egg	Small, one disulfide, tetrameric.
+leghemoglobin_lbc2_soybean	P02236	no	none	1	haem	Soy leghemoglobin LBC2. Accession settled in data/external/LEGHEMOGLOBIN_IDENTITY.md: the Shao 2022 3.5 g/L anchor names LBC2, which is gene LB4 / P02236, NOT the LGB2 gene (P02235, whose protein name is leghemoglobin C1). Produced intracellularly, so no glycosylation, no vesicular transport and no ER disulfide formation.
+myoglobin_pig	P02189	no	none	1	haem	Porcine myoglobin; titers reported in K. phaffii. Cytosolic.
+serum_albumin_human	P02768	yes	none	0	benchmark	17 disulfides. Included as a secretory-capacity ceiling, not as a food target; must be excluded from food-only analyses.
+chymosin_bovine	P00794	yes	none	0	benchmark	Long-established fungal and yeast secretion benchmark.
+cbhi_cel7a_trichoderma	P62694	yes	N-glycosylation+O-glycosylation	0	benchmark	The native T. reesei workhorse; defines that host's secretory ceiling.

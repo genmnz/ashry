@@ -1,0 +1,2643 @@
+{
+ "entryType": "UniProtKB reviewed (Swiss-Prot)",
+ "primaryAccession": "P00711",
+ "secondaryAccessions": [
+  "Q3T111",
+  "Q95NE4"
+ ],
+ "uniProtkbId": "LALBA_BOVIN",
+ "entryAudit": {
+  "firstPublicDate": "1986-07-21",
+  "lastAnnotationUpdateDate": "2026-11-04",
+  "lastSequenceUpdateDate": "1989-07-01",
+  "entryVersion": 194,
+  "sequenceVersion": 2
+ },
+ "annotationScore": 5.0,
+ "organism": {
+  "scientificName": "Bos taurus",
+  "commonName": "Bovine",
+  "taxonId": 9913,
+  "lineage": [
+   "Eukaryota",
+   "Metazoa",
+   "Chordata",
+   "Craniata",
+   "Vertebrata",
+   "Euteleostomi",
+   "Mammalia",
+   "Eutheria",
+   "Laurasiatheria",
+   "Artiodactyla",
+   "Ruminantia",
+   "Pecora",
+   "Bovidae",
+   "Bovinae",
+   "Bos"
+  ]
+ },
+ "proteinExistence": "1: Evidence at protein level",
+ "proteinDescription": {
+  "recommendedName": {
+   "fullName": {
+    "value": "Alpha-lactalbumin"
+   }
+  },
+  "alternativeNames": [
+   {
+    "fullName": {
+     "value": "Lactose synthase B protein"
+    }
+   }
+  ],
+  "allergenName": {
+   "value": "Bos d 4"
+  },
+  "flag": "Precursor"
+ },
+ "genes": [
+  {
+   "geneName": {
+    "value": "LALBA"
+   },
+   "synonyms": [
+    {
+     "value": "ALACTA"
+    }
+   ]
+  }
+ ],
+ "comments": [
+  {
+   "texts": [
+    {
+     "value": "Regulatory subunit of lactose synthase, changes the substrate specificity of galactosyltransferase in the mammary gland making glucose a good acceptor substrate for this enzyme. This enables LS to synthesize lactose, the major carbohydrate component of milk. In other tissues, galactosyltransferase transfers galactose onto the N-acetylglucosamine of the oligosaccharide chains in glycoproteins"
+    }
+   ],
+   "commentType": "FUNCTION"
+  },
+  {
+   "texts": [
+    {
+     "value": "Lactose synthase (LS) is a heterodimer of a catalytic component, beta1,4-galactosyltransferase (beta4Gal-T1) and a regulatory component, alpha-lactalbumin (LA)"
+    }
+   ],
+   "commentType": "SUBUNIT"
+  },
+  {
+   "commentType": "INTERACTION",
+   "interactions": [
+    {
+     "interactantOne": {
+      "uniProtKBAccession": "P00711",
+      "intActId": "EBI-7080486"
+     },
+     "interactantTwo": {
+      "uniProtKBAccession": "P00711",
+      "geneName": "LALBA",
+      "intActId": "EBI-7080486"
+     },
+     "numberOfExperiments": 3,
+     "organismDiffer": false
+    }
+   ]
+  },
+  {
+   "commentType": "SUBCELLULAR LOCATION",
+   "subcellularLocations": [
+    {
+     "location": {
+      "value": "Secreted",
+      "id": "SL-0243"
+     }
+    }
+   ]
+  },
+  {
+   "texts": [
+    {
+     "value": "Mammary gland specific. Secreted in milk"
+    }
+   ],
+   "commentType": "TISSUE SPECIFICITY"
+  },
+  {
+   "texts": [
+    {
+     "value": "Causes an allergic reaction in human. Is one of the causes of cow's milk allergy"
+    }
+   ],
+   "commentType": "ALLERGEN"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000255",
+       "source": "PROSITE-ProRule",
+       "id": "PRU00680"
+      }
+     ],
+     "value": "Belongs to the glycosyl hydrolase 22 family"
+    }
+   ],
+   "commentType": "SIMILARITY"
+  }
+ ],
+ "features": [
+  {
+   "type": "Signal",
+   "location": {
+    "start": {
+     "value": 1,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 19,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "5532231"
+    }
+   ]
+  },
+  {
+   "type": "Chain",
+   "location": {
+    "start": {
+     "value": 20,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 142,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Alpha-lactalbumin",
+   "featureId": "PRO_0000018439"
+  },
+  {
+   "type": "Domain",
+   "location": {
+    "start": {
+     "value": 20,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 142,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "C-type lysozyme",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000255",
+     "source": "PROSITE-ProRule",
+     "id": "PRU00680"
+    }
+   ]
+  },
+  {
+   "type": "Binding site",
+   "location": {
+    "start": {
+     "value": 98,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 98,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "featureCrossReferences": [
+    {
+     "database": "ChEBI",
+     "id": "CHEBI:29108"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8805552"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1HFZ"
+    }
+   ],
+   "ligand": {
+    "name": "Ca(2+)",
+    "id": "ChEBI:CHEBI:29108"
+   }
+  },
+  {
+   "type": "Binding site",
+   "location": {
+    "start": {
+     "value": 101,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 101,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "featureCrossReferences": [
+    {
+     "database": "ChEBI",
+     "id": "CHEBI:29108"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8805552"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1HFZ"
+    }
+   ],
+   "ligand": {
+    "name": "Ca(2+)",
+    "id": "ChEBI:CHEBI:29108"
+   }
+  },
+  {
+   "type": "Binding site",
+   "location": {
+    "start": {
+     "value": 103,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 103,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "featureCrossReferences": [
+    {
+     "database": "ChEBI",
+     "id": "CHEBI:29108"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8805552"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1HFZ"
+    }
+   ],
+   "ligand": {
+    "name": "Ca(2+)",
+    "id": "ChEBI:CHEBI:29108"
+   }
+  },
+  {
+   "type": "Binding site",
+   "location": {
+    "start": {
+     "value": 106,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 106,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "featureCrossReferences": [
+    {
+     "database": "ChEBI",
+     "id": "CHEBI:29108"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8805552"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1HFZ"
+    }
+   ],
+   "ligand": {
+    "name": "Ca(2+)",
+    "id": "ChEBI:CHEBI:29108"
+   }
+  },
+  {
+   "type": "Binding site",
+   "location": {
+    "start": {
+     "value": 107,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 107,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "featureCrossReferences": [
+    {
+     "database": "ChEBI",
+     "id": "CHEBI:29108"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8805552"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1HFZ"
+    }
+   ],
+   "ligand": {
+    "name": "Ca(2+)",
+    "id": "ChEBI:CHEBI:29108"
+   }
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 64,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 64,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "N-linked (GlcNAc...) asparagine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000255"
+    }
+   ],
+   "featureId": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 25,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 139,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000255",
+     "source": "PROSITE-ProRule",
+     "id": "PRU00680"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "5532232"
+    }
+   ]
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 47,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 130,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000255",
+     "source": "PROSITE-ProRule",
+     "id": "PRU00680"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "5532232"
+    }
+   ]
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 80,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 96,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000255",
+     "source": "PROSITE-ProRule",
+     "id": "PRU00680"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "5532232"
+    }
+   ]
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 92,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 110,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000255",
+     "source": "PROSITE-ProRule",
+     "id": "PRU00680"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "5532232"
+    }
+   ]
+  },
+  {
+   "type": "Natural variant",
+   "location": {
+    "start": {
+     "value": 29,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 29,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in an allele of Droughtmaster cattle; an Australian breed",
+   "featureId": "",
+   "alternativeSequence": {
+    "originalSequence": "R",
+    "alternativeSequences": [
+     "Q"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 49,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 49,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 1 and 5",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "T",
+    "alternativeSequences": [
+     "A"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 58,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 58,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 8; AA sequence",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "Q",
+    "alternativeSequences": [
+     "E"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 82,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 85,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 8; AA sequence",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "DDQN",
+    "alternativeSequences": [
+     "NDQD"
+    ]
+   }
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 24,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 30,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "7EKA"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 32,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 34,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "7EKA"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 37,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 39,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "7EKA"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 42,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 53,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "7EKA"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 60,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 62,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "7EKA"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 67,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 69,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "7EKA"
+    }
+   ]
+  },
+  {
+   "type": "Turn",
+   "location": {
+    "start": {
+     "value": 70,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 73,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "7EKA"
+    }
+   ]
+  },
+  {
+   "type": "Turn",
+   "location": {
+    "start": {
+     "value": 76,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 79,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "7EKA"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 80,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 82,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1HFZ"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 96,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 99,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "7EKA"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 100,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 102,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "7EKA"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 105,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 117,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "7EKA"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 120,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 122,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "7EKA"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 124,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 129,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "7EKA"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 130,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 132,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "7EKA"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 134,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 136,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "7EKA"
+    }
+   ]
+  }
+ ],
+ "keywords": [
+  {
+   "id": "KW-0002",
+   "category": "Technical term",
+   "name": "3D-structure"
+  },
+  {
+   "id": "KW-0020",
+   "category": "Disease",
+   "name": "Allergen"
+  },
+  {
+   "id": "KW-0106",
+   "category": "Ligand",
+   "name": "Calcium"
+  },
+  {
+   "id": "KW-0903",
+   "category": "Technical term",
+   "name": "Direct protein sequencing"
+  },
+  {
+   "id": "KW-1015",
+   "category": "PTM",
+   "name": "Disulfide bond"
+  },
+  {
+   "id": "KW-0325",
+   "category": "PTM",
+   "name": "Glycoprotein"
+  },
+  {
+   "id": "KW-0422",
+   "category": "Biological process",
+   "name": "Lactose biosynthesis"
+  },
+  {
+   "id": "KW-0479",
+   "category": "Ligand",
+   "name": "Metal-binding"
+  },
+  {
+   "id": "KW-0494",
+   "category": "Molecular function",
+   "name": "Milk protein"
+  },
+  {
+   "id": "KW-1185",
+   "category": "Technical term",
+   "name": "Reference proteome"
+  },
+  {
+   "id": "KW-0964",
+   "category": "Cellular component",
+   "name": "Secreted"
+  },
+  {
+   "id": "KW-0732",
+   "category": "Domain",
+   "name": "Signal"
+  }
+ ],
+ "references": [
+  {
+   "referenceNumber": 1,
+   "citation": {
+    "id": "3120795",
+    "citationType": "journal article",
+    "authors": [
+     "Vilotte J.-L.",
+     "Soulier S.",
+     "Mercier J.-C.",
+     "Gaye P.",
+     "Hue-Delahaie D.",
+     "Furet J.-P."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "3120795"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/0300-9084(87)90180-5"
+     }
+    ],
+    "title": "Complete nucleotide sequence of bovine alpha-lactalbumin gene: comparison with its rat counterpart.",
+    "publicationDate": "1987",
+    "journal": "Biochimie",
+    "firstPage": "609",
+    "lastPage": "620",
+    "volume": "69"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+   ]
+  },
+  {
+   "referenceNumber": 2,
+   "citation": {
+    "id": "3443304",
+    "citationType": "journal article",
+    "authors": [
+     "Hurley W.L.",
+     "Schuler L.A."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "3443304"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/0378-1119(87)90371-4"
+     }
+    ],
+    "title": "Molecular cloning and nucleotide sequence of a bovine alpha-lactalbumin cDNA.",
+    "publicationDate": "1987",
+    "journal": "Gene",
+    "firstPage": "119",
+    "lastPage": "122",
+    "volume": "61"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [MRNA]"
+   ]
+  },
+  {
+   "referenceNumber": 3,
+   "citation": {
+    "id": "2687274",
+    "citationType": "journal article",
+    "authors": [
+     "Wang M.",
+     "Scott W.A.",
+     "Rao K.R.",
+     "Udey J.",
+     "Conner G.E.",
+     "Brew K."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "2687274"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/s0021-9258(19)30054-7"
+     }
+    ],
+    "title": "Recombinant bovine alpha-lactalbumin obtained by limited proteolysis of a fusion protein expressed at high levels in Escherichia coli.",
+    "publicationDate": "1989",
+    "journal": "J. Biol. Chem.",
+    "firstPage": "21116",
+    "lastPage": "21121",
+    "volume": "264"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [MRNA]"
+   ]
+  },
+  {
+   "referenceNumber": 4,
+   "citation": {
+    "id": "CI-9169BJ29CHR2L",
+    "citationType": "submission",
+    "authors": [
+     "Yamamoto N."
+    ],
+    "title": "Bos taurus alpha lactalbumin gene.",
+    "publicationDate": "DEC-2000",
+    "submissionDatabase": "EMBL/GenBank/DDBJ databases"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+   ],
+   "referenceComments": [
+    {
+     "value": "Angus",
+     "type": "STRAIN"
+    },
+    {
+     "value": "Hereford",
+     "type": "STRAIN"
+    },
+    {
+     "value": "Holstein",
+     "type": "STRAIN"
+    },
+    {
+     "value": "Japanese black",
+     "type": "STRAIN"
+    },
+    {
+     "value": "Jersey",
+     "type": "STRAIN"
+    },
+    {
+     "value": "Blood",
+     "type": "TISSUE"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 5,
+   "citation": {
+    "id": "CI-BHJ1TOJKP6ONV",
+    "citationType": "submission",
+    "authors": [
+     "Dhinakar Raj G.",
+     "Kumanan K."
+    ],
+    "title": "Bovine gene for alpha lactalbumin.",
+    "publicationDate": "MAR-2000",
+    "submissionDatabase": "EMBL/GenBank/DDBJ databases"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+   ]
+  },
+  {
+   "referenceNumber": 6,
+   "citation": {
+    "id": "16305752",
+    "citationType": "journal article",
+    "authors": [
+     "Harhay G.P.",
+     "Sonstegard T.S.",
+     "Keele J.W.",
+     "Heaton M.P.",
+     "Clawson M.L.",
+     "Snelling W.M.",
+     "Wiedmann R.T.",
+     "Van Tassell C.P.",
+     "Smith T.P.L."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "16305752"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1186/1471-2164-6-166"
+     }
+    ],
+    "title": "Characterization of 954 bovine full-CDS cDNA sequences.",
+    "publicationDate": "2005",
+    "journal": "BMC Genomics",
+    "firstPage": "166",
+    "lastPage": "166",
+    "volume": "6"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA]"
+   ]
+  },
+  {
+   "referenceNumber": 7,
+   "citation": {
+    "id": "CI-BB3I87URM95J3",
+    "citationType": "submission",
+    "authoringGroup": [
+     "NIH - Mammalian Gene Collection (MGC) project"
+    ],
+    "publicationDate": "AUG-2005",
+    "submissionDatabase": "EMBL/GenBank/DDBJ databases"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA]"
+   ],
+   "referenceComments": [
+    {
+     "value": "Hereford",
+     "type": "STRAIN"
+    },
+    {
+     "value": "Mammary gland",
+     "type": "TISSUE"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 8,
+   "citation": {
+    "id": "5532231",
+    "citationType": "journal article",
+    "authors": [
+     "Brew K.",
+     "Castellino F.J.",
+     "Vanaman T.C.",
+     "Hill R.L."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "5532231"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/s0021-9258(19)63827-5"
+     }
+    ],
+    "title": "The complete amino acid sequence of bovine alpha-lactalbumin.",
+    "publicationDate": "1970",
+    "journal": "J. Biol. Chem.",
+    "firstPage": "4570",
+    "lastPage": "4582",
+    "volume": "245"
+   },
+   "referencePositions": [
+    "PROTEIN SEQUENCE OF 20-142"
+   ]
+  },
+  {
+   "referenceNumber": 9,
+   "citation": {
+    "id": "6715332",
+    "citationType": "journal article",
+    "authors": [
+     "Shewale J.G.",
+     "Sinha S.K.",
+     "Brew K."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "6715332"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/s0021-9258(17)42938-3"
+     }
+    ],
+    "title": "Evolution of alpha-lactalbumins. The complete amino acid sequence of the alpha-lactalbumin from a marsupial (Macropus rufogriseus) and corrections to regions of sequence in bovine and goat alpha-lactalbumins.",
+    "publicationDate": "1984",
+    "journal": "J. Biol. Chem.",
+    "firstPage": "4947",
+    "lastPage": "4956",
+    "volume": "259"
+   },
+   "referencePositions": [
+    "SEQUENCE REVISION"
+   ]
+  },
+  {
+   "referenceNumber": 10,
+   "citation": {
+    "id": "8482536",
+    "citationType": "journal article",
+    "authors": [
+     "Bleck G.T.",
+     "Bremel R.D."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "8482536"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/0378-1119(93)90369-e"
+     }
+    ],
+    "title": "Sequence and single-base polymorphisms of the bovine alpha-lactalbumin 5'-flanking region.",
+    "publicationDate": "1993",
+    "journal": "Gene",
+    "firstPage": "213",
+    "lastPage": "218",
+    "volume": "126"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 1-22"
+   ]
+  },
+  {
+   "referenceNumber": 11,
+   "citation": {
+    "id": "5532232",
+    "citationType": "journal article",
+    "authors": [
+     "Vanaman T.C.",
+     "Brew K.",
+     "Hill R.L."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "5532232"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/s0021-9258(19)63828-7"
+     }
+    ],
+    "title": "The disulfide bonds of bovine alpha-lactalbumin.",
+    "publicationDate": "1970",
+    "journal": "J. Biol. Chem.",
+    "firstPage": "4583",
+    "lastPage": "4590",
+    "volume": "245"
+   },
+   "referencePositions": [
+    "DISULFIDE BONDS"
+   ]
+  },
+  {
+   "referenceNumber": 12,
+   "citation": {
+    "id": "5534301",
+    "citationType": "journal article",
+    "authors": [
+     "Bell K.",
+     "Hopper K.E.",
+     "McKenzie H.A.",
+     "Murphy W.H.",
+     "Shaw D.C."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "5534301"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/0005-2795(70)90302-8"
+     }
+    ],
+    "title": "A comparison of bovine alpha-lactalbumin A and B of Droughtmaster.",
+    "publicationDate": "1970",
+    "journal": "Biochim. Biophys. Acta",
+    "firstPage": "437",
+    "lastPage": "444",
+    "volume": "214"
+   },
+   "referencePositions": [
+    "PRELIMINARY PROTEIN SEQUENCE (VARIANTS ALLELIC)"
+   ],
+   "referenceComments": [
+    {
+     "value": "Droughtmaster",
+     "type": "STRAIN"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 13,
+   "citation": {
+    "id": "CI-297JT5TN6MPVJ",
+    "citationType": "journal article",
+    "authors": [
+     "Gordon W.G.",
+     "Aschaffenburg R.",
+     "Sen A.",
+     "Ghosh S.K."
+    ],
+    "title": "Amino acid composition of several alpha-lactalbumins.",
+    "publicationDate": "1968",
+    "journal": "J. Dairy Sci.",
+    "firstPage": "947",
+    "lastPage": "947",
+    "volume": "51"
+   },
+   "referencePositions": [
+    "PRELIMINARY PROTEIN SEQUENCE OF 20-142 (VARIANT A)"
+   ],
+   "referenceComments": [
+    {
+     "value": "Zebu cattle",
+     "type": "STRAIN"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 14,
+   "citation": {
+    "id": "6774718",
+    "citationType": "journal article",
+    "authors": [
+     "Hiraoka Y.",
+     "Segawa T.",
+     "Kuwajima K.",
+     "Sugai S.",
+     "Murai N."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "6774718"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/0006-291x(80)91585-5"
+     }
+    ],
+    "title": "Alpha-lactalbumin: a calcium metalloprotein.",
+    "publicationDate": "1980",
+    "journal": "Biochem. Biophys. Res. Commun.",
+    "firstPage": "1098",
+    "lastPage": "1104",
+    "volume": "95"
+   },
+   "referencePositions": [
+    "CALCIUM-BINDING DATA"
+   ]
+  },
+  {
+   "referenceNumber": 15,
+   "citation": {
+    "id": "7263672",
+    "citationType": "journal article",
+    "authors": [
+     "Kronman M.J.",
+     "Sinha S.K.",
+     "Brew K."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "7263672"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/s0021-9258(19)68884-8"
+     }
+    ],
+    "title": "Characteristics of the binding of Ca2+ and other divalent metal ions to bovine alpha-lactalbumin.",
+    "publicationDate": "1981",
+    "journal": "J. Biol. Chem.",
+    "firstPage": "8582",
+    "lastPage": "8587",
+    "volume": "256"
+   },
+   "referencePositions": [
+    "CALCIUM-BINDING DATA"
+   ]
+  },
+  {
+   "referenceNumber": 16,
+   "citation": {
+    "id": "8805552",
+    "citationType": "journal article",
+    "authors": [
+     "Pike A.C.W.",
+     "Brew K.",
+     "Acharya K.R."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "8805552"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/s0969-2126(96)00075-5"
+     }
+    ],
+    "title": "Crystal structures of guinea-pig, goat and bovine alpha-lactalbumin highlight the enhanced conformational flexibility of regions that are significant for its action in lactose synthase.",
+    "publicationDate": "1996",
+    "journal": "Structure",
+    "firstPage": "691",
+    "lastPage": "703",
+    "volume": "4"
+   },
+   "referencePositions": [
+    "X-RAY CRYSTALLOGRAPHY IN COMPLEX WITH CALCIUM"
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1HFZ"
+    }
+   ]
+  }
+ ],
+ "uniProtKBCrossReferences": [
+  {
+   "database": "EMBL",
+   "id": "X06366",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "CAA29664.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "M18780",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAA30615.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "mRNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "J05147",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAA30367.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "mRNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "AB052163",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "BAB18921.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "AB052164",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "BAB18922.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "AB052165",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "BAB18923.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "AB052166",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "BAB18924.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "AB052167",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "BAB18925.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "AF249896",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAF63624.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "BT025469",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "ABF57425.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "mRNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "BC102173",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAI02174.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "mRNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "M90645",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAA30614.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "PIR",
+   "id": "A27360",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "LABO"
+    }
+   ]
+  },
+  {
+   "database": "RefSeq",
+   "id": "NP_776803.1",
+   "properties": [
+    {
+     "key": "NucleotideSequenceId",
+     "value": "NM_174378.2"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1F6R",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.20 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B/C/D/E/F=20-142"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1F6S",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.20 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B/C/D/E/F=20-142"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1HFZ",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.30 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B/C/D=20-142"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "2G4N",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.30 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B/C/D/E/F=20-142"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "6IP9",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.85 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=20-142"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "7EKA",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.20 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=20-140"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "7WQG",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.50 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B/C/D/E/F=20-140"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "9OZW",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.17 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B/C/D/E/F=20-142"
+    }
+   ]
+  },
+  {
+   "database": "AlphaFoldDB",
+   "id": "P00711",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "BMRB",
+   "id": "P00711",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "MDposit",
+   "id": "P00711",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "SMR",
+   "id": "P00711",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "BioGRID",
+   "id": "159201",
+   "properties": [
+    {
+     "key": "Interactions",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "FunCoup",
+   "id": "P00711",
+   "properties": [
+    {
+     "key": "Number of interactors",
+     "value": "75"
+    }
+   ]
+  },
+  {
+   "database": "IntAct",
+   "id": "P00711",
+   "properties": [
+    {
+     "key": "Interactions",
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "database": "MINT",
+   "id": "P00711",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "STRING",
+   "id": "9913.ENSBTAP00000060771",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Allergome",
+   "id": "163",
+   "properties": [
+    {
+     "key": "AllergenName",
+     "value": "Bos d 4"
+    }
+   ]
+  },
+  {
+   "database": "Allergome",
+   "id": "3165",
+   "properties": [
+    {
+     "key": "AllergenName",
+     "value": "Bos d 4.0101"
+    }
+   ]
+  },
+  {
+   "database": "CarbonylDB",
+   "id": "P00711",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "GlyCosmos",
+   "id": "P00711",
+   "properties": [
+    {
+     "key": "glycosylation",
+     "value": "1 site, No reported glycans"
+    }
+   ]
+  },
+  {
+   "database": "GlyGen",
+   "id": "P00711",
+   "properties": [
+    {
+     "key": "glycosylation",
+     "value": "2 sites, 1 O-linked glycan (1 site)"
+    }
+   ]
+  },
+  {
+   "database": "iPTMnet",
+   "id": "P00711",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PaxDb",
+   "id": "9913-ENSBTAP00000060771",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PeptideAtlas",
+   "id": "P00711",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "GeneID",
+   "id": "281894",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "KEGG",
+   "id": "bta:281894",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "CTD",
+   "id": "3906",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "VGNC",
+   "id": "VGNC:30768",
+   "properties": [
+    {
+     "key": "GeneName",
+     "value": "LALBA"
+    }
+   ]
+  },
+  {
+   "database": "eggNOG",
+   "id": "ENOG502T8BJ",
+   "properties": [
+    {
+     "key": "ToxonomicScope",
+     "value": "Eukaryota"
+    }
+   ]
+  },
+  {
+   "database": "HOGENOM",
+   "id": "CLU_111620_0_1_1",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "InParanoid",
+   "id": "P00711",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "OMA",
+   "id": "AFQATEF",
+   "properties": [
+    {
+     "key": "Fingerprint",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "OrthoDB",
+   "id": "17373at2759",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "EvolutionaryTrace",
+   "id": "P00711",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PRO",
+   "id": "PR:P00711",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Proteomes",
+   "id": "UP000009136",
+   "properties": [
+    {
+     "key": "Component",
+     "value": "Unplaced"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0005576",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "C:extracellular region"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:AgBase"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "3585228"
+    },
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "9112130"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0005509",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:calcium ion binding"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IEA:InterPro"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0042802",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:identical protein binding"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IPI:IntAct"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000353",
+     "source": "PubMed",
+     "id": "23353684"
+    },
+    {
+     "evidenceCode": "ECO:0000353",
+     "source": "PubMed",
+     "id": "23416304"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0004461",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:lactose synthase activity"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IEA:InterPro"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0003796",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:lysozyme activity"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IBA:GO_Central"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0050829",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:defense response to Gram-negative bacterium"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IBA:GO_Central"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0050830",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:defense response to Gram-positive bacterium"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IBA:GO_Central"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0005989",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:lactose biosynthetic process"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IEA:InterPro"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:1903496",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:response to 11-deoxycorticosterone"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:AgBase"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "3585228"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:1903494",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:response to dehydroepiandrosterone"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:AgBase"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "3585228"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0032355",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:response to estradiol"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:AgBase"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "3585228"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0032570",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:response to progesterone"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:AgBase"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "3585228"
+    }
+   ]
+  },
+  {
+   "database": "CDD",
+   "id": "cd16898",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "LYZ_LA"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "FunFam",
+   "id": "1.10.530.10:FF:000014",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Alpha-lactalbumin"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "Gene3D",
+   "id": "1.10.530.10",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "-"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR001916",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Glyco_hydro_22"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR019799",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Glyco_hydro_22_CS"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR000545",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Lactalbumin"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR023346",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Lysozyme-like_dom_sf"
+    }
+   ]
+  },
+  {
+   "database": "PANTHER",
+   "id": "PTHR11407:SF32",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "ALPHA-LACTALBUMIN"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PANTHER",
+   "id": "PTHR11407",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "LYSOZYME C"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "Pfam",
+   "id": "PF00062",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Lys"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PRINTS",
+   "id": "PR00136",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "LACTALBUMIN"
+    }
+   ]
+  },
+  {
+   "database": "PRINTS",
+   "id": "PR00135",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "LYZLACT"
+    }
+   ]
+  },
+  {
+   "database": "SMART",
+   "id": "SM00263",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "LYZ1"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "SUPFAM",
+   "id": "SSF53955",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Lysozyme-like"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PROSITE",
+   "id": "PS00128",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "GLYCOSYL_HYDROL_F22_1"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PROSITE",
+   "id": "PS51348",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "GLYCOSYL_HYDROL_F22_2"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  }
+ ],
+ "sequence": {
+  "value": "MMSFVSLLLVGILFHATQAEQLTKCEVFRELKDLKGYGGVSLPEWVCTTFHTSGYDTQAIVQNNDSTEYGLFQINNKIWCKDDQNPHSSNICNISCDKFLDDDLTDDIMCVKKILDKVGINYWLAHKALCSEKLDQWLCEKL",
+  "length": 142,
+  "molWeight": 16247,
+  "crc64": "810CDB1145901405",
+  "md5": "E5F02283A0374D5F338F1EF64BF563F2"
+ },
+ "extraAttributes": {
+  "countByCommentType": {
+   "FUNCTION": 1,
+   "SUBUNIT": 1,
+   "INTERACTION": 1,
+   "SUBCELLULAR LOCATION": 1,
+   "TISSUE SPECIFICITY": 1,
+   "ALLERGEN": 1,
+   "SIMILARITY": 1
+  },
+  "countByFeatureType": {
+   "Signal": 1,
+   "Chain": 1,
+   "Domain": 1,
+   "Binding site": 5,
+   "Glycosylation": 1,
+   "Disulfide bond": 4,
+   "Natural variant": 1,
+   "Sequence conflict": 3,
+   "Helix": 9,
+   "Beta strand": 5,
+   "Turn": 2
+  },
+  "uniParcId": "UPI000012E267"
+ }
+}
