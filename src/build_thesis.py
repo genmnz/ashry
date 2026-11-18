@@ -28,6 +28,7 @@ CHAPTERS = [
     "09_results_economics.md",
     "10_discussion.md",
     "11_appendices.md",
+    "12_references.md",
 ]
 
 # figure -> (anchor heading it follows, caption)
