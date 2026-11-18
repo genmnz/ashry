@@ -1,0 +1,166 @@
+locus_tag	protein_id	protein	class	length_nt	length_aa
+PAS_chr1-4_0471	XP_002490604.1	40S ribosomal protein S0	cytosolic ribosomal protein	792	263
+PAS_chr4_0524	XP_002493957.1	40S ribosomal protein S1	cytosolic ribosomal protein	771	256
+PAS_FragD_0013	XP_002494374.1	40S ribosomal protein S10	cytosolic ribosomal protein	336	111
+PAS_chr2-1_0584	XP_002491500.1	40S ribosomal protein S11	cytosolic ribosomal protein	468	155
+PAS_chr3_1200	XP_002492813.1	40S ribosomal protein S12	cytosolic ribosomal protein	435	144
+PAS_chr4_0456	XP_002493888.1	40S ribosomal protein S13	cytosolic ribosomal protein	456	151
+PAS_chr2-1_0481	XP_002491391.1	40S ribosomal protein S14	cytosolic ribosomal protein	435	144
+PAS_chr1-4_0491	XP_002490625.1	40S ribosomal protein S15	cytosolic ribosomal protein	438	145
+PAS_chr4_0414	XP_002493842.1	40S ribosomal protein S16	cytosolic ribosomal protein	444	147
+PAS_chr2-1_0779	XP_002491716.1	40S ribosomal protein S17	cytosolic ribosomal protein	411	136
+PAS_chr2-1_0783	XP_002491721.1	40S ribosomal protein S18	cytosolic ribosomal protein	462	153
+PAS_chr1-4_0353	XP_002490476.1	40S ribosomal protein S19	cytosolic ribosomal protein	453	150
+PAS_chr1-4_0589	XP_002490727.1	40S ribosomal protein S2	cytosolic ribosomal protein	792	263
+PAS_chr2-2_0257	XP_002491937.1	40S ribosomal protein S20	cytosolic ribosomal protein	357	118
+PAS_chr3_0596	XP_002492822.1	40S ribosomal protein S21	cytosolic ribosomal protein	264	87
+PAS_chr1-1_0076	XP_002489716.1	40S ribosomal protein S22	cytosolic ribosomal protein	393	130
+PAS_chr2-1_0482	XP_002491392.1	40S ribosomal protein S22	cytosolic ribosomal protein	393	130
+PAS_chr4_0348	XP_002493771.1	40S ribosomal protein S23	cytosolic ribosomal protein	438	145
+PAS_chr4_0292	XP_002493708.1	40S ribosomal protein S24	cytosolic ribosomal protein	408	135
+PAS_chr2-2_0326	XP_002491860.1	40S ribosomal protein S25	cytosolic ribosomal protein	327	108
+PAS_chr2-1_0362	XP_002491262.1	40S ribosomal protein S26	cytosolic ribosomal protein	360	119
+PAS_chr1-1_0283	XP_002489938.1	40S ribosomal protein S27	cytosolic ribosomal protein	249	82
+PAS_chr2-1_0634	XP_002491557.1	40S ribosomal protein S27	cytosolic ribosomal protein	249	82
+PAS_chr1-4_0235	XP_002490351.1	40S ribosomal protein S28	cytosolic ribosomal protein	204	67
+PAS_chr3_1174	XP_002492500.1	40S ribosomal protein S28	cytosolic ribosomal protein	204	67
+PAS_chr1-4_0504	XP_002490638.1	40S ribosomal protein S29	cytosolic ribosomal protein	171	56
+PAS_chr1-3_0115	XP_002489456.1	40S ribosomal protein S3	cytosolic ribosomal protein	732	243
+PAS_chr4_0246	XP_002493655.1	40S ribosomal protein S4	cytosolic ribosomal protein	849	282
+PAS_chr3_0762	XP_002492991.1	40S ribosomal protein S5	cytosolic ribosomal protein	666	221
+PAS_chr4_0094	XP_002493500.1	40S ribosomal protein S6	cytosolic ribosomal protein	711	236
+PAS_FragD_0014	XP_002494373.1	40S ribosomal protein S6	cytosolic ribosomal protein	717	238
+PAS_chr4_0211	XP_002493616.1	40S ribosomal protein S7	cytosolic ribosomal protein	567	188
+PAS_chr1-1_0439	XP_002490097.1	40S ribosomal protein S8	cytosolic ribosomal protein	603	200
+PAS_chr1-4_0422	XP_002490552.1	40S ribosomal protein S9	cytosolic ribosomal protein	582	193
+PAS_FragB_0037	XP_002490847.1	54S ribosomal protein L24, mitochondrial	cytosolic ribosomal protein	747	248
+PAS_chr4_0895	XP_002494344.1	54S ribosomal protein L35, mitochondrial	cytosolic ribosomal protein	1023	340
+PAS_chr1-3_0068	XP_002489404.1	60S acidic ribosomal protein P0	cytosolic ribosomal protein	939	312
+PAS_chr4_0412	XP_002493840.1	60S acidic ribosomal protein P1	cytosolic ribosomal protein	321	106
+PAS_chr4_0982	XP_002494127.1	60S acidic ribosomal protein P1	cytosolic ribosomal protein	324	107
+PAS_chr1-4_0490	XP_002490624.1	60S acidic ribosomal protein P2	cytosolic ribosomal protein	357	118
+PAS_chr2-1_0380	XP_002491282.1	60S ribosomal export protein NMD3	cytosolic ribosomal protein	1521	506
+PAS_chr1-1_0183	XP_002489829.1	60S ribosomal protein L1	cytosolic ribosomal protein	654	217
+PAS_chr2-2_0054	XP_002492159.1	60S ribosomal protein L10	cytosolic ribosomal protein	669	222
+PAS_chr4_0669	XP_002494107.1	60S ribosomal protein L11	cytosolic ribosomal protein	525	174
+PAS_chr1-1_0189	XP_002489836.1	60S ribosomal protein L12	cytosolic ribosomal protein	498	165
+PAS_chr4_0413	XP_002493841.1	60S ribosomal protein L13	cytosolic ribosomal protein	594	197
+PAS_c131_0011	XP_002493402.1	60S ribosomal protein L14	cytosolic ribosomal protein	402	133
+PAS_chr2-1_0658	XP_002491583.1	60S ribosomal protein L15	cytosolic ribosomal protein	615	204
+PAS_chr4_0208	XP_002493613.1	60S ribosomal protein L16	cytosolic ribosomal protein	600	199
+PAS_chr2-2_0109	XP_002492098.1	60S ribosomal protein L17	cytosolic ribosomal protein	513	170
+PAS_chr1-4_0352	XP_002490475.1	60S ribosomal protein L18	cytosolic ribosomal protein	561	186
+PAS_chr3_0091	XP_002492301.1	60S ribosomal protein L19	cytosolic ribosomal protein	615	204
+PAS_chr1-1_0219	XP_002489870.1	60S ribosomal protein L2	cytosolic ribosomal protein	765	254
+PAS_chr4_0107	XP_002493512.1	60S ribosomal protein L2	cytosolic ribosomal protein	765	254
+PAS_chr3_0054	XP_002492262.1	60S ribosomal protein L20	cytosolic ribosomal protein	546	181
+PAS_chr1-4_0680	XP_002490553.1	60S ribosomal protein L21	cytosolic ribosomal protein	558	185
+PAS_chr4_0041	XP_002493447.1	60S ribosomal protein L22	cytosolic ribosomal protein	390	129
+PAS_chr1-3_0300	XP_002489484.1	60S ribosomal protein L23	cytosolic ribosomal protein	414	137
+PAS_chr2-1_0086	XP_002490967.1	60S ribosomal protein L24	cytosolic ribosomal protein	477	158
+PAS_chr4_0814	XP_002494264.1	60S ribosomal protein L25	cytosolic ribosomal protein	429	142
+PAS_chr4_0267	XP_002493680.1	60S ribosomal protein L26	cytosolic ribosomal protein	384	127
+PAS_chr2-1_0728	XP_002491657.1	60S ribosomal protein L28	cytosolic ribosomal protein	450	149
+PAS_chr4_0374	XP_002493797.1	60S ribosomal protein L29	cytosolic ribosomal protein	180	59
+PAS_chr4_0139	XP_002493544.1	60S ribosomal protein L3	cytosolic ribosomal protein	1167	388
+PAS_chr2-1_0087	XP_002490968.1	60S ribosomal protein L30	cytosolic ribosomal protein	324	107
+PAS_chr4_0180	XP_002493585.1	60S ribosomal protein L31	cytosolic ribosomal protein	354	117
+PAS_chr3_1057	XP_002493298.1	60S ribosomal protein L32	cytosolic ribosomal protein	399	132
+PAS_chr1-4_0275	XP_002490390.1	60S ribosomal protein L33	cytosolic ribosomal protein	324	107
+PAS_chr1-4_0239	XP_002490355.1	60S ribosomal protein L34	cytosolic ribosomal protein	375	124
+PAS_chr1-1_0302	XP_002489960.1	60S ribosomal protein L35	cytosolic ribosomal protein	363	120
+PAS_FragB_0036	XP_002490846.1	60S ribosomal protein L36	cytosolic ribosomal protein	306	101
+PAS_chr1-1_0337	XP_002489995.1	60S ribosomal protein L37	cytosolic ribosomal protein	255	84
+PAS_chr1-4_0412	XP_002490541.1	60S ribosomal protein L38	cytosolic ribosomal protein	237	78
+PAS_chr2-1_0483	XP_002491393.1	60S ribosomal protein L39	cytosolic ribosomal protein	156	51
+PAS_chr1-3_0034	XP_002489370.1	60S ribosomal protein L4	cytosolic ribosomal protein	1020	339
+PAS_chr3_0194	XP_002492402.1	60S ribosomal protein L42	cytosolic ribosomal protein	321	106
+PAS_chr3_0335	XP_002492552.1	60S ribosomal protein L43	cytosolic ribosomal protein	279	92
+PAS_chr1-1_0345	XP_002490002.1	60S ribosomal protein L5	cytosolic ribosomal protein	894	297
+PAS_chr2-2_0229	XP_002491968.1	60S ribosomal protein L6	cytosolic ribosomal protein	477	158
+PAS_chr4_0131	XP_002493537.1	60S ribosomal protein L6	cytosolic ribosomal protein	504	167
+PAS_chr2-1_0022	XP_002490901.1	60S ribosomal protein L7	cytosolic ribosomal protein	735	244
+PAS_chr1-1_0216	XP_002489867.1	60S ribosomal protein L8	cytosolic ribosomal protein	732	243
+PAS_chr1-1_0236	XP_002489886.1	60S ribosomal protein L9	cytosolic ribosomal protein	576	191
+PAS_chr1-1_0382	XP_002490040.1	60S ribosomal protein L9	cytosolic ribosomal protein	576	191
+PAS_chr1-1_0088	XP_002489729.1	Essential protein that binds ribosomal protein L11	cytosolic ribosomal protein	600	199
+PAS_chr1-1_0144	XP_002489789.1	Homolog of the prokaryotic ribosomal protein L36	cytosolic ribosomal protein	243	80
+PAS_chr4_0105	XP_002493510.1	Putative GTPase that associates with free 60S ribosomal subunits in the nucleolus	cytosolic ribosomal protein	1908	635
+PAS_chr4_0423	XP_002493853.1	Putative GTPase that associates with pre-60S ribosomal subunits in the nucleolus	cytosolic ribosomal protein	1560	519
+PAS_chr1-1_0100	XP_002489743.1	mitochondrial 37S ribosomal protein MRP2	cytosolic ribosomal protein	348	115
+PAS_c131_0005	XP_002493396.1	mitochondrial 37S ribosomal protein MRP4	cytosolic ribosomal protein	1152	383
+PAS_chr1-4_0320	XP_002490442.1	mitochondrial 37S ribosomal protein MRPS16	cytosolic ribosomal protein	363	120
+PAS_chr2-1_0384	XP_002491286.1	mitochondrial 37S ribosomal protein MRPS28	cytosolic ribosomal protein	897	298
+PAS_chr1-4_0688	XP_002490672.1	mitochondrial 37S ribosomal protein MRPS35	cytosolic ribosomal protein	978	325
+PAS_chr2-2_0086	XP_002492122.1	mitochondrial 37S ribosomal protein MRPS5	cytosolic ribosomal protein	894	297
+PAS_chr1-1_0385	XP_002490043.1	mitochondrial 37S ribosomal protein MRPS8	cytosolic ribosomal protein	474	157
+PAS_chr3_0946	XP_002493186.1	mitochondrial 37S ribosomal protein RSM10	cytosolic ribosomal protein	732	243
+PAS_chr3_1117	XP_002493363.1	mitochondrial 37S ribosomal protein RSM19	cytosolic ribosomal protein	276	91
+PAS_chr2-2_0487	XP_002491907.1	mitochondrial 37S ribosomal protein RSM24	cytosolic ribosomal protein	876	291
+PAS_chr2-2_0170	XP_002492033.1	mitochondrial 37S ribosomal protein RSM25	cytosolic ribosomal protein	699	232
+PAS_chr1-4_0469	XP_002490602.1	mitochondrial 37S ribosomal protein RSM27	cytosolic ribosomal protein	345	114
+PAS_chr1-1_0098	XP_002489741.1	mitochondrial 37S ribosomal protein RSM7	cytosolic ribosomal protein	741	246
+PAS_chr1-1_0375	XP_002490033.1	mitochondrial 37S ribosomal protein YmS-T	cytosolic ribosomal protein	276	91
+PAS_chr4_0813	XP_002494263.1	mitochondrial 37S ribosomal protein YmS18	cytosolic ribosomal protein	642	213
+PAS_chr3_0474	XP_002492702.1	mitochondrial 54S ribosomal protein MRPL1	cytosolic ribosomal protein	822	273
+PAS_chr1-4_0171	XP_002490285.1	mitochondrial 54S ribosomal protein MRPL51	cytosolic ribosomal protein	423	140
+PAS_chr1-1_0192	XP_002489839.1	mitochondrial 54S ribosomal protein RML2	cytosolic ribosomal protein	1134	377
+PAS_chr2-2_0417	XP_002491771.1	mitochondrial 54S ribosomal protein YmL10/YmL18	cytosolic ribosomal protein	843	280
+PAS_chr2-2_0241	XP_002491955.1	mitochondrial 54S ribosomal protein YmL16	cytosolic ribosomal protein	648	215
+PAS_chr1-3_0107	XP_002489448.1	mitochondrial 54S ribosomal protein YmL19	cytosolic ribosomal protein	438	145
+PAS_chr4_0905	XP_002494354.1	mitochondrial 54S ribosomal protein YmL23	cytosolic ribosomal protein	486	161
+PAS_chr4_0644	XP_002494082.1	mitochondrial 54S ribosomal protein YmL25	cytosolic ribosomal protein	480	159
+PAS_chr2-1_0621	XP_002491541.1	mitochondrial 54S ribosomal protein YmL27	cytosolic ribosomal protein	441	146
+PAS_c121_0014	XP_002490808.1	mitochondrial 54S ribosomal protein YmL28	cytosolic ribosomal protein	486	161
+PAS_chr1-4_0484	XP_002490617.1	mitochondrial 54S ribosomal protein YmL31	cytosolic ribosomal protein	333	110
+PAS_chr4_0845	XP_002494293.1	mitochondrial 54S ribosomal protein YmL32	cytosolic ribosomal protein	540	179
+PAS_chr4_0904	XP_002494353.1	mitochondrial 54S ribosomal protein YmL37	cytosolic ribosomal protein	294	97
+PAS_chr3_0959	XP_002493199.1	mitochondrial 54S ribosomal protein YmL38/YmL34	cytosolic ribosomal protein	399	132
+PAS_chr3_1135	XP_002493382.1	mitochondrial 54S ribosomal protein YmL39	cytosolic ribosomal protein	228	75
+PAS_chr2-1_0126	XP_002491012.1	mitochondrial 54S ribosomal protein YmL41	cytosolic ribosomal protein	645	214
+PAS_chr1-3_0124	XP_002489465.1	mitochondrial 54S ribosomal protein YmL44	cytosolic ribosomal protein	291	96
+PAS_chr1-4_0557	XP_002490693.1	mitochondrial 54S ribosomal protein YmL47	cytosolic ribosomal protein	669	222
+PAS_chr3_0221	XP_002492431.1	mitochondrial 54S ribosomal protein YmL49	cytosolic ribosomal protein	483	160
+PAS_chr4_0799	XP_002494247.1	mitochondrial 54S ribosomal protein YmL7/YmL5	cytosolic ribosomal protein	897	298
+PAS_chr2-2_0240	XP_002491956.1	mitochondrial 54S ribosomal protein YmL9	cytosolic ribosomal protein	789	262
+PAS_chr3_1120	XP_002493366.1	putative mitochondrial 37S ribosomal protein MRPS12	cytosolic ribosomal protein	531	176
+PAS_chr3_0520	XP_002492748.1	putative mitochondrial 37S ribosomal protein SWS2	cytosolic ribosomal protein	366	121
+PAS_chr1-4_0358	XP_002490482.1	putative mitochondrial 54S ribosomal protein MNP1	cytosolic ribosomal protein	483	160
+PAS_chr3_0722	XP_002492949.1	ubiquitin-40S ribosomal protein S31 fusion protein	cytosolic ribosomal protein	453	150
+PAS_chr2-1_0486	XP_002491396.1	ubiquitin-60S ribosomal protein L40 fusion protein	cytosolic ribosomal protein	387	128
+PAS_chr3_0082	XP_002492293.1	Enolase I, a phosphopyruvate hydratase that catalyzes the conversion of 2-phosphoglycerate to phosph	glycolysis	1311	436
+PAS_chr2-1_0437	XP_002491345.1	Glyceraldehyde-3-phosphate dehydrogenase, isozyme 3, involved in glycolysis and gluconeogenesis	glycolysis	1002	333
+PAS_chr3_0456	XP_002492682.1	Glycolytic enzyme phosphoglucose isomerase	glycolysis	1683	560
+PAS_chr3_0693	XP_002492921.1	Tetrameric phosphoglycerate mutase	glycolysis	753	250
+PAS_chr3_0826	XP_002493059.1	Tetrameric phosphoglycerate mutase	glycolysis	747	248
+PAS_chr3_0951	XP_002493191.1	Triose phosphate isomerase, abundant glycolytic enzyme	glycolysis	747	248
+PAS_chr2-2_0323	XP_002491863.1	Co-chaperone that stimulates the ATPase activity of the HSP70 protein Ssc1p	major chaperone	1479	492
+PAS_chr1-4_0130	XP_002490239.1	Heat shock protein Hsp90	major chaperone	2121	706
+PAS_chr1-3_0102	XP_002489443.1	Heat shock protein that cooperates with Ydj1p (Hsp40) and Ssa1p (Hsp70)	major chaperone	2712	903
+PAS_chr2-1_0042	XP_002490922.1	Hsp70 (Ssa1p) nucleotide exchange factor, cytosolic homolog of Sil1p, which is the nucleotide exchan	major chaperone	864	287
+PAS_chr1-1_0237	XP_002489887.1	Nucleotide exchange factor for the endoplasmic reticulum (ER) lumenal Hsp70 chaperone Kar2p	major chaperone	1119	372
+PAS_chr2-2_0151	XP_002492055.1	Type II HSP40 co-chaperone that interacts with the HSP70 protein Ssa1p	major chaperone	1041	346
+PAS_chr4_0821	XP_002494271.1	Alcohol oxidase	methanol utilisation	1992	663
+PAS_chr3_0077	XP_002492289.1	Alpha subunit of the translation initiation factor eIF2, involved in the identification of the start	translation factor	912	303
+PAS_chr4_0032	XP_002493437.1	Alpha subunit of the translation initiation factor eIF2B	translation factor	912	303
+PAS_chr1-4_0135	XP_002490244.1	Beta subunit of the translation initiation factor eIF2	translation factor	852	283
+PAS_chr3_0564	XP_002492791.1	Beta subunit of the translation initiation factor eIF2B	translation factor	1140	379
+PAS_chr3_0391	XP_002492617.1	Catalytic epsilon subunit of the translation initiation factor eIF2B	translation factor	1941	646
+PAS_chr2-2_0275	XP_002491918.1	Delta subunit of the translation initiation factor eIF2B	translation factor	1413	470
+PAS_chr3_0839	XP_002493069.1	Gamma subunit of the translation initiation factor eIF2	translation factor	1575	524
+PAS_chr4_0386	XP_002493813.1	Gamma subunit of the translation initiation factor eIF2B	translation factor	1350	449
+PAS_chr3_0562	XP_002492789.1	Mitochondrial translation elongation factor Tu	translation factor	1278	425
+PAS_chr2-1_0244	XP_002491136.1	Mitochondrial translation initiation factor 2	translation factor	2352	783
+PAS_chr1-3_0281	XP_002489628.1	Subunit of the core complex of translation initiation factor (eIF3)	translation factor	1032	343
+PAS_chr3_0340	XP_002492558.1	Subunit of the core complex of translation initiation factor 3(eIF3)	translation factor	2544	847
+PAS_chr4_0434	XP_002493864.1	Subunit of the core complex of translation initiation factor 3(eIF3)	translation factor	867	288
+PAS_chr3_0701	XP_002492929.1	Subunit of the core complex of translation initiation factor 3(eIF3), essential for translation	translation factor	2148	715
+PAS_chr3_0774	XP_002493005.1	Subunit of the eukaryotic translation initiation factor 3 (eIF3)	translation factor	2433	810
+PAS_chr3_1071	XP_002493313.1	Translation elongation factor EF-1 gamma	translation factor	651	216
+PAS_chr3_1054	XP_002493295.1	Translation initiation factor eIF-4B, has RNA annealing activity	translation factor	1152	383
+PAS_chr4_0771	XP_002494214.1	Translation initiation factor eIF-5	translation factor	1182	393
+PAS_chr3_1048	XP_002493289.1	Translation initiation factor eIF-5A, promotes formation of the first peptide bond	translation factor	468	155
+PAS_chr4_0880	XP_002494330.1	Translation initiation factor eIF1	translation factor	330	109
+PAS_chr2-1_0741	XP_002491671.1	Translation initiation factor eIF1A	translation factor	453	150
+PAS_chr3_0595	XP_002492821.1	Translation initiation factor eIF4A, identical to Tif1p	translation factor	1212	403
+PAS_chr1-4_0147	XP_002490257.1	eukaryotic translation initiation factor 3 subunit	translation factor	1275	424
