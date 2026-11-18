@@ -35,7 +35,13 @@ from collections import defaultdict
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
-TABLE = REPO / "data" / "external" / "codon_usage_p_pastoris_kazusa.json"
+CDS_DIR = REPO / "data" / "external" / "kphaffii_cds"
+TABLE_HIGH = CDS_DIR / "codon_usage_highly_expressed.tsv"
+TABLE_GENOME = CDS_DIR / "codon_usage_genome.tsv"
+# Kept for comparison only: a built-in genome-average table with no CDS count
+# and no retrieval provenance beyond a 2012 software release.
+TABLE_LEGACY = REPO / "data" / "external" / "codon_usage_p_pastoris_kazusa.json"
+TABLE = TABLE_HIGH
 
 STOP = "*"
 RESTRICTION = {
@@ -45,21 +51,65 @@ RESTRICTION = {
 POLYA_MOTIFS = ("AATAAA", "TATATA")
 
 
-def load_table(path: Path = TABLE) -> dict:
-    data = json.loads(Path(path).read_text())
-    by_aa: dict[str, list[tuple[str, float]]] = defaultdict(list)
-    for c in data["codons"]:
-        by_aa[c["amino_acid"]].append((c["codon"], float(c["fraction"])))
-    weights: dict[str, float] = {}
-    for aa, codons in by_aa.items():
-        mx = max(f for _, f in codons) or 1.0
-        for codon, f in codons:
-            weights[codon] = (f / mx) if f > 0 else 1e-3
+def _finalise(by_aa, source: str, weights: dict[str, float] | None = None) -> dict:
+    if weights is None:
+        weights = {}
+        for aa, codons in by_aa.items():
+            mx = max(f for _, f in codons) or 1.0
+            for codon, f in codons:
+                weights[codon] = (f / mx) if f > 0 else 1e-3
     return {
-        "source": data.get("source", ""),
+        "source": source,
         "by_aa": {aa: sorted(c, key=lambda x: -x[1]) for aa, c in by_aa.items()},
         "weights": weights,
     }
+
+
+def load_table(path: Path = TABLE) -> dict:
+    """Codon usage and relative adaptiveness for *K. phaffii*.
+
+    The reference set matters more than it appears to. CAI (Sharp and Li 1987)
+    measures how closely a gene's codon choice resembles that of *highly
+    expressed* genes, not the genomic average. Against a genome-average table
+    every native gene scores near the middle by construction and the index
+    carries almost no information: the point of the index is the separation
+    between abundant-protein usage and average usage, and a genome-average
+    reference sets that separation to zero.
+
+    The default table is therefore the 165-gene highly expressed reference
+    computed from the RefSeq GS115 CDS set (GCF_000027005.1, 5,040 CDS,
+    2,399,341 sense codons): cytosolic ribosomal proteins, translation factors,
+    chaperones, glycolytic enzymes and alcohol oxidase, the standard proxy
+    classes where no expression data for the organism exists. The genome-average
+    table and the legacy 2012 built-in table load through the same function so
+    that the three can be compared, which is done explicitly in main().
+    """
+    path = Path(path)
+    by_aa: dict[str, list[tuple[str, float]]] = defaultdict(list)
+    if path.suffix == ".json":
+        data = json.loads(path.read_text())
+        for c in data["codons"]:
+            by_aa[c["amino_acid"]].append((c["codon"], float(c["fraction"])))
+        return _finalise(by_aa, data.get("source", ""))
+
+    weights: dict[str, float] = {}
+    with path.open() as fh:
+        header = fh.readline().rstrip("\n").split("\t")
+        idx = {name: i for i, name in enumerate(header)}
+        for line in fh:
+            if not line.strip():
+                continue
+            f = line.rstrip("\n").split("\t")
+            aa = f[idx["aa"]]
+            codon = f[idx["codon"]]
+            if aa in ("*", "Stop"):
+                continue
+            by_aa[aa].append((codon, float(f[idx["fraction_of_aa"]])))
+            w = float(f[idx["relative_adaptiveness_w"]])
+            weights[codon] = w if w > 0 else 1e-3
+    label = ("highly expressed reference set, 165 genes"
+             if "highly" in path.name else "genome average, all CDS")
+    return _finalise(by_aa, f"RefSeq GCF_000027005.1 ({label})", weights)
 
 
 def cai(cds: str, weights: dict[str, float]) -> float:
@@ -113,7 +163,7 @@ def design_max_cai(protein: str, table: dict) -> str:
 
 
 def design_harmonised(protein: str, table: dict, seed: int = 20260101,
-                      attempts: int = 4000) -> tuple[str, list[str]]:
+                      attempts: int = 20000) -> tuple[str, list[str]]:
     """Usage-proportional sampling with local repair of design-rule violations."""
     rng = random.Random(seed)
     by_aa = table["by_aa"]
@@ -194,6 +244,36 @@ def main() -> None:
         w = csv.DictWriter(fh, fieldnames=list(rows[0]))
         w.writeheader()
         w.writerows(rows)
+
+    # How much does the reference set matter? Score the same designs against all
+    # three tables. If the genome-average and legacy tables compress the range,
+    # any CAI reported against them was carrying less information than it looked.
+    ref_rows = []
+    for label, path in (("highly expressed (165 genes)", TABLE_HIGH),
+                        ("genome average (5,040 CDS)", TABLE_GENOME),
+                        ("legacy built-in table (2012)", TABLE_LEGACY)):
+        tb = load_table(path)
+        scores = {"reference": label, "source": tb["source"]}
+        for kind, design in (("max_design", design_max_cai),
+                             ("uniform_control", reverse_translate_uniform)):
+            vals = [cai(design(prot.replace("U", "C"), tb), tb["weights"])
+                    for prot in seqs.values()]
+            scores[f"cai_{kind}_mean"] = sum(vals) / len(vals)
+        scores["separation_max_minus_control"] = (
+            scores["cai_max_design_mean"] - scores["cai_uniform_control_mean"])
+        ref_rows.append(scores)
+    ref_tbl = REPO / "results" / "tables" / "codon_reference_comparison.csv"
+    with ref_tbl.open("w", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=list(ref_rows[0]))
+        w.writeheader()
+        w.writerows(ref_rows)
+    print("\nhow much the CAI reference set matters:")
+    print(f"{'reference':<30}{'CAI(max)':>10}{'CAI(uniform)':>14}{'separation':>12}")
+    for r in ref_rows:
+        print(f"{r['reference']:<30}{r['cai_max_design_mean']:>10.3f}"
+              f"{r['cai_uniform_control_mean']:>14.3f}"
+              f"{r['separation_max_minus_control']:>12.3f}")
+    print()
 
     print(f"{'protein':<22}{'CAI_max':>9}{'CAI_harm':>10}{'CAI_ctrl':>10}"
           f"{'GC':>7}{'GC3':>7}  violations")

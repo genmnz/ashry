@@ -74,19 +74,49 @@ def annotate(entry: dict) -> dict:
         ss += 1
     interchain //= 2
 
-    n_glyc = sum(1 for f in feats if f["type"] == "Glycosylation"
-                 and "n-linked" in _desc(f).lower())
-    o_glyc = sum(1 for f in feats if f["type"] == "Glycosylation"
-                 and "o-linked" in _desc(f).lower())
-    phos = sum(1 for f in feats if f["type"] == "Modified residue"
-               and "phosphoserine" in _desc(f).lower())
+    # UniProt files non-enzymatic glycation of lysine under the same
+    # 'Glycosylation' feature type and the same 'N-linked' prefix as true
+    # oligosaccharyltransferase sites: human serum albumin carries 24 such
+    # lines, all 'N-linked (Glc) (glycation) lysine', several of them in vitro.
+    # Albumin is not a glycoprotein, and charging 24 glycans to it cut its
+    # computed ceiling by a third. A site is counted only when it is N-linked,
+    # is not glycation, and sits on an asparagine in the sequence itself.
+    # Counts are over distinct *positions*, not feature lines. UniProt writes one
+    # line per observed glycoform, so bovine lactoferrin's five glycosylation
+    # sites appear as nine lines: Asn-387 and Asn-495 each carry three
+    # 'alternate' entries for complex, high-mannose and hybrid glycans. Counting
+    # lines would charge nine glycans to a five-site protein.
+    n_sites, o_sites = set(), set()
+    for f in feats:
+        if f["type"] != "Glycosylation":
+            continue
+        d = _desc(f).lower()
+        if "glycation" in d:
+            continue
+        pos = int(f["location"]["start"]["value"])
+        residue = seq[pos - 1] if 0 < pos <= len(seq) else ""
+        if "n-linked" in d and residue == "N":
+            n_sites.add(pos)
+        elif "o-linked" in d and residue in ("S", "T"):
+            o_sites.add(pos)
+    n_glyc, o_glyc = len(n_sites), len(o_sites)
+    phos = len({int(f["location"]["start"]["value"]) for f in feats
+                if f["type"] == "Modified residue"
+                and "phosphoserine" in _desc(f).lower()})
     haem = sum(1 for f in feats if f["type"] == "Binding site"
                and ("heme" in _desc(f).lower() or "haem" in _desc(f).lower()))
+    # A 'Signal' feature marked 'Not cleaved' is not a cleavage site. Ovalbumin
+    # is the case: residues 22-48 form an internal, uncleaved signal sequence, so
+    # the mature protein is the whole chain and treating 48 as a cleavage point
+    # would delete an eighth of it.
     signal_end = 0
     for f in feats:
-        if f["type"] == "Signal":
-            signal_end = int(f["location"]["end"]["value"])
-            break
+        if f["type"] != "Signal":
+            continue
+        if "not cleaved" in _desc(f).lower():
+            continue
+        signal_end = int(f["location"]["end"]["value"])
+        break
 
     return {
         "accession": entry["primaryAccession"],

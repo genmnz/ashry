@@ -76,12 +76,12 @@
     "uniprot_len": 190,
     "uniprot_mw": 21269,
     "signal_peptide_end": 21,
-    "disulfide_bonds": 0,
+    "disulfide_bonds": 1,
     "n_glyc_sites_annotated": 0,
     "n_glyc_sequons_in_mature": 0,
-    "phosphoserines": 1,
+    "phosphoserines": 3,
     "haem_per_chain": 0,
-    "notes": "O-glycosylated in vivo; phospho/glyco annotation pending re-check"
+    "notes": "Corrected against the verified UniProtKB feature table: one intramolecular disulfide (Cys-32-Cys-109) plus an inter-chain bond between the same cysteines in the casein polymer, and three phosphoserine positions (148, 170 alternate, 187), not one. Eight O-glycosylation sites are annotated; the host installs O-glycans of its own structure, so they are not charged as mammalian O-glycans."
   },
   {
     "key": "beta_lactoglobulin",

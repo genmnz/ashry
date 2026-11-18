@@ -28,9 +28,11 @@ import json
 import re
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 
-from corpus import drop_fragments
+from corpus import drop_fragments, food_subset, load_titres
+import uniprot_annotations
 from producibility import count_disulfides_unknown, sequence_library
 from protein_cost import ProteinSpec, load_model, yield_analysis
 
@@ -42,8 +44,30 @@ CENTRAL_LOADING = 350.0
 
 
 def annotations() -> dict[str, dict]:
-    path = REPO / "data" / "sequences" / "targets_metadata.json"
+    """Annotations for every protein in the corpus.
+
+    The verified UniProtKB feature tables are the source for all 36 accessions,
+    so the ceiling is computed from annotated disulfide, glycosylation and
+    phosphorylation counts rather than from the cysteines // 2 assumption. The
+    nine-member target panel's metadata is layered on top only for its display
+    names and thesis categories, which UniProt does not carry.
+    """
     out: dict[str, dict] = {}
+    for acc, a in uniprot_annotations.load_all().items():
+        out[acc] = {
+            "disulfide_bonds": a["disulfide_bonds"],
+            "n_glyc_sites_annotated": a["n_glyc_sites_annotated"],
+            "phosphoserines": a["phosphoserines"],
+            "haem_per_chain": a["haem_per_chain"],
+            "category": "",
+            "display_name": "",
+        }
+    path = REPO / "data" / "sequences" / "targets_metadata.json"
+    if path.exists():
+        for m in json.loads(path.read_text()):
+            if m["accession"] in out:
+                out[m["accession"]]["category"] = m["category"]
+                out[m["accession"]]["display_name"] = m["display_name"]
     if path.exists():
         for m in json.loads(path.read_text()):
             out[m["accession"]] = {
@@ -62,7 +86,7 @@ def main() -> None:
     ann = annotations()
     base = load_model()
 
-    titres = pd.read_csv(REPO / "data" / "literature" / "titers_host_panel.csv")
+    titres = load_titres()
     titres, dropped = drop_fragments(titres)
     titres = titres[titres.confidence == "high"]
     titres = titres[titres.titer_mg_L.notna() & (titres.titer_mg_L > 0)]
@@ -82,6 +106,7 @@ def main() -> None:
         a = ann.get(acc, {})
         ss = a.get("disulfide_bonds")
         ss = count_disulfides_unknown(seq) if ss is None else ss
+        ss = int(ss)
         spec = ProteinSpec(
             name=acc, sequence=seq, accession=acc,
             disulfide_bonds=int(ss),
@@ -110,6 +135,10 @@ def main() -> None:
                 "cultivation_mode": r.cultivation_mode,
                 "year": r.year,
                 "doi_or_url": r.doi_or_url,
+                "reference": r.reference,
+                "product_class": r.product_class,
+                "is_therapeutic": r.is_therapeutic,
+                "evidence_quote": r.evidence_quote,
                 "titer_g_L": titre,
                 "length": c["length"],
                 "disulfides": c["disulfides"],
@@ -144,10 +173,65 @@ def main() -> None:
         "worst": {"protein": str(best.iloc[-1].protein_name),
                   "fraction_of_ceiling": float(best.iloc[-1].fraction_of_ceiling)},
     }
+    # A max-over-min ratio is set by two single records and an examiner is
+    # entitled to attack it: one optimistic row and one pessimistic row decide
+    # the headline number. The distribution of utilisation is reported instead,
+    # and the extremes are kept only as named examples. The same is done for the
+    # ceiling, so that the contrast between a narrow ceiling and a wide outcome
+    # is stated in comparable terms.
+    frac = best.fraction_of_ceiling.astype(float)
+    logf = np.log10(frac)
+    summary["utilisation_distribution"] = {
+        "n_proteins": int(len(frac)),
+        "median_percent": float(100 * frac.median()),
+        "q1_percent": float(100 * frac.quantile(0.25)),
+        "q3_percent": float(100 * frac.quantile(0.75)),
+        "min_percent": float(100 * frac.min()),
+        "max_percent": float(100 * frac.max()),
+        "log10_sd": float(logf.std(ddof=1)),
+        "log10_iqr": float(logf.quantile(0.75) - logf.quantile(0.25)),
+        "fold_iqr": float(frac.quantile(0.75) / frac.quantile(0.25)),
+    }
+    ymax = best.theoretical_yield_g_per_g.astype(float)
+    summary["ceiling_distribution"] = {
+        "median_g_per_g": float(ymax.median()),
+        "min_g_per_g": float(ymax.min()),
+        "max_g_per_g": float(ymax.max()),
+        "log10_sd": float(np.log10(ymax).std(ddof=1)),
+        "iqr_fold": float(ymax.quantile(0.75) / ymax.quantile(0.25)),
+    }
+    # The same decomposition inside the food subset, since a human therapeutic
+    # carries development spend that a food protein cannot justify.
+    f_best = best[best.is_therapeutic != "yes"]
+    if len(f_best) >= 4:
+        ff = f_best.fraction_of_ceiling.astype(float)
+        summary["utilisation_distribution_food"] = {
+            "n_proteins": int(len(ff)),
+            "median_percent": float(100 * ff.median()),
+            "q1_percent": float(100 * ff.quantile(0.25)),
+            "q3_percent": float(100 * ff.quantile(0.75)),
+            "log10_sd": float(np.log10(ff).std(ddof=1)),
+            "ceiling_span_fold": float(
+                f_best.theoretical_yield_g_per_g.max()
+                / f_best.theoretical_yield_g_per_g.min()),
+        }
     (TABLES / "efficiency_gap_summary.json").write_text(json.dumps(summary, indent=2))
 
-    print(f"\nceiling spans {summary['ceiling_span_fold']:.2f}x; "
-          f"fraction of ceiling spans {summary['fraction_span_fold']:.0f}x\n")
+    u = summary["utilisation_distribution"]
+    print(f"\nceiling spans {summary['ceiling_span_fold']:.2f}x across "
+          f"{u['n_proteins']} proteins (log10 SD "
+          f"{summary['ceiling_distribution']['log10_sd']:.3f})")
+    print(f"utilisation: median {u['median_percent']:.2f}% of ceiling, "
+          f"IQR {u['q1_percent']:.2f}-{u['q3_percent']:.2f}% "
+          f"({u['fold_iqr']:.1f}x), log10 SD {u['log10_sd']:.3f}, "
+          f"range {u['min_percent']:.3f}-{u['max_percent']:.1f}%")
+    if "utilisation_distribution_food" in summary:
+        f = summary["utilisation_distribution_food"]
+        print(f"food subset ({f['n_proteins']} proteins): median "
+              f"{f['median_percent']:.2f}%, IQR {f['q1_percent']:.2f}-"
+              f"{f['q3_percent']:.2f}%, log10 SD {f['log10_sd']:.3f}, "
+              f"ceiling spans {f['ceiling_span_fold']:.2f}x")
+    print()
     print(f"{'protein':<44}{'titre':>9}{'Ymax':>7}{'ceil':>7}{'% ceil':>8}{'gap':>8}")
     for r in best.itertuples():
         print(f"{str(r.protein_name)[:43]:<44}{r.titer_g_L:>8.2f}"

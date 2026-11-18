@@ -55,8 +55,14 @@ TARGETS: list[TargetAnnotation] = [
     TargetAnnotation(
         key="kappa_casein", accession="P02668", display_name="kappa-casein",
         category="dairy-casein", signal_peptide_end=21, uniprot_len=190,
-        uniprot_mw=21269, disulfide_bonds=0, n_glyc_sites=0, phosphoserines=1,
-        notes="O-glycosylated in vivo; phospho/glyco annotation pending re-check",
+        uniprot_mw=21269, disulfide_bonds=1, n_glyc_sites=0, phosphoserines=3,
+        notes="Corrected against the verified UniProtKB feature table: one "
+              "intramolecular disulfide (Cys-32-Cys-109) plus an inter-chain "
+              "bond between the same cysteines in the casein polymer, and three "
+              "phosphoserine positions (148, 170 alternate, 187), not one. "
+              "Eight O-glycosylation sites are annotated; the host installs "
+              "O-glycans of its own structure, so they are not charged as "
+              "mammalian O-glycans.",
     ),
     TargetAnnotation(
         key="beta_lactoglobulin", accession="P02754", display_name="beta-lactoglobulin",
