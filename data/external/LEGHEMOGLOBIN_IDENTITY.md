@@ -1,38 +1,59 @@
-# Which soybean leghemoglobin is "LegH"?
+# Which soybean leghemoglobin is "LegH"? — resolved
 
-Resolved against UniProtKB on 2026-11-18, because the two threads on this
-project were using two different accessions and the nomenclature is a trap.
+Three different accessions were in use across this project: P02234 (my cost
+panel), P02236 (the modelling thread's panel) and P02237 (the egg/haem
+literature sweep). They are three different molecules. Resolved against
+UniProtKB on 2026-11-18.
 
-| accession | UniProt ID | gene | recommended name | alternative names | length |
-|---|---|---|---|---|---|
-| P02232 | LGB1_VICFA | LBI | Leghemoglobin-1 | Leghemoglobin I | 144 |
-| P02233 | LGB1_PEA | - | Leghemoglobin-1 | Leghemoglobin I | 148 |
-| P02234 | LGBA_PHAVU | LBA | Leghemoglobin alpha | - | 146 |
-| P02235 | LGB2_SOYBN | **LB2** | Leghemoglobin 2 | Hemoglobin 2-3, **Leghemoglobin C1**, Nodulin-50 | 144 |
-| P02236 | LGB4_SOYBN | **LB4** | Leghemoglobin 4 | Hemoglobin 2-5, **Leghemoglobin C2** | 145 |
+## The entries
+
+| accession | UniProt ID | gene | gene synonyms | recommended name | alternative names | length |
+|---|---|---|---|---|---|---|
+| P02234 | LGBA_PHAVU | LBA | — | Leghemoglobin alpha | — | 146 |
+| P02235 | LGB2_SOYBN | LB2 | GLB2-3, **LBC1** | Leghemoglobin 2 | Hemoglobin 2-3, **Leghemoglobin C1**, Nodulin-50 | 144 |
+| P02236 | LGB4_SOYBN | LB4 | GLB2-5, **LBC2** | Leghemoglobin 4 | Hemoglobin 2-5, **Leghemoglobin C2** | 145 |
+| P02237 | LGB1_SOYBN | LB1 | GLB2-1, **LBC3**, LGB1 | Leghemoglobin 1 | Hemoglobin 2-1, **Leghemoglobin C3** | 145 |
 
 ## Findings
 
-1. **P02234 is not soybean at all.** It is *Phaseolus vulgaris* (common bean)
-   leghemoglobin alpha. Anything in this project labelled
-   `leghemoglobin_c2_soybean` with accession P02234 is wrong; that was my
-   error and the sequence must be replaced, not relabelled.
+**1. P02234 is not soybean.** It is *Phaseolus vulgaris* (common bean)
+leghemoglobin alpha. My own `leghemoglobin_c2_soybean` entry was wrong and the
+sequence must be replaced, not relabelled. This was my error.
 
-2. **The trap.** The gene called *LGB2* corresponds to UniProt
-   `LGB2_SOYBN` / P02235, whose alternative name is Leghemoglobin **C1**.
-   The protein whose alternative name is Leghemoglobin **C2** is a different
-   gene, *LB4*, accession P02236. So "LGB2" and "leghemoglobin C2" are not
-   the same molecule, and a label of `leghemoglobin_c2` is consistent with
-   P02236 while a label of `LGB2` is consistent with P02235.
+**2. The numbering traps.** Two independent numbering schemes are in use and
+they do not line up:
 
-3. **Consequence for the project.** The Impossible Foods GRAS notice (GRN 737)
-   and the recombinant-LegH literature refer to the *LGB2* gene product. If
-   that is taken at face value the correct accession is **P02235**, not
-   P02236 and certainly not P02234. This must be confirmed against the
-   sequence actually reported in the primary papers before the panel is
-   frozen, because every per-protein cost, yield and feature value for
-   leghemoglobin depends on it.
+- the *Lb* gene numbering (LB1, LB2, LB4) used by UniProt entry names, and
+- the *Lbc* protein numbering (LBC1, LBC2, LBC3) used in most of the
+  recombinant-expression literature.
 
-The two candidate soybean sequences differ in length (144 vs 145 residues),
-so the choice changes the amino-acid draw, the mass used in the g/g yield
-denominator and the sequon count. It is not a cosmetic relabelling.
+`LGB2_SOYBN` (gene *LB2*) is **leghemoglobin C1**, not C2. The protein called
+**leghemoglobin C2** is gene *LB4*, accession **P02236**. And P02237 carries
+"LGB1" in its own gene-synonym list while being leghemoglobin C3.
+
+**3. Which accession is right depends on which name the source used.**
+
+- A source naming the **LBC2 / leghemoglobin C2** protein means **P02236**.
+- A source naming the ***LGB2* gene** means **P02235**.
+
+Shao *et al.*, *Bioresour Technol* 363:127884 (2022), doi
+10.1016/j.biortech.2022.127884 — the 3.5 g/L secretory anchor titer — refers
+to **LBC2**. Its correct accession is therefore **P02236**, which is what the
+modelling thread used. That row is right.
+
+**4. Corrections required.**
+
+- My panel: `leghemoglobin_c2_soybean` = P02234 is wrong (wrong genus). Use
+  P02236 for the Shao anchor.
+- The `eggheme` titer sweep recorded P02237 for rows whose own evidence quote
+  says "LBC2" and "Lbc2". P02237 is leghemoglobin C3. Those rows should be
+  P02236.
+- Any claim about the Impossible Foods construct must be checked against the
+  name used in GRN 737 itself rather than inherited from a secondary source,
+  because *LGB2* and leghemoglobin C2 are different molecules.
+
+**5. Why this is not cosmetic.** The candidates differ in length (144 vs 145
+residues) and in sequence. The choice changes the amino-acid draw, the
+molecular mass used in the denominator of every g protein per g substrate
+yield, the sequon count and therefore the glycan cost. The three mature
+sequences differ at multiple positions within the first 50 residues alone.

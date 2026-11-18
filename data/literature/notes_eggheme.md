@@ -220,6 +220,13 @@ clearance counts or capacity was not used.
     (0.82–1.11 g/L globins in 15 h), *C. glutamicum*, *Tremella fuciformis*, plant chloroplasts and
     cell-free systems. They are the right external benchmarks and several are open access, so they
     are the cheapest place to look next.
-11. **Several DOIs in `papers_eggheme.tsv` were resolved from the Europe PMC record** rather than
-    constructed; where Europe PMC held no DOI the field is `NA`. No DOI in either file was written
-    from memory alone.
+11. **Every DOI in both files was resolved from the Europe PMC record, not from memory.** A
+    verification pass queried `EXT_ID:<pmid> AND SRC:MED` for all 54 PMIDs and overwrote the DOI
+    field from the returned record. This **corrected 28 wrong DOIs** that had initially been
+    inferred — including the BMC Biotechnol 2025 review, whose DOI is `10.1186/s12896-025-01002-3`
+    (not the `…-01007-y` first written) and which is cited by 12 titer rows, and the Microb Cell
+    Fact 2025 toolkit paper (`10.1186/s12934-025-02716-x`). Two identifiers could not be resolved
+    and are therefore `NA`: Kojima et al. *Gene* 1994 (PMID 8206380, no DOI in Europe PMC) and the
+    *Trends Food Sci Technol* 2023 soy leghemoglobin review (indexed with no DOI and no PMID).
+    The EVERY Company patent row is `NA`/`NA` by nature. **Lesson for later batches: resolve DOIs
+    from the index before writing them — a plausible-looking DOI is frequently wrong.**
