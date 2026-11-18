@@ -136,36 +136,51 @@ def fig_glycan() -> None:
 
 
 def fig_gap() -> None:
-    path = TABLES / "efficiency_gap.csv"
+    path = TABLES / "efficiency_gap_best.csv"
     if not path.exists():
         return
-    df = pd.read_csv(path)
-    df = df[df.substrate_loading_g_L == 350.0]
-    best = df.sort_values("titer_g_L", ascending=False).groupby("protein").head(1)
-    best = best.sort_values("fraction_of_ceiling")
+    best = pd.read_csv(path).sort_values("fraction_of_ceiling")
+    best["label"] = best.protein_name.str.slice(0, 38)
 
-    fig, ax = plt.subplots(figsize=(7.4, 4.0))
+    fig, ax = plt.subplots(figsize=(8.0, 7.4))
     y = range(len(best))
     ax.barh(list(y), best.ceiling_g_L, color="#e4e7ec", edgecolor="white",
             label="stoichiometric ceiling")
     ax.barh(list(y), best.titer_g_L, color="#3b6ea5", edgecolor="white",
             label="best published titre")
     for i, r in enumerate(best.itertuples()):
-        ax.text(r.ceiling_g_L * 1.02, i, f"{r.gap_fold:.0f}×", va="center",
-                fontsize=8, color=INK)
+        ax.text(r.ceiling_g_L * 1.05, i, f"{r.gap_fold:,.0f}x", va="center",
+                fontsize=7.5, color=INK)
     ax.set_yticks(list(y))
-    ax.set_yticklabels([LABEL.get(p, p) for p in best.protein])
+    ax.set_yticklabels(best.label, fontsize=8)
     ax.set_xscale("log")
+    ax.set_xlim(0.02, 900)
     ax.set_xlabel("g / L (log scale), at 350 g/L substrate loading")
-    ax.set_title("Published titres sit one to three orders of magnitude\n"
-                 "below the stoichiometric ceiling", color=INK, fontsize=11,
-                 loc="left")
+    ax.set_title("Every published titre sits one to four orders of magnitude\n"
+                 "below the ceiling of the protein it produced", color=INK,
+                 fontsize=11, loc="left")
     ax.legend(frameon=False, fontsize=9, loc="lower right")
     ax.xaxis.grid(True, color=GRID, lw=0.6)
-    ax.yaxis.grid(False)
     ax.spines[["top", "right"]].set_visible(False)
     ax.set_axisbelow(True)
     save(fig, "fig4_efficiency_gap")
+
+
+def fig_gap_vs_ceiling() -> None:
+    path = TABLES / "efficiency_gap_best.csv"
+    if not path.exists():
+        return
+    best = pd.read_csv(path)
+    fig, ax = plt.subplots(figsize=(6.6, 4.4))
+    ax.scatter(best.theoretical_yield_g_per_g, best.fraction_of_ceiling * 100,
+               s=55, color="#3b6ea5", edgecolor="white", zorder=3)
+    ax.set_yscale("log")
+    ax.set_xlabel("maximum theoretical yield (g polypeptide / g glycerol)")
+    ax.set_ylabel("fraction of own ceiling reached (%)")
+    ax.set_title("The ceiling varies by 1.4x; what is achieved varies by 628x",
+                 color=INK, fontsize=11, loc="left")
+    style(ax)
+    save(fig, "fig7_ceiling_vs_achievement")
 
 
 def fig_tea() -> None:
@@ -175,11 +190,11 @@ def fig_tea() -> None:
     df = pd.read_csv(path)
     fig, ax = plt.subplots(figsize=(6.6, 4.0))
     for yfrac, sub in df.groupby("yield_frac_of_theoretical"):
-        sub = sub.sort_values("titer_g_L")
-        ax.plot(sub.titer_g_L, sub.cost_usd_per_kg, marker="o", ms=4, lw=1.8,
+        sub = sub.sort_values("titer_g_per_L")
+        ax.plot(sub.titer_g_per_L, sub.cost_usd_per_kg, marker="o", ms=4, lw=1.8,
                 label=f"{yfrac:.0%} of theoretical yield")
     ax.axhline(20, color="#b4553f", ls="--", lw=1.2)
-    ax.text(df.titer_g_L.max(), 21, "$20/kg commodity target", ha="right",
+    ax.text(df.titer_g_per_L.max(), 21, "$20/kg commodity target", ha="right",
             fontsize=8, color="#b4553f")
     ax.set_xlabel("titre (g/L)")
     ax.set_ylabel("production cost (USD / kg)")
@@ -220,8 +235,8 @@ def fig_features() -> None:
 
 def main() -> None:
     print("figures:")
-    for fn in (fig_yields, fig_ptm_cost, fig_glycan, fig_gap, fig_tea,
-               fig_features):
+    for fn in (fig_yields, fig_ptm_cost, fig_glycan, fig_gap, fig_gap_vs_ceiling,
+               fig_tea, fig_features):
         try:
             fn()
         except Exception as exc:  # pragma: no cover

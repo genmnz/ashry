@@ -38,6 +38,7 @@ from sklearn.linear_model import RidgeCV
 from sklearn.preprocessing import StandardScaler
 from scipy import stats
 
+from corpus import drop_fragments
 from features import featurise
 from protein_cost import ProteinSpec, read_fasta, yield_analysis, load_model
 
@@ -84,6 +85,9 @@ def count_disulfides_unknown(seq: str) -> float:
 def build_dataset(annotations: dict[str, dict]) -> pd.DataFrame:
     lib = sequence_library()
     titres = pd.read_csv(REPO / "data" / "literature" / "titers_host_panel.csv")
+    titres, dropped = drop_fragments(titres)
+    print(f"excluded {len(dropped)} fragment/fusion records "
+          f"(their titre is not the intact protein's)")
     titres = titres[titres.confidence == "high"]
     titres = titres[titres.titer_mg_L.notna() & (titres.titer_mg_L > 0)]
     titres = titres[titres.host.astype(str).str.contains(
