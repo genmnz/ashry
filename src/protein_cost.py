@@ -158,12 +158,35 @@ def load_model(path: Path = MODEL_PATH) -> cobra.Model:
     return cobra.io.read_sbml_model(str(path))
 
 
+def _ensure_cytosolic_haem(model: cobra.Model) -> str | None:
+    """iMT1026v3 synthesises protohaem IX in the mitochondrion (pheme_m).
+
+    A cytosolic haemoprotein such as leghemoglobin must receive it in the cytosol,
+    so if no cytosolic pool exists we add the (physiologically real, but not
+    explicitly modelled) export of protohaem from the mitochondrion.
+    """
+    if "pheme_c" in model.metabolites:
+        return "pheme_c"
+    if "pheme_m" not in model.metabolites:
+        return None
+    pheme_m = model.metabolites.get_by_id("pheme_m")
+    pheme_c = Metabolite("pheme_c", formula=pheme_m.formula, charge=pheme_m.charge,
+                         compartment="c", name="Protoheme IX (cytosol)")
+    tr = Reaction("PHEMEtm_thesis")
+    tr.name = "Protoheme IX mitochondrial export (added for haemoprotein demand)"
+    tr.lower_bound, tr.upper_bound = 0.0, 1000.0
+    tr.add_metabolites({pheme_m: -1.0, pheme_c: 1.0})
+    model.add_reactions([tr])
+    return "pheme_c"
+
+
 def add_protein_reactions(
     model: cobra.Model,
     spec: ProteinSpec,
     atp_per_bond: float = 4.3,
     charge_ptms: bool = True,
     mature: bool = True,
+    mannose_per_glycan: float = 9.0,
 ) -> tuple[str, float]:
     """Add synthesis + secretion of `spec` to `model`. Returns (sink id, MW in g/mmol).
 
@@ -211,14 +234,17 @@ def add_protein_reactions(
         # core N-glycan Man8GlcNAc2: 2 UDP-GlcNAc + 9 GDP-mannose equivalents
         n_sites = spec.n_glyc(mature)
         if n_sites:
-            for met_id, per_site in (("uacgam_c", 2.0), ("gdpmann_c", 9.0)):
+            for met_id, per_site in (("uacgam_c", 2.0),
+                                     ("gdpmann_c", mannose_per_glycan)):
                 if met_id in model.metabolites:
                     add(met_id, -per_site * n_sites)
-            for met_id, per_site in (("udp_c", 2.0), ("gdp_c", 9.0)):
+            for met_id, per_site in (("udp_c", 2.0), ("gdp_c", mannose_per_glycan)):
                 if met_id in model.metabolites:
                     add(met_id, per_site * n_sites)
-        if spec.haem_per_chain and "pheme_c" in model.metabolites:
-            add("pheme_c", -float(spec.haem_per_chain))
+        if spec.haem_per_chain:
+            haem_id = _ensure_cytosolic_haem(model)
+            if haem_id:
+                add(haem_id, -float(spec.haem_per_chain))
 
     stoich[prot] = 1.0
     rxn.add_metabolites(stoich)
@@ -251,10 +277,13 @@ def yield_analysis(
     growth_rate: float | None = 0.0,
     uptake_mmol: float = 10.0,
     model: cobra.Model | None = None,
+    mannose_per_glycan: float = 9.0,
 ) -> dict:
     """Maximum theoretical yield of `spec` on `substrate`, optionally at fixed growth."""
     m = (model or load_model()).copy()
-    sink_id, mw = add_protein_reactions(m, spec, atp_per_bond, charge_ptms)
+    sink_id, mw = add_protein_reactions(
+        m, spec, atp_per_bond, charge_ptms,
+        mannose_per_glycan=mannose_per_glycan)
     set_substrate(m, substrate, uptake_mmol)
 
     biomass = m.reactions.get_by_id("BIOMASS_glyc") if substrate != "methanol" \
@@ -284,6 +313,7 @@ def yield_analysis(
         "substrate": substrate,
         "atp_per_bond": atp_per_bond,
         "charge_ptms": charge_ptms,
+        "mannose_per_glycan": mannose_per_glycan,
         "growth_rate": growth_rate,
         "mw_kda": round(mw / 1000.0, 3),
         "length_mature": spec.length(),
