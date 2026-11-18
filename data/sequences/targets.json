@@ -1,0 +1,3669 @@
+{
+ "alpha_s1_casein_bovine": {
+  "name": "alpha_s1_casein_bovine",
+  "accession": "P02662",
+  "uniprot_id": "CASA1_BOVIN",
+  "protein_name": "Alpha-S1-casein",
+  "organism": "Bos taurus",
+  "sequence": "MKLLILTCLVAVALARPKHPIKHQGLPQEVLNENLLRFFVAPFPEVFGKEKVNELSKDIGSESTEDQAMEDIKQMEAESISSSEEIVPNSVEQKHIQKEDVPSERYLGYLEQLLRLKKYKVPQLEIVPNSAEERLHSMKEGIHAQQKEPMIGVNQELAYFYPELFRQFYQLDAYPSGAWYYVPLGTQYTDAPSFSDIPNPIGSENSEKTTMPLW",
+  "length": 214,
+  "mass_da": 24529,
+  "signal": [
+   {
+    "start": 1,
+    "end": 15,
+    "desc": ""
+   }
+  ],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 16,
+    "end": 214,
+    "desc": "Alpha-S1-casein"
+   }
+  ],
+  "disulfide": [],
+  "mod_res": [
+   {
+    "start": 56,
+    "end": 56,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 61,
+    "end": 61,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 63,
+    "end": 63,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 79,
+    "end": 79,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 81,
+    "end": 81,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 82,
+    "end": 82,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 83,
+    "end": 83,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 90,
+    "end": 90,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 130,
+    "end": 130,
+    "desc": "Phosphoserine"
+   }
+  ],
+  "carbohyd": [],
+  "transmem": []
+ },
+ "alpha_s2_casein_bovine": {
+  "name": "alpha_s2_casein_bovine",
+  "accession": "P02663",
+  "uniprot_id": "CASA2_BOVIN",
+  "protein_name": "Alpha-S2-casein",
+  "organism": "Bos taurus",
+  "sequence": "MKFFIFTCLLAVALAKNTMEHVSSSEESIISQETYKQEKNMAINPSKENLCSTFCKEVVRNANEEEYSIGSSSEESAEVATEEVKITVDDKHYQKALNEINQFYQKFPQYLQYLYQGPIVLNPWDQVKRNAVPITPTLNREQLSTSEENSKKTVDMESTEVFTKKTKLTEEEKNRLNFLKKISQRYQKFALPQYLKTVYQHQKAMKPWIQPKTKVIPYVRYL",
+  "length": 222,
+  "mass_da": 26019,
+  "signal": [
+   {
+    "start": 1,
+    "end": 15,
+    "desc": ""
+   }
+  ],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 16,
+    "end": 222,
+    "desc": "Alpha-S2-casein"
+   }
+  ],
+  "disulfide": [],
+  "mod_res": [
+   {
+    "start": 23,
+    "end": 23,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 24,
+    "end": 24,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 25,
+    "end": 25,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 28,
+    "end": 28,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 46,
+    "end": 46,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 71,
+    "end": 71,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 72,
+    "end": 72,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 73,
+    "end": 73,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 76,
+    "end": 76,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 144,
+    "end": 144,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 146,
+    "end": 146,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 150,
+    "end": 150,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 158,
+    "end": 158,
+    "desc": "Phosphoserine"
+   }
+  ],
+  "carbohyd": [],
+  "transmem": []
+ },
+ "beta_casein_bovine": {
+  "name": "beta_casein_bovine",
+  "accession": "P02666",
+  "uniprot_id": "CASB_BOVIN",
+  "protein_name": "Beta-casein",
+  "organism": "Bos taurus",
+  "sequence": "MKVLILACLVALALARELEELNVPGEIVESLSSSEESITRINKKIEKFQSEEQQQTEDELQDKIHPFAQTQSLVYPFPGPIPNSLPQNIPPLTQTPVVVPPFLQPEVMGVSKVKEAMAPKHKEMPFPKYPVEPFTESQSLTLTDVENLHLPLPLLQSWMHQPHQPLPPTVMFPPQSVLSLSQSKVLPVPQKAVPYPQRDMPIQAFLLYQEPVLGPVRGPFPIIV",
+  "length": 224,
+  "mass_da": 25107,
+  "signal": [
+   {
+    "start": 1,
+    "end": 15,
+    "desc": ""
+   }
+  ],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 16,
+    "end": 224,
+    "desc": "Beta-casein"
+   }
+  ],
+  "disulfide": [],
+  "mod_res": [
+   {
+    "start": 30,
+    "end": 30,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 32,
+    "end": 32,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 33,
+    "end": 33,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 34,
+    "end": 34,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 50,
+    "end": 50,
+    "desc": "Phosphoserine; in variant A1, variant A2, variant A3, variant B, variant E, variant F, variant G and variant H"
+   }
+  ],
+  "carbohyd": [],
+  "transmem": []
+ },
+ "kappa_casein_bovine": {
+  "name": "kappa_casein_bovine",
+  "accession": "P02668",
+  "uniprot_id": "CASK_BOVIN",
+  "protein_name": "Kappa-casein",
+  "organism": "Bos taurus",
+  "sequence": "MMKSFFLVVTILALTLPFLGAQEQNQEQPIRCEKDERFFSDKIAKYIPIQYVLSRYPSYGLNYYQQKPVALINNQFLPYPYYAKPAAVRSPAQILQWQVLSNTVPAKSCQAQPTTMARHPHPHLSFMAIPPKKNQDKTEIPTINTIASGEPTSTPTTEAVESTVATLEDSPEVIESPPEINTVQVTSTAV",
+  "length": 190,
+  "mass_da": 21269,
+  "signal": [
+   {
+    "start": 1,
+    "end": 21,
+    "desc": ""
+   }
+  ],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 22,
+    "end": 190,
+    "desc": "Kappa-casein"
+   }
+  ],
+  "disulfide": [
+   {
+    "start": 32,
+    "end": 109,
+    "desc": ""
+   },
+   {
+    "start": 32,
+    "end": 32,
+    "desc": "Interchain (with C-109); in linked form"
+   },
+   {
+    "start": 109,
+    "end": 109,
+    "desc": "Interchain (with C-32); in linked form"
+   }
+  ],
+  "mod_res": [
+   {
+    "start": 22,
+    "end": 22,
+    "desc": "Pyrrolidone carboxylic acid"
+   },
+   {
+    "start": 148,
+    "end": 148,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 166,
+    "end": 166,
+    "desc": "Phosphothreonine"
+   },
+   {
+    "start": 170,
+    "end": 170,
+    "desc": "Phosphoserine; alternate"
+   },
+   {
+    "start": 187,
+    "end": 187,
+    "desc": "Phosphoserine"
+   }
+  ],
+  "carbohyd": [
+   {
+    "start": 142,
+    "end": 142,
+    "desc": "O-linked (GalNAc...) threonine"
+   },
+   {
+    "start": 152,
+    "end": 152,
+    "desc": "O-linked (GalNAc...) threonine"
+   },
+   {
+    "start": 153,
+    "end": 153,
+    "desc": "O-linked (GalNAc...) serine"
+   },
+   {
+    "start": 154,
+    "end": 154,
+    "desc": "O-linked (GalNAc...) threonine"
+   },
+   {
+    "start": 157,
+    "end": 157,
+    "desc": "O-linked (GalNAc...) threonine"
+   },
+   {
+    "start": 163,
+    "end": 163,
+    "desc": "O-linked (GalNAc...) threonine"
+   },
+   {
+    "start": 170,
+    "end": 170,
+    "desc": "O-linked (GalNAc...) serine; alternate"
+   },
+   {
+    "start": 186,
+    "end": 186,
+    "desc": "O-linked (GalNAc...) threonine; partial"
+   }
+  ],
+  "transmem": []
+ },
+ "beta_casein_human": {
+  "name": "beta_casein_human",
+  "accession": "P05814",
+  "uniprot_id": "CASB_HUMAN",
+  "protein_name": "Beta-casein",
+  "organism": "Homo sapiens",
+  "sequence": "MKVLILACLVALALARETIESLSSSEESITEYKQKVEKVKHEDQQQGEDEHQDKIYPSFQPQPLIYPFVEPIPYGFLPQNILPLAQPAVVLPVPQPEIMEVPKAKDTVYTKGRVMPVLKSPTIPFFDPQIPKLTDLENLHLPLPLLQPLMQQVPQPIPQTLALPPQPLWSVPQPKVLPIPQQVVPYPQRAVPVQALLLNQELLLNPTHQIYPVTQPLAPVHNPISV",
+  "length": 226,
+  "mass_da": 25382,
+  "signal": [
+   {
+    "start": 1,
+    "end": 15,
+    "desc": ""
+   }
+  ],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 16,
+    "end": 226,
+    "desc": "Beta-casein"
+   }
+  ],
+  "disulfide": [],
+  "mod_res": [
+   {
+    "start": 18,
+    "end": 18,
+    "desc": "Phosphothreonine; in form 5-P"
+   },
+   {
+    "start": 21,
+    "end": 21,
+    "desc": "Phosphoserine; in form 4-P and form 5-P"
+   },
+   {
+    "start": 23,
+    "end": 23,
+    "desc": "Phosphoserine; in form 3-P, form 4-P and form 5-P"
+   },
+   {
+    "start": 24,
+    "end": 24,
+    "desc": "Phosphoserine; in form 1-P, form 2-P, form 3-P, form 4-P and form 5-P"
+   },
+   {
+    "start": 25,
+    "end": 25,
+    "desc": "Phosphoserine; in form 1-P, form 2-P, form 3-P, form 4-P and form 5-P"
+   }
+  ],
+  "carbohyd": [],
+  "transmem": []
+ },
+ "kappa_casein_human": {
+  "name": "kappa_casein_human",
+  "accession": "P07498",
+  "uniprot_id": "CASK_HUMAN",
+  "protein_name": "Kappa-casein",
+  "organism": "Homo sapiens",
+  "sequence": "MKSFLLVVNALALTLPFLAVEVQNQKQPACHENDERPFYQKTAPYVPMYYVPNSYPYYGTNLYQRRPAIAINNPYVPRTYYANPAVVRPHAQIPQRQYLPNSHPPTVVRRPNLHPSFIAIPPKKIQDKIIIPTINTIATVEPTPAPATEPTVDSVVTPEAFSESIITSTPETTTVAVTPPTA",
+  "length": 182,
+  "mass_da": 20305,
+  "signal": [
+   {
+    "start": 1,
+    "end": 20,
+    "desc": ""
+   }
+  ],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 21,
+    "end": 182,
+    "desc": "Kappa-casein"
+   }
+  ],
+  "disulfide": [],
+  "mod_res": [
+   {
+    "start": 157,
+    "end": 157,
+    "desc": "Phosphothreonine; alternate"
+   }
+  ],
+  "carbohyd": [
+   {
+    "start": 133,
+    "end": 133,
+    "desc": "O-linked (GalNAc...) threonine"
+   },
+   {
+    "start": 143,
+    "end": 143,
+    "desc": "O-linked (GalNAc...) threonine"
+   },
+   {
+    "start": 148,
+    "end": 148,
+    "desc": "O-linked (GalNAc...) threonine"
+   },
+   {
+    "start": 151,
+    "end": 151,
+    "desc": "O-linked (GalNAc...) threonine"
+   },
+   {
+    "start": 157,
+    "end": 157,
+    "desc": "O-linked (GalNAc...) threonine; alternate"
+   },
+   {
+    "start": 167,
+    "end": 167,
+    "desc": "O-linked (GalNAc...) threonine"
+   },
+   {
+    "start": 169,
+    "end": 169,
+    "desc": "O-linked (GalNAc...) threonine"
+   },
+   {
+    "start": 178,
+    "end": 178,
+    "desc": "O-linked (GalNAc...) threonine"
+   }
+  ],
+  "transmem": []
+ },
+ "beta_lactoglobulin_bovine": {
+  "name": "beta_lactoglobulin_bovine",
+  "accession": "P02754",
+  "uniprot_id": "LACB_BOVIN",
+  "protein_name": "Beta-lactoglobulin",
+  "organism": "Bos taurus",
+  "sequence": "MKCLLLALALTCGAQALIVTQTMKGLDIQKVAGTWYSLAMAASDISLLDAQSAPLRVYVEELKPTPEGDLEILLQKWENGECAQKKIIAEKTKIPAVFKIDALNENKVLVLDTDYKKYLLFCMENSAEPEQSLACQCLVRTPEVDDEALEKFDKALKALPMHIRLSFNPTQLEEQCHI",
+  "length": 178,
+  "mass_da": 19883,
+  "signal": [
+   {
+    "start": 1,
+    "end": 16,
+    "desc": ""
+   }
+  ],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 17,
+    "end": 178,
+    "desc": "Beta-lactoglobulin"
+   }
+  ],
+  "disulfide": [
+   {
+    "start": 82,
+    "end": 176,
+    "desc": ""
+   },
+   {
+    "start": 122,
+    "end": 137,
+    "desc": "Alternate"
+   },
+   {
+    "start": 122,
+    "end": 135,
+    "desc": ""
+   }
+  ],
+  "mod_res": [],
+  "carbohyd": [],
+  "transmem": []
+ },
+ "alpha_lactalbumin_bovine": {
+  "name": "alpha_lactalbumin_bovine",
+  "accession": "P00711",
+  "uniprot_id": "LALBA_BOVIN",
+  "protein_name": "Alpha-lactalbumin",
+  "organism": "Bos taurus",
+  "sequence": "MMSFVSLLLVGILFHATQAEQLTKCEVFRELKDLKGYGGVSLPEWVCTTFHTSGYDTQAIVQNNDSTEYGLFQINNKIWCKDDQNPHSSNICNISCDKFLDDDLTDDIMCVKKILDKVGINYWLAHKALCSEKLDQWLCEKL",
+  "length": 142,
+  "mass_da": 16247,
+  "signal": [
+   {
+    "start": 1,
+    "end": 19,
+    "desc": ""
+   }
+  ],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 20,
+    "end": 142,
+    "desc": "Alpha-lactalbumin"
+   }
+  ],
+  "disulfide": [
+   {
+    "start": 25,
+    "end": 139,
+    "desc": ""
+   },
+   {
+    "start": 47,
+    "end": 130,
+    "desc": ""
+   },
+   {
+    "start": 80,
+    "end": 96,
+    "desc": ""
+   },
+   {
+    "start": 92,
+    "end": 110,
+    "desc": ""
+   }
+  ],
+  "mod_res": [],
+  "carbohyd": [
+   {
+    "start": 64,
+    "end": 64,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   }
+  ],
+  "transmem": []
+ },
+ "alpha_lactalbumin_human": {
+  "name": "alpha_lactalbumin_human",
+  "accession": "P00709",
+  "uniprot_id": "LALBA_HUMAN",
+  "protein_name": "Alpha-lactalbumin",
+  "organism": "Homo sapiens",
+  "sequence": "MRFFVPLFLVGILFPAILAKQFTKCELSQLLKDIDGYGGIALPELICTMFHTSGYDTQAIVENNESTEYGLFQISNKLWCKSSQVPQSRNICDISCDKFLDDDITDDIMCAKKILDIKGIDYWLAHKALCTEKLEQWLCEKL",
+  "length": 142,
+  "mass_da": 16225,
+  "signal": [
+   {
+    "start": 1,
+    "end": 19,
+    "desc": ""
+   }
+  ],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 20,
+    "end": 142,
+    "desc": "Alpha-lactalbumin"
+   }
+  ],
+  "disulfide": [
+   {
+    "start": 25,
+    "end": 139,
+    "desc": ""
+   },
+   {
+    "start": 47,
+    "end": 130,
+    "desc": ""
+   },
+   {
+    "start": 80,
+    "end": 96,
+    "desc": ""
+   },
+   {
+    "start": 92,
+    "end": 110,
+    "desc": ""
+   }
+  ],
+  "mod_res": [],
+  "carbohyd": [
+   {
+    "start": 64,
+    "end": 64,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   },
+   {
+    "start": 90,
+    "end": 90,
+    "desc": "N-linked (GlcNAc...) asparagine; atypical; partial"
+   }
+  ],
+  "transmem": []
+ },
+ "lactoferrin_bovine": {
+  "name": "lactoferrin_bovine",
+  "accession": "P24627",
+  "uniprot_id": "TRFL_BOVIN",
+  "protein_name": "Lactotransferrin",
+  "organism": "Bos taurus",
+  "sequence": "MKLFVPALLSLGALGLCLAAPRKNVRWCTISQPEWFKCRRWQWRMKKLGAPSITCVRRAFALECIRAIAEKKADAVTLDGGMVFEAGRDPYKLRPVAAEIYGTKESPQTHYYAVAVVKKGSNFQLDQLQGRKSCHTGLGRSAGWIIPMGILRPYLSWTESLEPLQGAVAKFFSASCVPCIDRQAYPNLCQLCKGEGENQCACSSREPYFGYSGAFKCLQDGAGDVAFVKETTVFENLPEKADRDQYELLCLNNSRAPVDAFKECHLAQVPSHAVVARSVDGKEDLIWKLLSKAQEKFGKNKSRSFQLFGSPPGQRDLLFKDSALGFLRIPSKVDSALYLGSRYLTTLKNLRETAEEVKARYTRVVWCAVGPEEQKKCQQWSQQSGQNVTCATASTTDDCIVLVLKGEADALNLDGGYIYTAGKCGLVPVLAENRKSSKHSSLDCVLRPTEGYLAVAVVKKANEGLTWNSLKDKKSCHTAVDRTAGWNIPMGLIVNQTGSCAFDEFFSQSCAPGADPKSRLCALCAGDDQGLDKCVPNSKEKYYGYTGAFRCLAEDVGDVAFVKNDTVWENTNGESTADWAKNLNREDFRLLCLDGTRKPVTEAQSCHLAVAPNHAVVSRSDRAAHVKQVLLHQQALFGKNGKNCPDKFCLFKSETKNLLFNDNTECLAKLGGRPTYEEYLGTEYVTAIANLKKCSTSPLLEACAFLTR",
+  "length": 708,
+  "mass_da": 78056,
+  "signal": [
+   {
+    "start": 1,
+    "end": 19,
+    "desc": ""
+   }
+  ],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 20,
+    "end": 708,
+    "desc": "Lactotransferrin"
+   }
+  ],
+  "disulfide": [
+   {
+    "start": 28,
+    "end": 64,
+    "desc": ""
+   },
+   {
+    "start": 38,
+    "end": 55,
+    "desc": ""
+   },
+   {
+    "start": 134,
+    "end": 217,
+    "desc": ""
+   },
+   {
+    "start": 176,
+    "end": 192,
+    "desc": ""
+   },
+   {
+    "start": 189,
+    "end": 200,
+    "desc": ""
+   },
+   {
+    "start": 250,
+    "end": 264,
+    "desc": ""
+   },
+   {
+    "start": 367,
+    "end": 399,
+    "desc": ""
+   },
+   {
+    "start": 377,
+    "end": 390,
+    "desc": ""
+   },
+   {
+    "start": 424,
+    "end": 703,
+    "desc": ""
+   },
+   {
+    "start": 444,
+    "end": 666,
+    "desc": ""
+   },
+   {
+    "start": 476,
+    "end": 551,
+    "desc": ""
+   },
+   {
+    "start": 500,
+    "end": 694,
+    "desc": ""
+   },
+   {
+    "start": 510,
+    "end": 524,
+    "desc": ""
+   },
+   {
+    "start": 521,
+    "end": 534,
+    "desc": ""
+   },
+   {
+    "start": 592,
+    "end": 606,
+    "desc": ""
+   },
+   {
+    "start": 644,
+    "end": 649,
+    "desc": ""
+   }
+  ],
+  "mod_res": [],
+  "carbohyd": [
+   {
+    "start": 252,
+    "end": 252,
+    "desc": "N-linked (GlcNAc...) (high mannose) asparagine"
+   },
+   {
+    "start": 300,
+    "end": 300,
+    "desc": "N-linked (GlcNAc...) (complex) asparagine"
+   },
+   {
+    "start": 387,
+    "end": 387,
+    "desc": "N-linked (GlcNAc...) (complex) asparagine; alternate"
+   },
+   {
+    "start": 387,
+    "end": 387,
+    "desc": "N-linked (GlcNAc...) (high mannose) asparagine; alternate"
+   },
+   {
+    "start": 387,
+    "end": 387,
+    "desc": "N-linked (GlcNAc...) (hybrid) asparagine; alternate"
+   },
+   {
+    "start": 495,
+    "end": 495,
+    "desc": "N-linked (GlcNAc...) (complex) asparagine; alternate"
+   },
+   {
+    "start": 495,
+    "end": 495,
+    "desc": "N-linked (GlcNAc...) (high mannose) asparagine; alternate"
+   },
+   {
+    "start": 495,
+    "end": 495,
+    "desc": "N-linked (GlcNAc...) (hybrid) asparagine; alternate"
+   },
+   {
+    "start": 564,
+    "end": 564,
+    "desc": "N-linked (GlcNAc...) (high mannose) asparagine"
+   }
+  ],
+  "transmem": []
+ },
+ "lactoferrin_human": {
+  "name": "lactoferrin_human",
+  "accession": "P02788",
+  "uniprot_id": "TRFL_HUMAN",
+  "protein_name": "Lactotransferrin",
+  "organism": "Homo sapiens",
+  "sequence": "MKLVFLVLLFLGALGLCLAGRRRSVQWCAVSQPEATKCFQWQRNMRKVRGPPVSCIKRDSPIQCIQAIAENRADAVTLDGGFIYEAGLAPYKLRPVAAEVYGTERQPRTHYYAVAVVKKGGSFQLNELQGLKSCHTGLRRTAGWNVPIGTLRPFLNWTGPPEPIEAAVARFFSASCVPGADKGQFPNLCRLCAGTGENKCAFSSQEPYFSYSGAFKCLRDGAGDVAFIRESTVFEDLSDEAERDEYELLCPDNTRKPVDKFKDCHLARVPSHAVVARSVNGKEDAIWNLLRQAQEKFGKDKSPKFQLFGSPSGQKDLLFKDSAIGFSRVPPRIDSGLYLGSGYFTAIQNLRKSEEEVAARRARVVWCAVGEQELRKCNQWSGLSEGSVTCSSASTTEDCIALVLKGEADAMSLDGGYVYTAGKCGLVPVLAENYKSQQSSDPDPNCVDRPVEGYLAVAVVRRSDTSLTWNSVKGKKSCHTAVDRTAGWNIPMGLLFNQTGSCKFDEYFSQSCAPGSDPRSNLCALCIGDEQGENKCVPNSNERYYGYTGAFRCLAENAGDVAFVKDVTVLQNTDGNNNEAWAKDLKLADFALLCLDGKRKPVTEARSCHLAMAPNHAVVSRMDKVERLKQVLLHQQAKFGRNGSDCPDKFCLFQSETKNLLFNDNTECLARLHGKTTYEKYLGPQYVAGITNLKKCSTSPLLEACEFLRK",
+  "length": 710,
+  "mass_da": 78182,
+  "signal": [
+   {
+    "start": 1,
+    "end": 19,
+    "desc": ""
+   }
+  ],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 20,
+    "end": 710,
+    "desc": "Lactotransferrin"
+   }
+  ],
+  "disulfide": [
+   {
+    "start": 28,
+    "end": 64,
+    "desc": ""
+   },
+   {
+    "start": 38,
+    "end": 55,
+    "desc": ""
+   },
+   {
+    "start": 134,
+    "end": 217,
+    "desc": ""
+   },
+   {
+    "start": 176,
+    "end": 192,
+    "desc": ""
+   },
+   {
+    "start": 189,
+    "end": 200,
+    "desc": ""
+   },
+   {
+    "start": 250,
+    "end": 264,
+    "desc": ""
+   },
+   {
+    "start": 367,
+    "end": 399,
+    "desc": ""
+   },
+   {
+    "start": 377,
+    "end": 390,
+    "desc": ""
+   },
+   {
+    "start": 424,
+    "end": 705,
+    "desc": ""
+   },
+   {
+    "start": 446,
+    "end": 668,
+    "desc": ""
+   },
+   {
+    "start": 478,
+    "end": 553,
+    "desc": ""
+   },
+   {
+    "start": 502,
+    "end": 696,
+    "desc": ""
+   },
+   {
+    "start": 512,
+    "end": 526,
+    "desc": ""
+   },
+   {
+    "start": 523,
+    "end": 536,
+    "desc": ""
+   },
+   {
+    "start": 594,
+    "end": 608,
+    "desc": ""
+   },
+   {
+    "start": 646,
+    "end": 651,
+    "desc": ""
+   }
+  ],
+  "mod_res": [
+   {
+    "start": 10,
+    "end": 10,
+    "desc": "Phosphoserine; alternate"
+   }
+  ],
+  "carbohyd": [
+   {
+    "start": 156,
+    "end": 156,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   },
+   {
+    "start": 497,
+    "end": 497,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   },
+   {
+    "start": 642,
+    "end": 642,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   },
+   {
+    "start": 10,
+    "end": 10,
+    "desc": "O-linked (GlcNAc) serine; alternate"
+   }
+  ],
+  "transmem": []
+ },
+ "lactoperoxidase_bovine": {
+  "name": "lactoperoxidase_bovine",
+  "accession": "P80025",
+  "uniprot_id": "PERL_BOVIN",
+  "protein_name": "Lactoperoxidase",
+  "organism": "Bos taurus",
+  "sequence": "MWVCLQLPVFLASVTLFEVAASDTIAQAASTTTISDAVSKVKIQVNKAFLDSRTRLKTTLSSEAPTTQQLSEYFKHAKGRTRTAIRNGQVWEESLKRLRRDTTLTNVTDPSLDLTALSWEVGCGAPVPLVKCDENSPYRTITGDCNNRRSPALGAANRALARWLPAEYEDGLALPFGWTQRKTRNGFRVPLAREVSNKIVGYLDEEGVLDQNRSLLFMQWGQIVDHDLDFAPETELGSNEHSKTQCEEYCIQGDNCFPIMFPKNDPKLKTQGKCMPFFRAGFVCPTPPYQSLAREQINAVTSFLDASLVYGSEPSLASRLRNLSSPLGLMAVNQEAWDHGLAYLPFNNKKPSPCEFINTTARVPCFLAGDFRASEQILLATAHTLLLREHNRLARELKKLNPHWNGEKLYQEARKILGAFIQIITFRDYLPIVLGSEMQKWIPPYQGYNNSVDPRISNVFTFAFRFGHMEVPSTVSRLDENYQPWGPEAELPLHTLFFNTWRIIKDGGIDPLVRGLLAKKSKLMNQDKMVTSELRNKLFQPTHKIHGFDLAAINLQRCRDHGMPGYNSWRGFCGLSQPKTLKGLQTVLKNKILAKKLMDLYKTPDNIDIWIGGNAEPMVERGRVGPLLACLLGRQFQQIRDGDRFWWENPGVFTEKQRDSLQKVSFSRLICDNTHITKVPLHAFQANNYPHDFVDCSTVDKLDLSPWASREN",
+  "length": 712,
+  "mass_da": 80642,
+  "signal": [
+   {
+    "start": 1,
+    "end": 22,
+    "desc": ""
+   }
+  ],
+  "propeptide": [
+   {
+    "start": 23,
+    "end": 100,
+    "desc": ""
+   }
+  ],
+  "chain": [
+   {
+    "start": 101,
+    "end": 712,
+    "desc": "Lactoperoxidase"
+   }
+  ],
+  "disulfide": [
+   {
+    "start": 123,
+    "end": 284,
+    "desc": ""
+   },
+   {
+    "start": 132,
+    "end": 145,
+    "desc": ""
+   },
+   {
+    "start": 246,
+    "end": 256,
+    "desc": ""
+   },
+   {
+    "start": 250,
+    "end": 274,
+    "desc": ""
+   },
+   {
+    "start": 354,
+    "end": 365,
+    "desc": ""
+   },
+   {
+    "start": 573,
+    "end": 630,
+    "desc": ""
+   },
+   {
+    "start": 671,
+    "end": 696,
+    "desc": ""
+   }
+  ],
+  "mod_res": [
+   {
+    "start": 315,
+    "end": 315,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 482,
+    "end": 482,
+    "desc": "3'-nitrotyrosine"
+   }
+  ],
+  "carbohyd": [
+   {
+    "start": 106,
+    "end": 106,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   },
+   {
+    "start": 212,
+    "end": 212,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   },
+   {
+    "start": 322,
+    "end": 322,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   },
+   {
+    "start": 358,
+    "end": 358,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   },
+   {
+    "start": 449,
+    "end": 449,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   }
+  ],
+  "transmem": []
+ },
+ "osteopontin_bovine": {
+  "name": "osteopontin_bovine",
+  "accession": "P31096",
+  "uniprot_id": "OSTP_BOVIN",
+  "protein_name": "Osteopontin",
+  "organism": "Bos taurus",
+  "sequence": "MRIAVICFCLLGIASALPVKPTSSGSSEEKQLNNKYPDAVATWLKPDPSQKQTFLAPQNSVSSEETDDNKQNTLPSKSNESPEQTDDLDDDDDNSQDVNSNDSDDAETTDDPDHSDESHHSDESDEVDFPTDIPTIAVFTPFIPTESANDGRGDSVAYGLKSRSKKFRRSNVQSPDATEEDFTSHIESEEMHDAPKKTSQLTDHSKETNSSELSKELTPKAKDKNKHSNLIESQENSKLSQEFHSLEDKLDLDHKSEEDKHLKIRISHELDSASSEVN",
+  "length": 278,
+  "mass_da": 30904,
+  "signal": [
+   {
+    "start": 1,
+    "end": 16,
+    "desc": ""
+   }
+  ],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 17,
+    "end": 278,
+    "desc": "Osteopontin"
+   }
+  ],
+  "disulfide": [],
+  "mod_res": [
+   {
+    "start": 23,
+    "end": 23,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 24,
+    "end": 24,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 26,
+    "end": 26,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 27,
+    "end": 27,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 60,
+    "end": 60,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 62,
+    "end": 62,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 63,
+    "end": 63,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 66,
+    "end": 66,
+    "desc": "Phosphothreonine"
+   },
+   {
+    "start": 76,
+    "end": 76,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 78,
+    "end": 78,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 81,
+    "end": 81,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 95,
+    "end": 95,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 100,
+    "end": 100,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 103,
+    "end": 103,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 115,
+    "end": 115,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 118,
+    "end": 118,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 121,
+    "end": 121,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 124,
+    "end": 124,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 178,
+    "end": 178,
+    "desc": "Phosphothreonine"
+   },
+   {
+    "start": 183,
+    "end": 183,
+    "desc": "Phosphothreonine"
+   },
+   {
+    "start": 184,
+    "end": 184,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 188,
+    "end": 188,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 199,
+    "end": 199,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 205,
+    "end": 205,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 208,
+    "end": 208,
+    "desc": "Phosphothreonine"
+   },
+   {
+    "start": 210,
+    "end": 210,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 214,
+    "end": 214,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 228,
+    "end": 228,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 233,
+    "end": 233,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 237,
+    "end": 237,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 240,
+    "end": 240,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 245,
+    "end": 245,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 256,
+    "end": 256,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 267,
+    "end": 267,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 272,
+    "end": 272,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 274,
+    "end": 274,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 275,
+    "end": 275,
+    "desc": "Phosphoserine"
+   }
+  ],
+  "carbohyd": [
+   {
+    "start": 131,
+    "end": 131,
+    "desc": "O-linked (GalNAc...) threonine"
+   },
+   {
+    "start": 140,
+    "end": 140,
+    "desc": "O-linked (GalNAc...) threonine"
+   },
+   {
+    "start": 145,
+    "end": 145,
+    "desc": "O-linked (GalNAc...) threonine"
+   },
+   {
+    "start": 205,
+    "end": 205,
+    "desc": "O-linked (Xyl...) (chondroitin sulfate) serine"
+   },
+   {
+    "start": 272,
+    "end": 272,
+    "desc": "O-linked (Xyl...) (chondroitin sulfate) serine"
+   }
+  ],
+  "transmem": []
+ },
+ "serum_albumin_bovine": {
+  "name": "serum_albumin_bovine",
+  "accession": "P02769",
+  "uniprot_id": "ALBU_BOVIN",
+  "protein_name": "Albumin",
+  "organism": "Bos taurus",
+  "sequence": "MKWVTFISLLLLFSSAYSRGVFRRDTHKSEIAHRFKDLGEEHFKGLVLIAFSQYLQQCPFDEHVKLVNELTEFAKTCVADESHAGCEKSLHTLFGDELCKVASLRETYGDMADCCEKQEPERNECFLSHKDDSPDLPKLKPDPNTLCDEFKADEKKFWGKYLYEIARRHPYFYAPELLYYANKYNGVFQECCQAEDKGACLLPKIETMREKVLASSARQRLRCASIQKFGERALKAWSVARLSQKFPKAEFVEVTKLVTDLTKVHKECCHGDLLECADDRADLAKYICDNQDTISSKLKECCDKPLLEKSHCIAEVEKDAIPENLPPLTADFAEDKDVCKNYQEAKDAFLGSFLYEYSRRHPEYAVSVLLRLAKEYEATLEECCAKDDPHACYSTVFDKLKHLVDEPQNLIKQNCDQFEKLGEYGFQNALIVRYTRKVPQVSTPTLVEVSRSLGKVGTRCCTKPESERMPCTEDYLSLILNRLCVLHEKTPVSEKVTKCCTESLVNRRPCFSALTPDETYVPKAFDEKLFTFHADICTLPDTEKQIKKQTALVELLKHKPKATEEQLKTVMENFVAFVDKCCAADDKEACFAVEGPKLVVSTQTALA",
+  "length": 607,
+  "mass_da": 69293,
+  "signal": [
+   {
+    "start": 1,
+    "end": 18,
+    "desc": ""
+   }
+  ],
+  "propeptide": [
+   {
+    "start": 19,
+    "end": 24,
+    "desc": ""
+   }
+  ],
+  "chain": [
+   {
+    "start": 25,
+    "end": 607,
+    "desc": "Albumin"
+   }
+  ],
+  "disulfide": [
+   {
+    "start": 77,
+    "end": 86,
+    "desc": ""
+   },
+   {
+    "start": 99,
+    "end": 115,
+    "desc": ""
+   },
+   {
+    "start": 114,
+    "end": 125,
+    "desc": ""
+   },
+   {
+    "start": 147,
+    "end": 192,
+    "desc": ""
+   },
+   {
+    "start": 191,
+    "end": 200,
+    "desc": ""
+   },
+   {
+    "start": 223,
+    "end": 269,
+    "desc": ""
+   },
+   {
+    "start": 268,
+    "end": 276,
+    "desc": ""
+   },
+   {
+    "start": 288,
+    "end": 302,
+    "desc": ""
+   },
+   {
+    "start": 301,
+    "end": 312,
+    "desc": ""
+   },
+   {
+    "start": 339,
+    "end": 384,
+    "desc": ""
+   },
+   {
+    "start": 383,
+    "end": 392,
+    "desc": ""
+   },
+   {
+    "start": 415,
+    "end": 461,
+    "desc": ""
+   },
+   {
+    "start": 460,
+    "end": 471,
+    "desc": ""
+   },
+   {
+    "start": 484,
+    "end": 500,
+    "desc": ""
+   },
+   {
+    "start": 499,
+    "end": 510,
+    "desc": ""
+   },
+   {
+    "start": 537,
+    "end": 582,
+    "desc": ""
+   },
+   {
+    "start": 581,
+    "end": 590,
+    "desc": ""
+   }
+  ],
+  "mod_res": [
+   {
+    "start": 29,
+    "end": 29,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 82,
+    "end": 82,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 89,
+    "end": 89,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 107,
+    "end": 107,
+    "desc": "Phosphothreonine"
+   },
+   {
+    "start": 228,
+    "end": 228,
+    "desc": "N6-succinyllysine"
+   },
+   {
+    "start": 296,
+    "end": 296,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 442,
+    "end": 442,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 443,
+    "end": 443,
+    "desc": "Phosphothreonine"
+   },
+   {
+    "start": 445,
+    "end": 445,
+    "desc": "Phosphothreonine"
+   },
+   {
+    "start": 512,
+    "end": 512,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 557,
+    "end": 557,
+    "desc": "N6-methyllysine"
+   },
+   {
+    "start": 569,
+    "end": 569,
+    "desc": "Phosphothreonine"
+   },
+   {
+    "start": 587,
+    "end": 587,
+    "desc": "N6-succinyllysine"
+   }
+  ],
+  "carbohyd": [
+   {
+    "start": 151,
+    "end": 151,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   }
+  ],
+  "transmem": []
+ },
+ "serum_albumin_human": {
+  "name": "serum_albumin_human",
+  "accession": "P02768",
+  "uniprot_id": "ALBU_HUMAN",
+  "protein_name": "Albumin",
+  "organism": "Homo sapiens",
+  "sequence": "MKWVTFISLLFLFSSAYSRGVFRRDAHKSEVAHRFKDLGEENFKALVLIAFAQYLQQCPFEDHVKLVNEVTEFAKTCVADESAENCDKSLHTLFGDKLCTVATLRETYGEMADCCAKQEPERNECFLQHKDDNPNLPRLVRPEVDVMCTAFHDNEETFLKKYLYEIARRHPYFYAPELLFFAKRYKAAFTECCQAADKAACLLPKLDELRDEGKASSAKQRLKCASLQKFGERAFKAWAVARLSQRFPKAEFAEVSKLVTDLTKVHTECCHGDLLECADDRADLAKYICENQDSISSKLKECCEKPLLEKSHCIAEVENDEMPADLPSLAADFVESKDVCKNYAEAKDVFLGMFLYEYARRHPDYSVVLLLRLAKTYETTLEKCCAAADPHECYAKVFDEFKPLVEEPQNLIKQNCELFEQLGEYKFQNALLVRYTKKVPQVSTPTLVEVSRNLGKVGSKCCKHPEAKRMPCAEDYLSVVLNQLCVLHEKTPVSDRVTKCCTESLVNRRPCFSALEVDETYVPKEFNAETFTFHADICTLSEKERQIKKQTALVELVKHKPKATKEQLKAVMDDFAAFVEKCCKADDKETCFAEEGKKLVAASQAALGL",
+  "length": 609,
+  "mass_da": 69367,
+  "signal": [
+   {
+    "start": 1,
+    "end": 18,
+    "desc": ""
+   }
+  ],
+  "propeptide": [
+   {
+    "start": 19,
+    "end": 24,
+    "desc": ""
+   }
+  ],
+  "chain": [
+   {
+    "start": 25,
+    "end": 609,
+    "desc": "Albumin"
+   }
+  ],
+  "disulfide": [
+   {
+    "start": 77,
+    "end": 86,
+    "desc": ""
+   },
+   {
+    "start": 99,
+    "end": 115,
+    "desc": ""
+   },
+   {
+    "start": 114,
+    "end": 125,
+    "desc": ""
+   },
+   {
+    "start": 148,
+    "end": 193,
+    "desc": ""
+   },
+   {
+    "start": 192,
+    "end": 201,
+    "desc": ""
+   },
+   {
+    "start": 224,
+    "end": 270,
+    "desc": ""
+   },
+   {
+    "start": 269,
+    "end": 277,
+    "desc": ""
+   },
+   {
+    "start": 289,
+    "end": 303,
+    "desc": ""
+   },
+   {
+    "start": 302,
+    "end": 313,
+    "desc": ""
+   },
+   {
+    "start": 340,
+    "end": 385,
+    "desc": ""
+   },
+   {
+    "start": 384,
+    "end": 393,
+    "desc": ""
+   },
+   {
+    "start": 416,
+    "end": 462,
+    "desc": ""
+   },
+   {
+    "start": 461,
+    "end": 472,
+    "desc": ""
+   },
+   {
+    "start": 485,
+    "end": 501,
+    "desc": ""
+   },
+   {
+    "start": 500,
+    "end": 511,
+    "desc": ""
+   },
+   {
+    "start": 538,
+    "end": 583,
+    "desc": ""
+   },
+   {
+    "start": 582,
+    "end": 591,
+    "desc": ""
+   }
+  ],
+  "mod_res": [
+   {
+    "start": 29,
+    "end": 29,
+    "desc": "Phosphoserine; by FAM20C"
+   },
+   {
+    "start": 82,
+    "end": 82,
+    "desc": "Phosphoserine; by FAM20C"
+   },
+   {
+    "start": 89,
+    "end": 89,
+    "desc": "Phosphoserine; by FAM20C"
+   },
+   {
+    "start": 107,
+    "end": 107,
+    "desc": "Phosphothreonine; by FAM20C"
+   },
+   {
+    "start": 229,
+    "end": 229,
+    "desc": "N6-succinyllysine"
+   },
+   {
+    "start": 297,
+    "end": 297,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 443,
+    "end": 443,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 444,
+    "end": 444,
+    "desc": "Phosphothreonine"
+   },
+   {
+    "start": 446,
+    "end": 446,
+    "desc": "Phosphothreonine"
+   },
+   {
+    "start": 460,
+    "end": 460,
+    "desc": "N6-succinyllysine"
+   },
+   {
+    "start": 513,
+    "end": 513,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 543,
+    "end": 543,
+    "desc": "N6-succinyllysine"
+   },
+   {
+    "start": 558,
+    "end": 558,
+    "desc": "N6-methyllysine; alternate"
+   },
+   {
+    "start": 588,
+    "end": 588,
+    "desc": "N6-succinyllysine"
+   }
+  ],
+  "carbohyd": [
+   {
+    "start": 36,
+    "end": 36,
+    "desc": "N-linked (Glc) (glycation) lysine"
+   },
+   {
+    "start": 75,
+    "end": 75,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 161,
+    "end": 161,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 186,
+    "end": 186,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 223,
+    "end": 223,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 249,
+    "end": 249,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 257,
+    "end": 257,
+    "desc": "N-linked (Glc) (glycation) lysine"
+   },
+   {
+    "start": 300,
+    "end": 300,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 305,
+    "end": 305,
+    "desc": "N-linked (Glc) (glycation) lysine"
+   },
+   {
+    "start": 337,
+    "end": 337,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 341,
+    "end": 341,
+    "desc": "N-linked (Glc) (glycation) lysine"
+   },
+   {
+    "start": 342,
+    "end": 342,
+    "desc": "N-linked (GlcNAc...) asparagine; in variant Redhill"
+   },
+   {
+    "start": 347,
+    "end": 347,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 375,
+    "end": 375,
+    "desc": "N-linked (Glc) (glycation) lysine"
+   },
+   {
+    "start": 402,
+    "end": 402,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 437,
+    "end": 437,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 463,
+    "end": 463,
+    "desc": "N-linked (Glc) (glycation) lysine"
+   },
+   {
+    "start": 468,
+    "end": 468,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 518,
+    "end": 518,
+    "desc": "N-linked (GlcNAc...) asparagine; in variant Casebrook"
+   },
+   {
+    "start": 549,
+    "end": 549,
+    "desc": "N-linked (Glc) (glycation) lysine"
+   },
+   {
+    "start": 558,
+    "end": 558,
+    "desc": "N-linked (Glc) (glycation) lysine; alternate"
+   },
+   {
+    "start": 560,
+    "end": 560,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 569,
+    "end": 569,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 597,
+    "end": 597,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   }
+  ],
+  "transmem": []
+ },
+ "ovalbumin_chicken": {
+  "name": "ovalbumin_chicken",
+  "accession": "P01012",
+  "uniprot_id": "OVAL_CHICK",
+  "protein_name": "Ovalbumin",
+  "organism": "Gallus gallus",
+  "sequence": "MGSIGAASMEFCFDVFKELKVHHANENIFYCPIAIMSALAMVYLGAKDSTRTQINKVVRFDKLPGFGDSIEAQCGTSVNVHSSLRDILNQITKPNDVYSFSLASRLYAEERYPILPEYLQCVKELYRGGLEPINFQTAADQARELINSWVESQTNGIIRNVLQPSSVDSQTAMVLVNAIVFKGLWEKAFKDEDTQAMPFRVTEQESKPVQMMYQIGLFRVASMASEKMKILELPFASGTMSMLVLLPDEVSGLEQLESIINFEKLTEWTSSNVMEERKIKVYLPRMKMEEKYNLTSVLMAMGITDVFSSSANLSGISSAESLKISQAVHAAHAEINEAGREVVGSAEAGVDAASVSEEFRADHPFLFCIKHIATNAVLFFGRCVSP",
+  "length": 386,
+  "mass_da": 42881,
+  "signal": [
+   {
+    "start": 22,
+    "end": 48,
+    "desc": "Not cleaved"
+   }
+  ],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 2,
+    "end": 386,
+    "desc": "Ovalbumin"
+   }
+  ],
+  "disulfide": [
+   {
+    "start": 74,
+    "end": 121,
+    "desc": ""
+   }
+  ],
+  "mod_res": [
+   {
+    "start": 2,
+    "end": 2,
+    "desc": "N-acetylglycine"
+   },
+   {
+    "start": 69,
+    "end": 69,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 345,
+    "end": 345,
+    "desc": "Phosphoserine"
+   }
+  ],
+  "carbohyd": [
+   {
+    "start": 293,
+    "end": 293,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   }
+  ],
+  "transmem": []
+ },
+ "ovotransferrin_chicken": {
+  "name": "ovotransferrin_chicken",
+  "accession": "P02789",
+  "uniprot_id": "TRFE_CHICK",
+  "protein_name": "Ovotransferrin",
+  "organism": "Gallus gallus",
+  "sequence": "MKLILCTVLSLGIAAVCFAAPPKSVIRWCTISSPEEKKCNNLRDLTQQERISLTCVQKATYLDCIKAIANNEADAISLDGGQAFEAGLAPYKLKPIAAEVYEHTEGSTTSYYAVAVVKKGTEFTVNDLQGKTSCHTGLGRSAGWNIPIGTLLHRGAIEWEGIESGSVEQAVAKFFSASCVPGATIEQKLCRQCKGDPKTKCARNAPYSGYSGAFHCLKDGKGDVAFVKHTTVNENAPDQKDEYELLCLDGSRQPVDNYKTCNWARVAAHAVVARDDNKVEDIWSFLSKAQSDFGVDTKSDFHLFGPPGKKDPVLKDLLFKDSAIMLKRVPSLMDSQLYLGFEYYSAIQSMRKDQLTPSPRENRIQWCAVGKDEKSKCDRWSVVSNGDVECTVVDETKDCIIKIMKGEADAVALDGGLVYTAGVCGLVPVMAERYDDESQCSKTDERPASYFAVAVARKDSNVNWNNLKGKKSCHTAVGRTAGWVIPMGLIHNRTGTCNFDEYFSEGCAPGSPPNSRLCQLCQGSGGIPPEKCVASSHEKYFGYTGALRCLVEKGDVAFIQHSTVEENTGGKNKADWAKNLQMDDFELLCTDGRRANVMDYRECNLAEVPTHAVVVRPEKANKIRDLLERQEKRFGVNGSEKSKFMMFESQNKDLLFKDLTKCLFKVREGTTYKEFLGDKFYTVISSLKTCNPSDILQMCSFLEGK",
+  "length": 705,
+  "mass_da": 77777,
+  "signal": [
+   {
+    "start": 1,
+    "end": 19,
+    "desc": ""
+   }
+  ],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 20,
+    "end": 705,
+    "desc": "Ovotransferrin"
+   }
+  ],
+  "disulfide": [
+   {
+    "start": 29,
+    "end": 64,
+    "desc": ""
+   },
+   {
+    "start": 39,
+    "end": 55,
+    "desc": ""
+   },
+   {
+    "start": 134,
+    "end": 216,
+    "desc": ""
+   },
+   {
+    "start": 179,
+    "end": 193,
+    "desc": ""
+   },
+   {
+    "start": 190,
+    "end": 201,
+    "desc": ""
+   },
+   {
+    "start": 247,
+    "end": 261,
+    "desc": ""
+   },
+   {
+    "start": 367,
+    "end": 399,
+    "desc": ""
+   },
+   {
+    "start": 377,
+    "end": 390,
+    "desc": ""
+   },
+   {
+    "start": 424,
+    "end": 699,
+    "desc": ""
+   },
+   {
+    "start": 440,
+    "end": 662,
+    "desc": ""
+   },
+   {
+    "start": 473,
+    "end": 549,
+    "desc": ""
+   },
+   {
+    "start": 497,
+    "end": 690,
+    "desc": ""
+   },
+   {
+    "start": 507,
+    "end": 521,
+    "desc": ""
+   },
+   {
+    "start": 518,
+    "end": 532,
+    "desc": ""
+   },
+   {
+    "start": 589,
+    "end": 603,
+    "desc": ""
+   }
+  ],
+  "mod_res": [],
+  "carbohyd": [
+   {
+    "start": 492,
+    "end": 492,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   }
+  ],
+  "transmem": []
+ },
+ "ovomucoid_chicken": {
+  "name": "ovomucoid_chicken",
+  "accession": "P01005",
+  "uniprot_id": "IOVO_CHICK",
+  "protein_name": "Ovomucoid",
+  "organism": "Gallus gallus",
+  "sequence": "MAMAGVFVLFSFVLCGFLPDAAFGAEVDCSRFPNATDKEGKDVLVCNKDLRPICGTDGVTYTNDCLLCAYSIEFGTNISKEHDGECKETVPMNCSSYANTTSEDGKVMVLCNRAFNPVCGTDGVTYDNECLLCAHKVEQGASVDKRHDGGCRKELAAVSVDCSEYPKPDCTAEDRPLCGSDNKTYGNKCNFCNAVVESNGTLTLSHFGKC",
+  "length": 210,
+  "mass_da": 22591,
+  "signal": [
+   {
+    "start": 1,
+    "end": 24,
+    "desc": ""
+   }
+  ],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 25,
+    "end": 210,
+    "desc": "Ovomucoid"
+   }
+  ],
+  "disulfide": [
+   {
+    "start": 29,
+    "end": 68,
+    "desc": ""
+   },
+   {
+    "start": 46,
+    "end": 65,
+    "desc": ""
+   },
+   {
+    "start": 54,
+    "end": 86,
+    "desc": ""
+   },
+   {
+    "start": 94,
+    "end": 133,
+    "desc": ""
+   },
+   {
+    "start": 111,
+    "end": 130,
+    "desc": ""
+   },
+   {
+    "start": 119,
+    "end": 151,
+    "desc": ""
+   },
+   {
+    "start": 162,
+    "end": 192,
+    "desc": ""
+   },
+   {
+    "start": 170,
+    "end": 189,
+    "desc": ""
+   },
+   {
+    "start": 178,
+    "end": 210,
+    "desc": ""
+   }
+  ],
+  "mod_res": [],
+  "carbohyd": [
+   {
+    "start": 34,
+    "end": 34,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   },
+   {
+    "start": 77,
+    "end": 77,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   },
+   {
+    "start": 93,
+    "end": 93,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   },
+   {
+    "start": 99,
+    "end": 99,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   },
+   {
+    "start": 199,
+    "end": 199,
+    "desc": "N-linked (GlcNAc...) asparagine; partial"
+   }
+  ],
+  "transmem": []
+ },
+ "avidin_chicken": {
+  "name": "avidin_chicken",
+  "accession": "P02701",
+  "uniprot_id": "AVID_CHICK",
+  "protein_name": "Avidin",
+  "organism": "Gallus gallus",
+  "sequence": "MVHATSPLLLLLLLSLALVAPGLSARKCSLTGKWTNDLGSNMTIGAVNSRGEFTGTYITAVTATSNEIKESPLHGTQNTINKRTQPTFGFTVNWKFSESTTVFTGQCFIDRNGKEVLKTMWLLRSSVNDIGDDWKATRVGINIFTRLRTQKE",
+  "length": 152,
+  "mass_da": 16768,
+  "signal": [
+   {
+    "start": 1,
+    "end": 24,
+    "desc": ""
+   }
+  ],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 25,
+    "end": 152,
+    "desc": "Avidin"
+   }
+  ],
+  "disulfide": [
+   {
+    "start": 28,
+    "end": 107,
+    "desc": ""
+   }
+  ],
+  "mod_res": [],
+  "carbohyd": [
+   {
+    "start": 41,
+    "end": 41,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   }
+  ],
+  "transmem": []
+ },
+ "lysozyme_c_chicken": {
+  "name": "lysozyme_c_chicken",
+  "accession": "P00698",
+  "uniprot_id": "LYSC_CHICK",
+  "protein_name": "Lysozyme C",
+  "organism": "Gallus gallus",
+  "sequence": "MRSLLILVLCFLPLAALGKVFGRCELAAAMKRHGLDNYRGYSLGNWVCAAKFESNFNTQATNRNTDGSTDYGILQINSRWWCNDGRTPGSRNLCNIPCSALLSSDITASVNCAKKIVSDGNGMNAWVAWRNRCKGTDVQAWIRGCRL",
+  "length": 147,
+  "mass_da": 16239,
+  "signal": [
+   {
+    "start": 1,
+    "end": 18,
+    "desc": ""
+   }
+  ],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 19,
+    "end": 147,
+    "desc": "Lysozyme C"
+   }
+  ],
+  "disulfide": [
+   {
+    "start": 24,
+    "end": 145,
+    "desc": ""
+   },
+   {
+    "start": 48,
+    "end": 133,
+    "desc": ""
+   },
+   {
+    "start": 82,
+    "end": 98,
+    "desc": ""
+   },
+   {
+    "start": 94,
+    "end": 112,
+    "desc": ""
+   }
+  ],
+  "mod_res": [],
+  "carbohyd": [],
+  "transmem": []
+ },
+ "cystatin_chicken": {
+  "name": "cystatin_chicken",
+  "accession": "P01038",
+  "uniprot_id": "CYT_CHICK",
+  "protein_name": "Cystatin",
+  "organism": "Gallus gallus",
+  "sequence": "MAGARGCVVLLAAALMLVGAVLGSEDRSRLLGAPVPVDENDEGLQRALQFAMAEYNRASNDKYSSRVVRVISAKRQLVSGIKYILQVEIGRTTCPKSSGDLQSCEFHDEPEMAKYTTCTFVVYSIPWLNQIKLLESKCQ",
+  "length": 139,
+  "mass_da": 15287,
+  "signal": [
+   {
+    "start": 1,
+    "end": 23,
+    "desc": ""
+   }
+  ],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 24,
+    "end": 139,
+    "desc": "Cystatin"
+   }
+  ],
+  "disulfide": [
+   {
+    "start": 94,
+    "end": 104,
+    "desc": ""
+   },
+   {
+    "start": 118,
+    "end": 138,
+    "desc": ""
+   }
+  ],
+  "mod_res": [
+   {
+    "start": 103,
+    "end": 103,
+    "desc": "Phosphoserine"
+   }
+  ],
+  "carbohyd": [],
+  "transmem": []
+ },
+ "leghemoglobin_c2_soybean": {
+  "name": "leghemoglobin_c2_soybean",
+  "accession": "P02234",
+  "uniprot_id": "LGBA_PHAVU",
+  "protein_name": "Leghemoglobin alpha",
+  "organism": "Phaseolus vulgaris",
+  "sequence": "MGAFTEKQEALVNSSWEAFKGNIPQYSVVFYTSILEKAPAAKNLFSFLANGVDPTNPKLTAHAESLFGLVRDSAAQLRANGAVVADAALGSIHSQKGVNDSQFLVVKEALLKTLKEAVGDKWTDELSTALELAYDELAAAIKKAYA",
+  "length": 146,
+  "mass_da": 15620,
+  "signal": [],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 2,
+    "end": 146,
+    "desc": "Leghemoglobin alpha"
+   }
+  ],
+  "disulfide": [],
+  "mod_res": [
+   {
+    "start": 26,
+    "end": 26,
+    "desc": "Nitrated tyrosine"
+   },
+   {
+    "start": 31,
+    "end": 31,
+    "desc": "Nitrated tyrosine"
+   },
+   {
+    "start": 46,
+    "end": 46,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 134,
+    "end": 134,
+    "desc": "Nitrated tyrosine"
+   }
+  ],
+  "carbohyd": [],
+  "transmem": []
+ },
+ "leghemoglobin_a_soybean": {
+  "name": "leghemoglobin_a_soybean",
+  "accession": "P02232",
+  "uniprot_id": "LGB1_VICFA",
+  "protein_name": "Leghemoglobin-1",
+  "organism": "Vicia faba",
+  "sequence": "MGFTEKQEALVNSSSQLFKQNPSNYSVLFYTIILQKAPTAKAMFSFLKDSAGVVDSPKLGAHAEKVFGMVRDSAVQLRATGEVVLDGKDGSIHIQKGVLDPHFVVVKEALLKTIKEASGDKWSEELSAAWEVAYDGLATAIKAA",
+  "length": 144,
+  "mass_da": 15531,
+  "signal": [],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 2,
+    "end": 144,
+    "desc": "Leghemoglobin-1"
+   }
+  ],
+  "disulfide": [],
+  "mod_res": [
+   {
+    "start": 25,
+    "end": 25,
+    "desc": "Nitrated tyrosine"
+   },
+   {
+    "start": 30,
+    "end": 30,
+    "desc": "Nitrated tyrosine"
+   },
+   {
+    "start": 45,
+    "end": 45,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 134,
+    "end": 134,
+    "desc": "Nitrated tyrosine"
+   }
+  ],
+  "carbohyd": [],
+  "transmem": []
+ },
+ "myoglobin_bovine": {
+  "name": "myoglobin_bovine",
+  "accession": "P02192",
+  "uniprot_id": "MYG_BOVIN",
+  "protein_name": "Myoglobin",
+  "organism": "Bos taurus",
+  "sequence": "MGLSDGEWQLVLNAWGKVEADVAGHGQEVLIRLFTGHPETLEKFDKFKHLKTEAEMKASEDLKKHGNTVLTALGGILKKKGHHEAEVKHLAESHANKHKIPVKYLEFISDAIIHVLHAKHPSDFGADAQAAMSKALELFRNDMAAQYKVLGFHG",
+  "length": 154,
+  "mass_da": 17078,
+  "signal": [],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 2,
+    "end": 154,
+    "desc": "Myoglobin"
+   }
+  ],
+  "disulfide": [],
+  "mod_res": [
+   {
+    "start": 4,
+    "end": 4,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 68,
+    "end": 68,
+    "desc": "Phosphothreonine"
+   }
+  ],
+  "carbohyd": [],
+  "transmem": []
+ },
+ "myoglobin_pig": {
+  "name": "myoglobin_pig",
+  "accession": "P02189",
+  "uniprot_id": "MYG_PIG",
+  "protein_name": "Myoglobin",
+  "organism": "Sus scrofa",
+  "sequence": "MGLSDGEWQLVLNVWGKVEADVAGHGQEVLIRLFKGHPETLEKFDKFKHLKSEDEMKASEDLKKHGNTVLTALGGILKKKGHHEAELTPLAQSHATKHKIPVKYLEFISEAIIQVLQSKHPGDFGADAQGAMSKALELFRNDMAAKYKELGFQG",
+  "length": 154,
+  "mass_da": 17085,
+  "signal": [],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 2,
+    "end": 154,
+    "desc": "Myoglobin"
+   }
+  ],
+  "disulfide": [],
+  "mod_res": [
+   {
+    "start": 4,
+    "end": 4,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 68,
+    "end": 68,
+    "desc": "Phosphothreonine"
+   }
+  ],
+  "carbohyd": [],
+  "transmem": []
+ },
+ "hemoglobin_alpha_human": {
+  "name": "hemoglobin_alpha_human",
+  "accession": "P69905",
+  "uniprot_id": "HBA_HUMAN",
+  "protein_name": "Hemoglobin subunit alpha",
+  "organism": "Homo sapiens",
+  "sequence": "MVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLSHCLLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR",
+  "length": 142,
+  "mass_da": 15258,
+  "signal": [],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 2,
+    "end": 142,
+    "desc": "Hemoglobin subunit alpha"
+   }
+  ],
+  "disulfide": [],
+  "mod_res": [
+   {
+    "start": 4,
+    "end": 4,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 8,
+    "end": 8,
+    "desc": "N6-succinyllysine; alternate"
+   },
+   {
+    "start": 9,
+    "end": 9,
+    "desc": "Phosphothreonine"
+   },
+   {
+    "start": 12,
+    "end": 12,
+    "desc": "N6-succinyllysine"
+   },
+   {
+    "start": 17,
+    "end": 17,
+    "desc": "N6-acetyllysine; alternate"
+   },
+   {
+    "start": 17,
+    "end": 17,
+    "desc": "N6-succinyllysine; alternate"
+   },
+   {
+    "start": 25,
+    "end": 25,
+    "desc": "Phosphotyrosine"
+   },
+   {
+    "start": 36,
+    "end": 36,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 41,
+    "end": 41,
+    "desc": "N6-succinyllysine; alternate"
+   },
+   {
+    "start": 50,
+    "end": 50,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 103,
+    "end": 103,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 109,
+    "end": 109,
+    "desc": "Phosphothreonine"
+   },
+   {
+    "start": 125,
+    "end": 125,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 132,
+    "end": 132,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 135,
+    "end": 135,
+    "desc": "Phosphothreonine"
+   },
+   {
+    "start": 138,
+    "end": 138,
+    "desc": "Phosphothreonine"
+   },
+   {
+    "start": 139,
+    "end": 139,
+    "desc": "Phosphoserine"
+   }
+  ],
+  "carbohyd": [
+   {
+    "start": 8,
+    "end": 8,
+    "desc": "N-linked (Glc) (glycation) lysine; alternate"
+   },
+   {
+    "start": 17,
+    "end": 17,
+    "desc": "N-linked (Glc) (glycation) lysine; alternate"
+   },
+   {
+    "start": 41,
+    "end": 41,
+    "desc": "N-linked (Glc) (glycation) lysine; alternate"
+   },
+   {
+    "start": 62,
+    "end": 62,
+    "desc": "N-linked (Glc) (glycation) lysine"
+   }
+  ],
+  "transmem": []
+ },
+ "hemoglobin_beta_human": {
+  "name": "hemoglobin_beta_human",
+  "accession": "P68871",
+  "uniprot_id": "HBB_HUMAN",
+  "protein_name": "Hemoglobin subunit beta",
+  "organism": "Homo sapiens",
+  "sequence": "MVHLTPEEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFESFGDLSTPDAVMGNPKVKAHGKKVLGAFSDGLAHLDNLKGTFATLSELHCDKLHVDPENFRLLGNVLVCVLAHHFGKEFTPPVQAAYQKVVAGVANALAHKYH",
+  "length": 147,
+  "mass_da": 15998,
+  "signal": [],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 2,
+    "end": 147,
+    "desc": "Hemoglobin subunit beta"
+   }
+  ],
+  "disulfide": [],
+  "mod_res": [
+   {
+    "start": 2,
+    "end": 2,
+    "desc": "N-acetylvaline"
+   },
+   {
+    "start": 2,
+    "end": 2,
+    "desc": "N-pyruvate 2-iminyl-valine; in Hb A1b"
+   },
+   {
+    "start": 10,
+    "end": 10,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 13,
+    "end": 13,
+    "desc": "Phosphothreonine"
+   },
+   {
+    "start": 45,
+    "end": 45,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 51,
+    "end": 51,
+    "desc": "Phosphothreonine"
+   },
+   {
+    "start": 60,
+    "end": 60,
+    "desc": "N6-acetyllysine"
+   },
+   {
+    "start": 83,
+    "end": 83,
+    "desc": "N6-acetyllysine"
+   },
+   {
+    "start": 88,
+    "end": 88,
+    "desc": "Phosphothreonine"
+   },
+   {
+    "start": 94,
+    "end": 94,
+    "desc": "S-nitrosocysteine"
+   },
+   {
+    "start": 145,
+    "end": 145,
+    "desc": "N6-acetyllysine; alternate"
+   }
+  ],
+  "carbohyd": [
+   {
+    "start": 2,
+    "end": 2,
+    "desc": "N-linked (Glc) (glycation) valine; in Hb A1c"
+   },
+   {
+    "start": 9,
+    "end": 9,
+    "desc": "N-linked (Glc) (glycation) lysine"
+   },
+   {
+    "start": 18,
+    "end": 18,
+    "desc": "N-linked (Glc) (glycation) lysine"
+   },
+   {
+    "start": 67,
+    "end": 67,
+    "desc": "N-linked (Glc) (glycation) lysine"
+   },
+   {
+    "start": 121,
+    "end": 121,
+    "desc": "N-linked (Glc) (glycation) lysine"
+   },
+   {
+    "start": 145,
+    "end": 145,
+    "desc": "N-linked (Glc) (glycation) lysine; alternate"
+   }
+  ],
+  "transmem": []
+ },
+ "chymosin_bovine": {
+  "name": "chymosin_bovine",
+  "accession": "P00794",
+  "uniprot_id": "CHYM_BOVIN",
+  "protein_name": "Chymosin",
+  "organism": "Bos taurus",
+  "sequence": "MRCLVVLLAVFALSQGAEITRIPLYKGKSLRKALKEHGLLEDFLQKQQYGISSKYSGFGEVASVPLTNYLDSQYFGKIYLGTPPQEFTVLFDTGSSDFWVPSIYCKSNACKNHQRFDPRKSSTFQNLGKPLSIHYGTGSMQGILGYDTVTVSNIVDIQQTVGLSTQEPGDVFTYAEFDGILGMAYPSLASEYSIPVFDNMMNRHLVAQDLFSVYMDRNGQESMLTLGAIDPSYYTGSLHWVPVTVQQYWQFTVDSVTISGVVVACEGGCQAILDTGTSKLVGPSSDILNIQQAIGATQNQYGEFDIDCDNLSYMPTVVFEINGKMYPLTPSAYTSQDQGFCTSGFQSENHSQKWILGDVFIREYYSVFDRANNLVGLAKAI",
+  "length": 381,
+  "mass_da": 42180,
+  "signal": [
+   {
+    "start": 1,
+    "end": 16,
+    "desc": ""
+   }
+  ],
+  "propeptide": [
+   {
+    "start": 17,
+    "end": 58,
+    "desc": "Activation peptide"
+   }
+  ],
+  "chain": [
+   {
+    "start": 59,
+    "end": 381,
+    "desc": "Chymosin"
+   }
+  ],
+  "disulfide": [
+   {
+    "start": 105,
+    "end": 110,
+    "desc": ""
+   },
+   {
+    "start": 265,
+    "end": 269,
+    "desc": ""
+   },
+   {
+    "start": 308,
+    "end": 341,
+    "desc": ""
+   }
+  ],
+  "mod_res": [],
+  "carbohyd": [],
+  "transmem": []
+ },
+ "human_growth_hormone": {
+  "name": "human_growth_hormone",
+  "accession": "P01241",
+  "uniprot_id": "SOMA_HUMAN",
+  "protein_name": "Somatotropin",
+  "organism": "Homo sapiens",
+  "sequence": "MATGSRTSLLLAFGLLCLPWLQEGSAFPTIPLSRLFDNAMLRAHRLHQLAFDTYQEFEEAYIPKEQKYSFLQNPQTSLCFSESIPTPSNREETQQKSNLELLRISLLLIQSWLEPVQFLRSVFANSLVYGASDSNVYDLLKDLEEGIQTLMGRLEDGSPRTGQIFKQTYSKFDTNSHNDDALLKNYGLLYCFRKDMDKVETFLRIVQCRSVEGSCGF",
+  "length": 217,
+  "mass_da": 24847,
+  "signal": [
+   {
+    "start": 1,
+    "end": 26,
+    "desc": ""
+   }
+  ],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 27,
+    "end": 217,
+    "desc": "Somatotropin"
+   }
+  ],
+  "disulfide": [
+   {
+    "start": 79,
+    "end": 191,
+    "desc": ""
+   },
+   {
+    "start": 208,
+    "end": 215,
+    "desc": ""
+   }
+  ],
+  "mod_res": [
+   {
+    "start": 132,
+    "end": 132,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 163,
+    "end": 163,
+    "desc": "Deamidated glutamine; by deterioration"
+   },
+   {
+    "start": 176,
+    "end": 176,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 178,
+    "end": 178,
+    "desc": "Deamidated asparagine; by deterioration"
+   }
+  ],
+  "carbohyd": [],
+  "transmem": []
+ },
+ "insulin_human": {
+  "name": "insulin_human",
+  "accession": "P01308",
+  "uniprot_id": "INS_HUMAN",
+  "protein_name": "Insulin",
+  "organism": "Homo sapiens",
+  "sequence": "MALWMRLLPLLALLALWGPDPAAAFVNQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN",
+  "length": 110,
+  "mass_da": 11981,
+  "signal": [
+   {
+    "start": 1,
+    "end": 24,
+    "desc": ""
+   }
+  ],
+  "propeptide": [
+   {
+    "start": 57,
+    "end": 87,
+    "desc": "C peptide"
+   }
+  ],
+  "chain": [],
+  "disulfide": [
+   {
+    "start": 31,
+    "end": 96,
+    "desc": "Interchain (between B and A chains)"
+   },
+   {
+    "start": 43,
+    "end": 109,
+    "desc": "Interchain (between B and A chains)"
+   },
+   {
+    "start": 95,
+    "end": 100,
+    "desc": ""
+   }
+  ],
+  "mod_res": [],
+  "carbohyd": [],
+  "transmem": []
+ },
+ "trypsin_porcine": {
+  "name": "trypsin_porcine",
+  "accession": "P00761",
+  "uniprot_id": "TRYP_PIG",
+  "protein_name": "Trypsin",
+  "organism": "Sus scrofa",
+  "sequence": "FPTDDDDKIVGGYTCAANSIPYQVSLNSGSHFCGGSLINSQWVVSAAHCYKSRIQVRLGEHNIDVLEGNEQFINAAKIITHPNFNGNTLDNDIMLIKLSSPATLNSRVATVSLPRSCAAAGTECLISGWGNTKSSGSSYPSLLQCLKAPVLSDSSCKSSYPGQITGNMICVGFLEGGKDSCQGDSGGPVVCNGQLQGIVSWGYGCAQKNKPGVYTKVCNYVNWIQQTIAAN",
+  "length": 231,
+  "mass_da": 24409,
+  "signal": [],
+  "propeptide": [
+   {
+    "start": 1,
+    "end": 8,
+    "desc": "Activation peptide"
+   }
+  ],
+  "chain": [
+   {
+    "start": 9,
+    "end": 231,
+    "desc": "Trypsin"
+   }
+  ],
+  "disulfide": [
+   {
+    "start": 15,
+    "end": 145,
+    "desc": ""
+   },
+   {
+    "start": 33,
+    "end": 49,
+    "desc": ""
+   },
+   {
+    "start": 117,
+    "end": 218,
+    "desc": ""
+   },
+   {
+    "start": 124,
+    "end": 191,
+    "desc": ""
+   },
+   {
+    "start": 156,
+    "end": 170,
+    "desc": ""
+   },
+   {
+    "start": 181,
+    "end": 205,
+    "desc": ""
+   }
+  ],
+  "mod_res": [],
+  "carbohyd": [],
+  "transmem": []
+ },
+ "phytase_aspergillus_niger": {
+  "name": "phytase_aspergillus_niger",
+  "accession": "P34752",
+  "uniprot_id": "PHYA_ASPNG",
+  "protein_name": "Phytase A",
+  "organism": "Aspergillus niger",
+  "sequence": "MGVSAVLLPLYLLSGVTSGLAVPASRNQSSCDTVDQGYQCFSETSHLWGQYAPFFSLANESVISPEVPAGCRVTFAQVLSRHGARYPTDSKGKKYSALIEEIQQNATTFDGKYAFLKTYNYSLGADDLTPFGEQELVNSGIKFYQRYESLTRNIVPFIRSSGSSRVIASGKKFIEGFQSTKLKDPRAQPGQSSPKIDVVISEASSSNNTLDPGTCTVFEDSELADTVEANFTATFVPSIRQRLENDLSGVTLTDTEVTYLMDMCSFDTISTSTVDTKLSPFCDLFTHDEWINYDYLQSLKKYYGHGAGNPLGPTQGVGYANELIARLTHSPVHDDTSSNHTLDSSPATFPLNSTLYADFSHDNGIISILFALGLYNGTKPLSTTTVENITQTDGFSSAWTVPFASRLYVEMMQCQAEQEPLVRVLVNDRVVPLHGCPVDALGRCTRDSFVRGLSFARSGGDWAECFA",
+  "length": 467,
+  "mass_da": 51086,
+  "signal": [
+   {
+    "start": 1,
+    "end": 23,
+    "desc": ""
+   }
+  ],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 24,
+    "end": 467,
+    "desc": "Phytase A"
+   }
+  ],
+  "disulfide": [
+   {
+    "start": 31,
+    "end": 40,
+    "desc": ""
+   },
+   {
+    "start": 71,
+    "end": 414,
+    "desc": ""
+   },
+   {
+    "start": 215,
+    "end": 465,
+    "desc": ""
+   },
+   {
+    "start": 264,
+    "end": 282,
+    "desc": ""
+   },
+   {
+    "start": 436,
+    "end": 444,
+    "desc": ""
+   }
+  ],
+  "mod_res": [],
+  "carbohyd": [
+   {
+    "start": 105,
+    "end": 105,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   },
+   {
+    "start": 207,
+    "end": 207,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   },
+   {
+    "start": 339,
+    "end": 339,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   },
+   {
+    "start": 376,
+    "end": 376,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   }
+  ],
+  "transmem": []
+ },
+ "cbhi_cel7a_trichoderma": {
+  "name": "cbhi_cel7a_trichoderma",
+  "accession": "P62694",
+  "uniprot_id": "GUX1_TRIRF",
+  "protein_name": "Exoglucanase 1",
+  "organism": "Trichoderma reesei",
+  "sequence": "MYRKLAVISAFLATARAQSACTLQSETHPPLTWQKCSSGGTCTQQTGSVVIDANWRWTHATNSSTNCYDGNTWSSTLCPDNETCAKNCCLDGAAYASTYGVTTSGNSLSIGFVTQSAQKNVGARLYLMASDTTYQEFTLLGNEFSFDVDVSQLPCGLNGALYFVSMDADGGVSKYPTNTAGAKYGTGYCDSQCPRDLKFINGQANVEGWEPSSNNANTGIGGHGSCCSEMDIWEANSISEALTPHPCTTVGQEICEGDGCGGTYSDNRYGGTCDPDGCDWNPYRLGNTSFYGPGSSFTLDTTKKLTVVTQFETSGAINRYYVQNGVTFQQPNAELGSYSGNELNDDYCTAEEAEFGGSSFSDKGGLTQFKKATSGGMVLVMSLWDDYYANMLWLDSTYPTNETSSTPGAVRGSCSTSSGVPAQVESQSPNAKVTFSNIKFGPIGSTGNPSGGNPPGGNRGTTTTRRPATTTGSSPGPTQSHYGQCGGIGYSGPTVCASGTTCQVLNPYYSQCL",
+  "length": 513,
+  "mass_da": 54073,
+  "signal": [
+   {
+    "start": 1,
+    "end": 17,
+    "desc": ""
+   }
+  ],
+  "propeptide": [],
+  "chain": [
+   {
+    "start": 18,
+    "end": 513,
+    "desc": "Exoglucanase 1"
+   }
+  ],
+  "disulfide": [
+   {
+    "start": 21,
+    "end": 89,
+    "desc": ""
+   },
+   {
+    "start": 36,
+    "end": 42,
+    "desc": ""
+   },
+   {
+    "start": 67,
+    "end": 88,
+    "desc": ""
+   },
+   {
+    "start": 78,
+    "end": 84,
+    "desc": ""
+   },
+   {
+    "start": 155,
+    "end": 414,
+    "desc": ""
+   },
+   {
+    "start": 189,
+    "end": 227,
+    "desc": ""
+   },
+   {
+    "start": 193,
+    "end": 226,
+    "desc": ""
+   },
+   {
+    "start": 247,
+    "end": 273,
+    "desc": ""
+   },
+   {
+    "start": 255,
+    "end": 260,
+    "desc": ""
+   },
+   {
+    "start": 278,
+    "end": 348,
+    "desc": ""
+   },
+   {
+    "start": 485,
+    "end": 502,
+    "desc": ""
+   },
+   {
+    "start": 496,
+    "end": 512,
+    "desc": ""
+   }
+  ],
+  "mod_res": [
+   {
+    "start": 18,
+    "end": 18,
+    "desc": "Pyrrolidone carboxylic acid"
+   }
+  ],
+  "carbohyd": [
+   {
+    "start": 62,
+    "end": 62,
+    "desc": "N-linked (GlcNAc) asparagine"
+   },
+   {
+    "start": 287,
+    "end": 287,
+    "desc": "N-linked (GlcNAc) asparagine"
+   },
+   {
+    "start": 401,
+    "end": 401,
+    "desc": "N-linked (GlcNAc) asparagine"
+   },
+   {
+    "start": 461,
+    "end": 461,
+    "desc": "O-linked (Man) threonine"
+   },
+   {
+    "start": 462,
+    "end": 462,
+    "desc": "O-linked (Man...) threonine"
+   },
+   {
+    "start": 463,
+    "end": 463,
+    "desc": "O-linked (Man...) threonine"
+   },
+   {
+    "start": 464,
+    "end": 464,
+    "desc": "O-linked (Man...) threonine"
+   },
+   {
+    "start": 469,
+    "end": 469,
+    "desc": "O-linked (Man) threonine"
+   },
+   {
+    "start": 470,
+    "end": 470,
+    "desc": "O-linked (Man...) threonine"
+   },
+   {
+    "start": 471,
+    "end": 471,
+    "desc": "O-linked (Man...) threonine"
+   },
+   {
+    "start": 473,
+    "end": 473,
+    "desc": "O-linked (Man) serine"
+   },
+   {
+    "start": 474,
+    "end": 474,
+    "desc": "O-linked (Man) serine"
+   },
+   {
+    "start": 478,
+    "end": 478,
+    "desc": "O-linked (Man) threonine"
+   },
+   {
+    "start": 480,
+    "end": 480,
+    "desc": "O-linked (Man) serine"
+   },
+   {
+    "start": 491,
+    "end": 491,
+    "desc": "O-linked (Man) serine"
+   }
+  ],
+  "transmem": []
+ },
+ "xylanase_ii_trichoderma": {
+  "name": "xylanase_ii_trichoderma",
+  "accession": "P36217",
+  "uniprot_id": "XYN2_TRIR3",
+  "protein_name": "Endo-1,4-beta-xylanase 2",
+  "organism": "Trichoderma reesei (strain ATCC 56765 / BCRC 32924 / NRRL 11460 / VTT-D-86271 / Rut C-30)",
+  "sequence": "MVSFTSLLAGVAAISGVLAAPAAEVESVAVEKRQTIQPGTGYNNGYFYSYWNDGHGGVTYTNGPGGQFSVNWSNSGNFVGGKGWQPGTKNKVINFSGSYNPNGNSYLSVYGWSRNPLIEYYIVENFGTYNPSTGATKLGEVTSDGSVYDIYRTQRVNQPSIIGTATFYQYWSVRRNHRSSGSVNTANHFNAWAQQGLTLGTMDYQIVAVEGYFSSGSASITVS",
+  "length": 223,
+  "mass_da": 24069,
+  "signal": [
+   {
+    "start": 1,
+    "end": 19,
+    "desc": ""
+   }
+  ],
+  "propeptide": [
+   {
+    "start": 20,
+    "end": 33,
+    "desc": ""
+   }
+  ],
+  "chain": [
+   {
+    "start": 34,
+    "end": 223,
+    "desc": "Endo-1,4-beta-xylanase 2"
+   }
+  ],
+  "disulfide": [],
+  "mod_res": [
+   {
+    "start": 34,
+    "end": 34,
+    "desc": "Pyrrolidone carboxylic acid"
+   }
+  ],
+  "carbohyd": [
+   {
+    "start": 71,
+    "end": 71,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   },
+   {
+    "start": 94,
+    "end": 94,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   }
+  ],
+  "transmem": []
+ },
+ "glucoamylase_aspergillus_niger": {
+  "name": "glucoamylase_aspergillus_niger",
+  "accession": "P69328",
+  "uniprot_id": "AMYG_ASPNG",
+  "protein_name": "Glucoamylase",
+  "organism": "Aspergillus niger",
+  "sequence": "MSFRSLLALSGLVCTGLANVISKRATLDSWLSNEATVARTAILNNIGADGAWVSGADSGIVVASPSTDNPDYFYTWTRDSGLVLKTLVDLFRNGDTSLLSTIENYISAQAIVQGISNPSGDLSSGAGLGEPKFNVDETAYTGSWGRPQRDGPALRATAMIGFGQWLLDNGYTSTATDIVWPLVRNDLSYVAQYWNQTGYDLWEEVNGSSFFTIAVQHRALVEGSAFATAVGSSCSWCDSQAPEILCYLQSFWTGSFILANFDSSRSGKDANTLLGSIHTFDPEAACDDSTFQPCSPRALANHKEVVDSFRSIYTLNDGLSDSEAVAVGRYPEDTYYNGNPWFLCTLAAAEQLYDALYQWDKQGSLEVTDVSLDFFKALYSDAATGTYSSSSSTYSSIVDAVKTFADGFVSIVETHAASNGSMSEQYDKSDGEQLSARDLTWSYAALLTANNRRNSVVPASWGETSASSVPGTCAATSAIGTYSSVTVTSWPSIVATGGTTTTATPTGSGSVTSTSKTTATASKTSTSTSSTSCTTPTAVAVTFDLTATTTYGENIYLVGSISQLGDWETSDGIALSADKYTSSDPLWYVTVTLPAGESFEYKFIRIESDDSVEWESDPNREYTVPQACGTSTATVTDTWR",
+  "length": 640,
+  "mass_da": 68309,
+  "signal": [
+   {
+    "start": 1,
+    "end": 18,
+    "desc": ""
+   }
+  ],
+  "propeptide": [
+   {
+    "start": 19,
+    "end": 24,
+    "desc": ""
+   }
+  ],
+  "chain": [
+   {
+    "start": 25,
+    "end": 640,
+    "desc": "Glucoamylase"
+   }
+  ],
+  "disulfide": [
+   {
+    "start": 234,
+    "end": 237,
+    "desc": ""
+   },
+   {
+    "start": 246,
+    "end": 473,
+    "desc": ""
+   },
+   {
+    "start": 286,
+    "end": 294,
+    "desc": ""
+   }
+  ],
+  "mod_res": [],
+  "carbohyd": [
+   {
+    "start": 195,
+    "end": 195,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   },
+   {
+    "start": 419,
+    "end": 419,
+    "desc": "N-linked (GlcNAc...) asparagine"
+   },
+   {
+    "start": 465,
+    "end": 465,
+    "desc": "O-linked (Man) serine"
+   },
+   {
+    "start": 467,
+    "end": 467,
+    "desc": "O-linked (Man) serine"
+   },
+   {
+    "start": 468,
+    "end": 468,
+    "desc": "O-linked (Man) serine"
+   },
+   {
+    "start": 476,
+    "end": 476,
+    "desc": "O-linked (Man) threonine"
+   },
+   {
+    "start": 477,
+    "end": 477,
+    "desc": "O-linked (Man) serine"
+   },
+   {
+    "start": 483,
+    "end": 483,
+    "desc": "O-linked (Man) serine"
+   },
+   {
+    "start": 484,
+    "end": 484,
+    "desc": "O-linked (Man) serine"
+   },
+   {
+    "start": 486,
+    "end": 486,
+    "desc": "O-linked (Man) threonine"
+   },
+   {
+    "start": 488,
+    "end": 488,
+    "desc": "O-linked (Man) threonine"
+   },
+   {
+    "start": 489,
+    "end": 489,
+    "desc": "O-linked (Man) serine"
+   },
+   {
+    "start": 492,
+    "end": 492,
+    "desc": "O-linked (Man) serine"
+   },
+   {
+    "start": 496,
+    "end": 496,
+    "desc": "O-linked (Man) threonine"
+   },
+   {
+    "start": 499,
+    "end": 499,
+    "desc": "O-linked (Man) threonine"
+   },
+   {
+    "start": 500,
+    "end": 500,
+    "desc": "O-linked (Man) threonine"
+   },
+   {
+    "start": 501,
+    "end": 501,
+    "desc": "O-linked (Man) threonine"
+   },
+   {
+    "start": 502,
+    "end": 502,
+    "desc": "O-linked (Man) threonine"
+   },
+   {
+    "start": 504,
+    "end": 504,
+    "desc": "O-linked (Man) threonine"
+   },
+   {
+    "start": 506,
+    "end": 506,
+    "desc": "O-linked (Man) threonine"
+   },
+   {
+    "start": 508,
+    "end": 508,
+    "desc": "O-linked (Man) serine"
+   },
+   {
+    "start": 510,
+    "end": 510,
+    "desc": "O-linked (Man) serine"
+   },
+   {
+    "start": 512,
+    "end": 512,
+    "desc": "O-linked (Man) threonine"
+   },
+   {
+    "start": 513,
+    "end": 513,
+    "desc": "O-linked (Man) serine"
+   },
+   {
+    "start": 514,
+    "end": 514,
+    "desc": "O-linked (Man) threonine"
+   },
+   {
+    "start": 515,
+    "end": 515,
+    "desc": "O-linked (Man) serine"
+   },
+   {
+    "start": 517,
+    "end": 517,
+    "desc": "O-linked (Man) threonine"
+   },
+   {
+    "start": 518,
+    "end": 518,
+    "desc": "O-linked (Man) threonine"
+   },
+   {
+    "start": 520,
+    "end": 520,
+    "desc": "O-linked (Man) threonine"
+   },
+   {
+    "start": 522,
+    "end": 522,
+    "desc": "O-linked (Man) serine"
+   },
+   {
+    "start": 524,
+    "end": 524,
+    "desc": "O-linked (Man) threonine"
+   },
+   {
+    "start": 525,
+    "end": 525,
+    "desc": "O-linked (Man) serine"
+   },
+   {
+    "start": 526,
+    "end": 526,
+    "desc": "O-linked (Man) threonine"
+   },
+   {
+    "start": 527,
+    "end": 527,
+    "desc": "O-linked (Man) serine"
+   },
+   {
+    "start": 528,
+    "end": 528,
+    "desc": "O-linked (Man) threonine"
+   },
+   {
+    "start": 529,
+    "end": 529,
+    "desc": "O-linked (Man) serine"
+   },
+   {
+    "start": 530,
+    "end": 530,
+    "desc": "O-linked (Man) serine"
+   },
+   {
+    "start": 531,
+    "end": 531,
+    "desc": "O-linked (Man) threonine"
+   },
+   {
+    "start": 532,
+    "end": 532,
+    "desc": "O-linked (Man) serine"
+   },
+   {
+    "start": 534,
+    "end": 534,
+    "desc": "O-linked (Man) threonine"
+   },
+   {
+    "start": 535,
+    "end": 535,
+    "desc": "O-linked (Man) threonine"
+   }
+  ],
+  "transmem": []
+ },
+ "hsa_domain_free_control": {
+  "name": "hsa_domain_free_control",
+  "accession": "P02768",
+  "uniprot_id": "ALBU_HUMAN",
+  "protein_name": "Albumin",
+  "organism": "Homo sapiens",
+  "sequence": "MKWVTFISLLFLFSSAYSRGVFRRDAHKSEVAHRFKDLGEENFKALVLIAFAQYLQQCPFEDHVKLVNEVTEFAKTCVADESAENCDKSLHTLFGDKLCTVATLRETYGEMADCCAKQEPERNECFLQHKDDNPNLPRLVRPEVDVMCTAFHDNEETFLKKYLYEIARRHPYFYAPELLFFAKRYKAAFTECCQAADKAACLLPKLDELRDEGKASSAKQRLKCASLQKFGERAFKAWAVARLSQRFPKAEFAEVSKLVTDLTKVHTECCHGDLLECADDRADLAKYICENQDSISSKLKECCEKPLLEKSHCIAEVENDEMPADLPSLAADFVESKDVCKNYAEAKDVFLGMFLYEYARRHPDYSVVLLLRLAKTYETTLEKCCAAADPHECYAKVFDEFKPLVEEPQNLIKQNCELFEQLGEYKFQNALLVRYTKKVPQVSTPTLVEVSRNLGKVGSKCCKHPEAKRMPCAEDYLSVVLNQLCVLHEKTPVSDRVTKCCTESLVNRRPCFSALEVDETYVPKEFNAETFTFHADICTLSEKERQIKKQTALVELVKHKPKATKEQLKAVMDDFAAFVEKCCKADDKETCFAEEGKKLVAASQAALGL",
+  "length": 609,
+  "mass_da": 69367,
+  "signal": [
+   {
+    "start": 1,
+    "end": 18,
+    "desc": ""
+   }
+  ],
+  "propeptide": [
+   {
+    "start": 19,
+    "end": 24,
+    "desc": ""
+   }
+  ],
+  "chain": [
+   {
+    "start": 25,
+    "end": 609,
+    "desc": "Albumin"
+   }
+  ],
+  "disulfide": [
+   {
+    "start": 77,
+    "end": 86,
+    "desc": ""
+   },
+   {
+    "start": 99,
+    "end": 115,
+    "desc": ""
+   },
+   {
+    "start": 114,
+    "end": 125,
+    "desc": ""
+   },
+   {
+    "start": 148,
+    "end": 193,
+    "desc": ""
+   },
+   {
+    "start": 192,
+    "end": 201,
+    "desc": ""
+   },
+   {
+    "start": 224,
+    "end": 270,
+    "desc": ""
+   },
+   {
+    "start": 269,
+    "end": 277,
+    "desc": ""
+   },
+   {
+    "start": 289,
+    "end": 303,
+    "desc": ""
+   },
+   {
+    "start": 302,
+    "end": 313,
+    "desc": ""
+   },
+   {
+    "start": 340,
+    "end": 385,
+    "desc": ""
+   },
+   {
+    "start": 384,
+    "end": 393,
+    "desc": ""
+   },
+   {
+    "start": 416,
+    "end": 462,
+    "desc": ""
+   },
+   {
+    "start": 461,
+    "end": 472,
+    "desc": ""
+   },
+   {
+    "start": 485,
+    "end": 501,
+    "desc": ""
+   },
+   {
+    "start": 500,
+    "end": 511,
+    "desc": ""
+   },
+   {
+    "start": 538,
+    "end": 583,
+    "desc": ""
+   },
+   {
+    "start": 582,
+    "end": 591,
+    "desc": ""
+   }
+  ],
+  "mod_res": [
+   {
+    "start": 29,
+    "end": 29,
+    "desc": "Phosphoserine; by FAM20C"
+   },
+   {
+    "start": 82,
+    "end": 82,
+    "desc": "Phosphoserine; by FAM20C"
+   },
+   {
+    "start": 89,
+    "end": 89,
+    "desc": "Phosphoserine; by FAM20C"
+   },
+   {
+    "start": 107,
+    "end": 107,
+    "desc": "Phosphothreonine; by FAM20C"
+   },
+   {
+    "start": 229,
+    "end": 229,
+    "desc": "N6-succinyllysine"
+   },
+   {
+    "start": 297,
+    "end": 297,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 443,
+    "end": 443,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 444,
+    "end": 444,
+    "desc": "Phosphothreonine"
+   },
+   {
+    "start": 446,
+    "end": 446,
+    "desc": "Phosphothreonine"
+   },
+   {
+    "start": 460,
+    "end": 460,
+    "desc": "N6-succinyllysine"
+   },
+   {
+    "start": 513,
+    "end": 513,
+    "desc": "Phosphoserine"
+   },
+   {
+    "start": 543,
+    "end": 543,
+    "desc": "N6-succinyllysine"
+   },
+   {
+    "start": 558,
+    "end": 558,
+    "desc": "N6-methyllysine; alternate"
+   },
+   {
+    "start": 588,
+    "end": 588,
+    "desc": "N6-succinyllysine"
+   }
+  ],
+  "carbohyd": [
+   {
+    "start": 36,
+    "end": 36,
+    "desc": "N-linked (Glc) (glycation) lysine"
+   },
+   {
+    "start": 75,
+    "end": 75,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 161,
+    "end": 161,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 186,
+    "end": 186,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 223,
+    "end": 223,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 249,
+    "end": 249,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 257,
+    "end": 257,
+    "desc": "N-linked (Glc) (glycation) lysine"
+   },
+   {
+    "start": 300,
+    "end": 300,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 305,
+    "end": 305,
+    "desc": "N-linked (Glc) (glycation) lysine"
+   },
+   {
+    "start": 337,
+    "end": 337,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 341,
+    "end": 341,
+    "desc": "N-linked (Glc) (glycation) lysine"
+   },
+   {
+    "start": 342,
+    "end": 342,
+    "desc": "N-linked (GlcNAc...) asparagine; in variant Redhill"
+   },
+   {
+    "start": 347,
+    "end": 347,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 375,
+    "end": 375,
+    "desc": "N-linked (Glc) (glycation) lysine"
+   },
+   {
+    "start": 402,
+    "end": 402,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 437,
+    "end": 437,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 463,
+    "end": 463,
+    "desc": "N-linked (Glc) (glycation) lysine"
+   },
+   {
+    "start": 468,
+    "end": 468,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 518,
+    "end": 518,
+    "desc": "N-linked (GlcNAc...) asparagine; in variant Casebrook"
+   },
+   {
+    "start": 549,
+    "end": 549,
+    "desc": "N-linked (Glc) (glycation) lysine"
+   },
+   {
+    "start": 558,
+    "end": 558,
+    "desc": "N-linked (Glc) (glycation) lysine; alternate"
+   },
+   {
+    "start": 560,
+    "end": 560,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 569,
+    "end": 569,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   },
+   {
+    "start": 597,
+    "end": 597,
+    "desc": "N-linked (Glc) (glycation) lysine; in vitro"
+   }
+  ],
+  "transmem": []
+ }
+}
