@@ -1,0 +1,2391 @@
+{
+ "entryType": "UniProtKB reviewed (Swiss-Prot)",
+ "primaryAccession": "Q8IU54",
+ "secondaryAccessions": [
+  "A0AV25",
+  "Q17R34"
+ ],
+ "uniProtkbId": "IFNL1_HUMAN",
+ "entryAudit": {
+  "firstPublicDate": "2004-11-23",
+  "lastAnnotationUpdateDate": "2026-11-04",
+  "lastSequenceUpdateDate": "2003-03-01",
+  "entryVersion": 167,
+  "sequenceVersion": 1
+ },
+ "annotationScore": 5.0,
+ "organism": {
+  "scientificName": "Homo sapiens",
+  "commonName": "Human",
+  "taxonId": 9606,
+  "lineage": [
+   "Eukaryota",
+   "Metazoa",
+   "Chordata",
+   "Craniata",
+   "Vertebrata",
+   "Euteleostomi",
+   "Mammalia",
+   "Eutheria",
+   "Euarchontoglires",
+   "Primates",
+   "Haplorrhini",
+   "Catarrhini",
+   "Hominidae",
+   "Homo"
+  ]
+ },
+ "proteinExistence": "1: Evidence at protein level",
+ "proteinDescription": {
+  "recommendedName": {
+   "fullName": {
+    "value": "Interferon lambda-1"
+   },
+   "shortNames": [
+    {
+     "value": "IFN-lambda-1"
+    }
+   ]
+  },
+  "alternativeNames": [
+   {
+    "fullName": {
+     "value": "Cytokine Zcyto21"
+    }
+   },
+   {
+    "fullName": {
+     "value": "Interleukin-29"
+    },
+    "shortNames": [
+     {
+      "value": "IL-29"
+     }
+    ]
+   }
+  ],
+  "flag": "Precursor"
+ },
+ "genes": [
+  {
+   "geneName": {
+    "value": "IFNL1"
+   },
+   "synonyms": [
+    {
+     "value": "IL29"
+    },
+    {
+     "value": "ZCYTO21"
+    }
+   ]
+  }
+ ],
+ "comments": [
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "12469119"
+      },
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "12483210"
+      },
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "20934432"
+      },
+      {
+       "evidenceCode": "ECO:0000303",
+       "source": "PubMed",
+       "id": "20712453"
+      },
+      {
+       "evidenceCode": "ECO:0000303",
+       "source": "PubMed",
+       "id": "24751921"
+      }
+     ],
+     "value": "Cytokine with antiviral, antitumour and immunomodulatory activities. Plays a critical role in the antiviral host defense, predominantly in the epithelial tissues. Acts as a ligand for the heterodimeric class II cytokine receptor composed of IL10RB and IFNLR1, and receptor engagement leads to the activation of the JAK/STAT signaling pathway resulting in the expression of IFN-stimulated genes (ISG), which mediate the antiviral state. Has a restricted receptor distribution and therefore restricted targets: is primarily active in epithelial cells and this cell type-selective action is because of the epithelial cell-specific expression of its receptor IFNLR1. Exerts an immunomodulatory effect by up-regulating MHC class I antigen expression"
+    }
+   ],
+   "commentType": "FUNCTION"
+  },
+  {
+   "commentType": "SUBCELLULAR LOCATION",
+   "subcellularLocations": [
+    {
+     "location": {
+      "evidences": [
+       {
+        "evidenceCode": "ECO:0000269",
+        "source": "PubMed",
+        "id": "12483210"
+       }
+      ],
+      "value": "Secreted",
+      "id": "SL-0243"
+     }
+    }
+   ]
+  },
+  {
+   "texts": [
+    {
+     "value": "By viral infections or double-stranded RNA"
+    }
+   ],
+   "commentType": "INDUCTION"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "39673710"
+      }
+     ],
+     "value": "(Microbial infection) Cleaved and inactivated by the 3C-like proteinase nsp5 from human coronavirus SARS-CoV-2"
+    }
+   ],
+   "commentType": "PTM"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000255",
+       "source": "PROSITE-ProRule",
+       "id": "PRU01422"
+      },
+      {
+       "evidenceCode": "ECO:0000305"
+      }
+     ],
+     "value": "Belongs to the type-III (or lambda) interferon family"
+    }
+   ],
+   "commentType": "SIMILARITY"
+  },
+  {
+   "commentType": "WEB RESOURCE",
+   "resourceName": "Wikipedia",
+   "resourceUrl": "https://en.wikipedia.org/wiki/Interleukin_29",
+   "ftp": false,
+   "note": "Interleukin-29 entry"
+  }
+ ],
+ "features": [
+  {
+   "type": "Signal",
+   "location": {
+    "start": {
+     "value": 1,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 19,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000255"
+    }
+   ]
+  },
+  {
+   "type": "Chain",
+   "location": {
+    "start": {
+     "value": 20,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 200,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Interferon lambda-1",
+   "featureId": "PRO_0000015511"
+  },
+  {
+   "type": "Site",
+   "location": {
+    "start": {
+     "value": 129,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 130,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "(Microbial infection) Cleavage; by SARS-CoV-2 proteinase nsp5",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "39673710"
+    }
+   ]
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 65,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 65,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "N-linked (GlcNAc...) asparagine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000255"
+    }
+   ],
+   "featureId": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 68,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 164,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000255",
+     "source": "PROSITE-ProRule",
+     "id": "PRU01422"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "20934432"
+    }
+   ]
+  },
+  {
+   "type": "Natural variant",
+   "location": {
+    "start": {
+     "value": 188,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 188,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in dbSNP:rs30461",
+   "featureCrossReferences": [
+    {
+     "database": "dbSNP",
+     "id": "rs30461"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "15489334"
+    }
+   ],
+   "featureId": "VAR_024506",
+   "alternativeSequence": {
+    "originalSequence": "N",
+    "alternativeSequences": [
+     "D"
+    ]
+   }
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 44,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 61,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "3OG6"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 79,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 81,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "3OG6"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 84,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 86,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "3OG6"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 87,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 105,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "3OG6"
+    }
+   ]
+  },
+  {
+   "type": "Turn",
+   "location": {
+    "start": {
+     "value": 108,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 110,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "3OG6"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 111,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 129,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "3OG6"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 145,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 159,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "3OG6"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 162,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 175,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "3OG6"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 176,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 180,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "3OG6"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 181,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 186,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "3OG6"
+    }
+   ]
+  }
+ ],
+ "keywords": [
+  {
+   "id": "KW-0002",
+   "category": "Technical term",
+   "name": "3D-structure"
+  },
+  {
+   "id": "KW-0051",
+   "category": "Biological process",
+   "name": "Antiviral defense"
+  },
+  {
+   "id": "KW-0202",
+   "category": "Molecular function",
+   "name": "Cytokine"
+  },
+  {
+   "id": "KW-1015",
+   "category": "PTM",
+   "name": "Disulfide bond"
+  },
+  {
+   "id": "KW-0325",
+   "category": "PTM",
+   "name": "Glycoprotein"
+  },
+  {
+   "id": "KW-1267",
+   "category": "Technical term",
+   "name": "Proteomics identification"
+  },
+  {
+   "id": "KW-1185",
+   "category": "Technical term",
+   "name": "Reference proteome"
+  },
+  {
+   "id": "KW-0964",
+   "category": "Cellular component",
+   "name": "Secreted"
+  },
+  {
+   "id": "KW-0732",
+   "category": "Domain",
+   "name": "Signal"
+  }
+ ],
+ "references": [
+  {
+   "referenceNumber": 1,
+   "citation": {
+    "id": "12469119",
+    "citationType": "journal article",
+    "authors": [
+     "Sheppard P.",
+     "Kindsvogel W.",
+     "Xu W.",
+     "Henderson K.",
+     "Schlutsmeyer S.",
+     "Whitmore T.E.",
+     "Kuestner R.",
+     "Garrigues U.",
+     "Birks C.",
+     "Roraback J.",
+     "Ostrander C.",
+     "Dong D.",
+     "Shin J.",
+     "Presnell S.",
+     "Fox B.",
+     "Haldeman B.",
+     "Cooper E.",
+     "Taft D.",
+     "Gilbert T.",
+     "Grant F.J.",
+     "Tackett M.",
+     "Krivan W.",
+     "McKnight G.",
+     "Clegg C.",
+     "Foster D.",
+     "Klucher K.M."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "12469119"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1038/ni873"
+     }
+    ],
+    "title": "IL-28, IL-29 and their class II cytokine receptor IL-28R.",
+    "publicationDate": "2003",
+    "journal": "Nat. Immunol.",
+    "firstPage": "63",
+    "lastPage": "68",
+    "volume": "4"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [MRNA]",
+    "FUNCTION"
+   ]
+  },
+  {
+   "referenceNumber": 2,
+   "citation": {
+    "id": "12483210",
+    "citationType": "journal article",
+    "authors": [
+     "Kotenko S.V.",
+     "Gallagher G.",
+     "Baurin V.V.",
+     "Lewis-Antes A.",
+     "Shen M.",
+     "Shah N.K.",
+     "Langer J.A.",
+     "Sheikh F.",
+     "Dickensheets H.",
+     "Donnelly R.P."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "12483210"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1038/ni875"
+     }
+    ],
+    "title": "IFN-lambdas mediate antiviral protection through a distinct class II cytokine receptor complex.",
+    "publicationDate": "2003",
+    "journal": "Nat. Immunol.",
+    "firstPage": "69",
+    "lastPage": "77",
+    "volume": "4"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [MRNA]",
+    "FUNCTION",
+    "SUBCELLULAR LOCATION"
+   ]
+  },
+  {
+   "referenceNumber": 3,
+   "citation": {
+    "id": "CI-C1V9RMK5A26U7",
+    "citationType": "submission",
+    "authors": [
+     "Li M.",
+     "He S."
+    ],
+    "title": "Construction of mammalian cell expression vector of human interleukin (IL)-28A, IL-28B and IL-29 gene from activated peripheral blood mononuclear cell and analysis of its sequence.",
+    "publicationDate": "JUL-2003",
+    "submissionDatabase": "EMBL/GenBank/DDBJ databases"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [MRNA]"
+   ]
+  },
+  {
+   "referenceNumber": 4,
+   "citation": {
+    "id": "15057824",
+    "citationType": "journal article",
+    "authors": [
+     "Grimwood J.",
+     "Gordon L.A.",
+     "Olsen A.S.",
+     "Terry A.",
+     "Schmutz J.",
+     "Lamerdin J.E.",
+     "Hellsten U.",
+     "Goodstein D.",
+     "Couronne O.",
+     "Tran-Gyamfi M.",
+     "Aerts A.",
+     "Altherr M.",
+     "Ashworth L.",
+     "Bajorek E.",
+     "Black S.",
+     "Branscomb E.",
+     "Caenepeel S.",
+     "Carrano A.V.",
+     "Caoile C.",
+     "Chan Y.M.",
+     "Christensen M.",
+     "Cleland C.A.",
+     "Copeland A.",
+     "Dalin E.",
+     "Dehal P.",
+     "Denys M.",
+     "Detter J.C.",
+     "Escobar J.",
+     "Flowers D.",
+     "Fotopulos D.",
+     "Garcia C.",
+     "Georgescu A.M.",
+     "Glavina T.",
+     "Gomez M.",
+     "Gonzales E.",
+     "Groza M.",
+     "Hammon N.",
+     "Hawkins T.",
+     "Haydu L.",
+     "Ho I.",
+     "Huang W.",
+     "Israni S.",
+     "Jett J.",
+     "Kadner K.",
+     "Kimball H.",
+     "Kobayashi A.",
+     "Larionov V.",
+     "Leem S.-H.",
+     "Lopez F.",
+     "Lou Y.",
+     "Lowry S.",
+     "Malfatti S.",
+     "Martinez D.",
+     "McCready P.M.",
+     "Medina C.",
+     "Morgan J.",
+     "Nelson K.",
+     "Nolan M.",
+     "Ovcharenko I.",
+     "Pitluck S.",
+     "Pollard M.",
+     "Popkie A.P.",
+     "Predki P.",
+     "Quan G.",
+     "Ramirez L.",
+     "Rash S.",
+     "Retterer J.",
+     "Rodriguez A.",
+     "Rogers S.",
+     "Salamov A.",
+     "Salazar A.",
+     "She X.",
+     "Smith D.",
+     "Slezak T.",
+     "Solovyev V.",
+     "Thayer N.",
+     "Tice H.",
+     "Tsai M.",
+     "Ustaszewska A.",
+     "Vo N.",
+     "Wagner M.",
+     "Wheeler J.",
+     "Wu K.",
+     "Xie G.",
+     "Yang J.",
+     "Dubchak I.",
+     "Furey T.S.",
+     "DeJong P.",
+     "Dickson M.",
+     "Gordon D.",
+     "Eichler E.E.",
+     "Pennacchio L.A.",
+     "Richardson P.",
+     "Stubbs L.",
+     "Rokhsar D.S.",
+     "Myers R.M.",
+     "Rubin E.M.",
+     "Lucas S.M."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "15057824"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1038/nature02399"
+     }
+    ],
+    "title": "The DNA sequence and biology of human chromosome 19.",
+    "publicationDate": "2004",
+    "journal": "Nature",
+    "firstPage": "529",
+    "lastPage": "535",
+    "volume": "428"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+   ]
+  },
+  {
+   "referenceNumber": 5,
+   "citation": {
+    "id": "15489334",
+    "citationType": "journal article",
+    "authoringGroup": [
+     "The MGC Project Team"
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "15489334"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1101/gr.2596504"
+     }
+    ],
+    "title": "The status, quality, and expansion of the NIH full-length cDNA project: the Mammalian Gene Collection (MGC).",
+    "publicationDate": "2004",
+    "journal": "Genome Res.",
+    "firstPage": "2121",
+    "lastPage": "2127",
+    "volume": "14"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA]",
+    "VARIANT ASP-188"
+   ]
+  },
+  {
+   "referenceNumber": 6,
+   "citation": {
+    "id": "20712453",
+    "citationType": "journal article",
+    "authors": [
+     "Donnelly R.P.",
+     "Kotenko S.V."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "20712453"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1089/jir.2010.0078"
+     }
+    ],
+    "title": "Interferon-lambda: a new addition to an old family.",
+    "publicationDate": "2010",
+    "journal": "J. Interferon Cytokine Res.",
+    "firstPage": "555",
+    "lastPage": "564",
+    "volume": "30"
+   },
+   "referencePositions": [
+    "REVIEW"
+   ]
+  },
+  {
+   "referenceNumber": 7,
+   "citation": {
+    "id": "24751921",
+    "citationType": "journal article",
+    "authors": [
+     "Hermant P.",
+     "Michiels T."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "24751921"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1159/000360084"
+     }
+    ],
+    "title": "Interferon-lambda in the context of viral infections: production, response and therapeutic implications.",
+    "publicationDate": "2014",
+    "journal": "J. Innate Immun.",
+    "firstPage": "563",
+    "lastPage": "574",
+    "volume": "6"
+   },
+   "referencePositions": [
+    "REVIEW"
+   ]
+  },
+  {
+   "referenceNumber": 8,
+   "citation": {
+    "id": "39673710",
+    "citationType": "journal article",
+    "authors": [
+     "Grin P.M.",
+     "Baid K.",
+     "de Jesus H.C.R.",
+     "Kozarac N.",
+     "Bell P.A.",
+     "Jiang S.Z.",
+     "Kappelhoff R.",
+     "Butler G.S.",
+     "Leborgne N.G.F.",
+     "Pan C.",
+     "Pablos I.",
+     "Machado Y.",
+     "Vederas J.C.",
+     "Kim H.",
+     "Benarafa C.",
+     "Banerjee A.",
+     "Overall C.M."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "39673710"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/j.celrep.2024.115080"
+     }
+    ],
+    "title": "SARS-CoV-2 3CLpro (main protease) regulates caspase activation of gasdermin-D/E pores leading to secretion and extracellular activity of 3CLpro.",
+    "publicationDate": "2024",
+    "journal": "Cell Rep.",
+    "firstPage": "115080",
+    "lastPage": "115080",
+    "volume": "43"
+   },
+   "referencePositions": [
+    "CLEAVAGE BY SARS-COV-2 3C-LIKE PROTEINASE NSP5 (MICROBIAL INFECTION)"
+   ]
+  },
+  {
+   "referenceNumber": 9,
+   "citation": {
+    "id": "20934432",
+    "citationType": "journal article",
+    "authors": [
+     "Miknis Z.J.",
+     "Magracheva E.",
+     "Li W.",
+     "Zdanov A.",
+     "Kotenko S.V.",
+     "Wlodawer A."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "20934432"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/j.jmb.2010.09.068"
+     }
+    ],
+    "title": "Crystal structure of human interferon-lambda1 in complex with its high-affinity receptor interferon-lambdaR1.",
+    "publicationDate": "2010",
+    "journal": "J. Mol. Biol.",
+    "firstPage": "650",
+    "lastPage": "664",
+    "volume": "404"
+   },
+   "referencePositions": [
+    "X-RAY CRYSTALLOGRAPHY IN COMPLEX WITH IFNLR1",
+    "FUNCTION",
+    "DISULFIDE BOND"
+   ]
+  }
+ ],
+ "uniProtKBCrossReferences": [
+  {
+   "database": "EMBL",
+   "id": "AY129150",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAN28265.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "mRNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "AY184372",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAN86125.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "mRNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "AY336716",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAR24511.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "mRNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "AC011445",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "-"
+    },
+    {
+     "key": "Status",
+     "value": "NOT_ANNOTATED_CDS"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "BC074985",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAH74985.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "mRNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "BC126183",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAI26184.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "mRNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "BC117482",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAI17483.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "mRNA"
+    }
+   ]
+  },
+  {
+   "database": "CCDS",
+   "id": "CCDS12531.1",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "RefSeq",
+   "id": "NP_742152.1",
+   "properties": [
+    {
+     "key": "NucleotideSequenceId",
+     "value": "NM_172140.2"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "3OG4",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.16 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=23-200"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "3OG6",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.10 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=20-200"
+    }
+   ]
+  },
+  {
+   "database": "AlphaFoldDB",
+   "id": "Q8IU54",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "SMR",
+   "id": "Q8IU54",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "BioGRID",
+   "id": "129396",
+   "properties": [
+    {
+     "key": "Interactions",
+     "value": "10"
+    }
+   ]
+  },
+  {
+   "database": "ComplexPortal",
+   "id": "CPX-6011",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Interferon lambda receptor-ligand complex, IFNL1 variant"
+    }
+   ]
+  },
+  {
+   "database": "CORUM",
+   "id": "Q8IU54",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "FunCoup",
+   "id": "Q8IU54",
+   "properties": [
+    {
+     "key": "Number of interactors",
+     "value": "358"
+    }
+   ]
+  },
+  {
+   "database": "IntAct",
+   "id": "Q8IU54",
+   "properties": [
+    {
+     "key": "Interactions",
+     "value": "6"
+    }
+   ]
+  },
+  {
+   "database": "NDEx",
+   "id": "IQUERY-CP-IFNL1",
+   "properties": [
+    {
+     "key": "Evidences",
+     "value": "2 NDEx IQuery Curated Pathways"
+    }
+   ]
+  },
+  {
+   "database": "STRING",
+   "id": "9606.ENSP00000329991",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "GlyCosmos",
+   "id": "Q8IU54",
+   "properties": [
+    {
+     "key": "glycosylation",
+     "value": "1 site, No reported glycans"
+    }
+   ]
+  },
+  {
+   "database": "GlyGen",
+   "id": "Q8IU54",
+   "properties": [
+    {
+     "key": "glycosylation",
+     "value": "2 sites"
+    }
+   ]
+  },
+  {
+   "database": "iPTMnet",
+   "id": "Q8IU54",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PhosphoSitePlus",
+   "id": "Q8IU54",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "BioMuta",
+   "id": "IFNL1",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "MassIVE",
+   "id": "Q8IU54",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PaxDb",
+   "id": "9606-ENSP00000329991",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PeptideAtlas",
+   "id": "Q8IU54",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "ProteomicsDB",
+   "id": "70504",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Antibodypedia",
+   "id": "30288",
+   "properties": [
+    {
+     "key": "antibodies",
+     "value": "324 antibodies from 32 providers"
+    }
+   ]
+  },
+  {
+   "database": "DNASU",
+   "id": "282618",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Ensembl",
+   "id": "ENST00000333625.3",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "ENSP00000329991.1"
+    },
+    {
+     "key": "GeneId",
+     "value": "ENSG00000182393.3"
+    }
+   ]
+  },
+  {
+   "database": "Ensembl",
+   "id": "ENST00000709027.1",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "ENSP00000517467.1"
+    },
+    {
+     "key": "GeneId",
+     "value": "ENSG00000291872.1"
+    }
+   ]
+  },
+  {
+   "database": "GeneID",
+   "id": "282618",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "KEGG",
+   "id": "hsa:282618",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "MANE-Select",
+   "id": "ENST00000333625.3",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "ENSP00000329991.1"
+    },
+    {
+     "key": "RefSeqNucleotideId",
+     "value": "NM_172140.2"
+    },
+    {
+     "key": "RefSeqProteinId",
+     "value": "NP_742152.1"
+    }
+   ]
+  },
+  {
+   "database": "UCSC",
+   "id": "uc002okv.4",
+   "properties": [
+    {
+     "key": "OrganismName",
+     "value": "human"
+    }
+   ]
+  },
+  {
+   "database": "AGR",
+   "id": "HGNC:18363",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "ClinPGx",
+   "id": "PA134899000",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "CTD",
+   "id": "282618",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "DisGeNET",
+   "id": "282618",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "GeneCards",
+   "id": "IFNL1",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "HGNC",
+   "id": "HGNC:18363",
+   "properties": [
+    {
+     "key": "GeneName",
+     "value": "IFNL1"
+    }
+   ]
+  },
+  {
+   "database": "HPA",
+   "id": "ENSG00000182393",
+   "properties": [
+    {
+     "key": "ExpressionPatterns",
+     "value": "Not detected"
+    }
+   ]
+  },
+  {
+   "database": "MIM",
+   "id": "607403",
+   "properties": [
+    {
+     "key": "Type",
+     "value": "gene"
+    }
+   ]
+  },
+  {
+   "database": "OpenTargets",
+   "id": "ENSG00000182393",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "VEuPathDB",
+   "id": "HostDB:ENSG00000182393",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "eggNOG",
+   "id": "ENOG502SSDC",
+   "properties": [
+    {
+     "key": "ToxonomicScope",
+     "value": "Eukaryota"
+    }
+   ]
+  },
+  {
+   "database": "GeneTree",
+   "id": "ENSGT00390000014310",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "HOGENOM",
+   "id": "CLU_120266_0_0_1",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "InParanoid",
+   "id": "Q8IU54",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "OMA",
+   "id": "AAPREHC",
+   "properties": [
+    {
+     "key": "Fingerprint",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "OrthoDB",
+   "id": "9897984at2759",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PAN-GO",
+   "id": "Q8IU54",
+   "properties": [
+    {
+     "key": "Number of GO annotations",
+     "value": "4 GO annotations based on evolutionary models"
+    }
+   ]
+  },
+  {
+   "database": "PhylomeDB",
+   "id": "Q8IU54",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PathwayCommons",
+   "id": "Q8IU54",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Reactome",
+   "id": "R-HSA-449836",
+   "properties": [
+    {
+     "key": "PathwayName",
+     "value": "Other interleukin signaling"
+    }
+   ]
+  },
+  {
+   "database": "Reactome",
+   "id": "R-HSA-8854691",
+   "properties": [
+    {
+     "key": "PathwayName",
+     "value": "Interleukin-20 family signaling"
+    }
+   ]
+  },
+  {
+   "database": "SignaLink",
+   "id": "Q8IU54",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "SIGNOR",
+   "id": "Q8IU54",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Agora",
+   "id": "ENSG00000182393",
+   "properties": [
+    {
+     "key": "NominatedTarget",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "BioGRID-ORCS",
+   "id": "282618",
+   "properties": [
+    {
+     "key": "hits",
+     "value": "15 hits in 1141 CRISPR screens"
+    }
+   ]
+  },
+  {
+   "database": "EvolutionaryTrace",
+   "id": "Q8IU54",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "GeneWiki",
+   "id": "Interleukin_29",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "GenomeRNAi",
+   "id": "282618",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Pharos",
+   "id": "Q8IU54",
+   "properties": [
+    {
+     "key": "DevelopmentLevel",
+     "value": "Tbio"
+    }
+   ]
+  },
+  {
+   "database": "PRO",
+   "id": "PR:Q8IU54",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Proteomes",
+   "id": "UP000005640",
+   "properties": [
+    {
+     "key": "Component",
+     "value": "Chromosome 19"
+    }
+   ]
+  },
+  {
+   "database": "RNAct",
+   "id": "Q8IU54",
+   "properties": [
+    {
+     "key": "moleculeType",
+     "value": "protein"
+    }
+   ]
+  },
+  {
+   "database": "Bgee",
+   "id": "ENSG00000182393",
+   "properties": [
+    {
+     "key": "ExpressionPatterns",
+     "value": "Expressed in male germ line stem cell (sensu Vertebrata) in testis and 14 other cell types or tissues"
+    }
+   ]
+  },
+  {
+   "database": "ExpressionAtlas",
+   "id": "Q8IU54",
+   "properties": [
+    {
+     "key": "ExpressionPatterns",
+     "value": "baseline and differential"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0005576",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "C:extracellular region"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:UniProtKB"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "12483210"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0032002",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "C:interleukin-28 receptor complex"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:UniProtKB"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "12469119"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0005125",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:cytokine activity"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IBA:GO_Central"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0032003",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:interleukin-28 receptor binding"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IPI:UniProtKB"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000353",
+     "source": "PubMed",
+     "id": "12469119"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0005102",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:signaling receptor binding"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:UniProtKB"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "12483210"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0007259",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:cell surface receptor signaling pathway via JAK-STAT"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IEA:InterPro"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0098586",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:cellular response to virus"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "NAS:ComplexPortal"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000303",
+     "source": "PubMed",
+     "id": "30936491"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0051607",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:defense response to virus"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:UniProtKB"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "12469119"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0045087",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:innate immune response"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IBA:GO_Central"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0008285",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:negative regulation of cell population proliferation"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:UniProtKB"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "15166220"
+    },
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "15899585"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0045892",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:negative regulation of DNA-templated transcription"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:UniProtKB"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "19346497"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0032696",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:negative regulation of interleukin-13 production"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:UniProtKB"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "19346497"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0032714",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:negative regulation of interleukin-5 production"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:UniProtKB"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "19346497"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0043381",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:negative regulation of memory T cell differentiation"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:UniProtKB"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "19346497"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0045581",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:negative regulation of T cell differentiation"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:UniProtKB"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "19346497"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0002829",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:negative regulation of type 2 immune response"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:UniProtKB"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "19346497"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0045893",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:positive regulation of DNA-templated transcription"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:UniProtKB"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "12483210"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0050778",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:positive regulation of immune response"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "TAS:UniProtKB"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000304",
+     "source": "PubMed",
+     "id": "16014923"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0045345",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:positive regulation of MHC class I biosynthetic process"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:UniProtKB"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "12483210"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0046427",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:positive regulation of receptor signaling pathway via JAK-STAT"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:UniProtKB"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "12483210"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0032729",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:positive regulation of type II interferon production"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:UniProtKB"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "19346497"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0042531",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:positive regulation of tyrosine phosphorylation of STAT protein"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:UniProtKB"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "15166220"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0038196",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:type III interferon-mediated signaling pathway"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "NAS:ComplexPortal"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000303",
+     "source": "PubMed",
+     "id": "30936491"
+    }
+   ]
+  },
+  {
+   "database": "FunFam",
+   "id": "1.20.1250.60:FF:000001",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Interferon lambda 1"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "Gene3D",
+   "id": "1.20.1250.60",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Interferon lambda"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR038326",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "IFN-lambda_sf"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR029177",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "INF_lambda"
+    }
+   ]
+  },
+  {
+   "database": "PANTHER",
+   "id": "PTHR31943:SF14",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "INTERFERON LAMBDA-1"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PANTHER",
+   "id": "PTHR31943",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "INTERLEUKIN-28 AND 29"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "Pfam",
+   "id": "PF15177",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "IL28A"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PROSITE",
+   "id": "PS52077",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "IFN_III"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  }
+ ],
+ "sequence": {
+  "value": "MAAAWTVVLVTLVLGLAVAGPVPTSKPTTTGKGCHIGRFKSLSPQELASFKKARDALEESLKLKNWSCSSPVFPGNWDLRLLQVRERPVALEAELALTLKVLEAAAGPALEDVLDQPLHTLHHILSQLQACIQPQPTAGPRPRGRLHHWLHRLQEAPKKESAGCLEASVTFNLFRLLTRDLKYVADGNLCLRTSTHPEST",
+  "length": 200,
+  "molWeight": 21898,
+  "crc64": "D4433B9462DCB4A1",
+  "md5": "FC1327BB092B940AD1A805BC4C62C9A5"
+ },
+ "extraAttributes": {
+  "countByCommentType": {
+   "FUNCTION": 1,
+   "SUBCELLULAR LOCATION": 1,
+   "INDUCTION": 1,
+   "PTM": 1,
+   "SIMILARITY": 1,
+   "WEB RESOURCE": 1
+  },
+  "countByFeatureType": {
+   "Signal": 1,
+   "Chain": 1,
+   "Site": 1,
+   "Glycosylation": 1,
+   "Disulfide bond": 1,
+   "Natural variant": 1,
+   "Helix": 9,
+   "Turn": 1
+  },
+  "uniParcId": "UPI00000474AE"
+ }
+}

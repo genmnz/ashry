@@ -1,0 +1,4254 @@
+{
+ "entryType": "UniProtKB reviewed (Swiss-Prot)",
+ "primaryAccession": "P62694",
+ "secondaryAccessions": [
+  "P00725"
+ ],
+ "uniProtkbId": "GUX1_TRIRF",
+ "entryAudit": {
+  "firstPublicDate": "1986-07-21",
+  "lastAnnotationUpdateDate": "2026-11-04",
+  "lastSequenceUpdateDate": "1986-07-21",
+  "entryVersion": 119,
+  "sequenceVersion": 1
+ },
+ "annotationScore": 5.0,
+ "organism": {
+  "scientificName": "Trichoderma reesei",
+  "commonName": "Filamentous fungus",
+  "synonyms": [
+   "Hypocrea jecorina"
+  ],
+  "taxonId": 51453,
+  "lineage": [
+   "Eukaryota",
+   "Fungi",
+   "Dikarya",
+   "Ascomycota",
+   "Pezizomycotina",
+   "Sordariomycetes",
+   "Hypocreomycetidae",
+   "Hypocreales",
+   "Hypocreaceae",
+   "Trichoderma"
+  ]
+ },
+ "proteinExistence": "1: Evidence at protein level",
+ "proteinDescription": {
+  "recommendedName": {
+   "fullName": {
+    "value": "Exoglucanase 1"
+   },
+   "ecNumbers": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "Reference",
+       "id": "Ref.4"
+      }
+     ],
+     "value": "3.2.1.91"
+    }
+   ]
+  },
+  "alternativeNames": [
+   {
+    "fullName": {
+     "value": "1,4-beta-cellobiohydrolase"
+    }
+   },
+   {
+    "fullName": {
+     "value": "Cellobiohydrolase 7A"
+    },
+    "shortNames": [
+     {
+      "value": "Cel7A"
+     }
+    ]
+   },
+   {
+    "fullName": {
+     "value": "Exocellobiohydrolase I"
+    },
+    "shortNames": [
+     {
+      "value": "CBHI"
+     }
+    ]
+   },
+   {
+    "fullName": {
+     "value": "Exoglucanase I"
+    }
+   }
+  ],
+  "flag": "Precursor"
+ },
+ "genes": [
+  {
+   "geneName": {
+    "value": "cbh1"
+   }
+  }
+ ],
+ "comments": [
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "Reference",
+       "id": "Ref.4"
+      },
+      {
+       "evidenceCode": "ECO:0000305"
+      }
+     ],
+     "value": "Exocellobiohydrolases (CBH) that catalyzes the hydrolysis of 1,4-beta-D-glucosidic bonds in cellulose to release the disaccharide cellobiose (Ref.4). The degradation of cellulose involves an interplay between different cellulolytic enzymes. Hydrolysis starts with endoglucanases (EGs), which cut internal beta-1,4-glucosidic bonds in cellulose to reduce the polymerization degree of the substrate and create new chain ends for exocellobiohydrolases (CBHs). The CBHs release the disaccharide cellobiose from the non-reducing end of the cellulose polymer chain. Finally, beta-1,4-glucosidases hydrolyze the cellobiose and other short cello-oligosaccharides into glucose units (Probable)"
+    }
+   ],
+   "commentType": "FUNCTION"
+  },
+  {
+   "commentType": "CATALYTIC ACTIVITY",
+   "reaction": {
+    "name": "Hydrolysis of (1->4)-beta-D-glucosidic linkages in cellulose and cellotetraose, releasing cellobiose from the non-reducing ends of the chains.",
+    "ecNumber": "3.2.1.91",
+    "evidences": [
+     {
+      "evidenceCode": "ECO:0000269",
+      "source": "Reference",
+      "id": "Ref.4"
+     }
+    ]
+   }
+  },
+  {
+   "commentType": "SUBCELLULAR LOCATION",
+   "subcellularLocations": [
+    {
+     "location": {
+      "evidences": [
+       {
+        "evidenceCode": "ECO:0000269",
+        "source": "Reference",
+        "id": "Ref.4"
+       }
+      ],
+      "value": "Secreted",
+      "id": "SL-0243"
+     }
+    }
+   ]
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000305",
+       "source": "PubMed",
+       "id": "26307003"
+      },
+      {
+       "evidenceCode": "ECO:0000305",
+       "source": "PubMed",
+       "id": "9746354"
+      }
+     ],
+     "value": "The enzyme consists of two functional domains, a catalytic core joined to a carbohydrate-binding domain (CBM) by a serine-, threonine-, and proline-rich, highly glycosylated linker sequence"
+    }
+   ],
+   "commentType": "DOMAIN"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "9746354"
+      }
+     ],
+     "value": "N-glycosylated. The catalytic core domain comprises three N-linked glycans which each consist of a single N-acetylglucosamine residue"
+    }
+   ],
+   "commentType": "PTM"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "9746354"
+      },
+      {
+       "evidenceCode": "ECO:0000305",
+       "source": "PubMed",
+       "id": "26307003"
+      }
+     ],
+     "value": "O-glycosylated. Within the linker domain, all 8 threonines are variably glycosylated with between at least one, and up to three, mannose residues per site. All serines in this domain are at least partially glycosylated with a single mannose residue (PubMed:9746354). O-glycosylation of the cellulase linker provides protection from proteolysis. Linker glycans also contribute to binding affinity of cellobiohydrolases to cellulose (Probable)"
+    }
+   ],
+   "commentType": "PTM"
+  },
+  {
+   "texts": [
+    {
+     "value": "T.reesei produces two different exocellobiohydrolases. They are unique in that they can hydrolyze crystalline cellulose in the absence of endoglucanases"
+    }
+   ],
+   "commentType": "MISCELLANEOUS"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000305"
+      }
+     ],
+     "value": "Belongs to the glycosyl hydrolase 7 (cellulase C) family"
+    }
+   ],
+   "commentType": "SIMILARITY"
+  }
+ ],
+ "features": [
+  {
+   "type": "Signal",
+   "location": {
+    "start": {
+     "value": 1,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 17,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "Reference",
+     "id": "Ref.3"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "Reference",
+     "id": "Ref.4"
+    }
+   ]
+  },
+  {
+   "type": "Chain",
+   "location": {
+    "start": {
+     "value": 18,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 513,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Exoglucanase 1",
+   "featureId": "PRO_0000007927"
+  },
+  {
+   "type": "Domain",
+   "location": {
+    "start": {
+     "value": 477,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 513,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "CBM1",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000255",
+     "source": "PROSITE-ProRule",
+     "id": "PRU00597"
+    }
+   ]
+  },
+  {
+   "type": "Region",
+   "location": {
+    "start": {
+     "value": 18,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 453,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Catalytic",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305",
+     "source": "PubMed",
+     "id": "8036495"
+    }
+   ]
+  },
+  {
+   "type": "Region",
+   "location": {
+    "start": {
+     "value": 401,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 480,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Disordered",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Region",
+   "location": {
+    "start": {
+     "value": 454,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 477,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Linker",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 401,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 437,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Polar residues",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 449,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 459,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Gly residues",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 460,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 478,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Low complexity",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Active site",
+   "location": {
+    "start": {
+     "value": 229,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 229,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Nucleophile",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "24341799"
+    },
+    {
+     "evidenceCode": "ECO:0000305",
+     "source": "PubMed",
+     "id": "8036495"
+    }
+   ]
+  },
+  {
+   "type": "Active site",
+   "location": {
+    "start": {
+     "value": 234,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 234,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Proton donor/acceptor",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "24341799"
+    },
+    {
+     "evidenceCode": "ECO:0000305",
+     "source": "PubMed",
+     "id": "8036495"
+    }
+   ]
+  },
+  {
+   "type": "Site",
+   "location": {
+    "start": {
+     "value": 81,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 81,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Not glycosylated",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9746354"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 18,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 18,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Pyrrolidone carboxylic acid",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "Reference",
+     "id": "Ref.3"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "Reference",
+     "id": "Ref.4"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1EGN"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1Q2B"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1Q2E"
+    }
+   ]
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 62,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 62,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "N-linked (GlcNAc) asparagine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9746354"
+    }
+   ],
+   "featureId": ""
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 287,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 287,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "N-linked (GlcNAc) asparagine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "24341799"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8036495"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9466911"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9746354"
+    }
+   ],
+   "featureId": ""
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 401,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 401,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "N-linked (GlcNAc) asparagine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "24341799"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9466911"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9746354"
+    }
+   ],
+   "featureId": ""
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 461,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 461,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "O-linked (Man) threonine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9746354"
+    }
+   ],
+   "featureId": ""
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 462,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 462,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "O-linked (Man...) threonine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9746354"
+    }
+   ],
+   "featureId": ""
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 463,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 463,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "O-linked (Man...) threonine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9746354"
+    }
+   ],
+   "featureId": ""
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 464,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 464,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "O-linked (Man...) threonine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9746354"
+    }
+   ],
+   "featureId": ""
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 469,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 469,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "O-linked (Man) threonine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9746354"
+    }
+   ],
+   "featureId": ""
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 470,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 470,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "O-linked (Man...) threonine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9746354"
+    }
+   ],
+   "featureId": ""
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 471,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 471,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "O-linked (Man...) threonine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9746354"
+    }
+   ],
+   "featureId": ""
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 473,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 473,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "O-linked (Man) serine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9746354"
+    }
+   ],
+   "featureId": ""
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 474,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 474,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "O-linked (Man) serine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9746354"
+    }
+   ],
+   "featureId": ""
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 478,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 478,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "O-linked (Man) threonine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "26307003"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9746354"
+    }
+   ],
+   "featureId": ""
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 480,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 480,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "O-linked (Man) serine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "26307003"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9746354"
+    }
+   ],
+   "featureId": ""
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 491,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 491,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "O-linked (Man) serine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "26307003"
+    }
+   ],
+   "featureId": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 21,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 89,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "24341799"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8036495"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9466911"
+    }
+   ]
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 36,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 42,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "24341799"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8036495"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9466911"
+    }
+   ]
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 67,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 88,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "24341799"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8036495"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9466911"
+    }
+   ]
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 78,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 84,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "24341799"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8036495"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9466911"
+    }
+   ]
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 155,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 414,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "24341799"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8036495"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9466911"
+    }
+   ]
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 189,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 227,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "24341799"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8036495"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9466911"
+    }
+   ]
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 193,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 226,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "24341799"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8036495"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9466911"
+    }
+   ]
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 247,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 273,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "24341799"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8036495"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9466911"
+    }
+   ]
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 255,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 260,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "24341799"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8036495"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9466911"
+    }
+   ]
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 278,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 348,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "24341799"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8036495"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9466911"
+    }
+   ]
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 485,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 502,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "2554967"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "26307003"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9041630"
+    }
+   ]
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 496,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 512,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "2554967"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "26307003"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9041630"
+    }
+   ]
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 459,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 459,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 2; AA sequence",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "R",
+    "alternativeSequences": [
+     "PP"
+    ]
+   }
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 19,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 21,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "4P1J"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 30,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 36,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 42,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 51,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 53,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 55,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 58,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 60,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 66,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 69,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Turn",
+   "location": {
+    "start": {
+     "value": 75,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 77,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 81,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 87,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 88,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 90,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 95,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 99,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 101,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 104,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 107,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 121,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 123,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 130,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 136,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 138,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "7NYT"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 142,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 149,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 157,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 164,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Turn",
+   "location": {
+    "start": {
+     "value": 168,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 174,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 182,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 184,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 198,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 200,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 203,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 205,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "4P1J"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 222,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 226,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 229,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 235,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 240,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 245,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 247,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 249,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 253,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 256,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 257,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 260,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Turn",
+   "location": {
+    "start": {
+     "value": 262,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 264,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1Q2B"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 265,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 267,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 270,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 273,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 278,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 280,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "5OA5"
+    }
+   ]
+  },
+  {
+   "type": "Turn",
+   "location": {
+    "start": {
+     "value": 282,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 286,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 290,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 294,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 297,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 300,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 305,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 311,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 317,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 323,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 326,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 329,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 333,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 335,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 338,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 343,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 345,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 355,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 359,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 362,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 365,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 373,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 375,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 385,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Turn",
+   "location": {
+    "start": {
+     "value": 387,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 391,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 392,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 395,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 396,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 399,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Turn",
+   "location": {
+    "start": {
+     "value": 407,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 409,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "4P1J"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 412,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 414,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 421,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 427,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 432,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 442,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2V3I"
+    }
+   ]
+  },
+  {
+   "type": "Turn",
+   "location": {
+    "start": {
+     "value": 479,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 482,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1AZH"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 483,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 489,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1AZJ"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 498,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 500,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1AZ6"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 502,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 506,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1AZ6"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 509,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 512,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1AZ6"
+    }
+   ]
+  }
+ ],
+ "keywords": [
+  {
+   "id": "KW-0002",
+   "category": "Technical term",
+   "name": "3D-structure"
+  },
+  {
+   "id": "KW-0119",
+   "category": "Biological process",
+   "name": "Carbohydrate metabolism"
+  },
+  {
+   "id": "KW-0136",
+   "category": "Biological process",
+   "name": "Cellulose degradation"
+  },
+  {
+   "id": "KW-0903",
+   "category": "Technical term",
+   "name": "Direct protein sequencing"
+  },
+  {
+   "id": "KW-1015",
+   "category": "PTM",
+   "name": "Disulfide bond"
+  },
+  {
+   "id": "KW-0325",
+   "category": "PTM",
+   "name": "Glycoprotein"
+  },
+  {
+   "id": "KW-0326",
+   "category": "Molecular function",
+   "name": "Glycosidase"
+  },
+  {
+   "id": "KW-0378",
+   "category": "Molecular function",
+   "name": "Hydrolase"
+  },
+  {
+   "id": "KW-0624",
+   "category": "Biological process",
+   "name": "Polysaccharide degradation"
+  },
+  {
+   "id": "KW-0873",
+   "category": "PTM",
+   "name": "Pyrrolidone carboxylic acid"
+  },
+  {
+   "id": "KW-0964",
+   "category": "Cellular component",
+   "name": "Secreted"
+  },
+  {
+   "id": "KW-0732",
+   "category": "Domain",
+   "name": "Signal"
+  }
+ ],
+ "references": [
+  {
+   "referenceNumber": 1,
+   "citation": {
+    "id": "CI-74TIOTJ51FBN1",
+    "citationType": "journal article",
+    "authors": [
+     "Shoemaker S.",
+     "Schweickart V.",
+     "Ladner M.",
+     "Gelfand D.",
+     "Kwok S.",
+     "Myambo K.",
+     "Innis M."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "DOI",
+      "id": "10.1038/nbt1083-691"
+     }
+    ],
+    "title": "Molecular cloning of exo-cellobiohydrolase I derived from Trichoderma reesei strain L27.",
+    "publicationDate": "1983",
+    "journal": "Biotechnology (N.Y.)",
+    "firstPage": "691",
+    "lastPage": "696",
+    "volume": "1"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [GENOMIC DNA / MRNA]"
+   ],
+   "referenceComments": [
+    {
+     "value": "L27",
+     "type": "STRAIN"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 2,
+   "citation": {
+    "id": "CI-8E4FIM0N3KRMA",
+    "citationType": "thesis",
+    "authors": [
+     "Faegerstam L.G."
+    ],
+    "title": "Cellulases from Trichoderma reesei QM 9414: enzymatic and structural properties.",
+    "publicationDate": "1981",
+    "institute": "University of Uppsala",
+    "address": "Sweden"
+   },
+   "referencePositions": [
+    "PROTEIN SEQUENCE"
+   ],
+   "referenceComments": [
+    {
+     "value": "ATCC 26921 / CBS 392.92 / QM9414",
+     "type": "STRAIN"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 3,
+   "citation": {
+    "id": "CI-6H5HM9BNJQTHP",
+    "citationType": "journal article",
+    "authors": [
+     "Faegerstam L.G.",
+     "Pettersson L.G."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "DOI",
+      "id": "10.1016/0014-5793(80)81006-4"
+     }
+    ],
+    "title": "The 1,4-beta-glucan cellobiohydrolases of Trichoderma reesei QM 9414.",
+    "publicationDate": "1980",
+    "journal": "FEBS Lett.",
+    "firstPage": "97",
+    "lastPage": "100",
+    "volume": "119"
+   },
+   "referencePositions": [
+    "PROTEIN SEQUENCE OF 18-37",
+    "PYROGLUTAMATE FORMATION AT GLN-18"
+   ],
+   "referenceComments": [
+    {
+     "value": "ATCC 26921 / CBS 392.92 / QM9414",
+     "type": "STRAIN"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 4,
+   "citation": {
+    "id": "CI-7FLV8TJ51FBN1",
+    "citationType": "journal article",
+    "authors": [
+     "Shoemaker S.",
+     "Watt K.",
+     "Tsitovsky G.",
+     "Cox R."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "DOI",
+      "id": "10.1038/nbt1083-687"
+     }
+    ],
+    "title": "Characterization and properties of cellulases purified from Trichoderma reesei strain L27.",
+    "publicationDate": "1983",
+    "journal": "Biotechnology (N.Y.)",
+    "firstPage": "687",
+    "lastPage": "690",
+    "volume": "1"
+   },
+   "referencePositions": [
+    "PROTEIN SEQUENCE OF 18-48",
+    "PYROGLUTAMATE FORMATION AT GLN-18",
+    "FUNCTION",
+    "SUBCELLULAR LOCATION"
+   ],
+   "referenceComments": [
+    {
+     "value": "L27",
+     "type": "STRAIN"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 5,
+   "citation": {
+    "id": "9746354",
+    "citationType": "journal article",
+    "authors": [
+     "Harrison M.J.",
+     "Nouwens A.S.",
+     "Jardine D.R.",
+     "Zachara N.E.",
+     "Gooley A.A.",
+     "Nevalainen H.",
+     "Packer N.H."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "9746354"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1046/j.1432-1327.1998.2560119.x"
+     }
+    ],
+    "title": "Modified glycosylation of cellobiohydrolase I from a high cellulase-producing mutant strain of Trichoderma reesei.",
+    "publicationDate": "1998",
+    "journal": "Eur. J. Biochem.",
+    "firstPage": "119",
+    "lastPage": "127",
+    "volume": "256"
+   },
+   "referencePositions": [
+    "PROTEIN SEQUENCE OF 57-64; 285-289 AND 382-396",
+    "GLYCOSYLATION AT ASN-62; ASN-287; ASN-401; THR-461; THR-462; THR-463; THR-464; THR-469; THR-470; THR-471; SER-473; SER-474; THR-478 AND SER-480"
+   ],
+   "referenceComments": [
+    {
+     "value": "ALKO2877",
+     "type": "STRAIN"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 6,
+   "citation": {
+    "id": "CI-35EPM90V8PHHP",
+    "citationType": "journal article",
+    "authors": [
+     "Tomme P.",
+     "Clayssens M."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "DOI",
+      "id": "10.1016/0014-5793(89)80136-X"
+     }
+    ],
+    "title": "Identification of a functionally important carboxyl group in cellobiohydrolase I from Trichoderma reesei.",
+    "publicationDate": "1989",
+    "journal": "FEBS Lett.",
+    "firstPage": "239",
+    "lastPage": "243",
+    "volume": "243"
+   },
+   "referencePositions": [
+    "PROTEIN SEQUENCE OF 141-151"
+   ],
+   "referenceComments": [
+    {
+     "value": "ATCC 26921 / CBS 392.92 / QM9414",
+     "type": "STRAIN"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 7,
+   "citation": {
+    "id": "2554967",
+    "citationType": "journal article",
+    "authors": [
+     "Kraulis P.J.",
+     "Clore G.M.",
+     "Nilges M.",
+     "Jones T.A.",
+     "Pettersson G.",
+     "Knowles J.",
+     "Gronenborn A.M."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "2554967"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1021/bi00444a016"
+     }
+    ],
+    "title": "Determination of the three-dimensional solution structure of the C-terminal domain of cellobiohydrolase I from Trichoderma reesei. A study using nuclear magnetic resonance and hybrid distance geometry-dynamical simulated annealing.",
+    "publicationDate": "1989",
+    "journal": "Biochemistry",
+    "firstPage": "7241",
+    "lastPage": "7257",
+    "volume": "28"
+   },
+   "referencePositions": [
+    "STRUCTURE BY NMR OF 478-513",
+    "DISULFIDE BONDS"
+   ]
+  },
+  {
+   "referenceNumber": 8,
+   "citation": {
+    "id": "8036495",
+    "citationType": "journal article",
+    "authors": [
+     "Divne C.",
+     "Staahlberg J.",
+     "Reinikainen T.",
+     "Ruohonen L.",
+     "Pettersson G.",
+     "Knowles J.K.C.",
+     "Teeri T.T.",
+     "Jones T.A."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "8036495"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1126/science.8036495"
+     }
+    ],
+    "title": "The three-dimensional crystal structure of the catalytic core of cellobiohydrolase I from Trichoderma reesei.",
+    "publicationDate": "1994",
+    "journal": "Science",
+    "firstPage": "524",
+    "lastPage": "528",
+    "volume": "265"
+   },
+   "referencePositions": [
+    "X-RAY CRYSTALLOGRAPHY",
+    "GLYCOSYLATION AT ASN-287",
+    "DISULFIDE BONDS"
+   ]
+  },
+  {
+   "referenceNumber": 9,
+   "citation": {
+    "id": "9041630",
+    "citationType": "journal article",
+    "authors": [
+     "Mattinen M.L.",
+     "Kontteli M.",
+     "Kerovuo J.",
+     "Linder M.",
+     "Annila A.",
+     "Lindeberg G.",
+     "Reinikainen T.",
+     "Drakenberg T."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "9041630"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1002/pro.5560060204"
+     }
+    ],
+    "title": "Three-dimensional structures of three engineered cellulose-binding domains of cellobiohydrolase I from Trichoderma reesei.",
+    "publicationDate": "1997",
+    "journal": "Protein Sci.",
+    "firstPage": "294",
+    "lastPage": "303",
+    "volume": "6"
+   },
+   "referencePositions": [
+    "STRUCTURE BY NMR OF 478-513",
+    "DISULFIDE BONDS"
+   ]
+  },
+  {
+   "referenceNumber": 10,
+   "citation": {
+    "id": "9466911",
+    "citationType": "journal article",
+    "authors": [
+     "Divne C.",
+     "Staahlberg J.",
+     "Teeri T.T.",
+     "Jones T.A."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "9466911"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1006/jmbi.1997.1437"
+     }
+    ],
+    "title": "High-resolution crystal structures reveal how a cellulose chain is bound in the 50 A long tunnel of cellobiohydrolase I from Trichoderma reesei.",
+    "publicationDate": "1998",
+    "journal": "J. Mol. Biol.",
+    "firstPage": "309",
+    "lastPage": "325",
+    "volume": "275"
+   },
+   "referencePositions": [
+    "X-RAY CRYSTALLOGRAPHY",
+    "GLYCOSYLATION AT ASN-287 AND ASN-401",
+    "DISULFIDE BONDS"
+   ],
+   "referenceComments": [
+    {
+     "value": "ATCC 26921 / CBS 392.92 / QM9414",
+     "type": "STRAIN"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 11,
+   "citation": {
+    "id": "24341799",
+    "citationType": "journal article",
+    "authors": [
+     "Knott B.C.",
+     "Haddad Momeni M.",
+     "Crowley M.F.",
+     "Mackenzie L.F.",
+     "Gotz A.W.",
+     "Sandgren M.",
+     "Withers S.G.",
+     "Stahlberg J.",
+     "Beckham G.T."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "24341799"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1021/ja410291u"
+     }
+    ],
+    "title": "The mechanism of cellulose hydrolysis by a two-step, retaining cellobiohydrolase elucidated by structural and transition path sampling studies.",
+    "publicationDate": "2014",
+    "journal": "J. Am. Chem. Soc.",
+    "firstPage": "321",
+    "lastPage": "329",
+    "volume": "136"
+   },
+   "referencePositions": [
+    "X-RAY CRYSTALLOGRAPHY",
+    "GLYCOSYLATION AT ASN-287 AND ASN-401",
+    "DISULFIDE BONDS",
+    "ACTIVE SITE",
+    "REACTION MECHANISM"
+   ]
+  },
+  {
+   "referenceNumber": 12,
+   "citation": {
+    "id": "26307003",
+    "citationType": "journal article",
+    "authors": [
+     "Happs R.M.",
+     "Guan X.",
+     "Resch M.G.",
+     "Davis M.F.",
+     "Beckham G.T.",
+     "Tan Z.",
+     "Crowley M.F."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "26307003"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1111/febs.13500"
+     }
+    ],
+    "title": "O-glycosylation effects on family 1 carbohydrate-binding module solution structures.",
+    "publicationDate": "2015",
+    "journal": "FEBS J.",
+    "firstPage": "4341",
+    "lastPage": "4356",
+    "volume": "282"
+   },
+   "referencePositions": [
+    "STRUCTURE BY NMR OF 478-513",
+    "GLYCOSYLATION AT THR-478; SER-480 AND SER-491",
+    "DISULFIDE BONDS"
+   ]
+  }
+ ],
+ "uniProtKBCrossReferences": [
+  {
+   "database": "PIR",
+   "id": "A00902",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "EUTQI"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1AZ6",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "NMR"
+    },
+    {
+     "key": "Resolution",
+     "value": "-"
+    },
+    {
+     "key": "Chains",
+     "value": "A=478-513"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1AZH",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "NMR"
+    },
+    {
+     "key": "Resolution",
+     "value": "-"
+    },
+    {
+     "key": "Chains",
+     "value": "A=478-513"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1AZJ",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "NMR"
+    },
+    {
+     "key": "Resolution",
+     "value": "-"
+    },
+    {
+     "key": "Chains",
+     "value": "A=478-513"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1AZK",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "NMR"
+    },
+    {
+     "key": "Resolution",
+     "value": "-"
+    },
+    {
+     "key": "Chains",
+     "value": "A=478-513"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1CBH",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "NMR"
+    },
+    {
+     "key": "Resolution",
+     "value": "-"
+    },
+    {
+     "key": "Chains",
+     "value": "A=478-513"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1CEL",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.80 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1DY4",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.90 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1EGN",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.60 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1Q2B",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.60 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1Q2E",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.75 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "2CBH",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "NMR"
+    },
+    {
+     "key": "Resolution",
+     "value": "-"
+    },
+    {
+     "key": "Chains",
+     "value": "A=478-513"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "2CEL",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.00 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "2MWJ",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "NMR"
+    },
+    {
+     "key": "Resolution",
+     "value": "-"
+    },
+    {
+     "key": "Chains",
+     "value": "A=478-513"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "2MWK",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "NMR"
+    },
+    {
+     "key": "Resolution",
+     "value": "-"
+    },
+    {
+     "key": "Chains",
+     "value": "A=478-513"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "2V3I",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.05 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "2V3R",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.60 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "3CEL",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.00 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "4C4C",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.45 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "4C4D",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.32 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "4CEL",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.20 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "4D5I",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.42 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "4D5J",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.50 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "4D5O",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.52 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "4D5P",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.89 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "4D5Q",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.68 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "4D5V",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.62 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "4P1H",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.50 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=18-449"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "4P1J",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.62 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "4UWT",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.20 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "4V0Z",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.70 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "5CEL",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.90 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "5OA5",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.10 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "5X34",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "NMR"
+    },
+    {
+     "key": "Resolution",
+     "value": "-"
+    },
+    {
+     "key": "Chains",
+     "value": "A=478-513"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "5X35",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "NMR"
+    },
+    {
+     "key": "Resolution",
+     "value": "-"
+    },
+    {
+     "key": "Chains",
+     "value": "A=478-513"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "5X36",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "NMR"
+    },
+    {
+     "key": "Resolution",
+     "value": "-"
+    },
+    {
+     "key": "Chains",
+     "value": "A=478-513"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "5X37",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "NMR"
+    },
+    {
+     "key": "Resolution",
+     "value": "-"
+    },
+    {
+     "key": "Chains",
+     "value": "A=478-513"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "5X38",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "NMR"
+    },
+    {
+     "key": "Resolution",
+     "value": "-"
+    },
+    {
+     "key": "Chains",
+     "value": "A=478-513"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "5X39",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "NMR"
+    },
+    {
+     "key": "Resolution",
+     "value": "-"
+    },
+    {
+     "key": "Chains",
+     "value": "A=478-513"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "5X3C",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "NMR"
+    },
+    {
+     "key": "Resolution",
+     "value": "-"
+    },
+    {
+     "key": "Chains",
+     "value": "A=478-513"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "6CEL",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.70 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "6GRN",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.79 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "7CEL",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.90 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "7NYT",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.09 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "7OC8",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.60 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=18-451"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "7YHF",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "NMR"
+    },
+    {
+     "key": "Resolution",
+     "value": "-"
+    },
+    {
+     "key": "Chains",
+     "value": "A=478-513"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "7YHG",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "NMR"
+    },
+    {
+     "key": "Resolution",
+     "value": "-"
+    },
+    {
+     "key": "Chains",
+     "value": "A=478-513"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "7YHH",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "NMR"
+    },
+    {
+     "key": "Resolution",
+     "value": "-"
+    },
+    {
+     "key": "Chains",
+     "value": "A=478-513"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "7YHI",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "NMR"
+    },
+    {
+     "key": "Resolution",
+     "value": "-"
+    },
+    {
+     "key": "Chains",
+     "value": "A=478-513"
+    }
+   ]
+  },
+  {
+   "database": "AlphaFoldDB",
+   "id": "P62694",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "BMRB",
+   "id": "P62694",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "MDposit",
+   "id": "P62694",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "SMR",
+   "id": "P62694",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "CAZy",
+   "id": "CBM1",
+   "properties": [
+    {
+     "key": "FamilyName",
+     "value": "Carbohydrate-Binding Module Family 1"
+    }
+   ]
+  },
+  {
+   "database": "CAZy",
+   "id": "GH7",
+   "properties": [
+    {
+     "key": "FamilyName",
+     "value": "Glycoside Hydrolase Family 7"
+    }
+   ]
+  },
+  {
+   "database": "GlyCosmos",
+   "id": "P62694",
+   "properties": [
+    {
+     "key": "glycosylation",
+     "value": "15 sites, No reported glycans"
+    }
+   ]
+  },
+  {
+   "database": "iPTMnet",
+   "id": "P62694",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "BioCyc",
+   "id": "MetaCyc:MONOMER-16499",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "BRENDA",
+   "id": "3.2.1.176",
+   "properties": [
+    {
+     "key": "OrganismId",
+     "value": "6451"
+    }
+   ]
+  },
+  {
+   "database": "BRENDA",
+   "id": "3.2.1.4",
+   "properties": [
+    {
+     "key": "OrganismId",
+     "value": "6451"
+    }
+   ]
+  },
+  {
+   "database": "BRENDA",
+   "id": "3.2.1.91",
+   "properties": [
+    {
+     "key": "OrganismId",
+     "value": "6451"
+    }
+   ]
+  },
+  {
+   "database": "CD-CODE",
+   "id": "9321DD1F",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Synthetic Condensate 000162"
+    }
+   ]
+  },
+  {
+   "database": "EvolutionaryTrace",
+   "id": "P62694",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0005576",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "C:extracellular region"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IEA:UniProtKB-SubCell"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0016162",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:cellulose 1,4-beta-cellobiosidase activity"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IEA:UniProtKB-EC"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0030248",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:cellulose binding"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IEA:InterPro"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0009251",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:glucan catabolic process"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IEA:UniProtKB-ARBA"
+    }
+   ]
+  },
+  {
+   "database": "CDD",
+   "id": "cd07999",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "GH7_CBH_EG"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "FunFam",
+   "id": "2.70.100.10:FF:000001",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Glucanase"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "Gene3D",
+   "id": "2.70.100.10",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Glycoside hydrolase, family 7, domain"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR000254",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "CBD"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR035971",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "CBD_sf"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR013320",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "ConA-like_dom_sf"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR001722",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Glyco_hydro_7"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR037019",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Glyco_hydro_7_cat_sf"
+    }
+   ]
+  },
+  {
+   "database": "PANTHER",
+   "id": "PTHR33753",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "1,4-BETA-D-GLUCAN CELLOBIOHYDROLASE B"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PANTHER",
+   "id": "PTHR33753:SF2",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "GLYCOSIDE HYDROLASE FAMILY 7 PROTEIN"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "Pfam",
+   "id": "PF00734",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "CBM_1"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "Pfam",
+   "id": "PF00840",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Glyco_hydro_7"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PRINTS",
+   "id": "PR00734",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "GLHYDRLASE7"
+    }
+   ]
+  },
+  {
+   "database": "SMART",
+   "id": "SM00236",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "fCBD"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "SUPFAM",
+   "id": "SSF57180",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Cellulose-binding domain"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "SUPFAM",
+   "id": "SSF49899",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Concanavalin A-like lectins/glucanases"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PROSITE",
+   "id": "PS00562",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "CBM1_1"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PROSITE",
+   "id": "PS51164",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "CBM1_2"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  }
+ ],
+ "sequence": {
+  "value": "MYRKLAVISAFLATARAQSACTLQSETHPPLTWQKCSSGGTCTQQTGSVVIDANWRWTHATNSSTNCYDGNTWSSTLCPDNETCAKNCCLDGAAYASTYGVTTSGNSLSIGFVTQSAQKNVGARLYLMASDTTYQEFTLLGNEFSFDVDVSQLPCGLNGALYFVSMDADGGVSKYPTNTAGAKYGTGYCDSQCPRDLKFINGQANVEGWEPSSNNANTGIGGHGSCCSEMDIWEANSISEALTPHPCTTVGQEICEGDGCGGTYSDNRYGGTCDPDGCDWNPYRLGNTSFYGPGSSFTLDTTKKLTVVTQFETSGAINRYYVQNGVTFQQPNAELGSYSGNELNDDYCTAEEAEFGGSSFSDKGGLTQFKKATSGGMVLVMSLWDDYYANMLWLDSTYPTNETSSTPGAVRGSCSTSSGVPAQVESQSPNAKVTFSNIKFGPIGSTGNPSGGNPPGGNRGTTTTRRPATTTGSSPGPTQSHYGQCGGIGYSGPTVCASGTTCQVLNPYYSQCL",
+  "length": 513,
+  "molWeight": 54073,
+  "crc64": "9F5C0A8A854F2C12",
+  "md5": "AAD29CCBB29B5D8793170CFEC71808E2"
+ },
+ "extraAttributes": {
+  "countByCommentType": {
+   "FUNCTION": 1,
+   "CATALYTIC ACTIVITY": 1,
+   "SUBCELLULAR LOCATION": 1,
+   "DOMAIN": 1,
+   "PTM": 2,
+   "MISCELLANEOUS": 1,
+   "SIMILARITY": 1
+  },
+  "countByFeatureType": {
+   "Signal": 1,
+   "Chain": 1,
+   "Domain": 1,
+   "Region": 3,
+   "Compositional bias": 3,
+   "Active site": 2,
+   "Site": 1,
+   "Modified residue": 1,
+   "Glycosylation": 15,
+   "Disulfide bond": 12,
+   "Sequence conflict": 1,
+   "Beta strand": 37,
+   "Helix": 10,
+   "Turn": 7
+  },
+  "uniParcId": "UPI000012BE12"
+ }
+}

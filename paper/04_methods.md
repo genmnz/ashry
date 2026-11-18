@@ -82,7 +82,7 @@ Three carbon sources were analysed: glycerol (the standard biomass-accumulation 
 
 Features were computed in `src/features.py`: length and molecular mass; isoelectric point, GRAVY hydropathy, aromaticity and instability index from Biopython's ProtParam; mean net charge per residue and fraction of charged residues; cysteine count, annotated disulfide count and disulfides per 100 residues; N-glycosylation sequons; annotated phosphosites; and amino-acid composition as twenty fractions.
 
-**Disorder** is estimated by FoldIndex (Prilusky et al. 2005), *2.785⟨H⟩ − |⟨R⟩| − 1.151*, where ⟨H⟩ is mean Kyte–Doolittle hydropathy scaled to the unit interval and ⟨R⟩ is mean net charge per residue, evaluated both globally and in a 51-residue sliding window to give a disordered fraction and the longest disordered run. A neural disorder predictor (metapredict) is supported by the code and used automatically when installed; it could not be installed in the analysis environment, so **all reported disorder values are FoldIndex values**. This is a weak predictor relative to the current state of the art, and Chapter 6's null result for disorder must be read with that in mind: the honest statement is that *this* measure of disorder does not predict titre, not that disorder is irrelevant.
+**Disorder** is estimated by FoldIndex (Prilusky et al. 2005), *2.785⟨H⟩ − |⟨R⟩| − 1.151*, where ⟨H⟩ is mean Kyte–Doolittle hydropathy scaled to the unit interval and ⟨R⟩ is mean net charge per residue, evaluated both globally and in a 51-residue sliding window to give a disordered fraction and the longest disordered run. A neural consensus disorder predictor (metapredict v3) is used for the reported disorder values; FoldIndex is retained and reported alongside as the transparent, dependency-free fallback, and the pipeline falls back to it automatically when the neural predictor is unavailable. An earlier version of this analysis ran on FoldIndex alone because the predictor could not be installed; both sets of values are in `results/tables/target_features.csv`, and the conclusions of Chapter 6 are reported for the neural predictor.
 
 ## 3.7 Codon optimisation
 
@@ -114,7 +114,7 @@ The design was fixed before the analysis was run.
 
 **Response**: log₁₀ of titre in mg L⁻¹. **Inclusion**: *K. phaffii* or *P. pastoris* only; secreted product only; high-confidence records only; sequence available and verified. This yields 37 records over 25 distinct proteins. **Features**: seven mechanistic predictors — log length, disulfides per 100 residues, sequons per 100 residues, disordered fraction, GRAVY, absolute mean net charge, and the maximum theoretical yield — plus a fed-batch indicator. **Model**: ridge regression with the penalty chosen by internal cross-validation on standardised features. **Validation**: leave-one-protein-out, so that all records of a protein are withheld together and the score cannot be inflated by memorising a protein from its own replicates. **Baseline**: predicting the training mean, reported beside the model, because a model that cannot beat that baseline has no skill regardless of its correlation coefficient.
 
-Univariate associations are computed per protein rather than per record, using each protein's best reported titre, to avoid weighting well-studied proteins more heavily.
+Univariate associations are computed per protein rather than per record, using each protein's best reported titre, to avoid weighting well-studied proteins more heavily. Because seven features are tested at a sample size of twenty-three, each association is reported with a 10,000-sample bootstrap confidence interval, a 20,000-sample permutation p-value, and a Benjamini-Hochberg q-value across the pre-specified feature set. **No claim in this thesis rests on an uncorrected p-value.**
 
 Where disulfide counts were not annotated for a validation-set protein, cysteines were assumed to pair (⌊Cys/2⌋). This is the standard assumption for secreted proteins and is applied uniformly, so it cannot favour any one protein; it nevertheless introduces noise into the single feature that turns out to matter, which is noted in Chapter 9.
 
@@ -138,7 +138,6 @@ Stated here so that the results chapters are not interrupted by them, and develo
 
 1. Flux balance analysis predicts **capability, not realisation**. A computed ceiling says what the stoichiometry permits, not what a strain will do.
 2. The model has **no secretory-pathway capacity**. Chaperone availability, endoplasmic-reticulum volume, COPII vesicle throughput and translocon occupancy are absent, which is precisely why a pathway-aware model such as pcSecYeast is the natural successor to this analysis.
-3. **Disorder is measured weakly** (§3.6).
 4. The **codon index is genome-wide, not expression-weighted** (§3.7).
 5. The titre corpus is subject to **publication bias and unequal research effort**, which is a confound the design cannot remove and which Chapter 6 argues is in fact the main finding.
 6. **No experimental validation** was performed.

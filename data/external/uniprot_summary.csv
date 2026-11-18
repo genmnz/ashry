@@ -1,0 +1,5 @@
+accession,status,uniprot_id,protein_name,gene,organism,taxon_id,entry_type,existence,length_precursor,length_mature,mass_da_precursor,sequence_version,signal_peptide_end,n_disulfide,n_cys,n_modified_residue,n_phosphosite,n_glyc_N_linked,n_glyc_O_linked
+P00711,ok,LALBA_BOVIN,Alpha-lactalbumin,LALBA,Bos taurus,9913,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,142,123,16247,2,19,4,8,0,0,1,0
+P00794,ok,CHYM_BOVIN,Chymosin,CYM,Bos taurus,9913,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,381,365,42180,3,16,3,7,0,0,0,0
+P31096,ok,OSTP_BOVIN,Osteopontin,SPP1,Bos taurus,9913,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,278,262,30904,2,16,0,2,37,37,0,5
+P62694,ok,GUX1_TRIRF,Exoglucanase 1,cbh1,Trichoderma reesei,51453,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,513,496,54073,1,17,12,24,1,0,3,12

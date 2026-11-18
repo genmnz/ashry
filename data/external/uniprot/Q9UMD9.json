@@ -1,0 +1,4833 @@
+{
+ "entryType": "UniProtKB reviewed (Swiss-Prot)",
+ "primaryAccession": "Q9UMD9",
+ "secondaryAccessions": [
+  "Q02802",
+  "Q5JV36",
+  "Q99018",
+  "Q9NQK9",
+  "Q9UC14"
+ ],
+ "uniProtkbId": "COHA1_HUMAN",
+ "entryAudit": {
+  "firstPublicDate": "2004-02-02",
+  "lastAnnotationUpdateDate": "2026-11-04",
+  "lastSequenceUpdateDate": "2007-05-01",
+  "entryVersion": 207,
+  "sequenceVersion": 3
+ },
+ "annotationScore": 5.0,
+ "organism": {
+  "scientificName": "Homo sapiens",
+  "commonName": "Human",
+  "taxonId": 9606,
+  "lineage": [
+   "Eukaryota",
+   "Metazoa",
+   "Chordata",
+   "Craniata",
+   "Vertebrata",
+   "Euteleostomi",
+   "Mammalia",
+   "Eutheria",
+   "Euarchontoglires",
+   "Primates",
+   "Haplorrhini",
+   "Catarrhini",
+   "Hominidae",
+   "Homo"
+  ]
+ },
+ "proteinExistence": "1: Evidence at protein level",
+ "proteinDescription": {
+  "recommendedName": {
+   "fullName": {
+    "value": "Collagen alpha-1(XVII) chain"
+   }
+  },
+  "alternativeNames": [
+   {
+    "fullName": {
+     "value": "180 kDa bullous pemphigoid antigen 2"
+    }
+   },
+   {
+    "fullName": {
+     "value": "Bullous pemphigoid antigen 2"
+    }
+   }
+  ],
+  "contains": [
+   {
+    "recommendedName": {
+     "fullName": {
+      "value": "120 kDa linear IgA disease antigen"
+     }
+    },
+    "alternativeNames": [
+     {
+      "fullName": {
+       "value": "120 kDa linear IgA dermatosis antigen"
+      }
+     },
+     {
+      "fullName": {
+       "value": "Linear IgA disease antigen 1"
+      },
+      "shortNames": [
+       {
+        "value": "LAD-1"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "recommendedName": {
+     "fullName": {
+      "value": "97 kDa linear IgA disease antigen"
+     }
+    },
+    "alternativeNames": [
+     {
+      "fullName": {
+       "value": "97 kDa linear IgA bullous dermatosis antigen"
+      },
+      "shortNames": [
+       {
+        "value": "97 kDa LAD antigen"
+       },
+       {
+        "value": "97-LAD"
+       }
+      ]
+     },
+     {
+      "fullName": {
+       "value": "Linear IgA bullous disease antigen of 97 kDa"
+      },
+      "shortNames": [
+       {
+        "value": "LABD97"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "genes": [
+  {
+   "geneName": {
+    "value": "COL17A1"
+   },
+   "synonyms": [
+    {
+     "value": "BP180"
+    },
+    {
+     "value": "BPAG2"
+    }
+   ]
+  }
+ ],
+ "comments": [
+  {
+   "texts": [
+    {
+     "value": "May play a role in the integrity of hemidesmosome and the attachment of basal keratinocytes to the underlying basement membrane"
+    }
+   ],
+   "commentType": "FUNCTION"
+  },
+  {
+   "texts": [
+    {
+     "value": "The 120 kDa linear IgA disease antigen is an anchoring filament component involved in dermal-epidermal cohesion. Is the target of linear IgA bullous dermatosis autoantibodies"
+    }
+   ],
+   "commentType": "FUNCTION"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "10637308"
+      },
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "12482924"
+      },
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "9748270"
+      }
+     ],
+     "value": "Homotrimers of alpha 1(XVII)chains. Interacts (via cytoplasmic region) with ITGB4 (via cytoplasmic region). Interacts (via cytoplasmic region) with DST isoform 3 (via N-terminus). Interacts (via N-terminus) with PLEC. Interacts (via cytoplasmic region) with DSP"
+    }
+   ],
+   "commentType": "SUBUNIT"
+  },
+  {
+   "commentType": "INTERACTION",
+   "interactions": [
+    {
+     "interactantOne": {
+      "uniProtKBAccession": "Q9UMD9",
+      "intActId": "EBI-2528742"
+     },
+     "interactantTwo": {
+      "uniProtKBAccession": "Q9H0L4",
+      "geneName": "CSTF2T",
+      "intActId": "EBI-747012"
+     },
+     "numberOfExperiments": 3,
+     "organismDiffer": false
+    },
+    {
+     "interactantOne": {
+      "uniProtKBAccession": "Q9UMD9",
+      "intActId": "EBI-2528742"
+     },
+     "interactantTwo": {
+      "uniProtKBAccession": "O60568",
+      "geneName": "PLOD3",
+      "intActId": "EBI-741582"
+     },
+     "numberOfExperiments": 3,
+     "organismDiffer": false
+    },
+    {
+     "interactantOne": {
+      "uniProtKBAccession": "Q9UMD9",
+      "intActId": "EBI-2528742"
+     },
+     "interactantTwo": {
+      "uniProtKBAccession": "Q96T60",
+      "geneName": "PNKP",
+      "intActId": "EBI-1045072"
+     },
+     "numberOfExperiments": 3,
+     "organismDiffer": false
+    },
+    {
+     "interactantOne": {
+      "uniProtKBAccession": "Q9UMD9",
+      "intActId": "EBI-2528742"
+     },
+     "interactantTwo": {
+      "uniProtKBAccession": "Q9Y3C6",
+      "geneName": "PPIL1",
+      "intActId": "EBI-2557649"
+     },
+     "numberOfExperiments": 3,
+     "organismDiffer": false
+    },
+    {
+     "interactantOne": {
+      "uniProtKBAccession": "Q9UMD9",
+      "intActId": "EBI-2528742"
+     },
+     "interactantTwo": {
+      "uniProtKBAccession": "Q9UHD9",
+      "geneName": "UBQLN2",
+      "intActId": "EBI-947187"
+     },
+     "numberOfExperiments": 3,
+     "organismDiffer": false
+    },
+    {
+     "interactantOne": {
+      "uniProtKBAccession": "Q9UMD9",
+      "intActId": "EBI-2528742"
+     },
+     "interactantTwo": {
+      "uniProtKBAccession": "Q9P202",
+      "geneName": "WHRN",
+      "intActId": "EBI-310886"
+     },
+     "numberOfExperiments": 3,
+     "organismDiffer": false
+    }
+   ]
+  },
+  {
+   "commentType": "SUBCELLULAR LOCATION",
+   "note": {
+    "texts": [
+     {
+      "value": "Localized along the plasma membrane of the hemidesmosome"
+     }
+    ]
+   },
+   "subcellularLocations": [
+    {
+     "location": {
+      "value": "Cell junction, hemidesmosome",
+      "id": "SL-0137"
+     }
+    },
+    {
+     "location": {
+      "value": "Membrane",
+      "id": "SL-0162"
+     },
+     "topology": {
+      "value": "Single-pass type II membrane protein",
+      "id": "SL-9906"
+     }
+    }
+   ]
+  },
+  {
+   "commentType": "SUBCELLULAR LOCATION",
+   "molecule": "120 kDa linear IgA disease antigen",
+   "note": {
+    "texts": [
+     {
+      "value": "Exclusively localized to anchoring filaments. Localized to the epidermal side of split skin"
+     }
+    ]
+   },
+   "subcellularLocations": [
+    {
+     "location": {
+      "value": "Secreted, extracellular space, extracellular matrix, basement membrane",
+      "id": "SL-0025"
+     }
+    }
+   ]
+  },
+  {
+   "commentType": "SUBCELLULAR LOCATION",
+   "molecule": "97 kDa linear IgA disease antigen",
+   "note": {
+    "texts": [
+     {
+      "value": "Localized in the lamina lucida beneath the hemidesmosomes"
+     }
+    ]
+   },
+   "subcellularLocations": [
+    {
+     "location": {
+      "value": "Secreted, extracellular space, extracellular matrix, basement membrane",
+      "id": "SL-0025"
+     }
+    }
+   ]
+  },
+  {
+   "commentType": "ALTERNATIVE PRODUCTS",
+   "events": [
+    "Alternative splicing"
+   ],
+   "isoforms": [
+    {
+     "name": {
+      "value": "1"
+     },
+     "isoformIds": [
+      "Q9UMD9-1"
+     ],
+     "isoformSequenceStatus": "Displayed"
+    },
+    {
+     "name": {
+      "value": "2"
+     },
+     "isoformIds": [
+      "Q9UMD9-2"
+     ],
+     "sequenceIds": [
+      "VSP_024940",
+      "VSP_024941"
+     ],
+     "isoformSequenceStatus": "Described"
+    }
+   ]
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "1748679"
+      },
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "25676728"
+      },
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "8618013"
+      }
+     ],
+     "value": "Detected in skin (PubMed:8618013). In the cornea, it is detected in the epithelial basement membrane, the epithelial cells, and at a lower level in stromal cells (at protein level) (PubMed:25676728). Stratified squamous epithelia. Found in hemidesmosomes. Expressed in cornea, oral mucosa, esophagus, intestine, kidney collecting ducts, ureter, bladder, urethra and thymus but is absent in lung, blood vessels, skeletal muscle and nerves"
+    }
+   ],
+   "commentType": "TISSUE SPECIFICITY"
+  },
+  {
+   "texts": [
+    {
+     "value": "The intracellular/endo domain is disulfide-linked"
+    }
+   ],
+   "commentType": "PTM"
+  },
+  {
+   "texts": [
+    {
+     "value": "Prolines at the third position of the tripeptide repeating unit (G-X-Y) are hydroxylated in some or all of the chains"
+    }
+   ],
+   "commentType": "PTM"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "9748270"
+      }
+     ],
+     "value": "The ectodomain is shedded from the surface of keratinocytes resulting in a 120-kDa soluble form, also named as 120 kDa linear IgA disease antigen. The shedding is mediated by membrane-bound metalloproteases. This cleavage is inhibited by phosphorylation at Ser-544"
+    }
+   ],
+   "commentType": "PTM"
+  },
+  {
+   "commentType": "DISEASE",
+   "disease": {
+    "diseaseId": "Epidermolysis bullosa, junctional 4, intermediate",
+    "diseaseAccession": "DI-06341",
+    "acronym": "JEB4",
+    "description": "A form of epidermolysis bullosa, a genodermatosis characterized by recurrent blistering, fragility of the skin and mucosal epithelia, and erosions caused by minor mechanical trauma. JEB4 is an autosomal recessive, intermediate form in which blistering lesions occur between the epidermis and the dermis at the lamina lucida level of the basement membrane zone. In intermediate forms of junctional epidermolysis bullosa, blistering does not lead to the formation of chronic granulation tissue and does not affect the lifespan of affected individuals. Nail dystrophy and dental enamel defects are present. Scarring or non-scarring alopecia and diffuse hair loss may occur. JEB4 patients manifest blisters at birth or shortly afterward. Blisters may heal with atrophic scarring and variable hypo- or hyperpigmentation. Oral mucosa may be involved.",
+    "diseaseCrossReference": {
+     "database": "MIM",
+     "id": "619787"
+    },
+    "evidences": [
+     {
+      "evidenceCode": "ECO:0000269",
+      "source": "PubMed",
+      "id": "10652291"
+     },
+     {
+      "evidenceCode": "ECO:0000269",
+      "source": "PubMed",
+      "id": "10951237"
+     },
+     {
+      "evidenceCode": "ECO:0000269",
+      "source": "PubMed",
+      "id": "11912005"
+     },
+     {
+      "evidenceCode": "ECO:0000269",
+      "source": "PubMed",
+      "id": "8669466"
+     },
+     {
+      "evidenceCode": "ECO:0000269",
+      "source": "PubMed",
+      "id": "9199555"
+     }
+    ]
+   },
+   "note": {
+    "texts": [
+     {
+      "value": "The disease is caused by variants affecting the gene represented in this entry"
+     }
+    ]
+   }
+  },
+  {
+   "commentType": "DISEASE",
+   "disease": {
+    "diseaseId": "Epithelial recurrent erosion dystrophy",
+    "diseaseAccession": "DI-04534",
+    "acronym": "ERED",
+    "description": "A corneal dystrophy characterized by recurrent episodes of epithelial erosions from childhood, with occasional impairment of vision. Most patients have attacks of redness, photophobia, epiphora, and ocular pain. Exposure to sunlight or draught, dust and smoke and lack of sleep can precipitate attacks.",
+    "diseaseCrossReference": {
+     "database": "MIM",
+     "id": "122400"
+    },
+    "evidences": [
+     {
+      "evidenceCode": "ECO:0000269",
+      "source": "PubMed",
+      "id": "25676728"
+     }
+    ]
+   },
+   "note": {
+    "texts": [
+     {
+      "value": "The disease is caused by variants affecting the gene represented in this entry"
+     }
+    ]
+   }
+  },
+  {
+   "texts": [
+    {
+     "value": "Both the 120 kDa linear IgA disease antigen and the 97 kDa linear IgA disease antigen of COL17A1, represent major antigenic targets of autoantibodies in patients with linear IgA disease (LAD). LAD is a subepidermal blistering disorder characterized by tissue-bound and circulating IgA autoantibodies to the dermal-epidermal junction. These IgA autoantibodies preferentially react with 97 and the 120 kDa forms, but not with the full-length COL17A1, suggesting that the cleavage of the ectodomain generates novel autoantigenic epitopes"
+    }
+   ],
+   "commentType": "MISCELLANEOUS"
+  },
+  {
+   "commentType": "SEQUENCE CAUTION",
+   "sequenceCautionType": "Erroneous initiation",
+   "sequence": "AAA35605.1",
+   "note": "Extended N-terminus.",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ]
+  },
+  {
+   "commentType": "SEQUENCE CAUTION",
+   "sequenceCautionType": "Miscellaneous discrepancy",
+   "sequence": "AAH04478.1",
+   "note": "Contaminating sequence. Potential poly-A sequence.",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ]
+  }
+ ],
+ "features": [
+  {
+   "type": "Chain",
+   "location": {
+    "start": {
+     "value": 1,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 1497,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Collagen alpha-1(XVII) chain",
+   "featureId": "PRO_0000059406"
+  },
+  {
+   "type": "Chain",
+   "location": {
+    "start": {
+     "value": 524,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 1497,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "120 kDa linear IgA disease antigen",
+   "featureId": "PRO_0000342555"
+  },
+  {
+   "type": "Chain",
+   "location": {
+    "start": {
+     "value": 531,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": null,
+     "modifier": "UNKNOWN"
+    }
+   },
+   "description": "97 kDa linear IgA disease antigen",
+   "featureId": "PRO_0000342556"
+  },
+  {
+   "type": "Topological domain",
+   "location": {
+    "start": {
+     "value": 1,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 467,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Cytoplasmic",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000255"
+    }
+   ]
+  },
+  {
+   "type": "Transmembrane",
+   "location": {
+    "start": {
+     "value": 468,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 488,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Helical; Signal-anchor for type II membrane protein",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000255"
+    }
+   ]
+  },
+  {
+   "type": "Topological domain",
+   "location": {
+    "start": {
+     "value": 489,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 1497,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Extracellular",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000255"
+    }
+   ]
+  },
+  {
+   "type": "Region",
+   "location": {
+    "start": {
+     "value": 1,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 566,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Nonhelical region (NC16)"
+  },
+  {
+   "type": "Region",
+   "location": {
+    "start": {
+     "value": 1,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 154,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Disordered",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Region",
+   "location": {
+    "start": {
+     "value": 145,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 230,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Necessary for interaction with DST and for the recruitment of DST to hemidesmosome",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "12482924"
+    }
+   ]
+  },
+  {
+   "type": "Region",
+   "location": {
+    "start": {
+     "value": 167,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 186,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Disordered",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Region",
+   "location": {
+    "start": {
+     "value": 562,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 1011,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Disordered",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Region",
+   "location": {
+    "start": {
+     "value": 567,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 1482,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Triple-helical region"
+  },
+  {
+   "type": "Region",
+   "location": {
+    "start": {
+     "value": 1209,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 1234,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Disordered",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Region",
+   "location": {
+    "start": {
+     "value": 1261,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 1316,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Disordered",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Region",
+   "location": {
+    "start": {
+     "value": 1434,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 1497,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Disordered",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Region",
+   "location": {
+    "start": {
+     "value": 1483,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 1497,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Nonhelical region (NC1)"
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 9,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 19,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Basic and acidic residues",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 57,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 96,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Polar residues",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 169,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 183,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Polar residues",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 590,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 602,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Pro residues",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 604,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 635,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Low complexity",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 661,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 673,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Low complexity",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 735,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 748,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Low complexity",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 774,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 796,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Low complexity",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 820,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 841,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Pro residues",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 858,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 881,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Pro residues",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 907,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 916,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Pro residues",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 936,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 946,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Low complexity",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 968,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 987,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Low complexity",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 994,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 1004,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Pro residues",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 1214,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 1228,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Pro residues",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 1266,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 1275,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Pro residues",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 1289,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 1312,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Low complexity",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 1458,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 1469,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Pro residues",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 1472,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 1481,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Basic and acidic residues",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Compositional bias",
+   "location": {
+    "start": {
+     "value": 1486,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 1497,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Basic residues",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000256",
+     "source": "SAM",
+     "id": "MobiDB-lite"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 544,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 544,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine; by CK2",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "17545155"
+    }
+   ]
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 1421,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 1421,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "N-linked (GlcNAc...) asparagine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9748270"
+    }
+   ],
+   "featureId": ""
+  },
+  {
+   "type": "Alternative sequence",
+   "location": {
+    "start": {
+     "value": 922,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 966,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in isoform 2",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "featureId": "VSP_024940",
+   "alternativeSequence": {}
+  },
+  {
+   "type": "Alternative sequence",
+   "location": {
+    "start": {
+     "value": 1170,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 1207,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in isoform 2",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "featureId": "VSP_024941",
+   "alternativeSequence": {
+    "originalSequence": "GSEFRGIVGPPGPPGPPGIPGNVWSSISVEDLSSYLHT",
+    "alternativeSequences": [
+     "A"
+    ]
+   }
+  },
+  {
+   "type": "Natural variant",
+   "location": {
+    "start": {
+     "value": 4,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 4,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in dbSNP:rs17116471",
+   "featureCrossReferences": [
+    {
+     "database": "dbSNP",
+     "id": "rs17116471"
+    }
+   ],
+   "featureId": "VAR_048781",
+   "alternativeSequence": {
+    "originalSequence": "T",
+    "alternativeSequences": [
+     "A"
+    ]
+   }
+  },
+  {
+   "type": "Natural variant",
+   "location": {
+    "start": {
+     "value": 210,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 210,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in dbSNP:rs805708",
+   "featureCrossReferences": [
+    {
+     "database": "dbSNP",
+     "id": "rs805708"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "15489334"
+    }
+   ],
+   "featureId": "VAR_017593",
+   "alternativeSequence": {
+    "originalSequence": "T",
+    "alternativeSequences": [
+     "M"
+    ]
+   }
+  },
+  {
+   "type": "Natural variant",
+   "location": {
+    "start": {
+     "value": 231,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 231,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in dbSNP:rs1054113",
+   "featureCrossReferences": [
+    {
+     "database": "dbSNP",
+     "id": "rs1054113"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "11912005"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9012408"
+    }
+   ],
+   "featureId": "VAR_017594",
+   "alternativeSequence": {
+    "originalSequence": "M",
+    "alternativeSequences": [
+     "I"
+    ]
+   }
+  },
+  {
+   "type": "Natural variant",
+   "location": {
+    "start": {
+     "value": 238,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 238,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9012408"
+    }
+   ],
+   "featureId": "VAR_017595",
+   "alternativeSequence": {
+    "originalSequence": "M",
+    "alternativeSequences": [
+     "T"
+    ]
+   }
+  },
+  {
+   "type": "Natural variant",
+   "location": {
+    "start": {
+     "value": 265,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 265,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in JEB4",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "11912005"
+    }
+   ],
+   "featureId": "VAR_017596",
+   "alternativeSequence": {
+    "originalSequence": "S",
+    "alternativeSequences": [
+     "C"
+    ]
+   }
+  },
+  {
+   "type": "Natural variant",
+   "location": {
+    "start": {
+     "value": 428,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 428,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in dbSNP:rs805698",
+   "featureCrossReferences": [
+    {
+     "database": "dbSNP",
+     "id": "rs805698"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "1324962"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9012408"
+    }
+   ],
+   "featureId": "VAR_017597",
+   "alternativeSequence": {
+    "originalSequence": "G",
+    "alternativeSequences": [
+     "S"
+    ]
+   }
+  },
+  {
+   "type": "Natural variant",
+   "location": {
+    "start": {
+     "value": 627,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 627,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in JEB4",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "10652291"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8669466"
+    }
+   ],
+   "featureId": "VAR_017598",
+   "alternativeSequence": {
+    "originalSequence": "G",
+    "alternativeSequences": [
+     "V"
+    ]
+   }
+  },
+  {
+   "type": "Natural variant",
+   "location": {
+    "start": {
+     "value": 633,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 633,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in JEB4; dbSNP:rs121912773",
+   "featureCrossReferences": [
+    {
+     "database": "dbSNP",
+     "id": "rs121912773"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "10951237"
+    }
+   ],
+   "featureId": "VAR_017599",
+   "alternativeSequence": {
+    "originalSequence": "G",
+    "alternativeSequences": [
+     "D"
+    ]
+   }
+  },
+  {
+   "type": "Natural variant",
+   "location": {
+    "start": {
+     "value": 703,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 703,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in dbSNP:rs805722",
+   "featureCrossReferences": [
+    {
+     "database": "dbSNP",
+     "id": "rs805722"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9012408"
+    }
+   ],
+   "featureId": "VAR_017600",
+   "alternativeSequence": {
+    "originalSequence": "M",
+    "alternativeSequences": [
+     "V"
+    ]
+   }
+  },
+  {
+   "type": "Natural variant",
+   "location": {
+    "start": {
+     "value": 939,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 939,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in ERED; dbSNP:rs797045142",
+   "featureCrossReferences": [
+    {
+     "database": "dbSNP",
+     "id": "rs797045142"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "25676728"
+    }
+   ],
+   "featureId": "VAR_074627",
+   "alternativeSequence": {
+    "originalSequence": "T",
+    "alternativeSequences": [
+     "I"
+    ]
+   }
+  },
+  {
+   "type": "Natural variant",
+   "location": {
+    "start": {
+     "value": 1303,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 1303,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in JEB4; dbSNP:rs121912771",
+   "featureCrossReferences": [
+    {
+     "database": "dbSNP",
+     "id": "rs121912771"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9199555"
+    }
+   ],
+   "featureId": "VAR_017601",
+   "alternativeSequence": {
+    "originalSequence": "R",
+    "alternativeSequences": [
+     "Q"
+    ]
+   }
+  },
+  {
+   "type": "Natural variant",
+   "location": {
+    "start": {
+     "value": 1370,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 1370,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in dbSNP:rs17116350",
+   "featureCrossReferences": [
+    {
+     "database": "dbSNP",
+     "id": "rs17116350"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9012408"
+    }
+   ],
+   "featureId": "VAR_017602",
+   "alternativeSequence": {
+    "originalSequence": "D",
+    "alternativeSequences": [
+     "G"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 856,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 856,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 5; AAA51839",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "Q",
+    "alternativeSequences": [
+     "P"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 905,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 905,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 1; AAA35605 and 2; AAB51499",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "S",
+    "alternativeSequences": [
+     "F"
+    ]
+   }
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 720,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 739,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "8IZS"
+    }
+   ]
+  }
+ ],
+ "keywords": [
+  {
+   "id": "KW-0002",
+   "category": "Technical term",
+   "name": "3D-structure"
+  },
+  {
+   "id": "KW-0025",
+   "category": "Coding sequence diversity",
+   "name": "Alternative splicing"
+  },
+  {
+   "id": "KW-0084",
+   "category": "Cellular component",
+   "name": "Basement membrane"
+  },
+  {
+   "id": "KW-0965",
+   "category": "Cellular component",
+   "name": "Cell junction"
+  },
+  {
+   "id": "KW-0176",
+   "category": "Domain",
+   "name": "Collagen"
+  },
+  {
+   "id": "KW-0903",
+   "category": "Technical term",
+   "name": "Direct protein sequencing"
+  },
+  {
+   "id": "KW-0225",
+   "category": "Disease",
+   "name": "Disease variant"
+  },
+  {
+   "id": "KW-1015",
+   "category": "PTM",
+   "name": "Disulfide bond"
+  },
+  {
+   "id": "KW-0263",
+   "category": "Disease",
+   "name": "Epidermolysis bullosa"
+  },
+  {
+   "id": "KW-0272",
+   "category": "Cellular component",
+   "name": "Extracellular matrix"
+  },
+  {
+   "id": "KW-0325",
+   "category": "PTM",
+   "name": "Glycoprotein"
+  },
+  {
+   "id": "KW-0379",
+   "category": "PTM",
+   "name": "Hydroxylation"
+  },
+  {
+   "id": "KW-0472",
+   "category": "Cellular component",
+   "name": "Membrane"
+  },
+  {
+   "id": "KW-0597",
+   "category": "PTM",
+   "name": "Phosphoprotein"
+  },
+  {
+   "id": "KW-1267",
+   "category": "Technical term",
+   "name": "Proteomics identification"
+  },
+  {
+   "id": "KW-1185",
+   "category": "Technical term",
+   "name": "Reference proteome"
+  },
+  {
+   "id": "KW-0677",
+   "category": "Domain",
+   "name": "Repeat"
+  },
+  {
+   "id": "KW-0964",
+   "category": "Cellular component",
+   "name": "Secreted"
+  },
+  {
+   "id": "KW-0735",
+   "category": "Domain",
+   "name": "Signal-anchor"
+  },
+  {
+   "id": "KW-0812",
+   "category": "Domain",
+   "name": "Transmembrane"
+  },
+  {
+   "id": "KW-1133",
+   "category": "Domain",
+   "name": "Transmembrane helix"
+  }
+ ],
+ "references": [
+  {
+   "referenceNumber": 1,
+   "citation": {
+    "id": "1324962",
+    "citationType": "journal article",
+    "authors": [
+     "Giudice G.J.",
+     "Emery D.J.",
+     "Diaz L.A."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "1324962"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1111/1523-1747.ep12616580"
+     }
+    ],
+    "title": "Cloning and primary structural analysis of the bullous pemphigoid autoantigen, BP180.",
+    "publicationDate": "1992",
+    "journal": "J. Invest. Dermatol.",
+    "firstPage": "243",
+    "lastPage": "250",
+    "volume": "99"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [MRNA] (ISOFORM 1)",
+    "SUBCELLULAR LOCATION",
+    "VARIANT SER-428"
+   ],
+   "referenceComments": [
+    {
+     "value": "Foreskin",
+     "type": "TISSUE"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 2,
+   "citation": {
+    "id": "9012408",
+    "citationType": "journal article",
+    "authors": [
+     "Gatalica B.",
+     "Pulkkinen L.",
+     "Li K.",
+     "Kuokkanen K.",
+     "Ryynaenen M.",
+     "McGrath J.A.",
+     "Uitto J."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "9012408"
+     }
+    ],
+    "title": "Cloning of the human type XVII collagen gene (COL17A1), and detection of novel mutations in generalized atrophic benign epidermolysis bullosa.",
+    "publicationDate": "1997",
+    "journal": "Am. J. Hum. Genet.",
+    "firstPage": "352",
+    "lastPage": "365",
+    "volume": "60"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [GENOMIC DNA] (ISOFORM 1)",
+    "VARIANTS ILE-231; THR-238; SER-428; VAL-703 AND GLY-1370"
+   ]
+  },
+  {
+   "referenceNumber": 3,
+   "citation": {
+    "id": "15164054",
+    "citationType": "journal article",
+    "authors": [
+     "Deloukas P.",
+     "Earthrowl M.E.",
+     "Grafham D.V.",
+     "Rubenfield M.",
+     "French L.",
+     "Steward C.A.",
+     "Sims S.K.",
+     "Jones M.C.",
+     "Searle S.",
+     "Scott C.",
+     "Howe K.",
+     "Hunt S.E.",
+     "Andrews T.D.",
+     "Gilbert J.G.R.",
+     "Swarbreck D.",
+     "Ashurst J.L.",
+     "Taylor A.",
+     "Battles J.",
+     "Bird C.P.",
+     "Ainscough R.",
+     "Almeida J.P.",
+     "Ashwell R.I.S.",
+     "Ambrose K.D.",
+     "Babbage A.K.",
+     "Bagguley C.L.",
+     "Bailey J.",
+     "Banerjee R.",
+     "Bates K.",
+     "Beasley H.",
+     "Bray-Allen S.",
+     "Brown A.J.",
+     "Brown J.Y.",
+     "Burford D.C.",
+     "Burrill W.",
+     "Burton J.",
+     "Cahill P.",
+     "Camire D.",
+     "Carter N.P.",
+     "Chapman J.C.",
+     "Clark S.Y.",
+     "Clarke G.",
+     "Clee C.M.",
+     "Clegg S.",
+     "Corby N.",
+     "Coulson A.",
+     "Dhami P.",
+     "Dutta I.",
+     "Dunn M.",
+     "Faulkner L.",
+     "Frankish A.",
+     "Frankland J.A.",
+     "Garner P.",
+     "Garnett J.",
+     "Gribble S.",
+     "Griffiths C.",
+     "Grocock R.",
+     "Gustafson E.",
+     "Hammond S.",
+     "Harley J.L.",
+     "Hart E.",
+     "Heath P.D.",
+     "Ho T.P.",
+     "Hopkins B.",
+     "Horne J.",
+     "Howden P.J.",
+     "Huckle E.",
+     "Hynds C.",
+     "Johnson C.",
+     "Johnson D.",
+     "Kana A.",
+     "Kay M.",
+     "Kimberley A.M.",
+     "Kershaw J.K.",
+     "Kokkinaki M.",
+     "Laird G.K.",
+     "Lawlor S.",
+     "Lee H.M.",
+     "Leongamornlert D.A.",
+     "Laird G.",
+     "Lloyd C.",
+     "Lloyd D.M.",
+     "Loveland J.",
+     "Lovell J.",
+     "McLaren S.",
+     "McLay K.E.",
+     "McMurray A.",
+     "Mashreghi-Mohammadi M.",
+     "Matthews L.",
+     "Milne S.",
+     "Nickerson T.",
+     "Nguyen M.",
+     "Overton-Larty E.",
+     "Palmer S.A.",
+     "Pearce A.V.",
+     "Peck A.I.",
+     "Pelan S.",
+     "Phillimore B.",
+     "Porter K.",
+     "Rice C.M.",
+     "Rogosin A.",
+     "Ross M.T.",
+     "Sarafidou T.",
+     "Sehra H.K.",
+     "Shownkeen R.",
+     "Skuce C.D.",
+     "Smith M.",
+     "Standring L.",
+     "Sycamore N.",
+     "Tester J.",
+     "Thorpe A.",
+     "Torcasso W.",
+     "Tracey A.",
+     "Tromans A.",
+     "Tsolas J.",
+     "Wall M.",
+     "Walsh J.",
+     "Wang H.",
+     "Weinstock K.",
+     "West A.P.",
+     "Willey D.L.",
+     "Whitehead S.L.",
+     "Wilming L.",
+     "Wray P.W.",
+     "Young L.",
+     "Chen Y.",
+     "Lovering R.C.",
+     "Moschonas N.K.",
+     "Siebert R.",
+     "Fechtel K.",
+     "Bentley D.",
+     "Durbin R.M.",
+     "Hubbard T.",
+     "Doucette-Stamm L.",
+     "Beck S.",
+     "Smith D.R.",
+     "Rogers J."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "15164054"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1038/nature02462"
+     }
+    ],
+    "title": "The DNA sequence and comparative analysis of human chromosome 10.",
+    "publicationDate": "2004",
+    "journal": "Nature",
+    "firstPage": "375",
+    "lastPage": "381",
+    "volume": "429"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+   ]
+  },
+  {
+   "referenceNumber": 4,
+   "citation": {
+    "id": "15489334",
+    "citationType": "journal article",
+    "authoringGroup": [
+     "The MGC Project Team"
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "15489334"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1101/gr.2596504"
+     }
+    ],
+    "title": "The status, quality, and expansion of the NIH full-length cDNA project: the Mammalian Gene Collection (MGC).",
+    "publicationDate": "2004",
+    "journal": "Genome Res.",
+    "firstPage": "2121",
+    "lastPage": "2127",
+    "volume": "14"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA] OF 1-390",
+    "VARIANT MET-210"
+   ],
+   "referenceComments": [
+    {
+     "value": "Pancreas",
+     "type": "TISSUE"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 5,
+   "citation": {
+    "id": "1748679",
+    "citationType": "journal article",
+    "authors": [
+     "Li K.H.",
+     "Sawamura D.",
+     "Giudice G.J.",
+     "Diaz L.A.",
+     "Mattei M.-G.",
+     "Chu M.-L.",
+     "Uitto J."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "1748679"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/s0021-9258(18)54393-3"
+     }
+    ],
+    "title": "Genomic organization of collagenous domains and chromosomal assignment of human 180-kDa bullous pemphigoid antigen-2, a novel collagen of stratified squamous epithelium.",
+    "publicationDate": "1991",
+    "journal": "J. Biol. Chem.",
+    "firstPage": "24064",
+    "lastPage": "24069",
+    "volume": "266"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [MRNA] OF 508-856",
+    "TISSUE SPECIFICITY"
+   ]
+  },
+  {
+   "referenceNumber": 6,
+   "citation": {
+    "id": "14675210",
+    "citationType": "journal article",
+    "authors": [
+     "Hirako Y.",
+     "Nishizawa Y.",
+     "Sitaru C.",
+     "Opitz A.",
+     "Marcus K.",
+     "Meyer H.E.",
+     "Butt E.",
+     "Owaribe K.",
+     "Zillikens D."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "14675210"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1046/j.1523-1747.2003.12607.x"
+     }
+    ],
+    "title": "The 97-kDa (LABD97) and 120-kDa (LAD-1) fragments of bullous pemphigoid antigen 180/type XVII collagen have different N-termini.",
+    "publicationDate": "2003",
+    "journal": "J. Invest. Dermatol.",
+    "firstPage": "1554",
+    "lastPage": "1556",
+    "volume": "121"
+   },
+   "referencePositions": [
+    "PROTEIN SEQUENCE OF 524-535"
+   ]
+  },
+  {
+   "referenceNumber": 7,
+   "citation": {
+    "id": "9506436",
+    "citationType": "journal article",
+    "authors": [
+     "Zone J.J.",
+     "Taylor T.B.",
+     "Meyer L.J.",
+     "Petersen M.J."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "9506436"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1046/j.1523-1747.1998.00129.x"
+     }
+    ],
+    "title": "The 97 kDa linear IgA bullous disease antigen is identical to a portion of the extracellular domain of the 180 kDa bullous pemphigoid antigen, BPAg2.",
+    "publicationDate": "1998",
+    "journal": "J. Invest. Dermatol.",
+    "firstPage": "207",
+    "lastPage": "210",
+    "volume": "110"
+   },
+   "referencePositions": [
+    "PROTEIN SEQUENCE OF 531-546; 554-565; 585-605; 647-666; 680-688; 689-703; 755-765; 842-860; 880-891; 1016-1028; 1062-1069; 1102-1108; 1134-1142; 1227-1247 AND 1248-1260"
+   ]
+  },
+  {
+   "referenceNumber": 8,
+   "citation": {
+    "id": "8618013",
+    "citationType": "journal article",
+    "authors": [
+     "Marinkovich M.P.",
+     "Taylor T.B.",
+     "Keene D.R.",
+     "Burgeson R.E.",
+     "Zone J.J."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "8618013"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1111/1523-1747.ep12345782"
+     }
+    ],
+    "title": "LAD-1, the linear IgA bullous dermatosis autoantigen, is a novel 120-kDa anchoring filament protein synthesized by epidermal cells.",
+    "publicationDate": "1996",
+    "journal": "J. Invest. Dermatol.",
+    "firstPage": "734",
+    "lastPage": "738",
+    "volume": "106"
+   },
+   "referencePositions": [
+    "SUBCELLULAR LOCATION",
+    "FUNCTION",
+    "TISSUE SPECIFICITY"
+   ]
+  },
+  {
+   "referenceNumber": 9,
+   "citation": {
+    "id": "CI-FOURR79QPRBV8",
+    "citationType": "journal article",
+    "authors": [
+     "Marinkovich M.P.",
+     "Taylor T.B.",
+     "Keene D.R.",
+     "Burgeson R.E.",
+     "Zone J.J."
+    ],
+    "publicationDate": "1996",
+    "journal": "J. Invest. Dermatol.",
+    "firstPage": "1343",
+    "lastPage": "1343",
+    "volume": "106"
+   },
+   "referencePositions": [
+    "ERRATUM OF PUBMED:8618013"
+   ]
+  },
+  {
+   "referenceNumber": 10,
+   "citation": {
+    "id": "8618014",
+    "citationType": "journal article",
+    "authors": [
+     "Ishiko A.",
+     "Shimizu H.",
+     "Masunaga T.",
+     "Hashimoto T.",
+     "Dmochowski M.",
+     "Wojnarowska F.",
+     "Bhogal B.S.",
+     "Black M.M.",
+     "Nishikawa T."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "8618014"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1111/1523-1747.ep12345793"
+     }
+    ],
+    "title": "97-kDa linear IgA bullous dermatosis (LAD) antigen localizes to the lamina lucida of the epidermal basement membrane.",
+    "publicationDate": "1996",
+    "journal": "J. Invest. Dermatol.",
+    "firstPage": "739",
+    "lastPage": "743",
+    "volume": "106"
+   },
+   "referencePositions": [
+    "SUBCELLULAR LOCATION"
+   ]
+  },
+  {
+   "referenceNumber": 11,
+   "citation": {
+    "id": "CI-DIT5357GCVI5O",
+    "citationType": "journal article",
+    "authors": [
+     "Limardo M.",
+     "Arffman A.",
+     "Aho S.",
+     "Utto J."
+    ],
+    "title": "Evidence that the 180-kD bullous pemphigoid antigen is a transmembrane collagen, type XVII, in a triple-helical conformation and in type II transmembrane topography.",
+    "publicationDate": "1996",
+    "journal": "J. Invest. Dermatol.",
+    "firstPage": "860",
+    "lastPage": "860",
+    "volume": "106"
+   },
+   "referencePositions": [
+    "SUBCELLULAR LOCATION"
+   ]
+  },
+  {
+   "referenceNumber": 12,
+   "citation": {
+    "id": "9748270",
+    "citationType": "journal article",
+    "authors": [
+     "Schaecke H.",
+     "Schumann H.",
+     "Hammami-Hauasli N.",
+     "Raghunath M.",
+     "Bruckner-Tuderman L."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "9748270"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1074/jbc.273.40.25937"
+     }
+    ],
+    "title": "Two forms of collagen XVII in keratinocytes. A full-length transmembrane protein and a soluble ectodomain.",
+    "publicationDate": "1998",
+    "journal": "J. Biol. Chem.",
+    "firstPage": "25937",
+    "lastPage": "25943",
+    "volume": "273"
+   },
+   "referencePositions": [
+    "SUBUNIT",
+    "PROTEOLYTIC PROCESSING",
+    "GLYCOSYLATION AT ASN-1421",
+    "DOMAINS"
+   ]
+  },
+  {
+   "referenceNumber": 13,
+   "citation": {
+    "id": "10637308",
+    "citationType": "journal article",
+    "authors": [
+     "Hopkinson S.B.",
+     "Jones J.C."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "10637308"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1091/mbc.11.1.277"
+     }
+    ],
+    "title": "The N terminus of the transmembrane protein BP180 interacts with the N-terminal domain of BP230, thereby mediating keratin cytoskeleton anchorage to the cell surface at the site of the hemidesmosome.",
+    "publicationDate": "2000",
+    "journal": "Mol. Biol. Cell",
+    "firstPage": "277",
+    "lastPage": "286",
+    "volume": "11"
+   },
+   "referencePositions": [
+    "INTERACTION WITH DSP"
+   ]
+  },
+  {
+   "referenceNumber": 14,
+   "citation": {
+    "id": "12356719",
+    "citationType": "journal article",
+    "authors": [
+     "Franzke C.-W.",
+     "Tasanen K.",
+     "Schaecke H.",
+     "Zhou Z.",
+     "Tryggvason K.",
+     "Mauch C.",
+     "Zigrino P.",
+     "Sunnarborg S.",
+     "Lee D.C.",
+     "Fahrenholz F.",
+     "Bruckner-Tuderman L."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "12356719"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1093/emboj/cdf532"
+     }
+    ],
+    "title": "Transmembrane collagen XVII, an epithelial adhesion protein, is shed from the cell surface by ADAMs.",
+    "publicationDate": "2002",
+    "journal": "EMBO J.",
+    "firstPage": "5026",
+    "lastPage": "5035",
+    "volume": "21"
+   },
+   "referencePositions": [
+    "SHEDDING"
+   ]
+  },
+  {
+   "referenceNumber": 15,
+   "citation": {
+    "id": "12482924",
+    "citationType": "journal article",
+    "authors": [
+     "Koster J.",
+     "Geerts D.",
+     "Favre B.",
+     "Borradori L.",
+     "Sonnenberg A."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "12482924"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1242/jcs.00241"
+     }
+    ],
+    "title": "Analysis of the interactions between BP180, BP230, plectin and the integrin alpha6beta4 important for hemidesmosome assembly.",
+    "publicationDate": "2003",
+    "journal": "J. Cell Sci.",
+    "firstPage": "387",
+    "lastPage": "399",
+    "volume": "116"
+   },
+   "referencePositions": [
+    "FUNCTION",
+    "INTERACTION WITH DSP; DST; ITGB4 AND PLEC",
+    "SUBCELLULAR LOCATION"
+   ]
+  },
+  {
+   "referenceNumber": 16,
+   "citation": {
+    "id": "17545155",
+    "citationType": "journal article",
+    "authors": [
+     "Zimina E.P.",
+     "Fritsch A.",
+     "Schermer B.",
+     "Bakulina A.Y.",
+     "Bashkurov M.",
+     "Benzing T.",
+     "Bruckner-Tuderman L."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "17545155"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1074/jbc.m701937200"
+     }
+    ],
+    "title": "Extracellular phosphorylation of collagen XVII by ecto-casein kinase 2 inhibits ectodomain shedding.",
+    "publicationDate": "2007",
+    "journal": "J. Biol. Chem.",
+    "firstPage": "22737",
+    "lastPage": "22746",
+    "volume": "282"
+   },
+   "referencePositions": [
+    "PHOSPHORYLATION AT SER-544"
+   ]
+  },
+  {
+   "referenceNumber": 17,
+   "citation": {
+    "id": "21269460",
+    "citationType": "journal article",
+    "authors": [
+     "Burkard T.R.",
+     "Planyavsky M.",
+     "Kaupe I.",
+     "Breitwieser F.P.",
+     "Buerckstuemmer T.",
+     "Bennett K.L.",
+     "Superti-Furga G.",
+     "Colinge J."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "21269460"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1186/1752-0509-5-17"
+     }
+    ],
+    "title": "Initial characterization of the human central proteome.",
+    "publicationDate": "2011",
+    "journal": "BMC Syst. Biol.",
+    "firstPage": "17",
+    "lastPage": "17",
+    "volume": "5"
+   },
+   "referencePositions": [
+    "IDENTIFICATION BY MASS SPECTROMETRY [LARGE SCALE ANALYSIS]"
+   ]
+  },
+  {
+   "referenceNumber": 18,
+   "citation": {
+    "id": "25676728",
+    "citationType": "journal article",
+    "authors": [
+     "Jonsson F.",
+     "Bystroem B.",
+     "Davidson A.E.",
+     "Backman L.J.",
+     "Kellgren T.G.",
+     "Tuft S.J.",
+     "Koskela T.",
+     "Ryden P.",
+     "Sandgren O.",
+     "Danielson P.",
+     "Hardcastle A.J.",
+     "Golovleva I."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "25676728"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1002/humu.22764"
+     }
+    ],
+    "title": "Mutations in collagen, type XVII, alpha 1 (COL17A1) cause epithelial recurrent erosion dystrophy (ERED).",
+    "publicationDate": "2015",
+    "journal": "Hum. Mutat.",
+    "firstPage": "463",
+    "lastPage": "473",
+    "volume": "36"
+   },
+   "referencePositions": [
+    "TISSUE SPECIFICITY",
+    "INVOLVEMENT IN ERED",
+    "VARIANT ERED ILE-939"
+   ]
+  },
+  {
+   "referenceNumber": 19,
+   "citation": {
+    "id": "8669466",
+    "citationType": "journal article",
+    "authors": [
+     "McGrath J.A.",
+     "Gatalica B.",
+     "Li K.",
+     "Dunnill M.G.S.",
+     "McMillan J.R.",
+     "Christiano A.M.",
+     "Eady R.A.J.",
+     "Uitto J."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "8669466"
+     }
+    ],
+    "title": "Compound heterozygosity for a dominant glycine substitution and a recessive internal duplication mutation in the type XVII collagen gene results in junctional epidermolysis bullosa and abnormal dentition.",
+    "publicationDate": "1996",
+    "journal": "Am. J. Pathol.",
+    "firstPage": "1787",
+    "lastPage": "1796",
+    "volume": "148"
+   },
+   "referencePositions": [
+    "VARIANT JEB4 VAL-627"
+   ]
+  },
+  {
+   "referenceNumber": 20,
+   "citation": {
+    "id": "9199555",
+    "citationType": "journal article",
+    "authors": [
+     "Schumann H.",
+     "Hammami-Hauasli N.",
+     "Pulkkinen L.",
+     "Mauviel A.",
+     "Kuester W.",
+     "Luethi U.",
+     "Owaribe K.",
+     "Uitto J.",
+     "Bruckner-Tuderman L."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "9199555"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1086/515463"
+     }
+    ],
+    "title": "Three novel homozygous point mutations and a new polymorphism in the COL17A1 gene: relation to biological and clinical phenotypes of junctional epidermolysis bullosa.",
+    "publicationDate": "1997",
+    "journal": "Am. J. Hum. Genet.",
+    "firstPage": "1344",
+    "lastPage": "1353",
+    "volume": "60"
+   },
+   "referencePositions": [
+    "VARIANT JEB4 GLN-1303"
+   ]
+  },
+  {
+   "referenceNumber": 21,
+   "citation": {
+    "id": "10652291",
+    "citationType": "journal article",
+    "authors": [
+     "Tasanen K.",
+     "Eble J.A.",
+     "Aumailley M.",
+     "Schumann H.",
+     "Baetge J.",
+     "Tu H.",
+     "Bruckner P.",
+     "Bruckner-Tuderman L."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "10652291"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1074/jbc.275.5.3093"
+     }
+    ],
+    "title": "Collagen XVII is destabilized by a glycine substitution mutation in the cell adhesion domain Col15.",
+    "publicationDate": "2000",
+    "journal": "J. Biol. Chem.",
+    "firstPage": "3093",
+    "lastPage": "3099",
+    "volume": "275"
+   },
+   "referencePositions": [
+    "VARIANT JEB4 VAL-627"
+   ]
+  },
+  {
+   "referenceNumber": 22,
+   "citation": {
+    "id": "10951237",
+    "citationType": "journal article",
+    "authors": [
+     "Tasanen K.",
+     "Floeth M.",
+     "Schumann H.",
+     "Bruckner-Tuderman L."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "10951237"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1046/j.1523-1747.2000.00049.x"
+     }
+    ],
+    "title": "Hemizygosity for a glycine substitution in collagen XVII: unfolding and degradation of the ectodomain.",
+    "publicationDate": "2000",
+    "journal": "J. Invest. Dermatol.",
+    "firstPage": "207",
+    "lastPage": "212",
+    "volume": "115"
+   },
+   "referencePositions": [
+    "VARIANT JEB4 ASP-633"
+   ]
+  },
+  {
+   "referenceNumber": 23,
+   "citation": {
+    "id": "11912005",
+    "citationType": "journal article",
+    "authors": [
+     "Wu Y.",
+     "Li G.",
+     "Zhu X."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "11912005"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/s0923-1811(01)00163-3"
+     }
+    ],
+    "title": "A novel homozygous point mutation in the COL17A1 gene in a Chinese family with generalized atrophic benign epidermolysis bullosa.",
+    "publicationDate": "2002",
+    "journal": "J. Dermatol. Sci.",
+    "firstPage": "181",
+    "lastPage": "186",
+    "volume": "28"
+   },
+   "referencePositions": [
+    "VARIANT JEB4 CYS-265",
+    "VARIANT ILE-231"
+   ]
+  }
+ ],
+ "uniProtKBCrossReferences": [
+  {
+   "database": "EMBL",
+   "id": "M91669",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAA35605.1"
+    },
+    {
+     "key": "Status",
+     "value": "ALT_INIT"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "mRNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76604",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76565",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76566",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76567",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76568",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76569",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76570",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76571",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76572",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76573",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76574",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76575",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76576",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76577",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76578",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76579",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76580",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76581",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76582",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76583",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76584",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76585",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76586",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76587",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76588",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76589",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76590",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76591",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76592",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76593",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76594",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76595",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76596",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76597",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76598",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76599",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76600",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76601",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76602",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "U76603",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB51499.1"
+    },
+    {
+     "key": "Status",
+     "value": "JOINED"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "AL138761",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "-"
+    },
+    {
+     "key": "Status",
+     "value": "NOT_ANNOTATED_CDS"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "BC004478",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAH04478.1"
+    },
+    {
+     "key": "Status",
+     "value": "ALT_SEQ"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "mRNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "M63730",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAA51839.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "mRNA"
+    }
+   ]
+  },
+  {
+   "database": "CCDS",
+   "id": "CCDS7554.1",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ],
+   "isoformId": "Q9UMD9-1"
+  },
+  {
+   "database": "PIR",
+   "id": "I56325",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "A61262"
+    }
+   ]
+  },
+  {
+   "database": "RefSeq",
+   "id": "NP_000485.3",
+   "properties": [
+    {
+     "key": "NucleotideSequenceId",
+     "value": "NM_000494.4"
+    }
+   ],
+   "isoformId": "Q9UMD9-1"
+  },
+  {
+   "database": "PDB",
+   "id": "8IZS",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.53 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B/C/D/E/F=717-743"
+    }
+   ]
+  },
+  {
+   "database": "AlphaFoldDB",
+   "id": "Q9UMD9",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "SMR",
+   "id": "Q9UMD9",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "BioGRID",
+   "id": "107704",
+   "properties": [
+    {
+     "key": "Interactions",
+     "value": "41"
+    }
+   ]
+  },
+  {
+   "database": "ComplexPortal",
+   "id": "CPX-1758",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Collagen type XVII trimer"
+    }
+   ]
+  },
+  {
+   "database": "FunCoup",
+   "id": "Q9UMD9",
+   "properties": [
+    {
+     "key": "Number of interactors",
+     "value": "175"
+    }
+   ]
+  },
+  {
+   "database": "IntAct",
+   "id": "Q9UMD9",
+   "properties": [
+    {
+     "key": "Interactions",
+     "value": "13"
+    }
+   ]
+  },
+  {
+   "database": "NDEx",
+   "id": "IQUERY-CP-COL17A1",
+   "properties": [
+    {
+     "key": "Evidences",
+     "value": "1 NDEx IQuery Curated Pathway"
+    }
+   ]
+  },
+  {
+   "database": "STRING",
+   "id": "9606.ENSP00000497653",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Allergome",
+   "id": "8213",
+   "properties": [
+    {
+     "key": "AllergenName",
+     "value": "Hom s BP180"
+    }
+   ]
+  },
+  {
+   "database": "GlyCosmos",
+   "id": "Q9UMD9",
+   "properties": [
+    {
+     "key": "glycosylation",
+     "value": "8 sites, 2 glycans"
+    }
+   ]
+  },
+  {
+   "database": "GlyGen",
+   "id": "Q9UMD9",
+   "properties": [
+    {
+     "key": "glycosylation",
+     "value": "8 sites, 2 O-linked glycans (5 sites)"
+    }
+   ]
+  },
+  {
+   "database": "iPTMnet",
+   "id": "Q9UMD9",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PhosphoSitePlus",
+   "id": "Q9UMD9",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "SwissPalm",
+   "id": "Q9UMD9",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "BioMuta",
+   "id": "COL17A1",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "DMDM",
+   "id": "146345399",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "jPOST",
+   "id": "Q9UMD9",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "MassIVE",
+   "id": "Q9UMD9",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PaxDb",
+   "id": "9606-ENSP00000497653",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PeptideAtlas",
+   "id": "Q9UMD9",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "ProteomicsDB",
+   "id": "85187",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ],
+   "isoformId": "Q9UMD9-1"
+  },
+  {
+   "database": "ProteomicsDB",
+   "id": "85188",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ],
+   "isoformId": "Q9UMD9-2"
+  },
+  {
+   "database": "Antibodypedia",
+   "id": "18201",
+   "properties": [
+    {
+     "key": "antibodies",
+     "value": "284 antibodies from 33 providers"
+    }
+   ]
+  },
+  {
+   "database": "DNASU",
+   "id": "1308",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Ensembl",
+   "id": "ENST00000369733.8",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "ENSP00000358748.3"
+    },
+    {
+     "key": "GeneId",
+     "value": "ENSG00000065618.22"
+    }
+   ],
+   "isoformId": "Q9UMD9-2"
+  },
+  {
+   "database": "Ensembl",
+   "id": "ENST00000648076.2",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "ENSP00000497653.1"
+    },
+    {
+     "key": "GeneId",
+     "value": "ENSG00000065618.22"
+    }
+   ],
+   "isoformId": "Q9UMD9-1"
+  },
+  {
+   "database": "Ensembl",
+   "id": "ENST00000859462.1",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "ENSP00000529521.1"
+    },
+    {
+     "key": "GeneId",
+     "value": "ENSG00000065618.22"
+    }
+   ],
+   "isoformId": "Q9UMD9-1"
+  },
+  {
+   "database": "GeneID",
+   "id": "1308",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "KEGG",
+   "id": "hsa:1308",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "MANE-Select",
+   "id": "ENST00000648076.2",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "ENSP00000497653.1"
+    },
+    {
+     "key": "RefSeqNucleotideId",
+     "value": "NM_000494.4"
+    },
+    {
+     "key": "RefSeqProteinId",
+     "value": "NP_000485.3"
+    }
+   ]
+  },
+  {
+   "database": "UCSC",
+   "id": "uc001kxr.4",
+   "properties": [
+    {
+     "key": "OrganismName",
+     "value": "human"
+    }
+   ],
+   "isoformId": "Q9UMD9-1"
+  },
+  {
+   "database": "AGR",
+   "id": "HGNC:2194",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "ClinPGx",
+   "id": "PA26710",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "CTD",
+   "id": "1308",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "DisGeNET",
+   "id": "1308",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "GeneCards",
+   "id": "COL17A1",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "GeneReviews",
+   "id": "COL17A1",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "HGNC",
+   "id": "HGNC:2194",
+   "properties": [
+    {
+     "key": "GeneName",
+     "value": "COL17A1"
+    }
+   ]
+  },
+  {
+   "database": "HPA",
+   "id": "ENSG00000065618",
+   "properties": [
+    {
+     "key": "ExpressionPatterns",
+     "value": "Tissue enriched (skin)"
+    }
+   ]
+  },
+  {
+   "database": "MalaCards",
+   "id": "COL17A1",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "MIM",
+   "id": "113811",
+   "properties": [
+    {
+     "key": "Type",
+     "value": "gene"
+    }
+   ]
+  },
+  {
+   "database": "MIM",
+   "id": "122400",
+   "properties": [
+    {
+     "key": "Type",
+     "value": "phenotype"
+    }
+   ]
+  },
+  {
+   "database": "MIM",
+   "id": "619787",
+   "properties": [
+    {
+     "key": "Type",
+     "value": "phenotype"
+    }
+   ]
+  },
+  {
+   "database": "OpenTargets",
+   "id": "ENSG00000065618",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Orphanet",
+   "id": "293381",
+   "properties": [
+    {
+     "key": "Disease",
+     "value": "Epithelial recurrent erosion dystrophy"
+    }
+   ]
+  },
+  {
+   "database": "Orphanet",
+   "id": "79402",
+   "properties": [
+    {
+     "key": "Disease",
+     "value": "Intermediate generalized junctional epidermolysis bullosa"
+    }
+   ]
+  },
+  {
+   "database": "Orphanet",
+   "id": "79406",
+   "properties": [
+    {
+     "key": "Disease",
+     "value": "Late-onset junctional epidermolysis bullosa"
+    }
+   ]
+  },
+  {
+   "database": "Orphanet",
+   "id": "251393",
+   "properties": [
+    {
+     "key": "Disease",
+     "value": "Localized junctional epidermolysis bullosa"
+    }
+   ]
+  },
+  {
+   "database": "VEuPathDB",
+   "id": "HostDB:ENSG00000065618",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "eggNOG",
+   "id": "KOG3544",
+   "properties": [
+    {
+     "key": "ToxonomicScope",
+     "value": "Eukaryota"
+    }
+   ]
+  },
+  {
+   "database": "GeneTree",
+   "id": "ENSGT00940000161242",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "HOGENOM",
+   "id": "CLU_004285_0_0_1",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "InParanoid",
+   "id": "Q9UMD9",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "OMA",
+   "id": "AAEGDMY",
+   "properties": [
+    {
+     "key": "Fingerprint",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "OrthoDB",
+   "id": "9950082at2759",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PAN-GO",
+   "id": "Q9UMD9",
+   "properties": [
+    {
+     "key": "Number of GO annotations",
+     "value": "4 GO annotations based on evolutionary models"
+    }
+   ]
+  },
+  {
+   "database": "PhylomeDB",
+   "id": "Q9UMD9",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PathwayCommons",
+   "id": "Q9UMD9",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Reactome",
+   "id": "R-HSA-1442490",
+   "properties": [
+    {
+     "key": "PathwayName",
+     "value": "Collagen degradation"
+    }
+   ]
+  },
+  {
+   "database": "Reactome",
+   "id": "R-HSA-1650814",
+   "properties": [
+    {
+     "key": "PathwayName",
+     "value": "Collagen biosynthesis and modifying enzymes"
+    }
+   ]
+  },
+  {
+   "database": "Reactome",
+   "id": "R-HSA-198933",
+   "properties": [
+    {
+     "key": "PathwayName",
+     "value": "Immunoregulatory interactions between a Lymphoid and a non-Lymphoid cell"
+    }
+   ]
+  },
+  {
+   "database": "Reactome",
+   "id": "R-HSA-2022090",
+   "properties": [
+    {
+     "key": "PathwayName",
+     "value": "Assembly of collagen fibrils and other multimeric structures"
+    }
+   ]
+  },
+  {
+   "database": "Reactome",
+   "id": "R-HSA-446107",
+   "properties": [
+    {
+     "key": "PathwayName",
+     "value": "Type I hemidesmosome assembly"
+    }
+   ]
+  },
+  {
+   "database": "Reactome",
+   "id": "R-HSA-8948216",
+   "properties": [
+    {
+     "key": "PathwayName",
+     "value": "Collagen chain trimerization"
+    }
+   ]
+  },
+  {
+   "database": "Reactome",
+   "id": "R-HSA-9725554",
+   "properties": [
+    {
+     "key": "PathwayName",
+     "value": "Differentiation of Keratinocytes in Interfollicular Epidermis in Mammalian Skin"
+    }
+   ]
+  },
+  {
+   "database": "SignaLink",
+   "id": "Q9UMD9",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Agora",
+   "id": "ENSG00000065618",
+   "properties": [
+    {
+     "key": "NominatedTarget",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "BioGRID-ORCS",
+   "id": "1308",
+   "properties": [
+    {
+     "key": "hits",
+     "value": "25 hits in 1152 CRISPR screens"
+    }
+   ]
+  },
+  {
+   "database": "ChiTaRS",
+   "id": "COL17A1",
+   "properties": [
+    {
+     "key": "OrganismName",
+     "value": "human"
+    }
+   ]
+  },
+  {
+   "database": "GeneWiki",
+   "id": "Collagen,_type_XVII,_alpha_1",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "GenomeRNAi",
+   "id": "1308",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Pharos",
+   "id": "Q9UMD9",
+   "properties": [
+    {
+     "key": "DevelopmentLevel",
+     "value": "Tbio"
+    }
+   ]
+  },
+  {
+   "database": "PRO",
+   "id": "PR:Q9UMD9",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Proteomes",
+   "id": "UP000005640",
+   "properties": [
+    {
+     "key": "Component",
+     "value": "Chromosome 10"
+    }
+   ]
+  },
+  {
+   "database": "RNAct",
+   "id": "Q9UMD9",
+   "properties": [
+    {
+     "key": "moleculeType",
+     "value": "protein"
+    }
+   ]
+  },
+  {
+   "database": "Bgee",
+   "id": "ENSG00000065618",
+   "properties": [
+    {
+     "key": "ExpressionPatterns",
+     "value": "Expressed in skin of abdomen and 114 other cell types or tissues"
+    }
+   ]
+  },
+  {
+   "database": "ExpressionAtlas",
+   "id": "Q9UMD9",
+   "properties": [
+    {
+     "key": "ExpressionPatterns",
+     "value": "baseline and differential"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0005604",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "C:basement membrane"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IEA:UniProtKB-SubCell"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0005911",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "C:cell-cell junction"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "TAS:ProtInc"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000304",
+     "source": "PubMed",
+     "id": "9012408"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0030937",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "C:collagen type XVII trimer"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "TAS:GO_Central"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000304",
+     "source": "PubMed",
+     "id": "21421911"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0005788",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "C:endoplasmic reticulum lumen"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "TAS:Reactome"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0031012",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "C:extracellular matrix"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "HDA:BHF-UCL"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007005",
+     "source": "PubMed",
+     "id": "25037231"
+    },
+    {
+     "evidenceCode": "ECO:0007005",
+     "source": "PubMed",
+     "id": "28344315"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0005576",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "C:extracellular region"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "TAS:Reactome"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0030056",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "C:hemidesmosome"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:UniProtKB"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "12482924"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0005886",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "C:plasma membrane"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:HPA"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0030020",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:extracellular matrix structural constituent conferring tensile strength"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "HDA:BHF-UCL"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007005",
+     "source": "PubMed",
+     "id": "28344315"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0007160",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:cell-matrix adhesion"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "TAS:ProtInc"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000304",
+     "source": "PubMed",
+     "id": "9012408"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0008544",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:epidermis development"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "TAS:ProtInc"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000304",
+     "source": "PubMed",
+     "id": "9012408"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0030198",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:extracellular matrix organization"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IBA:GO_Central"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0031581",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:hemidesmosome assembly"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:UniProtKB"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "12482924"
+    }
+   ]
+  },
+  {
+   "database": "DisProt",
+   "id": "DP03307",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "FunFam",
+   "id": "1.20.5.320:FF:000009",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Collagen alpha-1(XVII) chain"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "FunFam",
+   "id": "1.20.5.320:FF:000003",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Collagen, type XVII, alpha 1"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "Gene3D",
+   "id": "1.20.5.320",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "6-Phosphogluconate Dehydrogenase, domain 3"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR008160",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Collagen"
+    }
+   ]
+  },
+  {
+   "database": "PANTHER",
+   "id": "PTHR24023",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "COLLAGEN ALPHA"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PANTHER",
+   "id": "PTHR24023:SF1082",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "COLLAGEN TRIPLE HELIX REPEAT"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "Pfam",
+   "id": "PF01391",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Collagen"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "3"
+    }
+   ]
+  }
+ ],
+ "sequence": {
+  "value": "MDVTKKNKRDGTEVTERIVTETVTTRLTSLPPKGGTSNGYAKTASLGGGSRLEKQSLTHGSSGYINSTGSTRGHASTSSYRRAHSPASTLPNSPGSTFERKTHVTRHAYEGSSSGNSSPEYPRKEFASSSTRGRSQTRESEIRVRLQSASPSTRWTELDDVKRLLKGSRSASVSPTRNSSNTLPIPKKGTVETKIVTASSQSVSGTYDATILDANLPSHVWSSTLPAGSSMGTYHNNMTTQSSSLLNTNAYSAGSVFGVPNNMASCSPTLHPGLSTSSSVFGMQNNLAPSLTTLSHGTTTTSTAYGVKKNMPQSPAAVNTGVSTSAACTTSVQSDDLLHKDCKFLILEKDNTPAKKEMELLIMTKDSGKVFTASPASIAATSFSEDTLKKEKQAAYNADSGLKAEANGDLKTVSTKGKTTTADIHSYGSSGGGGSGGGGGVGGAGGGPWGPAPAWCPCGSCCSWWKWLLGLLLTWLLLLGLLFGLIALAEEVRKLKARVDELERIRRSILPYGDSMDRIEKDRLQGMAPAAGADLDKIGLHSDSQEELWMFVRKKLMMEQENGNLRGSPGPKGDMGSPGPKGDRGFPGTPGIPGPLGHPGPQGPKGQKGSVGDPGMEGPMGQRGREGPMGPRGEAGPPGSGEKGERGAAGEPGPHGPPGVPGSVGPKGSSGSPGPQGPPGPVGLQGLRGEVGLPGVKGDKGPMGPPGPKGDQGEKGPRGLTGEPGMRGLPGAVGEPGAKGAMGPAGPDGHQGPRGEQGLTGMPGIRGPPGPSGDPGKPGLTGPQGPQGLPGTPGRPGIKGEPGAPGKIVTSEGSSMLTVPGPPGPPGAMGPPGPPGAPGPAGPAGLPGHQEVLNLQGPPGPPGPRGPPGPSIPGPPGPRGPPGEGLPGPPGPPGSFLSNSETFLSGPPGPPGPPGPKGDQGPPGPRGHQGEQGLPGFSTSGSSSFGLNLQGPPGPPGPQGPKGDKGDPGVPGALGIPSGPSEGGSSSTMYVSGPPGPPGPPGPPGSISSSGQEIQQYISEYMQSDSIRSYLSGVQGPPGPPGPPGPVTTITGETFDYSELASHVVSYLRTSGYGVSLFSSSISSEDILAVLQRDDVRQYLRQYLMGPRGPPGPPGASGDGSLLSLDYAELSSRILSYMSSSGISIGLPGPPGPPGLPGTSYEELLSLLRGSEFRGIVGPPGPPGPPGIPGNVWSSISVEDLSSYLHTAGLSFIPGPPGPPGPPGPRGPPGVSGALATYAAENSDSFRSELISYLTSPDVRSFIVGPPGPPGPQGPPGDSRLLSTDASHSRGSSSSSHSSSVRRGSSYSSSMSTGGGGAGSLGAGGAFGEAAGDRGPYGTDIGPGGGYGAAAEGGMYAGNGGLLGADFAGDLDYNELAVRVSESMQRQGLLQGMAYTVQGPPGQPGPQGPPGISKVFSAYSNVTADLMDFFQTYGAIQGPPGQKGEMGTPGPKGDRGPAGPPGHPGPPGPRGHKGEKGDKGDQVYAGRRRRRSIAVKP",
+  "length": 1497,
+  "molWeight": 150419,
+  "crc64": "E01027005F3AE843",
+  "md5": "25621D0D536EAE41001EA2DD8C875353"
+ },
+ "extraAttributes": {
+  "countByCommentType": {
+   "FUNCTION": 2,
+   "SUBUNIT": 1,
+   "INTERACTION": 6,
+   "SUBCELLULAR LOCATION": 3,
+   "ALTERNATIVE PRODUCTS": 2,
+   "TISSUE SPECIFICITY": 1,
+   "PTM": 3,
+   "DISEASE": 2,
+   "MISCELLANEOUS": 1,
+   "SEQUENCE CAUTION": 2
+  },
+  "countByFeatureType": {
+   "Chain": 3,
+   "Topological domain": 2,
+   "Transmembrane": 1,
+   "Region": 10,
+   "Compositional bias": 20,
+   "Modified residue": 1,
+   "Glycosylation": 1,
+   "Alternative sequence": 2,
+   "Natural variant": 12,
+   "Sequence conflict": 2,
+   "Helix": 1
+  },
+  "uniParcId": "UPI000006DB58"
+ }
+}

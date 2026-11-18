@@ -1,0 +1,5 @@
+accession,status,entry_id,model_version,model_created,uniprot_start,uniprot_end,n_residues,mean_plddt,frac_plddt_lt_50,frac_plddt_lt_70,frac_plddt_gt_90,files
+P00711,ok,AF-P00711-F1,6,2025-08-01T00:00:00Z,1,142,142,91.4415,0.007,0.1549,0.8239,"pdb,cif,pae.json"
+P00794,ok,AF-P00794-F1,6,2025-08-01T00:00:00Z,1,381,381,88.0842,0.063,0.1181,0.6745,"pdb,cif,pae.json"
+P31096,ok,AF-P31096-F1,6,2025-08-01T00:00:00Z,1,278,278,56.0088,0.241,0.9317,0.0,"pdb,cif,pae.json"
+P62694,ok,AF-P62694-F1,6,2025-08-01T00:00:00Z,1,513,513,93.2291,0.076,0.0897,0.8986,"pdb,cif,pae.json"

@@ -38,7 +38,8 @@ from sklearn.linear_model import RidgeCV
 from sklearn.preprocessing import StandardScaler
 from scipy import stats
 
-from corpus import drop_fragments
+from corpus import drop_fragments, food_subset, load_titres
+import uniprot_annotations
 from features import featurise
 from protein_cost import ProteinSpec, read_fasta, yield_analysis, load_model
 
@@ -54,8 +55,18 @@ FEATURES = [
 
 
 def sequence_library() -> dict[str, str]:
-    """All sequences available by accession: panel targets plus harvested ones."""
+    """All sequences available by accession, verified entries taking priority.
+
+    The 36 accessions in the corpus were re-fetched from the UniProtKB REST API
+    and checked against their CRC64 checksums, which establishes identity rather
+    than merely consistency of length and mass. Those sequences are used wherever
+    they exist; the GitHub-consensus harvest remains as the fallback for any
+    accession the REST pass did not cover.
+    """
     lib: dict[str, str] = {}
+    for acc, a in uniprot_annotations.load_all().items():
+        if a["sequence"]:
+            lib[acc] = a["sequence"]
     meta_path = REPO / "data" / "sequences" / "targets_metadata.json"
     if meta_path.exists():
         meta = {m["accession"]: m for m in json.loads(meta_path.read_text())}
@@ -63,7 +74,7 @@ def sequence_library() -> dict[str, str]:
                 REPO / "data" / "sequences" / "targets.fasta").items():
             parts = header.split("|")
             if len(parts) > 1:
-                lib[parts[1]] = seq
+                lib.setdefault(parts[1], seq)
     for path in sorted(HARVEST.glob("*.fasta")):
         acc = path.stem
         seqs = read_fasta(path)
@@ -84,7 +95,7 @@ def count_disulfides_unknown(seq: str) -> float:
 
 def build_dataset(annotations: dict[str, dict]) -> pd.DataFrame:
     lib = sequence_library()
-    titres = pd.read_csv(REPO / "data" / "literature" / "titers_host_panel.csv")
+    titres = load_titres()
     titres, dropped = drop_fragments(titres)
     print(f"excluded {len(dropped)} fragment/fusion records "
           f"(their titre is not the intact protein's)")
@@ -103,10 +114,13 @@ def build_dataset(annotations: dict[str, dict]) -> pd.DataFrame:
         acc = r.accession
         if acc not in cache:
             seq = re.sub(r"[^ACDEFGHIKLMNPQRSTVWY]", "", lib[acc].upper())
-            ann = annotations.get(acc, {})
+            ann = dict(annotations.get(acc, {}))
             feat = featurise(acc, seq, ann)
             ss = ann.get("disulfide_bonds")
-            ss = count_disulfides_unknown(seq) if ss is None else ss
+            ss_source = "uniprot_annotation"
+            if ss is None:
+                ss = count_disulfides_unknown(seq)
+                ss_source = "assumed_cys_over_2"
             spec = ProteinSpec(
                 name=f"p_{acc}", sequence=seq, accession=acc,
                 disulfide_bonds=int(ss), n_glycosylation_sites=None,
@@ -118,6 +132,9 @@ def build_dataset(annotations: dict[str, dict]) -> pd.DataFrame:
                 "length": len(seq),
                 "log_length": math.log10(len(seq)),
                 "disulfides_per_100aa": 100.0 * int(ss) / len(seq),
+                "disulfides_total_per_100aa": 100.0 * int(
+                    ann.get("disulfide_bonds_total", ss)) / len(seq),
+                "disulfide_source": ss_source,
                 "sequons_per_100aa": 100.0 * feat["n_sequons"] / len(seq),
                 "disorder_fraction": feat["disorder_fraction"],
                 "gravy": feat["gravy"],
@@ -134,13 +151,29 @@ def build_dataset(annotations: dict[str, dict]) -> pd.DataFrame:
                              or "bioreactor" in str(r.cultivation_mode).lower()),
             "year": r.year,
             "doi_or_url": r.doi_or_url,
+            "reference": r.reference,
+            "provenance": r.provenance,
+            "product_class": r.product_class,
+            "is_therapeutic": r.is_therapeutic,
         })
         rows.append(row)
     return pd.DataFrame(rows)
 
 
-def leave_one_protein_out(df: pd.DataFrame, features: list[str]) -> dict:
-    X = df[features + ["fed_batch"]].to_numpy(dtype=float)
+def leave_one_protein_out(df: pd.DataFrame, features: list[str],
+                          include_fed_batch: bool = True) -> dict:
+    """Leave-one-protein-out ridge, with the process term optional.
+
+    The process term matters more than it looks. A fed-batch bioreactor run of
+    the same construct beats a shake flask by one to two orders of magnitude, so
+    a model containing a fed-batch indicator can appear to predict titre while
+    knowing nothing about the protein. Any claim that sequence carries signal
+    therefore has to be made against two nested controls: a model with the
+    process term and nothing else, and a model with the sequence features and no
+    process term. Both are fitted in main() and reported beside the full model.
+    """
+    cols = list(features) + (["fed_batch"] if include_fed_batch else [])
+    X = df[cols].to_numpy(dtype=float)
     y = df["log_titer"].to_numpy(dtype=float)
     groups = df["accession"].to_numpy()
 
@@ -177,36 +210,86 @@ def leave_one_protein_out(df: pd.DataFrame, features: list[str]) -> dict:
         "skill_vs_baseline": 1.0 - rmse / rmse_base,
         "spearman_rho": float(rho), "spearman_p": float(p),
         "pearson_r": float(r), "pearson_p": float(pr),
-        "coefficients": {f: float(c) for f, c in zip(features + ["fed_batch"],
-                                                     full.coef_)},
+        "features": cols,
+        "coefficients": {f: float(c) for f, c in zip(cols, full.coef_)},
         "alpha": float(full.alpha_),
     }
 
 
-def univariate_table(df: pd.DataFrame, features: list[str]) -> pd.DataFrame:
-    rows = []
+def univariate_table(df: pd.DataFrame, features: list[str],
+                     n_boot: int = 10000, n_perm: int = 20000,
+                     seed: int = 11) -> pd.DataFrame:
+    """Per-protein association, with a bootstrap interval, a permutation p-value
+    and Benjamini-Hochberg control across the seven pre-specified features.
+
+    At n = 23 the asymptotic Spearman p-value is not trustworthy on its own, and
+    testing seven features without correction would be the classic way to
+    manufacture a finding. Both are therefore reported, and the corrected q-value
+    is what any claim in the text rests on.
+    """
+    rng = np.random.default_rng(seed)
     per_protein = df.groupby("accession").agg(
         log_titer=("log_titer", "max"),
         **{f: (f, "first") for f in features})
+    y = per_protein["log_titer"].to_numpy(dtype=float)
+    n = len(y)
+
+    rows = []
     for f in features:
-        rho, p = stats.spearmanr(per_protein[f], per_protein["log_titer"])
-        rows.append({"feature": f, "spearman_rho": rho, "p_value": p,
-                     "n_proteins": len(per_protein)})
-    return pd.DataFrame(rows).sort_values("p_value")
+        x = per_protein[f].to_numpy(dtype=float)
+        rho, p = stats.spearmanr(x, y)
+
+        boots = np.empty(n_boot)
+        for i in range(n_boot):
+            idx = rng.integers(0, n, n)
+            if len(np.unique(idx)) < 4:
+                boots[i] = np.nan
+                continue
+            boots[i] = stats.spearmanr(x[idx], y[idx]).statistic
+        boots = boots[~np.isnan(boots)]
+
+        perm = np.empty(n_perm)
+        for i in range(n_perm):
+            perm[i] = stats.spearmanr(x, rng.permutation(y)).statistic
+        p_perm = float((np.abs(perm) >= abs(rho)).mean())
+
+        rows.append({
+            "feature": f, "spearman_rho": float(rho), "p_value": float(p),
+            "p_permutation": p_perm,
+            "ci95_low": float(np.percentile(boots, 2.5)),
+            "ci95_high": float(np.percentile(boots, 97.5)),
+            "n_proteins": n,
+        })
+
+    out = pd.DataFrame(rows).sort_values("p_value").reset_index(drop=True)
+    # Benjamini-Hochberg across the pre-specified feature set
+    m = len(out)
+    out["q_value_bh"] = (out.p_value * m / (out.index + 1)).cummin().clip(upper=1.0)
+    out["bonferroni_threshold"] = 0.05 / m
+    return out
 
 
 def main() -> None:
-    ann_path = REPO / "data" / "sequences" / "targets_metadata.json"
+    # Annotations come from the verified UniProtKB feature tables for every
+    # accession the REST pass covered, which is all 36 in the corpus. The
+    # cysteines // 2 assumption survives only as a fallback, and the table
+    # records which of the two produced each number so the distinction is
+    # auditable. The assumption was wrong for 15 of the 36 accessions.
     annotations: dict[str, dict] = {}
+    for acc, a in uniprot_annotations.load_all().items():
+        annotations[acc] = {
+            "disulfide_bonds": a["disulfide_bonds"],
+            "disulfide_bonds_total": a["disulfide_bonds_total"],
+            "n_glyc_sites_annotated": a["n_glyc_sites_annotated"],
+            "phosphoserines": a["phosphoserines"],
+            "haem_per_chain": a["haem_per_chain"],
+            "category": "",
+        }
+    ann_path = REPO / "data" / "sequences" / "targets_metadata.json"
     if ann_path.exists():
         for m in json.loads(ann_path.read_text()):
-            annotations[m["accession"]] = {
-                "disulfide_bonds": m["disulfide_bonds"],
-                "n_glyc_sites_annotated": m["n_glyc_sites_annotated"],
-                "phosphoserines": m["phosphoserines"],
-                "haem_per_chain": m["haem_per_chain"],
-                "category": m["category"],
-            }
+            annotations.setdefault(m["accession"], {}).setdefault(
+                "category", m["category"])
 
     df = build_dataset(annotations)
     TABLES.mkdir(parents=True, exist_ok=True)
@@ -220,16 +303,43 @@ def main() -> None:
     print("\nper-protein univariate association with best log titre:")
     print(uni.to_string(index=False))
 
-    res = leave_one_protein_out(df, FEATURES)
-    (TABLES / "producibility_model.json").write_text(json.dumps(res, indent=2))
-    print("\nleave-one-protein-out ridge:")
-    for k, v in res.items():
-        if k != "coefficients":
-            print(f"  {k}: {v}")
-    if "coefficients" in res:
-        print("  coefficients (standardised):")
-        for f, c in sorted(res["coefficients"].items(), key=lambda kv: -abs(kv[1])):
+    models = {
+        "sequence_plus_process": leave_one_protein_out(df, FEATURES),
+        "process_only": leave_one_protein_out(df, [], True),
+        "sequence_only": leave_one_protein_out(df, FEATURES, False),
+    }
+    (TABLES / "producibility_model.json").write_text(json.dumps(models, indent=2))
+    for name, res in models.items():
+        print(f"\nleave-one-protein-out ridge [{name}]:")
+        for k, v in res.items():
+            if k not in ("coefficients", "features"):
+                print(f"  {k}: {v}")
+        for f, c in sorted(res.get("coefficients", {}).items(),
+                           key=lambda kv: -abs(kv[1])):
             print(f"    {f:<24}{c:+.3f}")
+
+    # The food subset. A human therapeutic carries development spend a food
+    # protein cannot justify, so pooling the two confounds difficulty with
+    # effort. The corpus flags each row; the positive result from the earlier,
+    # smaller corpus is refitted here before anything is attributed to it.
+    food = food_subset(df)
+    print(f"\nfood and food-adjacent subset: {len(food)} rows, "
+          f"{food.accession.nunique()} proteins "
+          f"(excluded {len(df) - len(food)} human-therapeutic rows)")
+    if food.accession.nunique() >= 8:
+        uni_food = univariate_table(food, FEATURES)
+        uni_food.to_csv(TABLES / "producibility_univariate_food.csv", index=False)
+        print(uni_food.to_string(index=False))
+        food_models = {
+            "sequence_plus_process": leave_one_protein_out(food, FEATURES),
+            "process_only": leave_one_protein_out(food, [], True),
+        }
+        (TABLES / "producibility_model_food.json").write_text(
+            json.dumps(food_models, indent=2))
+        for name, res in food_models.items():
+            print(f"\nfood subset ridge [{name}]: "
+                  f"skill {res.get('skill_vs_baseline')}, "
+                  f"rho {res.get('spearman_rho')}, p {res.get('spearman_p')}")
 
 
 if __name__ == "__main__":

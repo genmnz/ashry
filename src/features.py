@@ -94,6 +94,10 @@ def featurise(name: str, seq: str, annotation: dict | None = None) -> dict:
     annotation = annotation or {}
     pa = ProteinAnalysis(seq)
     prof = disorder_profile(seq)
+    # always compute the transparent fallback too, so both are on the record
+    wfi_all = window_fold_index(seq)
+    foldindex_fraction = sum(1 for v in wfi_all if v < 0) / len(wfi_all)
+    foldindex_longest = longest_run([v < 0 for v in wfi_all])
     if prof is not None:
         disorder_frac = sum(1 for v in prof if v >= 0.5) / len(prof)
         longest_idr = longest_run([v >= 0.5 for v in prof])
@@ -127,6 +131,8 @@ def featurise(name: str, seq: str, annotation: dict | None = None) -> dict:
         "disorder_mean": disorder_mean,
         "longest_disordered_run": longest_idr,
         "disorder_method": disorder_method,
+        "foldindex_disorder_fraction": foldindex_fraction,
+        "foldindex_longest_run": foldindex_longest,
         "cysteines": cys,
         "disulfide_bonds": ss,
         "free_cysteines": max(cys - 2 * ss, 0),

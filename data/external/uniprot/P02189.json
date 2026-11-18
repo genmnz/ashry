@@ -1,0 +1,1981 @@
+{
+ "entryType": "UniProtKB reviewed (Swiss-Prot)",
+ "primaryAccession": "P02189",
+ "uniProtkbId": "MYG_PIG",
+ "entryAudit": {
+  "firstPublicDate": "1986-07-21",
+  "lastAnnotationUpdateDate": "2026-11-04",
+  "lastSequenceUpdateDate": "2007-01-23",
+  "entryVersion": 137,
+  "sequenceVersion": 2
+ },
+ "annotationScore": 4.0,
+ "organism": {
+  "scientificName": "Sus scrofa",
+  "commonName": "Pig",
+  "taxonId": 9823,
+  "lineage": [
+   "Eukaryota",
+   "Metazoa",
+   "Chordata",
+   "Craniata",
+   "Vertebrata",
+   "Euteleostomi",
+   "Mammalia",
+   "Eutheria",
+   "Laurasiatheria",
+   "Artiodactyla",
+   "Suina",
+   "Suidae",
+   "Sus"
+  ]
+ },
+ "proteinExistence": "1: Evidence at protein level",
+ "proteinDescription": {
+  "recommendedName": {
+   "fullName": {
+    "value": "Myoglobin"
+   }
+  },
+  "alternativeNames": [
+   {
+    "fullName": {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000250",
+       "source": "UniProtKB",
+       "id": "P02144"
+      }
+     ],
+     "value": "Nitrite reductase MB"
+    },
+    "ecNumbers": [
+     {
+      "evidences": [
+       {
+        "evidenceCode": "ECO:0000250",
+        "source": "UniProtKB",
+        "id": "P02144"
+       }
+      ],
+      "value": "1.7.-.-"
+     }
+    ]
+   },
+   {
+    "fullName": {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000250",
+       "source": "UniProtKB",
+       "id": "P02144"
+      }
+     ],
+     "value": "Pseudoperoxidase MB"
+    },
+    "ecNumbers": [
+     {
+      "evidences": [
+       {
+        "evidenceCode": "ECO:0000250",
+        "source": "UniProtKB",
+        "id": "P02144"
+       }
+      ],
+      "value": "1.11.1.-"
+     }
+    ]
+   }
+  ]
+ },
+ "genes": [
+  {
+   "geneName": {
+    "value": "MB"
+   }
+  }
+ ],
+ "comments": [
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000250",
+       "source": "UniProtKB",
+       "id": "P02144"
+      }
+     ],
+     "value": "Monomeric heme protein which primary function is to store oxygen and facilitate its diffusion within muscle tissues. Reversibly binds oxygen through a pentacoordinated heme iron and enables its timely and efficient release as needed during periods of heightened demand. Depending on the oxidative conditions of tissues and cells, and in addition to its ability to bind oxygen, it also has a nitrite reductase activity whereby it regulates the production of bioactive nitric oxide. Under stress conditions, like hypoxia and anoxia, it also protects cells against reactive oxygen species thanks to its pseudoperoxidase activity"
+    }
+   ],
+   "commentType": "FUNCTION"
+  },
+  {
+   "commentType": "CATALYTIC ACTIVITY",
+   "reaction": {
+    "name": "Fe(III)-heme b-[protein] + nitric oxide + H2O = Fe(II)-heme b-[protein] + nitrite + 2 H(+)",
+    "reactionCrossReferences": [
+     {
+      "database": "Rhea",
+      "id": "RHEA:77711"
+     },
+     {
+      "database": "Rhea",
+      "id": "RHEA-COMP:18975"
+     },
+     {
+      "database": "Rhea",
+      "id": "RHEA-COMP:18976"
+     },
+     {
+      "database": "ChEBI",
+      "id": "CHEBI:15377"
+     },
+     {
+      "database": "ChEBI",
+      "id": "CHEBI:15378"
+     },
+     {
+      "database": "ChEBI",
+      "id": "CHEBI:16301"
+     },
+     {
+      "database": "ChEBI",
+      "id": "CHEBI:16480"
+     },
+     {
+      "database": "ChEBI",
+      "id": "CHEBI:55376"
+     },
+     {
+      "database": "ChEBI",
+      "id": "CHEBI:60344"
+     }
+    ],
+    "evidences": [
+     {
+      "evidenceCode": "ECO:0000250",
+      "source": "UniProtKB",
+      "id": "P02144"
+     }
+    ]
+   },
+   "physiologicalReactions": [
+    {
+     "directionType": "right-to-left",
+     "reactionCrossReference": {
+      "database": "Rhea",
+      "id": "RHEA:77713"
+     },
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000250",
+       "source": "UniProtKB",
+       "id": "P02144"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "commentType": "CATALYTIC ACTIVITY",
+   "reaction": {
+    "name": "AH2 + H2O2 = A + 2 H2O",
+    "reactionCrossReferences": [
+     {
+      "database": "Rhea",
+      "id": "RHEA:30275"
+     },
+     {
+      "database": "ChEBI",
+      "id": "CHEBI:13193"
+     },
+     {
+      "database": "ChEBI",
+      "id": "CHEBI:15377"
+     },
+     {
+      "database": "ChEBI",
+      "id": "CHEBI:16240"
+     },
+     {
+      "database": "ChEBI",
+      "id": "CHEBI:17499"
+     }
+    ],
+    "evidences": [
+     {
+      "evidenceCode": "ECO:0000250",
+      "source": "UniProtKB",
+      "id": "P02144"
+     }
+    ]
+   }
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000250",
+       "source": "UniProtKB",
+       "id": "P02185"
+      }
+     ],
+     "value": "Monomeric"
+    }
+   ],
+   "commentType": "SUBUNIT"
+  },
+  {
+   "commentType": "SUBCELLULAR LOCATION",
+   "subcellularLocations": [
+    {
+     "location": {
+      "evidences": [
+       {
+        "evidenceCode": "ECO:0000250",
+        "source": "UniProtKB",
+        "id": "P02144"
+       }
+      ],
+      "value": "Cytoplasm, sarcoplasm",
+      "id": "SL-0311"
+     }
+    }
+   ]
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000255",
+       "source": "PROSITE-ProRule",
+       "id": "PRU00238"
+      }
+     ],
+     "value": "Belongs to the globin family"
+    }
+   ],
+   "commentType": "SIMILARITY"
+  }
+ ],
+ "features": [
+  {
+   "type": "Initiator methionine",
+   "location": {
+    "start": {
+     "value": 1,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 1,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Removed",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "952959"
+    }
+   ]
+  },
+  {
+   "type": "Chain",
+   "location": {
+    "start": {
+     "value": 2,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 154,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Myoglobin",
+   "featureId": "PRO_0000053336"
+  },
+  {
+   "type": "Domain",
+   "location": {
+    "start": {
+     "value": 2,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 148,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Globin",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000255",
+     "source": "PROSITE-ProRule",
+     "id": "PRU00238"
+    }
+   ]
+  },
+  {
+   "type": "Binding site",
+   "location": {
+    "start": {
+     "value": 65,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 65,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "featureCrossReferences": [
+    {
+     "database": "ChEBI",
+     "id": "CHEBI:16301"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "P68082"
+    }
+   ],
+   "ligand": {
+    "name": "nitrite",
+    "id": "ChEBI:CHEBI:16301"
+   }
+  },
+  {
+   "type": "Binding site",
+   "location": {
+    "start": {
+     "value": 65,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 65,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "featureCrossReferences": [
+    {
+     "database": "ChEBI",
+     "id": "CHEBI:15379"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000255",
+     "source": "PROSITE-ProRule",
+     "id": "PRU00238"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9843395"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1MNO"
+    }
+   ],
+   "ligand": {
+    "name": "O2",
+    "id": "ChEBI:CHEBI:15379"
+   }
+  },
+  {
+   "type": "Binding site",
+   "location": {
+    "start": {
+     "value": 94,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 94,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "proximal binding residue",
+   "featureCrossReferences": [
+    {
+     "database": "ChEBI",
+     "id": "CHEBI:60344"
+    },
+    {
+     "database": "ChEBI",
+     "id": "CHEBI:18248"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "2383370"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "9843395"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1M6C"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1M6M"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1MDN"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1MNH"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1MNI"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1MNJ"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1MNK"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1MNO"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1MWC"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1MWD"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1MYG"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1MYH"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1MYI"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1MYJ"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1PMB"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1YCA"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1YCB"
+    }
+   ],
+   "ligand": {
+    "name": "heme b",
+    "id": "ChEBI:CHEBI:60344"
+   },
+   "ligandPart": {
+    "name": "Fe",
+    "id": "ChEBI:CHEBI:18248"
+   }
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 4,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 4,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "Q9QZ76"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 68,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 68,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphothreonine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "P04247"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 5,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 19,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1MWC"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 22,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 36,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1MWC"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 38,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 41,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1MWC"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 45,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 47,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1MWC"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 53,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 58,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1MWC"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 60,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 77,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1MWC"
+    }
+   ]
+  },
+  {
+   "type": "Turn",
+   "location": {
+    "start": {
+     "value": 78,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 81,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1MWC"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 84,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 95,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1MWC"
+    }
+   ]
+  },
+  {
+   "type": "Turn",
+   "location": {
+    "start": {
+     "value": 96,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 98,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1M6M"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 102,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 119,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1MWC"
+    }
+   ]
+  },
+  {
+   "type": "Turn",
+   "location": {
+    "start": {
+     "value": 121,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 123,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1MWC"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 126,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 149,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1MWC"
+    }
+   ]
+  }
+ ],
+ "keywords": [
+  {
+   "id": "KW-0002",
+   "category": "Technical term",
+   "name": "3D-structure"
+  },
+  {
+   "id": "KW-0963",
+   "category": "Cellular component",
+   "name": "Cytoplasm"
+  },
+  {
+   "id": "KW-0903",
+   "category": "Technical term",
+   "name": "Direct protein sequencing"
+  },
+  {
+   "id": "KW-0349",
+   "category": "Ligand",
+   "name": "Heme"
+  },
+  {
+   "id": "KW-0408",
+   "category": "Ligand",
+   "name": "Iron"
+  },
+  {
+   "id": "KW-0479",
+   "category": "Ligand",
+   "name": "Metal-binding"
+  },
+  {
+   "id": "KW-0514",
+   "category": "Molecular function",
+   "name": "Muscle protein"
+  },
+  {
+   "id": "KW-0560",
+   "category": "Molecular function",
+   "name": "Oxidoreductase"
+  },
+  {
+   "id": "KW-0561",
+   "category": "Biological process",
+   "name": "Oxygen transport"
+  },
+  {
+   "id": "KW-0597",
+   "category": "PTM",
+   "name": "Phosphoprotein"
+  },
+  {
+   "id": "KW-1185",
+   "category": "Technical term",
+   "name": "Reference proteome"
+  },
+  {
+   "id": "KW-0813",
+   "category": "Biological process",
+   "name": "Transport"
+  }
+ ],
+ "references": [
+  {
+   "referenceNumber": 1,
+   "citation": {
+    "id": "3005120",
+    "citationType": "journal article",
+    "authors": [
+     "Akaboshi E."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "3005120"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/0378-1119(85)90033-2"
+     }
+    ],
+    "title": "Cloning and sequence analysis of porcine myoglobin cDNA.",
+    "publicationDate": "1985",
+    "journal": "Gene",
+    "firstPage": "137",
+    "lastPage": "140",
+    "volume": "40"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [MRNA]"
+   ]
+  },
+  {
+   "referenceNumber": 2,
+   "citation": {
+    "id": "952959",
+    "citationType": "journal article",
+    "authors": [
+     "Rousseaux J.",
+     "Dautrevaux M.",
+     "Han K."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "952959"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/0005-2795(76)90160-4"
+     }
+    ],
+    "title": "Comparison of the amino acid sequence of pig heart myoglobin with other ungulate myoglobins.",
+    "publicationDate": "1976",
+    "journal": "Biochim. Biophys. Acta",
+    "firstPage": "55",
+    "lastPage": "62",
+    "volume": "439"
+   },
+   "referencePositions": [
+    "PROTEIN SEQUENCE OF 2-154"
+   ]
+  },
+  {
+   "referenceNumber": 3,
+   "citation": {
+    "id": "2383370",
+    "citationType": "journal article",
+    "authors": [
+     "Smerdon S.J.",
+     "Oldfield T.J.",
+     "Dodson E.J.",
+     "Dodson G.G.",
+     "Hubbard R.E.",
+     "Wilkinson A.J."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "2383370"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1107/s0108768189012450"
+     }
+    ],
+    "title": "Determination of the crystal structure of recombinant pig myoglobin by molecular replacement and its refinement.",
+    "publicationDate": "1990",
+    "journal": "Acta Crystallogr. B",
+    "firstPage": "370",
+    "lastPage": "377",
+    "volume": "46"
+   },
+   "referencePositions": [
+    "X-RAY CRYSTALLOGRAPHY IN COMPLEX WITH HEME"
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1PMB"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 4,
+   "citation": {
+    "id": "9843395",
+    "citationType": "journal article",
+    "authors": [
+     "Krzywda S.",
+     "Murshudov G.N.",
+     "Brzozowski A.M.",
+     "Jaskolski M.",
+     "Scott E.E.",
+     "Klizas S.A.",
+     "Gibson Q.H.",
+     "Olson J.S.",
+     "Wilkinson A.J."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "9843395"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1021/bi9812470"
+     }
+    ],
+    "title": "Stabilizing bound O2 in myoglobin by valine68 (E11) to asparagine substitution.",
+    "publicationDate": "1998",
+    "journal": "Biochemistry",
+    "firstPage": "15896",
+    "lastPage": "15907",
+    "volume": "37"
+   },
+   "referencePositions": [
+    "X-RAY CRYSTALLOGRAPHY OF OXYMYOGLOBIN"
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1M6C"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1M6M"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1MDN"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1MNO"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1MWC"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "1MWD"
+    }
+   ]
+  }
+ ],
+ "uniProtKBCrossReferences": [
+  {
+   "database": "EMBL",
+   "id": "M14433",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAA31073.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "mRNA"
+    }
+   ]
+  },
+  {
+   "database": "PIR",
+   "id": "A23988",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "MYPG"
+    }
+   ]
+  },
+  {
+   "database": "RefSeq",
+   "id": "NP_999401.1",
+   "properties": [
+    {
+     "key": "NucleotideSequenceId",
+     "value": "NM_214236.1"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1M6C",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.90 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=2-154"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1M6M",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.80 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=2-154"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1MDN",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.98 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=2-154"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1MNH",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.30 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=2-154"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1MNI",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.07 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=2-154"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1MNJ",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.20 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=2-154"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1MNK",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.20 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=2-154"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1MNO",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.95 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=2-154"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1MWC",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.70 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=2-154"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1MWD",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.80 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=2-154"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1MYG",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.75 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=2-154"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1MYH",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.90 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=2-154"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1MYI",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.00 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=2-154"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1MYJ",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.90 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=2-154"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1PMB",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.50 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=2-154"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1YCA",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.90 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=2-154"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1YCB",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.10 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=2-154"
+    }
+   ]
+  },
+  {
+   "database": "AlphaFoldDB",
+   "id": "P02189",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "SMR",
+   "id": "P02189",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "FunCoup",
+   "id": "P02189",
+   "properties": [
+    {
+     "key": "Number of interactors",
+     "value": "1129"
+    }
+   ]
+  },
+  {
+   "database": "CarbonylDB",
+   "id": "P02189",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PeptideAtlas",
+   "id": "P02189",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Ensembl",
+   "id": "ENSSSCT00005025786.1",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "ENSSSCP00005015616.1"
+    },
+    {
+     "key": "GeneId",
+     "value": "ENSSSCG00005016417.1"
+    }
+   ]
+  },
+  {
+   "database": "Ensembl",
+   "id": "ENSSSCT00005025817.1",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "ENSSSCP00005015636.1"
+    },
+    {
+     "key": "GeneId",
+     "value": "ENSSSCG00005016417.1"
+    }
+   ]
+  },
+  {
+   "database": "Ensembl",
+   "id": "ENSSSCT00005025838.1",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "ENSSSCP00005015652.1"
+    },
+    {
+     "key": "GeneId",
+     "value": "ENSSSCG00005016417.1"
+    }
+   ]
+  },
+  {
+   "database": "Ensembl",
+   "id": "ENSSSCT00030031982.1",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "ENSSSCP00030014409.1"
+    },
+    {
+     "key": "GeneId",
+     "value": "ENSSSCG00030023027.1"
+    }
+   ]
+  },
+  {
+   "database": "Ensembl",
+   "id": "ENSSSCT00040092074.1",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "ENSSSCP00040040622.1"
+    },
+    {
+     "key": "GeneId",
+     "value": "ENSSSCG00040067247.1"
+    }
+   ]
+  },
+  {
+   "database": "Ensembl",
+   "id": "ENSSSCT00045029098.1",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "ENSSSCP00045020148.1"
+    },
+    {
+     "key": "GeneId",
+     "value": "ENSSSCG00045017115.1"
+    }
+   ]
+  },
+  {
+   "database": "Ensembl",
+   "id": "ENSSSCT00045029138.1",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "ENSSSCP00045020182.1"
+    },
+    {
+     "key": "GeneId",
+     "value": "ENSSSCG00045017115.1"
+    }
+   ]
+  },
+  {
+   "database": "Ensembl",
+   "id": "ENSSSCT00045029160.1",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "ENSSSCP00045020198.1"
+    },
+    {
+     "key": "GeneId",
+     "value": "ENSSSCG00045017115.1"
+    }
+   ]
+  },
+  {
+   "database": "Ensembl",
+   "id": "ENSSSCT00050074045.1",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "ENSSSCP00050031909.1"
+    },
+    {
+     "key": "GeneId",
+     "value": "ENSSSCG00050054308.1"
+    }
+   ]
+  },
+  {
+   "database": "Ensembl",
+   "id": "ENSSSCT00070018337.1",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "ENSSSCP00070015233.1"
+    },
+    {
+     "key": "GeneId",
+     "value": "ENSSSCG00070009373.1"
+    }
+   ]
+  },
+  {
+   "database": "Ensembl",
+   "id": "ENSSSCT00070018457.1",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "ENSSSCP00070015335.1"
+    },
+    {
+     "key": "GeneId",
+     "value": "ENSSSCG00070009373.1"
+    }
+   ]
+  },
+  {
+   "database": "Ensembl",
+   "id": "ENSSSCT00085043514",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "ENSSSCP00085030486"
+    },
+    {
+     "key": "GeneId",
+     "value": "ENSSSCG00085022656"
+    }
+   ]
+  },
+  {
+   "database": "GeneID",
+   "id": "397467",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "CTD",
+   "id": "4151",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "InParanoid",
+   "id": "P02189",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Reactome",
+   "id": "R-SSC-8981607",
+   "properties": [
+    {
+     "key": "PathwayName",
+     "value": "Intracellular oxygen transport"
+    }
+   ]
+  },
+  {
+   "database": "EvolutionaryTrace",
+   "id": "P02189",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Proteomes",
+   "id": "UP000008227",
+   "properties": [
+    {
+     "key": "Component",
+     "value": "Unplaced"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0016528",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "C:sarcoplasm"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "ISS:UniProtKB"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0020037",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:heme binding"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IEA:InterPro"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0098809",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:nitrite reductase activity"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "ISS:UniProtKB"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0019825",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:oxygen binding"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IEA:InterPro"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0005344",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:oxygen carrier activity"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "ISS:UniProtKB"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0004601",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:peroxidase activity"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "ISS:UniProtKB"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0015671",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:oxygen transport"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IBA:GO_Central"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0019430",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:removal of superoxide radicals"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "ISS:UniProtKB"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0003009",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:skeletal muscle contraction"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IBA:GO_Central"
+    }
+   ]
+  },
+  {
+   "database": "CDD",
+   "id": "cd08926",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Mb"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "Gene3D",
+   "id": "6.10.140.2100",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "-"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "Gene3D",
+   "id": "6.10.140.2110",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "-"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR000971",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Globin"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR009050",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Globin-like_sf"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR002335",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Myoglobin"
+    }
+   ]
+  },
+  {
+   "database": "PANTHER",
+   "id": "PTHR47132",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "MYOGLOBIN"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PANTHER",
+   "id": "PTHR47132:SF1",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "MYOGLOBIN"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "Pfam",
+   "id": "PF00042",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Globin"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PRINTS",
+   "id": "PR00613",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "MYOGLOBIN"
+    }
+   ]
+  },
+  {
+   "database": "SUPFAM",
+   "id": "SSF46458",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Globin-like"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PROSITE",
+   "id": "PS01033",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "GLOBIN"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  }
+ ],
+ "sequence": {
+  "value": "MGLSDGEWQLVLNVWGKVEADVAGHGQEVLIRLFKGHPETLEKFDKFKHLKSEDEMKASEDLKKHGNTVLTALGGILKKKGHHEAELTPLAQSHATKHKIPVKYLEFISEAIIQVLQSKHPGDFGADAQGAMSKALELFRNDMAAKYKELGFQG",
+  "length": 154,
+  "molWeight": 17085,
+  "crc64": "1CF92ACD400A76D0",
+  "md5": "941C1C169778E49F48A790C535E52737"
+ },
+ "extraAttributes": {
+  "countByCommentType": {
+   "FUNCTION": 1,
+   "CATALYTIC ACTIVITY": 2,
+   "SUBUNIT": 1,
+   "SUBCELLULAR LOCATION": 1,
+   "SIMILARITY": 1
+  },
+  "countByFeatureType": {
+   "Initiator methionine": 1,
+   "Chain": 1,
+   "Domain": 1,
+   "Binding site": 3,
+   "Modified residue": 2,
+   "Helix": 9,
+   "Turn": 3
+  },
+  "uniParcId": "UPI000016C6D4"
+ }
+}

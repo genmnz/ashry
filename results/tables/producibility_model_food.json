@@ -1,0 +1,54 @@
+{
+  "sequence_plus_process": {
+    "status": "ok",
+    "n_rows": 32,
+    "n_proteins": 14,
+    "loo_rmse_log10": 0.9616428135260356,
+    "baseline_rmse_log10": 0.8633718282580152,
+    "skill_vs_baseline": -0.11382232087222177,
+    "spearman_rho": 0.40496786112873573,
+    "spearman_p": 0.02149391163664876,
+    "pearson_r": 0.354562600519559,
+    "pearson_p": 0.04646656866071583,
+    "features": [
+      "log_length",
+      "disulfides_per_100aa",
+      "sequons_per_100aa",
+      "disorder_fraction",
+      "gravy",
+      "abs_net_charge",
+      "theoretical_yield",
+      "fed_batch"
+    ],
+    "coefficients": {
+      "log_length": 0.057362650703086576,
+      "disulfides_per_100aa": -0.38918057003388684,
+      "sequons_per_100aa": -0.13697289804773488,
+      "disorder_fraction": -0.11881414221257916,
+      "gravy": 0.11571814226898684,
+      "abs_net_charge": -0.070167757573982,
+      "theoretical_yield": 0.34920789338776836,
+      "fed_batch": 0.4764470138048303
+    },
+    "alpha": 3.856620421163472
+  },
+  "process_only": {
+    "status": "ok",
+    "n_rows": 32,
+    "n_proteins": 14,
+    "loo_rmse_log10": 0.7721730801397256,
+    "baseline_rmse_log10": 0.8633718282580152,
+    "skill_vs_baseline": 0.10563090563459432,
+    "spearman_rho": 0.212966749857891,
+    "spearman_p": 0.24189000503765962,
+    "pearson_r": 0.4625974961087041,
+    "pearson_p": 0.007678976366682655,
+    "features": [
+      "fed_batch"
+    ],
+    "coefficients": {
+      "fed_batch": 0.49647408409061927
+    },
+    "alpha": 1.743328822199989
+  }
+}
