@@ -627,7 +627,7 @@ The best process in the entire corpus — a human-like collagen at 19.4 g L⁻¹
 
 At a loading of 150 g L⁻¹ the β-lactoglobulin result rises to 14.2% of ceiling and at 500 g L⁻¹ it falls to 4.3%, so the conclusion is not an artefact of the central loading assumption: no plausible loading brings any published process within a factor of seven of its ceiling.
 
-### 5.2.3 Is carbon the right bound? The oxygen check
+### 5.2.3 Is carbon the right bound? The oxygen and nitrogen checks
 
 A comparison is only as good as its denominator. If real fermentations hit an oxygen-transfer wall long before they exhaust their carbon, then measuring titres against a carbon ceiling compares them against a bound that never binds, and the gap is partly an artefact.
 
@@ -642,7 +642,27 @@ That alternative is computable from numbers already in hand. The model reports o
 
 Carbon is the tighter bound in **all 36 protein-by-transfer-rate combinations**, and even at the lowest transfer rate the oxygen ceiling is 1.9-fold above the carbon ceiling. The calculation is deliberately generous to oxygen — it spends the entire oxygen budget on product and none on growth or maintenance, which no real process can do — so the conclusion is conservative in the right direction.
 
-The carbon ceiling is therefore the correct denominator, and the gaps in Table 5.1 are not an artefact of comparing against a bound that does not bind. Oxygen transfer certainly constrains real processes through growth and maintenance demand, which this calculation excludes; what it does not do is constrain them *more tightly than carbon* at the product level.
+Oxygen transfer certainly constrains real processes through growth and maintenance demand, which this calculation excludes; what it does not do is constrain them *more tightly than carbon* at the product level.
+
+**Nitrogen, however, does — in a batch.** The same calculation for nitrogen is less comfortable and is reported because of that. These proteins are 15.8–17.4% nitrogen by mass, so a medium supplying *N* grams of ammonium nitrogen per litre supports at most *N*/0.165 grams of protein:
+
+| Nitrogen supplied (g L⁻¹) | Nitrogen ceiling (g L⁻¹) | Binding bound |
+|---|---|---|
+| 2 | 12–13 | nitrogen |
+| 5 | 29–32 | nitrogen |
+| 10 | 58–63 | nitrogen |
+| 30 | 173–190 | nitrogen |
+| 60 | 345–380 | carbon |
+
+Nitrogen binds before carbon in 36 of 45 cases and stops binding only above about 30 g of nitrogen per litre, which is far more than any batch medium for this host contains. **A batch fermentation is nitrogen-limited long before it is carbon-limited.**
+
+Two things keep this from overturning Table 5.1, and one of them is a genuine qualification.
+
+The qualification first: *if* a process in the corpus were nitrogen-limited at, say, 5 g N L⁻¹, its ceiling would be about 31 g L⁻¹ rather than 229, and β-lactoglobulin's 13.88 g L⁻¹ would be 45% of it rather than 6.1%. That is a different picture, and a reader is entitled to it.
+
+What keeps the carbon bound the right one for these records is that every high-titre process in the corpus is **fed-batch**, and a fed-batch fermentation of this host titrates with ammonia or ammonium hydroxide for pH control throughout the run. Nitrogen is fed continuously and is not a fixed inventory, so it is not the operative bound for the processes being measured. The nitrogen ceiling is the bound for a *batch* process, and batch processes are not where any of these titres came from.
+
+And the central claim does not depend on the choice at all. Nitrogen content varies by only **1.10-fold** across the panel, and the carbon ceiling by 1.38-fold. Whichever bound is used, the ceiling is nearly the same for every protein while achievement varies 628-fold. The argument of §5.2.1 survives both substitutions, which is the strongest thing that can be said for it.
 
 ### 5.2.4 The ordering is not the expected one
 
@@ -1066,14 +1086,14 @@ Three ways, stated so that a reader can look for them.
 
 **If the disulfide association is a confound**, the mechanistic conclusion weakens. Disulfide-rich proteins in this corpus are also disproportionately human therapeutic proteins, which may have been produced under different standards and for different purposes than food enzymes. A larger corpus with a therapeutic-versus-food indicator would separate the two, and this is the first analysis to run on the merged corpus when it lands.
 
-**If the ceiling were not the right denominator** — for instance because real processes are oxygen-transfer-limited long before they are carbon-limited — the gap would be partly an artefact. This one has been checked and survives: §5.2.3 computes the oxygen-limited ceiling from the model's own oxygen demand of 9.4–10.2 mmol per gram of product and finds carbon to be the tighter bound in all 36 protein-by-transfer-rate combinations, with the tightest oxygen bound still 1.9-fold above the carbon bound. The check is generous to oxygen, so the conclusion is conservative. What remains unchecked is whether some third bound — nitrogen, phosphate, heat removal — binds before either, and a model-based scan of those would be a cheap extension.
+**If the ceiling were not the right denominator** — for instance because real processes are oxygen-transfer-limited long before they are carbon-limited — the gap would be partly an artefact. This one has been checked and survives: §5.2.3 computes the oxygen-limited ceiling from the model's own oxygen demand of 9.4–10.2 mmol per gram of product and finds carbon to be the tighter bound in all 36 protein-by-transfer-rate combinations, with the tightest oxygen bound still 1.9-fold above the carbon bound. The check is generous to oxygen, so the conclusion is conservative. Nitrogen is a different matter and is reported in full in §5.2.3: at any batch nitrogen loading a fermentation is nitrogen-limited well before it is carbon-limited, and only continuous ammonia feeding — which every fed-batch process in the corpus uses for pH control — removes that bound. Since nitrogen content varies by just 1.10-fold across the panel against 1.38-fold for the carbon ceiling, the central contrast is unaffected by the substitution, but the absolute fractions in Table 5.1 would change substantially for a batch process. Phosphate and heat removal remain unchecked.
 
 ## 9.5 What to do next, computationally
 
 In priority order:
 
 1. **Port the analysis to a proteome-constrained secretory model.** pcSecYeast already builds protein-specific secretion reactions with post-translational requirements and makes per-protein bottleneck calls. Running this panel through it would test Chapter 6's disulfide conclusion directly, with machinery rather than inference.
-2. **Scan the remaining candidate bounds** — nitrogen, phosphate and heat removal — as the oxygen bound has now been scanned and found not to bind (§5.2.3).
+2. **Scan the remaining candidate bounds** — phosphate and heat removal — as oxygen and nitrogen have now been scanned (§5.2.3).
 3. **Enlarge the corpus and re-run.** The merged database approaching 300 records, with resolved identifiers, roughly triples the sample and would let the disulfide association be tested properly, with multiple-testing control and a therapeutic-versus-food covariate.
 4. **Replace FoldIndex with a modern disorder predictor** and re-test the disorder null.
 5. **Rebuild the codon reference** from the coding sequences of the host's most highly expressed genes.

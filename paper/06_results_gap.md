@@ -58,7 +58,7 @@ The best process in the entire corpus — a human-like collagen at 19.4 g L⁻¹
 
 At a loading of 150 g L⁻¹ the β-lactoglobulin result rises to 14.2% of ceiling and at 500 g L⁻¹ it falls to 4.3%, so the conclusion is not an artefact of the central loading assumption: no plausible loading brings any published process within a factor of seven of its ceiling.
 
-### 5.2.3 Is carbon the right bound? The oxygen check
+### 5.2.3 Is carbon the right bound? The oxygen and nitrogen checks
 
 A comparison is only as good as its denominator. If real fermentations hit an oxygen-transfer wall long before they exhaust their carbon, then measuring titres against a carbon ceiling compares them against a bound that never binds, and the gap is partly an artefact.
 
@@ -73,7 +73,27 @@ That alternative is computable from numbers already in hand. The model reports o
 
 Carbon is the tighter bound in **all 36 protein-by-transfer-rate combinations**, and even at the lowest transfer rate the oxygen ceiling is 1.9-fold above the carbon ceiling. The calculation is deliberately generous to oxygen — it spends the entire oxygen budget on product and none on growth or maintenance, which no real process can do — so the conclusion is conservative in the right direction.
 
-The carbon ceiling is therefore the correct denominator, and the gaps in Table 5.1 are not an artefact of comparing against a bound that does not bind. Oxygen transfer certainly constrains real processes through growth and maintenance demand, which this calculation excludes; what it does not do is constrain them *more tightly than carbon* at the product level.
+Oxygen transfer certainly constrains real processes through growth and maintenance demand, which this calculation excludes; what it does not do is constrain them *more tightly than carbon* at the product level.
+
+**Nitrogen, however, does — in a batch.** The same calculation for nitrogen is less comfortable and is reported because of that. These proteins are 15.8–17.4% nitrogen by mass, so a medium supplying *N* grams of ammonium nitrogen per litre supports at most *N*/0.165 grams of protein:
+
+| Nitrogen supplied (g L⁻¹) | Nitrogen ceiling (g L⁻¹) | Binding bound |
+|---|---|---|
+| 2 | 12–13 | nitrogen |
+| 5 | 29–32 | nitrogen |
+| 10 | 58–63 | nitrogen |
+| 30 | 173–190 | nitrogen |
+| 60 | 345–380 | carbon |
+
+Nitrogen binds before carbon in 36 of 45 cases and stops binding only above about 30 g of nitrogen per litre, which is far more than any batch medium for this host contains. **A batch fermentation is nitrogen-limited long before it is carbon-limited.**
+
+Two things keep this from overturning Table 5.1, and one of them is a genuine qualification.
+
+The qualification first: *if* a process in the corpus were nitrogen-limited at, say, 5 g N L⁻¹, its ceiling would be about 31 g L⁻¹ rather than 229, and β-lactoglobulin's 13.88 g L⁻¹ would be 45% of it rather than 6.1%. That is a different picture, and a reader is entitled to it.
+
+What keeps the carbon bound the right one for these records is that every high-titre process in the corpus is **fed-batch**, and a fed-batch fermentation of this host titrates with ammonia or ammonium hydroxide for pH control throughout the run. Nitrogen is fed continuously and is not a fixed inventory, so it is not the operative bound for the processes being measured. The nitrogen ceiling is the bound for a *batch* process, and batch processes are not where any of these titres came from.
+
+And the central claim does not depend on the choice at all. Nitrogen content varies by only **1.10-fold** across the panel, and the carbon ceiling by 1.38-fold. Whichever bound is used, the ceiling is nearly the same for every protein while achievement varies 628-fold. The argument of §5.2.1 survives both substitutions, which is the strongest thing that can be said for it.
 
 ### 5.2.4 The ordering is not the expected one
 

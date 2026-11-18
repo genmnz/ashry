@@ -371,8 +371,8 @@ measurement</a>
 <li><a href="#the-headline-contrast" id="toc-the-headline-contrast">5.2.1 The headline contrast</a></li>
 <li><a href="#nobody-is-close-to-the-ceiling" id="toc-nobody-is-close-to-the-ceiling">5.2.2 Nobody is close to the
 ceiling</a></li>
-<li><a href="#is-carbon-the-right-bound-the-oxygen-check" id="toc-is-carbon-the-right-bound-the-oxygen-check">5.2.3 Is carbon the
-right bound? The oxygen check</a></li>
+<li><a href="#is-carbon-the-right-bound-the-oxygen-and-nitrogen-checks" id="toc-is-carbon-the-right-bound-the-oxygen-and-nitrogen-checks">5.2.3
+Is carbon the right bound? The oxygen and nitrogen checks</a></li>
 <li><a href="#the-ordering-is-not-the-expected-one" id="toc-the-ordering-is-not-the-expected-one">5.2.4 The ordering is not
 the expected one</a></li>
 </ul></li>
@@ -2240,8 +2240,8 @@ of ceiling and at 500 g L⁻¹ it falls to 4.3%, so the conclusion is not
 an artefact of the central loading assumption: no plausible loading
 brings any published process within a factor of seven of its
 ceiling.</p>
-<h3 id="is-carbon-the-right-bound-the-oxygen-check">5.2.3 Is carbon the
-right bound? The oxygen check</h3>
+<h3 id="is-carbon-the-right-bound-the-oxygen-and-nitrogen-checks">5.2.3
+Is carbon the right bound? The oxygen and nitrogen checks</h3>
 <p>A comparison is only as good as its denominator. If real
 fermentations hit an oxygen-transfer wall long before they exhaust their
 carbon, then measuring titres against a carbon ceiling compares them
@@ -2303,12 +2303,76 @@ The calculation is deliberately generous to oxygen — it spends the
 entire oxygen budget on product and none on growth or maintenance, which
 no real process can do — so the conclusion is conservative in the right
 direction.</p>
-<p>The carbon ceiling is therefore the correct denominator, and the gaps
-in Table 5.1 are not an artefact of comparing against a bound that does
-not bind. Oxygen transfer certainly constrains real processes through
-growth and maintenance demand, which this calculation excludes; what it
-does not do is constrain them <em>more tightly than carbon</em> at the
+<p>Oxygen transfer certainly constrains real processes through growth
+and maintenance demand, which this calculation excludes; what it does
+not do is constrain them <em>more tightly than carbon</em> at the
 product level.</p>
+<p><strong>Nitrogen, however, does — in a batch.</strong> The same
+calculation for nitrogen is less comfortable and is reported because of
+that. These proteins are 15.8–17.4% nitrogen by mass, so a medium
+supplying <em>N</em> grams of ammonium nitrogen per litre supports at
+most <em>N</em>/0.165 grams of protein:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Nitrogen supplied (g L⁻¹)</th>
+<th>Nitrogen ceiling (g L⁻¹)</th>
+<th>Binding bound</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2</td>
+<td>12–13</td>
+<td>nitrogen</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>29–32</td>
+<td>nitrogen</td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td>58–63</td>
+<td>nitrogen</td>
+</tr>
+<tr class="even">
+<td>30</td>
+<td>173–190</td>
+<td>nitrogen</td>
+</tr>
+<tr class="odd">
+<td>60</td>
+<td>345–380</td>
+<td>carbon</td>
+</tr>
+</tbody>
+</table>
+<p>Nitrogen binds before carbon in 36 of 45 cases and stops binding only
+above about 30 g of nitrogen per litre, which is far more than any batch
+medium for this host contains. <strong>A batch fermentation is
+nitrogen-limited long before it is carbon-limited.</strong></p>
+<p>Two things keep this from overturning Table 5.1, and one of them is a
+genuine qualification.</p>
+<p>The qualification first: <em>if</em> a process in the corpus were
+nitrogen-limited at, say, 5 g N L⁻¹, its ceiling would be about 31 g L⁻¹
+rather than 229, and β-lactoglobulin’s 13.88 g L⁻¹ would be 45% of it
+rather than 6.1%. That is a different picture, and a reader is entitled
+to it.</p>
+<p>What keeps the carbon bound the right one for these records is that
+every high-titre process in the corpus is <strong>fed-batch</strong>,
+and a fed-batch fermentation of this host titrates with ammonia or
+ammonium hydroxide for pH control throughout the run. Nitrogen is fed
+continuously and is not a fixed inventory, so it is not the operative
+bound for the processes being measured. The nitrogen ceiling is the
+bound for a <em>batch</em> process, and batch processes are not where
+any of these titres came from.</p>
+<p>And the central claim does not depend on the choice at all. Nitrogen
+content varies by only <strong>1.10-fold</strong> across the panel, and
+the carbon ceiling by 1.38-fold. Whichever bound is used, the ceiling is
+nearly the same for every protein while achievement varies 628-fold. The
+argument of §5.2.1 survives both substitutions, which is the strongest
+thing that can be said for it.</p>
 <h3 id="the-ordering-is-not-the-expected-one">5.2.4 The ordering is not
 the expected one</h3>
 <p>Chapter 2 declared the expectation in advance: the published expert
@@ -3424,9 +3488,15 @@ ceiling from the model’s own oxygen demand of 9.4–10.2 mmol per gram of
 product and finds carbon to be the tighter bound in all 36
 protein-by-transfer-rate combinations, with the tightest oxygen bound
 still 1.9-fold above the carbon bound. The check is generous to oxygen,
-so the conclusion is conservative. What remains unchecked is whether
-some third bound — nitrogen, phosphate, heat removal — binds before
-either, and a model-based scan of those would be a cheap extension.</p>
+so the conclusion is conservative. Nitrogen is a different matter and is
+reported in full in §5.2.3: at any batch nitrogen loading a fermentation
+is nitrogen-limited well before it is carbon-limited, and only
+continuous ammonia feeding — which every fed-batch process in the corpus
+uses for pH control — removes that bound. Since nitrogen content varies
+by just 1.10-fold across the panel against 1.38-fold for the carbon
+ceiling, the central contrast is unaffected by the substitution, but the
+absolute fractions in Table 5.1 would change substantially for a batch
+process. Phosphate and heat removal remain unchecked.</p>
 <h2 id="what-to-do-next-computationally">9.5 What to do next,
 computationally</h2>
 <p>In priority order:</p>
@@ -3437,9 +3507,9 @@ reactions with post-translational requirements and makes per-protein
 bottleneck calls. Running this panel through it would test Chapter 6’s
 disulfide conclusion directly, with machinery rather than
 inference.</li>
-<li><strong>Scan the remaining candidate bounds</strong> — nitrogen,
-phosphate and heat removal — as the oxygen bound has now been scanned
-and found not to bind (§5.2.3).</li>
+<li><strong>Scan the remaining candidate bounds</strong> — phosphate and
+heat removal — as oxygen and nitrogen have now been scanned
+(§5.2.3).</li>
 <li><strong>Enlarge the corpus and re-run.</strong> The merged database
 approaching 300 records, with resolved identifiers, roughly triples the
 sample and would let the disulfide association be tested properly, with

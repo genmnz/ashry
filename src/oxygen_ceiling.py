@@ -32,6 +32,10 @@ REPO = Path(__file__).resolve().parents[1]
 TABLES = REPO / "results" / "tables"
 
 OTR_SCAN = (50.0, 100.0, 200.0, 300.0)   # mmol O2 per litre per hour
+# Ammonium nitrogen actually supplied. A batch medium for this host carries a few
+# grams of nitrogen per litre; a fed-batch adds ammonia continuously as the pH
+# titrant, which is why the upper end of this scan is far above any batch recipe.
+N_SCAN_G_PER_L = (2.0, 5.0, 10.0, 30.0, 60.0)
 BATCH_HOURS = 90.0
 CARBON_LOADING = 350.0                    # g/L, the central case of Chapter 5
 
@@ -62,6 +66,36 @@ def main() -> None:
 
     out = pd.DataFrame(rows)
     out.to_csv(TABLES / "oxygen_ceiling.csv", index=False)
+
+    # nitrogen bound: protein is roughly 16% nitrogen by mass, computed here
+    # exactly from each protein's elemental composition
+    comp = pd.read_csv(TABLES / "target_composition.csv")
+    n_rows = []
+    for c in comp.itertuples():
+        n_mass_frac = c.N * 14.007 / (c.mw_kda * 1000.0)
+        carbon_ceiling = CARBON_LOADING * float(
+            y[y.protein == c.protein].g_polypeptide_per_g_substrate.iloc[0])
+        for n_supply in N_SCAN_G_PER_L:
+            n_rows.append({
+                "protein": c.protein,
+                "nitrogen_mass_fraction": n_mass_frac,
+                "nitrogen_supplied_g_L": n_supply,
+                "nitrogen_ceiling_g_L": n_supply / n_mass_frac,
+                "carbon_ceiling_g_L": carbon_ceiling,
+                "binding_bound": "nitrogen" if n_supply / n_mass_frac < carbon_ceiling
+                else "carbon",
+            })
+    n_df = pd.DataFrame(n_rows)
+    n_df.to_csv(TABLES / "nitrogen_ceiling.csv", index=False)
+    print("\nnitrogen content of the panel: "
+          f"{100 * n_df.nitrogen_mass_fraction.min():.1f}-"
+          f"{100 * n_df.nitrogen_mass_fraction.max():.1f}% by mass")
+    print(n_df.pivot_table(index="protein", columns="nitrogen_supplied_g_L",
+                           values="nitrogen_ceiling_g_L").round(0).to_string())
+    binds = n_df[n_df.binding_bound == "nitrogen"]
+    print(f"nitrogen binds before carbon in {len(binds)} of {len(n_df)} cases; "
+          f"it stops binding above about "
+          f"{binds.nitrogen_supplied_g_L.max() if len(binds) else 0:.0f} g N/L")
 
     piv = out.pivot_table(index="protein", columns="otr_mmol_L_h",
                           values="oxygen_ceiling_g_L")
