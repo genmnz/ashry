@@ -58,7 +58,24 @@ The best process in the entire corpus — a human-like collagen at 19.4 g L⁻¹
 
 At a loading of 150 g L⁻¹ the β-lactoglobulin result rises to 14.2% of ceiling and at 500 g L⁻¹ it falls to 4.3%, so the conclusion is not an artefact of the central loading assumption: no plausible loading brings any published process within a factor of seven of its ceiling.
 
-### 5.2.3 The ordering is not the expected one
+### 5.2.3 Is carbon the right bound? The oxygen check
+
+A comparison is only as good as its denominator. If real fermentations hit an oxygen-transfer wall long before they exhaust their carbon, then measuring titres against a carbon ceiling compares them against a bound that never binds, and the gap is partly an artefact.
+
+That alternative is computable from numbers already in hand. The model reports oxygen consumption at the production optimum as **9.4 to 10.2 mmol of O₂ per gram of product**, nearly invariant across the panel. An aerated vessel delivers oxygen at a maximum volumetric transfer rate, so over a 90-hour batch the oxygen-limited ceiling is the transfer rate times the batch time divided by that demand. Scanning the transfer rate from 50 to 300 mmol L⁻¹ h⁻¹:
+
+| OTR (mmol L⁻¹ h⁻¹) | Oxygen ceiling (g L⁻¹) | Carbon ceiling (g L⁻¹) | Binding bound |
+|---|---|---|---|
+| 50 | 440–477 | 214–234 | carbon |
+| 100 | 880–953 | 214–234 | carbon |
+| 200 | 1,759–1,907 | 214–234 | carbon |
+| 300 | 2,639–2,860 | 214–234 | carbon |
+
+Carbon is the tighter bound in **all 36 protein-by-transfer-rate combinations**, and even at the lowest transfer rate the oxygen ceiling is 1.9-fold above the carbon ceiling. The calculation is deliberately generous to oxygen — it spends the entire oxygen budget on product and none on growth or maintenance, which no real process can do — so the conclusion is conservative in the right direction.
+
+The carbon ceiling is therefore the correct denominator, and the gaps in Table 5.1 are not an artefact of comparing against a bound that does not bind. Oxygen transfer certainly constrains real processes through growth and maintenance demand, which this calculation excludes; what it does not do is constrain them *more tightly than carbon* at the product level.
+
+### 5.2.4 The ordering is not the expected one
 
 Chapter 2 declared the expectation in advance: the published expert judgement is that whey proteins are the most tractable targets and caseins and lactoferrin the least. The measurement partly contradicts it.
 

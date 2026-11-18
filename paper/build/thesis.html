@@ -371,7 +371,9 @@ measurement</a>
 <li><a href="#the-headline-contrast" id="toc-the-headline-contrast">5.2.1 The headline contrast</a></li>
 <li><a href="#nobody-is-close-to-the-ceiling" id="toc-nobody-is-close-to-the-ceiling">5.2.2 Nobody is close to the
 ceiling</a></li>
-<li><a href="#the-ordering-is-not-the-expected-one" id="toc-the-ordering-is-not-the-expected-one">5.2.3 The ordering is not
+<li><a href="#is-carbon-the-right-bound-the-oxygen-check" id="toc-is-carbon-the-right-bound-the-oxygen-check">5.2.3 Is carbon the
+right bound? The oxygen check</a></li>
+<li><a href="#the-ordering-is-not-the-expected-one" id="toc-the-ordering-is-not-the-expected-one">5.2.4 The ordering is not
 the expected one</a></li>
 </ul></li>
 <li><a href="#the-caseins-an-absence-that-is-a-result" id="toc-the-caseins-an-absence-that-is-a-result">5.3 The caseins: an
@@ -2238,7 +2240,76 @@ of ceiling and at 500 g L⁻¹ it falls to 4.3%, so the conclusion is not
 an artefact of the central loading assumption: no plausible loading
 brings any published process within a factor of seven of its
 ceiling.</p>
-<h3 id="the-ordering-is-not-the-expected-one">5.2.3 The ordering is not
+<h3 id="is-carbon-the-right-bound-the-oxygen-check">5.2.3 Is carbon the
+right bound? The oxygen check</h3>
+<p>A comparison is only as good as its denominator. If real
+fermentations hit an oxygen-transfer wall long before they exhaust their
+carbon, then measuring titres against a carbon ceiling compares them
+against a bound that never binds, and the gap is partly an artefact.</p>
+<p>That alternative is computable from numbers already in hand. The
+model reports oxygen consumption at the production optimum as
+<strong>9.4 to 10.2 mmol of O₂ per gram of product</strong>, nearly
+invariant across the panel. An aerated vessel delivers oxygen at a
+maximum volumetric transfer rate, so over a 90-hour batch the
+oxygen-limited ceiling is the transfer rate times the batch time divided
+by that demand. Scanning the transfer rate from 50 to 300 mmol L⁻¹
+h⁻¹:</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>OTR (mmol L⁻¹ h⁻¹)</th>
+<th>Oxygen ceiling (g L⁻¹)</th>
+<th>Carbon ceiling (g L⁻¹)</th>
+<th>Binding bound</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>50</td>
+<td>440–477</td>
+<td>214–234</td>
+<td>carbon</td>
+</tr>
+<tr class="even">
+<td>100</td>
+<td>880–953</td>
+<td>214–234</td>
+<td>carbon</td>
+</tr>
+<tr class="odd">
+<td>200</td>
+<td>1,759–1,907</td>
+<td>214–234</td>
+<td>carbon</td>
+</tr>
+<tr class="even">
+<td>300</td>
+<td>2,639–2,860</td>
+<td>214–234</td>
+<td>carbon</td>
+</tr>
+</tbody>
+</table>
+<p>Carbon is the tighter bound in <strong>all 36
+protein-by-transfer-rate combinations</strong>, and even at the lowest
+transfer rate the oxygen ceiling is 1.9-fold above the carbon ceiling.
+The calculation is deliberately generous to oxygen — it spends the
+entire oxygen budget on product and none on growth or maintenance, which
+no real process can do — so the conclusion is conservative in the right
+direction.</p>
+<p>The carbon ceiling is therefore the correct denominator, and the gaps
+in Table 5.1 are not an artefact of comparing against a bound that does
+not bind. Oxygen transfer certainly constrains real processes through
+growth and maintenance demand, which this calculation excludes; what it
+does not do is constrain them <em>more tightly than carbon</em> at the
+product level.</p>
+<h3 id="the-ordering-is-not-the-expected-one">5.2.4 The ordering is not
 the expected one</h3>
 <p>Chapter 2 declared the expectation in advance: the published expert
 judgement is that whey proteins are the most tractable targets and
@@ -3345,14 +3416,17 @@ been produced under different standards and for different purposes than
 food enzymes. A larger corpus with a therapeutic-versus-food indicator
 would separate the two, and this is the first analysis to run on the
 merged corpus when it lands.</p>
-<p><strong>If the ceiling is not the right denominator</strong> — for
+<p><strong>If the ceiling were not the right denominator</strong> — for
 instance because real processes are oxygen-transfer-limited long before
-they are carbon-limited — then the gap is partly an artefact of
-comparing against the wrong bound. The oxygen demand computed in §4.1.3
-(about 10 mmol O₂ per gram of protein, nearly invariant across proteins)
-is the quantity that would decide this, and computing an oxygen-limited
-ceiling alongside the carbon-limited one is a concrete and worthwhile
-extension.</p>
+they are carbon-limited — the gap would be partly an artefact. This one
+has been checked and survives: §5.2.3 computes the oxygen-limited
+ceiling from the model’s own oxygen demand of 9.4–10.2 mmol per gram of
+product and finds carbon to be the tighter bound in all 36
+protein-by-transfer-rate combinations, with the tightest oxygen bound
+still 1.9-fold above the carbon bound. The check is generous to oxygen,
+so the conclusion is conservative. What remains unchecked is whether
+some third bound — nitrogen, phosphate, heat removal — binds before
+either, and a model-based scan of those would be a cheap extension.</p>
 <h2 id="what-to-do-next-computationally">9.5 What to do next,
 computationally</h2>
 <p>In priority order:</p>
@@ -3363,9 +3437,9 @@ reactions with post-translational requirements and makes per-protein
 bottleneck calls. Running this panel through it would test Chapter 6’s
 disulfide conclusion directly, with machinery rather than
 inference.</li>
-<li><strong>Compute the oxygen-transfer-limited ceiling</strong>
-alongside the carbon-limited one, and report the gap against whichever
-binds first.</li>
+<li><strong>Scan the remaining candidate bounds</strong> — nitrogen,
+phosphate and heat removal — as the oxygen bound has now been scanned
+and found not to bind (§5.2.3).</li>
 <li><strong>Enlarge the corpus and re-run.</strong> The merged database
 approaching 300 records, with resolved identifiers, roughly triples the
 sample and would let the disulfide association be tested properly, with

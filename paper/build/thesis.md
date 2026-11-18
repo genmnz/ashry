@@ -627,7 +627,24 @@ The best process in the entire corpus — a human-like collagen at 19.4 g L⁻¹
 
 At a loading of 150 g L⁻¹ the β-lactoglobulin result rises to 14.2% of ceiling and at 500 g L⁻¹ it falls to 4.3%, so the conclusion is not an artefact of the central loading assumption: no plausible loading brings any published process within a factor of seven of its ceiling.
 
-### 5.2.3 The ordering is not the expected one
+### 5.2.3 Is carbon the right bound? The oxygen check
+
+A comparison is only as good as its denominator. If real fermentations hit an oxygen-transfer wall long before they exhaust their carbon, then measuring titres against a carbon ceiling compares them against a bound that never binds, and the gap is partly an artefact.
+
+That alternative is computable from numbers already in hand. The model reports oxygen consumption at the production optimum as **9.4 to 10.2 mmol of O₂ per gram of product**, nearly invariant across the panel. An aerated vessel delivers oxygen at a maximum volumetric transfer rate, so over a 90-hour batch the oxygen-limited ceiling is the transfer rate times the batch time divided by that demand. Scanning the transfer rate from 50 to 300 mmol L⁻¹ h⁻¹:
+
+| OTR (mmol L⁻¹ h⁻¹) | Oxygen ceiling (g L⁻¹) | Carbon ceiling (g L⁻¹) | Binding bound |
+|---|---|---|---|
+| 50 | 440–477 | 214–234 | carbon |
+| 100 | 880–953 | 214–234 | carbon |
+| 200 | 1,759–1,907 | 214–234 | carbon |
+| 300 | 2,639–2,860 | 214–234 | carbon |
+
+Carbon is the tighter bound in **all 36 protein-by-transfer-rate combinations**, and even at the lowest transfer rate the oxygen ceiling is 1.9-fold above the carbon ceiling. The calculation is deliberately generous to oxygen — it spends the entire oxygen budget on product and none on growth or maintenance, which no real process can do — so the conclusion is conservative in the right direction.
+
+The carbon ceiling is therefore the correct denominator, and the gaps in Table 5.1 are not an artefact of comparing against a bound that does not bind. Oxygen transfer certainly constrains real processes through growth and maintenance demand, which this calculation excludes; what it does not do is constrain them *more tightly than carbon* at the product level.
+
+### 5.2.4 The ordering is not the expected one
 
 Chapter 2 declared the expectation in advance: the published expert judgement is that whey proteins are the most tractable targets and caseins and lactoferrin the least. The measurement partly contradicts it.
 
@@ -1049,14 +1066,14 @@ Three ways, stated so that a reader can look for them.
 
 **If the disulfide association is a confound**, the mechanistic conclusion weakens. Disulfide-rich proteins in this corpus are also disproportionately human therapeutic proteins, which may have been produced under different standards and for different purposes than food enzymes. A larger corpus with a therapeutic-versus-food indicator would separate the two, and this is the first analysis to run on the merged corpus when it lands.
 
-**If the ceiling is not the right denominator** — for instance because real processes are oxygen-transfer-limited long before they are carbon-limited — then the gap is partly an artefact of comparing against the wrong bound. The oxygen demand computed in §4.1.3 (about 10 mmol O₂ per gram of protein, nearly invariant across proteins) is the quantity that would decide this, and computing an oxygen-limited ceiling alongside the carbon-limited one is a concrete and worthwhile extension.
+**If the ceiling were not the right denominator** — for instance because real processes are oxygen-transfer-limited long before they are carbon-limited — the gap would be partly an artefact. This one has been checked and survives: §5.2.3 computes the oxygen-limited ceiling from the model's own oxygen demand of 9.4–10.2 mmol per gram of product and finds carbon to be the tighter bound in all 36 protein-by-transfer-rate combinations, with the tightest oxygen bound still 1.9-fold above the carbon bound. The check is generous to oxygen, so the conclusion is conservative. What remains unchecked is whether some third bound — nitrogen, phosphate, heat removal — binds before either, and a model-based scan of those would be a cheap extension.
 
 ## 9.5 What to do next, computationally
 
 In priority order:
 
 1. **Port the analysis to a proteome-constrained secretory model.** pcSecYeast already builds protein-specific secretion reactions with post-translational requirements and makes per-protein bottleneck calls. Running this panel through it would test Chapter 6's disulfide conclusion directly, with machinery rather than inference.
-2. **Compute the oxygen-transfer-limited ceiling** alongside the carbon-limited one, and report the gap against whichever binds first.
+2. **Scan the remaining candidate bounds** — nitrogen, phosphate and heat removal — as the oxygen bound has now been scanned and found not to bind (§5.2.3).
 3. **Enlarge the corpus and re-run.** The merged database approaching 300 records, with resolved identifiers, roughly triples the sample and would let the disulfide association be tested properly, with multiple-testing control and a therapeutic-versus-food covariate.
 4. **Replace FoldIndex with a modern disorder predictor** and re-test the disorder null.
 5. **Rebuild the codon reference** from the coding sequences of the host's most highly expressed genes.

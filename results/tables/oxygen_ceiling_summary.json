@@ -1,0 +1,17 @@
+{
+  "batch_hours": 90.0,
+  "otr_scanned_mmol_L_h": [
+    50.0,
+    100.0,
+    200.0,
+    300.0
+  ],
+  "carbon_loading_g_L": 350.0,
+  "o2_demand_range_mmol_per_g": [
+    9.441272823611346,
+    10.231782754293112
+  ],
+  "oxygen_binds_in_n_cases": 0,
+  "total_cases": 36,
+  "min_ratio_o2_to_carbon": 1.9060502493585758
+}
