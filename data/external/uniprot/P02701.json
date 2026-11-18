@@ -1,0 +1,2359 @@
+{
+ "entryType": "UniProtKB reviewed (Swiss-Prot)",
+ "primaryAccession": "P02701",
+ "secondaryAccessions": [
+  "Q91958",
+  "Q98SH4"
+ ],
+ "uniProtkbId": "AVID_CHICK",
+ "entryAudit": {
+  "firstPublicDate": "1986-07-21",
+  "lastAnnotationUpdateDate": "2026-11-04",
+  "lastSequenceUpdateDate": "2007-09-11",
+  "entryVersion": 193,
+  "sequenceVersion": 3
+ },
+ "annotationScore": 5.0,
+ "organism": {
+  "scientificName": "Gallus gallus",
+  "commonName": "Chicken",
+  "taxonId": 9031,
+  "lineage": [
+   "Eukaryota",
+   "Metazoa",
+   "Chordata",
+   "Craniata",
+   "Vertebrata",
+   "Euteleostomi",
+   "Archelosauria",
+   "Archosauria",
+   "Dinosauria",
+   "Saurischia",
+   "Theropoda",
+   "Coelurosauria",
+   "Aves",
+   "Neognathae",
+   "Galloanserae",
+   "Galliformes",
+   "Phasianidae",
+   "Phasianinae",
+   "Gallus"
+  ]
+ },
+ "proteinExistence": "1: Evidence at protein level",
+ "proteinDescription": {
+  "recommendedName": {
+   "fullName": {
+    "value": "Avidin"
+   }
+  },
+  "flag": "Precursor"
+ },
+ "genes": [
+  {
+   "geneName": {
+    "value": "AVD"
+   }
+  }
+ ],
+ "comments": [
+  {
+   "texts": [
+    {
+     "value": "The biological function of avidin is not known. Forms a strong non-covalent specific complex with biotin (one molecule of biotin per subunit of avidin)"
+    }
+   ],
+   "commentType": "FUNCTION"
+  },
+  {
+   "texts": [
+    {
+     "value": "Homotetramer"
+    }
+   ],
+   "commentType": "SUBUNIT"
+  },
+  {
+   "commentType": "SUBCELLULAR LOCATION",
+   "subcellularLocations": [
+    {
+     "location": {
+      "value": "Secreted",
+      "id": "SL-0243"
+     }
+    }
+   ]
+  },
+  {
+   "texts": [
+    {
+     "value": "Synthesized in hen oviduct and concentrated in egg white (where it represents 0.05% of the total protein)"
+    }
+   ],
+   "commentType": "TISSUE SPECIFICITY"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "5100763"
+      }
+     ],
+     "value": "N-linked glycan at Asn-41 consists of GlcNAc(beta1-2)Man(alpha1-3)[GlcNAc(beta1-4)][Man(alpha1-?)Man(alpha1-6)] Man(beta1-4)GlcNAc(beta1-4)GlcNAc"
+    }
+   ],
+   "commentType": "PTM"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000305"
+      }
+     ],
+     "value": "Belongs to the avidin/streptavidin family"
+    }
+   ],
+   "commentType": "SIMILARITY"
+  }
+ ],
+ "features": [
+  {
+   "type": "Signal",
+   "location": {
+    "start": {
+     "value": 1,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 24,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "5100762"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "5100763"
+    }
+   ]
+  },
+  {
+   "type": "Chain",
+   "location": {
+    "start": {
+     "value": 25,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 152,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Avidin",
+   "featureId": "PRO_0000002722"
+  },
+  {
+   "type": "Domain",
+   "location": {
+    "start": {
+     "value": 26,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 149,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Avidin-like",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000255",
+     "source": "PROSITE-ProRule",
+     "id": "PRU00656"
+    }
+   ]
+  },
+  {
+   "type": "Binding site",
+   "location": {
+    "start": {
+     "value": 57,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 57,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "featureCrossReferences": [
+    {
+     "database": "ChEBI",
+     "id": "CHEBI:57586"
+    }
+   ],
+   "ligand": {
+    "name": "biotin",
+    "id": "ChEBI:CHEBI:57586"
+   }
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 41,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 41,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "N-linked (GlcNAc...) asparagine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "5100763"
+    }
+   ],
+   "featureId": "CAR_000230"
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 28,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 107,
+     "modifier": "EXACT"
+    }
+   },
+   "description": ""
+  },
+  {
+   "type": "Natural variant",
+   "location": {
+    "start": {
+     "value": 58,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 58,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in about 50% of the molecules",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "11167523"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "5100762"
+    }
+   ],
+   "featureId": "",
+   "alternativeSequence": {
+    "originalSequence": "I",
+    "alternativeSequences": [
+     "T"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 22,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 22,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 3; AAB59733",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "G",
+    "alternativeSequences": [
+     "S"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 35,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 35,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 4; CAC34569",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "T",
+    "alternativeSequences": [
+     "D"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 50,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 50,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 4; CAC34569",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "R",
+    "alternativeSequences": [
+     "K"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 77,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 77,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 5; AA sequence and 6; AA sequence",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "Q",
+    "alternativeSequences": [
+     "E"
+    ]
+   }
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 32,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 36,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1VYO"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 41,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 44,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1VYO"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 51,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 59,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1VYO"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 63,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 66,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "6XND"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 69,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 77,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1VYO"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 80,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 82,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1VYO"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 87,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 93,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1VYO"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 95,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 98,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1VYO"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 100,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 109,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1VYO"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 111,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 113,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2A8G"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 115,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 124,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1VYO"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 130,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 135,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1VYO"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 137,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 146,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "1VYO"
+    }
+   ]
+  }
+ ],
+ "keywords": [
+  {
+   "id": "KW-0002",
+   "category": "Technical term",
+   "name": "3D-structure"
+  },
+  {
+   "id": "KW-0092",
+   "category": "Ligand",
+   "name": "Biotin"
+  },
+  {
+   "id": "KW-0903",
+   "category": "Technical term",
+   "name": "Direct protein sequencing"
+  },
+  {
+   "id": "KW-1015",
+   "category": "PTM",
+   "name": "Disulfide bond"
+  },
+  {
+   "id": "KW-0325",
+   "category": "PTM",
+   "name": "Glycoprotein"
+  },
+  {
+   "id": "KW-1185",
+   "category": "Technical term",
+   "name": "Reference proteome"
+  },
+  {
+   "id": "KW-0964",
+   "category": "Cellular component",
+   "name": "Secreted"
+  },
+  {
+   "id": "KW-0732",
+   "category": "Domain",
+   "name": "Signal"
+  }
+ ],
+ "references": [
+  {
+   "referenceNumber": 1,
+   "citation": {
+    "id": "3575102",
+    "citationType": "journal article",
+    "authors": [
+     "Gope M.L.",
+     "Keinaenen R.A.",
+     "Kristo P.A.",
+     "Conneely O.M.",
+     "Beatie W.G.",
+     "Zarucki-Schulz T.",
+     "O'Malley B.W.",
+     "Kulomaa M.S."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "3575102"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1093/nar/15.8.3595"
+     }
+    ],
+    "title": "Molecular cloning of the chicken avidin cDNA.",
+    "publicationDate": "1987",
+    "journal": "Nucleic Acids Res.",
+    "firstPage": "3595",
+    "lastPage": "3606",
+    "volume": "15"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [MRNA]"
+   ]
+  },
+  {
+   "referenceNumber": 2,
+   "citation": {
+    "id": "2143802",
+    "citationType": "journal article",
+    "authors": [
+     "Chandra G.",
+     "Gray J.G."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "2143802"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/0076-6879(90)84261-e"
+     }
+    ],
+    "title": "Cloning and expression of avidin in Escherichia coli.",
+    "publicationDate": "1990",
+    "journal": "Methods Enzymol.",
+    "firstPage": "70",
+    "lastPage": "79",
+    "volume": "184"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [MRNA]"
+   ]
+  },
+  {
+   "referenceNumber": 3,
+   "citation": {
+    "id": "7665080",
+    "citationType": "journal article",
+    "authors": [
+     "Wallen M.J.",
+     "Laukkanen M.O.",
+     "Kulomaa M.S."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "7665080"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/0378-1119(95)00187-b"
+     }
+    ],
+    "title": "Cloning and sequencing of the chicken egg-white avidin-encoding gene and its relationship with the avidin-related genes Avr1-Avr5.",
+    "publicationDate": "1995",
+    "journal": "Gene",
+    "firstPage": "205",
+    "lastPage": "209",
+    "volume": "161"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+   ],
+   "referenceComments": [
+    {
+     "value": "White leghorn",
+     "type": "STRAIN"
+    },
+    {
+     "value": "Oviduct",
+     "type": "TISSUE"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 4,
+   "citation": {
+    "id": "11167523",
+    "citationType": "journal article",
+    "authors": [
+     "Ahlroth M.K.",
+     "Kola E.H.",
+     "Ewald D.",
+     "Masabanda J.",
+     "Sazanov A.",
+     "Fries R.",
+     "Kulomaa M.S."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "11167523"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1046/j.1365-2052.2000.00681.x"
+     }
+    ],
+    "title": "Characterization and chromosomal localization of the chicken avidin gene family.",
+    "publicationDate": "2000",
+    "journal": "Anim. Genet.",
+    "firstPage": "367",
+    "lastPage": "375",
+    "volume": "31"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [GENOMIC DNA]",
+    "VARIANT THR-58"
+   ]
+  },
+  {
+   "referenceNumber": 5,
+   "citation": {
+    "id": "5100763",
+    "citationType": "journal article",
+    "authors": [
+     "Delange R.J.",
+     "Huang T.-S."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "5100763"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/s0021-9258(18)62469-x"
+     }
+    ],
+    "title": "Egg white avidin. 3. Sequence of the 78-residue middle cyanogen bromide peptide. Complete amino acid sequence of the protein subunit.",
+    "publicationDate": "1971",
+    "journal": "J. Biol. Chem.",
+    "firstPage": "698",
+    "lastPage": "709",
+    "volume": "246"
+   },
+   "referencePositions": [
+    "PROTEIN SEQUENCE OF 25-152",
+    "GLYCOSYLATION AT ASN-41"
+   ]
+  },
+  {
+   "referenceNumber": 6,
+   "citation": {
+    "id": "5100762",
+    "citationType": "journal article",
+    "authors": [
+     "Huang T.-S.",
+     "DeLange R.J."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "5100762"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/s0021-9258(18)62468-8"
+     }
+    ],
+    "title": "Egg white avidin. II. Isolation, composition, and amino acid sequences of the tryptic peptides.",
+    "publicationDate": "1971",
+    "journal": "J. Biol. Chem.",
+    "firstPage": "686",
+    "lastPage": "697",
+    "volume": "246"
+   },
+   "referencePositions": [
+    "PROTEIN SEQUENCE OF 25-152",
+    "VARIANT THR-58"
+   ]
+  },
+  {
+   "referenceNumber": 7,
+   "citation": {
+    "id": "2386489",
+    "citationType": "journal article",
+    "authors": [
+     "Gitlin G.",
+     "Bayer E.A.",
+     "Wilchek M."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "2386489"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1042/bj2690527"
+     }
+    ],
+    "title": "Studies on the biotin-binding sites of avidin and streptavidin. Tyrosine residues are involved in the binding site.",
+    "publicationDate": "1990",
+    "journal": "Biochem. J.",
+    "firstPage": "527",
+    "lastPage": "530",
+    "volume": "269"
+   },
+   "referencePositions": [
+    "IMPORTANCE OF TYR IN BIOTIN-BINDING"
+   ]
+  },
+  {
+   "referenceNumber": 8,
+   "citation": {
+    "id": "1898347",
+    "citationType": "journal article",
+    "authors": [
+     "Hiller Y.",
+     "Bayer E.A.",
+     "Wilchek M."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "1898347"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1042/bj2780573"
+     }
+    ],
+    "title": "Studies on the biotin-binding site of avidin. Minimized fragments that bind biotin.",
+    "publicationDate": "1991",
+    "journal": "Biochem. J.",
+    "firstPage": "573",
+    "lastPage": "585",
+    "volume": "278"
+   },
+   "referencePositions": [
+    "BIOTIN-BINDING STUDIES"
+   ]
+  },
+  {
+   "referenceNumber": 9,
+   "citation": {
+    "id": "6816268",
+    "citationType": "journal article",
+    "authors": [
+     "Bruch R.C.",
+     "White H.B. III"
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "6816268"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1021/bi00264a033"
+     }
+    ],
+    "title": "Compositional and structural heterogeneity of avidin glycopeptides.",
+    "publicationDate": "1982",
+    "journal": "Biochemistry",
+    "firstPage": "5334",
+    "lastPage": "5341",
+    "volume": "21"
+   },
+   "referencePositions": [
+    "STRUCTURE OF CARBOHYDRATE"
+   ]
+  },
+  {
+   "referenceNumber": 10,
+   "citation": {
+    "id": "8506353",
+    "citationType": "journal article",
+    "authors": [
+     "Livnah O.",
+     "Bayer E.A.",
+     "Wilchek M.",
+     "Sussman J.L."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "8506353"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1073/pnas.90.11.5076"
+     }
+    ],
+    "title": "Three-dimensional structures of avidin and the avidin-biotin complex.",
+    "publicationDate": "1993",
+    "journal": "Proc. Natl. Acad. Sci. U.S.A.",
+    "firstPage": "5076",
+    "lastPage": "5080",
+    "volume": "90"
+   },
+   "referencePositions": [
+    "X-RAY CRYSTALLOGRAPHY"
+   ]
+  },
+  {
+   "referenceNumber": 11,
+   "citation": {
+    "id": "8515446",
+    "citationType": "journal article",
+    "authors": [
+     "Pugliese L.",
+     "Coda A.",
+     "Malcovati M.",
+     "Bolognesi M."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "8515446"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1006/jmbi.1993.1321"
+     }
+    ],
+    "title": "Three-dimensional structure of the tetragonal crystal form of egg-white avidin in its functional complex with biotin at 2.7-A resolution.",
+    "publicationDate": "1993",
+    "journal": "J. Mol. Biol.",
+    "firstPage": "698",
+    "lastPage": "710",
+    "volume": "231"
+   },
+   "referencePositions": [
+    "X-RAY CRYSTALLOGRAPHY"
+   ]
+  },
+  {
+   "referenceNumber": 12,
+   "citation": {
+    "id": "9760187",
+    "citationType": "journal article",
+    "authors": [
+     "Nardone E.",
+     "Rosano C.",
+     "Santambrogio P.",
+     "Curnis F.",
+     "Corti A.",
+     "Magni F.",
+     "Siccardi A.G.",
+     "Paganelli G.",
+     "Losso R.",
+     "Apreda B.",
+     "Bolognesi M.",
+     "Sidoli A.",
+     "Arosio P."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "9760187"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1046/j.1432-1327.1998.2560453.x"
+     }
+    ],
+    "title": "Biochemical characterization and crystal structure of a recombinant hen avidin and its acidic mutant expressed in Escherichia coli.",
+    "publicationDate": "1998",
+    "journal": "Eur. J. Biochem.",
+    "firstPage": "453",
+    "lastPage": "460",
+    "volume": "256"
+   },
+   "referencePositions": [
+    "X-RAY CRYSTALLOGRAPHY"
+   ]
+  }
+ ],
+ "uniProtKBCrossReferences": [
+  {
+   "database": "EMBL",
+   "id": "X05343",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "CAA28954.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "mRNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "L27818",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAB59733.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "AJ311647",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "CAC34569.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "PIR",
+   "id": "A54975",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "VICH"
+    }
+   ]
+  },
+  {
+   "database": "RefSeq",
+   "id": "NP_990651.1",
+   "properties": [
+    {
+     "key": "NucleotideSequenceId",
+     "value": "NM_205320.2"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1AVD",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.70 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=25-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1AVE",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.80 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=25-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1IJ8",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.00 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=25-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1LDO",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.20 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=25-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1LDQ",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.70 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=25-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1LEL",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.90 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=25-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1NQN",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.80 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=26-147"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1RAV",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.20 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=26-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "1VYO",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.48 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=25-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "2A5B",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.49 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=25-148"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "2A5C",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.50 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=25-147"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "2A8G",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.99 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=27-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "2AVI",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "3.00 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=25-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "2C4I",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.95 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=22-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "2CAM",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.20 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=26-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "2JGS",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.90 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B/C/D=69-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "2MF6",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "NMR"
+    },
+    {
+     "key": "Resolution",
+     "value": "-"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B/C/D=25-61, A/B/C/D=85-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "3FDC",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "3.10 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=25-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "3MM0",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.70 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B/C/D/E/F/G/H/I/K/M/N=25-61, A/B/C/D/E/F/G/H/I/K/M/N=85-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "3VGW",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.60 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B/C/D/E/F/G/H=25-147"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "3VHH",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.26 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B/C/D=25-147"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "3VHI",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.76 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B/C/D=26-147"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "3VHM",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.00 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B/C/D=25-147"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "4I60",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.50 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=25-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "4JHQ",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.99 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=25-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "4U46",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.95 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=25-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "5CHK",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.20 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A=25-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "5HLM",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.50 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B/C/D=25-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "5IRU",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.00 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B/C/D=25-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "5IRW",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.10 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B/C/D=25-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "5LUR",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.70 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=21-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "5MYQ",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.89 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B/C/D=25-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "6XND",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "1.58 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B/C/D=25-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "7P4Z",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.20 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=27-147"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "7ZN1",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.33 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B/C/D=1-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "7ZYL",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "EM"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.08 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B/C/D=1-152"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "8CK7",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.20 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B=25-148"
+    }
+   ]
+  },
+  {
+   "database": "AlphaFoldDB",
+   "id": "P02701",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "EMDB",
+   "id": "EMD-15026",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "MDposit",
+   "id": "P02701",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "MDRepo",
+   "id": "P02701",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PCDDB",
+   "id": "P02701",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "SMR",
+   "id": "P02701",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "DIP",
+   "id": "DIP-60471N",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "FunCoup",
+   "id": "P02701",
+   "properties": [
+    {
+     "key": "Number of interactors",
+     "value": "7"
+    }
+   ]
+  },
+  {
+   "database": "BindingDB",
+   "id": "P02701",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "ChEMBL",
+   "id": "CHEMBL2189156",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "GlyConnect",
+   "id": "P02701",
+   "properties": [
+    {
+     "key": "glycosylation",
+     "value": "1 N-Linked glycan"
+    }
+   ]
+  },
+  {
+   "database": "GlyCosmos",
+   "id": "P02701",
+   "properties": [
+    {
+     "key": "glycosylation",
+     "value": "1 site, 2 glycans"
+    }
+   ]
+  },
+  {
+   "database": "GlyGen",
+   "id": "P02701",
+   "properties": [
+    {
+     "key": "glycosylation",
+     "value": "2 sites, 2 N-linked glycans (1 site)"
+    }
+   ]
+  },
+  {
+   "database": "GeneID",
+   "id": "396260",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "KEGG",
+   "id": "gga:396260",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "CTD",
+   "id": "567678",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "VEuPathDB",
+   "id": "HostDB:geneid_396260",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "eggNOG",
+   "id": "ENOG502S55G",
+   "properties": [
+    {
+     "key": "ToxonomicScope",
+     "value": "Eukaryota"
+    }
+   ]
+  },
+  {
+   "database": "HOGENOM",
+   "id": "CLU_122441_0_0_1",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "InParanoid",
+   "id": "P02701",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "OMA",
+   "id": "AHCPLPC",
+   "properties": [
+    {
+     "key": "Fingerprint",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "OrthoDB",
+   "id": "2821340at2759",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PhylomeDB",
+   "id": "P02701",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "BioCyc",
+   "id": "MetaCyc:MONOMER-5341",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "EvolutionaryTrace",
+   "id": "P02701",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PRO",
+   "id": "PR:P02701",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Proteomes",
+   "id": "UP000000539",
+   "properties": [
+    {
+     "key": "Component",
+     "value": "Chromosome Z"
+    }
+   ]
+  },
+  {
+   "database": "Bgee",
+   "id": "ENSGALG00000025945",
+   "properties": [
+    {
+     "key": "ExpressionPatterns",
+     "value": "Expressed in granulocyte and 11 other cell types or tissues"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0005576",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "C:extracellular region"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IEA:UniProtKB-SubCell"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0009374",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:biotin binding"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IBA:GO_Central"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0019731",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:antibacterial humoral response"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "NAS:AgBase"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000303",
+     "source": "PubMed",
+     "id": "16721662"
+    }
+   ]
+  },
+  {
+   "database": "Gene3D",
+   "id": "2.40.128.30",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Avidin-like"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR005469",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Avidin"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR017889",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Avidin-like_CS"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR036896",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Avidin-like_sf"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR005468",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Avidin/str"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR051764",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Avidin/Streptavidin-rel"
+    }
+   ]
+  },
+  {
+   "database": "PANTHER",
+   "id": "PTHR34399:SF3",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "AVID PROTEIN-RELATED"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PANTHER",
+   "id": "PTHR34399",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "AVIDIN-RELATED"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "Pfam",
+   "id": "PF01382",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Avidin"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PRINTS",
+   "id": "PR00709",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "AVIDIN"
+    }
+   ]
+  },
+  {
+   "database": "SUPFAM",
+   "id": "SSF50876",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Avidin/streptavidin"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PROSITE",
+   "id": "PS00577",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "AVIDIN_1"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PROSITE",
+   "id": "PS51326",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "AVIDIN_2"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  }
+ ],
+ "sequence": {
+  "value": "MVHATSPLLLLLLLSLALVAPGLSARKCSLTGKWTNDLGSNMTIGAVNSRGEFTGTYITAVTATSNEIKESPLHGTQNTINKRTQPTFGFTVNWKFSESTTVFTGQCFIDRNGKEVLKTMWLLRSSVNDIGDDWKATRVGINIFTRLRTQKE",
+  "length": 152,
+  "molWeight": 16768,
+  "crc64": "7795A458481AEC09",
+  "md5": "523BB8ADE20FD101431CEAC6FD3EA0F0"
+ },
+ "extraAttributes": {
+  "countByCommentType": {
+   "FUNCTION": 1,
+   "SUBUNIT": 1,
+   "SUBCELLULAR LOCATION": 1,
+   "TISSUE SPECIFICITY": 1,
+   "PTM": 1,
+   "SIMILARITY": 1
+  },
+  "countByFeatureType": {
+   "Signal": 1,
+   "Chain": 1,
+   "Domain": 1,
+   "Binding site": 1,
+   "Glycosylation": 1,
+   "Disulfide bond": 1,
+   "Natural variant": 1,
+   "Sequence conflict": 4,
+   "Beta strand": 11,
+   "Helix": 2
+  },
+  "uniParcId": "UPI0000030A9C"
+ }
+}

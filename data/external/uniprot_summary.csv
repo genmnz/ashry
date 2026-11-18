@@ -1,0 +1,33 @@
+accession,status,uniprot_id,protein_name,gene,organism,taxon_id,entry_type,existence,length_precursor,length_mature,mass_da_precursor,sequence_version,signal_peptide_end,n_disulfide,n_cys,n_modified_residue,n_phosphosite,n_glyc_N_linked,n_glyc_O_linked
+P00698,ok,LYSC_CHICK,Lysozyme C,LYZ,Gallus gallus,9031,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,147,129,16239,1,18,4,9,0,0,0,0
+P00709,ok,LALBA_HUMAN,Alpha-lactalbumin,LALBA,Homo sapiens,9606,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,142,123,16225,1,19,4,8,0,0,2,0
+P01005,ok,IOVO_CHICK,Ovomucoid,,Gallus gallus,9031,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,210,186,22591,1,24,9,19,0,0,5,0
+P01012,ok,OVAL_CHICK,Ovalbumin,SERPINB14,Gallus gallus,9031,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,386,338,42881,2,48,1,6,3,2,1,0
+P01308,ok,INS_HUMAN,Insulin,INS,Homo sapiens,9606,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,110,86,11981,1,24,3,6,0,0,0,0
+P01563,ok,IFNA2_HUMAN,Interferon alpha-2,IFNA2,Homo sapiens,9606,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,188,165,21578,2,23,2,6,0,0,0,1
+P02189,ok,MYG_PIG,Myoglobin,MB,Sus scrofa,9823,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,154,154,17085,2,0,0,0,2,2,0,0
+P02236,ok,LGB4_SOYBN,Leghemoglobin 4,LB4,Glycine max,3847,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,145,145,15525,2,0,0,0,5,1,0,0
+P02461,ok,CO3A1_HUMAN,Collagen alpha-1(III) chain,COL3A1,Homo sapiens,9606,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,1466,1443,138564,4,23,7,22,150,0,0,1
+P02662,ok,CASA1_BOVIN,Alpha-S1-casein,CSN1S1,Bos taurus,9913,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,214,199,24529,2,15,0,1,9,9,0,0
+P02663,ok,CASA2_BOVIN,Alpha-S2-casein,CSN1S2,Bos taurus,9913,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,222,207,26019,2,15,0,3,13,13,0,0
+P02666,ok,CASB_BOVIN,Beta-casein,CSN2,Bos taurus,9913,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,224,209,25107,2,15,0,1,5,5,0,0
+P02668,ok,CASK_BOVIN,Kappa-casein,CSN3,Bos taurus,9913,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,190,169,21269,1,21,3,2,5,4,0,8
+P02701,ok,AVID_CHICK,Avidin,AVD,Gallus gallus,9031,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,152,128,16768,3,24,1,2,0,0,1,0
+P02754,ok,LACB_BOVIN,Beta-lactoglobulin,LGB,Bos taurus,9913,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,178,162,19883,3,16,3,7,0,0,0,0
+P02768,ok,ALBU_HUMAN,Albumin,ALB,Homo sapiens,9606,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,609,591,69367,2,18,17,35,14,9,24,0
+P02787,ok,TRFE_HUMAN,Serotransferrin,TF,Homo sapiens,9606,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,698,679,77064,5,19,19,40,3,2,3,1
+P02788,ok,TRFL_HUMAN,Lactotransferrin,LTF,Homo sapiens,9606,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,710,691,78182,6,19,16,33,1,1,3,1
+P02789,ok,TRFE_CHICK,Ovotransferrin,,Gallus gallus,9031,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,705,686,77777,2,19,15,32,0,0,1,0
+P04141,ok,CSF2_HUMAN,Granulocyte-macrophage colony-stimulating factor,CSF2,Homo sapiens,9606,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,144,127,16295,1,17,2,5,0,0,2,4
+P05231,ok,IL6_HUMAN,Interleukin-6,IL6,Homo sapiens,9606,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,212,183,23718,1,29,2,4,1,1,1,0
+P09038,ok,FGF2_HUMAN,Fibroblast growth factor 2,FGF2,Homo sapiens,9606,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,288,288,30770,3,0,0,6,7,1,0,0
+P09919,ok,CSF3_HUMAN,Granulocyte colony-stimulating factor,CSF3,Homo sapiens,9606,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,207,177,22293,1,30,2,5,0,0,0,1
+P22301,ok,IL10_HUMAN,Interleukin-10,IL10,Homo sapiens,9606,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,178,160,20517,1,18,2,6,0,0,1,0
+P24627,ok,TRFL_BOVIN,Lactotransferrin,LTF,Bos taurus,9913,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,708,689,78056,2,19,16,35,0,0,9,0
+P40933,ok,IL15_HUMAN,Interleukin-15,IL15,Homo sapiens,9606,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,162,133,18086,1,29,2,7,0,0,1,0
+P41365,ok,LIPB_MOEAN,Lipase B,,Moesziomyces antarcticus,84753,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,342,324,35518,1,18,3,7,0,0,1,0
+P52754,ok,HYP1_TRIRF,Class II hydrophobin 1,hfb1,Trichoderma reesei,51453,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,97,81,9874,1,16,4,8,0,0,0,0
+P56552,ok,DEF_PENBA,Defensin-like protein,,Pentadiplandra brazzeana,43545,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,54,54,6498,1,0,4,8,1,0,0,0
+P59665,ok,DEF1_HUMAN,Neutrophil defensin 1,DEFA1;DEFA1B,Homo sapiens,9606,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,94,75,10201,1,19,3,6,3,1,0,0
+Q8IU54,ok,IFNL1_HUMAN,Interferon lambda-1,IFNL1,Homo sapiens,9606,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,200,181,21898,1,19,1,5,0,0,1,0
+Q9UMD9,ok,COHA1_HUMAN,Collagen alpha-1(XVII) chain,COL17A1,Homo sapiens,9606,UniProtKB reviewed (Swiss-Prot),1: Evidence at protein level,1497,1497,150419,3,0,0,7,1,1,1,0

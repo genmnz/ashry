@@ -1,0 +1,1516 @@
+{
+ "entryType": "UniProtKB reviewed (Swiss-Prot)",
+ "primaryAccession": "P01005",
+ "uniProtkbId": "IOVO_CHICK",
+ "entryAudit": {
+  "firstPublicDate": "1986-07-21",
+  "lastAnnotationUpdateDate": "2026-11-04",
+  "lastSequenceUpdateDate": "1986-07-21",
+  "entryVersion": 174,
+  "sequenceVersion": 1
+ },
+ "annotationScore": 5.0,
+ "organism": {
+  "scientificName": "Gallus gallus",
+  "commonName": "Chicken",
+  "taxonId": 9031,
+  "lineage": [
+   "Eukaryota",
+   "Metazoa",
+   "Chordata",
+   "Craniata",
+   "Vertebrata",
+   "Euteleostomi",
+   "Archelosauria",
+   "Archosauria",
+   "Dinosauria",
+   "Saurischia",
+   "Theropoda",
+   "Coelurosauria",
+   "Aves",
+   "Neognathae",
+   "Galloanserae",
+   "Galliformes",
+   "Phasianidae",
+   "Phasianinae",
+   "Gallus"
+  ]
+ },
+ "proteinExistence": "1: Evidence at protein level",
+ "proteinDescription": {
+  "recommendedName": {
+   "fullName": {
+    "value": "Ovomucoid"
+   }
+  },
+  "alternativeNames": [
+   {
+    "fullName": {
+     "value": "Allergen Gal d I"
+    }
+   }
+  ],
+  "allergenName": {
+   "value": "Gal d 1"
+  },
+  "flag": "Precursor"
+ },
+ "comments": [
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "23075397"
+      }
+     ],
+     "value": "Serine protease inhibitor. Inhibits trypsin"
+    }
+   ],
+   "commentType": "FUNCTION"
+  },
+  {
+   "commentType": "BIOPHYSICOCHEMICAL PROPERTIES",
+   "phDependence": {
+    "texts": [
+     {
+      "evidences": [
+       {
+        "evidenceCode": "ECO:0000269",
+        "source": "PubMed",
+        "id": "23075397"
+       }
+      ],
+      "value": "No decrease in activity observed after incubating at pH 2.5 and pH 7.4 for 1 hour. Retains 20% activity after incubation at pH 12 for 1 hour."
+     }
+    ]
+   },
+   "temperatureDependence": {
+    "texts": [
+     {
+      "evidences": [
+       {
+        "evidenceCode": "ECO:0000269",
+        "source": "PubMed",
+        "id": "23075397"
+       }
+      ],
+      "value": "No decrease in activity observed after heating for 1 hour at up to 80 degrees Celsius. Retains 20% activity after incubation at 95 degrees Celsius for 1 hour."
+     }
+    ]
+   }
+  },
+  {
+   "commentType": "SUBCELLULAR LOCATION",
+   "subcellularLocations": [
+    {
+     "location": {
+      "value": "Secreted",
+      "id": "SL-0243"
+     }
+    }
+   ]
+  },
+  {
+   "texts": [
+    {
+     "value": "Avian ovomucoid consists of three homologous, tandem Kazal family inhibitory domains"
+    }
+   ],
+   "commentType": "DOMAIN"
+  },
+  {
+   "texts": [
+    {
+     "value": "Causes an allergic reaction in human"
+    }
+   ],
+   "commentType": "ALLERGEN"
+  }
+ ],
+ "features": [
+  {
+   "type": "Signal",
+   "location": {
+    "start": {
+     "value": 1,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 24,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "3548816"
+    }
+   ]
+  },
+  {
+   "type": "Chain",
+   "location": {
+    "start": {
+     "value": 25,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 210,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Ovomucoid",
+   "featureId": "PRO_0000016579"
+  },
+  {
+   "type": "Domain",
+   "location": {
+    "start": {
+     "value": 25,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 88,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Kazal-like 1",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000255",
+     "source": "PROSITE-ProRule",
+     "id": "PRU00798"
+    }
+   ]
+  },
+  {
+   "type": "Domain",
+   "location": {
+    "start": {
+     "value": 89,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 153,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Kazal-like 2",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000255",
+     "source": "PROSITE-ProRule",
+     "id": "PRU00798"
+    }
+   ]
+  },
+  {
+   "type": "Domain",
+   "location": {
+    "start": {
+     "value": 156,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 210,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Kazal-like 3",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000255",
+     "source": "PROSITE-ProRule",
+     "id": "PRU00798"
+    }
+   ]
+  },
+  {
+   "type": "Site",
+   "location": {
+    "start": {
+     "value": 48,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 49,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Reactive bond 1 for endoproteinase Lys-C"
+  },
+  {
+   "type": "Site",
+   "location": {
+    "start": {
+     "value": 113,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 114,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Reactive bond 2 for trypsin"
+  },
+  {
+   "type": "Site",
+   "location": {
+    "start": {
+     "value": 172,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 173,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Reactive bond 3"
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 34,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 34,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "N-linked (GlcNAc...) asparagine",
+   "featureId": ""
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 77,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 77,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "N-linked (GlcNAc...) asparagine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "15253437"
+    }
+   ],
+   "featureId": ""
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 93,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 93,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "N-linked (GlcNAc...) asparagine",
+   "featureId": ""
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 99,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 99,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "N-linked (GlcNAc...) asparagine",
+   "featureId": ""
+  },
+  {
+   "type": "Glycosylation",
+   "location": {
+    "start": {
+     "value": 199,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 199,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "N-linked (GlcNAc...) asparagine; partial",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "15253437"
+    }
+   ],
+   "featureId": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 29,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 68,
+     "modifier": "EXACT"
+    }
+   },
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 46,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 65,
+     "modifier": "EXACT"
+    }
+   },
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 54,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 86,
+     "modifier": "EXACT"
+    }
+   },
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 94,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 133,
+     "modifier": "EXACT"
+    }
+   },
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 111,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 130,
+     "modifier": "EXACT"
+    }
+   },
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 119,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 151,
+     "modifier": "EXACT"
+    }
+   },
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 162,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 192,
+     "modifier": "EXACT"
+    }
+   },
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 170,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 189,
+     "modifier": "EXACT"
+    }
+   },
+   "description": ""
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 178,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 210,
+     "modifier": "EXACT"
+    }
+   },
+   "description": ""
+  },
+  {
+   "type": "Natural variant",
+   "location": {
+    "start": {
+     "value": 158,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 159,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "due to an ambiguous intron excision",
+   "featureId": "",
+   "alternativeSequence": {}
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 62,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 62,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 2; AA sequence",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "T",
+    "alternativeSequences": [
+     "N"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 64,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 64,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 2; AA sequence",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "D",
+    "alternativeSequences": [
+     "E"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 108,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 108,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 2; AA sequence",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "M",
+    "alternativeSequences": [
+     "T"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 150,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 150,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 2; AA sequence",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "G",
+    "alternativeSequences": [
+     "E"
+    ]
+   }
+  }
+ ],
+ "keywords": [
+  {
+   "id": "KW-0020",
+   "category": "Disease",
+   "name": "Allergen"
+  },
+  {
+   "id": "KW-0903",
+   "category": "Technical term",
+   "name": "Direct protein sequencing"
+  },
+  {
+   "id": "KW-1015",
+   "category": "PTM",
+   "name": "Disulfide bond"
+  },
+  {
+   "id": "KW-0325",
+   "category": "PTM",
+   "name": "Glycoprotein"
+  },
+  {
+   "id": "KW-0646",
+   "category": "Molecular function",
+   "name": "Protease inhibitor"
+  },
+  {
+   "id": "KW-1185",
+   "category": "Technical term",
+   "name": "Reference proteome"
+  },
+  {
+   "id": "KW-0677",
+   "category": "Domain",
+   "name": "Repeat"
+  },
+  {
+   "id": "KW-0964",
+   "category": "Cellular component",
+   "name": "Secreted"
+  },
+  {
+   "id": "KW-0722",
+   "category": "Molecular function",
+   "name": "Serine protease inhibitor"
+  },
+  {
+   "id": "KW-0732",
+   "category": "Domain",
+   "name": "Signal"
+  }
+ ],
+ "references": [
+  {
+   "referenceNumber": 1,
+   "citation": {
+    "id": "7430252",
+    "citationType": "journal article",
+    "authors": [
+     "Catterall J.F.",
+     "Stein J.P.",
+     "Kristo P.",
+     "Means A.R.",
+     "O'Malley B.W."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "7430252"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1083/jcb.87.2.480"
+     }
+    ],
+    "title": "Primary sequence of ovomucoid messenger RNA as determined from cloned complementary DNA.",
+    "publicationDate": "1980",
+    "journal": "J. Cell Biol.",
+    "firstPage": "480",
+    "lastPage": "487",
+    "volume": "87"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [MRNA]"
+   ]
+  },
+  {
+   "referenceNumber": 2,
+   "citation": {
+    "id": "3548816",
+    "citationType": "journal article",
+    "authors": [
+     "Kato I.",
+     "Schrode J.",
+     "Kohr W.J.",
+     "Laskowski M. Jr."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "3548816"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1021/bi00375a027"
+     }
+    ],
+    "title": "Chicken ovomucoid: determination of its amino acid sequence, determination of the trypsin reactive site, and preparation of all three of its domains.",
+    "publicationDate": "1987",
+    "journal": "Biochemistry",
+    "firstPage": "193",
+    "lastPage": "201",
+    "volume": "26"
+   },
+   "referencePositions": [
+    "PROTEIN SEQUENCE OF 25-210"
+   ]
+  },
+  {
+   "referenceNumber": 3,
+   "citation": {
+    "id": "721826",
+    "citationType": "journal article",
+    "authors": [
+     "Thibodeau S.N.",
+     "Palmiter R.D.",
+     "Walsh K.A."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "721826"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/s0021-9258(17)34279-5"
+     }
+    ],
+    "title": "Precursor of egg white ovomucoid. Amino acid sequence of an NH2-terminal extension.",
+    "publicationDate": "1978",
+    "journal": "J. Biol. Chem.",
+    "firstPage": "9018",
+    "lastPage": "9023",
+    "volume": "253"
+   },
+   "referencePositions": [
+    "PROTEIN SEQUENCE OF 1-44 (PRECURSOR PROTEIN)"
+   ]
+  },
+  {
+   "referenceNumber": 4,
+   "citation": {
+    "id": "15253437",
+    "citationType": "journal article",
+    "authors": [
+     "Hagglund P.",
+     "Bunkenborg J.",
+     "Elortza F.",
+     "Jensen O.N.",
+     "Roepstorff P."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "15253437"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1021/pr034112b"
+     }
+    ],
+    "title": "A new strategy for identification of N-glycosylated proteins and unambiguous assignment of their glycosylation sites using HILIC enrichment and partial deglycosylation.",
+    "publicationDate": "2004",
+    "journal": "J. Proteome Res.",
+    "firstPage": "556",
+    "lastPage": "566",
+    "volume": "3"
+   },
+   "referencePositions": [
+    "GLYCOSYLATION AT ASN-77 AND ASN-199",
+    "IDENTIFICATION BY MASS SPECTROMETRY"
+   ]
+  },
+  {
+   "referenceNumber": 5,
+   "citation": {
+    "id": "23075397",
+    "citationType": "journal article",
+    "authors": [
+     "Derache C.",
+     "Epinette C.",
+     "Roussel A.",
+     "Gabant G.",
+     "Cadene M.",
+     "Korkmaz B.",
+     "Gauthier F.",
+     "Kellenberger C."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "23075397"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1111/febs.12033"
+     }
+    ],
+    "title": "Crystal structure of greglin, a novel non-classical Kazal inhibitor, in complex with subtilisin.",
+    "publicationDate": "2012",
+    "journal": "FEBS J.",
+    "firstPage": "4466",
+    "lastPage": "4478",
+    "volume": "279"
+   },
+   "referencePositions": [
+    "FUNCTION",
+    "BIOPHYSICOCHEMICAL PROPERTIES"
+   ]
+  }
+ ],
+ "uniProtKBCrossReferences": [
+  {
+   "database": "EMBL",
+   "id": "J00902",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "-"
+    },
+    {
+     "key": "Status",
+     "value": "NOT_ANNOTATED_CDS"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "mRNA"
+    }
+   ]
+  },
+  {
+   "database": "PIR",
+   "id": "A92754",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "TICHM"
+    }
+   ]
+  },
+  {
+   "database": "RefSeq",
+   "id": "NP_001295423.1",
+   "properties": [
+    {
+     "key": "NucleotideSequenceId",
+     "value": "NM_001308494.2"
+    }
+   ]
+  },
+  {
+   "database": "AlphaFoldDB",
+   "id": "P01005",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "SMR",
+   "id": "P01005",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "STRING",
+   "id": "9031.ENSGALP00000005544",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Allergome",
+   "id": "3291",
+   "properties": [
+    {
+     "key": "AllergenName",
+     "value": "Gal d 1.0101"
+    }
+   ]
+  },
+  {
+   "database": "Allergome",
+   "id": "359",
+   "properties": [
+    {
+     "key": "AllergenName",
+     "value": "Gal d 1"
+    }
+   ]
+  },
+  {
+   "database": "MEROPS",
+   "id": "I01.001",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "MEROPS",
+   "id": "I01.002",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "MEROPS",
+   "id": "I01.003",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "GlyConnect",
+   "id": "P01005",
+   "properties": [
+    {
+     "key": "glycosylation",
+     "value": "38 N-Linked glycans"
+    }
+   ]
+  },
+  {
+   "database": "GlyCosmos",
+   "id": "P01005",
+   "properties": [
+    {
+     "key": "glycosylation",
+     "value": "5 sites, 64 glycans"
+    }
+   ]
+  },
+  {
+   "database": "GlyGen",
+   "id": "P01005",
+   "properties": [
+    {
+     "key": "glycosylation",
+     "value": "6 sites, 64 N-linked glycans (1 site)"
+    }
+   ]
+  },
+  {
+   "database": "iPTMnet",
+   "id": "P01005",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PaxDb",
+   "id": "9031-ENSGALP00000005544",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "GeneID",
+   "id": "416236",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "KEGG",
+   "id": "gga:416236",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "CTD",
+   "id": "84651",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "VEuPathDB",
+   "id": "HostDB:geneid_416236",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "HOGENOM",
+   "id": "CLU_087965_0_0_1",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "InParanoid",
+   "id": "P01005",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "OMA",
+   "id": "AAMDDCP",
+   "properties": [
+    {
+     "key": "Fingerprint",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "OrthoDB",
+   "id": "126772at2759",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PhylomeDB",
+   "id": "P01005",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PRO",
+   "id": "PR:P01005",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Proteomes",
+   "id": "UP000000539",
+   "properties": [
+    {
+     "key": "Component",
+     "value": "Chromosome 13"
+    }
+   ]
+  },
+  {
+   "database": "Bgee",
+   "id": "ENSGALG00000003512",
+   "properties": [
+    {
+     "key": "ExpressionPatterns",
+     "value": "Expressed in lung and 2 other cell types or tissues"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0005783",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "C:endoplasmic reticulum"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:AgBase"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "6930851"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0005576",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "C:extracellular region"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "TAS:AgBase"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000304",
+     "source": "PubMed",
+     "id": "272676"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0032991",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "C:protein-containing complex"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:AgBase"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "13944692"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0030246",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:carbohydrate binding"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:AgBase"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "6930851"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0019863",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:IgE binding"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:AgBase"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "1692814"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0019864",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:IgG binding"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IMP:AgBase"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000315",
+     "source": "PubMed",
+     "id": "11944924"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0004867",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:serine-type endopeptidase inhibitor activity"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:AgBase"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "13944692"
+    },
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "3442603"
+    },
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "435257"
+    },
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "721826"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0048545",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:response to steroid hormone"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "TAS:AgBase"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000304",
+     "source": "PubMed",
+     "id": "7240208"
+    }
+   ]
+  },
+  {
+   "database": "CDD",
+   "id": "cd00104",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "KAZAL_FS"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "CDD",
+   "id": "cd01327",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "KAZAL_PSTI"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "FunFam",
+   "id": "3.30.60.30:FF:000036",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Ovomucoid"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "2"
+    }
+   ]
+  },
+  {
+   "database": "FunFam",
+   "id": "3.30.60.30:FF:000037",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Ovomucoid"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "Gene3D",
+   "id": "3.30.60.30",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "-"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR002350",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Kazal_dom"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR036058",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Kazal_dom_sf"
+    }
+   ]
+  },
+  {
+   "database": "PANTHER",
+   "id": "PTHR21312:SF28",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "OVOINHIBITOR-RELATED"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PANTHER",
+   "id": "PTHR21312",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "SERINE PROTEASE INHIBITOR"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "Pfam",
+   "id": "PF00050",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Kazal_1"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "database": "SMART",
+   "id": "SM00280",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "KAZAL"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "database": "SUPFAM",
+   "id": "SSF100895",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Kazal-type serine protease inhibitors"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "database": "PROSITE",
+   "id": "PS00282",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "KAZAL_1"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "3"
+    }
+   ]
+  },
+  {
+   "database": "PROSITE",
+   "id": "PS51465",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "KAZAL_2"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "3"
+    }
+   ]
+  }
+ ],
+ "sequence": {
+  "value": "MAMAGVFVLFSFVLCGFLPDAAFGAEVDCSRFPNATDKEGKDVLVCNKDLRPICGTDGVTYTNDCLLCAYSIEFGTNISKEHDGECKETVPMNCSSYANTTSEDGKVMVLCNRAFNPVCGTDGVTYDNECLLCAHKVEQGASVDKRHDGGCRKELAAVSVDCSEYPKPDCTAEDRPLCGSDNKTYGNKCNFCNAVVESNGTLTLSHFGKC",
+  "length": 210,
+  "molWeight": 22591,
+  "crc64": "8BE9516B6D38ACF9",
+  "md5": "BBA06175E0CA5A77DE810744578F2F51"
+ },
+ "extraAttributes": {
+  "countByCommentType": {
+   "FUNCTION": 1,
+   "BIOPHYSICOCHEMICAL PROPERTIES": 1,
+   "SUBCELLULAR LOCATION": 1,
+   "DOMAIN": 1,
+   "ALLERGEN": 1
+  },
+  "countByFeatureType": {
+   "Signal": 1,
+   "Chain": 1,
+   "Domain": 3,
+   "Site": 3,
+   "Glycosylation": 5,
+   "Disulfide bond": 9,
+   "Natural variant": 1,
+   "Sequence conflict": 4
+  },
+  "uniParcId": "UPI000012D76E"
+ }
+}

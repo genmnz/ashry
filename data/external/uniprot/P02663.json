@@ -1,0 +1,1680 @@
+{
+ "entryType": "UniProtKB reviewed (Swiss-Prot)",
+ "primaryAccession": "P02663",
+ "secondaryAccessions": [
+  "Q1RMQ6",
+  "Q9TR51"
+ ],
+ "uniProtkbId": "CASA2_BOVIN",
+ "entryAudit": {
+  "firstPublicDate": "1986-07-21",
+  "lastAnnotationUpdateDate": "2026-11-04",
+  "lastSequenceUpdateDate": "1989-07-01",
+  "entryVersion": 160,
+  "sequenceVersion": 2
+ },
+ "annotationScore": 5.0,
+ "organism": {
+  "scientificName": "Bos taurus",
+  "commonName": "Bovine",
+  "taxonId": 9913,
+  "lineage": [
+   "Eukaryota",
+   "Metazoa",
+   "Chordata",
+   "Craniata",
+   "Vertebrata",
+   "Euteleostomi",
+   "Mammalia",
+   "Eutheria",
+   "Laurasiatheria",
+   "Artiodactyla",
+   "Ruminantia",
+   "Pecora",
+   "Bovidae",
+   "Bovinae",
+   "Bos"
+  ]
+ },
+ "proteinExistence": "1: Evidence at protein level",
+ "proteinDescription": {
+  "recommendedName": {
+   "fullName": {
+    "value": "Alpha-S2-casein"
+   }
+  },
+  "contains": [
+   {
+    "recommendedName": {
+     "fullName": {
+      "value": "Casocidin-1"
+     }
+    },
+    "alternativeNames": [
+     {
+      "fullName": {
+       "value": "Casocidin-I"
+      }
+     }
+    ]
+   }
+  ],
+  "flag": "Precursor"
+ },
+ "genes": [
+  {
+   "geneName": {
+    "value": "CSN1S2"
+   }
+  }
+ ],
+ "comments": [
+  {
+   "texts": [
+    {
+     "value": "Important role in the capacity of milk to transport calcium phosphate"
+    }
+   ],
+   "commentType": "FUNCTION"
+  },
+  {
+   "texts": [
+    {
+     "value": "Casocidin-I inhibits the growth of E.coli and S.carnosus"
+    }
+   ],
+   "commentType": "FUNCTION"
+  },
+  {
+   "commentType": "SUBCELLULAR LOCATION",
+   "subcellularLocations": [
+    {
+     "location": {
+      "value": "Secreted",
+      "id": "SL-0243"
+     }
+    }
+   ]
+  },
+  {
+   "texts": [
+    {
+     "value": "Mammary gland specific. Secreted in milk"
+    }
+   ],
+   "commentType": "TISSUE SPECIFICITY"
+  },
+  {
+   "commentType": "MASS SPECTROMETRY",
+   "molecule": "Casocidin-1",
+   "method": "Electrospray",
+   "molWeight": 4870.0,
+   "molWeightError": 0.0,
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "7556666"
+    }
+   ]
+  },
+  {
+   "texts": [
+    {
+     "value": "At least two alleles exist. The sequence of the A allele is shown here. The D allele sequence differs from that shown in having a deletion of nine residues, which may be 49-58, 50-59, or 51-60"
+    }
+   ],
+   "commentType": "POLYMORPHISM"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000305"
+      }
+     ],
+     "value": "Belongs to the alpha-casein family"
+    }
+   ],
+   "commentType": "SIMILARITY"
+  },
+  {
+   "commentType": "WEB RESOURCE",
+   "resourceName": "Protein Spotlight",
+   "resourceUrl": "https://www.proteinspotlight.org/back_issues/016",
+   "ftp": false,
+   "note": "Of buttons, digestion and glue - Issue 16 of November 2001"
+  }
+ ],
+ "features": [
+  {
+   "type": "Signal",
+   "location": {
+    "start": {
+     "value": 1,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 15,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "862906"
+    }
+   ]
+  },
+  {
+   "type": "Chain",
+   "location": {
+    "start": {
+     "value": 16,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 222,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Alpha-S2-casein",
+   "featureId": "PRO_0000004460"
+  },
+  {
+   "type": "Peptide",
+   "location": {
+    "start": {
+     "value": 165,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 203,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Casocidin-1",
+   "featureId": "PRO_0000004461"
+  },
+  {
+   "type": "Repeat",
+   "location": {
+    "start": {
+     "value": 76,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 140,
+     "modifier": "EXACT"
+    }
+   },
+   "description": ""
+  },
+  {
+   "type": "Repeat",
+   "location": {
+    "start": {
+     "value": 158,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 222,
+     "modifier": "EXACT"
+    }
+   },
+   "description": ""
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 23,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 23,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "17510049"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 24,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 24,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "17510049"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 25,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 25,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "17510049"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 28,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 28,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "17510049"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 46,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 46,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "Reference",
+     "id": "Ref.6"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 71,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 71,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "17510049"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 72,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 72,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "17510049"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 73,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 73,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "17510049"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 76,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 76,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "17510049"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 144,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 144,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "O97944"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 146,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 146,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "O97944"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 150,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 150,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "O97944"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 158,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 158,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "17510049"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "Reference",
+     "id": "Ref.6"
+    }
+   ]
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 42,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 42,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 2; AAI14774",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "A",
+    "alternativeSequences": [
+     "D"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 102,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 102,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 3; AA sequence",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "Q",
+    "alternativeSequences": [
+     "E"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 105,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 105,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 2; AAI14774",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "Q",
+    "alternativeSequences": [
+     "R"
+    ]
+   }
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 168,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 183,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "6FS4"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 187,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 189,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "6FS4"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 194,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 201,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "6FS5"
+    }
+   ]
+  }
+ ],
+ "keywords": [
+  {
+   "id": "KW-0002",
+   "category": "Technical term",
+   "name": "3D-structure"
+  },
+  {
+   "id": "KW-0044",
+   "category": "Molecular function",
+   "name": "Antibiotic"
+  },
+  {
+   "id": "KW-0929",
+   "category": "Molecular function",
+   "name": "Antimicrobial"
+  },
+  {
+   "id": "KW-0903",
+   "category": "Technical term",
+   "name": "Direct protein sequencing"
+  },
+  {
+   "id": "KW-0494",
+   "category": "Molecular function",
+   "name": "Milk protein"
+  },
+  {
+   "id": "KW-0597",
+   "category": "PTM",
+   "name": "Phosphoprotein"
+  },
+  {
+   "id": "KW-1185",
+   "category": "Technical term",
+   "name": "Reference proteome"
+  },
+  {
+   "id": "KW-0677",
+   "category": "Domain",
+   "name": "Repeat"
+  },
+  {
+   "id": "KW-0964",
+   "category": "Cellular component",
+   "name": "Secreted"
+  },
+  {
+   "id": "KW-0732",
+   "category": "Domain",
+   "name": "Signal"
+  }
+ ],
+ "references": [
+  {
+   "referenceNumber": 1,
+   "citation": {
+    "id": "2833669",
+    "citationType": "journal article",
+    "authors": [
+     "Stewart A.F.",
+     "Bonsing J.",
+     "Beattie C.W.",
+     "Shah F.",
+     "Willis I.M.",
+     "Mackinlay A.G."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "2833669"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1093/oxfordjournals.molbev.a040437"
+     }
+    ],
+    "title": "Complete nucleotide sequences of bovine alpha S2- and beta-casein cDNAs: comparisons with related sequences in other species.",
+    "publicationDate": "1987",
+    "journal": "Mol. Biol. Evol.",
+    "firstPage": "231",
+    "lastPage": "241",
+    "volume": "4"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [MRNA]"
+   ]
+  },
+  {
+   "referenceNumber": 2,
+   "citation": {
+    "id": "CI-1L3IP7EHICAIC",
+    "citationType": "submission",
+    "authoringGroup": [
+     "NIH - Mammalian Gene Collection (MGC) project"
+    ],
+    "publicationDate": "APR-2006",
+    "submissionDatabase": "EMBL/GenBank/DDBJ databases"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA]"
+   ],
+   "referenceComments": [
+    {
+     "value": "Crossbred X Angus",
+     "type": "STRAIN"
+    },
+    {
+     "value": "Liver",
+     "type": "TISSUE"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 3,
+   "citation": {
+    "id": "862906",
+    "citationType": "journal article",
+    "authors": [
+     "Brignon G.",
+     "Ribadeau-Dumas B.",
+     "Mercier J.-C.",
+     "Pelissier J.-P.",
+     "Das B.C."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "862906"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/0014-5793(77)80167-1"
+     }
+    ],
+    "title": "Complete amino acid sequence of bovine alphaS2-casein.",
+    "publicationDate": "1977",
+    "journal": "FEBS Lett.",
+    "firstPage": "274",
+    "lastPage": "279",
+    "volume": "76"
+   },
+   "referencePositions": [
+    "PROTEIN SEQUENCE OF 16-222 (A ALLELE)"
+   ],
+   "referenceComments": [
+    {
+     "value": "Milk",
+     "type": "TISSUE"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 4,
+   "citation": {
+    "id": "469044",
+    "citationType": "journal article",
+    "authors": [
+     "Grosclaude F.",
+     "Joudrier P.",
+     "Mahe M.-F."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "469044"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1017/s0022029900017052"
+     }
+    ],
+    "title": "A genetic and biochemical analysis of a polymorphism of bovine alpha S2-casein.",
+    "publicationDate": "1979",
+    "journal": "J. Dairy Res.",
+    "firstPage": "211",
+    "lastPage": "213",
+    "volume": "46"
+   },
+   "referencePositions": [
+    "PARTIAL PROTEIN SEQUENCE (D ALLELE)"
+   ],
+   "referenceComments": [
+    {
+     "value": "Milk",
+     "type": "TISSUE"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 5,
+   "citation": {
+    "id": "7556666",
+    "citationType": "journal article",
+    "authors": [
+     "Zucht H.-D.",
+     "Raida M.",
+     "Adermann K.",
+     "Meagert H.-J.",
+     "Forssmann W.-G."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "7556666"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/0014-5793(95)00974-e"
+     }
+    ],
+    "title": "Casocidin-I: a casein-alpha s2 derived peptide exhibits antibacterial activity.",
+    "publicationDate": "1995",
+    "journal": "FEBS Lett.",
+    "firstPage": "185",
+    "lastPage": "188",
+    "volume": "372"
+   },
+   "referencePositions": [
+    "PROTEIN SEQUENCE OF 165-203",
+    "CHARACTERIZATION OF CASOCIDIN",
+    "MASS SPECTROMETRY"
+   ],
+   "referenceComments": [
+    {
+     "value": "Milk",
+     "type": "TISSUE"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 6,
+   "citation": {
+    "id": "CI-DR7357ALK1GP4",
+    "citationType": "submission",
+    "authors": [
+     "Bai F.",
+     "Liu S.",
+     "Witzmann F.A."
+    ],
+    "publicationDate": "SEP-2005",
+    "submissionDatabase": "UniProtKB"
+   },
+   "referencePositions": [
+    "PHOSPHORYLATION AT SER-46 AND SER-158"
+   ]
+  },
+  {
+   "referenceNumber": 7,
+   "citation": {
+    "id": "17510049",
+    "citationType": "journal article",
+    "authors": [
+     "Imanishi S.Y.",
+     "Kochin V.",
+     "Ferraris S.E.",
+     "de Thonel A.",
+     "Pallari H.M.",
+     "Corthals G.L.",
+     "Eriksson J.E."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "17510049"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1074/mcp.m600480-mcp200"
+     }
+    ],
+    "title": "Reference-facilitated phosphoproteomics: fast and reliable phosphopeptide validation by micro LC-ESI-Q-TOF MS/MS.",
+    "publicationDate": "2007",
+    "journal": "Mol. Cell. Proteomics",
+    "firstPage": "1380",
+    "lastPage": "1391",
+    "volume": "6"
+   },
+   "referencePositions": [
+    "PHOSPHORYLATION AT SER-23; SER-24; SER-25; SER-28; SER-71; SER-72; SER-73; SER-76 AND SER-158",
+    "IDENTIFICATION BY MASS SPECTROMETRY"
+   ]
+  }
+ ],
+ "uniProtKBCrossReferences": [
+  {
+   "database": "EMBL",
+   "id": "M16644",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAA30479.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "mRNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "BC114773",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAI14774.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "mRNA"
+    }
+   ]
+  },
+  {
+   "database": "PIR",
+   "id": "JQ2008",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "KABOS2"
+    }
+   ]
+  },
+  {
+   "database": "RefSeq",
+   "id": "NP_776953.1",
+   "properties": [
+    {
+     "key": "NucleotideSequenceId",
+     "value": "NM_174528.2"
+    }
+   ]
+  },
+  {
+   "database": "RefSeq",
+   "id": "XP_024848785.1",
+   "properties": [
+    {
+     "key": "NucleotideSequenceId",
+     "value": "XM_024993017.2"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "6FS4",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "NMR"
+    },
+    {
+     "key": "Resolution",
+     "value": "-"
+    },
+    {
+     "key": "Chains",
+     "value": "A=166-196"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "6FS5",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "NMR"
+    },
+    {
+     "key": "Resolution",
+     "value": "-"
+    },
+    {
+     "key": "Chains",
+     "value": "A=165-203"
+    }
+   ]
+  },
+  {
+   "database": "AlphaFoldDB",
+   "id": "P02663",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "SMR",
+   "id": "P02663",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "FunCoup",
+   "id": "P02663",
+   "properties": [
+    {
+     "key": "Number of interactors",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "STRING",
+   "id": "9913.ENSBTAP00000006590",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Allergome",
+   "id": "10198",
+   "properties": [
+    {
+     "key": "AllergenName",
+     "value": "Bos d 10.0101"
+    }
+   ]
+  },
+  {
+   "database": "Allergome",
+   "id": "167",
+   "properties": [
+    {
+     "key": "AllergenName",
+     "value": "Bos d 8"
+    }
+   ]
+  },
+  {
+   "database": "Allergome",
+   "id": "2735",
+   "properties": [
+    {
+     "key": "AllergenName",
+     "value": "Bos d 10"
+    }
+   ]
+  },
+  {
+   "database": "CarbonylDB",
+   "id": "P02663",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "GlyGen",
+   "id": "P02663",
+   "properties": [
+    {
+     "key": "glycosylation",
+     "value": "2 sites, 1 O-linked glycan (1 site)"
+    }
+   ]
+  },
+  {
+   "database": "iPTMnet",
+   "id": "P02663",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PaxDb",
+   "id": "9913-ENSBTAP00000006590",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PeptideAtlas",
+   "id": "P02663",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Ensembl",
+   "id": "ENSBTAT00000006590.7",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "ENSBTAP00000006590.5"
+    },
+    {
+     "key": "GeneId",
+     "value": "ENSBTAG00000005005.8"
+    }
+   ]
+  },
+  {
+   "database": "Ensembl",
+   "id": "ENSBTAT00085053852",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "ENSBTAP00085046033"
+    },
+    {
+     "key": "GeneId",
+     "value": "ENSBTAG00085021439"
+    }
+   ]
+  },
+  {
+   "database": "Ensembl",
+   "id": "ENSBTAT00090001175",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "ENSBTAP00090000344"
+    },
+    {
+     "key": "GeneId",
+     "value": "ENSBTAG00090000789"
+    }
+   ]
+  },
+  {
+   "database": "GeneID",
+   "id": "282209",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "KEGG",
+   "id": "bta:282209",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "CTD",
+   "id": "282209",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "VEuPathDB",
+   "id": "HostDB:ENSBTAG00000005005",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "eggNOG",
+   "id": "ENOG502TDWX",
+   "properties": [
+    {
+     "key": "ToxonomicScope",
+     "value": "Eukaryota"
+    }
+   ]
+  },
+  {
+   "database": "GeneTree",
+   "id": "ENSGT00940000164399",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "HOGENOM",
+   "id": "CLU_121717_0_0_1",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "InParanoid",
+   "id": "P02663",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "OMA",
+   "id": "AKHEMEH",
+   "properties": [
+    {
+     "key": "Fingerprint",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "OrthoDB",
+   "id": "9564348at2759",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PRO",
+   "id": "PR:P02663",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Proteomes",
+   "id": "UP000009136",
+   "properties": [
+    {
+     "key": "Component",
+     "value": "Chromosome 6"
+    }
+   ]
+  },
+  {
+   "database": "Bgee",
+   "id": "ENSBTAG00000005005",
+   "properties": [
+    {
+     "key": "ExpressionPatterns",
+     "value": "Expressed in milk and 29 other cell types or tissues"
+    }
+   ]
+  },
+  {
+   "database": "ExpressionAtlas",
+   "id": "P02663",
+   "properties": [
+    {
+     "key": "ExpressionPatterns",
+     "value": "baseline"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0005576",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "C:extracellular region"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:AgBase"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "3549815"
+    },
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "8186264"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0005794",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "C:Golgi apparatus"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:AgBase"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "5168866"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0005796",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "C:Golgi lumen"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:AgBase"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "5168866"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0042803",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:protein homodimerization activity"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:AgBase"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "8186264"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0035375",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:zymogen binding"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IPI:AgBase"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000353",
+     "source": "PubMed",
+     "id": "8186264"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:1903496",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:response to 11-deoxycorticosterone"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:AgBase"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "3585228"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:1903494",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:response to dehydroepiandrosterone"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:AgBase"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "3585228"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0032355",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:response to estradiol"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:AgBase"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "3585228"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0060416",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:response to growth hormone"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:AgBase"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "16174355"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0032570",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:response to progesterone"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:AgBase"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "3585228"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR011175",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Alpha-s2_casein"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR001588",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Casein"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR031305",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Casein_CS"
+    }
+   ]
+  },
+  {
+   "database": "PANTHER",
+   "id": "PTHR16656",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "ALPHA-S2-CASEIN-LIKE B"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PANTHER",
+   "id": "PTHR16656:SF5",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "ALPHA-S2-CASEIN-LIKE B"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "Pfam",
+   "id": "PF00363",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Casein"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PIRSF",
+   "id": "PIRSF002371",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Alpha-s2-casein"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PROSITE",
+   "id": "PS00306",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "CASEIN_ALPHA_BETA"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  }
+ ],
+ "sequence": {
+  "value": "MKFFIFTCLLAVALAKNTMEHVSSSEESIISQETYKQEKNMAINPSKENLCSTFCKEVVRNANEEEYSIGSSSEESAEVATEEVKITVDDKHYQKALNEINQFYQKFPQYLQYLYQGPIVLNPWDQVKRNAVPITPTLNREQLSTSEENSKKTVDMESTEVFTKKTKLTEEEKNRLNFLKKISQRYQKFALPQYLKTVYQHQKAMKPWIQPKTKVIPYVRYL",
+  "length": 222,
+  "molWeight": 26019,
+  "crc64": "81E7408AF1C12F7C",
+  "md5": "9EE069C27E1CA64E43CF43D03B00C1A4"
+ },
+ "extraAttributes": {
+  "countByCommentType": {
+   "FUNCTION": 2,
+   "SUBCELLULAR LOCATION": 1,
+   "TISSUE SPECIFICITY": 1,
+   "MASS SPECTROMETRY": 1,
+   "POLYMORPHISM": 1,
+   "SIMILARITY": 1,
+   "WEB RESOURCE": 1
+  },
+  "countByFeatureType": {
+   "Signal": 1,
+   "Chain": 1,
+   "Peptide": 1,
+   "Repeat": 2,
+   "Modified residue": 13,
+   "Sequence conflict": 3,
+   "Helix": 2,
+   "Beta strand": 1
+  },
+  "uniParcId": "UPI000004702E"
+ }
+}

@@ -1,0 +1,2020 @@
+{
+ "entryType": "UniProtKB reviewed (Swiss-Prot)",
+ "primaryAccession": "P02236",
+ "secondaryAccessions": [
+  "A0A0R0EEJ9"
+ ],
+ "uniProtkbId": "LGB4_SOYBN",
+ "entryAudit": {
+  "firstPublicDate": "1986-07-21",
+  "lastAnnotationUpdateDate": "2026-11-04",
+  "lastSequenceUpdateDate": "2007-01-23",
+  "entryVersion": 142,
+  "sequenceVersion": 2
+ },
+ "annotationScore": 5.0,
+ "organism": {
+  "scientificName": "Glycine max",
+  "commonName": "Soybean",
+  "synonyms": [
+   "Glycine hispida"
+  ],
+  "taxonId": 3847,
+  "lineage": [
+   "Eukaryota",
+   "Viridiplantae",
+   "Streptophyta",
+   "Embryophyta",
+   "Tracheophyta",
+   "Spermatophyta",
+   "Magnoliopsida",
+   "eudicotyledons",
+   "Gunneridae",
+   "Pentapetalae",
+   "rosids",
+   "fabids",
+   "Fabales",
+   "Fabaceae",
+   "Papilionoideae",
+   "50 kb inversion clade",
+   "NPAAA clade",
+   "indigoferoid/millettioid clade",
+   "Phaseoleae",
+   "Glycine",
+   "Glycine subgen. Soja"
+  ]
+ },
+ "proteinExistence": "1: Evidence at protein level",
+ "proteinDescription": {
+  "recommendedName": {
+   "fullName": {
+    "evidences": [
+     {
+      "evidenceCode": "ECO:0000303",
+      "source": "PubMed",
+      "id": "32297921"
+     }
+    ],
+    "value": "Leghemoglobin 4"
+   },
+   "shortNames": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000303",
+       "source": "PubMed",
+       "id": "32297921"
+      }
+     ],
+     "value": "GmLb4"
+    }
+   ]
+  },
+  "alternativeNames": [
+   {
+    "fullName": {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000303",
+       "source": "PubMed",
+       "id": "34737003"
+      }
+     ],
+     "value": "Hemoglobin 2-5"
+    },
+    "shortNames": [
+     {
+      "evidences": [
+       {
+        "evidenceCode": "ECO:0000303",
+        "source": "PubMed",
+        "id": "34737003"
+       }
+      ],
+      "value": "GmGLB2-5"
+     }
+    ]
+   },
+   {
+    "fullName": {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000303",
+       "source": "PubMed",
+       "id": "34737003"
+      },
+      {
+       "evidenceCode": "ECO:0000303",
+       "source": "PubMed",
+       "id": "561001"
+      }
+     ],
+     "value": "Leghemoglobin C2"
+    },
+    "shortNames": [
+     {
+      "evidences": [
+       {
+        "evidenceCode": "ECO:0000305"
+       }
+      ],
+      "value": "GmLbc2"
+     }
+    ]
+   }
+  ]
+ },
+ "genes": [
+  {
+   "geneName": {
+    "evidences": [
+     {
+      "evidenceCode": "ECO:0000303",
+      "source": "PubMed",
+      "id": "32297921"
+     }
+    ],
+    "value": "LB4"
+   },
+   "synonyms": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000303",
+       "source": "PubMed",
+       "id": "34737003"
+      }
+     ],
+     "value": "GLB2-5"
+    },
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000303",
+       "source": "PubMed",
+       "id": "34737003"
+      }
+     ],
+     "value": "LBC2"
+    }
+   ],
+   "orderedLocusNames": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000312",
+       "source": "EMBL",
+       "id": "KRG92101.1"
+      }
+     ],
+     "value": "Glyma_20G191200"
+    }
+   ]
+  }
+ ],
+ "comments": [
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000250",
+       "source": "UniProtKB",
+       "id": "Q43296"
+      },
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "22308405"
+      },
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "32297921"
+      },
+      {
+       "evidenceCode": "ECO:0000303",
+       "source": "PubMed",
+       "id": "17540516"
+      }
+     ],
+     "value": "Leghemoglobin that reversibly binds oxygen O(2) through a pentacoordinated heme iron (By similarity). In root nodules, facilitates the diffusion of oxygen to the bacteroids while preventing the bacterial nitrogenase from being inactivated by buffering dioxygen, nitric oxide and carbon monoxide, and promoting the formation of reactive oxygen species (ROS, e.g. H(2)O(2)) (PubMed:17540516, PubMed:22308405, PubMed:32297921). This role is essential for symbiotic nitrogen fixation (SNF) (PubMed:17540516, PubMed:32297921)"
+    }
+   ],
+   "commentType": "FUNCTION"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000250",
+       "source": "UniProtKB",
+       "id": "P02240"
+      }
+     ],
+     "value": "Monomer"
+    }
+   ],
+   "commentType": "SUBUNIT"
+  },
+  {
+   "commentType": "SUBCELLULAR LOCATION",
+   "subcellularLocations": [
+    {
+     "location": {
+      "evidences": [
+       {
+        "evidenceCode": "ECO:0000250",
+        "source": "UniProtKB",
+        "id": "P02240"
+       }
+      ],
+      "value": "Cytoplasm, cytosol",
+      "id": "SL-0091"
+     }
+    },
+    {
+     "location": {
+      "evidences": [
+       {
+        "evidenceCode": "ECO:0000250",
+        "source": "UniProtKB",
+        "id": "P02240"
+       }
+      ],
+      "value": "Nucleus",
+      "id": "SL-0191"
+     }
+    }
+   ]
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "32297921"
+      }
+     ],
+     "value": "Specifically expressed in root nodules, and barely in pods"
+    }
+   ],
+   "commentType": "TISSUE SPECIFICITY"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "32297921"
+      }
+     ],
+     "value": "Gradual accumulation in developing and maturating root nodules (PubMed:32297921). Levels decline during nodule senescence (PubMed:32297921)"
+    }
+   ],
+   "commentType": "DEVELOPMENTAL STAGE"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "18838253"
+      },
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "32297921"
+      }
+     ],
+     "value": "Negatively regulated by cobalt (Co) in a dose-dependent manner (PubMed:18838253). Suppressed by exposure to excess nitrogen (N); this repression is associated with nodule greening and reduced biological nitrogen fixation (BN) efficiency (PubMed:32297921)"
+    }
+   ],
+   "commentType": "INDUCTION"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000250",
+       "source": "UniProtKB",
+       "id": "P02235"
+      },
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "22308405"
+      }
+     ],
+     "value": "Nitrated mainly at Tyr-31 and, to a lower extent, at Tyr-26 and Tyr-134, in effective nodules and particularly in hypoxic conditions; this mechanism may play a protective role in the symbiosis by buffering toxic peroxynitrite NO(2)(-) (PubMed:22308405). Nitration level decrease during nodule senescence (By similarity)"
+    }
+   ],
+   "commentType": "PTM"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000250",
+       "source": "UniProtKB",
+       "id": "Q3C1F7"
+      }
+     ],
+     "value": "Phosphorylation at Ser-46 disrupts the molecular environment of its porphyrin ring oxygen binding pocket, thus leading to a reduced oxygen consumption and to the delivery of oxygen O(2) to symbiosomes"
+    }
+   ],
+   "commentType": "PTM"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000305"
+      }
+     ],
+     "value": "Belongs to the plant globin family"
+    }
+   ],
+   "commentType": "SIMILARITY"
+  }
+ ],
+ "features": [
+  {
+   "type": "Initiator methionine",
+   "location": {
+    "start": {
+     "value": 1,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 1,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Removed",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "561001"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "Reference",
+     "id": "Ref.3"
+    },
+    {
+     "evidenceCode": "ECO:0000305",
+     "source": "PubMed",
+     "id": "22308405"
+    }
+   ]
+  },
+  {
+   "type": "Chain",
+   "location": {
+    "start": {
+     "value": 2,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 145,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Leghemoglobin 4",
+   "featureId": "PRO_0000193004"
+  },
+  {
+   "type": "Domain",
+   "location": {
+    "start": {
+     "value": 3,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 145,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Globin",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000255",
+     "source": "PROSITE-ProRule",
+     "id": "PRU00238"
+    }
+   ]
+  },
+  {
+   "type": "Binding site",
+   "location": {
+    "start": {
+     "value": 46,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 46,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "featureCrossReferences": [
+    {
+     "database": "ChEBI",
+     "id": "CHEBI:60344"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "P02240"
+    }
+   ],
+   "ligand": {
+    "name": "heme b",
+    "id": "ChEBI:CHEBI:60344"
+   }
+  },
+  {
+   "type": "Binding site",
+   "location": {
+    "start": {
+     "value": 62,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 62,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "featureCrossReferences": [
+    {
+     "database": "ChEBI",
+     "id": "CHEBI:15379"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "P02240"
+    }
+   ],
+   "ligand": {
+    "name": "O2",
+    "id": "ChEBI:CHEBI:15379"
+   }
+  },
+  {
+   "type": "Binding site",
+   "location": {
+    "start": {
+     "value": 65,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 65,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "featureCrossReferences": [
+    {
+     "database": "ChEBI",
+     "id": "CHEBI:60344"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "P02240"
+    }
+   ],
+   "ligand": {
+    "name": "heme b",
+    "id": "ChEBI:CHEBI:60344"
+   }
+  },
+  {
+   "type": "Binding site",
+   "location": {
+    "start": {
+     "value": 93,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 93,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "proximal binding residue",
+   "featureCrossReferences": [
+    {
+     "database": "ChEBI",
+     "id": "CHEBI:60344"
+    },
+    {
+     "database": "ChEBI",
+     "id": "CHEBI:18248"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000255",
+     "source": "PROSITE-ProRule",
+     "id": "PRU00238"
+    }
+   ],
+   "ligand": {
+    "name": "heme b",
+    "id": "ChEBI:CHEBI:60344"
+   },
+   "ligandPart": {
+    "name": "Fe",
+    "id": "ChEBI:CHEBI:18248"
+   }
+  },
+  {
+   "type": "Binding site",
+   "location": {
+    "start": {
+     "value": 96,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 96,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "featureCrossReferences": [
+    {
+     "database": "ChEBI",
+     "id": "CHEBI:60344"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "P02240"
+    }
+   ],
+   "ligand": {
+    "name": "heme b",
+    "id": "ChEBI:CHEBI:60344"
+   }
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 2,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 2,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "N-acetylglycine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "22308405"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 26,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 26,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Nitrated tyrosine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "P02235"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 31,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 31,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Nitrated tyrosine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "P02235"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 46,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 46,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Phosphoserine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "Q3C1F7"
+    }
+   ]
+  },
+  {
+   "type": "Modified residue",
+   "location": {
+    "start": {
+     "value": 134,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 134,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Nitrated tyrosine",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000250",
+     "source": "UniProtKB",
+     "id": "P02235"
+    }
+   ]
+  },
+  {
+   "type": "Natural variant",
+   "location": {
+    "start": {
+     "value": 9,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 9,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "featureId": "",
+   "alternativeSequence": {
+    "originalSequence": "E",
+    "alternativeSequences": [
+     "D"
+    ]
+   }
+  },
+  {
+   "type": "Natural variant",
+   "location": {
+    "start": {
+     "value": 98,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 98,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "featureId": "",
+   "alternativeSequence": {
+    "originalSequence": "I",
+    "alternativeSequences": [
+     "V"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 32,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 32,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 3; AA sequence",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "T",
+    "alternativeSequences": [
+     "N"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 39,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 41,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 5; AA sequence",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "PAA",
+    "alternativeSequences": [
+     "FAV"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 49,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 49,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 3; AA sequence and 5; AA sequence",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "S",
+    "alternativeSequences": [
+     "A"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 53,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 53,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 5; AA sequence",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "D",
+    "alternativeSequences": [
+     "N"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 55,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 55,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 3; AA sequence and 5; AA sequence",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "S",
+    "alternativeSequences": [
+     "T"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 68,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 68,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 3; AA sequence",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "G",
+    "alternativeSequences": [
+     "A"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 80,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 81,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 5; AA sequence",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {}
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 80,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 80,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 3; AA sequence",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "N",
+    "alternativeSequences": [
+     "S"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 89,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 89,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 3; AA sequence",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "L",
+    "alternativeSequences": [
+     "S"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 100,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 102,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 3; AA sequence and 5; AA sequence",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {
+    "originalSequence": "DPQ",
+    "alternativeSequences": [
+     "NPE"
+    ]
+   }
+  },
+  {
+   "type": "Sequence conflict",
+   "location": {
+    "start": {
+     "value": 106,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 106,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "in Ref. 3; AA sequence and 5; AA sequence",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000305"
+    }
+   ],
+   "alternativeSequence": {}
+  }
+ ],
+ "keywords": [
+  {
+   "id": "KW-0007",
+   "category": "PTM",
+   "name": "Acetylation"
+  },
+  {
+   "id": "KW-0963",
+   "category": "Cellular component",
+   "name": "Cytoplasm"
+  },
+  {
+   "id": "KW-0903",
+   "category": "Technical term",
+   "name": "Direct protein sequencing"
+  },
+  {
+   "id": "KW-0349",
+   "category": "Ligand",
+   "name": "Heme"
+  },
+  {
+   "id": "KW-0408",
+   "category": "Ligand",
+   "name": "Iron"
+  },
+  {
+   "id": "KW-0479",
+   "category": "Ligand",
+   "name": "Metal-binding"
+  },
+  {
+   "id": "KW-0944",
+   "category": "PTM",
+   "name": "Nitration"
+  },
+  {
+   "id": "KW-0535",
+   "category": "Biological process",
+   "name": "Nitrogen fixation"
+  },
+  {
+   "id": "KW-0536",
+   "category": "Biological process",
+   "name": "Nodulation"
+  },
+  {
+   "id": "KW-0539",
+   "category": "Cellular component",
+   "name": "Nucleus"
+  },
+  {
+   "id": "KW-0561",
+   "category": "Biological process",
+   "name": "Oxygen transport"
+  },
+  {
+   "id": "KW-0597",
+   "category": "PTM",
+   "name": "Phosphoprotein"
+  },
+  {
+   "id": "KW-1185",
+   "category": "Technical term",
+   "name": "Reference proteome"
+  },
+  {
+   "id": "KW-0813",
+   "category": "Biological process",
+   "name": "Transport"
+  }
+ ],
+ "references": [
+  {
+   "referenceNumber": 1,
+   "citation": {
+    "id": "6285303",
+    "citationType": "journal article",
+    "authors": [
+     "Wiborg O.",
+     "Hyldig-Nielsen J.J.",
+     "Jensen E.O.",
+     "Paludan K.",
+     "Marcker K.A."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "6285303"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1093/nar/10.11.3487"
+     }
+    ],
+    "title": "The nucleotide sequences of two leghemoglobin genes from soybean.",
+    "publicationDate": "1982",
+    "journal": "Nucleic Acids Res.",
+    "firstPage": "3487",
+    "lastPage": "3494",
+    "volume": "10"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+   ]
+  },
+  {
+   "referenceNumber": 2,
+   "citation": {
+    "id": "20075913",
+    "citationType": "journal article",
+    "authors": [
+     "Schmutz J.",
+     "Cannon S.B.",
+     "Schlueter J.",
+     "Ma J.",
+     "Mitros T.",
+     "Nelson W.",
+     "Hyten D.L.",
+     "Song Q.",
+     "Thelen J.J.",
+     "Cheng J.",
+     "Xu D.",
+     "Hellsten U.",
+     "May G.D.",
+     "Yu Y.",
+     "Sakurai T.",
+     "Umezawa T.",
+     "Bhattacharyya M.K.",
+     "Sandhu D.",
+     "Valliyodan B.",
+     "Lindquist E.",
+     "Peto M.",
+     "Grant D.",
+     "Shu S.",
+     "Goodstein D.",
+     "Barry K.",
+     "Futrell-Griggs M.",
+     "Abernathy B.",
+     "Du J.",
+     "Tian Z.",
+     "Zhu L.",
+     "Gill N.",
+     "Joshi T.",
+     "Libault M.",
+     "Sethuraman A.",
+     "Zhang X.-C.",
+     "Shinozaki K.",
+     "Nguyen H.T.",
+     "Wing R.A.",
+     "Cregan P.",
+     "Specht J.",
+     "Grimwood J.",
+     "Rokhsar D.",
+     "Stacey G.",
+     "Shoemaker R.C.",
+     "Jackson S.A."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "20075913"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1038/nature08670"
+     }
+    ],
+    "title": "Genome sequence of the palaeopolyploid soybean.",
+    "publicationDate": "2010",
+    "journal": "Nature",
+    "firstPage": "178",
+    "lastPage": "183",
+    "volume": "463"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+   ],
+   "referenceComments": [
+    {
+     "value": "cv. Williams 82",
+     "type": "STRAIN"
+    },
+    {
+     "value": "Callus",
+     "type": "TISSUE"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 3,
+   "citation": {
+    "id": "CI-7DGO0QCC8T71E",
+    "citationType": "journal article",
+    "authors": [
+     "Sievers G.",
+     "Huhtala M.-L.",
+     "Ellfolk N."
+    ],
+    "title": "The primary structure of soybean (Glycine max) leghemoglobin c.",
+    "publicationDate": "1978",
+    "journal": "Acta Chem. Scand. B",
+    "firstPage": "380",
+    "lastPage": "386",
+    "volume": "32"
+   },
+   "referencePositions": [
+    "PROTEIN SEQUENCE OF 2-145"
+   ]
+  },
+  {
+   "referenceNumber": 4,
+   "citation": {
+    "id": "CI-E6JFEAP538KMQ",
+    "citationType": "submission",
+    "authors": [
+     "Ellfolk N."
+    ],
+    "publicationDate": "NOV-1982",
+    "submissionDatabase": "PIR data bank"
+   },
+   "referencePositions": [
+    "SEQUENCE REVISION"
+   ]
+  },
+  {
+   "referenceNumber": 5,
+   "citation": {
+    "id": "561001",
+    "citationType": "journal article",
+    "authors": [
+     "Hurrell J.G.R.",
+     "Leach S.J."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "561001"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/0014-5793(77)80398-0"
+     }
+    ],
+    "title": "The amino acid sequence of soybean leghaemoglobin c2.",
+    "publicationDate": "1977",
+    "journal": "FEBS Lett.",
+    "firstPage": "23",
+    "lastPage": "26",
+    "volume": "80"
+   },
+   "referencePositions": [
+    "PROTEIN SEQUENCE OF 2-145"
+   ]
+  },
+  {
+   "referenceNumber": 6,
+   "citation": {
+    "id": "CI-7R9M9BOTOO5DI",
+    "citationType": "journal article",
+    "authors": [
+     "Sullivan D.",
+     "Brisson N.",
+     "Goodchild B.",
+     "Verma D.P.S."
+    ],
+    "title": "Molecular cloning and organization of two leghemoglobin sequences of soybean.",
+    "publicationDate": "1981",
+    "journal": "Nature",
+    "firstPage": "516",
+    "lastPage": "518",
+    "volume": "289"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 100-145"
+   ]
+  },
+  {
+   "referenceNumber": 7,
+   "citation": {
+    "id": "17540516",
+    "citationType": "journal article",
+    "authors": [
+     "Garrocho-Villegas V.",
+     "Gopalasubramaniam S.K.",
+     "Arredondo-Peter R."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "17540516"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/j.gene.2007.01.035"
+     }
+    ],
+    "title": "Plant hemoglobins: what we know six decades after their discovery.",
+    "publicationDate": "2007",
+    "journal": "Gene",
+    "firstPage": "78",
+    "lastPage": "85",
+    "volume": "398"
+   },
+   "referencePositions": [
+    "REVIEW ON PHYTOGLOBINS"
+   ]
+  },
+  {
+   "referenceNumber": 8,
+   "citation": {
+    "id": "18838253",
+    "citationType": "journal article",
+    "authors": [
+     "Jayakumar K.",
+     "Vijayarengan P.",
+     "Changxing Z.",
+     "Gomathinayagam M.",
+     "Jaleel C.A."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "18838253"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/j.colsurfb.2008.08.012"
+     }
+    ],
+    "title": "Soil applied cobalt alters the nodulation, leg-haemoglobin content and antioxidant status of Glycine max (L.) Merr.",
+    "publicationDate": "2008",
+    "journal": "Colloids Surf. B Biointerfaces",
+    "firstPage": "272",
+    "lastPage": "275",
+    "volume": "67"
+   },
+   "referencePositions": [
+    "REPRESSION BY COBALT"
+   ]
+  },
+  {
+   "referenceNumber": 9,
+   "citation": {
+    "id": "22308405",
+    "citationType": "journal article",
+    "authors": [
+     "Navascues J.",
+     "Perez-Rontome C.",
+     "Gay M.",
+     "Marcos M.",
+     "Yang F.",
+     "Walker F.A.",
+     "Desbois A.",
+     "Abian J.",
+     "Becana M."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "22308405"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1073/pnas.1116559109"
+     }
+    ],
+    "title": "Leghemoglobin green derivatives with nitrated hemes evidence production of highly reactive nitrogen species during aging of legume nodules.",
+    "publicationDate": "2012",
+    "journal": "Proc. Natl. Acad. Sci. U.S.A.",
+    "firstPage": "2660",
+    "lastPage": "2665",
+    "volume": "109"
+   },
+   "referencePositions": [
+    "FUNCTION",
+    "NITRATION",
+    "UV-VISIBLE; MASS SPECTROMETRY; NMR AND RESONANCE RAMAN SPECTROSCOPIES",
+    "ACETYLATION AT GLY-2"
+   ],
+   "referenceComments": [
+    {
+     "value": "cv. Hobbit",
+     "type": "STRAIN"
+    },
+    {
+     "value": "cv. Williams",
+     "type": "STRAIN"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 10,
+   "citation": {
+    "id": "32297921",
+    "citationType": "journal article",
+    "authors": [
+     "Du M.",
+     "Gao Z.",
+     "Li X.",
+     "Liao H."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "32297921"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1093/aob/mcaa002"
+     }
+    ],
+    "title": "Excess nitrate induces nodule greening and reduces transcript and protein expression levels of soybean leghaemoglobins.",
+    "publicationDate": "2020",
+    "journal": "Ann. Bot.",
+    "firstPage": "61",
+    "lastPage": "72",
+    "volume": "126"
+   },
+   "referencePositions": [
+    "FUNCTION",
+    "TISSUE SPECIFICITY",
+    "DEVELOPMENTAL STAGE",
+    "SUPPRESSED BY NITROGEN",
+    "GENE FAMILY",
+    "NOMENCLATURE"
+   ],
+   "referenceComments": [
+    {
+     "value": "cv. HN66",
+     "type": "STRAIN"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 11,
+   "citation": {
+    "id": "34737003",
+    "citationType": "journal article",
+    "authors": [
+     "Koltun A.",
+     "Fuhrmann-Aoyagi M.B.",
+     "Cardoso Moraes L.A.",
+     "Lima Nepomuceno A.",
+     "Simoes Azeredo Goncalves L.",
+     "Mertz-Henning L.M."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "34737003"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/j.gene.2021.146055"
+     }
+    ],
+    "title": "Uncovering the roles of hemoglobins in soybean facing water stress.",
+    "publicationDate": "2022",
+    "journal": "Gene",
+    "firstPage": "146055",
+    "lastPage": "146055",
+    "volume": "810"
+   },
+   "referencePositions": [
+    "FUNCTION",
+    "GENE FAMILY",
+    "NOMENCLATURE"
+   ],
+   "referenceComments": [
+    {
+     "value": "cv. BR-4",
+     "type": "STRAIN"
+    },
+    {
+     "value": "cv. Embrapa 45",
+     "type": "STRAIN"
+    }
+   ]
+  }
+ ],
+ "uniProtKBCrossReferences": [
+  {
+   "database": "EMBL",
+   "id": "J01301",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "AAA33980.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "CM000853",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "KRG92101.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "EMBL",
+   "id": "V00457",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "CAA23735.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "RefSeq",
+   "id": "NP_001235248.2",
+   "properties": [
+    {
+     "key": "NucleotideSequenceId",
+     "value": "NM_001248319.3"
+    }
+   ]
+  },
+  {
+   "database": "AlphaFoldDB",
+   "id": "P02236",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "SMR",
+   "id": "P02236",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "STRING",
+   "id": "3847.P02236",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "PaxDb",
+   "id": "3847-P02236",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "ProMEX",
+   "id": "P02236",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "EnsemblPlants",
+   "id": "KRG92101",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "KRG92101"
+    },
+    {
+     "key": "GeneId",
+     "value": "GLYMA_20G191200"
+    }
+   ]
+  },
+  {
+   "database": "GeneID",
+   "id": "100527379",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Gramene",
+   "id": "KRG92101",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "KRG92101"
+    },
+    {
+     "key": "GeneId",
+     "value": "GLYMA_20G191200"
+    }
+   ]
+  },
+  {
+   "database": "KEGG",
+   "id": "gmx:100527379",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "eggNOG",
+   "id": "KOG3378",
+   "properties": [
+    {
+     "key": "ToxonomicScope",
+     "value": "Eukaryota"
+    }
+   ]
+  },
+  {
+   "database": "HOGENOM",
+   "id": "CLU_003827_11_2_1",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "InParanoid",
+   "id": "P02236",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "OMA",
+   "id": "AWRVAYD",
+   "properties": [
+    {
+     "key": "Fingerprint",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "OrthoDB",
+   "id": "2012505at2759",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "Proteomes",
+   "id": "UP000008827",
+   "properties": [
+    {
+     "key": "Component",
+     "value": "Chromosome 20"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0005829",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "C:cytosol"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IEA:UniProtKB-SubCell"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0005634",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "C:nucleus"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "ISS:UniProtKB"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0020037",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:heme binding"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IEA:InterPro"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0019825",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "F:oxygen binding"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IEA:InterPro"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0009877",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:nodulation"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IDA:UniProtKB"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000314",
+     "source": "PubMed",
+     "id": "32297921"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0032025",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:response to cobalt ion"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IEP:UniProtKB"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000270",
+     "source": "PubMed",
+     "id": "18838253"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:1901698",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "P:response to nitrogen compound"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "IEP:UniProtKB"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000270",
+     "source": "PubMed",
+     "id": "32297921"
+    }
+   ]
+  },
+  {
+   "database": "CDD",
+   "id": "cd08923",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "class1-2_nsHbs_Lbs"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "Gene3D",
+   "id": "1.10.490.10",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Globins"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR000971",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Globin"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR009050",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Globin-like_sf"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR012292",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Globin/Proto"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR001032",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Leghaemoglobin-like"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR019824",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Leghaemoglobin_Fe_BS"
+    }
+   ]
+  },
+  {
+   "database": "PANTHER",
+   "id": "PTHR22924",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "LEGHEMOGLOBIN-RELATED"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PANTHER",
+   "id": "PTHR22924:SF92",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "NON-SYMBIOTIC HEMOGLOBIN 2"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "Pfam",
+   "id": "PF00042",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Globin"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PRINTS",
+   "id": "PR00188",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "PLANTGLOBIN"
+    }
+   ]
+  },
+  {
+   "database": "SUPFAM",
+   "id": "SSF46458",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Globin-like"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PROSITE",
+   "id": "PS01033",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "GLOBIN"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PROSITE",
+   "id": "PS00208",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "PLANT_GLOBIN"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  }
+ ],
+ "sequence": {
+  "value": "MGAFTEKQEALVSSSFEAFKANIPQYSVVFYTSILEKAPAAKDLFSFLSNGVDPSNPKLTGHAEKLFGLVRDSAGQLKANGTVVADAALGSIHAQKAITDPQFVVVKEALLKTIKEAVGDKWSDELSSAWEVAYDELAAAIKKAF",
+  "length": 145,
+  "molWeight": 15525,
+  "crc64": "5A903EF234935F88",
+  "md5": "E749816E6C720517972CBF45846AEC8D"
+ },
+ "extraAttributes": {
+  "countByCommentType": {
+   "FUNCTION": 1,
+   "SUBUNIT": 1,
+   "SUBCELLULAR LOCATION": 1,
+   "TISSUE SPECIFICITY": 1,
+   "DEVELOPMENTAL STAGE": 1,
+   "INDUCTION": 1,
+   "PTM": 2,
+   "SIMILARITY": 1
+  },
+  "countByFeatureType": {
+   "Initiator methionine": 1,
+   "Chain": 1,
+   "Domain": 1,
+   "Binding site": 5,
+   "Modified residue": 5,
+   "Natural variant": 2,
+   "Sequence conflict": 11
+  },
+  "uniParcId": "UPI000016DD9D"
+ }
+}

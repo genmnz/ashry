@@ -1,0 +1,1019 @@
+{
+ "entryType": "UniProtKB reviewed (Swiss-Prot)",
+ "primaryAccession": "P52754",
+ "uniProtkbId": "HYP1_TRIRF",
+ "entryAudit": {
+  "firstPublicDate": "1996-10-01",
+  "lastAnnotationUpdateDate": "2026-11-04",
+  "lastSequenceUpdateDate": "1996-10-01",
+  "entryVersion": 93,
+  "sequenceVersion": 1
+ },
+ "annotationScore": 4.0,
+ "organism": {
+  "scientificName": "Trichoderma reesei",
+  "commonName": "Filamentous fungus",
+  "synonyms": [
+   "Hypocrea jecorina"
+  ],
+  "taxonId": 51453,
+  "lineage": [
+   "Eukaryota",
+   "Fungi",
+   "Dikarya",
+   "Ascomycota",
+   "Pezizomycotina",
+   "Sordariomycetes",
+   "Hypocreomycetidae",
+   "Hypocreales",
+   "Hypocreaceae",
+   "Trichoderma"
+  ]
+ },
+ "proteinExistence": "1: Evidence at protein level",
+ "proteinDescription": {
+  "recommendedName": {
+   "fullName": {
+    "evidences": [
+     {
+      "evidenceCode": "ECO:0000303",
+      "source": "PubMed",
+      "id": "8631337"
+     }
+    ],
+    "value": "Class II hydrophobin 1"
+   }
+  },
+  "alternativeNames": [
+   {
+    "fullName": {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000303",
+       "source": "PubMed",
+       "id": "8631337"
+      }
+     ],
+     "value": "Hydrophobin I"
+    },
+    "shortNames": [
+     {
+      "evidences": [
+       {
+        "evidenceCode": "ECO:0000303",
+        "source": "PubMed",
+        "id": "8631337"
+       }
+      ],
+      "value": "HFBI"
+     }
+    ]
+   }
+  ],
+  "flag": "Precursor"
+ },
+ "genes": [
+  {
+   "geneName": {
+    "evidences": [
+     {
+      "evidenceCode": "ECO:0000303",
+      "source": "PubMed",
+      "id": "8631337"
+     }
+    ],
+    "value": "hfb1"
+   }
+  }
+ ],
+ "comments": [
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "16243453"
+      },
+      {
+       "evidenceCode": "ECO:0000305"
+      }
+     ],
+     "value": "Aerial growth, conidiation, and dispersal of filamentous fungi in the environment depend on their ability to secrete small amphipathic proteins called hydrophobins (HPBs) with low sequence identity. Class I can self-assemble into an outermost layer of rodlet bundles on aerial cell surfaces, conferring cellular hydrophobicity that supports fungal growth, development and dispersal; whereas Class II form highly ordered films at water-air interfaces through intermolecular interactions but contribute nothing to the rodlet structure (Probable). Hbf1 is a class II hydrophobin that has a role in hyphal development and is in particular required for the formation of aerial hyphae (PubMed:16243453)"
+    }
+   ],
+   "commentType": "FUNCTION"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "16882996"
+      }
+     ],
+     "value": "Homotetramer (PubMed:16882996). Further self-assembles to form highly ordered films at water-air interfaces through intermolecular interactions (PubMed:16882996)"
+    }
+   ],
+   "commentType": "SUBUNIT"
+  },
+  {
+   "commentType": "SUBCELLULAR LOCATION",
+   "note": {
+    "texts": [
+     {
+      "evidences": [
+       {
+        "evidenceCode": "ECO:0000269",
+        "source": "PubMed",
+        "id": "8631337"
+       }
+      ],
+      "value": "Secreted in aqueous environment"
+     }
+    ]
+   },
+   "subcellularLocations": [
+    {
+     "location": {
+      "evidences": [
+       {
+        "evidenceCode": "ECO:0000269",
+        "source": "PubMed",
+        "id": "11693908"
+       },
+       {
+        "evidenceCode": "ECO:0000269",
+        "source": "PubMed",
+        "id": "8631337"
+       }
+      ],
+      "value": "Secreted, cell wall",
+      "id": "SL-0041"
+     }
+    },
+    {
+     "location": {
+      "evidences": [
+       {
+        "evidenceCode": "ECO:0000269",
+        "source": "PubMed",
+        "id": "11693908"
+       },
+       {
+        "evidenceCode": "ECO:0000269",
+        "source": "PubMed",
+        "id": "8631337"
+       }
+      ],
+      "value": "Secreted",
+      "id": "SL-0243"
+     }
+    }
+   ]
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000269",
+       "source": "PubMed",
+       "id": "16243453"
+      }
+     ],
+     "value": "Leads to wettable and fluffy colonies (PubMed:16243453). Results in thinner hyphae and impairs the formation of aerial hyphae (PubMed:16243453)"
+    }
+   ],
+   "commentType": "DISRUPTION PHENOTYPE"
+  },
+  {
+   "texts": [
+    {
+     "evidences": [
+      {
+       "evidenceCode": "ECO:0000305"
+      }
+     ],
+     "value": "Belongs to the cerato-ulmin hydrophobin family"
+    }
+   ],
+   "commentType": "SIMILARITY"
+  }
+ ],
+ "features": [
+  {
+   "type": "Signal",
+   "location": {
+    "start": {
+     "value": 1,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 16,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000255"
+    }
+   ]
+  },
+  {
+   "type": "Propeptide",
+   "location": {
+    "start": {
+     "value": 17,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 22,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "featureId": "PRO_0000013519"
+  },
+  {
+   "type": "Chain",
+   "location": {
+    "start": {
+     "value": 23,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 97,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "Class II hydrophobin 1",
+   "featureId": "PRO_0000013520"
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 30,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 79,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "16882996"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "2FZ6"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "2GVM"
+    }
+   ]
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 40,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 70,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "16882996"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "2FZ6"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "2GVM"
+    }
+   ]
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 41,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 53,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "16882996"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "2FZ6"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "2GVM"
+    }
+   ]
+  },
+  {
+   "type": "Disulfide bond",
+   "location": {
+    "start": {
+     "value": 80,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 91,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "16882996"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "2FZ6"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "2GVM"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 26,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 30,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2FZ6"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 37,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 45,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2FZ6"
+    }
+   ]
+  },
+  {
+   "type": "Turn",
+   "location": {
+    "start": {
+     "value": 46,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 48,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2FZ6"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 49,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 54,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2FZ6"
+    }
+   ]
+  },
+  {
+   "type": "Helix",
+   "location": {
+    "start": {
+     "value": 63,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 71,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2FZ6"
+    }
+   ]
+  },
+  {
+   "type": "Turn",
+   "location": {
+    "start": {
+     "value": 72,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 74,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2FZ6"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 76,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 81,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2FZ6"
+    }
+   ]
+  },
+  {
+   "type": "Beta strand",
+   "location": {
+    "start": {
+     "value": 86,
+     "modifier": "EXACT"
+    },
+    "end": {
+     "value": 90,
+     "modifier": "EXACT"
+    }
+   },
+   "description": "",
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007829",
+     "source": "PDB",
+     "id": "2FZ6"
+    }
+   ]
+  }
+ ],
+ "keywords": [
+  {
+   "id": "KW-0002",
+   "category": "Technical term",
+   "name": "3D-structure"
+  },
+  {
+   "id": "KW-0134",
+   "category": "Cellular component",
+   "name": "Cell wall"
+  },
+  {
+   "id": "KW-0903",
+   "category": "Technical term",
+   "name": "Direct protein sequencing"
+  },
+  {
+   "id": "KW-1015",
+   "category": "PTM",
+   "name": "Disulfide bond"
+  },
+  {
+   "id": "KW-0964",
+   "category": "Cellular component",
+   "name": "Secreted"
+  },
+  {
+   "id": "KW-0732",
+   "category": "Domain",
+   "name": "Signal"
+  }
+ ],
+ "references": [
+  {
+   "referenceNumber": 1,
+   "citation": {
+    "id": "8631337",
+    "citationType": "journal article",
+    "authors": [
+     "Nakari-Setaelae T.",
+     "Aro N.",
+     "Kalkkinen N.",
+     "Alatalo E.",
+     "Penttilae M."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "8631337"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1111/j.1432-1033.1996.00248.x"
+     }
+    ],
+    "title": "Genetic and biochemical characterization of the Trichoderma reesei hydrophobin HFBI.",
+    "publicationDate": "1996",
+    "journal": "Eur. J. Biochem.",
+    "firstPage": "248",
+    "lastPage": "255",
+    "volume": "235"
+   },
+   "referencePositions": [
+    "NUCLEOTIDE SEQUENCE [GENOMIC DNA]",
+    "PROTEIN SEQUENCE OF 68-97",
+    "SUBCELLULAR LOCATION"
+   ],
+   "referenceComments": [
+    {
+     "value": "ATCC 26921 / CBS 392.92 / QM9414",
+     "type": "STRAIN"
+    }
+   ]
+  },
+  {
+   "referenceNumber": 2,
+   "citation": {
+    "id": "11693908",
+    "citationType": "journal article",
+    "authors": [
+     "Askolin S.",
+     "Nakari-Setaelae T.",
+     "Tenkanen M."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "11693908"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1007/s002530100728"
+     }
+    ],
+    "title": "Overproduction, purification, and characterization of the Trichoderma reesei hydrophobin HFBI.",
+    "publicationDate": "2001",
+    "journal": "Appl. Microbiol. Biotechnol.",
+    "firstPage": "124",
+    "lastPage": "130",
+    "volume": "57"
+   },
+   "referencePositions": [
+    "SUBCELLULAR LOCATION"
+   ]
+  },
+  {
+   "referenceNumber": 3,
+   "citation": {
+    "id": "16243453",
+    "citationType": "journal article",
+    "authors": [
+     "Askolin S.",
+     "Penttilae M.",
+     "Woesten H.A.",
+     "Nakari-Setaelae T."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "16243453"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1016/j.femsle.2005.09.047"
+     }
+    ],
+    "title": "The Trichoderma reesei hydrophobin genes hfb1 and hfb2 have diverse functions in fungal development.",
+    "publicationDate": "2005",
+    "journal": "FEMS Microbiol. Lett.",
+    "firstPage": "281",
+    "lastPage": "288",
+    "volume": "253"
+   },
+   "referencePositions": [
+    "FUNCTION",
+    "DISRUPTION PHENOTYPE"
+   ]
+  },
+  {
+   "referenceNumber": 4,
+   "citation": {
+    "id": "16882996",
+    "citationType": "journal article",
+    "authors": [
+     "Hakanpaa J.",
+     "Szilvay G.R.",
+     "Kaljunen H.",
+     "Maksimainen M.",
+     "Linder M.",
+     "Rouvinen J."
+    ],
+    "citationCrossReferences": [
+     {
+      "database": "PubMed",
+      "id": "16882996"
+     },
+     {
+      "database": "DOI",
+      "id": "10.1110/ps.062326706"
+     }
+    ],
+    "title": "Two crystal structures of Trichoderma reesei hydrophobin HFBI -- the structure of a protein amphiphile with and without detergent interaction.",
+    "publicationDate": "2006",
+    "journal": "Protein Sci.",
+    "firstPage": "2129",
+    "lastPage": "2140",
+    "volume": "15"
+   },
+   "referencePositions": [
+    "X-RAY CRYSTALLOGRAPHY",
+    "DISULFIDE BONDS",
+    "SUBUNIT"
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "2FZ6"
+    },
+    {
+     "evidenceCode": "ECO:0007744",
+     "source": "PDB",
+     "id": "2GVM"
+    }
+   ]
+  }
+ ],
+ "uniProtKBCrossReferences": [
+  {
+   "database": "EMBL",
+   "id": "Z68124",
+   "properties": [
+    {
+     "key": "ProteinId",
+     "value": "CAA92208.1"
+    },
+    {
+     "key": "Status",
+     "value": "-"
+    },
+    {
+     "key": "MoleculeType",
+     "value": "Genomic_DNA"
+    }
+   ]
+  },
+  {
+   "database": "PIR",
+   "id": "S62621",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "S62621"
+    }
+   ]
+  },
+  {
+   "database": "PIR",
+   "id": "S62625",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "S62625"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "2FZ6",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.10 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B/C/D=23-97"
+    }
+   ]
+  },
+  {
+   "database": "PDB",
+   "id": "2GVM",
+   "properties": [
+    {
+     "key": "Method",
+     "value": "X-ray"
+    },
+    {
+     "key": "Resolution",
+     "value": "2.30 A"
+    },
+    {
+     "key": "Chains",
+     "value": "A/B/C/D=23-97"
+    }
+   ]
+  },
+  {
+   "database": "AlphaFoldDB",
+   "id": "P52754",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "SMR",
+   "id": "P52754",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "VEuPathDB",
+   "id": "FungiDB:TrQ_005079",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "OMA",
+   "id": "APFCCVA",
+   "properties": [
+    {
+     "key": "Fingerprint",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "EvolutionaryTrace",
+   "id": "P52754",
+   "properties": [
+    {
+     "key": "Description",
+     "value": "-"
+    }
+   ]
+  },
+  {
+   "database": "GO",
+   "id": "GO:0005576",
+   "properties": [
+    {
+     "key": "GoTerm",
+     "value": "C:extracellular region"
+    },
+    {
+     "key": "GoEvidenceType",
+     "value": "EXP:UniProtKB"
+    }
+   ],
+   "evidences": [
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "11693908"
+    },
+    {
+     "evidenceCode": "ECO:0000269",
+     "source": "PubMed",
+     "id": "8631337"
+    }
+   ]
+  },
+  {
+   "database": "CDD",
+   "id": "cd23508",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "hydrophobin_II"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "Gene3D",
+   "id": "3.20.120.10",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Hydrophobin"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR010636",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Class_II_hydrophobin"
+    }
+   ]
+  },
+  {
+   "database": "InterPro",
+   "id": "IPR036686",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Class_II_Hydrophobin_sf"
+    }
+   ]
+  },
+  {
+   "database": "PANTHER",
+   "id": "PTHR42341",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "HYDROPHOBIN"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "PANTHER",
+   "id": "PTHR42341:SF1",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "HYDROPHOBIN"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "Pfam",
+   "id": "PF06766",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Hydrophobin_2"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  },
+  {
+   "database": "SUPFAM",
+   "id": "SSF101751",
+   "properties": [
+    {
+     "key": "EntryName",
+     "value": "Hydrophobin II, HfbII"
+    },
+    {
+     "key": "MatchStatus",
+     "value": "1"
+    }
+   ]
+  }
+ ],
+ "sequence": {
+  "value": "MKFFAIAALFAAAAVAQPLEDRSNGNGNVCPPGLFSNPQCCATQVLGLIGLDCKVPSQNVYDGTDFRNVCAKTGAQPLCCVAPVAGQALLCQTAVGA",
+  "length": 97,
+  "molWeight": 9874,
+  "crc64": "F30907B331EC3175",
+  "md5": "164812BE56098CDC10E841656AC74D6D"
+ },
+ "extraAttributes": {
+  "countByCommentType": {
+   "FUNCTION": 1,
+   "SUBUNIT": 1,
+   "SUBCELLULAR LOCATION": 1,
+   "DISRUPTION PHENOTYPE": 1,
+   "SIMILARITY": 1
+  },
+  "countByFeatureType": {
+   "Signal": 1,
+   "Propeptide": 1,
+   "Chain": 1,
+   "Disulfide bond": 4,
+   "Beta strand": 5,
+   "Turn": 2,
+   "Helix": 1
+  },
+  "uniParcId": "UPI000012D013"
+ }
+}
