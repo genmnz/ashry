@@ -18,41 +18,41 @@
     {
       "protein": "leghemoglobin_c2",
       "best_titer_g_L": 7.27,
-      "ceiling_g_L": 217.8,
-      "fraction_of_ceiling": 0.0334,
-      "gap_fold": 30.0,
+      "ceiling_g_L": 227.6,
+      "fraction_of_ceiling": 0.0319,
+      "gap_fold": 31.3,
       "source": "10.3389/fbioe.2023.1329016"
     },
     {
       "protein": "lactoferrin_bovine",
       "best_titer_g_L": 3.14,
-      "ceiling_g_L": 215.5,
-      "fraction_of_ceiling": 0.0146,
-      "gap_fold": 68.6,
+      "ceiling_g_L": 241.8,
+      "fraction_of_ceiling": 0.013,
+      "gap_fold": 77.0,
       "source": "10.1016/j.biortech.2026.135927"
     },
     {
       "protein": "ovalbumin",
       "best_titer_g_L": 2.0,
-      "ceiling_g_L": 225.8,
-      "fraction_of_ceiling": 0.0089,
-      "gap_fold": 112.9,
+      "ceiling_g_L": 236.5,
+      "fraction_of_ceiling": 0.0085,
+      "gap_fold": 118.2,
       "source": "10.1016/j.foodres.2022.112131"
     },
     {
       "protein": "kappa_casein",
       "best_titer_g_L": 1.02,
-      "ceiling_g_L": 234.4,
-      "fraction_of_ceiling": 0.0044,
-      "gap_fold": 229.8,
+      "ceiling_g_L": 235.3,
+      "fraction_of_ceiling": 0.0043,
+      "gap_fold": 230.7,
       "source": "10.13345/j.cjb.250585"
     },
     {
       "protein": "alpha_lactalbumin",
       "best_titer_g_L": 0.1134,
-      "ceiling_g_L": 214.2,
+      "ceiling_g_L": 242.2,
       "fraction_of_ceiling": 0.0005,
-      "gap_fold": 1888.8,
+      "gap_fold": 2136.2,
       "source": "10.1021/acssynbio.3c00494"
     }
   ]

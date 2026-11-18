@@ -217,6 +217,7 @@ def add_protein_reactions(
     # yield of a glycoprotein is understated by the mass of its own glycans.
     mw = (spec.mw_product(mature, mannose_per_glycan=mannose_per_glycan)
           if charge_ptms else spec.mw(mature))
+    mw_poly = spec.mw(mature)
 
     prot = Metabolite(f"prot_{spec.name}_c", compartment="c",
                       name=f"{spec.name} polypeptide")
@@ -275,7 +276,7 @@ def add_protein_reactions(
     sink.lower_bound, sink.upper_bound = 0.0, 1000.0
     sink.add_metabolites({prot: -1.0})
     model.add_reactions([sink])
-    return sink.id, mw
+    return sink.id, mw, mw_poly
 
 
 def set_substrate(model: cobra.Model, substrate: str, uptake_mmol: float = 10.0) -> None:
@@ -301,7 +302,7 @@ def yield_analysis(
 ) -> dict:
     """Maximum theoretical yield of `spec` on `substrate`, optionally at fixed growth."""
     m = (model or load_model()).copy()
-    sink_id, mw = add_protein_reactions(
+    sink_id, mw, mw_poly = add_protein_reactions(
         m, spec, atp_per_bond, charge_ptms,
         mannose_per_glycan=mannose_per_glycan)
     set_substrate(m, substrate, uptake_mmol)
@@ -321,7 +322,8 @@ def yield_analysis(
         return {"protein": spec.name, "substrate": substrate, "status": sol.status}
 
     flux = sol.objective_value                      # mmol protein / gDW / h
-    g_prot = flux * mw / 1000.0                     # g protein / gDW / h
+    g_prot = flux * mw / 1000.0                     # g product (with PTMs) / gDW / h
+    g_poly = flux * mw_poly / 1000.0                # g polypeptide backbone / gDW / h
     _, sub_mw, sub_c = SUBSTRATES[substrate]
     g_sub = uptake_mmol * sub_mw / 1000.0
     elements = spec.elements()
@@ -340,6 +342,8 @@ def yield_analysis(
         "status": sol.status,
         "flux_mmol_gDW_h": flux,
         "g_protein_per_g_substrate": g_prot / g_sub,
+        "g_polypeptide_per_g_substrate": g_poly / g_sub,
+        "mw_polypeptide_kda": round(mw_poly / 1000.0, 3),
         "mol_protein_per_mol_substrate": flux / uptake_mmol,
         "carbon_yield_Cmol_per_Cmol": c_prot / c_sub,
         "substrate_g_per_g_protein": g_sub / g_prot if g_prot else float("nan"),

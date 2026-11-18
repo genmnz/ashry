@@ -57,7 +57,7 @@ def load_specs() -> list[ProteinSpec]:
 def prepare(spec: ProteinSpec, substrate: str = "glycerol",
             base: cobra.Model | None = None) -> tuple[cobra.Model, str]:
     m = (base or load_model()).copy()
-    sink_id, _ = add_protein_reactions(m, spec)
+    sink_id, _, _ = add_protein_reactions(m, spec)
     set_substrate(m, substrate, 10.0)
     for rid in ("BIOMASS_meoh", "BIOMASS"):
         m.reactions.get_by_id(rid).bounds = (0.0, 0.0)

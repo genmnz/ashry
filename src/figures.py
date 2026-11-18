@@ -88,7 +88,7 @@ def fig_ptm_cost() -> None:
 
     fig, ax = plt.subplots(figsize=(7.6, 3.9))
     colours = [PALETTE.get(c, "#8a8a92") for c in df.category]
-    ax.bar([LABEL[i] for i in df.index], df.ptm_yield_penalty_pct,
+    ax.bar([LABEL[i] for i in df.index], df.ptm_polypeptide_penalty_pct,
            color=colours, edgecolor="white", lw=0.5)
     for i, (name, r) in enumerate(df.iterrows()):
         tag = []
@@ -100,10 +100,11 @@ def fig_ptm_cost() -> None:
             tag.append(f"{int(r.phosphoserines)} pSer")
         if r.haem:
             tag.append("haem")
-        ax.text(i, r.ptm_yield_penalty_pct + 0.15, ", ".join(tag), ha="center",
+        ax.text(i, r.ptm_polypeptide_penalty_pct + 0.15, ", ".join(tag), ha="center",
                 fontsize=7, color=INK, rotation=0)
     ax.set_ylabel("yield penalty of the\npost-translational load (%)")
-    ax.set_title("Phosphorylation is free; glycosylation is not", color=INK,
+    ax.set_title("Phosphorylation is free; glycosylation costs polypeptide yield",
+                 color=INK,
                  fontsize=11, loc="left")
     plt.setp(ax.get_xticklabels(), rotation=35, ha="right")
     style(ax)
@@ -116,15 +117,20 @@ def fig_glycan() -> None:
         return
     df = pd.read_csv(path)
     fig, ax = plt.subplots(figsize=(6.4, 4.0))
-    for prot, sub in df.groupby("protein"):
+    for i, (prot, sub) in enumerate(df.groupby("protein")):
         sub = sub.sort_values("mannose_per_glycan")
+        colour = f"C{i}"
+        ax.plot(sub.mannose_per_glycan, sub.g_polypeptide_per_g_substrate,
+                marker="o", ms=4, lw=1.9, color=colour,
+                label=f"{LABEL.get(prot, prot)} — polypeptide")
         ax.plot(sub.mannose_per_glycan, sub.g_protein_per_g_substrate,
-                marker="o", ms=4, lw=1.8, label=LABEL.get(prot, prot))
+                marker="s", ms=3.5, lw=1.2, ls="--", color=colour, alpha=0.75,
+                label=f"{LABEL.get(prot, prot)} — glycoprotein mass")
     ax.set_xlabel("mannose residues per N-glycan")
     ax.set_ylabel("maximum theoretical yield\n(g protein / g glycerol)")
-    ax.set_title("Hypermannosylation is the largest stoichiometric penalty\n"
-                 "in the panel", color=INK, fontsize=11, loc="left")
-    ax.legend(frameon=False, fontsize=9)
+    ax.set_title("Hypermannosylation raises the mass yield and destroys the\n"
+                 "protein yield", color=INK, fontsize=11, loc="left")
+    ax.legend(frameon=False, fontsize=7.5, ncol=1)
     style(ax)
     save(fig, "fig3_hypermannosylation")
 

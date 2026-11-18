@@ -85,12 +85,21 @@ def main() -> None:
                                     growth_rate=0.0, model=base)
             if with_ptm.get("status") != "optimal" or no_ptm.get("status") != "optimal":
                 continue
+            # Two yields, because they answer different questions. The product
+            # basis counts glycan, phosphate and haem mass as sold product; the
+            # polypeptide basis counts only the backbone, which is what a food
+            # protein is bought for. Glycosylation raises the first and lowers
+            # the second, so quoting only one of them misleads.
             y1 = with_ptm["g_protein_per_g_substrate"]
             y0 = no_ptm["g_protein_per_g_substrate"]
+            p1 = with_ptm["g_polypeptide_per_g_substrate"]
             ptm_rows.append({
                 "protein": spec.name, "category": spec.notes, "substrate": substrate,
-                "yield_with_ptm": y1, "yield_backbone_only": y0,
-                "ptm_yield_penalty_pct": 100.0 * (y0 - y1) / y0 if y0 else float("nan"),
+                "yield_with_ptm_product_basis": y1,
+                "yield_with_ptm_polypeptide_basis": p1,
+                "yield_backbone_only": y0,
+                "ptm_mass_yield_change_pct": 100.0 * (y1 - y0) / y0 if y0 else float("nan"),
+                "ptm_polypeptide_penalty_pct": 100.0 * (y0 - p1) / y0 if y0 else float("nan"),
                 "disulfides": spec.disulfide_bonds,
                 "n_glyc": spec.n_glyc(), "phosphoserines": spec.phosphoserines,
                 "haem": spec.haem_per_chain,
