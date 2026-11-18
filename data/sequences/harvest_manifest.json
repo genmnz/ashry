@@ -10,5 +10,77 @@
   "P01308": {
     "accession": "P01308",
     "status": "not_found"
+  },
+  "P01563": {
+    "accession": "P01563",
+    "status": "not_found"
+  },
+  "P02189": {
+    "accession": "P02189",
+    "status": "not_found"
+  },
+  "P02461": {
+    "accession": "P02461",
+    "status": "not_found"
+  },
+  "P02787": {
+    "accession": "P02787",
+    "status": "not_found"
+  },
+  "P02788": {
+    "accession": "P02788",
+    "status": "not_found"
+  },
+  "P02789": {
+    "accession": "P02789",
+    "status": "not_found"
+  },
+  "P04141": {
+    "accession": "P04141",
+    "status": "not_found"
+  },
+  "P05231": {
+    "accession": "P05231",
+    "status": "not_found"
+  },
+  "P09038": {
+    "accession": "P09038",
+    "status": "not_found"
+  },
+  "P09919": {
+    "accession": "P09919",
+    "status": "not_found"
+  },
+  "P22301": {
+    "accession": "P22301",
+    "status": "not_found"
+  },
+  "P40933": {
+    "accession": "P40933",
+    "status": "not_found"
+  },
+  "P41365": {
+    "accession": "P41365",
+    "status": "not_found"
+  },
+  "P52754": {
+    "accession": "P52754",
+    "status": "not_found"
+  },
+  "P56552": {
+    "accession": "P56552",
+    "status": "not_found"
+  },
+  "P59665": {
+    "accession": "P59665",
+    "status": "not_found"
+  },
+  "Q8IU54": {
+    "accession": "Q8IU54",
+    "status": "not_found"
+  },
+  "Q9UMD9": {
+    "accession": "Q9UMD9",
+    "status": "not_found"
   }
 }

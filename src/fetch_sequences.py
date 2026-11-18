@@ -62,17 +62,26 @@ def raw_fetch(repo: str, path: str) -> str | None:
     return None
 
 
+def _matches(header: str, accession: str) -> bool:
+    """Accept the several header dialects mirrors use for the same accession."""
+    h = header.strip()
+    if f"|{accession}|" in h:
+        return True
+    first = h.split()[0] if h.split() else ""
+    return first in (accession, f"{accession}-1") or first.startswith(accession + "|")
+
+
 def extract(text: str, accession: str) -> tuple[str, str] | None:
     header = None
     buf: list[str] = []
     for line in text.splitlines():
         if line.startswith(">"):
-            if header is not None and f"|{accession}|" in header:
+            if header is not None and _matches(header, accession):
                 return header, "".join(buf)
             header, buf = line[1:], []
         elif header is not None:
             buf.append(line.strip())
-    if header is not None and f"|{accession}|" in header:
+    if header is not None and _matches(header, accession):
         return header, "".join(buf)
     return None
 
