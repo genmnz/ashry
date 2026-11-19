@@ -13,5 +13,30 @@
   ],
   "oxygen_binds_in_n_cases": 0,
   "total_cases": 36,
-  "min_ratio_o2_to_carbon": 1.9060502493585758
+  "min_ratio_o2_to_carbon": 1.9060502493585758,
+  "phosphorus_mass_fraction_range_phosphorylated": [
+    0.0014446398171684429,
+    0.01653699946609717
+  ],
+  "phosphate_scanned_g_L": [
+    0.5,
+    1.0,
+    2.0,
+    5.0,
+    7.3
+  ],
+  "phosphate_binds_in_n_cases": 10,
+  "cooling_scanned_kW_per_m3": [
+    5.0,
+    10.0,
+    20.0,
+    40.0
+  ],
+  "kj_per_mol_o2": 460.0,
+  "kj_per_g_product_range": [
+    4.342985498861219,
+    4.706620066974831
+  ],
+  "heat_binds_in_n_cases": 0,
+  "min_ratio_heat_to_carbon": 1.491691499498016
 }

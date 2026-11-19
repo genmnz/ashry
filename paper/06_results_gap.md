@@ -68,7 +68,7 @@ The best process in the entire corpus — a human-like collagen at 19.4 g L⁻¹
 
 At a loading of 150 g L⁻¹ the β-lactoglobulin result rises to 14.2% of ceiling and at 500 g L⁻¹ it falls to 4.3%, so the conclusion is not an artefact of the central loading assumption: no plausible loading brings any published process within a factor of seven of its ceiling.
 
-### 5.2.3 Is carbon the right bound? The oxygen and nitrogen checks
+### 5.2.3 Is carbon the right bound? Four alternative bounds, computed
 
 A comparison is only as good as its denominator. If real fermentations hit an oxygen-transfer wall long before they exhaust their carbon, then measuring titres against a carbon ceiling compares them against a bound that never binds, and the gap is partly an artefact.
 
@@ -104,6 +104,40 @@ The qualification first: *if* a process in the corpus were nitrogen-limited at, 
 What keeps the carbon bound the right one for these records is that every high-titre process in the corpus is **fed-batch**, and a fed-batch fermentation of this host titrates with ammonia or ammonium hydroxide for pH control throughout the run. Nitrogen is fed continuously and is not a fixed inventory, so it is not the operative bound for the processes being measured. The nitrogen ceiling is the bound for a *batch* process, and batch processes are not where any of these titres came from.
 
 And the central claim does not depend on the choice at all. Nitrogen content varies by only **1.10-fold** across the panel, and the carbon ceiling by 1.31-fold. Substituting the nitrogen bound for the carbon bound therefore rescales every protein's utilisation by nearly the same factor: it moves the median but not the dispersion, and the dispersion is the argument. Whichever bound is used, the ceiling's log₁₀ SD stays near 0.03 while utilisation's stays near 0.85. The argument of §5.2.1 survives both substitutions, which is the strongest thing that can be said for it.
+
+#### Phosphate, and the one bound that is protein-specific
+
+Phosphorus enters the product only as phosphoserine, one atom per site, and ATP turnover consumes none of it net because the phosphate is recycled. The product's own phosphorus content is therefore the right quantity for a product-level bound, and it is the only bound in this thesis that varies strongly between proteins:
+
+| Protein | Phosphoserines | P (% of mass) | 0.5 g P L⁻¹ | 2 g P L⁻¹ | 7.3 g P L⁻¹ |
+|---|---|---|---|---|---|
+| α-S2-casein | 13 | 1.65% | **30** | **121** | 441 |
+| α-S1-casein | 9 | 1.21% | **41** | **165** | 602 |
+| β-casein | 5 | 0.66% | **76** | 305 | 1,112 |
+| κ-casein | 3 | 0.49% | **102** | 408 | 1,491 |
+| Leghemoglobin C2 | 1 | 0.20% | 251 | 1,002 | 3,659 |
+| Ovalbumin | 2 | 0.14% | 346 | 1,384 | 5,053 |
+
+Ceilings in g L⁻¹; bold where phosphate is tighter than the 214–234 g L⁻¹ carbon bound. Three of the nine panel proteins — β-lactoglobulin, α-lactalbumin and lactoferrin — carry no phosphorus at all, so for them the bound does not exist.
+
+Two things follow. **Phosphate does not bind in a standard medium.** Basal salts medium for this host is built on phosphoric acid, 26.7 mL L⁻¹ of 85% H₃PO₄ or about 7.3 g of phosphorus per litre, at which even α-S2-casein's phosphate ceiling is 441 g L⁻¹, nearly twice the carbon bound. Phosphate binds in 10 of 45 protein-by-supply combinations, all of them caseins at or below 2 g P L⁻¹.
+
+**But it is the only bound that discriminates between proteins.** Carbon spans 1.31-fold across the panel, nitrogen 1.10-fold, oxygen essentially not at all. Phosphate spans **twelve-fold**, from α-S2-casein to ovalbumin, because it scales with a count that genuinely differs. That matters for a specific practical case: a developer reducing phosphate — to cut downstream salt load, or because high phosphate interferes with a precipitation step — is reducing the one bound that a heavily phosphorylated casein will hit first and an unphosphorylated whey protein will never hit at all. It is the only place in this analysis where the identity of the protein changes the operative constraint rather than merely scaling it.
+
+#### Heat removal, the one check that cannot be dismissed outright
+
+Oxygen uptake is the standard proxy for fermenter heat load, because aerobic catabolism releases a nearly substrate-independent 440–490 kJ per mole of O₂. At the oxygen demands of §5.2.3 this is **4.3–4.7 kJ per gram of product**. A jacketed production vessel with internal coils removes roughly 5–20 kW m⁻³:
+
+| Cooling capacity (kW m⁻³) | Heat-limited ceiling (g L⁻¹) | Carbon ceiling (g L⁻¹) | Binding bound |
+|---|---|---|---|
+| 5 | 344–373 | 214–234 | carbon |
+| 10 | 688–746 | 214–234 | carbon |
+| 20 | 1,377–1,492 | 214–234 | carbon |
+| 40 | 2,754–2,984 | 214–234 | carbon |
+
+Carbon is tighter in all 36 combinations, but the margin at the low-cooling end is **1.49-fold**, the narrowest of the three alternative bounds — oxygen's narrowest is 1.9-fold and nitrogen's is wide open once ammonia is fed.
+
+And this calculation is **non-conservative**, which must be said plainly. It counts only the oxygen drawn by product synthesis, so it understates the heat a real process must remove and therefore overstates the heat ceiling. Growth and maintenance respiration in a high-cell-density fed-batch dominate total oxygen uptake, often by an order of magnitude, so the true heat-limited ceiling is well below the figures tabulated above and may be the tightest bound of all at a large scale with poor cooling. What this calculation establishes is the narrower claim that *the heat of product synthesis alone* does not bind. Unlike oxygen, heat removal cannot be dismissed as a candidate constraint on this evidence; it is simply not a constraint on the quantity Table 5.1 measures. Bounding it properly requires a whole-process energy balance with growth and maintenance included, which is beyond a product-level stoichiometric model and is named as such in §9.3.
 
 ### 5.2.4 The ordering is not the expected one
 
@@ -167,7 +201,7 @@ Including any of these inflates apparent performance. Excluding them costs sampl
 
 1. No published process for any protein in these hosts has reached more than **8.0%** of its stoichiometric ceiling. The median reached 0.40%, and half the corpus lies between 0.07% and 2.1%.
 2. The stoichiometric ceiling has a log₁₀ standard deviation of **0.029** across 26 proteins; utilisation of it has a log₁₀ standard deviation of **0.851**. The outcome is about thirty times more dispersed than the bound, which excludes metabolic cost as the explanation of the ordering. Reported as a distribution rather than as a ratio of extremes, the conclusion does not depend on any single record.
-3. Carbon, not oxygen, is the binding bound at the product level in all 36 protein-by-transfer-rate combinations tested. Nitrogen binds before carbon in a batch, but not in the fed-batch processes these titres came from, and substituting either bound rescales the median without touching the dispersion.
+3. Carbon, not oxygen, is the binding bound at the product level in all 36 protein-by-transfer-rate combinations tested, and the same holds against phosphate at any realistic supply and against the heat of product synthesis at any realistic cooling capacity. Nitrogen binds before carbon in a batch, but not in the fed-batch processes these titres came from. Substituting any of these bounds rescales the median without touching the dispersion. Two caveats are carried rather than buried: phosphate is the only bound that varies strongly between proteins, twelve-fold against carbon's 1.31-fold, and binds on the caseins below 2 g P L⁻¹; and the heat bound counts only product-associated respiration, so it is an upper bound on an upper bound and heat removal remains an open question at scale.
 4. Separating food proteins from human therapeutics changes nothing material: 15 food and food-adjacent proteins, median utilisation 0.50%, log₁₀ SD 0.780, identical ceiling span.
 5. The published expert ordering of food proteins by tractability is partly contradicted: α-lactalbumin, a "tractable" whey protein, sits at 0.31% of its ceiling, below lactoferrin, ovalbumin and lysozyme.
 6. Intact κ-casein does have published titres, 28–133 mg L⁻¹ in *K. phaffii*, and it has among the *highest* ceilings and the lowest utilisation in the corpus. α-S2- and β-casein still have none in any microbial host.

@@ -1,0 +1,31 @@
+# Institutional front matter.
+#
+# This is the only file in the repository that cannot be filled in from the
+# analysis, because every field is information about the submission rather than
+# about the science. Fill it in, run `python3 src/build_thesis.py`, and the
+# title page, declaration page and signature block are generated with these
+# values. Nothing else in the manuscript needs editing to submit it.
+#
+# Any field left as null is rendered as a visible placeholder in square
+# brackets, so an unfilled field is obvious on the page rather than silently
+# blank.
+
+author: null                 # Full name as it must appear on the title page
+student_id: null             # Student or registration number
+degree: null                 # e.g. "Bachelor of Science in Biotechnology"
+department: null             # e.g. "Department of Biotechnology"
+faculty: null                # e.g. "Faculty of Science"
+institution: null            # Full name of the university
+city: null                   # City
+country: null                # Country
+supervisor: null             # Supervisor's name and title
+co_supervisor: null          # Leave null if there is none
+submission_month: null       # e.g. "December 2026"
+academic_year: null          # e.g. "2026/2027"
+language_of_declaration: en  # "en", "ar", or "both" for a bilingual declaration
+
+# Formatting. If the institution supplies a Word template, put it at
+# paper/template.docx and it is used as pandoc's reference document, which
+# carries its fonts, margins, heading styles and page numbering into the build.
+# If it supplies only a written specification, record it here for the record.
+template_notes: null
