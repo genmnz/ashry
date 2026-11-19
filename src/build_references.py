@@ -55,7 +55,15 @@ def format_entry(r) -> str:
     elif isinstance(r.url, str) and r.url.strip():
         ident = f" <{r.url.strip()}>"
     kind = "" if pd.isna(r.type) else f" ({str(r.type).strip()})"
-    return f"{authors}{year}. {title}.{venue}{kind}{ident}"
+    # Three entries were searched by hand after both registries failed, and the
+    # note explaining why each carries no identifier travels with the entry
+    # rather than living only in the audit file. An entry with no identifier is
+    # honest; an entry with a guessed one is not, and an entry whose absence is
+    # unexplained invites the reader to assume carelessness.
+    note = getattr(r, "verification_note", "")
+    note = "" if (pd.isna(note) or not str(note).strip()) else (
+        f"\n    - *Identifier note.* {str(note).strip()}")
+    return f"{authors}{year}. {title}.{venue}{kind}{ident}{note}"
 
 
 def main() -> None:
@@ -63,30 +71,48 @@ def main() -> None:
     has_doi = int(bib.doi.notna().sum())
     no_author = int(bib.authors.astype(str)
                     .str.contains("not retrieved", case=False).sum())
+    no_doi = len(bib) - has_doi
     lines = [
         "# References",
         "",
-        "**Verification status.** This list is generated directly from the "
-        "project bibliography. Every DOI below was resolved against Crossref "
-        f"and the entry rebuilt from the registry metadata: all {has_doi} "
-        "resolve, and the first author, year, title and venue come from the "
-        "registry rather than from the value originally recorded. That pass "
-        "changed 49 author lists, 11 first authors, 12 years, 3 truncated "
-        "titles and 1 venue; every change is listed in "
-        "`data/literature/bibliography_corrections.md` with the original "
-        "preserved beside it. An earlier audit had found that identifiers "
-        "inferred rather than resolved were wrong roughly half the time, which "
-        "is why the pass was treated as blocking.",
+        "**Verification status.** Every identifier in this list was resolved "
+        f"against Crossref and confirmed independently at doi.org. {has_doi} of "
+        f"{len(bib)} entries carry a verified DOI; the remaining {no_doi} have "
+        "none, and the reason is given below rather than left to inference. No "
+        "identifier in this list was inferred: an earlier audit found that "
+        "inferred identifiers were wrong roughly half the time, which is why "
+        "the resolution pass was treated as blocking.",
         "",
-        f"What remains unverified is marked. {len(bib) - has_doi} entries carry "
-        "no DOI - software, industry and regulatory sources, and papers whose "
-        f"identifier was never captured - and {no_author} of those carry no "
-        "retrieved author list and say so rather than carrying a guess. A "
-        "title-similarity search found close candidates for about half of "
-        "them, but a title match is weaker evidence than a DOI and none has "
-        "been written in on that basis.",
+        "Resolution corrected the record in ways worth stating, because each "
+        "would have produced a wrong in-text citation. Rebuilding every entry "
+        "from registry metadata changed 49 author lists, 11 first authors "
+        "(mostly diacritic losses, but one entry recorded Wang for a paper "
+        "whose first author is Alderson), 12 years, 3 truncated titles and 1 "
+        "venue. A second pass over the entries that initially resolved to "
+        "nothing recovered 48 more identifiers by title search, each re-fetched "
+        "in full and accepted only on title similarity above 0.97, year within "
+        "one, agreement of first author where one was recorded, a citable "
+        "registry type, and live confirmation at doi.org; that pass corrected "
+        "two further records, one first author and one year. Resolution also "
+        "exposed two papers that this bibliography had listed twice, now "
+        "merged. Every change is listed in "
+        "`data/literature/bibliography_corrections.md` and "
+        "`doi_candidate_audit.md`, with the originally recorded value preserved "
+        "beside it.",
         "",
-        f"Total entries: {len(bib)}. With a resolved DOI: {has_doi}. "
+        f"Of the {no_doi} entries without an identifier, the great majority "
+        "legitimately have none: company and trade-press items, FDA and Federal "
+        "Register documents, theses, software servers and an edited volume. "
+        f"{no_author} of them also carry no retrieved author list and say so "
+        "rather than carrying a guess. Three entries whose automated verdict "
+        "was \"no record\" were then searched by hand, and each carries an "
+        "*identifier note* explaining what was found and why it was not "
+        "adopted. One registry failing to find a work is not evidence that the "
+        "work has no identifier: the AlphaFold 3 addendum is absent from "
+        "Crossref, which offered an unrelated report with a near-identical "
+        "title, and was found at once in Europe PMC.",
+        "",
+        f"Total entries: {len(bib)}. With a verified DOI: {has_doi}. "
         "Peer-reviewed or review: "
         f"{int(bib.type.astype(str).str.contains('peer|review', case=False).sum())}.",
         "",

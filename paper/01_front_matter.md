@@ -73,7 +73,7 @@ src/            analysis code (Python 3.13)
 data/
   models/             iMT1026 and iMT1026v3 genome-scale models (SBML)
   sequences/          verified panel sequences and harvested validation set
-  literature/         curated titre database and 232-reference bibliography
+  literature/         curated titre database and 230-reference bibliography
   external/           codon usage table
 results/
   tables/             every computed table
