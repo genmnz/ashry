@@ -1,7 +1,6 @@
-__pycache__/
-*.pyc
-.ipynb_checkpoints/
-
 # solver scratch
 *.lp
+*.pyc
 *.sol
+.ipynb_checkpoints/
+__pycache__/

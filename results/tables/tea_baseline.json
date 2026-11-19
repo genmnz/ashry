@@ -1,0 +1,325 @@
+{
+  "parameters": {
+    "titer_g_per_L": {
+      "value": 10.0,
+      "unit": "g/L",
+      "source": "assumption; literature range 1-14 g/L for food proteins"
+    },
+    "batch_time_h": {
+      "value": 90.0,
+      "unit": "h",
+      "source": "assumption: typical fed-batch cycle"
+    },
+    "turnaround_h": {
+      "value": 12.0,
+      "unit": "h",
+      "source": "assumption: clean/sterilise/fill"
+    },
+    "yield_g_protein_per_g_substrate": {
+      "value": 0.1,
+      "unit": "g/g",
+      "source": "assumption: realised yield, to be scanned"
+    },
+    "theoretical_yield_g_per_g": {
+      "value": 0.64,
+      "unit": "g/g",
+      "source": "computed here from iMT1026v3"
+    },
+    "substrate_price_usd_per_t": {
+      "value": 600.0,
+      "unit": "USD/t",
+      "source": "assumption: technical glycerol, to be sourced"
+    },
+    "media_other_usd_per_m3": {
+      "value": 30.0,
+      "unit": "USD/m3",
+      "source": "assumption: salts, biotin, antifoam"
+    },
+    "electricity_usd_per_kWh": {
+      "value": 0.08,
+      "unit": "USD/kWh",
+      "source": "assumption: industrial tariff"
+    },
+    "reactor_volume_m3": {
+      "value": 200.0,
+      "unit": "m3",
+      "source": "assumption: commercial scale"
+    },
+    "working_fraction": {
+      "value": 0.75,
+      "unit": "-",
+      "source": "assumption"
+    },
+    "plant_uptime_frac": {
+      "value": 0.9,
+      "unit": "-",
+      "source": "assumption"
+    },
+    "capex_usd_per_m3": {
+      "value": 12000.0,
+      "unit": "USD/m3",
+      "source": "assumption: installed fermentation capacity"
+    },
+    "capex_life_years": {
+      "value": 15.0,
+      "unit": "a",
+      "source": "assumption: straight-line depreciation"
+    },
+    "maintenance_frac_capex": {
+      "value": 0.04,
+      "unit": "1/a",
+      "source": "assumption"
+    },
+    "labour_usd_per_year": {
+      "value": 1500000.0,
+      "unit": "USD/a",
+      "source": "assumption: plant crew"
+    },
+    "aeration_kW_per_m3": {
+      "value": 0.6,
+      "unit": "kW/m3",
+      "source": "assumption"
+    },
+    "agitation_kW_per_m3": {
+      "value": 1.5,
+      "unit": "kW/m3",
+      "source": "assumption: high-cell-density aerobic"
+    },
+    "cooling_kW_per_m3": {
+      "value": 0.5,
+      "unit": "kW/m3",
+      "source": "assumption"
+    },
+    "dsp_recovery_frac": {
+      "value": 0.7,
+      "unit": "-",
+      "source": "assumption: cell removal, UF/DF, spray dry"
+    },
+    "dsp_usd_per_kg_product": {
+      "value": 6.0,
+      "unit": "USD/kg",
+      "source": "assumption: chromatography-free route"
+    }
+  },
+  "result": {
+    "cost_usd_per_kg": 43.168016235413496,
+    "breakdown_usd_per_kg": {
+      "substrate": 8.571428571428571,
+      "media_other": 4.285714285714286,
+      "utilities": 2.6742857142857144,
+      "downstream": 6.0,
+      "capital": 1.9714430673334784,
+      "maintenance": 1.182865840400087,
+      "labour": 18.48227875625136,
+      "total": 43.168016235413496
+    },
+    "stoichiometric_floor_usd_per_kg": 0.9375,
+    "engineering_gap_x": 46.04588398444106,
+    "product_t_per_year": 81.15882352941176,
+    "cycles_per_year": 77.29411764705883,
+    "substrate_t_per_year": 1159.4117647058824,
+    "yield_frac_of_theoretical": 0.15625
+  },
+  "tornado": [
+    {
+      "parameter": "dsp_recovery_frac",
+      "unit": "-",
+      "base_value": 0.7,
+      "cost_low": 80.33603247082699,
+      "cost_high": 30.77867749027567,
+      "base_cost": 43.168016235413496,
+      "swing_usd_per_kg": 49.557354980551324,
+      "swing_pct_of_base": 114.80109419504954
+    },
+    {
+      "parameter": "titer_g_per_L",
+      "unit": "g/L",
+      "base_value": 10.0,
+      "cost_low": 71.76460389939842,
+      "cost_high": 33.635820347418516,
+      "base_cost": 43.168016235413496,
+      "swing_usd_per_kg": 38.12878355197991,
+      "swing_pct_of_base": 88.32646685464415
+    },
+    {
+      "parameter": "working_fraction",
+      "unit": "-",
+      "base_value": 0.75,
+      "cost_low": 64.80460389939842,
+      "cost_high": 35.95582034741852,
+      "base_cost": 43.168016235413496,
+      "swing_usd_per_kg": 28.848783551979892,
+      "swing_pct_of_base": 66.82906945423491
+    },
+    {
+      "parameter": "plant_uptime_frac",
+      "unit": "-",
+      "base_value": 0.9,
+      "cost_low": 64.80460389939842,
+      "cost_high": 35.95582034741852,
+      "base_cost": 43.168016235413496,
+      "swing_usd_per_kg": 28.848783551979892,
+      "swing_pct_of_base": 66.82906945423491
+    },
+    {
+      "parameter": "reactor_volume_m3",
+      "unit": "m3",
+      "base_value": 200.0,
+      "cost_low": 61.65029499166486,
+      "cost_high": 37.00725664999638,
+      "base_cost": 43.168016235413496,
+      "swing_usd_per_kg": 24.64303834166848,
+      "swing_pct_of_base": 57.08633495521208
+    },
+    {
+      "parameter": "batch_time_h",
+      "unit": "h",
+      "base_value": 90.0,
+      "cost_low": 32.28531999710082,
+      "cost_high": 54.05071247372618,
+      "base_cost": 43.168016235413496,
+      "swing_usd_per_kg": 21.765392476625358,
+      "swing_pct_of_base": 50.42018228942799
+    },
+    {
+      "parameter": "labour_usd_per_year",
+      "unit": "USD/a",
+      "base_value": 1500000.0,
+      "cost_low": 33.926876857287816,
+      "cost_high": 52.40915561353917,
+      "base_cost": 43.168016235413496,
+      "swing_usd_per_kg": 18.482278756251354,
+      "swing_pct_of_base": 42.81475121640904
+    },
+    {
+      "parameter": "yield_g_protein_per_g_substrate",
+      "unit": "g/g",
+      "base_value": 0.1,
+      "cost_low": 51.73944480684207,
+      "cost_high": 40.31087337827064,
+      "base_cost": 43.168016235413496,
+      "swing_usd_per_kg": 11.42857142857143,
+      "swing_pct_of_base": 26.47462734040542
+    },
+    {
+      "parameter": "substrate_price_usd_per_t",
+      "unit": "USD/t",
+      "base_value": 600.0,
+      "cost_low": 38.88230194969921,
+      "cost_high": 47.45373052112778,
+      "base_cost": 43.168016235413496,
+      "swing_usd_per_kg": 8.57142857142857,
+      "swing_pct_of_base": 19.855970505304054
+    },
+    {
+      "parameter": "dsp_usd_per_kg_product",
+      "unit": "USD/kg",
+      "base_value": 6.0,
+      "cost_low": 40.168016235413496,
+      "cost_high": 46.168016235413496,
+      "base_cost": 43.168016235413496,
+      "swing_usd_per_kg": 6.0,
+      "swing_pct_of_base": 13.89917935371284
+    },
+    {
+      "parameter": "media_other_usd_per_m3",
+      "unit": "USD/m3",
+      "base_value": 30.0,
+      "cost_low": 41.02515909255635,
+      "cost_high": 45.31087337827064,
+      "base_cost": 43.168016235413496,
+      "swing_usd_per_kg": 4.285714285714292,
+      "swing_pct_of_base": 9.927985252652043
+    },
+    {
+      "parameter": "capex_usd_per_m3",
+      "unit": "USD/m3",
+      "base_value": 12000.0,
+      "cost_low": 41.590861781546714,
+      "cost_high": 44.745170689280286,
+      "base_cost": 43.168016235413496,
+      "swing_usd_per_kg": 3.154308907733572,
+      "swing_pct_of_base": 7.307050874267161
+    },
+    {
+      "parameter": "electricity_usd_per_kWh",
+      "unit": "USD/kWh",
+      "base_value": 0.08,
+      "cost_low": 41.83087337827064,
+      "cost_high": 44.505159092556354,
+      "base_cost": 43.168016235413496,
+      "swing_usd_per_kg": 2.674285714285716,
+      "swing_pct_of_base": 6.195062797654871
+    },
+    {
+      "parameter": "capex_life_years",
+      "unit": "a",
+      "base_value": 15.0,
+      "cost_low": 45.13945930274697,
+      "cost_high": 42.51086854630233,
+      "base_cost": 43.168016235413496,
+      "swing_usd_per_kg": 2.6285907564446376,
+      "swing_pct_of_base": 6.089209061889288
+    },
+    {
+      "parameter": "turnaround_h",
+      "unit": "h",
+      "base_value": 12.0,
+      "cost_low": 41.89527578459085,
+      "cost_high": 44.44075668623614,
+      "base_cost": 43.168016235413496,
+      "swing_usd_per_kg": 2.5454809016452913,
+      "swing_pct_of_base": 5.896682598903097
+    },
+    {
+      "parameter": "agitation_kW_per_m3",
+      "unit": "kW/m3",
+      "base_value": 1.5,
+      "cost_low": 42.396587663984924,
+      "cost_high": 43.93944480684207,
+      "base_cost": 43.168016235413496,
+      "swing_usd_per_kg": 1.5428571428571445,
+      "swing_pct_of_base": 3.5740746909547343
+    },
+    {
+      "parameter": "maintenance_frac_capex",
+      "unit": "1/a",
+      "base_value": 0.04,
+      "cost_low": 42.576583315213455,
+      "cost_high": 43.75944915561354,
+      "base_cost": 43.168016235413496,
+      "swing_usd_per_kg": 1.1828658404000834,
+      "swing_pct_of_base": 2.740144077850171
+    },
+    {
+      "parameter": "aeration_kW_per_m3",
+      "unit": "kW/m3",
+      "base_value": 0.6,
+      "cost_low": 42.85944480684207,
+      "cost_high": 43.47658766398493,
+      "base_cost": 43.168016235413496,
+      "swing_usd_per_kg": 0.6171428571428592,
+      "swing_pct_of_base": 1.429629876381897
+    },
+    {
+      "parameter": "cooling_kW_per_m3",
+      "unit": "kW/m3",
+      "base_value": 0.5,
+      "cost_low": 42.91087337827064,
+      "cost_high": 43.425159092556356,
+      "base_cost": 43.168016235413496,
+      "swing_usd_per_kg": 0.5142857142857196,
+      "swing_pct_of_base": 1.1913582303182557
+    }
+  ],
+  "monte_carlo": {
+    "n": 20000,
+    "rel_sd": 0.25,
+    "p05": 25.355423260733712,
+    "p25": 35.25058957600245,
+    "median": 45.30018877670597,
+    "p75": 59.560719037671134,
+    "p95": 92.49887543717563,
+    "mean": 50.318675512668484
+  }
+}

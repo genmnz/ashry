@@ -1,0 +1,5 @@
+corpus,disulfide_measure,n_records,n_proteins,spearman_rho,p_value
+original record set (titers_host_panel.csv),assumed (cysteines // 2),34,23,-0.4225352241669169,0.044579322860960086
+original record set (titers_host_panel.csv),annotated (UniProt feature table),34,23,-0.30658835965714804,0.15476936213190662
+merged corpus (306 records),assumed (cysteines // 2),53,25,-0.29351798965730186,0.15443328681342433
+merged corpus (306 records),annotated (UniProt feature table),53,25,-0.1876689418087919,0.3690129881062724

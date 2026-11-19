@@ -1,0 +1,4 @@
+reference,source,cai_max_design_mean,cai_uniform_control_mean,separation_max_minus_control
+highly expressed (165 genes),"RefSeq GCF_000027005.1 (highly expressed reference set, 165 genes)",1.0,0.529385067745613,0.470614932254387
+"genome average (5,040 CDS)","RefSeq GCF_000027005.1 (genome average, all CDS)",1.0,0.7040982520074619,0.2959017479925381
+legacy built-in table (2012),"Serial Cloner 2.6.1 built-in table (Jan 2012, Standard genetic code; Codon Usage Database, https://www.kazusa.or.jp/codon/)",1.0,0.6574573279848072,0.34254267201519284

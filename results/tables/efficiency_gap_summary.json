@@ -1,0 +1,47 @@
+{
+  "central_loading_g_L": 350.0,
+  "loadings_scanned": [
+    150.0,
+    250.0,
+    350.0,
+    500.0
+  ],
+  "n_records": 74,
+  "n_proteins": 26,
+  "ceiling_span_fold": 1.3123339294824425,
+  "fraction_span_fold": 593.0141521246749,
+  "best": {
+    "protein": "Human-like type III collagen (hydrophilic)",
+    "fraction_of_ceiling": 0.07969489431910334
+  },
+  "worst": {
+    "protein": "Human serum transferrin",
+    "fraction_of_ceiling": 0.00013438953190841952
+  },
+  "utilisation_distribution": {
+    "n_proteins": 26,
+    "median_percent": 0.4044676667102227,
+    "q1_percent": 0.07320858581039084,
+    "q3_percent": 2.116031795539381,
+    "min_percent": 0.013438953190841952,
+    "max_percent": 7.969489431910334,
+    "log10_sd": 0.8390793818223378,
+    "log10_iqr": 1.4746506152812813,
+    "fold_iqr": 28.90414795089571
+  },
+  "ceiling_distribution": {
+    "median_g_per_g": 0.645799194984823,
+    "min_g_per_g": 0.5308740908684738,
+    "max_g_per_g": 0.6966840817298435,
+    "log10_sd": 0.029023568761471986,
+    "iqr_fold": 1.06041672015771
+  },
+  "utilisation_distribution_food": {
+    "n_proteins": 15,
+    "median_percent": 0.4999840376356442,
+    "q1_percent": 0.11681000100963176,
+    "q3_percent": 1.2244911150113684,
+    "log10_sd": 0.7567408760908408,
+    "ceiling_span_fold": 1.3123339294824425
+  }
+}
