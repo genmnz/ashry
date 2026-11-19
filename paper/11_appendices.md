@@ -110,131 +110,102 @@ Everything in this thesis is generated from the repository except the informatio
 
 ## Appendix E — The verification record
 
-This appendix records what the verification passes found. It is kept in the document rather than in a repository note because several of the faults it lists are the kind that survive peer review undetected, and because the last item is the only task in the thesis that cannot be completed from the repository.
+Every verification pass is complete except the last, which cannot be done from
+the repository. What the passes found is summarised here; the full records are in
+`data/literature/reference_corrections.md`,
+`data/literature/bibliography_corrections.md`,
+`data/literature/doi_candidate_audit.md` and
+`data/external/sequence_verification_report.md`.
 
-1. ~~**Re-resolve every DOI in the bibliography.**~~ **Done**, and worth recording for what it found, because every fault below would otherwise have become a wrong in-text citation.
+**Identifiers.** 295 of 306 corpus identifiers resolved cleanly, but 62 rows — a
+fifth of the corpus — carried the wrong first author beside a correct DOI, and
+one the wrong year. In the bibliography, 189 of 230 entries now carry a DOI
+resolved against Crossref and confirmed independently at doi.org, up from 141;
+rebuilding every entry from registry metadata changed 49 author lists, 11 first
+authors, 12 years, 3 truncated titles and 1 venue, and exposed two papers listed
+twice. The 41 entries still without an identifier legitimately have none, being
+company and trade-press items, regulatory documents, theses and software
+servers. Two lessons cost time and are recorded: a Crossref miss is not proof
+that an identifier is wrong, and a correct DOI is no evidence of a correct
+citation — the more dangerous of the two, because the link resolves and the name
+beside it is simply wrong.
 
-   *The titre corpus*: 295 of 306 identifiers resolved cleanly, but **62 rows, a fifth of the corpus, carried the wrong first author despite a correct DOI**, and one carried the wrong year. A row citing Rantasalo was a paper whose first author is Mojzita; four citing Zhang in the *Journal of Agricultural and Food Chemistry* were Hu; three citing Zhang in the *Journal of Fungi* were Panchanawaporn. All corrections are in `data/literature/reference_corrections.md`.
+**Sequences.** All 36 accessions were re-fetched from the UniProtKB REST API and
+verified by CRC64 checksum, which establishes sequence identity where length and
+mass do not. 36 of 36 match and none is a secondary accession.
 
-   *The bibliography*: 189 of 230 entries now carry a DOI resolved against Crossref and confirmed independently at doi.org, up from 141 before the pass. Rebuilding each entry from registry metadata changed 49 author lists, 11 first authors, 12 years, 3 truncated titles and 1 venue, and a second pass recovered 48 identifiers by title search, accepted only above 0.97 title similarity with year, first author and registry type all agreeing and the DOI confirmed live. That pass corrected two further records and exposed two papers this bibliography had listed twice, now merged. The 41 entries that remain without an identifier legitimately have none, and three whose automated verdict was "no record" were searched by hand and carry an identifier note in the reference list explaining what was found and why it was not adopted.
+**Analyses.** The 306-record corpus is merged, with Chapter 5 rebuilt on 75
+records over 26 proteins and Chapter 6 on 53 over 25, under Benjamini–Hochberg
+control with bootstrap intervals and permutation p-values; the disulfide
+association did not survive (§6.2.1). The phosphate and heat-removal bounds,
+previously carried as an unchecked limitation, are scanned in §5.2.4. Disorder
+is measured with metapredict v3 alongside FoldIndex, and the codon reference is
+the 165-gene highly expressed set from the RefSeq GS115 coding sequences
+(§3.7).
 
-   Two methodological lessons are recorded because both cost time. **A Crossref miss is not proof that an identifier is wrong**: the `10.13345` prefix is absent from Crossref but resolves at doi.org, and the AlphaFold 3 addendum is absent from Crossref, which offered an unrelated report with a near-identical title, while Europe PMC found it immediately. **And a correct DOI is not evidence of a correct citation**, which is the more dangerous of the two, because the DOI resolves and the author name beside it is simply wrong.
+**Outstanding.** Formatting to the institution's template, the declaration and
+signature pages, and pagination. This is the only task that cannot be completed
+from the repository, because it needs information this analysis does not have;
+§D.3 lists exactly what.
 
-2. ~~**Complete author lists.**~~ **Done** for every entry that carries an identifier. The 27 entries still reading "[author list not retrieved]" are company and trade-press items, FDA and Federal Register documents, theses and software servers, for which no registry holds an author list; they print the absence rather than a guess. Replacing these with corporate or agency authorship is a stylistic choice for whoever formats the document, not a verification task.
-3. ~~**Re-verify sequences directly against UniProt**~~ **Done.** All 36 accessions in the corpus were re-fetched from the UniProtKB REST API and verified by **CRC64 checksum**, which establishes sequence identity rather than mere consistency of length and mass. 36 of 36 match and none is a secondary accession. See `data/external/sequence_verification*`.
-4. ~~**Merge the expanded titre corpus** and re-run Chapters 5 and 6.~~ **Done.** The 306-record corpus is merged, Chapter 5 is rebuilt on 75 records over 26 proteins and Chapter 6 on 53 records over 25 proteins, both with Benjamini–Hochberg control, bootstrap intervals and permutation p-values. The disulfide association did not survive it (§6.2.1).
-5. ~~**Scan the phosphate and heat-removal bounds**, which were carried as an unchecked limitation.~~ **Done**, in §5.2.4. Phosphate binds only on the caseins and only below about 2 g P L⁻¹ against the 7.3 g L⁻¹ a standard basal salts medium supplies, and it is the only bound that varies strongly between proteins. The heat of product synthesis leaves carbon tighter in every case, but by only 1.49-fold at the low-cooling end, and because the calculation excludes growth and maintenance respiration it overstates its own ceiling. Heat removal at production scale therefore remains a stated open question rather than a closed check.
-6. ~~**Re-run disorder with a modern predictor** and rebuild the codon reference from highly expressed genes.~~ **Done.** Disorder is measured with metapredict v3, with FoldIndex retained and reported alongside; the codon reference is the 165-gene highly expressed set from the RefSeq GS115 coding sequences (§3.7).
-7. **Format**: convert to the institution's required template, add the declaration and signature pages, and paginate. This is the only remaining task that cannot be done from the repository, because it needs information this analysis does not have; §D.3 lists exactly what.
+## Appendix F — How a well-controlled correlation turned out to be an artefact
 
-## Appendix F — How a corrected, FDR-controlled correlation turned out to be an artefact
+A correlation this work nearly reported is recorded here, because the way it
+failed is the reason to trust the numbers that remain.
 
-This appendix documents a finding this thesis nearly made. It is kept because the
-failure is more instructive than the result would have been, and because the
-audit trail is the thesis's main claim to being trustworthy about its remaining
-numbers.
+An independent analysis of the same literature, on its own panel of fourteen
+dairy, egg and haem proteins, tested 32 sequence features against log₁₀ ceiling
+utilisation and reported one survivor: mean metapredict disorder, Spearman
+ρ = −0.833, permutation p = 0.00025 over 20,000 relabellings, Benjamini–Hochberg
+q = 0.008 across all 32 features, bootstrap 95% CI −0.98 to −0.45, and
+leave-one-out ρ between −0.791 and −0.929 with p never above 0.0026.
 
-### F.1 The finding as reported
+Nothing in that is wrong as arithmetic, and it is better controlled than most
+published correlations of its kind. It was still an artefact, for two reasons
+that no amount of statistical control could have exposed.
 
-An independent analysis of the same literature, with its own curated panel of
-fourteen dairy, egg and haem proteins and its own computed ceilings, tested 32
-sequence features against log₁₀ ceiling utilisation and reported one survivor:
+**The configuration was wrong for the test.** The panel held two proteins with
+mean disorder near 0.87 and twelve between 0.06 and 0.16. A rank correlation
+across a gap like that is a contrast between two clusters, and leave-one-out
+cannot detect it, because removing either disordered protein leaves the other to
+hold the contrast up. The discriminating test is whether the association
+survives *within* the globular group. It did not: ρ = −0.455, p = 0.138.
 
-| | |
-|---|---|
-| Feature | mean metapredict disorder score |
-| Spearman ρ | −0.833 |
-| Permutation p (20,000 relabellings) | 0.00025 |
-| Benjamini–Hochberg q across 32 features | 0.008 |
-| Bootstrap 95% CI | −0.98 to −0.45 |
-| Leave-one-out ρ across all 14 fits | −0.791 to −0.929 |
-| Leave-one-out permutation p | never above 0.0026 |
+**Three of the fourteen titres were not what their column said.** A lactoferrin
+record of 3,500 mg L⁻¹, the panel's joint-highest, came from a construct with no
+signal sequence, harvested by lysing the cells and recovering inclusion bodies
+in 6 M urea: an intracellular yield. The join that picked each protein's best
+record matched on protein name alone, so bovine entries borrowed human titres;
+since every α-lactalbumin and osteopontin record in the corpus is human, this
+removed osteopontin, one of the two proteins the correlation rested on, which
+had no titre of its own. And a 5,450 mg L⁻¹ "ovalbumin" is *Coturnix coturnix*,
+not *Gallus gallus* — hen ovalbumin's best species-matched secreted titre is
+35 mg L⁻¹.
 
-Nothing about that table is wrong as arithmetic. It carries a permutation
-p-value rather than an asymptotic one, multiple-testing control across every
-feature tested, a bootstrap interval, and the leave-one-out check that small-*n*
-rank correlations are supposed to need. It is better-controlled than most
-published correlations of its kind. It was also an artefact, and none of those
-controls could have revealed that, because every one of them tests the
-*statistics* while the fault was in the *records*.
+Corrected, the association is **ρ = −0.483, p = 0.117**, nothing survives FDR,
+and it has been retracted. One protein of twelve now sits above 0.4 disorder,
+which is exactly the configuration a leave-one-out cannot touch.
 
-### F.2 What the audit found
+The same audit caught one fault in this thesis's own pipeline. It joins on
+UniProt accession, so orthologue pooling cannot occur, but `src/corpus.py`
+excluded fusions by the word "fusion" and let through a *Candida antarctica*
+lipase B expressed on a cellobiohydrolase I **carrier**, credited with the whole
+10 g L⁻¹ and sitting fourth in Table 5.1. The filter now excludes carriers,
+chimeras and C-tagged constructs.
 
-Two audits ran in parallel on different questions.
-
-**The structural audit** asked whether the correlation could be a two-cluster
-artefact. The panel holds two proteins with mean disorder near 0.87 — bovine
-osteopontin and κ-casein — and twelve between 0.06 and 0.16. A rank correlation
-across that configuration can be produced entirely by the contrast between the
-two groups, with the ranks inside the globular group contributing noise. **A
-leave-one-out check is structurally incapable of detecting this**, because
-removing either disordered protein leaves the other in place to hold the
-contrast up. The discriminating test is whether the association survives
-*within* the globular group, and it did not: ρ = −0.455, p = 0.138 on the
-external panel, ρ = −0.429, p = 0.289 on this thesis's roster.
-
-**The provenance audit** went back to the primary sources behind the fourteen
-titres and found three faults:
-
-1. **A titre that is not a secretion titre.** Bovine lactoferrin carried
-   3,500 mg L⁻¹, the panel's joint-highest value. The source expressed the
-   protein *without a signal sequence*, harvested the cell pellet, resuspended
-   it in lysis buffer and recovered inclusion bodies with 6 M urea. It is an
-   intracellular yield and was excluded.
-2. **Orthologue pooling in the best-titre join.** The join that selected each
-   protein's best record matched on canonical protein label alone, so human and
-   bovine entries of the same protein pooled. Because *every* α-lactalbumin and
-   osteopontin record in the corpus is human, the bovine entries silently
-   borrowed human titres. Requiring the source organism to agree dropped five
-   entries — including osteopontin, one of the two proteins the correlation
-   rested on, which had no titre of its own at all.
-3. **Species and carrier confusions elsewhere in the same join.** A 5,450 mg L⁻¹
-   "ovalbumin" record is *Coturnix coturnix*, not *Gallus gallus*; hen
-   ovalbumin's best species-matched secreted titre in *K. phaffii* is 35 mg L⁻¹,
-   which moves it from near the top of the ranking to near the bottom. And the
-   corpus's only cellobiohydrolase I row is *Candida antarctica* lipase B
-   expressed on a cellobiohydrolase I **carrier**, so a name match made the
-   carrier the product and credited it with the whole 10 g L⁻¹.
-
-### F.3 The corrected result
-
-With those corrections the association is **ρ = −0.483, p = 0.117**, with
-nothing surviving FDR correction, and the analysis that reported it has retracted
-it. The structural diagnosis is confirmed and sharpened: once osteopontin's
-borrowed titre is removed, exactly **one** protein of twelve sits above 0.4 mean
-disorder, which is precisely the configuration a leave-one-out cannot touch.
-
-This thesis's own pipeline was checked for the same three faults. It joins on
-UniProt accession rather than on protein label, so orthologue pooling cannot
-occur in it, and an independent check found no record in the merged corpus whose
-accession disagrees with its stated source organism. It had, however, let the
-carrier construct through: `src/corpus.py` excluded fusions by the word "fusion"
-and this record says "carrier". That record sat fourth in Table 5.1 at 10 g L⁻¹
-and 4.45% of its ceiling. The filter now excludes carriers, chimeras and C-tagged
-constructs, and the corrected record for the same lipase is its own
-non-carrier titre of 5.41 g L⁻¹.
-
-### F.4 What this is evidence of
-
-Four controls that are normally treated as sufficient — a permutation p-value,
-FDR correction across the whole feature set, a bootstrap interval and
-leave-one-out validation — all passed on data containing a non-secretion titre, a
-borrowed titre and a carrier mass. **Statistical controls validate inference
-from the records; they say nothing about whether the records mean what their
-column headings say.** The two things that did find the fault were a structural
-test chosen because it could discriminate between two specific explanations, and
-reading the primary sources behind the individual numbers.
-
-That is also the argument for the corpus design described in §3.9. Every record
-in `titers_merged.tsv` carries a verbatim quotation from its source, and it was
-the quotation on the lactoferrin record — the words "cell lysis, and
-purification" — that made the first fault findable at all. A corpus of numbers
-without their sentences would have hidden it.
+Two lessons are worth stating. A permutation p-value, FDR control, a bootstrap
+interval and leave-one-out all passed on data containing a non-secretion titre, a
+borrowed titre and a carrier mass: **statistical controls validate inference
+from the records, not whether the records mean what their headings say.** And
+the fault was findable only because every record in `titers_merged.tsv` carries a
+verbatim quotation from its source — it was the words "cell lysis, and
+purification" that exposed the first one. A corpus of numbers without their
+sentences would have hidden it.
 
 
 ## Appendix G — The prior-art audit in full
 
-§2.8 states the concession. This appendix records the audit that produced it, because a novelty claim rests on the thoroughness of the search that failed to find a competitor, and that search should be inspectable.
+§2.8 states the concession; this appendix records the search behind it, because a novelty claim rests on the thoroughness of the search that failed to find a competitor.
 
 ### G.1 What was searched
 

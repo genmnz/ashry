@@ -47,7 +47,7 @@ Food and food-adjacent proteins are shown in bold; the remainder are human thera
 
 ### 5.2.1 The headline contrast
 
-An earlier draft of this chapter stated the contrast as a pair of max-over-min ratios: the ceiling spans 1.4-fold, achievement spans 628-fold. That is the right idea expressed in the wrong statistic. A ratio of extremes is decided by exactly two records — the single most optimistic and the single most pessimistic in the corpus — so it moves when one row is added, removed or reclassified, and an examiner is entitled to attack it on precisely that ground. It is replaced here by the distribution, with the extremes retained only as named examples.
+The contrast is stated as a distribution rather than as a ratio of extremes. A max-over-min ratio is decided by exactly two records, so it moves whenever one row is added, removed or reclassified; the extremes are retained below only as named examples.
 
 Across these 26 proteins, at the central loading:
 
@@ -218,18 +218,14 @@ Nothing of substance changes. The food proteins are if anything slightly *better
 
 ## 5.3 The caseins: the central test case
 
-The caseins were, until the corpus was rebuilt, absent from Table 5.1 altogether, and this section reported that absence as a result. It is worth recording what happened to that claim, because the correction runs in both directions and the second half of it is new.
+An earlier version of this analysis credited κ-casein with 1.02 g L⁻¹, but that record was **bovine casein macropeptide**, the 64-residue glycopeptide chymosin releases from κ-casein: a name-based join matched "casein" in both strings and inflated the caseins' apparent performance roughly eightfold. The corpus filter that removes fragments, fusions, isolated domains and antibody fragments is now shared between both pipelines.
 
-**The first correction.** An earlier version of this analysis credited κ-casein with 1.02 g L⁻¹, placing it mid-table. That number came from a record for **bovine casein macropeptide**, the 64-residue glycopeptide that chymosin releases from κ-casein during coagulation. A strain secreting casein macropeptide has not secreted a casein; it has secreted about a third of one, without the part that matters. The error entered through a name-based join matching "casein" in both strings, and it inflated the caseins' apparent performance by a factor of nearly eight. It was caught by cross-checking against an independent analysis of the same corpus, and the corpus filter that removes fragments, fusions, isolated domains and antibody fragments is shared between both pipelines so that neither can repeat it.
-
-With the fragment removed, this section stated that no intact casein had a published volumetric titre in either host. **That claim is now withdrawn.** A systematic re-harvest, deeper than the first and with every record carrying a verbatim quotation from the source, found it:
+A deeper re-harvest, with every record carrying a verbatim quotation from its source, then located intact casein titres where the first search had found none:
 
 - **Bovine κ-casein in *K. phaffii*** (Iaria and co-workers, 2026): 28, 89 and 133 mg L⁻¹ in shake flask from one-, seven- and seventeen-copy strains, and an order-of-magnitude estimate of 10 mg L⁻¹ for a single-copy strain in a methanol fed-batch bioreactor at pH 3. The authors report extensive O-glycosylation and proteolysis, and note that production scales sub-linearly with copy number.
 - **Bovine κ-casein in *Aspergillus oryzae***: 0.11, 0.18 and 4.14 mg L⁻¹ by ELISA, the highest of them with protease-pathway engineering and 10 g L⁻¹ yeast extract.
 - **Bovine α-S1-casein in *Bacillus subtilis*** (Biermann and co-workers, 2025): 56.9 mg L⁻¹ in a genome-reduced strain, in a high-cell-density fed-batch. This is outside the two hosts of this thesis but it is the only quantitative α-S1-casein titre located anywhere.
 - **α-S2-casein and β-casein**: still nothing. No primary source with a volumetric titre in any microbial host was retrieved for either.
-
-So the absence was partly a failure of the first search and partly real, and the honest statement is now a measurement rather than a gap. It is a sharper result than the absence was.
 
 **κ-casein has the third-highest stoichiometric ceiling of any protein in Table 5.1 and the sixth-lowest utilisation of it.** Its *Y*<sub>max</sub> is 0.657 g g⁻¹ against a corpus median of 0.646 — it is, metabolically, an unusually *cheap* protein to build, because it carries no disulfides to speak of, no N-glycans, and phosphorylation that Chapter 4 showed to be energetically free. And it reaches 0.06% of that ceiling, a gap of 1,729-fold, against β-lactoglobulin's 16-fold.
 
@@ -243,24 +239,34 @@ Second, any ranking of food proteins by tractability that places caseins last is
 
 Third, the open ground has moved. A rigorous fed-batch titre for an intact α-S1-, α-S2- or β-casein in *K. phaffii*, with phosphorylation state characterised, is still unpublished, and remains the first item in the wet-laboratory programme proposed in Chapter 9. For κ-casein the open question is no longer whether it can be made but why it degrades.
 
-## 5.4 What the exclusions remove, and why it matters
+## 5.4 What the exclusions remove
 
-Twenty-five records were excluded as fragments or fusions. The category matters because each exclusion is a case where a reported titre overstates what was achieved for the protein of interest:
-
-- **Fragments** (casein macropeptide, lactoferricin, antimicrobial peptides excised from precursors) are shorter and structurally simpler than the parent, and are often produced precisely because the parent is difficult.
-- **Fusions** (a SUMO-tagged holin, an sfGFP-tagged lipase at 5.1 g L⁻¹) report a titre that includes the partner's mass, and the partner is frequently chosen because it improves secretion.
-- **Antibody fragments and isolated domains** (Fab, scFv, a viral receptor-binding domain) are engineered constructs, not natural proteins, and their sequence features belong to the construct rather than to anything in UniProt.
-
-Including any of these inflates apparent performance. Excluding them costs sample size — 25 of 161 in-host high-confidence records — and the trade is worth making, but it is recorded here because a reader comparing this table against the raw corpus will find the difference.
+Twenty-five of 161 in-host high-confidence records were excluded as fragments, fusions, isolated domains or antibody fragments, because each reports a titre that overstates what was achieved for the protein of interest: a fragment is shorter and simpler than its parent and is often made precisely because the parent is difficult; a fusion's titre includes a partner's mass, and the partner is usually chosen because it improves secretion; and an engineered construct's sequence features belong to the construct rather than to anything in UniProt. The exclusions cost sample size and are recorded here because a reader comparing this table against the raw corpus will find the difference.
 
 ## 5.5 What this chapter establishes
 
-1. No published process for any protein in these hosts has reached more than **8.0%** of its stoichiometric ceiling. The median reached 0.40%, and half the corpus lies between 0.07% and 2.1%.
-2. The stoichiometric ceiling has a log₁₀ standard deviation of **0.029** across 26 proteins; utilisation of it has a log₁₀ standard deviation of **0.851**. Computed per record rather than per protein, with bootstrap intervals, the same contrast is 0.0193 (0.0130–0.0245) against 0.892 (0.751–1.017), a ratio of 46. The outcome is about thirty times more dispersed than the bound, which excludes metabolic cost as the explanation of the ordering. Reported as a distribution rather than as a ratio of extremes, the conclusion does not depend on any single record.
-3. Carbon, not oxygen, is the binding bound at the product level in all 36 protein-by-transfer-rate combinations tested, and the same holds against phosphate at any realistic supply and against the heat of product synthesis at any realistic cooling capacity. Nitrogen binds before carbon in a batch, but not in the fed-batch processes these titres came from. Substituting any of these bounds rescales the median without touching the dispersion. Two caveats are carried rather than buried: phosphate is the only bound that varies strongly between proteins, twelve-fold against carbon's 1.31-fold, and binds on the caseins below 2 g P L⁻¹; and the heat bound counts only product-associated respiration, so it is an upper bound on an upper bound and heat removal remains an open question at scale.
-4. Separating food proteins from human therapeutics changes nothing material: 15 food and food-adjacent proteins, median utilisation 0.50%, log₁₀ SD 0.780, identical ceiling span.
-5. The published expert ordering of food proteins by tractability is partly contradicted: α-lactalbumin, a "tractable" whey protein, sits at 0.31% of its ceiling, below lactoferrin, ovalbumin and lysozyme.
-6. Intact κ-casein does have published titres, 28–133 mg L⁻¹ in *K. phaffii*, and it has among the *highest* ceilings and the lowest utilisation in the corpus. α-S2- and β-casein still have none in any microbial host.
-7. **About half the dispersion in realised production is reproduced within single proteins.** The mean log₁₀ spread inside one protein is 0.638 against 0.892 corpus-wide; hen ovalbumin spans 200-fold across four records and κ-casein 102-fold across five. A variance decomposition attributes 44% of the variance to protein identity, 16% to study identity and 40% to within-study residual, and adding sequence features halves the between-protein component without touching the residual. Since half the spread occurs where the sequence does not vary, no sequence-derived quantity can account for it.
+1. No published process for any protein in these hosts exceeds **8.0%** of its
+   stoichiometric ceiling. The median reaches 0.40%, and half the corpus lies
+   between 0.07% and 2.1%.
+2. The ceiling's log₁₀ standard deviation is **0.029** across 26 proteins against
+   **0.851** for utilisation of it — per record, with bootstrap intervals, 0.0193
+   (0.0130–0.0245) against 0.892 (0.751–1.017). The outcome is about thirty times
+   more dispersed than the bound, which excludes metabolic cost as the
+   explanation, and because it is reported as a distribution the conclusion rests
+   on no single record.
+3. Carbon is the binding bound in every alternative tested (§5.2.4). Substituting
+   any other rescales the median without touching the dispersion, with the two
+   caveats carried in §9.4.
+4. Separating food proteins from therapeutics changes nothing material, and the
+   published expert ordering is partly contradicted: α-lactalbumin sits below
+   lactoferrin, ovalbumin and lysozyme.
+5. **About half the dispersion is reproduced within single proteins**, where the
+   sequence does not vary at all: mean log₁₀ spread inside one protein 0.638
+   against 0.892 corpus-wide, with hen ovalbumin spanning 200-fold across four
+   records. The decomposition attributes 44% of the variance to protein identity,
+   16% to study and 40% to within-study residual, and adding sequence features
+   halves the between-protein component without touching the residual.
 
-The gap is therefore real, large, well characterised as a distribution, and unexplained by anything computed so far. The next chapter asks what it tracks, and reports that the answer is not the protein.
+The gap is therefore real, large, characterised as a distribution, and
+unexplained by anything computed so far. The next chapter asks what it tracks,
+and reports that the answer is not the protein.

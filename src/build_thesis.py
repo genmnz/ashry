@@ -59,9 +59,11 @@ FIGURES = {
         "gap in fold. No published process exceeds 8.3% of its own ceiling."),
     "fig7_ceiling_vs_achievement": (
         "### 5.2.3 Nobody is close to the ceiling",
-        "**Figure 5.2** The ceiling against the fraction of it achieved, for "
-        "every protein in the corpus. The ceiling varies 1.31-fold (log10 SD "
-        "0.029); utilisation of it varies with a log10 SD of 0.851. A property "
+        "**Figure 5.2** The ceiling against the fraction of it achieved, one "
+        "point per protein using that protein's best record (n = 26). On this "
+        "basis the ceiling varies 1.31-fold (log10 SD 0.029) and utilisation "
+        "of it varies with a log10 SD of 0.851; the per-record figures in "
+        "§5.2.2 are 1.26-fold, 0.0193 and 0.892. A property "
         "with this little variation cannot explain an outcome with that much."),
     "fig6_charge_hydropathy": (
         "## 6.2 The result that did not survive",
@@ -79,21 +81,133 @@ FIGURES = {
 }
 
 
+def dense_bibliography(text: str) -> str:
+    """Set the reference entries as their own, denser paragraph style.
+
+    A bibliography is conventionally set smaller and tighter than the body, and
+    this one is long. Pandoc passes a `custom-style` div straight through to a
+    Word paragraph style, so each run of bullet entries becomes a block of
+    "Bibliography Entry" paragraphs, which `src/make_docx_template.py` defines
+    at 9pt with a hanging indent. The bullet goes with it, which is what a
+    hanging indent replaces.
+    """
+    out: list[str] = []
+    run: list[str] = []
+
+    def flush() -> None:
+        if not run:
+            return
+        out.append('::: {custom-style="Bibliography Entry"}\n')
+        out.extend(run)
+        out.append(":::\n")
+        run.clear()
+
+    for line in text.split("\n"):
+        if line.startswith("- "):
+            # a blank line between entries, or Markdown runs them into one
+            # paragraph and the whole block arrives in Word as a single run-on
+            run.append(line[2:] + "\n\n")
+        else:
+            flush()
+            out.append(line + "\n")
+    flush()
+    return "".join(out)
+
+
 def assemble() -> str:
     parts: list[str] = []
     for name in CHAPTERS:
         text = (PAPER / name).read_text()
+        if name == "12_references.md":
+            text = dense_bibliography(text)
         for fig, (anchor, caption) in FIGURES.items():
             if anchor in text:
-                img = f"\n\n![{caption}](../results/figures/{fig}.png)\n\n{caption}\n"
+                # The alt text is what pandoc turns into the figure's caption
+                # paragraph, so it must not also be repeated as body text, and
+                # the explicit width keeps a 220-dpi plot inside the text block
+                # instead of being scaled to the full page.
+                img = (f"\n\n![{caption}]"
+                       f"(../results/figures/{fig}.png){{width=13.5cm}}\n")
                 # place the figure after the anchor's paragraph block
                 idx = text.index(anchor) + len(anchor)
                 nxt = text.find("\n## ", idx)
                 nxt = len(text) if nxt == -1 else nxt
                 text = text[:nxt] + img + text[nxt:]
         parts.append(text)
-    return "\n\n---\n\n".join(parts)
+    # Chapters are joined with a blank line, not a horizontal rule: the Word
+    # template already starts each chapter on a new page, and a rule on top of
+    # that leaves a stray line on an otherwise empty page.
+    return "\n\n".join(parts)
 
+
+def two_column_bibliography(path) -> str:
+    """Set the reference list in two columns.
+
+    A bibliography is a list of short, ragged entries, and a single column of
+    them across a full page wastes most of each line and runs to several pages
+    more than it needs. Two columns is the convention in journals for the same
+    reason.
+
+    Word stores column settings per section, so this inserts a section break on
+    the References heading: everything up to and including the heading stays in
+    the one-column section, and the entries after it fall into a two-column one.
+    The heading's own "start on a new page" is cleared at the same time, because
+    the section break already starts the page and the two together leave a blank
+    page between them.
+    """
+    try:
+        from docx import Document
+        from docx.oxml import OxmlElement
+        from docx.oxml.ns import qn
+        import copy
+    except ImportError:
+        return "python-docx not installed; bibliography left in one column"
+
+    doc = Document(str(path))
+    body = doc.element.body
+    body_sect = body.find(qn("w:sectPr"))
+    if body_sect is None:
+        return "no section properties found"
+
+    target = None
+    for para in doc.paragraphs:
+        if para.style.name == "Heading 1" and para.text.strip().lower() == "references":
+            target = para
+            break
+    if target is None:
+        return "no References heading found"
+
+    # the one-column section ends with the heading
+    first = copy.deepcopy(body_sect)
+    for existing in first.findall(qn("w:cols")):
+        first.remove(existing)
+    cols = OxmlElement("w:cols")
+    cols.set(qn("w:num"), "1")
+    first.append(cols)
+    ppr = target._p.get_or_add_pPr()
+    for brk in ppr.findall(qn("w:pageBreakBefore")):
+        ppr.remove(brk)
+    brk = OxmlElement("w:pageBreakBefore")
+    brk.set(qn("w:val"), "false")
+    ppr.append(brk)
+    ppr.append(first)
+
+    # everything after it is two columns with a 0.7cm gutter
+    for existing in body_sect.findall(qn("w:cols")):
+        body_sect.remove(existing)
+    cols2 = OxmlElement("w:cols")
+    cols2.set(qn("w:num"), "2")
+    cols2.set(qn("w:space"), "397")      # twentieths of a point, ~0.7cm
+    cols2.set(qn("w:equalWidth"), "1")
+    body_sect.append(cols2)
+
+    doc.save(str(path))
+    return "references set in two columns"
+
+
+# Without this the standalone HTML is titled "thesis" in the browser tab.
+HTML_TITLE = ("Stoichiometric production ceilings and realised titres "
+              "in recombinant food proteins")
 
 INSTITUTION = PAPER / "00_institution.yaml"
 TEMPLATE = PAPER / "template.docx"
@@ -262,9 +376,11 @@ def main() -> None:
         print(f"  using institutional template {TEMPLATE}")
 
     for fmt, ext, extra in (("html", "html", ["--standalone", "--toc",
-                                              "--toc-depth=3",
-                                              "--embed-resources"]),
-                            ("docx", "docx", ["--toc"] + (
+                                              "--toc-depth=2",
+                                              "--embed-resources",
+                                              "--css", str(PAPER / "thesis.css"),
+                                              "--metadata", "title=" + HTML_TITLE]),
+                            ("docx", "docx", ["--toc", "--toc-depth=2"] + (
                                 ["--reference-doc", str(TEMPLATE)]
                                 if TEMPLATE.exists() else []))):
         target = OUT / f"thesis.{ext}"
@@ -273,6 +389,8 @@ def main() -> None:
         try:
             subprocess.run(cmd, check=True, capture_output=True, timeout=300)
             print(f"  wrote {target} ({target.stat().st_size // 1024} KB)")
+            if fmt == "docx":
+                print(f"  {two_column_bibliography(target)}")
         except subprocess.CalledProcessError as exc:
             print(f"  {fmt} failed: {exc.stderr.decode()[:300]}")
         except FileNotFoundError:

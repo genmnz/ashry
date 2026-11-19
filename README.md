@@ -64,7 +64,7 @@ components.
 | `data/external/` | UniProt entries, AlphaFold models, *K. phaffii* CDS. |
 | `data/models/` | The genome-scale metabolic models, iMT1026v3 among them. |
 | `results/tables/` | Every output table and results write-up. |
-| `paper/` | The manuscript. |
+| `paper/` | The manuscript: one Markdown file per chapter, the Word template and the HTML stylesheet. `python3 src/make_docx_template.py && python3 src/build_thesis.py` writes `paper/build/thesis.{md,html,docx}`. |
 
 ## Reading order for the results
 

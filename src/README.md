@@ -53,6 +53,13 @@ repository.
 | `food_subset_signal.py` | The same search restricted to food proteins, with the two-cluster diagnostic that leave-one-out cannot provide. Contains the retraction of the earlier disorder result. |
 | `variance_decomposition.py` | The headline. Splits the variance in realised production into between-protein, between-study and within-study components using crossed random intercepts, and reports the distributional statistics with bootstrap intervals. |
 
+## Stage 6 — write
+
+| Script | What it does |
+|---|---|
+| `make_docx_template.py` | Builds `paper/template.docx`, the Word reference document pandoc styles the thesis with, from code rather than from a binary nobody can review. Every typographic decision is a named constant with a comment, and each can be overridden for one run from the environment, e.g. `THESIS_LINE_SPACING=2.0` if an institution requires double spacing. |
+| `build_thesis.py` | Assembles the twelve chapter files in order, inserts the figures with their captions, fills the title page from `paper/00_institution.yaml`, and writes `paper/build/thesis.{md,html,docx}`. The reference list is set in its own smaller style and placed in two columns; the HTML build is a single self-contained file styled by `paper/thesis.css`. |
+
 ## If you only run three
 
     python3 src/uniprot_features.py      # self-test; must pass before anything else

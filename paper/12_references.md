@@ -1,10 +1,14 @@
 # References
 
-**Verification status.** Every identifier in this list was resolved against Crossref and confirmed independently at doi.org. 189 of 230 entries carry a verified DOI; the remaining 41 have none, and the reason is given below rather than left to inference. No identifier in this list was inferred: an earlier audit found that inferred identifiers were wrong roughly half the time, which is why the resolution pass was treated as blocking.
-
-Resolution corrected the record in ways worth stating, because each would have produced a wrong in-text citation. Rebuilding every entry from registry metadata changed 49 author lists, 11 first authors (mostly diacritic losses, but one entry recorded Wang for a paper whose first author is Alderson), 12 years, 3 truncated titles and 1 venue. A second pass over the entries that initially resolved to nothing recovered 48 more identifiers by title search, each re-fetched in full and accepted only on title similarity above 0.97, year within one, agreement of first author where one was recorded, a citable registry type, and live confirmation at doi.org; that pass corrected two further records, one first author and one year. Resolution also exposed two papers that this bibliography had listed twice, now merged. Every change is listed in `data/literature/bibliography_corrections.md` and `doi_candidate_audit.md`, with the originally recorded value preserved beside it.
-
-Of the 41 entries without an identifier, the great majority legitimately have none: company and trade-press items, FDA and Federal Register documents, theses, software servers and an edited volume. 27 of them also carry no retrieved author list and say so rather than carrying a guess. Three entries whose automated verdict was "no record" were then searched by hand, and each carries an *identifier note* explaining what was found and why it was not adopted. One registry failing to find a work is not evidence that the work has no identifier: the AlphaFold 3 addendum is absent from Crossref, which offered an unrelated report with a near-identical title, and was found at once in Europe PMC.
+**Verification status.** Every identifier below was resolved against Crossref
+and confirmed independently at doi.org; 189 of 230 entries carry a verified DOI,
+and no identifier was inferred. The 41 without one are company and trade-press
+items, regulatory documents, theses, software servers and an edited volume, which
+have none to carry; three entries whose automated verdict was "no record" were
+searched by hand and carry an identifier note. Every correction made during
+resolution is listed in `data/literature/bibliography_corrections.md` and
+`doi_candidate_audit.md`, with the value as originally recorded preserved beside
+it.
 
 Total entries: 230. With a verified DOI: 189. Peer-reviewed or review: 173.
 
