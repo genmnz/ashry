@@ -3886,31 +3886,51 @@ the ceiling has a log₁₀ standard deviation of 0.851 against the
 ceiling’s 0.029 — the outcome is about thirty times more dispersed than
 the bound — and maximum theoretical yield has no univariate association
 with titre (ρ = +0.062, p = 0.770).</p></li>
-<li><p><strong>Disulfide density is the only sequence feature that does
-associate</strong> (ρ = −0.438, p = 0.036), and since disulfide
-formation is stoichiometrically almost free, the constraint it marks
-must lie in the oxidative folding machinery rather than in
-metabolism.</p></li>
+<li><p><strong>No sequence feature associates with titre at all</strong>
+— the strongest is log length at ρ = +0.232, p = 0.265 — and a single
+indicator of whether the run was in a bioreactor outperforms all seven
+sequence features combined. An earlier draft of this thesis reported
+disulfide density as an association at ρ = −0.438, p = 0.036; re-reading
+disulfide counts from the UniProt feature tables removed it
+(§6.2.1).</p></li>
 </ol>
 <p>Taken together: for food proteins in this host, <strong>metabolism is
-not the binding constraint, and the evidence points at the secretory
-pathway</strong>. Three things follow for anyone deciding where to spend
-— do not spend on carbon efficiency; do spend on folding and secretion
-capacity, and on titre and recovery, which Chapter 8 shows are what the
-economics turn on.</p>
+not the binding constraint, and nothing measurable about the molecule
+explains the published record.</strong> Two things follow for anyone
+deciding where to spend. Do not spend on carbon efficiency: the ceiling
+is not what is binding, and it barely varies between proteins. Do spend
+on titre and recovery, which Chapter 8 shows are what the economics turn
+on.</p>
+<p>The third thing that would have followed — spend on folding and
+secretion capacity — is where this thesis points but is no longer where
+it can claim to have measured. The secretory pathway remains the leading
+candidate for the residual, on three independent grounds: the
+stoichiometric model is structurally blind to it, the host literature
+responds to protein disulfide isomerase and unfolded-protein-response
+engineering, and the sources behind the lowest-utilisation records in
+the corpus report proteolysis and saturating copy-number responses
+rather than substrate limitation. None of those three is a measurement
+made here. Chapter 9’s proposed successor analysis, a
+proteome-constrained secretory model, is the way to make one.</p>
 <h2 id="the-honest-status-of-the-negative-result">9.2 The honest status
 of the negative result</h2>
-<p>The most important sentence in Chapter 6 is that the cross-validated
-model has <strong>no skill</strong> against predicting the mean. It
-would have been easy to report only the rank correlation (ρ = 0.370, p =
-0.029) and call it a predictive model. That would have been misleading,
-and the baseline was pre-specified precisely to prevent it.</p>
+<p>The most important sentence in Chapter 6 is that <strong>all of the
+model’s apparent skill is the process term</strong>. The full model
+recovers 10.1% of the prediction error against a predict-the-mean
+baseline; the fed-batch indicator on its own recovers 15.9%; the seven
+sequence features on their own are 8.3% <em>worse</em> than predicting
+the mean. It would have been easy to report the full model’s rank
+correlation alone (ρ = 0.543, p &lt; 0.001) and call it a predictive
+model of producibility. That would have been misleading, and both the
+baseline and the nested controls were specified to prevent it.</p>
 <p>The right reading is that <strong>the published record of titres is
 dominated by engineering effort, not by protein identity</strong>.
-β-lactoglobulin reaches 120 times more of its ceiling than human
-α-lactalbumin, and the difference between the two studies is not mainly
-the molecule: one had a commercial programme and omics-guided host
-rewiring behind it, the other a chaperone co-expression experiment.</p>
+β-lactoglobulin reaches twenty times more of its ceiling than human
+α-lactalbumin, two whey proteins of similar size and almost identical
+stoichiometric cost, and the difference between the studies is not the
+molecule: one had a commercial programme and omics-guided host rewiring
+behind it, the others a chaperone co-expression experiment and a study
+whose subject was CRISPR editing efficiency.</p>
 <p>This has a consequence for the whole comparative literature.
 Statements of the form “protein X is more tractable than protein Y”,
 when supported by titres from different papers, are weakly supported.
