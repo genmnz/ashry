@@ -17,10 +17,10 @@ The two threads report 1.20x / 224x and 1.38x / 628x for the same two quantities
 
 | include benchmarks | include T. reesei | ceiling spread | utilisation spread | n |
 |---|---|---|---|---|
-| no | no | 1.18x | 152x | 14 |
-| no | yes | 1.18x | 152x | 18 |
-| yes | no | 1.18x | 224x | 16 |
-| yes | yes | 1.18x | 224x | 21 |
+| no | no | 1.17x | 413x | 12 |
+| no | yes | 1.17x | 413x | 15 |
+| yes | no | 1.17x | 508x | 13 |
+| yes | yes | 1.17x | 508x | 17 |
 
 What the table actually shows, which is not what I expected: **the ceiling spread is insensitive to all three filters**, sitting at 1.18x in every combination. Only the utilisation spread moves, from 152x to 224x, and it moves through its lower end, which is set by whichever poorly expressed protein is allowed in.
 

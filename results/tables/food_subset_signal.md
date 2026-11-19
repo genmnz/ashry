@@ -1,74 +1,97 @@
-# Surviving signal inside the food-protein subset
+# Does any sequence feature track the gap in the food subset?
 
-Every non-benchmark entry in the curated panel is a dairy, egg or haem food protein, so the fit below is already free of the therapeutic confound: human serum albumin and bovine chymosin, the two benchmarks, are excluded, and no interferon, cytokine or antibody is in the panel at all. The correlation is between log10(ceiling utilisation) and one sequence feature at a time, with a bootstrap interval, a permutation p-value and Benjamini-Hochberg adjustment across every feature tested.
+Every non-benchmark entry in the curated panel is a dairy, egg or haem food protein, so the fit below is already free of the therapeutic confound: human serum albumin and bovine chymosin, the two benchmarks, are excluded, and no interferon, cytokine or antibody is in the panel at all. Five further entries drop out because the corpus holds no species-matched secreted titer for them: bovine alpha-lactalbumin, bovine osteopontin and the three caseins other than kappa. The correlation is between log10(ceiling utilisation) and one sequence feature at a time, with a bootstrap interval, a permutation p-value and Benjamini-Hochberg adjustment across every feature tested.
 
-Proteins: 14 (Komagataella phaffii).
+Proteins: 12 (Komagataella phaffii).
 
 ## All features, food subset only
 
 | feature | n | rho | 95% CI | p (perm) | p (BH) |
 |---|---|---|---|---|---|
-| `metapredict_mean` | 14 | -0.833 | -0.98 to -0.45 | 0.00025 | 0.00800 |
-| `gravy` | 14 | +0.688 | +0.17 to +0.94 | 0.00820 | 0.12426 |
-| `disorder_frac_foldindex` | 14 | -0.662 | -0.91 to -0.08 | 0.01165 | 0.12426 |
-| `fold_index` | 14 | +0.534 | -0.13 to +0.88 | 0.05235 | 0.34505 |
-| `n_phosphosite` | 14 | -0.508 | -0.86 to -0.24 | 0.06470 | 0.34505 |
-| `phosphosite_per_100aa` | 14 | -0.508 | -0.86 to -0.24 | 0.06470 | 0.34505 |
-| `metapredict_max` | 14 | -0.442 | -0.80 to +0.12 | 0.11394 | 0.52089 |
-| `ss_frac_helix` | 14 | +0.367 | -0.25 to +0.88 | 0.19649 | 0.78596 |
-| `ss_frac_turn` | 14 | -0.332 | -0.82 to +0.39 | 0.25184 | 0.81973 |
-| `metapredict_frac_gt_0_5` | 14 | -0.312 | -0.77 to +0.30 | 0.27229 | 0.81973 |
-| `frac_aromatic` | 14 | +0.279 | -0.33 to +0.75 | 0.34083 | 0.81973 |
-| `aromaticity` | 14 | +0.279 | -0.33 to +0.75 | 0.34083 | 0.81973 |
-| `fcr` | 14 | -0.268 | -0.84 to +0.40 | 0.34968 | 0.81973 |
-| `frac_ser_thr` | 14 | -0.266 | -0.74 to +0.35 | 0.35863 | 0.81973 |
-| `instability_index` | 14 | -0.244 | -0.74 to +0.37 | 0.40063 | 0.85468 |
-| `abs_ncpr` | 14 | +0.185 | -0.52 to +0.74 | 0.52687 | 0.93030 |
-| `frac_pro` | 14 | -0.158 | -0.63 to +0.49 | 0.58402 | 0.93030 |
-| `frac_cys` | 14 | +0.155 | -0.46 to +0.69 | 0.59832 | 0.93030 |
-| `kappa` | 14 | -0.125 | -0.76 to +0.51 | 0.67017 | 0.93030 |
-| `disulfide_per_100aa` | 14 | +0.115 | -0.48 to +0.67 | 0.69902 | 0.93030 |
-| `max_hydrophobic_patch` | 14 | -0.109 | -0.70 to +0.51 | 0.70691 | 0.93030 |
-| `ss_frac_sheet` | 14 | +0.108 | -0.47 to +0.63 | 0.72216 | 0.93030 |
-| `n_disulfide` | 14 | +0.094 | -0.51 to +0.73 | 0.74951 | 0.93030 |
-| `ncpr` | 14 | +0.088 | -0.46 to +0.66 | 0.76811 | 0.93030 |
-| `isoelectric_point` | 14 | +0.077 | -0.45 to +0.65 | 0.79991 | 0.93030 |
-| `aa_js_divergence_vs_host` | 14 | -0.068 | -0.57 to +0.52 | 0.82616 | 0.93030 |
-| `sequon_per_100aa` | 14 | -0.046 | -0.63 to +0.53 | 0.87536 | 0.93030 |
-| `frac_gly` | 14 | +0.040 | -0.62 to +0.60 | 0.89171 | 0.93030 |
-| `n_sequon` | 14 | +0.030 | -0.53 to +0.66 | 0.92170 | 0.93030 |
-| `aa_cost_akashi` | 14 | +0.029 | -0.54 to +0.56 | 0.93030 | 0.93030 |
-| `aa_cost_ratio_vs_host` | 14 | +0.029 | -0.54 to +0.56 | 0.93030 | 0.93030 |
-| `length` | 14 | -0.026 | -0.57 to +0.47 | 0.92865 | 0.93030 |
+| `max_hydrophobic_patch` | 12 | -0.593 | -0.95 to +0.00 | 0.04680 | 0.88083 |
+| `metapredict_max` | 12 | -0.517 | -0.87 to +0.11 | 0.09310 | 0.88083 |
+| `abs_ncpr` | 12 | +0.483 | -0.10 to +0.87 | 0.11674 | 0.88083 |
+| `metapredict_mean` | 12 | -0.483 | -0.92 to +0.27 | 0.11744 | 0.88083 |
+| `kappa` | 12 | +0.420 | -0.25 to +0.93 | 0.17999 | 0.90603 |
+| `length` | 12 | -0.357 | -0.76 to +0.25 | 0.25944 | 0.90603 |
+| `aa_js_divergence_vs_host` | 12 | +0.357 | -0.27 to +0.82 | 0.26579 | 0.90603 |
+| `frac_ser_thr` | 12 | -0.252 | -0.74 to +0.34 | 0.43653 | 0.90603 |
+| `disorder_frac_foldindex` | 12 | -0.231 | -0.82 to +0.53 | 0.46798 | 0.90603 |
+| `n_sequon` | 12 | -0.220 | -0.72 to +0.45 | 0.48738 | 0.90603 |
+| `gravy` | 12 | +0.210 | -0.53 to +0.78 | 0.51272 | 0.90603 |
+| `disulfide_per_100aa` | 12 | +0.203 | -0.40 to +0.76 | 0.52432 | 0.90603 |
+| `fcr` | 12 | +0.203 | -0.48 to +0.76 | 0.52567 | 0.90603 |
+| `metapredict_frac_gt_0_5` | 12 | -0.202 | -0.66 to +0.39 | 0.53902 | 0.90603 |
+| `instability_index` | 12 | -0.196 | -0.72 to +0.41 | 0.54482 | 0.90603 |
+| `frac_cys` | 12 | +0.189 | -0.41 to +0.72 | 0.55417 | 0.90603 |
+| `sequon_per_100aa` | 12 | -0.174 | -0.70 to +0.52 | 0.59172 | 0.90603 |
+| `frac_aromatic` | 12 | +0.168 | -0.49 to +0.79 | 0.60452 | 0.90603 |
+| `aromaticity` | 12 | +0.168 | -0.49 to +0.79 | 0.60452 | 0.90603 |
+| `aa_cost_akashi` | 12 | -0.154 | -0.60 to +0.46 | 0.63422 | 0.90603 |
+| `aa_cost_ratio_vs_host` | 12 | -0.154 | -0.60 to +0.46 | 0.63422 | 0.90603 |
+| `frac_pro` | 12 | -0.140 | -0.68 to +0.51 | 0.67137 | 0.91550 |
+| `isoelectric_point` | 12 | -0.098 | -0.58 to +0.55 | 0.76271 | 0.92286 |
+| `ncpr` | 12 | -0.091 | -0.61 to +0.57 | 0.77901 | 0.92286 |
+| `ss_frac_helix` | 12 | +0.088 | -0.61 to +0.69 | 0.78696 | 0.92286 |
+| `frac_gly` | 12 | +0.084 | -0.61 to +0.67 | 0.79981 | 0.92286 |
+| `ss_frac_sheet` | 12 | -0.049 | -0.64 to +0.54 | 0.88386 | 0.96884 |
+| `ss_frac_turn` | 12 | -0.042 | -0.69 to +0.71 | 0.90425 | 0.96884 |
+| `n_disulfide` | 12 | -0.014 | -0.60 to +0.63 | 0.97040 | 0.99130 |
+| `fold_index` | 12 | -0.007 | -0.76 to +0.64 | 0.99130 | 0.99130 |
 
-Features surviving FDR < 0.10: `metapredict_mean`
+Features surviving FDR < 0.10: **none**
+
+## The two-cluster problem
+
+Mean predicted disorder is not spread across this panel, it is bimodal. The values are:
+
+- `kappa_casein_bovine` 0.859
+- `avidin_chicken` 0.153
+- `myoglobin_pig` 0.151
+- `lactoferrin_human` 0.116
+- `ovomucoid_chicken` 0.104
+- `ovotransferrin_chicken` 0.104
+- `alpha_lactalbumin_human` 0.104
+- `ovalbumin_chicken` 0.101
+- `lactoferrin_bovine` 0.093
+- `lysozyme_c_chicken` 0.088
+- `leghemoglobin_lbc2_soybean` 0.074
+- `beta_lactoglobulin_bovine` 0.064
+
+Only 1 of 12 proteins sit above 0.4. A rank correlation computed across a gap like that is a contrast between two clusters wearing the clothes of a trend, and leave-one-out cannot detect it, because dropping one member of a cluster leaves the others. This is the check an earlier version of this analysis failed to apply.
 
 ## Robustness of `metapredict_mean`
 
-A rank correlation on fourteen points can be manufactured by one extreme protein, so the leave-one-out table is the check that decides whether this is a finding or an artefact.
+A rank correlation on a dozen points can be manufactured by one extreme protein, so leave-one-out is a necessary check, though as the section above shows it is not a sufficient one.
 
 | subset | n | rho | p (perm) |
 |---|---|---|---|
-| all food proteins | 14 | -0.833 | 0.00025 |
-| minus the two egg reagents (lysozyme, avidin) | 12 | -0.797 | 0.00300 |
-| one protein per orthologous pair | 12 | -0.853 | 0.00065 |
-| minus beta_lactoglobulin_bovine | 13 | -0.791 | 0.00265 |
-| minus alpha_lactalbumin_bovine | 13 | -0.830 | 0.00110 |
-| minus alpha_lactalbumin_human | 13 | -0.830 | 0.00110 |
-| minus kappa_casein_bovine | 13 | -0.824 | 0.00130 |
-| minus lactoferrin_bovine | 13 | -0.802 | 0.00175 |
-| minus lactoferrin_human | 13 | -0.868 | 0.00015 |
-| minus osteopontin_bovine | 13 | -0.824 | 0.00110 |
-| minus ovalbumin_chicken | 13 | -0.808 | 0.00145 |
-| minus ovotransferrin_chicken | 13 | -0.929 | 0.00005 |
-| minus ovomucoid_chicken | 13 | -0.868 | 0.00040 |
-| minus lysozyme_c_chicken | 13 | -0.802 | 0.00150 |
-| minus avidin_chicken | 13 | -0.830 | 0.00095 |
-| minus leghemoglobin_lbc2_soybean | 13 | -0.791 | 0.00145 |
-| minus myoglobin_pig | 13 | -0.830 | 0.00090 |
+| all food proteins | 12 | -0.483 | 0.11744 |
+| minus the two egg reagents (lysozyme, avidin) | 10 | -0.345 | 0.33358 |
+| one protein per orthologous pair | 10 | -0.539 | 0.11439 |
+| minus beta_lactoglobulin_bovine | 11 | -0.327 | 0.32408 |
+| minus alpha_lactalbumin_human | 11 | -0.491 | 0.13029 |
+| minus kappa_casein_bovine | 11 | -0.436 | 0.18259 |
+| minus lactoferrin_bovine | 11 | -0.545 | 0.08995 |
+| minus lactoferrin_human | 11 | -0.536 | 0.09465 |
+| minus ovalbumin_chicken | 11 | -0.627 | 0.04430 |
+| minus ovotransferrin_chicken | 11 | -0.582 | 0.06595 |
+| minus ovomucoid_chicken | 11 | -0.536 | 0.09390 |
+| minus lysozyme_c_chicken | 11 | -0.327 | 0.32798 |
+| minus avidin_chicken | 11 | -0.509 | 0.11409 |
+| minus leghemoglobin_lbc2_soybean | 11 | -0.327 | 0.33168 |
+| minus myoglobin_pig | 11 | -0.509 | 0.11834 |
 
-Across all fourteen leave-one-out fits rho stays between -0.929 and the full-panel value, and the permutation p-value never exceeds 0.0026. No single protein carries the correlation, which is the thing that had to be ruled out.
+Across the 12 leave-one-out fits rho ranges from -0.627 to -0.327 and the permutation p-value reaches 0.332.
 
-## What this does and does not establish
+## What this establishes
 
-It establishes that within a set of proteins intended as food, produced in one host, the fraction of the chain predicted to be intrinsically disordered ranks the realised fraction of the stoichiometric ceiling, and that neither disulfide load nor sequon count does. It does not establish direction of causation, and it cannot: disorder may impede secretion, or disordered proteins may simply have attracted less process development. The honest claim is the ranking and its robustness, not a mechanism.
+Nothing. The fit is rho -0.483 at permutation p 0.117, and only 1 of 12 proteins carry appreciable predicted disorder, so there is not enough spread in the predictor for a rank correlation to mean anything here.
+
+This is a correction of an earlier version of this file, which reported rho -0.833 at p 0.00025 and called it robust. That number was an artefact of three faults in the titer assignment, all now fixed in `ceiling_gap.py` and `titers_merged.tsv`:
+
+1. **Orthologues were pooled.** Matching on the canonical protein label alone gave bovine alpha-lactalbumin and bovine osteopontin human titers, and gave human and bovine lactoferrin the same single measurement, so one datum entered the correlation as two points. Requiring the source organism to match removes four panel entries from the fit, which is the honest outcome.
+2. **A quail titer was read as a chicken one.** The 5450 mg/L ovalbumin figure is *Coturnix coturnix*. Hen ovalbumin's best species-matched secreted titer in K. phaffii is 35 mg/L, which moves it from the top of the utilisation ranking to the bottom.
+3. **A lysate was counted as a secretion titer.** The 3500 mg/L lactoferrin record came from a construct with no signal sequence, measured after cell lysis and recovery of inclusion bodies. It is now classified intracellular and excluded.
+
+What survives is the ceiling comparison itself, which does not depend on any of this: the stoichiometric ceiling is nearly flat across the panel while realised titers span orders of magnitude, so metabolic cost is not the binding constraint. What limits these processes is still an open question, and the defensible statement is that this corpus cannot answer it at n of about a dozen.

@@ -48,28 +48,46 @@ RES = os.path.join(ROOT, "results", "tables")
 
 STANDARD_FEED_G_PER_L = 100.0
 
-# map the curated panel onto the protein_canonical labels in the corpus
+# Map the curated panel onto the corpus, on BOTH the canonical protein label
+# and the source organism.
+#
+# Matching on the label alone silently pools orthologues, and that is not a
+# cosmetic problem. Three cases in this corpus:
+#
+#   * every alpha-lactalbumin record is human, so matching on the label gave
+#     bovine alpha-lactalbumin a human titer of 600 mg/L. There is in fact no
+#     bovine alpha-lactalbumin titer in the corpus at all.
+#   * every osteopontin record is human, so bovine osteopontin was likewise
+#     borrowing a human number.
+#   * the best T. reesei lactoferrin record is porcine, and it was being
+#     assigned to both the human and the bovine panel entries.
+#
+# Pooling orthologues this way also manufactures pseudo-replication: human and
+# bovine lactoferrin carried one and the same titer, so they entered the
+# correlation as two points when they were one measurement. Requiring the
+# species to match removes both faults at once, at the cost of leaving some
+# panel entries with no titer, which is the honest outcome.
 CORPUS_LABEL = {
-    "beta_lactoglobulin_bovine": "beta-lactoglobulin",
-    "alpha_lactalbumin_bovine": "alpha-lactalbumin",
-    "alpha_lactalbumin_human": "alpha-lactalbumin",
-    "alpha_s1_casein_bovine": "alpha-s1-casein",
-    "alpha_s2_casein_bovine": "alpha-s2-casein",
-    "beta_casein_bovine": "beta-casein",
-    "kappa_casein_bovine": "kappa-casein",
-    "lactoferrin_bovine": "lactoferrin",
-    "lactoferrin_human": "lactoferrin",
-    "osteopontin_bovine": "osteopontin",
-    "ovalbumin_chicken": "ovalbumin",
-    "ovotransferrin_chicken": "ovotransferrin",
-    "ovomucoid_chicken": "ovomucoid",
-    "lysozyme_c_chicken": "lysozyme",
-    "avidin_chicken": "avidin",
-    "leghemoglobin_lbc2_soybean": "leghemoglobin",
-    "myoglobin_pig": "myoglobin",
-    "serum_albumin_human": "serum albumin",
-    "chymosin_bovine": "chymosin",
-    "cbhi_cel7a_trichoderma": "cellobiohydrolase I",
+    "beta_lactoglobulin_bovine": ("beta-lactoglobulin", "Bos taurus"),
+    "alpha_lactalbumin_bovine": ("alpha-lactalbumin", "Bos taurus"),
+    "alpha_lactalbumin_human": ("alpha-lactalbumin", "Homo sapiens"),
+    "alpha_s1_casein_bovine": ("alpha-s1-casein", "Bos taurus"),
+    "alpha_s2_casein_bovine": ("alpha-s2-casein", "Bos taurus"),
+    "beta_casein_bovine": ("beta-casein", "Bos taurus"),
+    "kappa_casein_bovine": ("kappa-casein", "Bos taurus"),
+    "lactoferrin_bovine": ("lactoferrin", "Bos taurus"),
+    "lactoferrin_human": ("lactoferrin", "Homo sapiens"),
+    "osteopontin_bovine": ("osteopontin", "Bos taurus"),
+    "ovalbumin_chicken": ("ovalbumin", "Gallus gallus"),
+    "ovotransferrin_chicken": ("ovotransferrin", "Gallus gallus"),
+    "ovomucoid_chicken": ("ovomucoid", "Gallus gallus"),
+    "lysozyme_c_chicken": ("lysozyme", "Gallus gallus"),
+    "avidin_chicken": ("avidin", "Gallus gallus"),
+    "leghemoglobin_lbc2_soybean": ("leghemoglobin", "Glycine max"),
+    "myoglobin_pig": ("myoglobin", "Sus scrofa"),
+    "serum_albumin_human": ("serum albumin", "Homo sapiens"),
+    "chymosin_bovine": ("chymosin", "Bos taurus"),
+    "cbhi_cel7a_trichoderma": ("cellobiohydrolase I", "Hypocrea jecorina"),
 }
 
 HOSTS_OF_INTEREST = ("Komagataella phaffii", "Trichoderma reesei")
@@ -125,13 +143,30 @@ def spec_from_curated(row):
         secreted=secreted, notes=row["category"])
 
 
-def best_measured(corpus_label):
-    """Highest defensible titer for a protein, per host, from the corpus."""
+def best_measured(target):
+    """Highest defensible *secreted* titer for a protein, per host.
+
+    `target` is a (canonical label, source organism) pair, because the label
+    alone pools orthologues; see the note on CORPUS_LABEL. A record whose
+    localisation is not secretion is excluded outright: the question the
+    analysis asks is what fraction of the stoichiometric ceiling a secretion
+    process realises, and an intracellular or lysate figure is not an answer
+    to it. kpdairy-18 is the case that forced this filter - a 3500 mg/L
+    lactoferrin number from a construct carrying no signal sequence, measured
+    after cell lysis and recovery of inclusion bodies.
+    """
+    if not target:
+        return {}
+    corpus_label, organism = target
     path = os.path.join(LIT, "titers_merged.tsv")
     best = {}
     with open(path, newline="") as fh:
         for r in csv.DictReader(fh, delimiter="\t"):
             if r.get("protein_canonical") != corpus_label:
+                continue
+            if (r.get("source_organism") or "").strip() != organism:
+                continue
+            if (r.get("localisation") or "").strip().lower() != "secreted":
                 continue
             host = r.get("host_canonical")
             if host not in HOSTS_OF_INTEREST:
@@ -181,7 +216,7 @@ def main():
         for sub in ("glycerol", "methanol", "glyc_meoh", "glucose"):
             r = max_yield(model, spec, params, sub, mu=0.0)
             ys[sub] = r["Y_g_per_g"] if r else None
-        measured = best_measured(CORPUS_LABEL.get(row["name"], ""))
+        measured = best_measured(CORPUS_LABEL.get(row["name"]))
         base = {
             "protein": row["name"],
             "accession": row["accession"],
@@ -210,7 +245,7 @@ def main():
                       "reference": "", "doi": "", "confidence": "",
                       "localisation": "", "cultivation": "",
                       "evidence_quote": "",
-                      "note": "no measured titer in the corpus for this host set"})
+                      "note": "no species-matched secreted titer in the corpus for this host set"})
             rows.append(r)
             continue
         for host, m in measured.items():

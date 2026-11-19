@@ -42,6 +42,14 @@ CONF_RANK = {"high": 3, "medium": 2, "low": 1, "": 0}
 
 # protein name normalisation: map the many spellings onto one label
 PROTEIN_CANON = [
+    # A fusion carrier is not the product. "Candida antarctica lipase B
+    # (CalB) + CBHI-carrier" matched the cellobiohydrolase rule below and so
+    # entered the corpus as a 10,000 mg/L CBHI titer, which it is not: CBHI
+    # is the carrier domain and the lipase is the product. The carrier rule
+    # therefore has to be tested before any rule that could match a carrier
+    # name. Caught when the species filter rejected the record for having
+    # source organism Candida antarctica against a Trichoderma panel entry.
+    (r"carrier|fusion partner", "fusion construct - see protein_name"),
     # Fragments and single domains MUST be matched before the parent protein,
     # otherwise a name like "bovine casein macropeptide (kappa-casein
     # fragment)" is pooled with intact kappa-casein. That pooling is not
