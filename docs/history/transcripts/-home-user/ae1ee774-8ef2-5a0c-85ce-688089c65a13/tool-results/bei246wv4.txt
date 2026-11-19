@@ -1,0 +1,228 @@
+total unique records screened: 1157
+keyword-relevant: 226
+- PMC13674496 2026 Sci Adv | Substrate-bound structures of yeast ALA synthase reveal protein dynamics initiating heme biosynthesis
+42940274 PMC13704442 2026 Foods | Innovations in Egg Alternatives: Sustainable Sources, Novel Technologies, Challenges, and Future Perspectives.
+42902360 PMC13685156 2026 Microb Cell Fact | Identification, functional characterization of a novel flavohemoglobin from Ensifer adhaerens and its application to enhancing vitamin 
+42898493 PMC13678070 2026 Front Med (Lausanne) | Hemoglobin-based oxygen carriers: evolution, translational applications and clinical considerations.
+42879787 PMC13716134 2026 ASAIO J | Immobilized Neuroglobin Scavenges Carbon Monoxide From Circulating Carboxyhemoglobin.
+42772146 PMC13631901 2026 Poult Sci | Feathered bioreactor: transforming a chicken egg into a recombinant protein biomanufacturing foundry.
+42770110 PMC13592669 2026 Redox Biochem Chem | Ascorbate-catalyzed reductive nitrosylation of ferric myoglobin.
+42742792 PMC13578150 2026 Bioresour Bioprocess | Valorization of Miscanthus × giganteus hydrolysates into heme-enriched yeast biomass and extract using xylose-fermenting Saccharomyces 
+42737270 PMC13565620 2026 Foods | Production of Recombinant Hemoglobin in &lt;i&gt;Tremella fuciformis&lt;/i&gt; Yeast-like Cells Through Selection of Hemoglobins and Se
+42662376 PMC13520740 2026 Front Plant Sci | Sustainable production of myoglobin meat protein in plant chloroplasts.
+42558510 PMC13437438 2026 Front Immunol | Recombinant &lt;i&gt;Bacillus subtilis&lt;/i&gt; spores expressing cholera toxin B and ovalbumin prevent ovalbumin-specific food allerg
+42453076 - 2026 Prep Biochem Biotechnol | Plasmid design, cloning, and expression of &lt;i&gt;Vitreoscilla&lt;/i&gt; hemoglobin in &lt;i&gt;Streptomyces pilosus&lt;/i&gt;: a nov
+42380552 PMC13590471 2026 AMB Express | Hemoglobin expression reduces aerobic bioconversion of guaiacol in Pseudomonas putida despite non-limiting oxygen.
+42283479 PMC13390457 2026 Appl Environ Microbiol | Genome-mined endolysin LysMD30 in combination with colistin: synergistic antimicrobial and antibiofilm activities against &lt;i&gt;Vibr
+42243086 PMC13451496 2026 Cell Death Discov | ATP binding to lysozyme and superfolder GFP amyloid fibrils induces aggregate remodeling and attenuates their cytotoxicity.
+42238519 PMC13226126 2026 Synth Syst Biotechnol | Directed evolution of heme biosynthetic enzymes enabled by a growth-coupled heme biosensor in &lt;i&gt;Corynebacterium glutamicum&lt;/i
+42223034 PMC13226868 2026 Allergy Asthma Immunol Res | Hen's Egg Allergy: Immunological Mechanisms, Epidemiology, and Predictors of Persistence in Childhood.
+42125988 PMC13383614 2026 Biotechnol J | Integrated Fermentation Engineering Enables High-Level Leghemoglobin Production in Kluyveromyces marxianus via Metabolic Rewiring of Ce
+42072127 PMC13112958 2026 Antioxidants (Basel) | Therapeutic Potential of Cytoglobin and Neuroglobin in Oxidative Stress-Driven Liver Diseases.
+42006854 PMC13091554 2026 Synth Syst Biotechnol | Engineering a heme-dependent tryptophan hydroxylase pathway in &lt;i&gt;E. coli&lt;/i&gt; for enhanced melatonin production.
+41897531 PMC13024405 2026 Antioxidants (Basel) | Cytoglobin in Hepatic Stellate Cells Plays Anti-Fibrotic Role in Chronic Liver Injury.
+41833124 PMC13000507 2026 Poult Sci | Research note: Generation of ovalbumin-null chickens and characterization of altered protein compositions in their egg whites.
+41797899 PMC12962170 2026 iScience | Exploring roles of neuroglobin in oxygen homeostasis and neurodevelopment based on human cerebral organoid models.
+41721062 PMC13369224 2026 Probiotics Antimicrob Protei | Exploring the Potential of Exogenous Dietary Lysozyme as a Bioactive Additive in Aquaculture: Lessons from Monogastric Livestock Nutrit
+41551414 PMC12807582 2026 J Toxicol | Correction to "The Safety of Soy Leghemoglobin Protein Preparation Derived from &lt;i&gt;Pichia pastoris&lt;/i&gt; Expressing a Soy Leg
+41541739 PMC12799817 2026 Food Sci Biotechnol | Alleviation of ER stress via targeted genetic engineering enhances recombinant ovalbumin secretion in &lt;i&gt;Saccharomyces cerevisiae
+41486546 PMC12766062 2026 Biotechnol J | A Growth-Coupled Evolutionary Strategy Enhances Heme Biosynthesis in Saccharomyces cerevisiae.
+41389854 PMC13034514 2026 Free Radic Biol Med | Cytochrome b&lt;sub&gt;5&lt;/sub&gt; reductase 4 efficiently reduces neuroglobin and cytoglobin.
+41025407 PMC12794238 2026 J Exp Bot | Structural and functional comparison of hemoglobin Glb2-1 of Lotus japonicus with Glb1-1 and leghemoglobins.
+40997266 PMC13207728 2026 Shock | Artificial Oxygen Carriers: Lessons From Hemoglobin-Based Oxygen Carrier Clinical Trials and Current Development Efforts.
+40536996 PMC12407527 2026 Neural Regen Res | Neuroglobin: A promising candidate to treat neurological diseases.
+41603519 - 2025 Protein Eng Des Sel | Rhizavidin engineered for eukaryotic expression.
+41300473 PMC12649544 2025 Antioxidants (Basel) | Digital Microfluidics-Driven Cell-Free Protein Synthesis Platform Reveals Expression and Stability Determinants for Phytoglobins and Cy
+41201826 PMC12626018 2025 Proc Natl Acad Sci U S A | GH25 lysozyme mediates tripartite interkingdom interactions and microbial competition on the plant leaf surface.
+41139696 PMC12554845 2025 Physiol Plant | Phytoglobin Scavenging of Nitric Oxide Is Associated With Ethylene Reduction and Drought Tolerance in Oat (Avena sativa).
+40867117 PMC12384119 2025 Brain Sci | Neuroglobin and Cytoglobin in Mammalian Nervous Systems: About Distribution, Regulation, Function, and Some Open Questions.
+40860426 PMC12375200 2025 Regen Ther | The therapeutic potential of neuroglobin-overexpressing human neural stem cells in a photothrombosis model.
+40792658 PMC12455655 2025 ACS Synth Biol | Cell-Free Production of Soybean Leghemoglobins and Nonsymbiotic Hemoglobin.
+40722621 PMC12293072 2025 Biomedicines | Proteolytic Activity Inhibition in Gingival Fluid by Cysteine Protease Inhibitors Obtained from Egg White and &lt;i&gt;Fallopia japonic
+40653198 PMC12355045 2025 J Biol Chem | Hemoglobin β-F41K: A recombinant oxygen carrier prototype engineered for enhanced heme retention, stability, and optimal oxygenation pr
+40634285 PMC12241658 2025 Nat Commun | Inhibiting heme piracy by pathogenic Escherichia coli using de novo-designed proteins.
+40604696 PMC12224593 2025 BMC Biotechnol | Scientific and technological challenges of recombinant egg protein production.
+40601625 PMC12260557 2025 Proc Natl Acad Sci U S A | Metabolic engineering of &lt;i&gt;Bacillus subtilis&lt;/i&gt; for the production of active hemoglobins and myoglobins by improving heme
+40509474 PMC12154507 2025 Foods | Insights into Isolation and Purification Strategies of Egg Allergens.
+40404692 PMC12098746 2025 NPJ Sci Food | Compartmentalization of heme biosynthetic pathways into yeast mitochondria enhances heme production.
+40282823 PMC12026525 2025 Foods | Secretory Production of Plant Heme-Containing Globins by Recombinant Yeast via Precision Fermentation.
+40228812 PMC12020473 2025 FEMS Yeast Res | Metabolic engineering of yeast to efficiently synthesize heme and hemoproteins: recent advance and prospects.
+40191454 PMC11971115 2025 3 Biotech | Enhancing heme import to synthesize active myoglobin and hemoglobin in &lt;i&gt;Pichia pastoris&lt;/i&gt;.
+40171250 PMC11959277 2025 Front Parasitol | Trichocystatin-2 from &lt;i&gt;Trichomonas vaginalis&lt;/i&gt;: role of N-terminal cysteines in aggregation, protease inhibition, and t
+40168426 PMC11984733 2025 PLoS Pathog | Salmonella Typhi serine threonine kinase T4519 induces lysosomal membrane permeabilization by manipulating Toll-like receptor 2-Cystati
+40137115 PMC11943725 2025 Metabolites | Construction of a Plasmid-Free &lt;i&gt;Escherichia coli&lt;/i&gt; Strain with Enhanced Heme Supply to Produce Active Hemoglobins.
+40081771 - 2025 Bioresour Technol | Efficient synthesis of high-active multi-subunit hemoglobins through balanced expression of globins and robust heme-supply in Saccharom
+40053008 PMC11884745 2025 Mem Inst Oswaldo Cruz | Exploring BCG to deliver avidin fusion antigens from Schistosoma mansoni.
+40038411 PMC11880548 2025 Sci Rep | Neuroglobin regulates autophagy through mTORC1/RAPTOR/ULK-1 pathway in human neuroblastoma cells.
+39981498 PMC11840484 2025 Pract Lab Med | Preparation of recombinant myoglobin and investigation of the liquid antigen stability for quality control materials.
+39957820 PMC11826153 2025 RSC Adv | Emerging trends in the cystatin C sensing technologies: towards better chronic kidney disease management.
+39929304 - 2025 J Biotechnol | Impact of liquid and solid-state cultures on hemoglobin production and oxidative state in Saccharomyces cerevisiae.
+39800692 PMC11727788 2025 BMC Biol | The Calicophoron daubneyi genome provides new insight into mechanisms of feeding, eggshell synthesis and parasite-microbe interactions.
+- - 2024 Food Research International. | Production of bovine beta-lactoglobulin and hen egg ovalbumin by Trichoderma reesei using precision fermentation technology and testing
+39600400 PMC11589466 2024 Cell Stress | Neuroglobin-enriched secretome provides neuroprotection against hydrogen peroxide and mitochondrial toxin-induced cellular stress.
+39553704 PMC11565058 2024 EFSA J | Assessment of soy leghemoglobin produced from genetically modified &lt;i&gt;Komagataella phaffii&lt;/i&gt;, under Regulation (EC) No 18
+39481700 - 2024 Int J Biol Macromol | High-efficiency expression of alginate lyase in Pichia pastoris facilitated by Vitreoscilla hemoglobin.
+39431137 PMC11489517 2024 Fundam Res | Allergenic risk assessment of porcine myoglobin expressed by engineered &lt;i&gt;Komagataella Phaffii&lt;/i&gt;.
+39374579 PMC11652761 2024 Blood Adv | CYB5R3 T117S tempers fetal hemoglobin induction by hydroxyurea in patients with sickle cell disease.
+39234595 PMC11372621 2024 Biochem Biophys Rep | Eggshell membrane and its major component lysozyme and ovotransferrin enhance the secretion of decorin as an endogenous antifibrotic me
+39207302 - 2024 J Agric Food Chem | Modification of the Endoplasmic Reticulum to Enhance Ovalbumin Secretion in Saccharomyces cerevisiae.
+38946918 PMC11211803 2024 EFSA J | Safety of soy leghemoglobin from genetically modified &lt;i&gt;Komagataella phaffii&lt;/i&gt; as a food additive.
+38865576 - 2024 FEBS J | Efficient biosynthesis of active hemoglobins through enhancing the import of heme in Saccharomyces cerevisiae.
+38839038 - 2024 Metab Eng | Developing a novel heme biosensor to produce high-active hemoproteins in Pichia pastoris through comparative transcriptomics.
+38796706 PMC11286817 2024 Mol Ther | Neuroglobin overexpression in cerebellar neurons of Harlequin mice improves mitochondrial homeostasis and reduces ataxic behavior.
+38784746 PMC11110144 2024 Chem Sci | Directed evolution of Escherichia coli surface-displayed Vitreoscilla hemoglobin as an artificial metalloenzyme for the synthesis of 5-
+38772474 - 2024 Int J Biol Macromol | Animal-free production of hen egg ovalbumin in engineered Saccharomyces cerevisiae via precision fermentation.
+38725499 PMC11077535 2024 Chem Sci | The circularly permuted globin domain of androglobin exhibits atypical heme stabilization and nitric oxide interaction.
+38717663 - 2024 Biotechnol Lett | The modification of heme special importer to improve the production of active hemoglobins in Escherichia coli.
+38667189 PMC11048174 2024 Biosensors (Basel) | L-Lactate Electrochemical Biosensor Based on an Integrated Supramolecular Architecture of Multiwalled Carbon Nanotubes Functionalized w
+38647967 PMC10992137 2024 Bioresour Bioprocess | Production of biliverdin by biotransformation of exogenous heme using recombinant Pichia pastoris cells.
+38574273 - 2024 J Agric Food Chem | Constructing an Antibiotic-Free Protein Expression System for Ovalbumin Biosynthesis in Probiotic Escherichia coli Nissle 1917.
+38542837 PMC10975543 2024 Molecules | Redox Reactivity of Nonsymbiotic Phytoglobins towards Nitrite.
+38540877 PMC10969619 2024 Foods | Preparation, Biological Activities, and Potential Applications of Hen Egg-Derived Peptides: A Review.
+38496319 PMC10940142 2024 Synth Syst Biotechnol | Multi-modular metabolic engineering of heme synthesis in Corynebacterium glutamicum.
+38481989 PMC10936004 2024 Front Immunol | Cystatin from the helminth Ascaris lumbricoides upregulates mevalonate and cholesterol biosynthesis pathways and immunomodulatory genes
+38194135 PMC10776470 2024 Appl Microbiol Biotechnol | Recent advances in microbial synthesis of free heme.
+38183481 PMC13497468 2024 Appl Microbiol Biotechnol | Improving glucose oxidase catalysis in Aspergillus niger via Vitreoscilla hemoglobin fusion protein.
+38008782 PMC10761545 2024 Anal Bioanal Chem | Label-free quantification of host cell protein impurity in recombinant hemoglobin materials.
+37972845 - 2024 Int J Biol Macromol | Sphaerotilus natans hemoglobins have an NADH oxidation activity and promote the yield of limonene in an engineered E. coli strain.
+- - 2023  | Pichia pastoris  growth - coupled heme biosynthesis analysis using metabolic modelling
+- - 2023 Trends in food science & tec | Soy Leghemoglobin: A review of its structure, production, safety aspects, and food applications
+38264583 PMC10804453 2023 Front Bioeng Biotechnol | High-level expression of leghemoglobin in Kluyveromyces marxianus by remodeling the heme metabolism pathway.
+38152583 PMC10751998 2023 Open Life Sci | The potential for the use of leghemoglobin and plant ferritin as sources of iron.
+37929291 PMC10623171 2023 Biochem Biophys Rep | Engineering neuroglobin nitrite reductase activity based on myoglobin models.
+37898573 PMC11071917 2023 Cell Mol Life Sci | Protease-bound structure of Ricistatin provides insights into the mechanism of action of tick salivary cystatins in the vertebrate host
+37894549 PMC10609593 2023 Molecules | Lysozyme Inhibitors as Tools for Lysozyme Profiling: Identification and Antibacterial Function of Lysozymes in the Hemolymph of the Blu
+37893724 PMC10606182 2023 Foods | Generation of an Ovomucoid-Immune scFv Library for the Development of Novel Immunoassays in Hen's Egg Detection.
+37854042 PMC10581837 2023 J Toxicol | The Safety of Soy Leghemoglobin Protein Preparation Derived from &lt;i&gt;Pichia pastoris&lt;/i&gt; Expressing a Soy Leghemoglobin Gene
+37744039 PMC10514465 2023 iScience | Hen egg white lysozyme encapsulated in ZIF-8 for performing promiscuous enzymatic Mannich reaction.
+37739976 PMC10516909 2023 Sci Rep | Pichia pastoris growth-coupled heme biosynthesis analysis using metabolic modelling.
+37661695 PMC10577450 2023 Acta Biochim Biophys Sin (Sh | Suitable carrier protein and linker peptide significantly increase the secretory expression of human lysozyme in &lt;i&gt;Aspergillus n
+37649147 PMC10602571 2023 Adv Sci (Weinh) | Biosynthesis of High-Active Hemoproteins by the Efficient Heme-Supply Pichia Pastoris Chassis.
+37627298 PMC10452090 2023 Biomolecules | Molecular Interactions between Neuroglobin and Cytochrome c: Possible Mechanisms of Antiapoptotic Defense in Neuronal Cells.
+37371541 PMC10296154 2023 Biomolecules | Intravitreal Neuroglobin Mitigates Primate Experimental Glaucomatous Structural Damage in Association with Reduced Optic Nerve Microgli
+37176091 PMC10179345 2023 Int J Mol Sci | Applications of the Whole-Cell System in the Efficient Biosynthesis of Heme.
+37175528 PMC10177957 2023 Int J Mol Sci | A Novel Rabbit Anti-Myoglobin Monoclonal Antibody's Potential Application in Rhabdomyolysis Associated Acute Kidney Injury.
+37170167 PMC10176901 2023 Biotechnol Biofuels Bioprod | Sustainable and high-level microbial production of plant hemoglobin in Corynebacterium glutamicum.
+37035528 PMC10074367 2023 Futur J Pharm Sci | Could eggshell membrane be an adjuvant for recombinant Hepatitis B vaccine?: A preliminary investigation.
+36978060 PMC10053478 2023 Microb Cell Fact | Engineering Escherichia coli for efficient assembly of heme proteins.
+36596092 - 2023 Food Res Int | Production of bovine beta-lactoglobulin and hen egg ovalbumin by Trichoderma reesei using precision fermentation technology and testing
+36526588 PMC9951570 2023 Adv Sci (Weinh) | Whole-Cell P450 Biocatalysis Using Engineered Escherichia coli with Fine-Tuned Heme Biosynthesis.
+35866372 PMC10087938 2023 FEBS J | Hydrogen peroxide induces heme degradation and protein aggregation in human neuroglobin: roles of the disulfide bridge and hydrogen-bon
+36358546 PMC9687031 2022 Antioxidants (Basel) | Monofunctional Heme-Catalases.
+36349300 PMC9637464 2022 Scientifica (Cairo) | Advanced Practical Strategies to Enhance Table Egg Production.
+36125244 PMC9536834 2022 Elife | Group II truncated haemoglobin YjbI prevents reactive oxygen species-induced protein aggregation in Bacillus subtilis.
+36067892 - 2022 Bioresour Technol | High-level secretory production of leghemoglobin in Pichia pastoris through enhanced globin expression and heme biosynthesis.
+36009334 PMC9404779 2022 Antioxidants (Basel) | Oxidative Implications of Substituting a Conserved Cysteine Residue in Sugar Beet Phytoglobin BvPgb 1.2.
+35967448 PMC9363672 2022 Front Immunol | Antimicrobial Proteins and Peptides in Avian Eggshell: Structural Diversity and Potential Roles in Biomineralization.
+35858410 PMC9335255 2022 Proc Natl Acad Sci U S A | Genome-scale modeling drives 70-fold improvement of intracellular heme production in &lt;i&gt;Saccharomyces cerevisiae&lt;/i&gt;.
+35822521 PMC9544565 2022 J Neurosci Res | Neuroglobin deficiency increases seizure susceptibility but does not affect basal behavior in mice.
+35726822 PMC9275996 2022 Bioengineered | Recombinant expression of hen egg white lysozyme with the assistance of xylanase fusion partner in Pichia pastoris.
+35656861 PMC9282837 2022 Aging Cell | A rare natural lipid induces neuroglobin expression to prevent amyloid oligomers toxicity and retinal neurodegeneration.
+35364046 - 2022 Acta Trop | Molecular characterization and functional analysis of Schistosoma mekongi neuroglobin homolog.
+35281050 PMC8914949 2022 Front Immunol | Properties, Genetics and Innate Immune Function of the Cuticle in Egg-Laying Species.
+35155838 PMC8801620 2022 Synth Syst Biotechnol | Enhanced production of poly-γ-glutamic acid via optimizing the expression cassette of Vitreoscilla hemoglobin in Bacillus licheniformis
+35053893 PMC8774821 2022 Foods | Vegan Egg: A Future-Proof Food Ingredient?
+34656738 - 2022 Protein Expr Purif | Recombinant expression and molecular characterization of buffalo sperm lysozyme-like protein 1.
+34486392 PMC8799389 2022 Physiol Rev | The role of globins in cardiovascular physiology.
+37118250 - 2021 Nat Food | Ovalbumin production using Trichoderma reesei culture and low-carbon energy could mitigate the environmental impacts of chicken-egg-der
+34943746 PMC8698798 2021 Antibiotics (Basel) | Applications of Lysozyme, an Innate Immune Defense Factor, as an Alternative Antibiotic.
+34885789 PMC8659191 2021 Molecules | Expressed Soybean Leghemoglobin: Effect on Escherichia coli at Oxidative and Nitrosative Stress.
+34765597 PMC8576176 2021 Front Bioeng Biotechnol | Vitreoscilla Hemoglobin Improves Sophorolipid Production in Starmerella Bombicola O-13-1 Under Oxygen Limited Conditions.
+34760347 PMC8571960 2021 PeerJ | A chimeric vector for dual use in cyanobacteria and Escherichia coli, tested with cystatin, a nonfluorescent reporter protein.
+34428899 - 2021 J Agric Food Chem | Efficient Secretory Expression and Purification of Food-Grade Porcine Myoglobin in Komagataella phaffii.
+34361891 PMC8306070 2021 Microorganisms | Recent Advances in the Physicochemical Properties and Biotechnological Application of Vitreoscilla Hemoglobin.
+34073441 PMC8226945 2021 Animals (Basel) | piggyBac Transposition and the Expression of Human Cystatin C in Transgenic Chickens.
+34065290 PMC8161381 2021 Int J Mol Sci | Mialostatin, a Novel Midgut Cystatin from Ixodes ricinus Ticks: Crystal Structure and Regulation of Host Blood Digestion.
+33953924 PMC8086161 2021 IUCrJ | Structural insights into protein folding, stability and activity using &lt;i&gt;in vivo&lt;/i&gt; perdeuteration of hen egg-white lysoz
+33907006 PMC8374583 2021 Neural Regen Res | Neuroglobin and neuroprotection: the role of natural and synthetic compounds in neuroglobin pharmacological induction.
+33518096 PMC7858031 2021 Poult Sci | Production and characterization of eggs from hens with ovomucoid gene mutation.
+33427195 PMC7870139 2021 Elife | A fungal member of the Arabidopsis thaliana phyllosphere antagonizes Albugo laibachii via a GH25 lysozyme.
+33171209 - 2021 Regul Toxicol Pharmacol | Assessment of the potential allergenicity and toxicity of Pichia proteins in a novel leghemoglobin preparation.
+33212940 PMC7698408 2020 Int J Mol Sci | Genetically Encoded Biosensor-Based Screening for Directed Bacteriophage T4 Lysozyme Evolution.
+32909666 PMC7756380 2020 Clin Exp Allergy | Detection of specific IgE against linear epitopes from Gal d 1 has additional value in diagnosing hen's egg allergy in adults.
+32810913 PMC7530398 2020 FEBS Open Bio | Secreted cystatins decrease proliferation and enhance apoptosis of human leukemic cells.
+32515736 PMC7299338 2020 Elife | An ECF-type transporter scavenges heme to overcome iron-limitation in Staphylococcus lugdunensis.
+32513937 PMC7280273 2020 Sci Rep | The effect of phytoglobin overexpression on the plant proteome during nonhost response of barley (Hordeum vulgare) to wheat powdery mil
+32477312 PMC7242566 2020 Front Microbiol | The Three Lipocalins of Egg-White: Only Ex-FABP Inhibits Siderophore-Dependent Iron Sequestration by Salmonella Enteritidis.
+32175287 PMC7054455 2020 Front Cell Infect Microbiol | Isoforms of Cathepsin B1 in Neurotropic Schistosomula of Trichobilharzia regenti Differ in Substrate Preferences and a Highly Expressed
+31546863 PMC6770797 2019 Nutrients | Egg White Ovotransferrin Attenuates RANKL-Induced Osteoclastogenesis and Bone Resorption.
+31325629 PMC6742773 2019 Clin Immunol | Engineered ovalbumin-expressing regulatory T cells protect against anaphylaxis in ovalbumin-sensitized mice.
+31239483 PMC6593142 2019 Sci Rep | The Functional Mammalian CRES (Cystatin-Related Epididymal Spermatogenic) Amyloid is Antiparallel β-Sheet Rich and Forms a Metastable O
+31043999 PMC6480594 2019 Plant Methods | Hemoglobin as a probe for estimation of nitric oxide emission from plant tissues.
+31038926 PMC6935875 2019 Anal Chem | Variable-Temperature ESI-IMS-MS Analysis of Myohemerythrin Reveals Ligand Losses, Unfolding, and a Non-Native Disulfide Bond.
+30747251 PMC11105445 2019 Cell Mol Life Sci | The structure and function of Iristatin, a novel immunosuppressive tick salivary cystatin.
+29642729 PMC5956568 2018 Int J Toxicol | Safety Evaluation of Soy Leghemoglobin Protein Preparation Derived From Pichia pastoris, Intended for Use as a Flavor Catalyst in Plant
+29420618 PMC5805349 2018 PLoS One | Recombinant expression, purification and biochemical characterization of kievitone hydratase from Nectria haematococca.
+29355583 PMC7112947 2018 Immunol Lett | Involvement of cystatin C in immunity and apoptosis.
+29282717 PMC5947136 2018 J Neurochem | Intracerebroventricular administration of Cystatin C ameliorates disease in SOD1-linked amyotrophic lateral sclerosis mice.
+28921896 PMC5813221 2018 Mol Nutr Food Res | Evaluating Potential Risks of Food Allergy and Toxicity of Soy Leghemoglobin Expressed in Pichia pastoris.
+- - 2017  | Safety evaluation of soy leghemoglobin protein preparation derived from Pichia pastoris, intended for use as a flavor catalyst in plant
+29143239 PMC5688050 2017 AMB Express | Improving cellulase production in submerged fermentation by the expression of a Vitreoscilla hemoglobin in Trichoderma reesei.
+28923082 PMC5604358 2017 Parasit Vectors | Characterization of a secreted cystatin of the parasitic nematode Haemonchus contortus and its immune-modulatory effect on goat monocyt
+28713775 PMC5492865 2017 Front Cell Infect Microbiol | Salivary Tick Cystatin OmC2 Targets Lysosomal Cathepsins S and C in Human Dendritic Cells.
+28484087 PMC5546466 2017 Oncotarget | Modulation of goat monocyte function by HCcyst-2, a secreted cystatin from Haemonchus contortus.
+28388696 - 2017 Acta Biochim Pol | The use of serine protease from Yarrowia lipolytica yeast in the production of biopeptides from denatured egg white proteins.
+28230769 PMC5331602 2017 Nutrients | Hypoallergenic Variant of the Major Egg White Allergen Gal d 1 Produced by Disruption of Cysteine Bridges.
+27611690 PMC5017655 2016 PLoS One | In Silico and Biochemical Characterization of Lysozyme-Like Proteins in the Rat.
+27294500 PMC4904793 2016 Sci Rep | Proteomic analysis of egg white heparin-binding proteins: towards the identification of natural antibacterial molecules.
+27211528 PMC4876387 2016 Sci Rep | Overexpression of spinach non-symbiotic hemoglobin in Arabidopsis resulted in decreased NO content and lowered nitrate and other abioti
+26998237 PMC4792203 2016 F1000Res | Phytoglobin: a novel nomenclature for plant globins accepted by the globin community at the 2014 XVIII conference on Oxygen-Binding and
+26713728 PMC4694923 2015 PLoS One | Purification and Characterization of Recombinant Human Lysozyme from Eggs of Transgenic Chickens.
+26691165 PMC4687224 2015 BMC Plant Biol | Cereal cystatins delay sprouting and nutrient loss in tubers of potato, Solanum tuberosum.
+26312056 PMC4550075 2015 Proteome Sci | Proteomic analysis of quail calcified eggshell matrix: a comparison to chicken and turkey eggshell proteomes.
+25706123 PMC4338068 2015 PLoS One | Expression of recombinant human lysozyme in egg whites of transgenic hens.
+25656803 - 2015 Mol Immunol | Production and immunological analysis of IgE reactive recombinant egg white allergens expressed in Escherichia coli.
+25604803 - 2015 Amino Acids | Role of the osmolyte taurine on the folding of a model protein, hen egg white lysozyme, under a crowding condition.
+25554946 PMC4410703 2015 Biochemistry | Exploring the mechanisms of the reductase activity of neuroglobin by site-directed mutagenesis of the heme distal pocket.
+28510930 PMC5432954 2014 Bot Stud | Functional characterization of the N-terminal and C-terminal domains of a sesame group II phytocystatin.
+25653837 PMC4304225 2014 F1000Res | Rice ( Oryza) hemoglobins.
+25530617 PMC4284786 2014 Int J Mol Sci | Refolded scFv antibody fragment against myoglobin shows rapid reaction kinetics.
+24827820 PMC4020757 2014 PLoS One | Nitrite-reductase and peroxynitrite isomerization activities of Methanosarcina acetivorans protoglobin.
+24188961 - 2014 Metab Eng | Balanced globin protein expression and heme biosynthesis improve production of human hemoglobin in Saccharomyces cerevisiae.
+24376554 PMC3869716 2013 PLoS One | Nitric oxide in plants: the roles of ascorbate and hemoglobin.
+23638311 PMC3636447 2013 Allergy Asthma Immunol Res | The Clinical Usefulness of IgE Antibodies Against Egg White and Its Components in Korean Children.
+23386904 PMC3564246 2013 J Cancer | Cystatins in immune system.
+23030454 - 2013 J Biomol Struct Dyn | Molecular dynamics simulation to investigate the impact of disulfide bond formation on conformational stability of chicken cystatin I66
+23202948 PMC3497322 2012 Int J Mol Sci | Lower temperature cultures enlarge the effects of Vitreoscilla hemoglobin expression on recombinant Pichia pastoris.
+23139757 PMC3490968 2012 PLoS One | Solution structure of a phytocystatin from Ananas comosus and its molecular interaction with papain.
+23116303 PMC3534561 2012 BMC Plant Biol | Beneficial 'unintended effects' of a cereal cystatin in transgenic lines of potato, Solanum tuberosum.
+22647711 PMC3412902 2012 Ticks Tick Borne Dis | The role of cystatins in tick physiology and blood feeding.
+21655240 PMC3105096 2011 PLoS One | Construction of chimeric dual-chain avidin by tandem fusion of the related avidins.
+20933319 PMC4390088 2010 Biophys Chem | Structure and reactivity of hexacoordinate hemoglobins.
+20545851 PMC2909360 2010 Mol Microbiol | The crystal structures of two salivary cystatins from the tick Ixodes scapularis and the effect of these inhibitors on the establishmen
+20545626 PMC3523712 2010 Biochem J | Crystal structure and functional characterization of an immunomodulatory salivary cystatin from the soft tick Ornithodoros moubata.
+- - 2009  | PRODUCTION OF RECOMBINANT HUMAN HEMOGLOBIN USING PICHIA YEAST
+- - 2009  | Production of recombinant human hemoglobin using pichia yeast
+19463006 PMC2756985 2009 Biochemistry | DevS oxy complex stability identifies this heme protein as a gas sensor in Mycobacterium tuberculosis dormancy.
+19516967 PMC2633897 2007 Plant Signal Behav | Immunolocalization of non-symbiotic hemoglobins during somatic embryogenesis in chicory.
+17517106 - 2007 Clin Exp Allergy | Genetically glycosylated ovomucoid third domain can modulate Immunoglobulin E antibody production and cytokine response in BALB/c mice.
+17371549 - 2007 FEBS J | Gliadain, a gibberellin-inducible cysteine proteinase occurring in germinating seeds of wheat, Triticum aestivum L., specifically diges
+17339373 PMC1855531 2007 Antimicrob Agents Chemother | Immunomodulatory peptide from cystatin, a natural cysteine protease inhibitor, against leishmaniasis as a model macrophage disease.
+- - 2006  | Temperature-stable glycosylated recombinant chicken cystatin and the use thereof
+16732496 - 2006 Arch Virol | Synthesis of the allergen ovomucoid by a replicating Mengo virus.
+16434741 PMC2242452 2006 Protein Sci | Prevention of amyloid fibril formation of amyloidogenic chicken cystatin by site-specific glycosylation in yeast.
+- - 2005  | Temperature-stable glycosylated recombinant chicken cystatin and the use thereof
+15858171 - 2005 J Biochem | Characterization of recombinant amyloidogenic chicken cystatin mutant I66Q expressed in yeast.
+15161239 - 2004 J Agric Food Chem | Glycosylation modification improved the characteristics of recombinant chicken cystatin and its application on mackerel surimi.
+14965761 - 2003 Protein Expr Purif | Expression and purification of a recombinant avidin with a lowered isoelectric point in Pichia pastoris.
+12939147 - 2003 Biochemistry | Inversion of axial coordination in myoglobin to create a "proximal" ligand binding pocket.
+12882567 - 2003 Biotechnol Lett | Structural and immunological characterization of recombinant ovomucoid expressed in Escherichia coli.
+- - 2002 J Food Sci | Improvement of Hairtail Surimi Gel Properties by NADPH-Sulfite Reductase, Recombinant Cystatin, and Microbial Transglutaminase
+12207467 - 2002 J Agric Food Chem | Effect of glycosylation modification (N-Q-(108)I --> N-Q-(108)T) on the freezing stability of recombinant chicken Cystatin overexpresse
+12059151 - 2002 J Agric Food Chem | Enhanced expression of chicken cystatin as a thioredoxin fusion form in Escherichia coli AD494(DE3)pLysS and its effect on the preventi
+11262005 - 2001 J Agric Food Chem | High-level production of recombinant chicken cystatin by Pichia pastoris and its application in mackerel surimi.
+11258679 - 2001 Biol Chem | Cystatins as calpain inhibitors: engineered chicken cystatin- and stefin B-kininogen domain 2 hybrids support a cystatin-like mode of i
+11106662 - 2001 J Biol Chem | Quaternary structure of rice nonsymbiotic hemoglobin.
+11053146 PMC1301154 2000 Biophys J | A flash photolysis method to characterize hexacoordinate hemoglobin kinetics.
+10888591 - 2000 J Agric Food Chem | Overexpression of the soluble form of chicken cystatin in Escherichia coli and its purification.
+10583408 - 1999 Eur J Biochem | Chicken cystatin stimulates nitric oxide release from interferon-gamma-activated mouse peritoneal macrophages via cytokine synthesis.
+9342391 PMC23758 1997 Proc Natl Acad Sci U S A | Two hemoglobin genes in Arabidopsis thaliana: the evolutionary origins of leghemoglobins.
+9171402 PMC179150 1997 J Bacteriol | A new type of hemophore-dependent heme acquisition system of Serratia marcescens reconstituted in Escherichia coli.
+8932316 PMC178546 1996 J Bacteriol | GlbN (cyanoglobin) is a peripheral membrane protein that is restricted to certain Nostoc spp.
+8639677 - 1996 Biochemistry | Crystallographic, molecular modeling, and biophysical characterization of the valine beta 67 (E11)-->threonine variant of hemoglobin.
+8206380 - 1994 Gene | Secretory production of chicken ovomucoid domain 3 by Escherichia coli and alteration of inhibitory specificity toward proteases by sub
+7937852 PMC44974 1994 Proc Natl Acad Sci U S A | Bacterial glutamate racemase has high sequence similarity with myoglobins and forms an equimolar inactive complex with hemin.
+8506324 PMC46584 1993 Proc Natl Acad Sci U S A | Perturbations of the distal heme pocket in human myoglobin mutants probed by infrared spectroscopy of bound CO: correlation with ligand
+8312483 PMC1225985 1993 Biophys J | Ligand binding to heme proteins: III. FTIR studies of His-E7 and Val-E11 mutants of carbonmonoxymyoglobin.
+2659586 - 1989 J Biochem | Expression of bovine myoglobin cDNA as a functionally active holoprotein in Saccharomyces cerevisiae.
+3070546 - 1988 Protein Eng | Apomyoglobin as a molecular recognition surface: expression, reconstitution and crystallization of recombinant porcine myoglobin in Esc

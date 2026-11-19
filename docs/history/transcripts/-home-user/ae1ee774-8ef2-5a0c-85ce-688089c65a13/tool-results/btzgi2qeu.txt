@@ -1,0 +1,218 @@
+=== THEOR_YIELD :: hitCount 3
+2026	10.1007/s00253-026-13830-0	42104156		Engineering natural Saccharomyces cerevisiae isolates for enhanced one-step cellulosic ethanol production.
+2023	10.1007/s00253-023-12729-4	37688599		Engineering natural isolates of Saccharomyces cerevisiae for consolidated bioprocessing of cellulosic feedstocks.
+2017	10.1007/s10295-017-1932-1	28315963		Enhancement of 2,3-butanediol production from Jerusalem artichoke tuber extract by a recombinant Bacillus sp. strain BRC1 with increased inulinase activity.
+
+=== AACOMP_DEMAND :: hitCount 30
+2026	10.20944/preprints202604.1894.v1	NA		Nitrogen Availability Regulates Carbon Allocation and Protein Biosynthesis in <em>Yarrowia lipolytica</em> Grown on Acetate
+2025	10.3390/jof11050365	40422699		Integrated Amino Acid Profiling and 4D-DIA Proteomics Reveal Protein Quality Divergence and Metabolic Adaptation in &lt;i&gt;Cordyceps&lt;/i&gt; Species.
+2022	10.3389/fpls.2022.1046209	36816487		Computational models for prediction of protein-protein interaction in rice and <i>Magnaporthe grisea</i>.
+2020	10.1016/j.ymben.2020.06.002	32619503		What CHO is made of: Variations in the biomass composition of Chinese hamster ovary cell lines.
+2018	10.1101/465914	NA		Protein synthesis rates and ribosome occupancies reveal determinants of translation elongation rates
+2019	10.1073/pnas.1817299116	31292258		Protein synthesis rates and ribosome occupancies reveal determinants of translation elongation rates.
+2020	10.1007/978-1-0716-0159-4_7	31893373		Robust Analytical Methods for the Accurate Quantification of the Total Biomass Composition of Mammalian Cells.
+2017	10.1093/gbe/evx191	28985302		Net Evolutionary Loss of Residue Polarity in Drosophilid Protein Cores Indicates Ongoing Optimization of Amino Acid Composition.
+2017	10.4014/jmb.1612.12038	28237996		Macromolecular and Elemental Composition Analyses of <i>Leuconostoc mesenteroides</i> ATCC 8293 Cultured in a Chemostat.
+2016	10.1128/aem.02111-16	27565613		Chlorobaculum tepidum Modulates Amino Acid Composition in Response to Energy Availability, as Revealed by a Systematic Exploration of the Energy Landscape of Phototrophic
+2017	10.1016/j.fbp.2016.11.005	NA		Quinoa proteins (Chenopodium quinoa Willd.) fractionated by ultrafiltration using ceramic membranes: The role of pH on physicochemical and conformational properties
+2020	10.3390/ijms21020663	31963923		Molecular and Functional Characterization of Grapevine NIPs through Heterologous Expression in <i>aqy-</i>Null <i>Saccharomyces cerevisiae</i>.
+2016	10.1371/journal.pcbi.1005184	27835644		NullSeq: A Tool for Generating Random Coding Sequences with Desired Amino Acid and GC Contents.
+2009	10.1371/journal.pcbi.1000413	19521505		Integrated assessment of genomic correlates of protein evolutionary rate.
+2011	10.1186/1471-2164-12-41	21241522		The Zea mays mutants opaque-2 and opaque-7 disclose extensive changes in endosperm metabolism as revealed by protein, amino acid, and transcriptome-wide analyses.
+2009	10.1002/pmic.200700597	19402042		RSLpred: an integrative system for predicting subcellular localization of rice proteins combining compositional and evolutionary information.
+2006	10.1016/j.jmb.2006.03.039	16626739		Structural bioinformatics prediction of membrane-binding proteins.
+2008	10.1002/bit.22016	18942773		Modeling Neisseria meningitidis B metabolism at different specific growth rates.
+2001	10.1152/ajpendo.2001.280.2.e340	11158939		The digestion rate of protein is an independent regulating factor of postprandial protein retention.
+2008	10.1203/pdr.0b013e318180e499	18535487		Metabolism of methionine in the newborn infant: response to the parenteral and enteral administration of nutrients.
+2002	10.1002/bit.10128	11745177		Low-protein medium affects the 293SF central metabolism during growth and infection with adenovirus.
+1998	10.1093/jn/128.8.1355	9687556		Fibrinogen synthesis is elevated in fasting cancer patients with an acute phase response.
+1998	10.3109/03008209809028897	9643644		The modification of alveolar bone proteoglycans by reactive oxygen species in vitro.
+1988	NA	3254578		[Amino acid composition of the nitrogen flow entering the duodenum in the dairy cow].
+1997	10.1016/s0273-1177(97)00264-0	11542579		Controlled environments alter nutrient content of soybeans.
+1995	NA	8589768		Whole-body protein turnover in obese subjects during two very low energy diets of differing amino acid composition.
+1996	10.1016/0273-1177(95)00863-a	11538817		Excess nutrients in hydroponic solutions alter nutrient content of rice, wheat, and potato.
+1987	10.1152/ajpregu.1987.252.1.r78	3812733		Valine entry into rat brain after diet-induced changes in plasma amino acids.
+1987	10.1111/j.1471-4159.1987.tb05751.x	3106575		Threonine entry into rat brain after diet-induced changes in plasma amino acids.
+1989	10.1002/bjs.1800760215	2495147		Branched chain amino acids as the protein component of parenteral nutrition in cancer cachexia.
+
+=== SECRETABILITY :: hitCount 23
+2023	10.1038/s41467-023-36844-y	36828852		Author Correction: Massively parallel interrogation of protein fragment secretability using SECRiFY reveals features influencing secretory system transit.
+2021	10.1038/s41467-021-26720-y	34741024		Massively parallel interrogation of protein fragment secretability using SECRiFY reveals features influencing secretory system transit.
+2025	10.1021/acsami.4c20784	40009529		Citrate-Assisted Regulation of Protein Stability and Secretability from Synthetic Amyloids.
+2025	10.2337/db24-0650	39666394		Loss of β-Cell KATP Reduces Ca2+ Sensitivity of Insulin Secretion and Trpm5 Expression.
+2018	10.1101/241349	NA		Massively parallel interrogation of protein fragment secretability using SECRiFY reveals features influencing secretory system transit
+2022	10.15252/embj.2022111344	36031863		Evolutionary adaptation of the protein folding pathway for secretability.
+2022	10.1101/2022.04.03.486881	NA		Evolutionary adaptation of the folding pathway for secretability
+2022	10.3390/ijms23126700	35743142		Generalized Approach towards Secretion-Based Protein Production via Neutralization of Secretion-Preventing Cationic Substrate Residues.
+2021	10.3389/fbioe.2021.761861	34660561		Coaxially Bioprinted Cell-Laden Tubular-Like Structure for Studying Glioma Angiogenesis.
+2019	10.3390/molecules24162879	31398877		Genetically Engineered Proteins to Improve Biomass Conversion: New Advances and Challenges for Tailoring Biocatalysts.
+2015	10.1186/s12985-015-0373-6	26438422		Glycoside hydrolase family 32 is present in Bacillus subtilis phages.
+2019	10.1109/tcbb.2018.2835459	29994537		A Parametric Targetability Evaluation Approach for Vitiligo Proteome Extracted through Integration of Gene Ontologies and Protein Interaction Topologies.
+2014	10.3109/02652048.2014.898706	24766209		Behaviour and ultrastructure of human bone marrow-derived mesenchymal stem cells immobilised in alginate-poly-l-lysine-alginate microcapsules.
+2010	NA	20684315		[Characterization of protein secretion based on structural fusion degree].
+2005	10.1292/jvms.67.635	15997197		Japanese black cattle with ateliosis showed lower insulin responses during glucose tolerance test.
+2014	10.1021/pr500023p	24804578		Chromosome-centric human proteome project: deciphering proteins associated with glioma and neurodegenerative disorders on chromosome 12.
+1993	10.1111/j.1365-2958.1993.tb01169.x	8469118		Mutagenesis of cellulase EGZ for studying the general protein secretory pathway in Erwinia chrysanthemi.
+1993	10.1016/0958-1669(93)90012-l	7763977		Solubility and secretability.
+2001	10.1006/jmbi.2001.4787	11501995		Type II protein secretion in gram-negative pathogenic bacteria: the study of the structure/secretion relationships of the cellulase Cel5 (formerly EGZ) from Erwinia chrys
+1995	NA	7766314		HBV surface antigen proteins with deletions in the preS region.
+1995	10.1006/viro.1995.1546	7483279		A C-terminal PreS1 sequence is sufficient to retain hepatitis B virus L protein in 293 cells.
+1989	10.1016/s0021-9258(19)47220-7	2684968		Illicit secretion of a cytoplasmic protein into the periplasm of Escherichia coli requires a signal peptide plus a portion of the cognate secreted protein. Demarcation of
+1985	10.1007/bf03348538	3001169		Sexual differentiation of prolactin responsiveness to thyrotropin releasing hormone (TRH) in the rat. Effects of postnatal testosterone on adenohypophyseal TRH receptor o
+
+=== EXPRESSIBILITY :: hitCount 726
+2026	10.21203/rs.3.rs-8600748/v1	NA		Analyzing the Expressibility and Trainability of Quantum Convolutional Neural Networks
+2026	10.3758/s13428-026-03071-4	42283796		Self-reported expressibility predicts communicative success: Open dataset, validation, and simulation.
+2026	10.3390/e28030330	41899982		Training-Free Quantum Architecture Search Under Realistic Noise via Expressibility-Guided Evolution.
+2026	10.1021/acs.jpca.5c08292	41928560		Expressibility and Trainability Analysis of Hardware-Efficient Ansatz Variants in Variational Quantum Eigensolver with a Linear Mixing Model.
+2027	10.1007/978-1-0716-5687-7_20	42955643		Engineered Antibody-Like Bivalent Binders for Manipulating Receptor Functions.
+2026	10.2147/opth.s583104	41929712		Age-Related Differences in the Efficacy of Intense Pulsed Light Therapy for Meibomian Gland Dysfunction in Women.
+2026	10.21203/rs.3.rs-10290235/v1	NA		Quantum machine learning performance evaluation for air pollution assessment with benchmarking and comparative analysis using multi-metric scoring and quantum circuit exp
+2026	10.1007/s00266-026-06052-2	42286332		The Impact of Full-Incision Double-Eyelid Blepharoplasty on Dry Eye: Association with Short-Term Meibomian Gland Dysfunction and Increased Incomplete Blinking.
+2026	10.21203/rs.3.rs-9857383/v1	NA		Selective Quantum State-Space Encoders for Differentiable Architecture Search
+2026	10.1016/j.cbpa.2026.102816	42994288		From prediction to creation: How AI-driven design is reshaping microbial biocatalysis.
+2026	10.3390/e28010073	41593980		Optimal Complexity of Parameterized Quantum Circuits.
+2026	10.21203/rs.3.rs-10943343/v1	NA		Symptom–Sign Discordance in Dry Eye Disease: Clinical Characteristics and Age-Adjusted Ocular Surface Findings
+2025	10.20944/preprints202511.0122.v1	NA		A Preliminary Twistor Model Toward Metalogic Geometry: From Projective Geometry Perspectives
+2026	10.3390/jcm15114093	42278955		Meibomian Gland Outcome Measures in Dry Eye Treatment Trials.
+2026	10.3389/fmed.2026.1877511	42500540		Association of a novel meibomian gland dysfunction composite score with corneal nerve parameters and ocular surface symptoms in dry eye disease.
+2026	10.21203/rs.3.rs-11015915/v1	NA		Cultural Mediation and the Evidential Limits of Religious Experience
+2025	10.1007/s10792-025-03622-2	40524073		Safety and efficacy of a novel intense pulsed light system in patients with meibomian gland dysfunction: a randomized, double-masked, intra-individual controlled study.
+2024	10.1088/1361-6633/ad82cf	39360390		Expressibility-induced Concentration of Quantum Neural Tangent Kernels.
+2025	10.1007/s10792-025-03484-8	40085259		Function of levator palpebrae superioris in dry eye disease.
+2026	10.1177/10807683261446505	42036940		Comparison of Rebamipide Clear Solution and Diquafosol Eyedrops in Dry Eye Disease with Short Tear Break-up Time: A Retrospective, Comparative Observational Study.
+2026	10.1097/icl.0000000000001278	42113593		Adjunctive Eyelid Hygiene Improves Early Adaptation to Pediatric Orthokeratology: A Randomized Clinical Study.
+2026	10.3390/jcm15103920	42194882		Lyophilized Amniotic Membrane Eye Drops Stabilize the Tear Film in Dry Eye Disease: A Prospective Cohort Study.
+2026	10.3390/jcm15072781	41977081		Utilization of Matrix Metalloproteinase-9 Point-of-Care Immunoassay for Meibomian Gland Dysfunction Evaluation in Glaucoma Patients.
+2025	10.1038/s41598-025-27641-2	41402404		Characteristics of the meibomian gland in a population without dry eye symptoms.
+2026	10.1080/10410236.2026.2741907	42876268		Communicative Fractures in Chronic Pain: A Conceptual Model for Health Communication.
+2026	10.1177/25785478261428958	41848673		Comparison between the Effect of Intense Pulsed Light and Lid Hygiene on the Tear Film and Ocular Surface: A Randomized Controlled Study.
+2026	10.1063/5.0336022	42460865		Quantum kernel-based delta (Δ)-learning for correcting a semiempirical method in the prediction of reaction barrier heights.
+2026	10.1371/journal.pone.0353739	42467661		PsiAudit: An open-source toolkit for auditing symmetry-organised complexity in equivariant quantum neural networks.
+2026	10.64898/2026.06.25.734462	NA		A  <i>number simplex</i>  in the human medial temporal lobe
+2025	10.3390/jcm14238406	41375710		Therapeutic Outcomes of Combined Eyelid Hygiene, Intense Pulsed Light, and Meibomian Gland Expression in Meibomian Gland Dysfunction.
+2026	10.1080/17425247.2026.2727111	42837491		Preclinical and clinical evaluation of an ocular nanoemulsion for the treatment of dry eye disease.
+2026	10.5935/0004-2749.2025-0230	41810640		The role of meibomian gland morphological alterations in the development of dry eye disease in type 2 diabetes.
+2026	10.64898/2026.09.22.753654	NA		When label-free morphology is sufficient for targeted cellular measurements
+2026	10.2147/opto.s644992	42865684		The Meibomian Gland Composite Score (MGCS): A Novel Grading System Integrating Existing Scales for Meibomian Gland Dysfunction.
+2025	10.21203/rs.3.rs-6164042/v1	NA		Trainable Embedding Quantum Physics Informed Neural Networks for Solving Nonlinear PDEs
+2025	10.62347/pyzz2517	41113047		Combined meibomian gland massage and acupuncture enhances tear film and ocular surface health in meibomian gland dysfunction.
+2026	10.64898/2026.06.04.730231	NA		Robust Multi-Mutant Protein Stability Prediction from a Fine-Tuned Evolutionary Scale Model
+2025	10.1038/s41598-025-02959-z	40442188		Trainable embedding quantum physics informed neural networks for solving nonlinear PDEs.
+2026	10.1002/lsm.70185	42561123		Pulsed Dye Laser and Intense Pulsed Light Therapy for Cutaneous and Ocular Rosacea: A Systematic Review.
+2024	10.1037/met0000687	39388105		The potential of preregistration in psychology: Assessing preregistration producibility and preregistration-study consistency.
+2024	NA	NA		Identification of stable restorers and high-yielding hybrids using diverse sorghum male sterile cytoplasmic sources and established pollen parents under different water r
+2025	10.21203/rs.3.rs-6869046/v1	NA		Characteristics of the Meibomian gland in a population without dry eye symptoms
+2026	10.1016/j.aca.2026.345704	42242821		Folding integrated all-paper photoelectrochemical immunoassay using annealed ZnO for point-of-care detection of ferritin.
+2024	10.1016/j.heliyon.2024.e39807	39524799		Identification of stable restorers and high-yielding hybrids using diverse sorghum male sterile cytoplasmic sources and established pollen parents under different water r
+2024	10.1038/s41598-024-59276-0	38615092		Practical application of quantum neural network to materials informatics.
+2024	10.1016/j.clae.2024.102298	39277528		Comparison of upper eyelid pressure and ocular surface parameters in dry eye disease and benign essential Blepharospasm: A cross-sectional study.
+2026	10.3390/jimaging12070275	42506121		Benchmarking Barren Plateau Mitigation Strategies in Quantum Neural Networks on Standard and Medical Image Datasets.
+2026	10.3390/insects17070731	42505842		Development of a LAMP-on-Chip Assay for Simultaneous Detection of Mealybugs and Plant Viruses.
+2025	10.1097/j.jcrs.0000000000001619	39853246		Meibomian gland structure and function in patients with Demodex blepharitis.
+2026	10.1155/joph/1518139	42256262		Deep Cleaning Device as a Treatment Is Effective for Blepharitis and Significantly Reduces Bacterial Load.
+
+=== SOLPRED :: hitCount 167
+2026	10.1093/bioadv/vbag233	42751666		MiLaSol: modeling protein solubility by mixing up multiple protein language models.
+2026	10.21203/rs.3.rs-11150377/v1	NA		BioGraphX-Sol: A Structure-Free, Fully Interpretable Protein Solubility Predictor Exceeds AlphaFold3-Based Methods and Reveals Nine Universal Cross-Species Determinants
+2026	NA	NA		Construction of a predictive model for pea protein solubility evaluation and screening of processing-specific varieties using machine learning after interpretable optimiz
+2026	10.1016/j.foodchem.2025.147805	41485305		Portable near-infrared hyperspectral technology fused with machine learning enables simultaneous prediction and classification of protein solubility in peas.
+2026	10.1186/s13321-026-01225-2	42237181		Integrating multimodal features with deep learning for protein solubility prediction.
+2026	10.1021/acs.biomac.6c01393	43002008		SeqSol-FECS: An Integrated Deep Learning and Structural Modeling Framework for Protein Solubility Engineering.
+2026	10.1002/pro.70749	42583835		Pro4S: Prediction of protein solubility by fusing sequence, structure, and surface.
+2026	10.1021/acs.jcim.6c00124	41841780		SurfSol: A Multimodal Surface-Based Deep Learning Framework for Protein Solubility Prediction.
+2025	10.71150/jm.2408001	39895070		A review on computational models for predicting protein solubility.
+2026	10.1021/acs.jcim.6c00821	42148683		ProtSATT: An Advanced Protein Solubility Predictor Based on Attention Mechanism.
+2024	10.1016/j.heliyon.2024.e36041	39281576		ProSol-multi: Protein solubility prediction via amino acids multi-level correlation and discriminative distribution.
+2026	10.3389/fmicb.2026.1716930	41953440		Deep learning on protein language model embeddings unlocks accurate prediction of protein solubility.
+2025	10.1101/2025.09.26.676459	NA		SoluProtMut: Siamese Deep Learning for Predicting Solubility Effects of Protein Mutations with Experimental Validation
+2025	10.1109/jbhi.2025.3608273	41359723		MPSol: A Multimodal Prompt Learning Framework for Protein Solubility Prediction.
+2024	10.1016/j.compbiomed.2024.107918	38194782		Integration of persistent Laplacian and pre-trained transformer for protein solubility changes upon mutation.
+2025	10.1021/acs.jcim.5c00748	40512751		MMSol: Predicting Protein Solubility with an Antinoise Multimodal Deep Model.
+2026	10.1021/acs.jcim.5c02262	41505730		Protein Solubility Prediction Using Fused Graph Convolutional Networks and Improved Attention Networks with AlphaFold3-Derived Features.
+2025	10.1038/s41598-025-97445-x	40229419		Estimation and validation of solubility of recombinant protein in E. coli strains via various advanced machine learning models.
+2026	10.1002/pro.70733	42560022		Soluble protein analog selection engine (SPASE): An automated AI-powered server to improve protein engineering workflows.
+2024	10.1007/s10930-024-10230-z	39243320		Prediction of Solubility of Proteins in Escherichia coli Based on Functional and Structural Features Using Machine Learning Methods.
+2025	10.1109/tcbbio.2025.3569286	40811309		SRPM-Sol: A Structure Robust Protein Multimodal Model for Solubility Prediction.
+2025	10.1101/2025.11.05.686869	NA		Pro4S: prediction of protein solubility by fusing sequence, structure, and surface
+2024	10.1021/acs.biomac.4c00134	38598264		Enhancing Protein Solubility via Glycosylation: From Chemical Synthesis to Machine Learning Predictions.
+2026	10.1016/j.carbpol.2026.125247	42493068		An AI-informed framework for flavor design: How κ-carrageenan sculpts low-sodium myofibrillar protein architecture for aldehyde capture and bitterness masking.
+2026	10.1093/bioadv/vbag181	42437290		BioGraphX: bridging the sequence-structure gap via physicochemical graph encoding for interpretable subcellular localization prediction.
+2025	10.1021/acsomega.4c09688	39926503		ProG-SOL: Predicting Protein Solubility Using Protein Embeddings and Dual-Graph Convolutional Networks.
+2025	10.1038/s41598-025-11326-x	40721931		SOuLMuSiC, a novel tool for predicting the impact of mutations on protein solubility.
+2026	10.64898/2026.05.14.725067	NA		Protein solubility depends on centrifugation: Aiki-Sol, a per-regime predictor for  <i>E. coli</i>
+2024	10.1093/bib/bbae404	39179250		PLM_Sol: predicting protein solubility by benchmarking multiple protein language models with the updated Escherichia coli protein solubility dataset.
+2025	10.1021/acs.jcim.5c00534	40334064		MTPSol: Multimodal Twin Protein Solubility Prediction Architecture Based on Pretrained Models.
+2024	10.1186/s12859-024-05820-8	38824535		GATSol, an enhanced predictor of protein solubility through the synergy of 3D structure graph and large language modeling.
+2026	10.21203/rs.3.rs-10471634/v1	NA		Published benchmark AUROC does not predict generalisation: an independent evaluation of protein solubility predictors on native and heterologous E. coli proteins
+2026	10.1038/s42004-026-02007-5	42045651		Experimentally validated deep learning control of protein aggregation.
+2024	10.1101/2024.04.22.590218	NA		PLM_Sol: predicting protein solubility by benchmarking multiple protein language models with the updated  <i>Escherichia coli</i>  protein solubility dataset
+2026	10.1016/j.compbiomed.2026.111821	42335477		Sequence-structure cross-attention model integrating ESM-2 embeddings and AlphaFold cues for accurate prediction of Escherichia coli protein solubility.
+2025	10.1101/2025.01.15.633233	NA		SOuLMuSiC: A Computational Tool for Predicting the Impact of Mutations on Protein Solubility
+2022	10.1016/j.csbj.2022.11.009	36420168		SoluProtMut<sup>DB</sup>: A manually curated database of protein solubility changes upon mutations.
+2021	10.3390/ijms22158027	34360790		PON-Sol2: Prediction of Effects of Variants on Protein Solubility.
+2024	10.1016/j.ijbiomac.2024.134601	39137857		AlphaFold 2-based stacking model for protein solubility prediction and its transferability on seed storage proteins.
+2021	10.3390/ijms222413555	34948354		DSResSol: A Sequence-Based Solubility Predictor Created with Dilated Squeeze Excitation Residual Networks.
+2025	10.3390/foods14162784	40870697		Recent Advances, Challenges, and Functional Applications of Protein Chemical Modification in the Food Industry.
+2022	10.1155/2022/1650693	36267316		Comparative Study on Feature Selection in Protein Structure and Function Prediction.
+2022	10.1021/acs.chemrev.1c00757	35921495		Protein Design: From the Aspect of Water Solubility and Stability.
+2024	10.1101/2024.03.06.583680	NA		Deep Learning-Based Prediction and Suppression of Protein Aggregation- Prone Regions
+2023	10.1021/acssynbio.2c00670	37071041		Identifying Key Residues in Lysine Decarboxylase for Soluble Expression Using Consensus Design Soluble Mutant Screening (ConsenSing).
+2024	10.1186/s12934-024-02463-5	38956607		Streamlining heterologous expression of top carbonic anhydrases in Escherichia coli: bioinformatic and experimental approaches.
+2021	10.1101/2021.08.09.455643	NA		DSResSol: A sequence-based solubility predictor created with dilated squeeze excitation residual networks
+2021	10.1007/s12539-021-00456-1	34236625		Prediction of Protein Solubility Based on Sequence Feature Fusion and DDcCNN.
+2022	10.1007/978-1-0716-1859-2_3	35089550		A3D 2.0 Update for the Prediction and Optimization of Protein Solubility.
+2023	10.1186/s12915-023-01510-8	36694239		Prediction of protein solubility based on sequence physicochemical patterns and distributed representation information with DeepSoluE.
+
+=== SECRETOGEM :: hitCount 973
+2026	10.64898/2026.06.23.733964	NA		Acetylation-dependent remodeling of the secretory pathway shapes the senescence-associated secretome
+2025	10.1016/j.ymben.2024.11.010	39615667		Model-assisted CRISPRi/a library screening reveals central carbon metabolic targets for enhanced recombinant protein production in yeast.
+2026	10.64898/2026.07.10.737576	NA		A cargo receptor entrapment complex is a therapeutic node for genetically and clinically distinct proteinopathies
+2025	10.1128/spectrum.00830-25	41165313		Coxsackievirus A10 blocks autophagosome-lysosome fusion to promote viral nonlytic spread and inflammatory cytokine release.
+2026	10.21203/rs.3.rs-10597037/v1	NA		TMEM41B Associates with STING and Co-traffics Following STING Activation in a Permissive ER-to-Golgi Trafficking Context
+2022	10.1038/s41467-022-30689-7	35624178		Improving recombinant protein production by yeast through genome-scale modeling using proteome constraints.
+2026	10.1371/journal.ppat.1014518	42611901		Endoplasmic reticulum engagement of transcripts triggers VSG mRNA balancing in trypanosomes.
+2026	10.1002/pro.70747	42560024		Predicting membrane protein localization by deep learning on structure and chemistry.
+2026	10.1016/j.jbc.2026.113629	42854909		The cysteine-rich domain of SEP15, a selenoprotein co-chaperone of the ER chaperone, UDP-glucose:glycoprotein glucosyltransferase, adopts a novel fold.
+2026	10.64898/2026.09.20.752496	NA		Signal peptidase complexes set species-specific rules for signal peptide cleavage
+2026	10.1128/mbio.00423-26	42159429		Lipid droplets and small extracellular vesicles interplay in Japanese encephalitis virus non-lytic release.
+2021	10.1101/2021.10.16.464630	NA		Genome scale modeling of the protein secretory pathway reveals novel targets for improved recombinant protein production in yeast
+2026	10.64898/2026.10.06.756745	NA		Contact of mobile  <i>cis</i>  -Golgi network with ER exit sites executes COPI-mediated receptor recycling
+2026	10.1002/ame2.70315	42894396		Animal models for investigating post-stroke cognitive impairment: A neurovascular trafficking perspective.
+2026	10.64898/2026.09.16.26363125	NA		Characterization of the neoprotein MUC1-fs in patient-derived cells with ADTKD-  <i>MUC1</i>
+2025	10.1016/j.nbt.2025.07.002	40651625		Hac1p-based inverse secretory pathway engineering (Hi-SPE) of Pichia pastoris for improved glucose oxidase production.
+2026	10.1038/s41598-026-66227-4	42575931		Transcriptome, glycome, and mucinome analysis reveal zinc is essential for the composition of mucus in the human goblet cell model HT-29-MTX.
+2026	10.1038/s41467-026-69900-4	41723185		VAMP7-dependent late endosomal secretion of ER and mitochondrial proteins impacts the tumor microenvironment and macrophage engagement.
+2026	10.1152/ajpcell.00372.2026	42605981		Insulin-regulated actin dynamics is disrupted in a human keratinocyte model of Hailey-Hailey disease.
+2026	10.64898/2026.06.07.730669	NA		Mannosidases IA, IB and IC are in segregated vesicular structures and involved in both glycoprotein quality control and maturation
+2026	10.1073/pnas.2621329123	42961939		Structural basis of glycoprotein recognition by the human folding sensor UDP-glucose:glycoprotein glucosyltransferase.
+2025	10.1016/j.jbc.2025.110666	40902974		Phosphatidylinositol 3-phosphate metabolism impacts cellular α-synuclein localization in Saccharomyces cerevisiae.
+2025	10.1111/febs.70168	40637009		Retention of DLK1 in the endoplasmic reticulum identifies roles for EGF-like-domain-specific O-glycans in the secretory pathway.
+2026	10.1128/msphere.00827-25	41556658		p24 family proteins are critical for cell wall integrity, protein secretion, and virulence in &lt;i&gt;Candida albicans&lt;/i&gt;.
+2025	10.20944/preprints202512.0087.v1	NA		Quality Control of GPI-Anchored Proteins
+2025	10.1038/s41580-025-00839-y	40133632		Mechanisms of COPII coat assembly and cargo recognition in the secretory pathway.
+2026	10.1530/erc-25-0361	41961754		Proteomic signatures of adipocyte recruitment in breast cancer.
+2026	10.1371/journal.pgen.1012017	41686790		Genetic dissection of signalling pathways that mediate iron-related tumor growth in a Drosophila model.
+2026	10.1016/j.vetmic.2026.111115	42322707		Pseudorabies virus EP0 recruits TECPR2 and CK2 to promote COPII accumulation and viral egress.
+2026	10.64898/2026.06.07.729580	NA		Galectin-3 is Necessary for Selective Cathartocytosis, which Expedites the Development of Proliferative Gastric SPEM
+2027	10.1016/j.ijfoodmicro.2026.112084	42868970		A novel "laccase-degradation and GABA-compensation" strategy mediated by Lactococcus lactis subsp. lactis GLM-1 for the safe and targeted detoxification of ginkgo seeds.
+2026	10.1002/anie.5498199	42189719		Spatiotemporally Resolved Protein Tagging for Dynamic and Tissue-Specific Secretome Profiling In Vivo.
+2025	10.1038/s41467-025-57408-2	40032897		The pathways of secretory cargo export at the endoplasmic reticulum.
+2026	10.1007/978-3-032-06936-8_8	41240312		Models of Intracellular Transport: Contradictions and Current Understanding.
+2025	10.64898/2025.12.15.694174	NA		Insulin-Regulated Actin Dynamics is Disrupted in a Human Keratinocyte Model of Hailey Hailey Disease
+2026	10.1016/j.bbrc.2026.153814	42025016		Using electron microscopy to observe ultrastructural changes occurring in BHK-21 cells during cellular infection by Japanese encephalitis virus.
+2025	10.1096/fj.202500793r	40346842		Annexin A2 Contributes to Release of Extracellular Vimentin in Response to Inflammation.
+2024	10.1101/2024.08.09.607373	NA		TUG protein acts through a disordered region to organize the early secretory pathway
+2025	10.1038/s41467-025-65726-8	41309618		ER exit sites mediated by the COPII adaptor sec24D selectively recruit lipid raft-preferring proteins for rapid ER export.
+2025	10.1101/2025.11.28.691080	NA		Induced ubiquitination bypasses canonical ERAD to drive ER protein degradation
+2025	10.64898/2025.12.05.692483	NA		Phase separation as a concentrating mechanism of protein/peptide hormones for the secretory granule storage
+2026	10.1083/jcb.202504178	41171079		Close-up of vesicular ER exit sites by volume electron imaging using FIB-SEM.
+2024	10.1101/2024.08.31.610613	NA		Retention of DLK1 in the endoplasmic reticulum identifies roles for EGF domain-specific O-glycans in the secretory pathway
+2024	10.1002/jgm.3593	37730948		Identification of secretory pathway-related genes based on Random Forest algorithm to predict the prognosis and immunotherapy response of hepatocellular carcinoma.
+2025	10.1038/s41467-025-60691-8	40593538		TUG protein acts through a disordered region to organize the early secretory pathway.
+2024	10.1101/2024.04.22.590521	NA		A new targeting motif for endoplasmic reticulum surface proteins
+2025	10.1101/2025.08.11.669745	NA		The cysteine-rich domain of SEP15, a selenoprotein co-chaperone of the ER chaperone, UDP-glucose:glycoprotein glucosyltransferase, adopts a novel fold
+2026	10.1016/j.kint.2026.01.016	41690574		A Drosophila model for Dent's disease type 1 revealed impaired endoplasmic reticulum export of Cubilin as pathogenic mechanism.
+2026	10.64898/2026.02.12.705585	NA		Membrane lipid composition and endocytosis modulate Wingless release from secreting cells
+2026	10.3390/microorganisms14010095	41597615		Spt7 Deletion Reveals Vulnerabilities in <i>Cryptococcus neoformans</i> Stress Adaptation and Virulence.
+

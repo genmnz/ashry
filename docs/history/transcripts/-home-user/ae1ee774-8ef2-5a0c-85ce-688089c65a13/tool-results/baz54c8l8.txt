@@ -1,0 +1,189 @@
+=== "Trichoderma reesei" AND "heterologous protein" AND (titer OR titre OR "g/L" OR yield)
+HITS 311 shown 60
+42961475|PMC13722665|10.1007/s00253-026-14051-1|2026|Next-generation precision fermentation: integrating engineered cell factories, bioprocess intensification, and smart bioprocessing.|Y
+41796705|PMC12968053|10.1111/1751-7915.70318|2026|Efficient Extracellular Production of Insulin Glargine in Trichoderma reesei by an Integrative Secretion-Based Strategy.|Y
+42819547|PMC13624304|10.1002/mlf2.70104|2026|Establishment of a genome editing system and expression of heterologous proteins in the nonconventional yeast &lt;i&gt;Pichia kudriavzevii&lt;/i&gt;.|Y
+42108832|PMC13397179|10.1002/bit.70235|2026|High-Level Production of Ergothioneine in Yarrowia lipolytica via Systematic Metabolic Engineering Strategies.|N
+42380967|PMC13317432|10.1186/s40694-026-00220-4|2026|Fungal expression strategies for heterologous production of antimicrobial peptides.|Y
+42588577|PMC13468602|10.3390/molecules31152729|2026|&lt;i&gt;In Silico&lt;/i&gt; Design of &lt;i&gt;phaCAB&lt;/i&gt; Expression Constructs for Cellulolytic Hosts Toward Hemp Hurd Valorisation and Polyhy|Y
+42289753|PMC13491823|10.1186/s13068-026-02783-1|2026|SynBio-DSP: an integrated synthetic biology platform with fed-batch fermentation and continuous downstream processing for sustainable production of th|Y
+41459251|PMC12741742|10.3389/fbioe.2025.1688495|2025|Label-free analytical characterization of brazzein produced with the filamentous fungus &lt;i&gt;Trichoderma reesei&lt;/i&gt;.|Y
+41227613|PMC12609622|10.3390/foods14213639|2025|From Waste to Wealth: Unlocking the Potential of Cellulase Characteristics for Food Processing Waste Management.|Y
+41928234|PMC13170295|10.1186/s12934-026-02989-w|2026|Transcriptomics analysis identifies folding and secretion related genes for improving monoclonal antibody production in Thermothelomyces heterothallic|Y
+42104156|PMC13323205|10.1007/s00253-026-13830-0|2026|Engineering natural Saccharomyces cerevisiae isolates for enhanced one-step cellulosic ethanol production.|Y
+42929855|PMC13703316|10.3390/cells15201883|2026|Ire1-Mediated Unfolded Protein Response and Other Biological Phenomena in &lt;i&gt;Ascomycota&lt;/i&gt; Yeasts and Filamentous Fungi.|Y
+None|PMC13647374|None|None|AI-enabled fungal biomanufacturing: from genome mining to the artificial intelligence virtual cell|Y
+42819911|PMC13625276|10.1039/d6cb00197a|2026|High-throughput droplet screening of filamentous fungi on solid substrates.|Y
+42201450|PMC13216420|10.1007/s42770-026-01974-0|2026|Enhancing wheat bran deconstruction with enzyme cocktails from Penicillium spp. and Trichoderma harzianum: the impact of β-glucosidase supplementation|Y
+39122907|PMC11315685|10.1038/s41598-024-69676-x|2024|One-pot synthesis of cellobiose from sucrose using sucrose phosphorylase and cellobiose phosphorylase co-displaying Pichia pastoris as a reusable whol|Y
+41772602|PMC13085489|10.1186/s12934-026-02975-2|2026|Overexpression of msnA reprograms metabolism to enhance recombinant protein secretion across Aspergillus species.|Y
+42207439|PMC13429565|10.1186/s13568-026-02074-w|2026|Atmospheric room-temperature plasma mutagenesis and heterologous expression of dextranase in Aspergillus niger.|Y
+41245009|PMC12617796|10.1016/j.synbio.2025.10.005|2026|Engineering heterologous core promoters to optimize the SES expression system for &lt;i&gt;Pichia pastoris&lt;/i&gt;.|Y
+37042195|None|10.1021/acs.jafc.3c00690|2023|Simultaneous Production of Cellulase and β-Carotene in the Filamentous Fungus &lt;i&gt;Trichoderma reesei&lt;/i&gt;.|N
+40788923|PMC12370193|10.1371/journal.pgen.1011815|2025|An l-fucose-responsive transcription factor cross-regulates the expression of a diverse array of carbohydrate-active enzymes in Trichoderma reesei.|Y
+42042383|PMC13117078|10.3390/jof12040289|2026|Two-Step Engineering of Food-Grade &lt;i&gt;Aspergillus oryzae&lt;/i&gt; via Endogenous Signal Peptides and Vesicle Trafficking Proteins to Enhance Ca|Y
+42955489|PMC13719967|10.1186/s13568-026-02095-5|2026|High-efficiency cellulosic biocatalysts constructed via Pichia pastoris surface display.|Y
+41660601|PMC12876926|10.18699/vjgb-25-140|2025|Overcoming the problem of heterologous proteins folding to improve the efficiency of yeast bioproducers.|Y
+40208312|PMC11985622|10.1007/s00253-025-13473-7|2025|Production and application of peptidyl-lys metalloendopeptidase: advances, challenges, and future perspectives.|Y
+41684681|PMC12892411|10.17113/ftb.64.01.26.8764|2026|Enhancing Yeast Surface Display: UPR, ERAD, and ER Dynamics in Recombinant Protein Production.|Y
+42254540|PMC13234486|10.1016/j.synbio.2026.04.033|2026|Profiling heterologous 3' terminator-dependent expression variation in &lt;i&gt;Aspergillus oryzae&lt;/i&gt;.|Y
+42610752|PMC13487897|10.1093/jimb/kuag021|2026|Multistrategy metabolic engineering of Talaromyces pinophilus for α-amylase production from lignocellulosic biomass.|Y
+42197447|PMC13209753|10.3390/microorganisms14051061|2026|Differential Processing of a &lt;i&gt;Bacillus subtilis&lt;/i&gt; GH5 Endoglucanase During Yeast Surface Display in &lt;i&gt;Saccharomyces cerevisiae&|Y
+38247006|PMC10801990|10.1186/s12934-024-02299-z|2024|Engineering strategies for enhanced heterologous protein production by Saccharomyces cerevisiae.|Y
+40538712|PMC12173816|10.1016/j.engmic.2025.100194|2025|Modification of essential factors mediating post-translational processing for high-quality protein expression in &lt;i&gt;Penicillium&lt;/i&gt;.|Y
+36841771|PMC9960163|10.1186/s12934-023-02046-w|2023|Combining manipulation of integration loci and secretory pathway on expression of an Aspergillus niger glucose oxidase gene in Trichoderma reesei.|Y
+34928572|None|10.1021/acssynbio.1c00570|2022|Building a Versatile Protein Production Platform Using Engineered <i>Trichoderma reesei</i>.|N
+42245239|PMC13231048|10.3389/fbioe.2026.1765764|2026|The landscape of antibody production systems: recombinant expression for research, diagnostics and therapy.|Y
+38139031|PMC10743782|10.3390/ijms242417202|2023|Heterologously Expressed Cellobiose Dehydrogenase Acts as Efficient Electron-Donor of Lytic Polysaccharide Monooxygenase for Cellulose Degradation in |Y
+38685114|PMC11059683|10.1186/s13068-024-02505-5|2024|Improved consolidated bioprocessing for itaconic acid production by simultaneous optimization of cellulase and metabolic pathway of Neurospora crassa.|Y
+41280279|PMC12629926|10.1016/j.synbio.2025.10.008|2026|Engineering genetic elements for microbial protein expression systems: Advances, challenges, applications, and prospects.|Y
+37143012|PMC10161650|10.1186/s12934-023-02087-1|2023|High-level production of Aspergillus niger prolyl endopeptidase from agricultural residue and its application in beer brewing.|Y
+40411627|PMC12103488|10.1007/s00253-025-13512-3|2025|Cell walls of filamentous fungi - challenges and opportunities for biotechnology.|Y
+41347629|PMC12679317|10.1111/1751-7915.70272|2025|The Impact of Methanol Concentration on Recombinant Protein Glycosylation in Pichia pastoris SuperMan5.|Y
+41003160|PMC12471171|10.3390/jof11090614|2025|Genome Sequencing and Comparative Genomics of the Hyper-Cellulolytic Fungus &lt;i&gt;Talaromyces pinophilus&lt;/i&gt; Y117.|Y
+40715790|PMC12296805|10.1007/s00253-025-13563-6|2025|Identifying promoters to enhance heterologous gene expression in recombinant Saccharomyces cerevisiae strains cultivated on non-native substrates.|Y
+38548869|PMC10978942|10.1038/s42003-024-06072-1|2024|The protein methyltransferase TrSAM inhibits cellulase gene expression by interacting with the negative regulator ACE1 in Trichoderma reesei.|Y
+39883267|PMC11709146|10.1007/s44307-024-00042-8|2024|Metabolic engineering for single-cell protein production from renewable feedstocks and its applications.|Y
+37317115|PMC10222946|10.3390/microorganisms11051141|2023|Focus and Insights into the Synthetic Biology-Mediated Chassis of Economically Important Fungi for the Production of High-Value Metabolites.|Y
+37405433|PMC10386965|10.1007/s00253-023-12660-8|2023|Heterologous protein production in filamentous fungi.|Y
+39629327|PMC11611046|10.1016/j.engmic.2024.100139|2024|Research advances on the consolidated bioprocessing of lignocellulosic biomass.|Y
+38036984|PMC10687790|10.1186/s12866-023-03125-z|2023|Effect of the res2 transcription factor gene deletion on protein secretion and stress response in the hyperproducer strain Trichoderma reesei Rut-C30.|Y
+39435316|PMC11493480|10.1155/2024/4142663|2024|Application of Protein Expression in <i>Mycoplasma</i> Study.|Y
+38819502|PMC11143039|10.1007/s11274-024-04027-6|2024|Evaluation of different glycerol fed-batch strategies in a lab-scale bioreactor for the improved production of a novel engineered β-fructofuranosidase|Y
+36513366|PMC9923369|10.1093/jimb/kuac027|2023|A multi-plex protein expression system for production of complex enzyme formulations in Trichoderma reesei.|Y
+41597649|PMC12843773|10.3390/microorganisms14010127|2026|Review of Xylanases: Sources, Engineering and Biotechnological Use.|Y
+36690343|PMC10124127|10.1093/jimb/kuad002|2023|Enhancing the production of a heterologous Trametes laccase (LacA) by replacement of the major cellulase CBH1 in Trichoderma reesei.|Y
+36092273|PMC9428804|10.1016/j.synbio.2022.08.003|2022|A combined strategy for the overproduction of complex ergot alkaloid agroclavine.|Y
+38399750|PMC10892927|10.3390/microorganisms12020346|2024|<i>Komagataella phaffii</i> as a Platform for Heterologous Expression of Enzymes Used for Industry.|Y
+42021252|PMC13267296|10.1186/s12934-026-02988-x|2026|Enhanced secretion of thermostable phytases from Myceliophthora thermophila by Komagataella phaffii.|Y
+38204136|PMC10781871|10.1007/s00253-023-12985-4|2024|Protein secretion and associated stress in industrially employed filamentous fungi.|Y
+37746199|PMC10512257|10.3389/ffunb.2022.827704|2022|Burden Imposed by Heterologous Protein Production in Two Major Industrial Yeast Cell Factories: Identifying Sources and Mitigation Strategies.|Y
+36376415|PMC9663580|10.1038/s41598-022-23815-4|2022|Inducer-free cellulase production system based on the constitutive expression of mutated XYR1 and ACE3 in the industrial fungus Trichoderma reesei.|Y
+36619381|PMC9811125|10.3389/fbioe.2022.1095464|2022|A hybrid system for the overproduction of complex ergot alkaloid chanoclavine.|Y
+
+=== "Trichoderma reesei" AND (chymosin OR rennin OR "human serum albumin" OR interleukin)
+HITS 298 shown 60
+41103771|PMC12521868|10.2903/j.efsa.2025.9665|2025|Safety evaluation of the food enzyme chymosin from the genetically modified &lt;i&gt;Trichoderma reesei&lt;/i&gt; strain DP-Nyj88.|Y
+42092546|None|10.3168/jds.2026-28341|2026|The effect of curd cutting time and coagulants on the efficiency of cheesemaking.|N
+42634117|PMC13500877|10.1111/1541-4337.70618|2026|Toward Rational Design of Precision-Fermented Milk Proteins: Integrating Cross-Species Selection, Post-Translational Modification, and AI Optimization|N
+42440763|PMC13334375|10.2903/j.efsa.2026.10155|2026|Update of the list of qualified presumption of safety (QPS) recommended microbiological agents intentionally added to food or feed as notified to EFSA|Y
+42961475|PMC13722665|10.1007/s00253-026-14051-1|2026|Next-generation precision fermentation: integrating engineered cell factories, bioprocess intensification, and smart bioprocessing.|Y
+42380967|PMC13317432|10.1186/s40694-026-00220-4|2026|Fungal expression strategies for heterologous production of antimicrobial peptides.|Y
+40604696|PMC12224593|10.1186/s12896-025-01002-3|2025|Scientific and technological challenges of recombinant egg protein production.|Y
+38003285|PMC10670970|10.3390/ijms242216096|2023|Mono- and Dimeric Sorbicillinoid Inhibitors Targeting IL-6 and IL-1β from the Mangrove-Derived Fungus <i>Trichoderma reesei</i> BGRg-3.|Y
+41155370|PMC12564157|10.3390/ijms262010080|2025|Structural and Pharmacological Insights into Propranolol: An Integrated Crystallographic Perspective.|Y
+34928572|None|10.1021/acssynbio.1c00570|2022|Building a Versatile Protein Production Platform Using Engineered <i>Trichoderma reesei</i>.|N
+38299783|PMC10863410|10.1093/jimb/kuae007|2024|Cultivation of recombinant Aspergillus niger strains on dairy whey as a carbohydrate source.|Y
+39040570|PMC11261301|10.2903/j.efsa.2024.8882|2024|Update of the list of qualified presumption of safety (QPS) recommended microbiological agents intentionally added to food or feed as notified to EFSA|Y
+40411627|PMC12103488|10.1007/s00253-025-13512-3|2025|Cell walls of filamentous fungi - challenges and opportunities for biotechnology.|Y
+31380613|PMC6681399|10.1111/1751-7915.13469|2019|Microbial industrial enzymes: An annotated selection of World Wide Web sites relevant to the topics in microbial biotechnology.|Y
+36841771|PMC9960163|10.1186/s12934-023-02046-w|2023|Combining manipulation of integration loci and secretory pathway on expression of an Aspergillus niger glucose oxidase gene in Trichoderma reesei.|Y
+37405433|PMC10386965|10.1007/s00253-023-12660-8|2023|Heterologous protein production in filamentous fungi.|Y
+34976162|PMC8678806|10.2903/j.efsa.2021.7006|2021|Safety evaluation of the food enzyme rennet paste from the abomasum of suckling goats, lambs and calves.|Y
+38204136|PMC10781871|10.1007/s00253-023-12985-4|2024|Protein secretion and associated stress in industrially employed filamentous fungi.|Y
+42137134|PMC13168795|10.1155/anu/3589937|2026|Strain-Specific Yeast Polysaccharides Enhance Growth, Antioxidant Capacity, Immune Response and Gut Microbiota Homeostasis in Red Tilapia Cultured Und|Y
+40918330|PMC12409555|10.1021/acsomega.4c11010|2025|&lt;i&gt;Staphylococcus aureus&lt;/i&gt; Adhesion on Hydrophobin Coatings: Adhesion Forces and the Influence of Surface Charge.|Y
+41809970|PMC12969702|10.1016/j.btre.2026.e00952|2026|Transition from fermentation to precision fermentation: Role in sustainable food system.|Y
+37208691|PMC10197057|10.1186/s12934-023-02109-y|2023|Inducer-free recombinant protein production in Trichoderma reesei: secretory production of endogenous enzymes and heterologous nanobodies using glucos|Y
+36968340|PMC9995161|10.1049/enb2.12025|2022|Prediction of strain engineerings that amplify recombinant protein secretion through the machine learning approach MaLPHAS.|Y
+39522348|PMC11585691|10.1016/j.psj.2024.104447|2024|Novel thermal stability enhanced xylanase improves the performance and digestibility parameters in broilers.|Y
+41291594|PMC12645764|10.1186/s12886-025-04487-w|2025|Central retinal artery occlusion as a rare complication of trichoderma-associated acute invasive fungal sinusitis.|Y
+42358301|PMC13290566|10.3389/fnut.2026.1829214|2026|Recent strategies in synthetic food production for sustainable food security: applications and challenges.|Y
+37317115|PMC10222946|10.3390/microorganisms11051141|2023|Focus and Insights into the Synthetic Biology-Mediated Chassis of Economically Important Fungi for the Production of High-Value Metabolites.|Y
+42941796|PMC13705068|10.3390/ijms27209020|2026|Enzymatic Hydrolysate of Red Yeast Rice Accelerates Diabetic Wound Healing in Mice: Association with Modulation of Inflammatory, Matrix-Remodeling, an|Y
+40699702|PMC12110658|10.3390/cimb47050303|2025|Albumin: A Review of Market Trends, Purification Methods, and Biomedical Innovations.|Y
+39114650|PMC11303282|10.3389/fimmu.2024.1380028|2024|Evaluation of the potential food allergy risks of human lactoferrin expressed in &lt;i&gt;Komagataella phaffii&lt;/i&gt;.|Y
+39624788|PMC11608171|10.1007/s40828-024-00195-y|2024|Tyrosinases: a family of copper-containing metalloenzymes.|Y
+36835238|PMC9964944|10.3390/ijms24043827|2023|Possibilities of Using De Novo Design for Generating Diverse Functional Food Enzymes.|Y
+41104137|PMC12521125|10.3389/fcimb.2025.1676009|2025|Recent innovations and challenges in the treatment of fungal infections.|Y
+39539528|PMC11554964|10.1007/s13205-024-04146-9|2024|Cutting-edge perspectives on biosurfactants: implications for antimicrobial and biomedical applications.|N
+39085844|PMC11293167|10.1186/s12934-024-02466-2|2024|CRISPR-Cas9 knockout screen informs efficient reduction of the Komagataella phaffii secretome.|Y
+42506256|PMC13412894|10.3390/jof12070494|2026|Untapped Mycobiota: A Scoping Review of Endophytic Fungi in Medicinal Plants from Malaysia.|Y
+39452841|PMC11509926|10.3390/md22100433|2024|Natural Products from Marine-Derived Fungi with Anti-Inflammatory Activity.|Y
+42707330|PMC13547098|10.1002/mco2.70947|2026|Ergothioneine: Biosynthesis, Molecular Mechanisms, Physiological Function, and Role in Disease.|Y
+42504013|PMC13402779|10.1111/1541-4337.70572|2026|Special Milk and Synthetic Biology: A Dual-Perspective Review of Ingredient Substitutions in Breast-Milk-Simulated Infant Formula.|N
+38510462|PMC10948735|10.1007/s13205-024-03958-z|2024|Therapeutic proteins: developments, progress, challenges, and future perspectives.|N
+41321516|PMC12664070|10.1016/j.aninu.2024.06.010|2025|Strategic technologies to improve phytogenic feed additive efficacy in pigs and poultry.|Y
+34037840|PMC8195892|10.1007/s00253-021-11336-5|2021|Engineering of the unfolded protein response pathway in Pichia pastoris: enhancing production of secreted recombinant proteins.|Y
+38841267|PMC11147998|10.1007/s13205-024-03998-5|2024|Expression of microbial lipase in filamentous fungus &lt;i&gt;Aspergillus niger&lt;/i&gt;: a review.|N
+34085027|PMC8162626|10.1093/tas/txab050|2021|Comparative efficacy of commercially available deoxynivalenol detoxifying feed additives on growth performance, total tract digestibility of component|Y
+41084001|PMC12519851|10.1186/s12934-025-02848-0|2025|Uncoupling protein production from growth: different strategies for intracellular and secreted proteins in yeast.|Y
+40105205|PMC11969658|10.1021/acs.jafc.5c00948|2025|Allergenicity of Alternative Proteins: Reduction Mechanisms and Processing Strategies.|Y
+33599729|PMC9113505|10.1093/jimb/kuab014|2021|Reduced viscosity mutants of Trichoderma reesei with improved industrial fermentation characteristics.|Y
+34702369|PMC8549263|10.1186/s40694-021-00119-2|2021|An overview on current molecular tools for heterologous gene expression in Trichoderma.|Y
+38650205|PMC10991602|10.1186/s40643-021-00461-8|2021|From induction to secretion: a complicated route for cellulase production in Trichoderma reesei.|Y
+33708187|PMC7940364|10.3389/fmicb.2021.644404|2021|Advances in Genetic Engineering Technology and Its Application in the Industrial Fungus <i>Aspergillus oryzae</i>.|Y
+36354946|PMC9692369|10.3390/jof8111179|2022|Non-Mammalian Eukaryotic Expression Systems Yeast and Fungi in the Production of Biologics.|Y
+None|PMC9003943|None|2022|PSVIII-9 Survey us Soybean Meal: Does Region Influence Quality and Antinutritional Factors?|N
+36756210|PMC9900623|10.1016/j.mtbio.2023.100560|2023|Unlocking the magic in mycelium: Using synthetic biology to optimize filamentous fungi for biomanufacturing and sustainability.|Y
+38247006|PMC10801990|10.1186/s12934-024-02299-z|2024|Engineering strategies for enhanced heterologous protein production by Saccharomyces cerevisiae.|Y
+40361571|PMC12071764|10.3390/foods14091488|2025|The Role of Whey in Functional Microorganism Growth and Metabolite Generation: A Biotechnological Perspective.|Y
+38419084|PMC10902946|10.1186/s12950-024-00376-z|2024|Mucosal-associated invariant T cells in infectious diseases of respiratory system: recent advancements and applications.|Y
+34626475|PMC8502015|10.1093/database/baab060|2021|Food Enzyme Database (FEDA): a web application gathering information about food enzyme preparations available on the European market.|Y
+None|PMC7122484|None|2017|Bioactive Products from Fungi|Y
+41097595|PMC12523703|10.3390/foods14193427|2025|Advancements in Microbial Applications for Sustainable Food Production.|Y
+40502693|PMC12152670|10.1016/j.isci.2025.112605|2025|Effect of glycosylation on protein folding: From biological roles to chemical protein synthesis.|Y
+
+=== "Trichoderma reesei" AND (ovalbumin OR "beta-lactoglobulin" OR casein OR lactoferrin OR myoglobin OR leghemoglobin)
+HITS 547 shown 60
+None|None|10.20944/preprints202609.1464.v1|2026|Precision Fermentation for Animal-Free Dairy Proteins: Microbial Chassis, Molecular Fidelity, Downstream Processing, and the Route to Economic and Reg|N
+42634117|PMC13500877|10.1111/1541-4337.70618|2026|Toward Rational Design of Precision-Fermented Milk Proteins: Integrating Cross-Species Selection, Post-Translational Modification, and AI Optimization|N
+42737396|PMC13564971|10.3390/foods15173153|2026|Allergenicity Assessment of Precision Fermentation-Derived Food Proteins.|Y
+41809970|PMC12969702|10.1016/j.btre.2026.e00952|2026|Transition from fermentation to precision fermentation: Role in sustainable food system.|Y
+41389060|None|10.1021/acs.jafc.5c11534|2025|Efficient Production of the Recombinant Human Lactoferrin in an Engineered &lt;i&gt;Trichoderma reesei&lt;/i&gt;.|N
+41270929|PMC13082855|10.1016/j.fct.2025.115859|2026|Application of new approach methods (NAMs) in food safety with considerations for new proteins.|N
+42358301|PMC13290566|10.3389/fnut.2026.1829214|2026|Recent strategies in synthetic food production for sustainable food security: applications and challenges.|Y
+None|None|None|2024|Production of bovine beta-lactoglobulin and hen egg ovalbumin by Trichoderma reesei using precision fermentation technology and testing of their techn|N
+41531469|PMC12794279|10.2903/j.efsa.2026.9832|2026|Safety evaluation of the food enzyme aspergillopepsin I from the genetically modified &lt;i&gt;Trichoderma reesei&lt;/i&gt; strain DP-Nzq40.|Y
+39114650|PMC11303282|10.3389/fimmu.2024.1380028|2024|Evaluation of the potential food allergy risks of human lactoferrin expressed in &lt;i&gt;Komagataella phaffii&lt;/i&gt;.|Y
+40604696|PMC12224593|10.1186/s12896-025-01002-3|2025|Scientific and technological challenges of recombinant egg protein production.|Y
+41103771|PMC12521868|10.2903/j.efsa.2025.9665|2025|Safety evaluation of the food enzyme chymosin from the genetically modified &lt;i&gt;Trichoderma reesei&lt;/i&gt; strain DP-Nyj88.|Y
+41932962|PMC13199567|10.1038/s41598-026-38994-7|2026|Multi-omics profiling finds synbio milk differs nutritionally from bovine milk and contains 93 uncharacterized fungal metabolites and 236 fungal prote|Y
+36596092|None|10.1016/j.foodres.2022.112131|2023|Production of bovine beta-lactoglobulin and hen egg ovalbumin by Trichoderma reesei using precision fermentation technology and testing of their techn|N
+42504013|PMC13402779|10.1111/1541-4337.70572|2026|Special Milk and Synthetic Biology: A Dual-Perspective Review of Ingredient Substitutions in Breast-Milk-Simulated Infant Formula.|N
+42639112|PMC13501977|10.3389/fnut.2026.1913634|2026|Sustainable proteins for future food systems: nutritional quality, environmental trade-offs, and consumer acceptance.|Y
+41155370|PMC12564157|10.3390/ijms262010080|2025|Structural and Pharmacological Insights into Propranolol: An Integrated Crystallographic Perspective.|Y
+42346012|PMC13297029|10.3390/biotech15020040|2026|Regioselective Oxidation of D-Galacturonic Acid to Provide Crystallized Mucic Acid Using Engineered &lt;i&gt;Gluconobacter oxydans&lt;/i&gt;.|Y
+41069967|PMC12504909|10.2903/j.efsa.2025.9663|2025|Safety evaluation of the food enzyme thermomycolin from the genetically modified &lt;i&gt;Trichoderma reesei&lt;/i&gt; strain AR-201.|Y
+42361156|PMC13327516|10.1371/journal.pgen.1012216|2026|Nuclear ubiquitin-conjugating enzyme TrUbc4 and F-box protein TrFwd1-mediated modification of Cre1 in Trichoderma reesei establishes a regulatory mech|Y
+38611316|PMC11011482|10.3390/foods13071010|2024|Dairy, Plant, and Novel Proteins: Scientific and Technological Aspects.|Y
+38951478|PMC11405547|10.1007/s42770-024-01432-9|2024|Fungal endo and exochitinase production, characterization, and application for Candida biofilm removal.|N
+40361571|PMC12071764|10.3390/foods14091488|2025|The Role of Whey in Functional Microorganism Growth and Metabolite Generation: A Biotechnological Perspective.|Y
+38751508|PMC11094573|10.2903/j.efsa.2024.8797|2024|Safety of the feed additive consisting of endo-1,4-β-xylanase (produced with <i>Trichoderma reesei</i> CBS 143953), subtilisin (produced with <i>Bacil|Y
+40847312|PMC12374283|10.1186/s13036-025-00552-6|2025|Simultaneous online monitoring of viscosity and oxygen transfer rate in shake flask cultures.|Y
+42042383|PMC13117078|10.3390/jof12040289|2026|Two-Step Engineering of Food-Grade &lt;i&gt;Aspergillus oryzae&lt;/i&gt; via Endogenous Signal Peptides and Vesicle Trafficking Proteins to Enhance Ca|Y
+41378120|PMC12686257|10.1007/s12551-025-01341-7|2025|Stabilising proteins in solution using affordable and readily available small molecules.|Y
+42929855|PMC13703316|10.3390/cells15201883|2026|Ire1-Mediated Unfolded Protein Response and Other Biological Phenomena in &lt;i&gt;Ascomycota&lt;/i&gt; Yeasts and Filamentous Fungi.|Y
+37118250|None|10.1038/s43016-021-00418-2|2021|Ovalbumin production using Trichoderma reesei culture and low-carbon energy could mitigate the environmental impacts of chicken-egg-derived ovalbumin.|N
+42543721|PMC13743397|10.1002/jsfa.70912|2026|Disclosing the production of fungal chitinases and proteases using insect by-products as substrates in solid-state fermentation.|Y
+38849927|PMC11161985|10.1186/s40104-024-01039-y|2024|Current status and challenges for cell-cultured milk technology: a systematic review.|Y
+40220078|PMC11993488|10.1007/s00253-025-13482-6|2025|Mycotoxin-free Aspergillus oryzae strain lineage for alternative and novel protein production at industrial scale.|Y
+42293124|PMC13254681|10.2903/j.efsa.2026.10140|2026|Safety evaluation of the food enzyme thermolysin from the non-genetically modified &lt;i&gt;Anoxybacillus caldiproteolyticus&lt;/i&gt; strain DP-Fzj32|Y
+38437627|PMC10979405|10.1021/acs.chemrev.3c00551|2024|Do Ionic Liquids Exhibit the Required Characteristics to Dissolve, Extract, Stabilize, and Purify Proteins? Past-Present-Future Assessment.|Y
+39624788|PMC11608171|10.1007/s40828-024-00195-y|2024|Tyrosinases: a family of copper-containing metalloenzymes.|Y
+40355408|PMC12069525|10.1038/s41467-025-59606-4|2025|Secretion and endocytosis in subapical cells support hyphal tip growth in the fungus Trichoderma reesei.|Y
+35422882|PMC8990528|10.2903/j.efsa.2022.7204|2022|Safety of Beta-lactoglobulin as a Novel food pursuant to Regulation (EU) 2015/2283.|Y
+42129182|PMC13402606|10.1038/s41538-026-00828-1|2026|Species selection criteria for sustainable bacterial single cell protein.|Y
+41531464|PMC12793888|10.2903/j.efsa.2026.9837|2026|Safety evaluation of the food enzyme papain from the latex of &lt;i&gt;Carica papaya&lt;/i&gt; L.|Y
+37400774|PMC10316542|10.1186/s12864-023-09467-2|2023|RGS4 impacts carbohydrate and siderophore metabolism in Trichoderma reesei.|Y
+None|None|10.21203/rs.3.rs-2382445/v1|2023|RGS4 impacts carbohydrate and siderophore metabolism in Trichoderma reesei|Y
+40826456|PMC12359996|10.1186/s12934-025-02820-y|2025|Real-time pH and temperature monitoring in solid-state fermentation reveals culture physiology and optimizes enzyme harvesting for tailored applicatio|Y
+40699702|PMC12110658|10.3390/cimb47050303|2025|Albumin: A Review of Market Trends, Purification Methods, and Biomedical Innovations.|Y
+42380967|PMC13317432|10.1186/s40694-026-00220-4|2026|Fungal expression strategies for heterologous production of antimicrobial peptides.|Y
+39971319|PMC12321500|10.2183/pjab.101.011|2025|A thermostable and highly active fungal GH3 β-glucosidase generated by random and saturation mutagenesis.|Y
+40867616|PMC12384197|10.3390/biom15081172|2025|Glycosylated SARS-CoV-2 RBD Antigens Expressed in Glycoengineered Yeast Induce Strong Immune Responses Through High Antigen-Alum Adsorption.|Y
+36142214|PMC9499586|10.3390/ijms231810291|2022|Characterization of Recombinant Antimicrobial Peptide BMGlv2 Heterologously Expressed in <i>Trichoderma reesei</i>.|Y
+37218014|PMC10204303|10.1186/s13068-023-02341-z|2023|The Ras small GTPase RSR1 regulates cellulase production in Trichoderma reesei.|Y
+37372965|PMC10298539|10.3390/ijms24129817|2023|L-Poly(lactic acid) Production by Microwave Irradiation of Lactic Acid Obtained from Lignocellulosic Wastes.|Y
+42323370|PMC13645729|10.1038/s41538-026-00949-7|2026|Bacillus amyloliquefaciens MU2 fermentation enhances protein extraction and sensory quality of Chlorella pyrenoidosa.|Y
+36818641|PMC9933466|10.2903/j.efsa.2023.7816|2023|Safety and efficacy of a feed additive consisting of endo-1,4-beta-xylanase produced by <i>Trichoderma reesei</i> ATCC PTA-5588, protease produced by |Y
+42092967|PMC13154669|10.1186/s12934-026-03015-9|2026|Co-cultivation dynamics of the filamentous microorganisms Aspergillus niger and Streptomyces coelicolor in shake flasks.|Y
+37143012|PMC10161650|10.1186/s12934-023-02087-1|2023|High-level production of Aspergillus niger prolyl endopeptidase from agricultural residue and its application in beer brewing.|Y
+40361673|PMC12071650|10.3390/foods14091588|2025|A Review of Novel Antioxidant Ergothioneine: Biosynthesis Pathways, Production, Function and Food Applications.|Y
+40869322|PMC12386674|10.3390/ijms26168000|2025|Cellulase Production by Ultraviolet-Derived Mutant &lt;i&gt;Trichoderma&lt;/i&gt; sp. Mut-4 Under Submerged Fermentation: Parameter Optimization and L|Y
+35852347|PMC9431493|10.1128/spectrum.00872-22|2022|Functional Characterization of Sugar Transporter CRT1 Reveals Differential Roles of Its C-Terminal Region in Sugar Transport and Cellulase Induction i|Y
+41507679|PMC12873016|10.1186/s13568-025-02007-z|2026|Heterologous expression of Thermomyces lanuginosus lipase in Aspergillus niger: stress resistance, optimization of fermentation conditions, and transc|Y
+32962271|PMC7558757|10.3390/jof6030181|2020|Mycosynthesis of ZnO Nanoparticles Using <i>Trichoderma</i> spp. Isolated from Rhizosphere Soils and Its Synergistic Antibacterial Effect against <i>X|Y
+41497495|PMC12767191|10.1016/j.synbio.2025.08.002|2025|Development and application of synthetic biology tools for improved production of human breast milk components.|Y
+36118353|PMC9480618|10.3389/fvets.2022.956054|2022|Effect of dietary β-mannanase supplementation on growth performance, digestibility, and gene expression levels of &lt;i&gt;Cyprinus carpio&lt;/i&gt; (|Y
+

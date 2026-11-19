@@ -1,0 +1,330 @@
+### Q1 hits=32
+37598731	PMC10528908	2023	N	The effect of the bgs13 mutation on the structure of the reporter protein beta-lactoglobulin: Influence on folding and aggregation in Pichia pastoris.	Protein Expr Purif	10.1016/j.pep.2023.106355
+40220078	PMC11993488	2025	Y	Mycotoxin-free Aspergillus oryzae strain lineage for alternative and novel protein production at industrial scale.	Appl Microbiol Biotechnol	10.1007/s00253-025-13482-6
+19121243	-	2009	N	Crude goat whey fermentation by Kluyveromyces marxianus and Lactobacillus rhamnosus: contribution to proteolysis and ACE inhibitory activity.	J Dairy Res	10.1017/s0022029908003877
+18582081	-	2008	N	Role of lysine epsilon-amino groups of beta-lactoglobulin on its activating effect of Kluyveromyces lactis beta-galactosidase.	J Agric Food Chem	10.1021/jf703785p
+34578889	PMC8465316	2021	Y	Peptide Characterization and Functional Stability of a Partially Hydrolyzed Whey-Based Formula over Time.	Nutrients	10.3390/nu13093011
+8611177	PMC1217000	1996	N	Expression and secretion of recombinant ovine beta-lactoglobulin in Saccharomyces cerevisiae and Kluyveromyces lactis.	Biochem J	10.1042/bj3130927
+-	-	2018	N	Apparent digestibility coefficients of processed agro‐food by‐products in European seabass (Dicentrarchus labrax) juveniles	Aquaculture nutrition.	10.1111/anu.12665
+-	-	1999	N	Expression of recombinant wild-type and mutant beta-lactoglobulins in the yeast Pichia pastoris	International journal of food science an	10.1046/j.1365-2621.1999.00317.x
+11342718	-	2001	N	Characterization of glycosylated variants of beta-lactoglobulin expressed in Pichia pastoris.	Protein Eng	10.1093/protein/14.3.201
+9514124	-	1997	N	High-level expression of bovine beta-lactoglobulin in Pichia pastoris and characterization of its physical properties.	Protein Eng	10.1093/protein/10.11.1339
+15147215	-	2004	N	A recombinant C121S mutant of bovine beta-lactoglobulin is more susceptible to peptic digestion and to denaturation by reducing agents and heating.	Biochemistry	10.1021/bi0362469
+12006601	-	2002	N	Manipulating monomer-dimer equilibrium of bovine Beta -lactoglobulin by amino acid substitution.	J Biol Chem	10.1074/jbc.m203659200
+-	-	1999	N	Resistance of beta-lactoglobulin-bound lactose to the hydrolysis by beta-galactosidase	Int Dairy J	10.1016/s0958-6946(99)00153-3
+20018245	-	2010	N	The production of soluble and correctly folded recombinant bovine beta-lactoglobulin variants A and B in Escherichia coli for NMR studies.	Protein Expr Purif	10.1016/j.pep.2009.12.006
+18680617	-	2008	N	Short-term effects of selenium supplementation of cows' feed on the content and distribution of selenium, copper and zinc in bovine milk, whey and blood plasma.	J Dairy Res	10.1017/s0022029908003324
+11174058	-	2001	N	No increased serum levels of antifood antibodies in patients with Ménière's disease.	ORL J Otorhinolaryngol Relat Spec	10.1159/000055701
+9758756	-	1998	N	Isotopically labeled bovine beta-lactoglobulin for NMR studies expressed in Pichia pastoris.	Protein Expr Purif	10.1006/prep.1998.0924
+12909729	-	2003	N	Solid-phase reducing agents as alternative for reducing disulfide bonds in proteins.	Appl Biochem Biotechnol	10.1385/abab:110:1:23
+1368635	-	1990	N	Expression and secretion of bovine beta-lactoglobulin in Saccharomyces cerevisiae.	Agric Biol Chem	10.1080/00021369.1990.10870482
+7763629	-	1993	N	Preparation and characterization of whey protein hydrolysates: applications in industrial whey bioconversion processes.	Enzyme Microb Technol	10.1016/0141-0229(93)90129-p
+10407152	-	1999	N	Accelerated secretion of mutant beta-lactoglobulin in Saccharomyces cerevisiae resulting from a single amino acid substitution.	Biochim Biophys Acta	10.1016/s0167-4838(99)00099-0
+12416801	-	2002	N	Enhancement of lactase activity in milk by reactive sulfhydryl groups induced by heat treatment.	J Dairy Sci	10.3168/jds.s0022-0302(02)74332-4
+9882566	-	1998	N	Cloning, expression, purification, and immunocharacterization of placental protein-14.	Protein Expr Purif	10.1006/prep.1998.0961
+11548130	-	2001	N	Fluoroalcohol-induced structural changes of proteins: some aspects of cosolvent-protein interactions.	Eur Biophys J	10.1007/s002490100148
+9729790	-	1998	N	Complete assignment of 1H, 13C and 15N chemical shifts for bovine beta-lactoglobulin: secondary structure and topology of the native state is retained in a part	J Biomol NMR	10.1023/a:1008268528695
+9228792	-	1997	N	Preparation and use of ion-exchange chromatographic supports based on perfluoropolymers.	J Chromatogr A	10.1016/s0021-9673(97)00191-x
+8168512	-	1994	N	Role of the C-terminus of Saccharomyces cerevisiae ubiquitin-conjugating enzyme (Rad6) in substrate and ubiquitin-protein-ligase (E3-R) interactions.	Eur J Biochem	10.1111/j.1432-1033.1994.tb18735.x
+9474806	PMC3466752	1997	N	Antigen-specific inhibition of CD4+ T-cell responses to beta-lactoglobulin by its single amino acid-substituted mutant form through T-cell receptor antagonism.	Cytotechnology	10.1023/a:1007934832359
+16476172	-	2006	N	Peptides released from acid goat whey by a yeast-lactobacillus association isolated from cheese microflora.	J Dairy Res	10.1017/s0022029905001512
+10585196	-	1999	N	An integrated process for biomolecule isolation and purification.	Biotechnol Prog	10.1021/bp990105+
+1651925	-	1991	N	RAD6 gene product of Saccharomyces cerevisiae requires a putative ubiquitin protein ligase (E3) for the ubiquitination of certain proteins.	J Biol Chem	10.1016/s0021-9258(18)98492-9
+2318308	-	1990	N	Evidence for a molten globule state as a general intermediate in protein folding.	FEBS Lett	10.1016/0014-5793(90)80143-7
+### Q2 hits=18
+-	-	2026	N	Precision Fermentation for Animal-Free Dairy Proteins: Microbial Chassis, Molecular Fidelity, Downstream Processing, and the Route to Economic and Regulatory Pa		10.20944/preprints202609.1464.v1
+-	-	2024	N	Food proteins from yeast-based precision fermentation: Simple purification of recombinant β-lactoglobulin using polyphosphate	Food Research International.	-
+38163711	-	2024	N	Food proteins from yeast-based precision fermentation: Simple purification of recombinant β-lactoglobulin using polyphosphate.	Food Res Int	10.1016/j.foodres.2023.113801
+37598731	PMC10528908	2023	N	The effect of the bgs13 mutation on the structure of the reporter protein beta-lactoglobulin: Influence on folding and aggregation in Pichia pastoris.	Protein Expr Purif	10.1016/j.pep.2023.106355
+36577145	-	2023	N	Site-specific glycosylation and single amino acid substitution dramatically reduced the immunogenicity of β-lactoglobulin.	Biosci Biotechnol Biochem	10.1093/bbb/zbac210
+37138331	PMC10155391	2023	Y	Biosensor-guided rapid screening for improved recombinant protein secretion in Pichia pastoris.	Microb Cell Fact	10.1186/s12934-023-02089-z
+40220078	PMC11993488	2025	Y	Mycotoxin-free Aspergillus oryzae strain lineage for alternative and novel protein production at industrial scale.	Appl Microbiol Biotechnol	10.1007/s00253-025-13482-6
+26275462	-	2015	N	β-lactoglobulin mutation Ala86Gln improves its ligand binding and reduces its immunoreactivity.	Int J Biol Macromol	10.1016/j.ijbiomac.2015.08.013
+26281976	-	2015	N	β-Lactoglobulin mutant Lys69Asn has attenuated IgE and increased retinol binding activity.	J Biotechnol	10.1016/j.jbiotec.2015.08.006
+32580707	PMC7313183	2020	Y	An alternative for proteinase K-heat-sensitive protease from fungus Onygena corvina for biotechnology: cloning, engineering, expression, characterization and sp	Microb Cell Fact	10.1186/s12934-020-01392-3
+8611177	PMC1217000	1996	N	Expression and secretion of recombinant ovine beta-lactoglobulin in Saccharomyces cerevisiae and Kluyveromyces lactis.	Biochem J	10.1042/bj3130927
+-	-	1999	N	Expression of recombinant wild-type and mutant beta-lactoglobulins in the yeast Pichia pastoris	International journal of food science an	10.1046/j.1365-2621.1999.00317.x
+20018245	-	2010	N	The production of soluble and correctly folded recombinant bovine beta-lactoglobulin variants A and B in Escherichia coli for NMR studies.	Protein Expr Purif	10.1016/j.pep.2009.12.006
+9514124	-	1997	N	High-level expression of bovine beta-lactoglobulin in Pichia pastoris and characterization of its physical properties.	Protein Eng	10.1093/protein/10.11.1339
+15147215	-	2004	N	A recombinant C121S mutant of bovine beta-lactoglobulin is more susceptible to peptic digestion and to denaturation by reducing agents and heating.	Biochemistry	10.1021/bi0362469
+9882566	-	1998	N	Cloning, expression, purification, and immunocharacterization of placental protein-14.	Protein Expr Purif	10.1006/prep.1998.0961
+22358529	PMC3449876	1997	N	A small variance in the antigenicity but not function of recombinant β-lactoglobulin purified from the culture supernatant of transformed yeast cells.	Cytotechnology	10.1023/a:1007977709348
+9729790	-	1998	N	Complete assignment of 1H, 13C and 15N chemical shifts for bovine beta-lactoglobulin: secondary structure and topology of the native state is retained in a part	J Biomol NMR	10.1023/a:1008268528695
+### Q3 hits=73
+42028628	-	2026	N	Efficient Secretory Expression of Soybean Peroxidase in &lt;i&gt;Saccharomyces cerevisiae&lt;/i&gt; Through Systematic Engineering.	J Agric Food Chem	10.1021/acs.jafc.6c01170
+40173411	-	2025	N	Ethanol-Inducible Bioproduction of Human α-Lactalbumin in &lt;i&gt;Komagataella phaffii&lt;/i&gt;.	J Agric Food Chem	10.1021/acs.jafc.5c01338
+35148078	-	2022	N	Efficient Bioproduction of Human Milk Alpha-Lactalbumin in <i>Komagataella phaffii</i>.	J Agric Food Chem	10.1021/acs.jafc.1c07908
+37881961	-	2023	N	Heterologous Single-Strand DNA-Annealing and Binding Protein Enhance CRISPR-Based Genome Editing Efficiency in <i>Komagataella phaffii</i>.	ACS Synth Biol	10.1021/acssynbio.3c00494
+37363424	PMC10284785	2023	N	Precursors and elicitor induced enhancement of cell biomass and phenolic compounds in cell suspensions of Indian basil-<i>Ocimum basilicum</i> (CIM-Saumya).	Physiol Mol Biol Plants	10.1007/s12298-023-01316-6
+38567504	-	2024	N	Using Capillary Electrophoresis to Investigate Protein Conformational and Compositional Heterogeneity.	Chembiochem	10.1002/cbic.202400108
+38778560	-	2024	N	Lactic acid bacteria and yeast co-fermented milk alleviate cow milk allergy.	J Food Sci	10.1111/1750-3841.17136
+19121243	-	2009	N	Crude goat whey fermentation by Kluyveromyces marxianus and Lactobacillus rhamnosus: contribution to proteolysis and ACE inhibitory activity.	J Dairy Res	10.1017/s0022029908003877
+12097163	-	2002	N	Secretion of glycosylated alpha-lactalbumin in yeast Pichia pastoris.	J Biochem	10.1093/oxfordjournals.jbchem.a003202
+19650957	-	2009	N	Goat whey fermentation by Kluyveromyces marxianus and Lactobacillus rhamnosus release tryptophan and tryptophan-lactokinin from a cryptic zone of alpha-lactalbu	J Dairy Res	10.1017/s0022029909990136
+27877155	PMC5099233	2016	Y	Weak and Saturable Protein-Surfactant Interactions in the Denaturation of Apo-α-Lactalbumin by Acidic and Lactonic Sophorolipid.	Front Microbiol	10.3389/fmicb.2016.01711
+-	PMC8480826	2021	Y	Milk related excipients in medications: concerns with cow’s milk protein allergy	Ann Med	-
+33035715	-	2021	N	Phos-tag diagonal electrophoresis precisely detects the mobility change of phosphoproteins in Phos-tag SDS-PAGE.	J Proteomics	10.1016/j.jprot.2020.104005
+31602460	-	2020	N	Laboratory Rearing of Culicoides stellifer (Diptera: Ceratopogonidae), a Suspected Vector of Orbiviruses in the United States.	J Med Entomol	10.1093/jme/tjz154
+12594043	-	2003	N	Analysis of the flanking regions of the human alpha-lactalbumin gene responsible for position-effect independent expression.	Gene	10.1016/s0378-1119(02)01214-3
+15936717	-	2005	N	Transfer of an expression YAC into goat fetal fibroblasts by cell fusion for mammary gland bioreactor.	Biochem Biophys Res Commun	10.1016/j.bbrc.2005.05.072
+18680617	-	2008	N	Short-term effects of selenium supplementation of cows' feed on the content and distribution of selenium, copper and zinc in bovine milk, whey and blood plasma.	J Dairy Res	10.1017/s0022029908003324
+10423293	-	1999	N	Analysis of control elements for position-independent expression of human alpha-lactalbumin YAC.	Mol Reprod Dev	10.1002/(sici)1098-2795(199909)54:1<17::aid-mrd3>3.0.co;2-n
+2124489	-	1990	N	Expression and secretion of goat alpha-lactalbumin as an active protein in Saccharomyces cerevisiae.	Biochem Biophys Res Commun	10.1016/s0006-291x(05)80098-1
+26028028	-	2016	N	Targeting of nucleotide-binding proteins by HAMLET--a conserved tumor cell death mechanism.	Oncogene	10.1038/onc.2015.144
+1840525	-	1991	N	Efficient expression of bovine alpha-lactalbumin in Saccharomyces cerevisiae.	Eur J Biochem	10.1111/j.1432-1033.1991.tb16396.x
+-	-	2004	N	Site--specific modification of human #alpha#--lactalbumin yeast artificial chromosome by targeting under different conditions	Ti Erh Chun I Ta Hsueh Hsueh Pao	-
+15861407	-	2005	N	Tryptophan to phenylalanine substitutions allow differentiation of short- and long-range conformational changes during denaturation of goat alpha-lactalbumin.	Proteins	10.1002/prot.20496
+24296294	-	2014	N	Spermine Sepharose as a clustered-charge anion exchange adsorbent.	J Chromatogr A	10.1016/j.chroma.2013.11.030
+21876379	-	2011	N	Submerged monoxenic culture medium development for Heterorhabditis bacteriophora and its symbiotic bacterium Photorhabdus luminescens: protein sources.	J Microbiol Biotechnol	10.4014/jmb.1010.10055
+15763661	-	2005	N	Co-immunoprecipitation of Hsp101 with cytosolic Hsc70.	Plant Physiol Biochem	10.1016/j.plaphy.2004.10.006
+23507167	-	2013	N	Nitrogen sources impact hydrogen production by Escherichia coli using cheese whey as substrate.	N Biotechnol	10.1016/j.nbt.2013.03.002
+7737986	-	1995	N	A Ca(2+)-binding chimera of human lysozyme and bovine alpha-lactalbumin that can form a molten globule.	J Biol Chem	10.1074/jbc.270.18.10514
+26608755	-	2016	N	Screening for antimicrobial and proteolytic activities of lactic acid bacteria isolated from cow, buffalo and goat milk and cheeses marketed in the southeast re	J Dairy Res	10.1017/s0022029915000606
+16135516	-	2005	N	Substrate binding to the molecular chaperone Hsp104 and its regulation by nucleotides.	J Biol Chem	10.1074/jbc.m506149200
+10585196	-	1999	N	An integrated process for biomolecule isolation and purification.	Biotechnol Prog	10.1021/bp990105+
+7763629	-	1993	N	Preparation and characterization of whey protein hydrolysates: applications in industrial whey bioconversion processes.	Enzyme Microb Technol	10.1016/0141-0229(93)90129-p
+15147737	-	2004	N	A Trypanosoma cruzi heat shock protein 40 is able to stimulate the adenosine triphosphate hydrolysis activity of heat shock protein 70 and can substitute for a 	Int J Biochem Cell Biol	10.1016/j.biocel.2004.01.016
+10983842	-	2000	N	Interaction of the human DnaJ homologue, HSJ1b with the 90 kDa heat shock protein, Hsp90.	Life Sci	10.1016/s0024-3205(00)00735-9
+8444150	-	1993	N	Purification and characterization of recombinant human beta 1-4 galactosyltransferase expressed in Saccharomyces cerevisiae.	Eur J Biochem	10.1111/j.1432-1033.1993.tb17640.x
+7756841	-	1995	N	Large-scale production of a soluble human beta-1,4-galactosyltransferase using a Saccharomyces cerevisiae expression system.	Protein Expr Purif	10.1006/prep.1995.1010
+15612537	-	2004	N	[The interaction of the GroEL chaperone with early kinetic intermediates of renaturing proteins inhibits the formation of their native structure].	Biofizika	-
+21883074	-	2009	N	Nutritive composition of Tarag, the traditional naturally-fermented goat milk in China.	Ecol Food Nutr	10.1080/03670240802634209
+-	-	2006	N	Interaction between β-lactoglobulin and lactase and its effect on enzymatic activity	Int Dairy J	10.1016/j.idairyj.2005.10.003
+1400408	-	1992	N	Regulation of Hsp70 function by a eukaryotic DnaJ homolog.	J Biol Chem	10.1016/s0021-9258(19)36777-8
+15801803	-	2005	N	A new integrated membrane filtration and chromatographic device.	Biotechnol Prog	10.1021/bp049801m
+16476172	-	2006	N	Peptides released from acid goat whey by a yeast-lactobacillus association isolated from cheese microflora.	J Dairy Res	10.1017/s0022029905001512
+7757412	-	1994	N	A comparison of proteins and peptides as substrates for microsomal and solubilized oligosaccharyltransferase.	Bioorg Med Chem	10.1016/s0968-0896(00)82065-9
+10619705	-	1999	N	UDP-N-Acetyl-alpha-D-glucosamine as acceptor substrate of beta-1,4-galactosyltransferase. Enzymatic synthesis of UDP-N-acetyllactosamine.	Glycoconj J	10.1023/a:1007039825505
+-	-	-	N	Growth of some lepidopteran cell lines in modified L-15 media and replication of Anagrapha falcifera multiple nucleopolyhedrovirus in the cells		-
+2829884	-	1988	N	Human lysozyme: sequencing of a cDNA, and expression and secretion by Saccharomyces cerevisiae.	Biochem Biophys Res Commun	10.1016/0006-291x(88)90461-5
+9914526	-	1999	N	Binding of heptapeptides or unfolded proteins to the chimeric C-terminal domains of 70-kDa heat shock cognate protein.	Eur J Biochem	10.1046/j.1432-1327.1999.00073.x
+-	-	2001	N	Study on serum-free medium for 5B1 cell growth	Hua Zhong Shi Fan Da Xue Xue Bao Zi Ran 	-
+19003201	PMC3449600	2003	N	Recombinant protein production by the baculovirus-insect cell system in Basal media without serum supplementation.	Cytotechnology	10.1023/b:cyto.0000039894.27256.0f
+-	-	2009	N	Method for improving crisp property of freezing fermented deep-fried twisted dough sticks using transglutaminase		-
+-	-	2012	N	Effect of dairy-based protein sources and temperature on growth, acidification and exopolysaccharide production of Bifidobacterium strains in skim milk	Food Res Int	10.1016/j.foodres.2012.01.004
+7957263	-	1994	N	Regulation of 70-kDa heat-shock-protein ATPase activity and substrate binding by human DnaJ-like proteins, HSJ1a and HSJ1b.	Eur J Biochem	10.1111/j.1432-1033.1994.tb20030.x
+7841493	-	1994	N	Protein hydrolysates and associated bacterial contaminants as oviposition attractants for the mosquito Culex quinquefasciatus.	Med Vet Entomol	10.1111/j.1365-2915.1994.tb00103.x
+3301539	-	1987	N	Nucleotide sequence of the CLS4 (CDC24) gene of Saccharomyces cerevisiae.	Gene	10.1016/0378-1119(87)90354-4
+-	-	1999	N	Process for producing frozen yogurt mix using S. thermophilus starter  culture		-
+8706738	-	1996	N	Recombinant soluble beta-1,4-galactosyltransferases expressed in Saccharomyces cerevisiae. Purification, characterization and comparison with human enzyme.	Eur J Biochem	10.1111/j.1432-1033.1996.0340u.x
+1400484	-	1992	N	The role of the cathepsin D propeptide in sorting to the lysosome.	J Biol Chem	10.1016/s0021-9258(19)36674-8
+23107545	-	2012	N	Impact of antinutritional factors in food proteins on the digestibility of protein and the bioavailability of amino acids and on protein quality.	Br J Nutr	10.1017/s0007114512002371
+10612614	-	1999	N	Oviposition responses of gravid Culex quinquefasciatus and Culex tarsalis to bulrush (Schoenoplectus acutus) infusions.	J Am Mosq Control Assoc	-
+2513590	-	1989	N	Unlearned specific appetite for protein.	Physiol Behav	10.1016/0031-9384(89)90341-7
+2359749	-	1990	N	Olfactory self-selection of protein-containing foods.	Physiol Behav	10.1016/0031-9384(90)90101-9
+2550069	-	1989	N	A novel, arsenite-sensitive E2 of the ubiquitin pathway: purification and properties.	Biochemistry	10.1021/bi00440a047
+739295	-	1978	N	Trichostrongylus colubriformis: cultivation of free-living stages.	J Parasitol	10.2307/3279715
+1915749	-	1991	N	Angiostrongylus costaricensis: culture of third-stage larvae to young adults in a defined medium.	Exp Parasitol	10.1016/0014-4894(91)90107-8
+6365922	-	1984	N	The standardization of a 'spot-test' ELISA for the rapid screening of sera and hybridoma cell products I. The determination of the optimum buffering system.	J Biol Stand	10.1016/s0092-1157(84)80022-0
+5091512	-	1971	N	[Growth increase of a permanent tissue culture cell line cultivated in a lactalbumin-yeast-medium reached by additional supply with nutritive material].	Zentralbl Bakteriol Orig A	-
+241480	-	1975	N	Proteolytic activity of Oidiodendron kalrai.	Can J Microbiol	10.1139/m75-204
+94597	PMC273232	1979	N	Simian rotavirus SA-11 plaque formation in the presence of trypsin.	J Clin Microbiol	10.1128/jcm.10.5.609-614.1979
+-	-	1977	N	Studies on suspension cultures of lymphoid cells infected with Theileria annulata (Dschunkowsky and Luhs 1904)		-
+165734	-	1975	N	Effect of amino acid meals on hepatic alpha-aminoisobutyrate transport and cyclic AMP.	Am J Physiol	10.1152/ajplegacy.1975.228.5.1606
+7365542	-	1980	N	Effects of dietary proteins from a variety of sources on plasma lipids and lipoproteins of rats.	J Nutr	10.1093/jn/110.4.732
+17816	-	1977	N	An analysis of factors influencing the isolation rate of herpes simplex virus.	Microbiol Immunol	10.1111/j.1348-0421.1977.tb00283.x
+5866044	PMC1058381	1965	N	Microbiological aspects in the hydroxylation of estrogens by Fusarium moniliforme.	Appl Microbiol	10.1128/am.13.6.977-984.1965
+### Q4 hits=80
+42893728	-	2026	N	Production of recombinant human proteins in Komagataella phaffii using a sucrose-utilization-based selection marker without antibiotic resistance.	Bioresour Technol	10.1016/j.biortech.2026.136081
+42772382	-	2026	N	Harnessing Yarrowia lipolytica as a platform for animal-free and secretory production of human lactoferrin.	Bioresour Technol	10.1016/j.biortech.2026.135927
+42537911	-	2026	N	Reprogrammed Komagataella phaffii for enhanced secretory expression of human lactoferrin.	J Biotechnol	10.1016/j.jbiotec.2026.07.011
+-	-	2026	N	Precision Fermentation for Animal-Free Dairy Proteins: Microbial Chassis, Molecular Fidelity, Downstream Processing, and the Route to Economic and Regulatory Pa		10.20944/preprints202609.1464.v1
+42629016	-	2026	N	Extracellular expression of recombinant bovine lactoferrin in Pichia pastoris with enhanced activity and a thermostability analysis for food application.	Food Res Int	10.1016/j.foodres.2026.119759
+-	-	2026	N	WITHDRAWN: Process Design, Simulation, and Techno-Economic Evaluation of Recombinant Human Lactoferrin Production via Precision Fermentation in Pichia pastoris 		10.21203/rs.3.rs-8767901/v1
+-	-	2026	N	WITHDRAWN: Process Design, Simulation, and Techno-Economic Evaluation of Recombinant Human Lactoferrin Production via Precision Fermentation in Pichia pastoris 		10.21203/rs.3.rs-8767901/v2
+42463086	-	2026	N	Biosynthesis and functionalization of recombinant bovine lactoferrin: Alginate-mediated stabilization and MTGase-induced gelation for anthocyanin delivery.	Int J Biol Macromol	10.1016/j.ijbiomac.2026.153536
+41735545	PMC12935738	2026	Y	Multistep metabolic engineering of Pichia pastoris for biosynthesis of N‑acetylneuraminic acid.	Appl Microbiol Biotechnol	10.1007/s00253-026-13744-x
+38814097	PMC11215759	2024	N	Characterization of recombinant human lactoferrin expressed in &lt;i&gt;Komagataella phaffii&lt;/i&gt;.	Analyst	10.1039/d4an00333k
+39114650	PMC11303282	2024	Y	Evaluation of the potential food allergy risks of human lactoferrin expressed in &lt;i&gt;Komagataella phaffii&lt;/i&gt;.	Front Immunol	10.3389/fimmu.2024.1380028
+-	-	2024	N	Evaluation of the potential food allergy risks of recombinant human lactoferrin expressed in  <i>Komagataella phaffii</i>		10.1101/2024.01.18.576250
+38276569	PMC10818261	2024	Y	Study of pH and Thermodynamic Parameters via Circular Dichroism Spectroscopy of a Recombinant Human Lactoferrin.	Molecules	10.3390/molecules29020491
+39577844	PMC11630240	2024	Y	Characterization of the exopolysaccharides produced by the industrial yeast Komagataella phaffii.	J Ind Microbiol Biotechnol	10.1093/jimb/kuae046
+39298790	-	2025	N	Structure and function of fermentation-derived bovine lactoferrin produced from <i>Komagataella phaffii</i>.	Biochem Cell Biol	10.1139/bcb-2024-0105
+38880466	-	2024	N	Workshop report: A study roadmap to evaluate the safety of recombinant human lactoferrin expressed in Komagataella phaffii intended as an ingredient in conventi	Food Chem Toxicol	10.1016/j.fct.2024.114817
+-	-	2025	N	Rational modification of the iron ion-binding site to improve the expression of human lactoferrin in Pichia pastoris and validation of the mutant protein functi	Food Bioscience	-
+38647416	-	2024	N	Dose Range-Finding Toxicity Study in Rats With Recombinant Human Lactoferrin Produced in &lt;i&gt;Komagataella phaffii&lt;/i&gt;.	Int J Toxicol	10.1177/10915818241247013
+39064803	PMC11280017	2024	Y	Digestive Profiles of Human Milk, Recombinant Human and Bovine Lactoferrin: Comparing the Retained Intact Protein and Peptide Release.	Nutrients	10.3390/nu16142360
+-	-	2024	N	Dose range-finding toxicity study in rats with recombinant human lactoferrin produced in  <i>Komagataella phaffii</i>		10.1101/2024.01.22.576753
+38221910	PMC10787256	2024	Y	Expression and antimicrobial activity of the recombinant bovine lactoferricin in <i>Pichia pastoris</i>.	Synth Syst Biotechnol	10.1016/j.synbio.2023.12.002
+38339093	PMC10855427	2024	Y	Production of Bioactive Porcine Lactoferrin through a Novel Glucose-Inducible Expression System in <i>Pichia pastoris</i>: Unveiling Antimicrobial and Anticance	Int J Mol Sci	10.3390/ijms25031818
+-	-	2024	N	Characterization of Recombinant Human Lactoferrin Expressed in  <i>Komagataella Phaffii</i>		10.1101/2024.01.09.574900
+33239173	-	2021	N	Design of bovine lactoferricin-derived peptide and its expression and activity in Pichia pastoris.	Biochem Biophys Res Commun	10.1016/j.bbrc.2020.10.098
+31555927	-	2019	N	Functional analysis of recombinant buffalo lactoferrin and monoferric lobes and their cytotoxic effect on buffalo mammary epithelial cells.	Biometals	10.1007/s10534-019-00209-0
+27294912	PMC4926436	2016	Y	High-Level Expression of Recombinant Bovine Lactoferrin in Pichia pastoris with Antimicrobial Activity.	Int J Mol Sci	10.3390/ijms17060902
+33063290	PMC8939434	2021	N	Recombinant human lactoferrin carrying humanized glycosylation exhibits antileukemia selective cytotoxicity, microfilament disruption, cell cycle arrest, and ap	Invest New Drugs	10.1007/s10637-020-01020-2
+25644541	-	2015	N	Molecular cloning, expression and purification of lactoferrin from Tibetan sheep mammary gland using a yeast expression system.	Protein Expr Purif	10.1016/j.pep.2015.01.008
+30382618	-	2019	N	Expression of the hybrid antimicrobial peptide lactoferrin-lysozyme in Pichia pastoris.	Biotechnol Appl Biochem	10.1002/bab.1705
+-	-	2016	N	Expression of recombinant Arabian camel lactoferricin‐related peptide in Pichia pastoris and its antimicrobial identification	Journal of the science of food and agric	-
+30941553	PMC8935999	2019	N	Recombinant human lactoferrin induces apoptosis, disruption of F-actin structure and cell cycle arrest with selective cytotoxicity on human triple negative brea	Apoptosis	10.1007/s10495-019-01539-7
+25655077	-	2016	N	Expression of recombinant Arabian camel lactoferricin-related peptide in Pichia pastoris and its antimicrobial identification.	J Sci Food Agric	10.1002/jsfa.7125
+-	-	2011	N	Surface display of human lactoferrin using a glycosylphosphatidylinositol-anchored protein of Saccharomyces cerevisiae in Pichia pastoris 	Biotechnol Lett	-
+21267758	-	2011	N	Surface display of human lactoferrin using a glycosylphosphatidylinositol-anchored protein of Saccharomyces cerevisiae in Pichia pastoris.	Biotechnol Lett	10.1007/s10529-011-0536-5
+24820230	PMC6275861	2014	Y	The effect of carbohydrate moiety structure on the immunoregulatory activity of lactoferrin in vitro.	Cell Mol Biol Lett	10.2478/s11658-014-0196-2
+31233730	-	2019	N	Quantitative profiling of tear proteome reveals down regulation of zinc alpha-2 glycoprotein in Aspergillus flavus keratitis patients.	Exp Eye Res	10.1016/j.exer.2019.107700
+-	-	2005	N	Expressions of recombined swine lactoferrin and its peptide by pichia		-
+17995845	-	2007	N	Expression and purification of goat lactoferrin from Pichia pastoris expression system.	J Food Sci	10.1111/j.1750-3841.2007.00281.x
+-	-	2009	N	Method for expressing recombinant pig lactoferrin N leaf with pichia thermophilic methanol yeast		-
+23012214	-	2013	N	Differential immunogenicity and allergenicity of native and recombinant human lactoferrins: role of glycosylation.	Eur J Immunol	10.1002/eji.201142345
+19428915	PMC2680785	2009	N	A novel recombinant human lactoferrin augments the BCG vaccine and protects alveolar integrity upon infection with Mycobacterium tuberculosis in mice.	Vaccine	10.1016/j.vaccine.2009.03.036
+22109740	-	2012	N	Expression, purification, and antibacterial activity of bovine lactoferrampin-lactoferricin in Pichia pastoris.	Appl Biochem Biotechnol	10.1007/s12010-011-9455-0
+-	-	2004	N	METHOD FOR PRODUCTION OF HUMAN LACTOFERRIN HAVING BIOLOGICALLY ACTIVITY BY USING METHYLOTROPHIC YEAST, PICHIA PASTORIS, HUMAN LACTOFERRIN MANUFACTURED THEREBY A		-
+33672799	PMC7918739	2021	Y	Inclusion of Oat and Yeast Culture in Sow Gestational and Lactational Diets Alters Immune and Antimicrobial Associated Proteins in Milk.	Animals (Basel)	10.3390/ani11020497
+16810449	-	2006	N	Molecular cloning and expression of yak (Bos grunniens) lactoferrin cDNA in Pichia pastoris.	Biotechnol Lett	10.1007/s10529-006-9092-9
+15340513	-	2004	N	[Producing human lactoferrin by high-density fermentation recombinant Pichia pastoris].	Zhonghua Shi Yan He Lin Chuang Bing Du X	-
+20624450	-	2010	N	Recombinant human lactoferrin: a valuable protein for pharmaceutical products and functional foods.	Biotechnol Adv	10.1016/j.biotechadv.2010.07.002
+28079179	PMC5228129	2017	Y	Transcriptome and network analyses in Saccharomyces cerevisiae reveal that amphotericin B and lactoferrin synergy disrupt metal homeostasis and stress response.	Sci Rep	10.1038/srep40232
+-	-	2001	N	RECOMBINANT YEAST STRAIN FOR EXPRESSING HUMAN LACTOFERRIN, N-LOBE LACTOFERRIN, C-LOBE LACTOFERRIN AND PROCESS FOR PREPARATION RECOMBINANT HUMAN LACTOFERRIN, N-L		-
+-	-	2008	N	Antimicrobial activity of recombinant human lactoferrin from Aspergillus awamori, human milk lactoferrin and their hydrolysates	Eur Food Res Technol	10.1007/s00217-008-0924-9
+12356467	-	2002	N	Expression, purification, and characterization of equine lactoferrin in Pichia pastoris.	Protein Expr Purif	10.1016/s1046-5928(02)00528-4
+20145976	-	2010	N	Contribution of bovine lactoferrin inter-lobe region to iron binding stability and antimicrobial activity against Staphylococcus aureus.	Biometals	10.1007/s10534-010-9300-x
+12071697	-	2002	N	Expression, characterization, and purification of recombinant porcine lactoferrin in Pichia pastoris.	Protein Expr Purif	10.1006/prep.2001.1607
+18365311	PMC2551750	2008	N	Recombinant human lactoferrin expressed in glycoengineered Pichia pastoris: effect of terminal N-acetylneuraminic acid on in vitro secondary humoral immune resp	Glycoconj J	10.1007/s10719-008-9123-y
+18355020	-	2008	N	Recombinant human lactoferrin and iron transport across Caco-2 monolayers: effect of heat treatment on the binding to cells.	J Agric Food Chem	10.1021/jf073071r
+-	-	2006	N	Lactoferrin research, technology and applications	Int Dairy J	10.1016/j.idairyj.2006.06.013
+-	-	2000	N	PRODUCTION METHOD OF RECOMBINANT HUMAN LACTOFERRIN, N-LOBE LACTOFERRIN, AND C-LOBE LACTOFERRIN USING PICHIA PASTORIS LF2 (KFCC 11106), PICHIA PASTORIS NFL3 (KFC		-
+16088216	-	2004	N	Production of recombinant porcine lactoferrin exhibiting antibacterial activity in methylotrophic yeast, Pichia pastoris.	J Mol Microbiol Biotechnol	10.1159/000085787
+17475866	-	2007	N	Human polymorphonuclear leukocytes inhibit Aspergillus fumigatus conidial growth by lactoferrin-mediated iron depletion.	J Immunol	10.4049/jimmunol.178.10.6367
+16244999	-	2005	N	Heterologous expression of biologically active porcine lactoferrin in Pichia pastoris yeast.	Vet Res Commun	10.1007/s11259-005-0086-1
+24338208	-	2014	N	Purification and applications of a lectin from the mushroom Gymnopilus spectabilis.	Appl Biochem Biotechnol	10.1007/s12010-013-0665-5
+-	-	2000	N	Expression of processed recombinant lactoferrin and lactoferrin polypeptide fragments from a fusion product in Aspergillus		-
+23853581	PMC3708856	2013	Y	Targeting iron acquisition blocks infection with the fungal pathogens Aspergillus fumigatus and Fusarium oxysporum.	PLoS Pathog	10.1371/journal.ppat.1003436
+-	-	1999	N	Expression of processed recombinant lactoferrin and lactoferrin polypeptide fragments from a fusion product in aspergillus		-
+-	-	1996	N	EXPRESSION OF PROCESSED RECOMBINANT LACTOFERRIN AND LACTOFERRIN POLYPEPTIDE FRAGMENTS FROM A FUSION PRODUCT IN ASPERGILLUS		-
+-	-	1998	N	EXPRESSION OF PROCESSED RECOMBINANT LACTOFERRIN AND LACTOFERRIN POLYPEPTIDE FRAGMENTS FROM A FUSION PRODUCT IN ASPERGILLUS		-
+9634791	-	1995	N	A system for production of commercial quantities of human lactoferrin: a broad spectrum natural antibiotic.	Biotechnology (N Y)	10.1038/nbt0595-498
+-	-	1996	N	Expression of processed recombinant lactoferrin and lactoferrin polypeptide fragments from a fusion product in Aspergillus		-
+9434181	-	1997	N	Expression and characterization of recombinant murine lactoferrin.	Gene	10.1016/s0378-1119(97)00539-8
+1368268	-	1992	N	Production of biologically active recombinant human lactoferrin in Aspergillus oryzae.	Biotechnology (N Y)	10.1038/nbt0792-784
+11908634	-	2002	N	Effect of lactoferrin on Helicobacter felis induced gastritis.	Biochem Cell Biol	10.1139/o01-205
+10089347	-	1999	N	Structure of recombinant human lactoferrin expressed in Aspergillus awamori.	Acta Crystallogr D Biol Crystallogr	10.1107/s0907444998011226
+18629710	-	2008	N	Fungistatic activity of iron-free bovin lactoferrin against several fungal plant pathogens and antagonists.	Nat Prod Res	10.1080/14786410701650253
+-	-	1998	N	Thermal denaturation of human lactoferrin and its effect on the ability to bind iron.	J Agric Food Chem	10.1021/jf980266d
+1452033	-	1992	N	An inducible expression system for the production of human lactoferrin in Aspergillus nidulans.	Gene	10.1016/0378-1119(92)90054-s
+-	-	2000	N	MASS PRODUCTION METHOD OF HUMAN LACTOFERRICIN USING PICHIA PASTORIS GS 115 (KFCC 11104) TRANSFORMED WITH EXPRESSION VECTOR PPICLFCIN		-
+-	-	1993	N	Expression and characterization of human lactoferrin in yeast Saccharomyces cerevisiae.	J Agric Food Chem	10.1021/jf00034a053
+12173405	-	2002	N	Leishmania chagasi: uptake of iron bound to lactoferrin or transferrin requires an iron reductase.	Exp Parasitol	10.1016/s0014-4894(02)00018-8
+14596620	-	2003	N	All three LDL receptor homology regions of the LDL receptor-related protein bind multiple ligands.	Biochemistry	10.1021/bi034752s
+19798022	PMC2762330	2009	Y	A lectin HPLC method to enrich selectively-glycosylated peptides from complex biological samples.	J Vis Exp	10.3791/1398
+### Q5 hits=616
+42991274	PMC13735683	2026	Y	Precision fermentation of κ-casein using &lt;i&gt;Pichia pastoris&lt;/i&gt;.	Front Bioeng Biotechnol	10.3389/fbioe.2026.1946745
+40610262	-	2025	N	Production of phosphorylated and functional α&lt;sub&gt;s1&lt;/sub&gt;-casein in Escherichia coli.	Trends Biotechnol	10.1016/j.tibtech.2025.05.015
+42190772	-	2026	N	A cold-adapted subtilisin-like protease from Antarctic fungus Pseudogymnoascus sp. OUCMDZ-4032: Identification, characterization, and potential for cold-water d	Int J Biol Macromol	10.1016/j.ijbiomac.2026.152722
+42440191	-	2026	N	From gene to enzyme: Microbial engineering of bovine chymosin for efficient cheese coagulation.	World J Microbiol Biotechnol	10.1007/s11274-026-05128-0
+41731164	-	2026	N	Heterologous expression, purification and functional characterization of recombinant serratiopeptidase from Serratia marcescens AD-W2.	World J Microbiol Biotechnol	10.1007/s11274-026-04795-3
+-	-	2026	N	Peptide-rich and free amino acid-rich casein hydrolysates drive opposite trends in the growth and biogenic amine synthesis of E. coli K88		10.21203/rs.3.rs-11130508/v1
+41544980	-	2026	N	Couple action of some proteases from feather keratin-degrading bacterium B.licheniformis CP-16.	J Biotechnol	10.1016/j.jbiotec.2026.01.006
+42243413	PMC13653890	2026	Y	Heterologous expression and characterization of a thermostable MprT metalloprotease from thermophilic Bacillus subtilis BSP in dual host systems.	Int Microbiol	10.1007/s10123-026-00850-z
+-	-	2026	N	Precision Fermentation for Animal-Free Dairy Proteins: Microbial Chassis, Molecular Fidelity, Downstream Processing, and the Route to Economic and Regulatory Pa		10.20944/preprints202609.1464.v1
+-	-	2026	N	Salt‐tolerant endopeptidases from xerophilic Aspergillus sydowii for potential applications in meat processing	Journal of the Science of Food and Agric	-
+42251872	-	2026	N	A novel circular RNA circPRIM2 revealed by circular RNA profile inhibits mammary epithelial cell proliferation and immune response in bovine mastitis.	Microb Pathog	10.1016/j.micpath.2026.108611
+42343796	-	2026	N	[Enhancing heterologous expression of bovine casein macropeptide &lt;i&gt;via&lt;/i&gt; promoter engineering].	Sheng Wu Gong Cheng Xue Bao	10.13345/j.cjb.250585
+41178225	PMC12580653	2025	Y	Mitotic Phosphorylation of Swi6/HP1 Regulates Its Chromatin Binding and Chromosome Segregation.	FASEB J	10.1096/fj.202500384r
+42163006	PMC13442753	2026	N	Salt-tolerant endopeptidases from xerophilic Aspergillus sydowii for potential applications in meat processing.	J Sci Food Agric	10.1002/jsfa.70741
+43028056	-	2026	N	Heat-Killed &lt;i&gt;Ligilactobacillus salivarius&lt;/i&gt; FFIG56 Modulates Innate Immune Response in Bovine Mammary Epithelial Cells.	Int J Mol Sci	10.3390/ijms27219809
+39316708	-	2024	N	New Insights into the Structure-Activity Relationship of a Novel Immunomodulatory Peptide (HPHPHLSF) from Casein Hydrolyzed by <i>Kluyveromyces marxianus</i> JY	J Agric Food Chem	10.1021/acs.jafc.4c06980
+41330368	PMC12834465	2025	N	Diet modulates Vibrio cholerae colonization and competitive outcomes with the gut microbiota.	Cell Host Microbe	10.1016/j.chom.2025.11.004
+36499360	PMC9739362	2022	Y	Heterologous Expression of Extracellular Proteinase pAsPs of <i>Aspergillus pseudotamarii</i> in <i>Komagataella phaffii</i>.	Int J Mol Sci	10.3390/ijms232315035
+-	-	2025	N	Yeast two-hybrid screening identifies Dad1 as a candidate substrate of Hrr25 kinase in  <i>Saccharomyces cerevisiae</i>		10.1101/2025.07.29.667491
+-	-	2026	N	Yck2 links mitochondrial function and pH homeostasis to cell wall remodeling and antifungal susceptibility in  <i>Cryptococcus neoformans</i>		10.64898/2026.09.02.749035
+42747175	PMC13618443	2026	Y	Combinatorial engineering approaches for improved lipid production in Saccharomyces cerevisiae.	FEMS Yeast Res	10.1093/femsyr/foag047
+42184731	-	2026	N	Protein substitutes used in the treatment of phenylketonuria distinctly modulate gut nutrient absorption and bacterial growth: An in vitro study.	Nutr Res	10.1016/j.nutres.2026.04.013
+-	-	2024	N	Recombinant Protein Glutaminase from Probiotic Escherichia coli Nissle 1917 for Enhancing the Functional Properties of Caseins		10.21203/rs.3.rs-3842060/v1
+40190736	PMC11970705	2025	Y	Redox and solvent-stable alkaline serine protease from &lt;i&gt;Bacillus patagoniensis&lt;/i&gt; DB-5: heterologous expression, properties, and biotechnological	Front Microbiol	10.3389/fmicb.2025.1558419
+40723902	PMC12292773	2025	Y	Heterologous Caseins: The Role of Phosphorylation in Their Functionality and How to Achieve It.	Biomolecules	10.3390/biom15071031
+41886960	-	2026	N	High-yield production of maltooligosaccharide-forming α-amylase in Bacillus subtilis.	Enzyme Microb Technol	10.1016/j.enzmictec.2026.110856
+-	-	2025	N	Improvement in the enzymatic efficiency of a zinc metalloprotease through random mutagenesis approach: Studies on the enzymatic and structural properties of the		10.1101/2025.01.11.632526
+37138331	PMC10155391	2023	Y	Biosensor-guided rapid screening for improved recombinant protein secretion in Pichia pastoris.	Microb Cell Fact	10.1186/s12934-023-02089-z
+42070347	-	2026	N	Exogenous functional protein reprograms mitochondria centered metabolism and protein homeostasis in Zygosaccharomyces rouxii under salt stress.	Talanta	10.1016/j.talanta.2026.129893
+-	-	2025	N	Harnessing the Power of GFP Fusion in E. coli for Well-Optimized Expression and Enhanced Characterization of Human Hepcidin-25		10.21203/rs.3.rs-6555765/v1
+40005674	PMC11857851	2025	Y	Production, Purification, and Biochemical Characterization of a Novel ATP-Dependent Caseinolytic Protease from the Marine Bacterium <i>Cobetia amphilecti</i> KM	Microorganisms	10.3390/microorganisms13020307
+33744413	-	2021	N	Recombinant expression and characterization of Oryctolagus cuniculus chymosin in Komagataella phaffii (Pichia pastoris).	Protein Expr Purif	10.1016/j.pep.2021.105874
+38927247	PMC11200946	2024	Y	Genetically Engineered Goats as Efficient Mammary Gland Bioreactors for Production of Recombinant Human Neutrophil Peptide 1 Using CRISPR/Cas9.	Biology (Basel)	10.3390/biology13060367
+36358248	PMC9687658	2022	Y	Obtaining of Recombinant Camel Chymosin and Testing Its Milk-Clotting Activity on Cow's, Goat's, Ewes', Camel's and Mare's Milk.	Biology (Basel)	10.3390/biology11111545
+38244731	-	2024	N	Improved production of alkaline and solvent-stable proteases from a halotolerant Exiguobacterium isolate through heterologous expression.	Int J Biol Macromol	10.1016/j.ijbiomac.2024.129507
+37979156	PMC10699747	2023	Y	Parallel Nonfunctionalization of CK1δ/ε Kinase Ohnologs Following a Whole-Genome Duplication Event.	Mol Biol Evol	10.1093/molbev/msad246
+38722857	PMC11081392	2024	Y	Serine protease Rv2569c facilitates transmission of Mycobacterium tuberculosis via disrupting the epithelial barrier by cleaving E-cadherin.	PLoS Pathog	10.1371/journal.ppat.1012214
+-	-	2023	N	Antibacterial function and mechanism of peptide β-casein 65 action in breast milk		10.22541/au.168180484.43903572/v1
+-	-	2023	N	Parallel nonfunctionalization of CK1δ/ε kinase ohnologs following a whole-genome duplication event		10.1101/2023.10.02.560513
+40190341	PMC11968763	2025	Y	Soy-based purified ingredient diet affects mouse gut permeability and the microbiome in fragile X mice.	Front Mol Neurosci	10.3389/fnmol.2025.1520211
+40824714	PMC12486808	2025	Y	A screen to identify antifungal antagonists reveals a variety of pharmacotherapies that induce echinocandin tolerance in &lt;i&gt;Candida albicans&lt;/i&gt;.	Antimicrob Agents Chemother	10.1128/aac.00484-25
+34862933	-	2021	N	Small ruminants milk from Tunisian oasis: physicochemical characteristics, mineral contents, and microbiological quality.	Trop Anim Health Prod	10.1007/s11250-021-03000-x
+38266845	-	2024	N	Structural and enzymatic characterization of a novel metallo-serine keratinase KerJY-23.	Int J Biol Macromol	10.1016/j.ijbiomac.2024.129659
+37738679	PMC11025384	2023	Y	High-throughput screening of the Saccharomyces cerevisiae genome for 2-amino-3-methylimidazo [4,5-f] quinoline resistance identifies colon cancer-associated gen	G3 (Bethesda)	10.1093/g3journal/jkad219
+34786512	PMC8578020	2021	Y	Using recombinant adhesive proteins as durable and green flame-retardant coatings.	Synth Syst Biotechnol	10.1016/j.synbio.2021.10.005
+32382667	PMC7201137	2019	Y	<i>Saccharomyces cerevisiae</i> polo-like kinase, Cdc5 exhibits ATP-dependent Mg<sup>2+</sup>-enhanced kinase activity <i>in vitro</i>.	Heliyon	10.1016/j.heliyon.2019.e03050
+31555927	-	2019	N	Functional analysis of recombinant buffalo lactoferrin and monoferric lobes and their cytotoxic effect on buffalo mammary epithelial cells.	Biometals	10.1007/s10534-019-00209-0
+-	-	2022	N	High-Throughput Screening of the  <i>Saccharomyces cerevisiae</i>  Genome for 2-Amino-3-Methylimidazo [4,5-  <i>f</i>  ] Quinoline Resistance Identifies Colon C		10.1101/2022.10.26.513854
+34723145	PMC8553427	2021	Y	The <i>Arabidopsis</i> MYB5 transcription factor interacts with CASEIN KINASE2 BETA3 subunit in a yeast two-hybrid system.	MicroPubl Biol	10.17912/micropub.biology.000486
+-	-	2020	N	Cloning and expression of maize transglutaminase gene in Escherichia coli and its action over dairy proteins	Journal of food processing and preservat	10.1111/jfpp.14756
+-	-	2021	N	Highly-Expressed Aspartic Protease from Aspergillus Fumigatus-Mediated Enzymolysis of Silkworm (Bombyx Mori) Pupae Protein		10.21203/rs.3.rs-945704/v1
+37513024	PMC10383082	2023	Y	Purification and Characterization of a DegP-Type Protease from the Marine Bacterium <i>Cobetia amphilecti</i> KMM 296.	Microorganisms	10.3390/microorganisms11071852
+37885173	-	2023	N	Efficient Protein Expression and Biosynthetic Gene Cluster Regulation in <i>Bacillus subtilis</i> Driven by a T7-BOOST System.	ACS Synth Biol	10.1021/acssynbio.3c00331
+29339117	-	2018	N	Expression, activation and processing of a novel plant milk-clotting aspartic protease in Pichia pastoris.	J Biotechnol	10.1016/j.jbiotec.2018.01.006
+33069821	-	2020	N	The first report on molecular cloning, functional expression, purification, and statistical optimization of Escherichia coli-derived recombinant Ficin from Iran	Int J Biol Macromol	10.1016/j.ijbiomac.2020.10.050
+27687229	-	2016	N	Functional analysis of recombinant human and Yarrowia lipolytica O-GlcNAc transferases expressed in Saccharomyces cerevisiae.	J Microbiol	10.1007/s12275-016-6401-4
+-	-	2025	N	A screen to identify antifungal antagonists reveals a variety of pharmacotherapies induce echinocandin tolerance in  <i>Candida albicans</i>		10.1101/2025.02.18.638903
+31742396	-	2019	N	High-Level Expression and Substrate-Binding Region Modification of a Novel BL312 Milk-Clotting Enzyme To Enhance the Ratio of Milk-Clotting Activity to Proteoly	J Agric Food Chem	10.1021/acs.jafc.9b06114
+31648178	-	2020	N	Biotechnological potential of a cysteine protease (CpCP3) from Calotropis procera latex for cheesemaking.	Food Chem	10.1016/j.foodchem.2019.125574
+37661213	PMC10689711	2023	N	Expression, purification, and enzymatic characterization of an extracellular protease from Halococcus salifodinae.	Braz J Microbiol	10.1007/s42770-023-01114-y
+37622375	-	2023	N	[Production and characterization of a novel aminopeptidase A from <i>Lactococcus lactis</i>].	Sheng Wu Gong Cheng Xue Bao	10.13345/j.cjb.230296
+36258027	PMC9579169	2022	Y	Maternal supplementation with a casein hydrolysate and yeast beta-glucan from late gestation through lactation improves gastrointestinal health of piglets at we	Sci Rep	10.1038/s41598-022-20723-5
+34290949	PMC8257800	2021	N	Functional expression and characterization of a novel aminopeptidase B from <i>Aspergillus niger</i> in <i>Pichia pastoris</i>.	3 Biotech	10.1007/s13205-021-02915-4
+29559334	-	2018	N	Facile preparation of highly active casein kinase 1 using Escherichia coli constitutively expressing lambda phosphatase.	Anal Biochem	10.1016/j.ab.2018.03.015
+-	-	2024	N	Using glycerol-inducible expression system to overexpressed maltooligosaccharide-forming α-amylase in Bacillus subtilis		10.21203/rs.3.rs-4154544/v1
+32958557	PMC7705307	2020	N	Pex3 confines pexophagy receptor activity of Atg36 to peroxisomes by regulating Hrr25-mediated phosphorylation and proteasomal degradation.	J Biol Chem	10.1074/jbc.ra120.013565
+32078713	-	2020	N	Leptospira interrogans Bat proteins impair host hemostasis by fibrinogen cleavage and platelet aggregation inhibition.	Med Microbiol Immunol	10.1007/s00430-020-00664-4
+33218686	PMC7785591	2021	N	Cu/Zn Superoxide Dismutase (Sod1) regulates the canonical Wnt signaling pathway.	Biochem Biophys Res Commun	10.1016/j.bbrc.2020.11.011
+27834677	PMC5159506	2016	N	Phosphorylation of Dgk1 Diacylglycerol Kinase by Casein Kinase II Regulates Phosphatidic Acid Production in Saccharomyces cerevisiae.	J Biol Chem	10.1074/jbc.m116.763839
+32527522	-	2020	N	Characterization and rational design for substrate specificity of a prolyl endopeptidase from Stenotrophomonas maltophilia.	Enzyme Microb Technol	10.1016/j.enzmictec.2020.109548
+36445156	PMC9769915	2022	N	Modified Drug-Susceptibility Testing and Screening Culture Agar for Colistin-Susceptible <i>Enterobacteriaceae</i> Isolates Harboring a Mobilized Colistin Resis	J Clin Microbiol	10.1128/jcm.01399-22
+-	-	2022	N	Maternal Supplementation With a Casein Hydrolysate and Yeast Beta-glucan From Late Gestation Through Lactation Improves Gastrointestinal Health of Piglets at We		10.21203/rs.3.rs-1299149/v1
+35102180	PMC8803954	2022	Y	Casein kinases are required for the stability of the glucose-sensing receptor Rgt2 in yeast.	Sci Rep	10.1038/s41598-022-05569-1
+33450209	-	2021	N	Lipopolysaccharide and lipoteichoic acid influence milk production ability via different early responses in bovine mammary epithelial cells.	Exp Cell Res	10.1016/j.yexcr.2021.112472
+28561787	PMC6152712	2017	Y	Production of Recombinant Antimicrobial Polymeric Protein Beta Casein-E 50-52 and Its Antimicrobial Synergistic Effects Assessment with Thymol.	Molecules	10.3390/molecules22060822
+25837439	-	2015	N	Expression and characterization of camel chymosin in Pichia pastoris.	Protein Expr Purif	10.1016/j.pep.2015.03.012
+38983617	PMC11230140	2023	Y	Effect of yeast probiotic <i>Saccharomyces boulardii</i> cell wall extract on <i>Aspergillus fumigatus</i> allergenicity in A549 cells.	Curr Med Mycol	10.22034/cmm.2024.345134.1463
+35205898	PMC8878131	2022	Y	Casein Kinase 2 Mediates Degradation of Transcription Factor Pcf1 during Appressorium Formation in the Rice Blast Fungus.	J Fungi (Basel)	10.3390/jof8020144
+23296916	-	2013	N	Expression of soluble recombinant transglutaminase from Zea mays in Pichia pastoris.	World J Microbiol Biotechnol	10.1007/s11274-012-1250-8
+36060777	PMC9428516	2022	Y	Antibacterial properties of lactoferrin: A bibliometric analysis from 2000 to early 2022.	Front Microbiol	10.3389/fmicb.2022.947102
+32574185	PMC7310833	2020	Y	Structural and biochemical characterization of a novel thermophilic Coh01147 protease.	PLoS One	10.1371/journal.pone.0234958
+22534294	-	2012	N	Comparison of alpha-factor preprosequence and a classical mammalian signal peptide for secretion of recombinant xylanase xynB from yeast Pichia pastoris.	J Microbiol Biotechnol	10.4014/jmb.1109.09031
+34142216	-	2021	N	Overexpression of ZmDHN11 could enhance transgenic yeast and tobacco tolerance to osmotic stress.	Plant Cell Rep	10.1007/s00299-021-02734-0
+32317286	PMC7268985	2020	N	Mitochondrial Biogenesis Is Positively Regulated by Casein Kinase I Hrr25 Through Phosphorylation of Puf3 in <i>Saccharomyces cerevisiae</i>.	Genetics	10.1534/genetics.120.303191
+34466681	PMC8379141	2021	Y	Low crude protein diets supplemented with casein hydrolysate enhance the intestinal barrier function and decrease the pro-inflammatory cytokine expression in th	Anim Nutr	10.1016/j.aninu.2021.03.003
+31273480	-	2019	N	Coping with exposure to hypoxia: modifications in stress parameters in gilthead seabream (Sparus aurata) fed spirulina (Arthrospira platensis) and brewer's yeas	Fish Physiol Biochem	10.1007/s10695-019-00677-8
+32206493	PMC7058734	2020	N	In vitro synergistic effects of three enzymes from <i>Bacillus subtilis</i> CH-1 on keratin decomposition.	3 Biotech	10.1007/s13205-020-2143-4
+-	-	2021	N	Overexpression of ZmDHN11 could enhance transgenic yeast and tobacco tolerance to osmotic stress		10.21203/rs.3.rs-324813/v1
+33408708	PMC7779483	2020	Y	Extracellular Production, Characterization, and Engineering of a Polyextremotolerant Subtilisin-Like Protease From Feather-Degrading <i>Thermoactinomyces vulgar	Front Microbiol	10.3389/fmicb.2020.605771
+33770243	PMC8053189	2021	Y	Two-step functional screen on multiple proteinaceous substrates reveals temperature-robust proteases with a broad-substrate range.	Appl Microbiol Biotechnol	10.1007/s00253-021-11235-9
+30658748	-	2019	N	High-level expression and characterization of a novel aspartic protease from Talaromyces leycettanus JCM12802 and its potential application in juice clarificati	Food Chem	10.1016/j.foodchem.2018.12.096
+32274531	-	2020	N	Characterization of an Intracellular Alkaline Serine Protease from Bacillus velezensis SW5 with Fibrinolytic Activity.	Curr Microbiol	10.1007/s00284-020-01977-6
+-	-	2017	N	Proteolytic activity of recombinant DegP from Chromohalobacter salexigens BKL5	Electron J Biotechnol	10.1016/j.ejbt.2017.06.004
+32115900	PMC7137806	2020	Y	Characterisation of a novel cold-adapted calcium-activated transglutaminase: implications for medicine and food processing.	FEBS Open Bio	10.1002/2211-5463.12826
+29271174	-	2017	N	[Expression and characterization of a keratinase encoding gene gm2886 in Streptomyces pactum ACT12 strain].	Sheng Wu Gong Cheng Xue Bao	10.13345/j.cjb.170081
+32058021	-	2020	N	Characterization and pathogenicity of extracellular serine protease MAP3292c from Mycobacterium avium subsp. paratuberculosis.	Microb Pathog	10.1016/j.micpath.2020.104055
+26437645	-	2015	N	Molecular cloning and characterization of a Spirometra erinacei casein kinase I.	Parasitol Res	10.1007/s00436-015-4758-7
+34945499	PMC8701012	2021	Y	Characterization of a Novel Aspartic Protease from <i>Rhizomucor miehei</i> Expressed in <i>Aspergillus niger</i> and Its Application in Production of ACE-Inhib	Foods	10.3390/foods10122949
+28098337	-	2017	N	Characterisation of the enzymatic properties of MpAPr1, an aspartic protease secreted by the wine yeast Metschnikowia pulcherrima.	J Sci Food Agric	10.1002/jsfa.8217
+29934784	-	2018	N	Cloning, expression, and characterization of an alkaline protease, AprV, from Vibrio sp. DA1-1.	Bioprocess Biosyst Eng	10.1007/s00449-018-1972-6
+28231319	PMC5322917	2017	Y	Development of a keratinase activity assay using recombinant chicken feather keratin substrates.	PLoS One	10.1371/journal.pone.0172712
+31624591	PMC6785881	2019	Y	Low-protein diets supplemented with casein hydrolysate favor the microbiota and enhance the mucosal humoral immunity in the colon of pigs.	J Anim Sci Biotechnol	10.1186/s40104-019-0387-9
+30758279	-	2019	N	The impact of organic vs. inorganic selenium on dairy goat productivity and expression of selected genes in milk somatic cells.	J Dairy Res	10.1017/s0022029919000037
+29087456	PMC5827616	2017	N	Yeast phospholipase C is required for stability of casein kinase I Yck2p and expression of hexose transporters.	FEMS Microbiol Lett	10.1093/femsle/fnx227
+16078069	-	2005	N	Production of human caseinomacropeptide in recombinant Saccharomyces cerevisiae and Pichia pastoris.	J Ind Microbiol Biotechnol	10.1007/s10295-005-0010-2
+24878753	-	2014	N	Optimization of expression of untagged and histidine-tagged human recombinant thrombin precursors in Escherichia coli.	Appl Microbiol Biotechnol	10.1007/s00253-014-5840-2
+24338735	-	2014	N	Revisiting rubisco as a protein substrate for insect midgut proteases.	Arch Insect Biochem Physiol	10.1002/arch.21140
+31434322	PMC6789578	2019	Y	Sea Bass Immunization to Downsize the Betanodavirus Protein Displayed in the Surface of Inactivated Repair-Less Bacteria.	Vaccines (Basel)	10.3390/vaccines7030094
+30901668	-	2019	N	NDRG1 negatively regulates proliferation and Milk bio-synthesis of bovine epithelial cells via the mTOR signaling pathway.	Res Vet Sci	10.1016/j.rvsc.2019.03.007
+-	-	2010	N	Codon optimization of the calf prochymosin gene and its expression in Kluyveromyces lactis	World J Microbiol Biotechnol	10.1007/s11274-009-0249-2
+27864058	-	2017	N	A novel alkaline surfactant-stable keratinase with superior feather-degrading potential based on library screening strategy.	Int J Biol Macromol	10.1016/j.ijbiomac.2016.11.045
+27428365	-	2016	N	Arabidopsis thaliana MRP1 (AtABCC1) nucleotide binding domain contributes to arsenic stress tolerance with serine triad phosphorylation.	Plant Physiol Biochem	10.1016/j.plaphy.2016.07.005
+32449834	PMC7294778	2020	Y	TORC1 signaling regulates cytoplasmic pH through Sir2 in yeast.	Aging Cell	10.1111/acel.13151
+23354502	-	2013	N	Expression of the acid protease gene from Saccharomycopsis fibuligera in the marine-derived Yarrowia lipolytica for both milk clotting and single cell protein p	Appl Biochem Biotechnol	10.1007/s12010-013-0118-1
+27044741	PMC4859001	2016	N	Phosphorylation of Yeast Pah1 Phosphatidate Phosphatase by Casein Kinase II Regulates Its Function in Lipid Metabolism.	J Biol Chem	10.1074/jbc.m116.726588
+15464600	-	2004	N	Molecular cloning and expression in yeast of caprine prochymosin.	J Biotechnol	10.1016/j.jbiotec.2004.06.002
+23677580	-	2013	N	Heterologous expression of an aspartic protease gene from biocontrol fungus Trichoderma asperellum in Pichia pastoris.	World J Microbiol Biotechnol	10.1007/s11274-013-1373-6
+30771271	-	2019	N	A novel long non-coding RNA regulates the immune response in MAC-T cells and contributes to bovine mastitis.	FEBS J	10.1111/febs.14783
+26419902	-	2015	N	Expression of serine proteinase P186 of Arthrobotrys oligospora and analysis of its nematode-degrading activity.	Antonie Van Leeuwenhoek	10.1007/s10482-015-0595-z
+22806030	-	2012	N	Constitutive expression, purification and characterization of bovine prochymosin in Pichia pastoris GS115.	World J Microbiol Biotechnol	10.1007/s11274-012-1012-7
+28605601	-	2017	N	A New Sugarcane Cystatin Strongly Binds to Dental Enamel and Reduces Erosion.	J Dent Res	10.1177/0022034517712981
+28432100	PMC5478977	2017	N	Casein Kinase I Isoform Hrr25 Is a Negative Regulator of Haa1 in the Weak Acid Stress Response Pathway in Saccharomyces cerevisiae.	Appl Environ Microbiol	10.1128/aem.00672-17
