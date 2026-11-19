@@ -90,26 +90,37 @@ def load_uniprot(acc):
 
 
 def spec_from_curated(row):
+    """Build a ProteinSpec using the audited UniProt parser.
+
+    Counting raw feature lines overstates secretory load in four distinct
+    ways (lysine glycation read as sequons, one line per glycoform, signal
+    peptides annotated "Not cleaved" treated as cleaved, and inter-chain
+    disulfides double-counted as point features on each partner). All four
+    are handled in src/uniprot_features.py, which carries a regression test
+    per failure mode.
+    """
+    from uniprot_features import annotation
+
+    a = annotation(row["accession"])
     d = load_uniprot(row["accession"])
     seq = d["sequence"]["value"]
-    feats = d.get("features", [])
-    sig = [f for f in feats if f["type"] == "Signal"]
-    sp_end = sig[0]["location"]["end"]["value"] if sig else 0
     secreted = row["secreted"].strip().lower() == "yes"
     req = row["ptm_required"]
-    n_ss = sum(1 for f in feats if f["type"] == "Disulfide bond")
-    n_phos = sum(1 for f in feats if f["type"] == "Modified residue"
-                 and "Phospho" in (f.get("description") or ""))
-    n_oglyc = sum(1 for f in feats if f["type"] == "Glycosylation"
-                  and (f.get("description") or "").startswith("O-linked"))
-    # only count a PTM as required if the curation says so
-    if "phosphorylation" not in req:
-        n_phos = 0
-    if "O-glycosylation" not in req:
-        n_oglyc = 0
+
+    # protein_cost takes the full precursor plus the index of the last
+    # residue removed, so express the audited mature range that way.
+    sp_end = a["mature_start"] - 1
+    if a["mature_end"] != a["length_precursor"]:
+        # a C-terminal propeptide is also removed; trim the precursor so the
+        # mature chain is exactly what UniProt says it is
+        seq = seq[:a["mature_end"]]
+
+    n_phos = a["n_phosphosite"] if "phosphorylation" in req else 0
+    n_oglyc = a["n_o_glyc_site"] if "O-glycosylation" in req else 0
     return ProteinSpec(
         name=row["name"], sequence=seq, signal_end=sp_end,
-        n_disulfide=n_ss, n_o_glyc_site=n_oglyc, n_phosphosite=n_phos,
+        n_disulfide=a["n_disulfide"], n_o_glyc_site=n_oglyc,
+        n_phosphosite=n_phos, n_sequon=a["n_glyc_site"],
         n_haem=int(row["haem"]), accession=row["accession"],
         secreted=secreted, notes=row["category"])
 
