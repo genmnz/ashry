@@ -11,6 +11,16 @@ That is a positive finding in a thesis whose other sequence-feature results are
 null, so it gets audited rather than adopted. This script runs the tests the
 original analysis could not run on itself.
 
+OUTCOME: the finding was retracted. This script's structural test showed the
+correlation could not be distinguished from a two-cluster contrast, and a
+parallel provenance audit of the primary sources found three faults in the
+titres -- an intracellular yield recorded as a secretion titre, an orthologue-
+pooling join that let bovine entries borrow human numbers, and a carrier
+construct counted as its passenger. Corrected, the association is rho = -0.483,
+p = 0.117, with nothing surviving FDR correction. The script is kept because the
+comparison between the published figure and the corrected one is the evidence
+for Appendix F, and because the tests themselves are the reusable part.
+
 Three of them matter.
 
   1. Leave-one-out cannot detect a two-cluster artefact. The panel contains two

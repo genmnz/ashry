@@ -32,6 +32,19 @@ FRAGMENT_PATTERNS = (
     r"\bFab\b",
     r"\bRBD\b",
     r"-derived",
+    # A carrier protein is a fusion by another name, and this one mattered. The
+    # corpus's highest-titre lipase record, 10 g/L, is Candida antarctica lipase
+    # B expressed on a *Trichoderma reesei* cellobiohydrolase I carrier: most of
+    # the reported mass is the carrier, and the carrier was chosen because it
+    # secretes well. It passed the filter because the record says "carrier"
+    # rather than "fusion". A parallel analysis hit the same record from the
+    # other direction, where a name match made the carrier the product and
+    # credited cellobiohydrolase I with the whole 10 g/L.
+    r"\bcarrier\b",
+    r"\bchimera\b",
+    r"\bchimaer",
+    r"-tag\b",
+    r"\bC-tag\b",
 )
 
 _FRAGMENT_RE = re.compile("|".join(FRAGMENT_PATTERNS), re.I)

@@ -406,17 +406,8 @@ food-protein subset, tested separately</a></li>
 </ul></li>
 <li><a href="#all-of-the-models-skill-is-the-process-term" id="toc-all-of-the-models-skill-is-the-process-term">6.4 All of the
 model’s skill is the process term</a></li>
-<li><a href="#the-one-feature-that-does-carry-a-signal-and-how-far-it-can-be-pushed" id="toc-the-one-feature-that-does-carry-a-signal-and-how-far-it-can-be-pushed">6.5
-The one feature that does carry a signal, and how far it can be
-pushed</a>
-<ul>
-<li><a href="#where-the-hypothesis-came-from" id="toc-where-the-hypothesis-came-from">6.5.1 Where the hypothesis came
-from</a></li>
-<li><a href="#what-the-audit-found" id="toc-what-the-audit-found">6.5.2
-What the audit found</a></li>
-<li><a href="#what-can-honestly-be-claimed" id="toc-what-can-honestly-be-claimed">6.5.3 What can honestly be
-claimed</a></li>
-</ul></li>
+<li><a href="#the-disorder-result-and-why-it-is-not-reported-as-a-finding" id="toc-the-disorder-result-and-why-it-is-not-reported-as-a-finding">6.5
+The disorder result, and why it is not reported as a finding</a></li>
 <li><a href="#what-the-variance-is-actually-in" id="toc-what-the-variance-is-actually-in">6.6 What the variance is
 actually in</a></li>
 <li><a href="#consequences" id="toc-consequences">6.7
@@ -479,6 +470,17 @@ Codon-optimised constructs</a></li>
 tables</a></li>
 <li><a href="#appendix-d-reproducing-this-thesis" id="toc-appendix-d-reproducing-this-thesis">Appendix D — Reproducing
 this thesis</a></li>
+<li><a href="#appendix-f-how-a-corrected-fdr-controlled-correlation-turned-out-to-be-an-artefact" id="toc-appendix-f-how-a-corrected-fdr-controlled-correlation-turned-out-to-be-an-artefact">Appendix
+F — How a corrected, FDR-controlled correlation turned out to be an
+artefact</a>
+<ul>
+<li><a href="#f.1-the-finding-as-reported" id="toc-f.1-the-finding-as-reported">F.1 The finding as
+reported</a></li>
+<li><a href="#f.2-what-the-audit-found" id="toc-f.2-what-the-audit-found">F.2 What the audit found</a></li>
+<li><a href="#f.3-the-corrected-result" id="toc-f.3-the-corrected-result">F.3 The corrected result</a></li>
+<li><a href="#f.4-what-this-is-evidence-of" id="toc-f.4-what-this-is-evidence-of">F.4 What this is evidence
+of</a></li>
+</ul></li>
 <li><a href="#appendix-e-outstanding-tasks-before-submission" id="toc-appendix-e-outstanding-tasks-before-submission">Appendix E —
 Outstanding tasks before submission</a></li>
 </ul></li>
@@ -581,21 +583,24 @@ record is overwhelmingly in the experiment rather than in the protein:
 <strong>published titres are largely a record of how much engineering
 each protein has received rather than of how hard each protein
 is.</strong></p>
-<p>One property of the molecule does survive this scrutiny, and it was
-found by an independent analysis of the same literature rather than by
-the pre-specified search. The <strong>mean</strong> predicted disorder
-of the chain — not the thresholded disordered fraction, which is the
-statistic this thesis had pre-specified and which discards the gradient
-among globular proteins — is negatively associated with how much of its
-ceiling a protein reaches, across dairy, egg and haem proteins in <em>K.
-phaffii</em>, at ρ between −0.43 and −0.95 depending on which records
-are admitted. It replicates in direction on two independently curated
-rosters, survives partialling out the process term, and does not extend
-to food enzymes, engineered sweet proteins or human therapeutics. It
-also inverts the usual reading: a disordered protein is metabolically
-<em>cheap</em>, so if disorder tracks the gap it is tracking the
-difficulty of keeping a chain intact in a protease-rich supernatant
-rather than the difficulty of folding it.</p>
+<p>Two candidate positive findings arose during this work and neither
+survived audit, which is reported rather than concealed. The second is
+documented at length in Appendix F because of what it demonstrates: a
+correlation between mean predicted disorder and ceiling utilisation,
+reported at ρ = −0.833 with a permutation p of 0.00025, FDR control
+across 32 features and a leave-one-out check that held throughout, fell
+to ρ = −0.483, p = 0.117 once three faults in the underlying titre
+records were corrected — an intracellular yield recorded as a secretion
+titre, a best-titre join that pooled orthologues so that one protein
+borrowed another species’ number, and a carrier construct counted as its
+passenger. <strong>Four statistical controls that are normally treated
+as sufficient all passed on data that did not mean what its column
+headings said.</strong> The direction of the disorder effect is
+consistent across every fit and the thesis treats it as an untested
+hypothesis, naming the measurement that would decide it: titres for
+α-S1-, α-S2- and β-casein, the three most disordered proteins in the
+target class and the three with no published number in any microbial
+host.</p>
 <p>The practical consequences are developed in two further chapters:
 protein-specific metabolic engineering targets obtained by flux scanning
 with enforced objective function, and a techno-economic model in which
@@ -2835,21 +2840,23 @@ tracks</h1>
 between what metabolism permits and what has been achieved, and showed
 that the bound is some thirty times less dispersed than the outcome.
 This chapter asks what the outcome <em>is</em> explained by.</p>
-<p>Of the seven features specified in advance, none is associated with
-titre, and the model containing them performs worse than a model
-containing only an indicator of how the fermentation was run. That is
-the chapter’s main result and §§6.2–6.4 establish it.</p>
-<p>One feature not among the seven does carry a signal, and §6.5 reports
-it with the hedges the evidence requires: the <strong>mean</strong>
-predicted disorder score, within a panel restricted to dairy, egg and
-haem proteins, is negatively associated with how much of its ceiling a
-protein reaches. The hypothesis came from an independent analysis of the
-same literature rather than from this one, which is the only reason it
-can be reported at all after seven pre-specified tests have failed.</p>
-<p>An earlier draft reported a different positive result — disulfide
-bond density — and §6.2.1 records in full how it was lost, because the
-way it was lost is what licenses the scepticism applied to the new
-one.</p>
+<p>The answer is that nothing about the protein explains it. None of the
+seven features specified in advance is associated with titre, and the
+model containing them performs worse than a model containing only an
+indicator of how the fermentation was run. That is the chapter’s result,
+and §§6.2–6.4 establish it.</p>
+<p>Two candidate positive findings arose during this work and neither
+survived. Disulfide bond density was reported in an earlier draft at ρ =
+−0.438, p = 0.036, and §6.2.1 records how re-reading the disulfide
+counts from the UniProt feature tables removed it. Mean predicted
+disorder was reported at ρ = −0.833 by an independent analysis of the
+same literature, and §6.5 records how it fell to ρ = −0.483, p = 0.117
+once three faults in the underlying titre records were corrected. Both
+episodes are documented at length rather than quietly dropped, because
+between them they are the most useful methodological content in the
+thesis: <strong>Appendix F</strong> sets out the second as a worked
+example of how a well-controlled, FDR-corrected, leave-one-out-validated
+correlation can still be an artefact of three joins.</p>
 <p>The design was fixed before the analysis ran and is stated in §3.10.
 It is repeated in outline here because the credibility of a small-sample
 result depends entirely on whether the analyst could have fished.</p>
@@ -3250,196 +3257,62 @@ pre-specified design. A residual standard deviation of 0.76 in log₁₀,
 after the process term is accounted for, means a typical protein’s
 reported titre remains uncertain by nearly a factor of six for reasons
 the protein does not explain.</p>
-<h2 id="the-one-feature-that-does-carry-a-signal-and-how-far-it-can-be-pushed">6.5
-The one feature that does carry a signal, and how far it can be
-pushed</h2>
-<h3 id="where-the-hypothesis-came-from">6.5.1 Where the hypothesis came
-from</h3>
-<p>A parallel analysis of the same literature, working from a separately
-curated panel of dairy, egg and haem proteins and a separately computed
-set of ceilings, tested 32 sequence features against ceiling utilisation
-and found one surviving Benjamini–Hochberg correction: the <strong>mean
-metapredict disorder score</strong>, at ρ = −0.833, permutation p =
-0.00025, q = 0.008, with leave-one-out holding ρ between −0.79 and
-−0.93.</p>
-<p>This thesis’s own pre-specified disorder feature returned nothing
-(§6.3.2), and the reason is a choice of statistic rather than a
-disagreement about the data. The pre-specified feature was the
-<em>fraction of residues scoring above 0.5</em>, a threshold. That
-fraction is identically zero for every globular protein in the panel, so
-it collapses twelve of fourteen proteins to a single tied value and
-discards the entire gradient among them. The mean score keeps it. On the
-external panel the two statistics give ρ = −0.72 and ρ = −0.31
-respectively, from the same predictions of the same predictor.
+<h2 id="the-disorder-result-and-why-it-is-not-reported-as-a-finding">6.5
+The disorder result, and why it is not reported as a finding</h2>
+<p>Of all the features that could have explained the gap, predicted
+intrinsic disorder is the one with a mechanism waiting for it: the
+caseins are disordered, the caseins are hard, and <em>K. phaffii</em>
+secretes into a protease-rich supernatant where a chain with no folded
+core has nothing to protect it. It very nearly became this thesis’s
+positive result, and the reason it did not is worth more than the result
+would have been.</p>
+<p>An independent analysis of the same literature, working from a
+separately curated panel of dairy, egg and haem proteins with separately
+computed ceilings, tested 32 features against ceiling utilisation and
+found one surviving Benjamini–Hochberg correction: the
+<strong>mean</strong> metapredict disorder score, at ρ = −0.833,
+permutation p = 0.00025, q = 0.008, with leave-one-out holding ρ between
+−0.79 and −0.93. On its face that is better evidence than anything else
+in this chapter.</p>
+<p>This thesis’s own pre-specified disorder feature had returned
+nothing, and the first thing the audit established is that this was a
+real error on this side. The pre-specified feature was the <em>fraction
+of residues scoring above 0.5</em>, a threshold that is identically zero
+for every globular protein in the panel and therefore collapses twelve
+of fourteen proteins to one tied value. The mean score keeps the
+gradient the fraction discards; from the same predictions of the same
+predictor, the two statistics give ρ = −0.72 and ρ = −0.31.
 <strong>Pre-specifying a feature does not make it the right summary of
-the thing it measures</strong>, and this is the clearest instance of
-that in the thesis.</p>
-<p>Adopting a finding generated elsewhere is not the same as confirming
-it, so it was audited rather than imported. The audit is in
-<code>src/disorder_replication.py</code> and runs the tests the original
-analysis could not run on itself.</p>
-<h3 id="what-the-audit-found">6.5.2 What the audit found</h3>
-<p><strong>Table 6.4 — Mean predicted disorder against log₁₀ ceiling
-utilisation, under every test applied</strong></p>
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Test</th>
-<th><em>n</em></th>
-<th>Spearman ρ</th>
-<th>p</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>External panel, as published</td>
-<td>14</td>
-<td>−0.723</td>
-<td>0.004</td>
-</tr>
-<tr class="even">
-<td>External panel, species-matched high-confidence lactoferrin</td>
-<td>14</td>
-<td>−0.600</td>
-<td>0.023</td>
-</tr>
-<tr class="odd">
-<td>and one protein per orthologous pair</td>
-<td>12</td>
-<td>−0.643</td>
-<td>0.024</td>
-</tr>
-<tr class="even">
-<td>and high-confidence records only</td>
-<td>9</td>
-<td>−0.950</td>
-<td>0.0001</td>
-</tr>
-<tr class="odd">
-<td>and within fed-batch records only</td>
-<td>10</td>
-<td>−0.709</td>
-<td>0.022</td>
-</tr>
-<tr class="even">
-<td>process term partialled out</td>
-<td>14</td>
-<td>−0.530</td>
-<td>0.051</td>
-</tr>
-<tr class="odd">
-<td><strong>globular proteins only</strong> (mean disorder &lt;
-0.2)</td>
-<td>12</td>
-<td><strong>−0.455</strong></td>
-<td><strong>0.138</strong></td>
-</tr>
-<tr class="even">
-<td>This thesis’s corpus, dairy/egg/haem only</td>
-<td>10</td>
-<td>−0.612</td>
-<td>0.060</td>
-</tr>
-<tr class="odd">
-<td><strong>globular proteins only</strong></td>
-<td>8</td>
-<td><strong>−0.429</strong></td>
-<td><strong>0.289</strong></td>
-</tr>
-<tr class="even">
-<td>This thesis’s corpus, food and food-adjacent</td>
-<td>14</td>
-<td>−0.152</td>
-<td>0.605</td>
-</tr>
-<tr class="odd">
-<td>This thesis’s corpus, all proteins</td>
-<td>25</td>
-<td>−0.116</td>
-<td>0.580</td>
-</tr>
-</tbody>
-</table>
-<p>Three things in that table are worth stating separately, because they
-pull in different directions.</p>
-<p><strong>It is not a process artefact, which was the first
-suspicion.</strong> Chapter 6’s own central result is that the fed-batch
-indicator is the only variable in the corpus with predictive skill, so
-any sequence correlation must be checked against it. Partialling the
-process term out leaves ρ = −0.530, and restricting to fed-batch records
-alone leaves ρ = −0.709. The association survives the control that this
-chapter’s main finding would predict should kill it.</p>
-<p><strong>It is weaker than reported, because two of the fourteen
-titres were one datum.</strong> Human and bovine lactoferrin both
-carried 3,500 mg L⁻¹, which is a single medium-confidence bovine record
-whose own quotation describes recovery after cell lysis — it may not be
-a secreted titre at all — and the two α-lactalbumins both carried 600 mg
-L⁻¹. Substituting the species-matched, high-confidence, secreted records
-from the merged corpus moves ρ from −0.723 to −0.600. Reproducing the
-published figure on the published panel also gives −0.723 here rather
-than −0.833, a difference most likely in whether the signal peptide is
-included before the disorder prediction is run.</p>
-<p><strong>It does not survive restriction to the globular subset, and
-this is the limitation that matters most.</strong> The panel contains
-two intrinsically disordered proteins — bovine osteopontin and κ-casein,
-mean disorder near 0.87 — and twelve globular ones, between 0.06 and
-0.16. Leave-one-out cannot detect a two-cluster artefact, because
-removing either disordered protein leaves the other. Within the globular
-twelve the association falls to ρ = −0.455, p = 0.138, and on this
-thesis’s own roster to −0.429, p = 0.289. Both retain the sign; neither
-is significant. The evidence is therefore substantially carried by the
-contrast between two disordered proteins and the rest, which is a real
-contrast but is two points’ worth of it.</p>
-<p><strong>And it does not generalise past the target class.</strong> On
-this thesis’s corpus the association is ρ = −0.612, p = 0.060 across the
-ten dairy, egg and haem proteins with titres, and collapses to ρ =
-−0.152 once food enzymes, an engineered sweet protein and a fungal
-hydrophobin are admitted, and to ρ = −0.116 across the full corpus
-including human therapeutics. A lipase at 10 g L⁻¹ and a 54-residue
-sweetener at 1.3 g L⁻¹ are counter-examples in opposite directions.</p>
-<h3 id="what-can-honestly-be-claimed">6.5.3 What can honestly be
-claimed</h3>
-<p><strong>A negative association between mean predicted disorder and
-ceiling utilisation, within dairy, egg and haem food proteins in <em>K.
-phaffii</em>, replicated in direction across two independently curated
-rosters with independently computed ceilings, robust to the process
-control, and at ρ between −0.43 and −0.95 depending on which records are
-admitted.</strong> That is the claim, and the hedges are part of it: the
-magnitude depends on roster and titre curation, the globular-only test
-is not significant, and the association does not extend beyond the
-target class.</p>
-<p>It is reported as a finding rather than a null for four reasons. The
-hypothesis was generated on independent data, so it is a replication
-rather than a seventh test. The sign is the same in every one of eleven
-fits. It survives the control that this chapter shows to be the
-dangerous one. And it is mechanistically interpretable in a way a bare
-correlation would not be: <em>K. phaffii</em> secretes into a
-protease-rich supernatant, a disordered chain has no folded core to
-protect it, and the one intact κ-casein study in the corpus reports
-exactly that failure — proteolysis that <em>pep4</em> and <em>yps1</em>
-knockouts did not stop, and production that saturates with gene copy
-number.</p>
-<p>It also inverts the usual framing. Disorder is normally offered as a
-<em>folding</em> explanation: caseins are said to be hard because they
-will not fold. The ceiling–gap decomposition says the opposite about
-cost — a disordered protein is metabolically cheap, carries no
-disulfides and no glycans, and κ-casein has one of the highest ceilings
-in the corpus (§5.3). If disorder is what tracks the gap, it is not
-tracking the difficulty of folding a protein but the difficulty of
-<em>keeping one intact</em> once secreted. Those two readings imply
-different engineering: the first says improve the folding machinery, the
-second says remove proteases and shorten residence time.</p>
-<p>What would settle it is stated as a prediction rather than a
-conclusion, in §9.5: titres for α-S1-, α-S2- and β-casein, the three
-most disordered proteins in the target class and the three with no
-published number in any microbial host. They are the points that would
-either carry this finding or break it.</p>
+what it measures</strong>, and that lesson stands whatever happened to
+the result.</p>
+<p>What happened to the result is that it did not survive its own data.
+Two audits ran in parallel. This one asked whether the correlation could
+be a two-cluster artefact — the panel holds two proteins near 0.87 mean
+disorder and twelve between 0.06 and 0.16, and a leave-one-out cannot
+break a contrast between clusters because removing either disordered
+protein leaves the other. Within the globular twelve the association
+fell to ρ = −0.455, p = 0.138, and on this thesis’s own roster to ρ =
+−0.429, p = 0.289: sign retained, significance gone. The other audit
+went back to the primary sources behind the records and found three
+faults, described in Appendix F, of which the most consequential is that
+one of the two disordered proteins had no titre of its own at all.</p>
+<p>With those corrected, the reported association is <strong>ρ = −0.483,
+p = 0.117, with nothing surviving FDR correction</strong>, and the
+analysis that reported it has retracted it. On this thesis’s corpus the
+comparable figure is ρ = −0.612, p = 0.060 across the ten dairy, egg and
+haem proteins with titres, falling to −0.152 once food enzymes, an
+engineered sweet protein and a fungal hydrophobin are admitted and
+−0.116 across the full corpus.</p>
+<p><strong>So there is no disorder finding.</strong> What there is,
+consistently, is a negative sign — eleven fits out of eleven — of a
+magnitude the available data cannot distinguish from chance, resting in
+every version on the contrast between κ-casein and everything else. One
+protein is not a test of a hypothesis about a protein class. The three
+caseins with no published titre in any microbial host, α-S1, α-S2 and β,
+are the three most disordered proteins in the target class, and they are
+the measurement that would decide this. That is stated as the thesis’s
+first experimental recommendation in §9.5 rather than as a result
+here.</p>
 <h2 id="what-the-variance-is-actually-in">6.6 What the variance is
 actually in</h2>
 <p>Three sources, none of them properties of the molecule, dominate.</p>
@@ -4141,37 +4014,37 @@ associates with titre</strong> — the strongest is log length at ρ =
 bioreactor outperforms all seven combined. An earlier draft reported
 disulfide density at ρ = −0.438, p = 0.036; re-reading disulfide counts
 from the UniProt feature tables removed it (§6.2.1).</p></li>
-<li><p><strong>One feature outside the seven does carry a
-signal.</strong> Mean predicted disorder is negatively associated with
-ceiling utilisation within dairy, egg and haem proteins, at ρ between
-−0.43 and −0.95 depending on which records are admitted, replicated in
-direction across two independently curated rosters and surviving the
-process control that §6.4 shows to be the dangerous one. It does not
-survive restriction to the globular subset and does not extend beyond
-the target class, and §6.5.3 states the claim with those bounds
-attached.</p></li>
+<li><p><strong>No feature outside the seven carries one either.</strong>
+Mean predicted disorder was reported at ρ = −0.833 by an independent
+analysis and falls to ρ = −0.483, p = 0.117 once three faults in the
+underlying titre records are corrected. Its direction is consistent
+across every fit and it rests, in every version, on the contrast between
+κ-casein and everything else. It is carried forward as the thesis’s
+leading untested hypothesis, not as a result, and Appendix F documents
+the episode.</p></li>
 </ol>
 <p>Taken together: for food proteins in this host, <strong>metabolism is
-not the binding constraint</strong>, almost nothing measurable about the
-molecule explains the published record, and the one property that does —
-how disordered the chain is — points away from synthesis and towards
-survival of the product once it has been made. Two things follow for
-anyone deciding where to spend. Do not spend on carbon efficiency: the
-ceiling is not what is binding, and it barely varies between proteins.
-Do spend on titre and recovery, which Chapter 8 shows are what the
-economics turn on.</p>
+not the binding constraint, and nothing measurable about the molecule
+explains the published record.</strong> The property with the best claim
+to an exception, chain disorder, points away from synthesis and towards
+survival of the product once made — but the data cannot yet distinguish
+that from chance. Two things follow for anyone deciding where to spend.
+Do not spend on carbon efficiency: the ceiling is not what is binding,
+and it barely varies between proteins. Do spend on titre and recovery,
+which Chapter 8 shows are what the economics turn on.</p>
 <p>The third thing — where to spend inside the secretory pathway — is
-where the disorder result changes the advice. Disorder is conventionally
-offered as a <em>folding</em> explanation for why caseins are hard. The
-decomposition says the opposite about cost: a disordered chain is
-metabolically cheap, carries no disulfides and no glycans, and κ-casein
-has one of the highest ceilings in the corpus while reaching 0.06% of
-it. If disorder tracks the gap, what it plausibly tracks is proteolytic
-survival in a protease-rich supernatant rather than difficulty of
-folding, and the one intact κ-casein study reports exactly that. The two
-readings imply different spending: improve the folding machinery, or
-remove proteases and shorten residence time. This thesis cannot separate
-them, and §9.5 states the experiment that would.</p>
+the one this thesis cannot settle, and the disorder episode shows why it
+matters. Disorder is conventionally offered as a <em>folding</em>
+explanation for why caseins are hard. The decomposition says the
+opposite about cost: a disordered chain is metabolically cheap, carries
+no disulfides and no glycans, and κ-casein has one of the highest
+ceilings in the corpus while reaching 0.06% of it. If disorder does
+track the gap, what it plausibly tracks is proteolytic survival in a
+protease-rich supernatant rather than difficulty of folding, and the one
+intact κ-casein study reports exactly that failure. The two readings
+imply different spending — improve the folding machinery, or remove
+proteases and shorten residence time — and separating them is the most
+valuable experiment the thesis can name. §9.5 states it.</p>
 <p>The secretory pathway remains the leading candidate for the residual,
 on three independent grounds: the stoichiometric model is structurally
 blind to it, the host literature responds to protein disulfide isomerase
@@ -4226,6 +4099,16 @@ three times the experimentally reported maximum. The gaps in Chapter 5
 are therefore <em>lower bounds</em> on the true gap, which strengthens
 rather than weakens the central claim but should not be glossed
 over.</p>
+<p><strong>Statistical controls do not validate records.</strong>
+Appendix F documents a correlation that passed a permutation test, FDR
+correction across 32 features, a bootstrap interval and leave-one-out
+validation, on data containing an intracellular yield recorded as a
+secretion titre, a titre borrowed from another species through an
+orthologue-pooling join, and a carrier construct counted as its
+passenger. This thesis’s own filter had let the same carrier record
+through. The controls in this thesis are therefore not offered as a
+guarantee of its numbers; the verbatim quotation attached to every
+record is, because that is what made the fault findable.</p>
 <p><strong>Sample size.</strong> Twenty-five proteins and 53 records,
 which is small for a seven-feature analysis and is the reason no feature
 is claimed. An earlier draft did claim one, disulfide density at p =
@@ -4739,6 +4622,133 @@ this thesis</h2>
 <p>Every step is deterministic. <code>build_targets.py</code> exits
 non-zero if any sequence fails verification, so a corrupted input fails
 loudly rather than propagating.</p>
+<h2 id="appendix-f-how-a-corrected-fdr-controlled-correlation-turned-out-to-be-an-artefact">Appendix
+F — How a corrected, FDR-controlled correlation turned out to be an
+artefact</h2>
+<p>This appendix documents a finding this thesis nearly made. It is kept
+because the failure is more instructive than the result would have been,
+and because the audit trail is the thesis’s main claim to being
+trustworthy about its remaining numbers.</p>
+<h3 id="f.1-the-finding-as-reported">F.1 The finding as reported</h3>
+<p>An independent analysis of the same literature, with its own curated
+panel of fourteen dairy, egg and haem proteins and its own computed
+ceilings, tested 32 sequence features against log₁₀ ceiling utilisation
+and reported one survivor:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>Feature</td>
+<td>mean metapredict disorder score</td>
+</tr>
+<tr class="even">
+<td>Spearman ρ</td>
+<td>−0.833</td>
+</tr>
+<tr class="odd">
+<td>Permutation p (20,000 relabellings)</td>
+<td>0.00025</td>
+</tr>
+<tr class="even">
+<td>Benjamini–Hochberg q across 32 features</td>
+<td>0.008</td>
+</tr>
+<tr class="odd">
+<td>Bootstrap 95% CI</td>
+<td>−0.98 to −0.45</td>
+</tr>
+<tr class="even">
+<td>Leave-one-out ρ across all 14 fits</td>
+<td>−0.791 to −0.929</td>
+</tr>
+<tr class="odd">
+<td>Leave-one-out permutation p</td>
+<td>never above 0.0026</td>
+</tr>
+</tbody>
+</table>
+<p>Nothing about that table is wrong as arithmetic. It carries a
+permutation p-value rather than an asymptotic one, multiple-testing
+control across every feature tested, a bootstrap interval, and the
+leave-one-out check that small-<em>n</em> rank correlations are supposed
+to need. It is better-controlled than most published correlations of its
+kind. It was also an artefact, and none of those controls could have
+revealed that, because every one of them tests the <em>statistics</em>
+while the fault was in the <em>records</em>.</p>
+<h3 id="f.2-what-the-audit-found">F.2 What the audit found</h3>
+<p>Two audits ran in parallel on different questions.</p>
+<p><strong>The structural audit</strong> asked whether the correlation
+could be a two-cluster artefact. The panel holds two proteins with mean
+disorder near 0.87 — bovine osteopontin and κ-casein — and twelve
+between 0.06 and 0.16. A rank correlation across that configuration can
+be produced entirely by the contrast between the two groups, with the
+ranks inside the globular group contributing noise. <strong>A
+leave-one-out check is structurally incapable of detecting
+this</strong>, because removing either disordered protein leaves the
+other in place to hold the contrast up. The discriminating test is
+whether the association survives <em>within</em> the globular group, and
+it did not: ρ = −0.455, p = 0.138 on the external panel, ρ = −0.429, p =
+0.289 on this thesis’s roster.</p>
+<p><strong>The provenance audit</strong> went back to the primary
+sources behind the fourteen titres and found three faults:</p>
+<ol type="1">
+<li><strong>A titre that is not a secretion titre.</strong> Bovine
+lactoferrin carried 3,500 mg L⁻¹, the panel’s joint-highest value. The
+source expressed the protein <em>without a signal sequence</em>,
+harvested the cell pellet, resuspended it in lysis buffer and recovered
+inclusion bodies with 6 M urea. It is an intracellular yield and was
+excluded.</li>
+<li><strong>Orthologue pooling in the best-titre join.</strong> The join
+that selected each protein’s best record matched on canonical protein
+label alone, so human and bovine entries of the same protein pooled.
+Because <em>every</em> α-lactalbumin and osteopontin record in the
+corpus is human, the bovine entries silently borrowed human titres.
+Requiring the source organism to agree dropped five entries — including
+osteopontin, one of the two proteins the correlation rested on, which
+had no titre of its own at all.</li>
+<li><strong>Species and carrier confusions elsewhere in the same
+join.</strong> A 5,450 mg L⁻¹ “ovalbumin” record is <em>Coturnix
+coturnix</em>, not <em>Gallus gallus</em>; hen ovalbumin’s best
+species-matched secreted titre in <em>K. phaffii</em> is 35 mg L⁻¹,
+which moves it from near the top of the ranking to near the bottom. And
+the corpus’s only cellobiohydrolase I row is <em>Candida antarctica</em>
+lipase B expressed on a cellobiohydrolase I <strong>carrier</strong>, so
+a name match made the carrier the product and credited it with the whole
+10 g L⁻¹.</li>
+</ol>
+<h3 id="f.3-the-corrected-result">F.3 The corrected result</h3>
+<p>With those corrections the association is <strong>ρ = −0.483, p =
+0.117</strong>, with nothing surviving FDR correction, and the analysis
+that reported it has retracted it. The structural diagnosis is confirmed
+and sharpened: once osteopontin’s borrowed titre is removed, exactly
+<strong>one</strong> protein of twelve sits above 0.4 mean disorder,
+which is precisely the configuration a leave-one-out cannot touch.</p>
+<p>This thesis’s own pipeline was checked for the same three faults. It
+joins on UniProt accession rather than on protein label, so orthologue
+pooling cannot occur in it, and an independent check found no record in
+the merged corpus whose accession disagrees with its stated source
+organism. It had, however, let the carrier construct through:
+<code>src/corpus.py</code> excluded fusions by the word “fusion” and
+this record says “carrier”. That record sat fourth in Table 5.1 at 10 g
+L⁻¹ and 4.45% of its ceiling. The filter now excludes carriers, chimeras
+and C-tagged constructs, and the corrected record for the same lipase is
+its own non-carrier titre of 5.41 g L⁻¹.</p>
+<h3 id="f.4-what-this-is-evidence-of">F.4 What this is evidence of</h3>
+<p>Four controls that are normally treated as sufficient — a permutation
+p-value, FDR correction across the whole feature set, a bootstrap
+interval and leave-one-out validation — all passed on data containing a
+non-secretion titre, a borrowed titre and a carrier mass.
+<strong>Statistical controls validate inference from the records; they
+say nothing about whether the records mean what their column headings
+say.</strong> The two things that did find the fault were a structural
+test chosen because it could discriminate between two specific
+explanations, and reading the primary sources behind the individual
+numbers.</p>
+<p>That is also the argument for the corpus design described in §3.9.
+Every record in <code>titers_merged.tsv</code> carries a verbatim
+quotation from its source, and it was the quotation on the lactoferrin
+record — the words “cell lysis, and purification” — that made the first
+fault findable at all. A corpus of numbers without their sentences would
+have hidden it.</p>
 <h2 id="appendix-e-outstanding-tasks-before-submission">Appendix E —
 Outstanding tasks before submission</h2>
 <p>Recorded here rather than left implicit.</p>

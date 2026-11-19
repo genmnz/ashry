@@ -84,6 +84,110 @@ python3 build_thesis.py       # assemble the document
 
 Every step is deterministic. `build_targets.py` exits non-zero if any sequence fails verification, so a corrupted input fails loudly rather than propagating.
 
+## Appendix F — How a corrected, FDR-controlled correlation turned out to be an artefact
+
+This appendix documents a finding this thesis nearly made. It is kept because the
+failure is more instructive than the result would have been, and because the
+audit trail is the thesis's main claim to being trustworthy about its remaining
+numbers.
+
+### F.1 The finding as reported
+
+An independent analysis of the same literature, with its own curated panel of
+fourteen dairy, egg and haem proteins and its own computed ceilings, tested 32
+sequence features against log₁₀ ceiling utilisation and reported one survivor:
+
+| | |
+|---|---|
+| Feature | mean metapredict disorder score |
+| Spearman ρ | −0.833 |
+| Permutation p (20,000 relabellings) | 0.00025 |
+| Benjamini–Hochberg q across 32 features | 0.008 |
+| Bootstrap 95% CI | −0.98 to −0.45 |
+| Leave-one-out ρ across all 14 fits | −0.791 to −0.929 |
+| Leave-one-out permutation p | never above 0.0026 |
+
+Nothing about that table is wrong as arithmetic. It carries a permutation
+p-value rather than an asymptotic one, multiple-testing control across every
+feature tested, a bootstrap interval, and the leave-one-out check that small-*n*
+rank correlations are supposed to need. It is better-controlled than most
+published correlations of its kind. It was also an artefact, and none of those
+controls could have revealed that, because every one of them tests the
+*statistics* while the fault was in the *records*.
+
+### F.2 What the audit found
+
+Two audits ran in parallel on different questions.
+
+**The structural audit** asked whether the correlation could be a two-cluster
+artefact. The panel holds two proteins with mean disorder near 0.87 — bovine
+osteopontin and κ-casein — and twelve between 0.06 and 0.16. A rank correlation
+across that configuration can be produced entirely by the contrast between the
+two groups, with the ranks inside the globular group contributing noise. **A
+leave-one-out check is structurally incapable of detecting this**, because
+removing either disordered protein leaves the other in place to hold the
+contrast up. The discriminating test is whether the association survives
+*within* the globular group, and it did not: ρ = −0.455, p = 0.138 on the
+external panel, ρ = −0.429, p = 0.289 on this thesis's roster.
+
+**The provenance audit** went back to the primary sources behind the fourteen
+titres and found three faults:
+
+1. **A titre that is not a secretion titre.** Bovine lactoferrin carried
+   3,500 mg L⁻¹, the panel's joint-highest value. The source expressed the
+   protein *without a signal sequence*, harvested the cell pellet, resuspended
+   it in lysis buffer and recovered inclusion bodies with 6 M urea. It is an
+   intracellular yield and was excluded.
+2. **Orthologue pooling in the best-titre join.** The join that selected each
+   protein's best record matched on canonical protein label alone, so human and
+   bovine entries of the same protein pooled. Because *every* α-lactalbumin and
+   osteopontin record in the corpus is human, the bovine entries silently
+   borrowed human titres. Requiring the source organism to agree dropped five
+   entries — including osteopontin, one of the two proteins the correlation
+   rested on, which had no titre of its own at all.
+3. **Species and carrier confusions elsewhere in the same join.** A 5,450 mg L⁻¹
+   "ovalbumin" record is *Coturnix coturnix*, not *Gallus gallus*; hen
+   ovalbumin's best species-matched secreted titre in *K. phaffii* is 35 mg L⁻¹,
+   which moves it from near the top of the ranking to near the bottom. And the
+   corpus's only cellobiohydrolase I row is *Candida antarctica* lipase B
+   expressed on a cellobiohydrolase I **carrier**, so a name match made the
+   carrier the product and credited it with the whole 10 g L⁻¹.
+
+### F.3 The corrected result
+
+With those corrections the association is **ρ = −0.483, p = 0.117**, with
+nothing surviving FDR correction, and the analysis that reported it has retracted
+it. The structural diagnosis is confirmed and sharpened: once osteopontin's
+borrowed titre is removed, exactly **one** protein of twelve sits above 0.4 mean
+disorder, which is precisely the configuration a leave-one-out cannot touch.
+
+This thesis's own pipeline was checked for the same three faults. It joins on
+UniProt accession rather than on protein label, so orthologue pooling cannot
+occur in it, and an independent check found no record in the merged corpus whose
+accession disagrees with its stated source organism. It had, however, let the
+carrier construct through: `src/corpus.py` excluded fusions by the word "fusion"
+and this record says "carrier". That record sat fourth in Table 5.1 at 10 g L⁻¹
+and 4.45% of its ceiling. The filter now excludes carriers, chimeras and C-tagged
+constructs, and the corrected record for the same lipase is its own
+non-carrier titre of 5.41 g L⁻¹.
+
+### F.4 What this is evidence of
+
+Four controls that are normally treated as sufficient — a permutation p-value,
+FDR correction across the whole feature set, a bootstrap interval and
+leave-one-out validation — all passed on data containing a non-secretion titre, a
+borrowed titre and a carrier mass. **Statistical controls validate inference
+from the records; they say nothing about whether the records mean what their
+column headings say.** The two things that did find the fault were a structural
+test chosen because it could discriminate between two specific explanations, and
+reading the primary sources behind the individual numbers.
+
+That is also the argument for the corpus design described in §3.9. Every record
+in `titers_merged.tsv` carries a verbatim quotation from its source, and it was
+the quotation on the lactoferrin record — the words "cell lysis, and
+purification" — that made the first fault findable at all. A corpus of numbers
+without their sentences would have hidden it.
+
 ## Appendix E — Outstanding tasks before submission
 
 Recorded here rather than left implicit.
