@@ -1,0 +1,2 @@
+feature,spearman_rho,p_value,p_permutation,ci95_low,ci95_high,n_proteins,q_value_bh,bonferroni_threshold
+disorder_mean,-0.11615384615384615,0.5803228055887673,0.57715,-0.561593461181327,0.3530050204516903,25,0.5803228055887673,0.05

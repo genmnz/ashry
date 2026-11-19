@@ -53,6 +53,19 @@ FEATURES = [
     "disorder_fraction", "gravy", "abs_net_charge", "theoretical_yield",
 ]
 
+# One feature added after the pre-specified seven were fitted, and labelled as
+# such wherever it is reported. An independent analysis of the same literature,
+# run on a separately curated panel of dairy, egg and haem proteins, found the
+# *mean* metapredict disorder score strongly associated with ceiling
+# utilisation. The pre-specified disorder feature here was the thresholded
+# fraction of residues scoring above 0.5, which is a different statistic: it is
+# identically zero for every globular protein in the panel and therefore throws
+# away the whole gradient among them. Adding the mean is a replication test of
+# an externally generated hypothesis whose sign and magnitude were fixed before
+# this fit, not a new search, and it is reported separately from the
+# pre-specified set so that the two cannot be confused.
+REPLICATION_FEATURE = "disorder_mean"
+
 
 def sequence_library() -> dict[str, str]:
     """All sequences available by accession, verified entries taking priority.
@@ -137,6 +150,7 @@ def build_dataset(annotations: dict[str, dict]) -> pd.DataFrame:
                 "disulfide_source": ss_source,
                 "sequons_per_100aa": 100.0 * feat["n_sequons"] / len(seq),
                 "disorder_fraction": feat["disorder_fraction"],
+                "disorder_mean": feat["disorder_mean"],
                 "gravy": feat["gravy"],
                 "abs_net_charge": abs(feat["net_charge_per_res"]),
                 "theoretical_yield": ymax.get("g_protein_per_g_substrate",
@@ -322,12 +336,19 @@ def main() -> None:
     # protein cannot justify, so pooling the two confounds difficulty with
     # effort. The corpus flags each row; the positive result from the earlier,
     # smaller corpus is refitted here before anything is attributed to it.
+    # Replication of the externally generated mean-disorder hypothesis.
+    rep = univariate_table(df, [REPLICATION_FEATURE])
+    print("\nreplication test, mean metapredict disorder (hypothesis from an "
+          "independent panel):")
+    print(rep.to_string(index=False))
+    rep.to_csv(TABLES / "producibility_disorder_replication.csv", index=False)
+
     food = food_subset(df)
     print(f"\nfood and food-adjacent subset: {len(food)} rows, "
           f"{food.accession.nunique()} proteins "
           f"(excluded {len(df) - len(food)} human-therapeutic rows)")
     if food.accession.nunique() >= 8:
-        uni_food = univariate_table(food, FEATURES)
+        uni_food = univariate_table(food, FEATURES + [REPLICATION_FEATURE])
         uni_food.to_csv(TABLES / "producibility_univariate_food.csv", index=False)
         print(uni_food.to_string(index=False))
         food_models = {

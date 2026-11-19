@@ -397,8 +397,8 @@ negative results, which are the informative ones</a>
 <ul>
 <li><a href="#metabolic-cost-does-not-predict-titre" id="toc-metabolic-cost-does-not-predict-titre">6.3.1 Metabolic cost does
 not predict titre</a></li>
-<li><a href="#disorder-does-not-predict-titre" id="toc-disorder-does-not-predict-titre">6.3.2 Disorder does not predict
-titre</a></li>
+<li><a href="#disorder-as-pre-specified-does-not-predict-titre" id="toc-disorder-as-pre-specified-does-not-predict-titre">6.3.2
+Disorder, as pre-specified, does not predict titre</a></li>
 <li><a href="#glycosylation-sequons-do-not-predict-titre" id="toc-glycosylation-sequons-do-not-predict-titre">6.3.3 Glycosylation
 sequons do not predict titre</a></li>
 <li><a href="#the-food-protein-subset-tested-separately" id="toc-the-food-protein-subset-tested-separately">6.3.4 The
@@ -406,9 +406,20 @@ food-protein subset, tested separately</a></li>
 </ul></li>
 <li><a href="#all-of-the-models-skill-is-the-process-term" id="toc-all-of-the-models-skill-is-the-process-term">6.4 All of the
 model’s skill is the process term</a></li>
-<li><a href="#what-the-variance-is-actually-in" id="toc-what-the-variance-is-actually-in">6.5 What the variance is
+<li><a href="#the-one-feature-that-does-carry-a-signal-and-how-far-it-can-be-pushed" id="toc-the-one-feature-that-does-carry-a-signal-and-how-far-it-can-be-pushed">6.5
+The one feature that does carry a signal, and how far it can be
+pushed</a>
+<ul>
+<li><a href="#where-the-hypothesis-came-from" id="toc-where-the-hypothesis-came-from">6.5.1 Where the hypothesis came
+from</a></li>
+<li><a href="#what-the-audit-found" id="toc-what-the-audit-found">6.5.2
+What the audit found</a></li>
+<li><a href="#what-can-honestly-be-claimed" id="toc-what-can-honestly-be-claimed">6.5.3 What can honestly be
+claimed</a></li>
+</ul></li>
+<li><a href="#what-the-variance-is-actually-in" id="toc-what-the-variance-is-actually-in">6.6 What the variance is
 actually in</a></li>
-<li><a href="#consequences" id="toc-consequences">6.6
+<li><a href="#consequences" id="toc-consequences">6.7
 Consequences</a></li>
 </ul></li>
 <li><a href="#chapter-7-where-the-flux-would-have-to-come-from" id="toc-chapter-7-where-the-flux-would-have-to-come-from">Chapter 7 —
@@ -566,9 +577,25 @@ of whether the run was in a bioreactor recovers 15.9% of the prediction
 error against a predict-the-mean baseline, adding the seven sequence
 features <em>reduces</em> that to 10.1%, and the sequence features alone
 are 8.3% worse than predicting the mean. The signal in the published
-record is in the experiment, not in the protein: <strong>published
-titres are a record of how much engineering each protein has received
-rather than of how hard each protein is.</strong></p>
+record is overwhelmingly in the experiment rather than in the protein:
+<strong>published titres are largely a record of how much engineering
+each protein has received rather than of how hard each protein
+is.</strong></p>
+<p>One property of the molecule does survive this scrutiny, and it was
+found by an independent analysis of the same literature rather than by
+the pre-specified search. The <strong>mean</strong> predicted disorder
+of the chain — not the thresholded disordered fraction, which is the
+statistic this thesis had pre-specified and which discards the gradient
+among globular proteins — is negatively associated with how much of its
+ceiling a protein reaches, across dairy, egg and haem proteins in <em>K.
+phaffii</em>, at ρ between −0.43 and −0.95 depending on which records
+are admitted. It replicates in direction on two independently curated
+rosters, survives partialling out the process term, and does not extend
+to food enzymes, engineered sweet proteins or human therapeutics. It
+also inverts the usual reading: a disordered protein is metabolically
+<em>cheap</em>, so if disorder tracks the gap it is tracking the
+difficulty of keeping a chain intact in a protease-rich supernatant
+rather than the difficulty of folding it.</p>
 <p>The practical consequences are developed in two further chapters:
 protein-specific metabolic engineering targets obtained by flux scanning
 with enforced objective function, and a techno-economic model in which
@@ -1335,6 +1362,16 @@ explicit decisions, each of which was wrong in a first implementation
 and each of which inflated a protein’s apparent modification load. They
 are recorded because every one of them changes a computed ceiling.</p>
 <ul>
+<li><strong>“Alternate” means opposite things on different feature
+types, and this is the subtlety that bit both implementations of this
+pipeline.</strong> On a <code>Glycosylation</code> feature it marks an
+alternative <em>glycoform at an occupied site</em>, so the site is real
+and the extra lines are duplicates of one site. On a
+<code>Disulfide bond</code> feature it marks an alternative
+<em>pairing</em>, so keeping it invents a bond that does not coexist
+with the one beside it. In both cases the alternate lines are dropped,
+but for opposite reasons, and an implementation that applies one rule to
+both will be wrong on one of them.</li>
 <li><strong>An alternate annotation is not an extra feature.</strong>
 β-lactoglobulin lists three DISULFID features (82–176, 122–135,
 122–137), the last marked <em>Alternate</em>: it is the same cysteine
@@ -1458,7 +1495,12 @@ Kyte–Doolittle hydropathy scaled to the unit interval and ⟨R⟩ is mean
 net charge per residue, evaluated both globally and in a 51-residue
 sliding window to give a disordered fraction and the longest disordered
 run. A neural consensus disorder predictor (metapredict v3) is used for
-the reported disorder values; FoldIndex is retained and reported
+the reported disorder values, computed on the mature chain after
+signal-peptide removal, which matters: including the signal peptide
+shifts the mean score enough to change a rank correlation’s magnitude
+(§6.5.2). Both a <em>mean</em> score and a <em>fraction of residues
+above 0.5</em> are recorded, and §6.5.1 reports why the choice between
+them turned out to be load-bearing; FoldIndex is retained and reported
 alongside as the transparent, dependency-free fallback, and the pipeline
 falls back to it automatically when the neural predictor is unavailable.
 An earlier version of this analysis ran on FoldIndex alone because the
@@ -2792,14 +2834,22 @@ tracks</h1>
 <p>Chapter 5 established a gap of one to four orders of magnitude
 between what metabolism permits and what has been achieved, and showed
 that the bound is some thirty times less dispersed than the outcome.
-This chapter asks what the outcome <em>is</em> explained by. It reports
-no positive result. Every pre-specified sequence feature fails, the
-model that contains them performs worse than one that does not, and the
-conclusion is drawn entirely from the negatives.</p>
-<p>An earlier draft of this chapter did report a positive result —
-disulfide bond density, negatively associated with titre — and §6.2
-records in full how it was lost, because the way it was lost is itself a
-finding about how this kind of analysis goes wrong.</p>
+This chapter asks what the outcome <em>is</em> explained by.</p>
+<p>Of the seven features specified in advance, none is associated with
+titre, and the model containing them performs worse than a model
+containing only an indicator of how the fermentation was run. That is
+the chapter’s main result and §§6.2–6.4 establish it.</p>
+<p>One feature not among the seven does carry a signal, and §6.5 reports
+it with the hedges the evidence requires: the <strong>mean</strong>
+predicted disorder score, within a panel restricted to dairy, egg and
+haem proteins, is negatively associated with how much of its ceiling a
+protein reaches. The hypothesis came from an independent analysis of the
+same literature rather than from this one, which is the only reason it
+can be reported at all after seven pre-specified tests have failed.</p>
+<p>An earlier draft reported a different positive result — disulfide
+bond density — and §6.2.1 records in full how it was lost, because the
+way it was lost is what licenses the scepticism applied to the new
+one.</p>
 <p>The design was fixed before the analysis ran and is stated in §3.10.
 It is repeated in outline here because the credibility of a small-sample
 result depends entirely on whether the analyst could have fished.</p>
@@ -3004,12 +3054,18 @@ phaffii</em> is not the metabolic cost of building them.</strong> This
 is a negative result about a widely assumed mechanism, obtained from two
 independent directions, and it is the most useful thing in this thesis
 because it tells a developer where <em>not</em> to spend.</p>
-<h3 id="disorder-does-not-predict-titre">6.3.2 Disorder does not predict
-titre</h3>
-<p>Predicted intrinsic disorder shows no association whatsoever (ρ =
-−0.007, p = 0.974). This is uncomfortable, because disorder is the
-standard explanation offered for why caseins are hard, and it deserves
-to be stated carefully rather than read as a triumph.</p>
+<h3 id="disorder-as-pre-specified-does-not-predict-titre">6.3.2
+Disorder, as pre-specified, does not predict titre</h3>
+<p>The pre-specified disorder feature — the fraction of residues scoring
+above 0.5 — shows no association whatsoever (ρ = −0.007, p = 0.974).
+This is the feature as declared in §3.10, and reported on its own terms
+it is a null. <strong>It is also the wrong summary of the predictor, and
+§6.5 is given over to why</strong>: the thresholded fraction is
+identically zero for every globular protein in the panel, so it discards
+the gradient that the mean score retains. The null below stands as the
+result for the feature as pre-specified; the mean-score result is in
+§6.5 and is labelled throughout as a replication of an externally
+generated hypothesis rather than as one of the seven.</p>
 <p>The measurement is no longer the weak point. The first draft of this
 chapter measured disorder with FoldIndex alone, a 2005-vintage
 charge–hydropathy criterion, and had to carry the caveat that a better
@@ -3104,16 +3160,19 @@ conclusion:</p>
 </tr>
 </tbody>
 </table>
-<p>Net charge is the nearest thing to a signal anywhere in this chapter,
-at ρ = +0.607 and an uncorrected p of 0.021, and it is reported as what
-it is: a seventh test on fourteen proteins, with a q of 0.149 and a
-confidence interval running from +0.065 to +0.892. It was not
-pre-specified as a directional hypothesis, it has no stated mechanism
-behind it — a more charged protein secreting <em>better</em> is not what
-the solubility literature would predict — and the previous draft of this
-chapter demonstrates exactly what happens when an uncorrected p of 0.036
-is promoted to a finding. It is recorded as a hypothesis for a future,
-larger corpus and nothing is built on it.</p>
+<p>Disulfide density, which the first draft of this chapter reported as
+its finding, is <strong>absent</strong> here rather than weak: on the
+external dairy, egg and haem panel it is ρ = +0.115, p = 0.70, with the
+sign reversed. Net charge is the nearest thing to a signal among the
+pre-specified features, at ρ = +0.607 and an uncorrected p of 0.021, and
+it is reported as what it is: a seventh test on fourteen proteins, with
+a q of 0.149 and a confidence interval running from +0.065 to +0.892. It
+was not pre-specified as a directional hypothesis, it has no stated
+mechanism behind it — a more charged protein secreting <em>better</em>
+is not what the solubility literature would predict — and the previous
+draft of this chapter demonstrates exactly what happens when an
+uncorrected p of 0.036 is promoted to a finding. It is recorded as a
+hypothesis for a future, larger corpus and nothing is built on it.</p>
 <h2 id="all-of-the-models-skill-is-the-process-term">6.4 All of the
 model’s skill is the process term</h2>
 <p>A ridge regression over the eight predictors, cross-validated by
@@ -3191,7 +3250,197 @@ pre-specified design. A residual standard deviation of 0.76 in log₁₀,
 after the process term is accounted for, means a typical protein’s
 reported titre remains uncertain by nearly a factor of six for reasons
 the protein does not explain.</p>
-<h2 id="what-the-variance-is-actually-in">6.5 What the variance is
+<h2 id="the-one-feature-that-does-carry-a-signal-and-how-far-it-can-be-pushed">6.5
+The one feature that does carry a signal, and how far it can be
+pushed</h2>
+<h3 id="where-the-hypothesis-came-from">6.5.1 Where the hypothesis came
+from</h3>
+<p>A parallel analysis of the same literature, working from a separately
+curated panel of dairy, egg and haem proteins and a separately computed
+set of ceilings, tested 32 sequence features against ceiling utilisation
+and found one surviving Benjamini–Hochberg correction: the <strong>mean
+metapredict disorder score</strong>, at ρ = −0.833, permutation p =
+0.00025, q = 0.008, with leave-one-out holding ρ between −0.79 and
+−0.93.</p>
+<p>This thesis’s own pre-specified disorder feature returned nothing
+(§6.3.2), and the reason is a choice of statistic rather than a
+disagreement about the data. The pre-specified feature was the
+<em>fraction of residues scoring above 0.5</em>, a threshold. That
+fraction is identically zero for every globular protein in the panel, so
+it collapses twelve of fourteen proteins to a single tied value and
+discards the entire gradient among them. The mean score keeps it. On the
+external panel the two statistics give ρ = −0.72 and ρ = −0.31
+respectively, from the same predictions of the same predictor.
+<strong>Pre-specifying a feature does not make it the right summary of
+the thing it measures</strong>, and this is the clearest instance of
+that in the thesis.</p>
+<p>Adopting a finding generated elsewhere is not the same as confirming
+it, so it was audited rather than imported. The audit is in
+<code>src/disorder_replication.py</code> and runs the tests the original
+analysis could not run on itself.</p>
+<h3 id="what-the-audit-found">6.5.2 What the audit found</h3>
+<p><strong>Table 6.4 — Mean predicted disorder against log₁₀ ceiling
+utilisation, under every test applied</strong></p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Test</th>
+<th><em>n</em></th>
+<th>Spearman ρ</th>
+<th>p</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>External panel, as published</td>
+<td>14</td>
+<td>−0.723</td>
+<td>0.004</td>
+</tr>
+<tr class="even">
+<td>External panel, species-matched high-confidence lactoferrin</td>
+<td>14</td>
+<td>−0.600</td>
+<td>0.023</td>
+</tr>
+<tr class="odd">
+<td>and one protein per orthologous pair</td>
+<td>12</td>
+<td>−0.643</td>
+<td>0.024</td>
+</tr>
+<tr class="even">
+<td>and high-confidence records only</td>
+<td>9</td>
+<td>−0.950</td>
+<td>0.0001</td>
+</tr>
+<tr class="odd">
+<td>and within fed-batch records only</td>
+<td>10</td>
+<td>−0.709</td>
+<td>0.022</td>
+</tr>
+<tr class="even">
+<td>process term partialled out</td>
+<td>14</td>
+<td>−0.530</td>
+<td>0.051</td>
+</tr>
+<tr class="odd">
+<td><strong>globular proteins only</strong> (mean disorder &lt;
+0.2)</td>
+<td>12</td>
+<td><strong>−0.455</strong></td>
+<td><strong>0.138</strong></td>
+</tr>
+<tr class="even">
+<td>This thesis’s corpus, dairy/egg/haem only</td>
+<td>10</td>
+<td>−0.612</td>
+<td>0.060</td>
+</tr>
+<tr class="odd">
+<td><strong>globular proteins only</strong></td>
+<td>8</td>
+<td><strong>−0.429</strong></td>
+<td><strong>0.289</strong></td>
+</tr>
+<tr class="even">
+<td>This thesis’s corpus, food and food-adjacent</td>
+<td>14</td>
+<td>−0.152</td>
+<td>0.605</td>
+</tr>
+<tr class="odd">
+<td>This thesis’s corpus, all proteins</td>
+<td>25</td>
+<td>−0.116</td>
+<td>0.580</td>
+</tr>
+</tbody>
+</table>
+<p>Three things in that table are worth stating separately, because they
+pull in different directions.</p>
+<p><strong>It is not a process artefact, which was the first
+suspicion.</strong> Chapter 6’s own central result is that the fed-batch
+indicator is the only variable in the corpus with predictive skill, so
+any sequence correlation must be checked against it. Partialling the
+process term out leaves ρ = −0.530, and restricting to fed-batch records
+alone leaves ρ = −0.709. The association survives the control that this
+chapter’s main finding would predict should kill it.</p>
+<p><strong>It is weaker than reported, because two of the fourteen
+titres were one datum.</strong> Human and bovine lactoferrin both
+carried 3,500 mg L⁻¹, which is a single medium-confidence bovine record
+whose own quotation describes recovery after cell lysis — it may not be
+a secreted titre at all — and the two α-lactalbumins both carried 600 mg
+L⁻¹. Substituting the species-matched, high-confidence, secreted records
+from the merged corpus moves ρ from −0.723 to −0.600. Reproducing the
+published figure on the published panel also gives −0.723 here rather
+than −0.833, a difference most likely in whether the signal peptide is
+included before the disorder prediction is run.</p>
+<p><strong>It does not survive restriction to the globular subset, and
+this is the limitation that matters most.</strong> The panel contains
+two intrinsically disordered proteins — bovine osteopontin and κ-casein,
+mean disorder near 0.87 — and twelve globular ones, between 0.06 and
+0.16. Leave-one-out cannot detect a two-cluster artefact, because
+removing either disordered protein leaves the other. Within the globular
+twelve the association falls to ρ = −0.455, p = 0.138, and on this
+thesis’s own roster to −0.429, p = 0.289. Both retain the sign; neither
+is significant. The evidence is therefore substantially carried by the
+contrast between two disordered proteins and the rest, which is a real
+contrast but is two points’ worth of it.</p>
+<p><strong>And it does not generalise past the target class.</strong> On
+this thesis’s corpus the association is ρ = −0.612, p = 0.060 across the
+ten dairy, egg and haem proteins with titres, and collapses to ρ =
+−0.152 once food enzymes, an engineered sweet protein and a fungal
+hydrophobin are admitted, and to ρ = −0.116 across the full corpus
+including human therapeutics. A lipase at 10 g L⁻¹ and a 54-residue
+sweetener at 1.3 g L⁻¹ are counter-examples in opposite directions.</p>
+<h3 id="what-can-honestly-be-claimed">6.5.3 What can honestly be
+claimed</h3>
+<p><strong>A negative association between mean predicted disorder and
+ceiling utilisation, within dairy, egg and haem food proteins in <em>K.
+phaffii</em>, replicated in direction across two independently curated
+rosters with independently computed ceilings, robust to the process
+control, and at ρ between −0.43 and −0.95 depending on which records are
+admitted.</strong> That is the claim, and the hedges are part of it: the
+magnitude depends on roster and titre curation, the globular-only test
+is not significant, and the association does not extend beyond the
+target class.</p>
+<p>It is reported as a finding rather than a null for four reasons. The
+hypothesis was generated on independent data, so it is a replication
+rather than a seventh test. The sign is the same in every one of eleven
+fits. It survives the control that this chapter shows to be the
+dangerous one. And it is mechanistically interpretable in a way a bare
+correlation would not be: <em>K. phaffii</em> secretes into a
+protease-rich supernatant, a disordered chain has no folded core to
+protect it, and the one intact κ-casein study in the corpus reports
+exactly that failure — proteolysis that <em>pep4</em> and <em>yps1</em>
+knockouts did not stop, and production that saturates with gene copy
+number.</p>
+<p>It also inverts the usual framing. Disorder is normally offered as a
+<em>folding</em> explanation: caseins are said to be hard because they
+will not fold. The ceiling–gap decomposition says the opposite about
+cost — a disordered protein is metabolically cheap, carries no
+disulfides and no glycans, and κ-casein has one of the highest ceilings
+in the corpus (§5.3). If disorder is what tracks the gap, it is not
+tracking the difficulty of folding a protein but the difficulty of
+<em>keeping one intact</em> once secreted. Those two readings imply
+different engineering: the first says improve the folding machinery, the
+second says remove proteases and shorten residence time.</p>
+<p>What would settle it is stated as a prediction rather than a
+conclusion, in §9.5: titres for α-S1-, α-S2- and β-casein, the three
+most disordered proteins in the target class and the three with no
+published number in any microbial host. They are the points that would
+either carry this finding or break it.</p>
+<h2 id="what-the-variance-is-actually-in">6.6 What the variance is
 actually in</h2>
 <p>Three sources, none of them properties of the molecule, dominate.</p>
 <p><strong>Engineering effort.</strong> β-lactoglobulin reaches 6.1% of
@@ -3220,7 +3469,7 @@ negative result in §6.4 should be read as a statement about the
 literature rather than only about the model. <strong>The published
 record of recombinant protein titres is, to first order, a record of how
 much work was done, not of how hard each protein is.</strong></p>
-<h2 id="consequences">6.6 Consequences</h2>
+<h2 id="consequences">6.7 Consequences</h2>
 <p><strong>For the field.</strong> Comparative statements of the form
 “protein X is more tractable than protein Y”, when supported by titres
 drawn from different studies, are weakly supported at best. The only
@@ -3886,32 +4135,52 @@ the ceiling has a log₁₀ standard deviation of 0.851 against the
 ceiling’s 0.029 — the outcome is about thirty times more dispersed than
 the bound — and maximum theoretical yield has no univariate association
 with titre (ρ = +0.062, p = 0.770).</p></li>
-<li><p><strong>No sequence feature associates with titre at all</strong>
-— the strongest is log length at ρ = +0.232, p = 0.265 — and a single
-indicator of whether the run was in a bioreactor outperforms all seven
-sequence features combined. An earlier draft of this thesis reported
-disulfide density as an association at ρ = −0.438, p = 0.036; re-reading
-disulfide counts from the UniProt feature tables removed it
-(§6.2.1).</p></li>
+<li><p><strong>None of the seven pre-specified sequence features
+associates with titre</strong> — the strongest is log length at ρ =
++0.232, p = 0.265 — and a single indicator of whether the run was in a
+bioreactor outperforms all seven combined. An earlier draft reported
+disulfide density at ρ = −0.438, p = 0.036; re-reading disulfide counts
+from the UniProt feature tables removed it (§6.2.1).</p></li>
+<li><p><strong>One feature outside the seven does carry a
+signal.</strong> Mean predicted disorder is negatively associated with
+ceiling utilisation within dairy, egg and haem proteins, at ρ between
+−0.43 and −0.95 depending on which records are admitted, replicated in
+direction across two independently curated rosters and surviving the
+process control that §6.4 shows to be the dangerous one. It does not
+survive restriction to the globular subset and does not extend beyond
+the target class, and §6.5.3 states the claim with those bounds
+attached.</p></li>
 </ol>
 <p>Taken together: for food proteins in this host, <strong>metabolism is
-not the binding constraint, and nothing measurable about the molecule
-explains the published record.</strong> Two things follow for anyone
-deciding where to spend. Do not spend on carbon efficiency: the ceiling
-is not what is binding, and it barely varies between proteins. Do spend
-on titre and recovery, which Chapter 8 shows are what the economics turn
-on.</p>
-<p>The third thing that would have followed — spend on folding and
-secretion capacity — is where this thesis points but is no longer where
-it can claim to have measured. The secretory pathway remains the leading
-candidate for the residual, on three independent grounds: the
-stoichiometric model is structurally blind to it, the host literature
-responds to protein disulfide isomerase and unfolded-protein-response
-engineering, and the sources behind the lowest-utilisation records in
-the corpus report proteolysis and saturating copy-number responses
-rather than substrate limitation. None of those three is a measurement
-made here. Chapter 9’s proposed successor analysis, a
-proteome-constrained secretory model, is the way to make one.</p>
+not the binding constraint</strong>, almost nothing measurable about the
+molecule explains the published record, and the one property that does —
+how disordered the chain is — points away from synthesis and towards
+survival of the product once it has been made. Two things follow for
+anyone deciding where to spend. Do not spend on carbon efficiency: the
+ceiling is not what is binding, and it barely varies between proteins.
+Do spend on titre and recovery, which Chapter 8 shows are what the
+economics turn on.</p>
+<p>The third thing — where to spend inside the secretory pathway — is
+where the disorder result changes the advice. Disorder is conventionally
+offered as a <em>folding</em> explanation for why caseins are hard. The
+decomposition says the opposite about cost: a disordered chain is
+metabolically cheap, carries no disulfides and no glycans, and κ-casein
+has one of the highest ceilings in the corpus while reaching 0.06% of
+it. If disorder tracks the gap, what it plausibly tracks is proteolytic
+survival in a protease-rich supernatant rather than difficulty of
+folding, and the one intact κ-casein study reports exactly that. The two
+readings imply different spending: improve the folding machinery, or
+remove proteases and shorten residence time. This thesis cannot separate
+them, and §9.5 states the experiment that would.</p>
+<p>The secretory pathway remains the leading candidate for the residual,
+on three independent grounds: the stoichiometric model is structurally
+blind to it, the host literature responds to protein disulfide isomerase
+and unfolded-protein-response engineering, and the sources behind the
+lowest-utilisation records in the corpus report proteolysis and
+saturating copy-number responses rather than substrate limitation. None
+of those three is a measurement made here. Chapter 9’s proposed
+successor analysis, a proteome-constrained secretory model, is the way
+to make one.</p>
 <h2 id="the-honest-status-of-the-negative-result">9.2 The honest status
 of the negative result</h2>
 <p>The most important sentence in Chapter 6 is that <strong>all of the
@@ -4521,15 +4790,24 @@ template, add the declaration and signature pages, and paginate.</li>
 <hr />
 <h1 id="references">References</h1>
 <p><strong>Verification status.</strong> This list is generated directly
-from the project bibliography. An audit found that identifiers which had
-been inferred rather than resolved were wrong roughly half the time, so
-every DOI below is marked <code>[unverified]</code> until the
-re-resolution pass against Crossref and Europe PMC has been applied and
-recorded. Entries whose author list could not be retrieved say so rather
-than carrying a guess. Neither shortcut is acceptable in a submitted
-thesis, and Appendix E lists both as blocking tasks.</p>
-<p>Total entries: 232. With a DOI: 141. Peer-reviewed or review:
-175.</p>
+from the project bibliography. Every DOI below was resolved against
+Crossref and the entry rebuilt from the registry metadata: all 141
+resolve, and the first author, year, title and venue come from the
+registry rather than from the value originally recorded. That pass
+changed 49 author lists, 11 first authors, 12 years, 3 truncated titles
+and 1 venue; every change is listed in
+<code>data/literature/bibliography_corrections.md</code> with the
+original preserved beside it. An earlier audit had found that
+identifiers inferred rather than resolved were wrong roughly half the
+time, which is why the pass was treated as blocking.</p>
+<p>What remains unverified is marked. 91 entries carry no DOI -
+software, industry and regulatory sources, and papers whose identifier
+was never captured - and 73 of those carry no retrieved author list and
+say so rather than carrying a guess. A title-similarity search found
+close candidates for about half of them, but a title match is weaker
+evidence than a DOI and none has been written in on that basis.</p>
+<p>Total entries: 232. With a resolved DOI: 141. Peer-reviewed or
+review: 175.</p>
 <h2 id="precision-fermentation-industry-and-regulation">1. Precision
 fermentation: industry and regulation</h2>
 <ul>
@@ -4599,140 +4877,133 @@ phaffii</em> as a cell factory</h2>
 <li>Martinet, W. et al. (1998). Modification of the protein
 glycosylation pathway in the methylotrophic yeast Pichia pastoris.
 <em>Biotechnology Letters</em>. (peer-reviewed)
-doi:10.1023/a:1005340806821 [unverified]</li>
+doi:10.1023/a:1005340806821</li>
 <li>Bobrowicz, P. et al. (2004). Engineering of an artificial
 glycosylation pathway blocked in core oligosaccharide assembly in the
-yeast Pichia pastoris. <em>Glycobiology</em>. (peer-reviewed)
-doi:10.1093/glycob/cwh104 [unverified]</li>
+yeast Pichia pastoris: production of complex humanized glycoproteins
+with terminal galactose. <em>Glycobiology</em>. (peer-reviewed)
+doi:10.1093/glycob/cwh104</li>
 <li>Li, H. et al. (2006). Optimization of humanized IgGs in
 glycoengineered Pichia pastoris. <em>Nature Biotechnology</em>.
-(peer-reviewed) doi:10.1038/nbt1178 [unverified]</li>
+(peer-reviewed) doi:10.1038/nbt1178</li>
 <li>Choi, B.-K. et al. (2008). Recombinant human lactoferrin expressed
 in glycoengineered Pichia pastoris: effect of terminal
 N-acetylneuraminic acid on in vitro secretory leukocyte protease
 inhibitor. <em>Glycoconjugate Journal</em>. (peer-reviewed)
-doi:10.1007/s10719-008-9123-y [unverified]</li>
+doi:10.1007/s10719-008-9123-y</li>
 <li>Ferrer, P. et al. (2009). Recombinant Candida rugosa LIP2 expression
 in Pichia pastoris under the control of the AOX1 promoter.
 <em>Biochemical Engineering Journal</em>. (peer-reviewed)
-doi:10.1016/j.bej.2009.05.018 [unverified]</li>
+doi:10.1016/j.bej.2009.05.018</li>
 <li>Dragosits, M. et al. (2010). The response to unfolded protein is
 involved in osmotolerance of Pichia pastoris. <em>BMC Genomics</em>.
-(peer-reviewed) doi:10.1186/1471-2164-11-207 [unverified]</li>
+(peer-reviewed) doi:10.1186/1471-2164-11-207</li>
 <li>Whyteside, G. et al. (2011). Activation of the unfolded protein
 response in Pichia pastoris requires splicing of a HAC1 mRNA intron and
 retention of the C-terminal tail of Hac1p. <em>FEBS Letters</em>.
-(peer-reviewed) doi:10.1016/j.febslet.2011.02.036 [unverified]</li>
+(peer-reviewed) doi:10.1016/j.febslet.2011.02.036</li>
 <li>Noseda, D.G. et al. (2013). Cloning expression and optimized
 production in a bioreactor of bovine chymosin B in Pichia (Komagataella)
 pastoris under AOX1 promoter. <em>Protein Expression and
-Purification</em>. (peer-reviewed) doi:10.1016/j.pep.2013.08.018
-[unverified]</li>
+Purification</em>. (peer-reviewed) doi:10.1016/j.pep.2013.08.018</li>
 <li>Barrigon, J.M. et al. (2015). A macrokinetic model-based comparative
 meta-analysis of recombinant protein production by Pichia pastoris under
 AOX1 promoter. <em>Biotechnology and Bioengineering</em>.
-(peer-reviewed) doi:10.1002/bit.25518 [unverified]</li>
+(peer-reviewed) doi:10.1002/bit.25518</li>
 <li>Puxbaum, V. et al. (2015). Quo vadis? The challenges of recombinant
 protein folding and secretion in Pichia pastoris. <em>Applied
 Microbiology and Biotechnology</em>. (review)
-doi:10.1007/s00253-015-6470-z [unverified]</li>
-<li>Huang, M. et al. (2016). Regulating unfolded protein response
-activator HAC1p for production of thermostable raw-starch hydrolyzing
-alpha-amylase in Pichia pastoris. <em>Bioprocess and Biosystems
-Engineering</em>. (peer-reviewed) doi:10.1007/s00449-016-1701-y
-[unverified]</li>
+doi:10.1007/s00253-015-6470-z</li>
 <li>Karaoglan, M. et al. (2016). Comparison of ADH3 promoter with
 commonly used promoters for recombinant protein production in Pichia
 pastoris. <em>Protein Expression and Purification</em>. (peer-reviewed)
-doi:10.1016/j.pep.2016.01.017 [unverified]</li>
+doi:10.1016/j.pep.2016.01.017</li>
+<li>Huang, M. et al. (2017). Regulating unfolded protein response
+activator HAC1p for production of thermostable raw-starch hydrolyzing
+alpha-amylase in Pichia pastoris. <em>Bioprocess and Biosystems
+Engineering</em>. (peer-reviewed) doi:10.1007/s00449-016-1701-y</li>
 <li>Lee, J.Y. et al. (2017). Auto-induction of Pichia pastoris AOX1
 promoter for membrane protein expression. <em>Protein Expression and
-Purification</em>. (peer-reviewed) doi:10.1016/j.pep.2017.06.006
-[unverified]</li>
+Purification</em>. (peer-reviewed) doi:10.1016/j.pep.2017.06.006</li>
 <li>Moser, J.W. et al. (2017). The adaptive landscape of wildtype and
 glycosylation-deficient populations of the industrial yeast Pichia
 pastoris. <em>BMC Genomics</em>. (peer-reviewed)
-doi:10.1186/s12864-017-3952-7 [unverified]</li>
+doi:10.1186/s12864-017-3952-7</li>
 <li>Wang, J. et al. (2017). Methanol-Independent Protein Expression by
 AOX1 Promoter with trans-Acting Elements Engineering and
 Glucose-Glycerol-Shift Induction in Pichia pastoris. <em>Scientific
-Reports</em>. (peer-reviewed) doi:10.1038/srep41850 [unverified]</li>
-<li>Pena, D.A. et al. (2018). Metabolic engineering of Pichia pastoris.
-<em>Metabolic Engineering</em>. (review) doi:10.1016/j.ymben.2018.04.017
-[unverified]</li>
+Reports</em>. (peer-reviewed) doi:10.1038/srep41850</li>
+<li>Peña et al. (2018). Metabolic engineering of Pichia pastoris.
+<em>Metabolic Engineering</em>. (review)
+doi:10.1016/j.ymben.2018.04.017</li>
 <li>Fauzee, Y.N.B.M. et al. (2020). The unfolded protein response in
 Pichia pastoris without external stressing stimuli. <em>FEMS Yeast
-Research</em>. (peer-reviewed) doi:10.1093/femsyr/foaa053
-[unverified]</li>
+Research</em>. (peer-reviewed) doi:10.1093/femsyr/foaa053</li>
 <li>Heistinger, L. et al. (2020). Komagataella phaffii YPS1-5 encodes
 the alpha-factor degrading protease Bar1. <em>FEMS Yeast Research</em>.
-(peer-reviewed) doi:10.1093/femsyr/foaa024 [unverified]</li>
+(peer-reviewed) doi:10.1093/femsyr/foaa024</li>
 <li>Shi, L. et al. (2020). Transcriptional regulatory networks of
 methanol-independent protein expression in Pichia pastoris under the
 AOX1 promoter with trans-acting elements engineering. <em>Bioresources
-and Bioprocessing</em>. (peer-reviewed) doi:10.1186/s40643-020-00306-w
-[unverified]</li>
+and Bioprocessing</em>. (peer-reviewed)
+doi:10.1186/s40643-020-00306-w</li>
 <li>Wang, S. et al. (2020). Homogeneous production and characterization
 of recombinant N-GlcNAc-protein in Pichia pastoris. <em>Microbial Cell
-Factories</em>. (peer-reviewed) doi:10.1186/s12934-020-1280-0
-[unverified]</li>
-<li>Raschmanova, H. et al. (2021). Engineering of the unfolded protein
+Factories</em>. (peer-reviewed) doi:10.1186/s12934-020-1280-0</li>
+<li>Raschmanová et al. (2021). Engineering of the unfolded protein
 response pathway in Pichia pastoris: enhancing production of secreted
 recombinant proteins. <em>Applied Microbiology and Biotechnology</em>.
-(review) doi:10.1007/s00253-021-11336-5 [unverified]</li>
+(review) doi:10.1007/s00253-021-11336-5</li>
 <li>[author list not retrieved] (2022). Advances in Cell Engineering of
 the Komagataella phaffii Platform for Recombinant Protein Production.
 <em>Metabolites</em>. (review) <a href="https://www.mdpi.com/2218-1989/12/4/346" class="uri">https://www.mdpi.com/2218-1989/12/4/346</a></li>
 <li>Zou, C. et al. (2022). The alpha-mating factor secretion signals and
 endogenous signal peptides for recombinant protein secretion in
 Komagataella phaffii. <em>Biotechnology for Biofuels and
-Bioproducts</em>. (peer-reviewed) doi:10.1186/s13068-022-02243-6
-[unverified]</li>
+Bioproducts</em>. (peer-reviewed) doi:10.1186/s13068-022-02243-6</li>
 <li>Fauzee, Y.N.B.M. et al. (2023). Endoplasmic stress sensor Ire1 is
 involved in cytosolic/nuclear protein quality control in Pichia pastoris
 cells independent of HAC1. <em>Frontiers in Microbiology</em>.
-(peer-reviewed) doi:10.3389/fmicb.2023.1157146 [unverified]</li>
-<li>[author list not retrieved] (2024). Strategic approaches for
-designing yeast strains as protein secretion and display platforms.
-<em>Critical Reviews in Biotechnology</em>. (review)
-doi:10.1080/07388551.2024.2385996 [unverified]</li>
+(peer-reviewed) doi:10.3389/fmicb.2023.1157146</li>
 <li>Zhang, Y.-S. et al. (2024). Engineering protein translocation and
 unfolded protein response enhanced human PH-20 secretion in Pichia
 pastoris. <em>Applied Microbiology and Biotechnology</em>.
-(peer-reviewed) doi:10.1007/s00253-023-12878-6 [unverified]</li>
-<li>Buechner, K. et al. (2025). Higher induction temperatures and the
-native secretion signal peptide promote rye prolamin 75k gamma-secalin
+(peer-reviewed) doi:10.1007/s00253-023-12878-6</li>
+<li>Büchner et al. (2025). Higher induction temperatures and the native
+secretion signal peptide promote rye prolamin 75k gamma-secalin
 production in Komagataella phaffii. <em>Microbial Cell Factories</em>.
-(peer-reviewed) doi:10.1186/s12934-025-02809-7 [unverified]</li>
+(peer-reviewed) doi:10.1186/s12934-025-02809-7</li>
 <li>[author list not retrieved] (2025). Advancing recombinant protein
 expression in Komagataella phaffii: opportunities and challenges.
 <em>PMC record</em>. (review) <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11934926/" class="uri">https://pmc.ncbi.nlm.nih.gov/articles/PMC11934926/</a></li>
-<li>Schleichert, T.M. et al. (2025). Retrofitting of AOX1 Promoter-Based
-Pichia pastoris Expression Strains for Methanol-Independent Protein
-Production. <em>Methods in Molecular Biology: Pichia pastoris</em>.
-(peer-reviewed) doi:10.1007/978-1-0716-4779-0_19 [unverified]</li>
 <li>Varadharaj, S. et al. (2025). Enhanced production of stem bromelain
 in Pichia pastoris by coexpression of unfolded protein response
 activator gene HAC1P. <em>Protein Expression and Purification</em>.
-(peer-reviewed) doi:10.1016/j.pep.2025.106804 [unverified]</li>
-<li>[author list not retrieved] (2026). Metabolic engineering of
-Komagataella phaffii for enhanced production of heterologous proteins
-and small molecules: key strategies and future directions. <em>Applied
-and Environmental Microbiology</em>. (review) doi:10.1128/aem.00110-26
-[unverified]</li>
-<li>[author list not retrieved] (2026). Deletion of low-essentiality
+(peer-reviewed) doi:10.1016/j.pep.2025.106804</li>
+<li>Xu et al. (2025). Strategic approaches for designing yeast strains
+as protein secretion and display platforms. <em>Critical Reviews in
+Biotechnology</em>. (review) doi:10.1080/07388551.2024.2385996</li>
+<li>Ford et al. (2026). Deletion of low-essentiality
 secretion-associated genes enhances recombinant protein production in
 Komagataella phaffii. <em>Microbial Cell Factories</em>. (peer-reviewed)
-doi:10.1186/s12934-026-03009-7 [unverified]</li>
+doi:10.1186/s12934-026-03009-7</li>
 <li>[author list not retrieved] (2026). Systematic optimization of
 Komagataella phaffii (Pichia pastoris) for high-efficiency recombinant
 protein production: Advancements in strain engineering fermentation
 optimization and AI-driven technologies. <em>ScienceDirect record</em>.
 (review) <a href="https://www.sciencedirect.com/science/article/pii/S2667370326000457" class="uri">https://www.sciencedirect.com/science/article/pii/S2667370326000457</a></li>
+<li>Schleichert, T.M. et al. (2026). Retrofitting of AOX1 Promoter-Based
+Pichia pastoris Expression Strains for Methanol-Independent Protein
+Production. <em>Methods in Molecular Biology: Pichia pastoris</em>.
+(peer-reviewed) doi:10.1007/978-1-0716-4779-0_19</li>
 <li>Shi, H. et al. (2026). Enhance protein secretion pathway and energy
 metabolism to improved protein activity in recombinant Pichia pastoris.
 <em>Biochemical Engineering Journal</em>. (peer-reviewed)
-doi:10.1016/j.bej.2025.109935 [unverified]</li>
+doi:10.1016/j.bej.2025.109935</li>
+<li>Xin et al. (2026). Metabolic engineering of Komagataella phaffii for
+enhanced production of heterologous proteins and small molecules: key
+strategies and future directions. <em>Applied and Environmental
+Microbiology</em>. (review) doi:10.1128/aem.00110-26</li>
 </ul>
 <h2 id="trichoderma-reesei-as-a-production-host">3. <em>Trichoderma
 reesei</em> as a production host</h2>
@@ -4740,26 +5011,26 @@ reesei</em> as a production host</h2>
 <li>Joutsjoki, V.V. et al. (1993). Transformation of Trichoderma reesei
 with the Hormoconis resinae glucoamylase P (gamP) gene: production of a
 heterologous glucoamylase by Trichoderma reesei. <em>Current
-Genetics</em>. (peer-reviewed) doi:10.1007/bf00351796 [unverified]</li>
-<li>Nyyssoenen, E. et al. (1995). Multiple roles of the cellulase CBHI
-in enhancing production of fusion antibodies by the filamentous fungus
+Genetics</em>. (peer-reviewed) doi:10.1007/bf00351796</li>
+<li>Nyyssönen et al. (1995). Multiple roles of the cellulase CBHI in
+enhancing production of fusion antibodies by the filamentous fungus
 Trichoderma reesei. <em>Current Genetics</em>. (peer-reviewed)
-doi:10.1007/bf00311884 [unverified]</li>
+doi:10.1007/bf00311884</li>
 <li>Pakula, T.M. et al. (2000). Monitoring the kinetics of glycoprotein
 synthesis and secretion in the filamentous fungus Trichoderma reesei:
 cellobiohydrolase I (CBHI) as a model protein. <em>Microbiology</em>.
-(peer-reviewed) doi:10.1099/00221287-146-1-223 [unverified]</li>
+(peer-reviewed) doi:10.1099/00221287-146-1-223</li>
 <li>Fang, H. et al. (2013). High activity cellulase production by
 recombinant Trichoderma reesei ZU-02 with the enhanced cellobiohydrolase
 production. <em>Bioresource Technology</em>. (peer-reviewed)
-doi:10.1016/j.biortech.2013.06.120 [unverified]</li>
+doi:10.1016/j.biortech.2013.06.120</li>
 <li>Meng, F. et al. (2013). Heterologous protein expression in
 Trichoderma reesei using the cbhII promoter. <em>Plasmid</em>.
-(peer-reviewed) doi:10.1016/j.plasmid.2013.05.003 [unverified]</li>
+(peer-reviewed) doi:10.1016/j.plasmid.2013.05.003</li>
 <li>Mustalahti, E. et al. (2013). Intracellular protein production in
 Trichoderma reesei (Hypocrea jecorina) with hydrophobin fusion
 technology. <em>New Biotechnology</em>. (peer-reviewed)
-doi:10.1016/j.nbt.2011.09.006 [unverified]</li>
+doi:10.1016/j.nbt.2011.09.006</li>
 <li>[author list not retrieved] (2014). Enhanced production of
 heterologous proteins by the filamentous fungus Trichoderma reesei via
 disruption of the alkaline serine protease SPW combined with a pH
@@ -4768,108 +5039,103 @@ control strategy. <em>Plasmid</em>. (peer-reviewed) <a href="https://www.science
 Trichoderma reesei cellobiohydrolase II in Pichia pastoris and the
 application in the enzymatic hydrolysis of corn stover and rice straw.
 <em>Biomass and Bioenergy</em>. (peer-reviewed)
-doi:10.1016/j.biombioe.2015.04.014 [unverified]</li>
+doi:10.1016/j.biombioe.2015.04.014</li>
 <li>Wang, G. et al. (2015). Protein disulfide isomerase homolog TrPDI2
 contributing to cellobiohydrolase production in Trichoderma reesei.
 <em>Enzyme and Microbial Technology</em>. (peer-reviewed)
-doi:10.1016/j.enzmictec.2015.05.004 [unverified]</li>
-<li>[author list not retrieved] (2016). Genome wide analysis of protein
-production load in Trichoderma reesei. <em>Biotechnology for
-Biofuels</em>. (peer-reviewed) doi:10.1186/s13068-016-0547-5
-[unverified]</li>
+doi:10.1016/j.enzmictec.2015.05.004</li>
+<li>Pakula et al. (2016). Genome wide analysis of protein production
+load in Trichoderma reesei. <em>Biotechnology for Biofuels</em>.
+(peer-reviewed) doi:10.1186/s13068-016-0547-5</li>
 <li>US FDA (2017). GRAS Notice 727: Trehalase from Trichoderma reesei
 produced in Trichoderma reesei. <em>US FDA</em>. (regulatory) <a href="https://www.fda.gov/files/food/published/GRAS-Notice-000727-Trehalase-from-Trichoderma-reesei-produced-in-Trichoderma-reesei.pdf" class="uri">https://www.fda.gov/files/food/published/GRAS-Notice-000727-Trehalase-from-Trichoderma-reesei-produced-in-Trichoderma-reesei.pdf</a></li>
-<li>[author list not retrieved] (2019). Novel genetic tools that enable
-highly pure protein production in Trichoderma reesei. <em>Scientific
-Reports</em>. (peer-reviewed) doi:10.1038/s41598-019-41573-8
-[unverified]</li>
 <li>[author list not retrieved] (2019). Filamentous fungi produce
 medicine food biomaterials and almost any protein. <em>VTT news</em>.
 (industry) <a href="https://www.vttresearch.com/en/news-and-ideas/filamentous-fungi-produce-medicine-food-biomaterials-and-almost-any-protein" class="uri">https://www.vttresearch.com/en/news-and-ideas/filamentous-fungi-produce-medicine-food-biomaterials-and-almost-any-protein</a></li>
+<li>Rantasalo et al. (2019). Novel genetic tools that enable highly pure
+protein production in Trichoderma reesei. <em>Scientific Reports</em>.
+(peer-reviewed) doi:10.1038/s41598-019-41573-8</li>
 <li>[author list not retrieved] (2022). Development of a novel
 expression platform for heterologous protein production via deleting the
 p53-like regulator Vib1 in Trichoderma reesei. <em>Enzyme and Microbial
 Technology</em>. (peer-reviewed) <a href="https://www.sciencedirect.com/science/article/abs/pii/S0141022922000126" class="uri">https://www.sciencedirect.com/science/article/abs/pii/S0141022922000126</a></li>
-<li>[author list not retrieved] (2023). Heterologous protein production
-in filamentous fungi. <em>Applied Microbiology and Biotechnology</em>.
-(review) doi:10.1007/s00253-023-12660-8 [unverified]</li>
+<li>Liu et al. (2023). Heterologous protein production in filamentous
+fungi. <em>Applied Microbiology and Biotechnology</em>. (review)
+doi:10.1007/s00253-023-12660-8</li>
+<li>Lehmbeck et al. (2025). Mycotoxin-free Aspergillus oryzae strain
+lineage for alternative and novel protein production at industrial
+scale. <em>Applied Microbiology and Biotechnology</em>. (peer-reviewed)
+doi:10.1007/s00253-025-13482-6</li>
 <li>Li, J. et al. (2025). Unlocking the Potential of Trichoderma reesei
 as a Super-Host for Heterologous Protein Production: Challenges Advances
 and Perspectives. <em>Biotechnology Journal</em>. (review)
-doi:10.1002/biot.70121 [unverified]</li>
-<li>[author list not retrieved] (2025). Mycotoxin-free Aspergillus
-oryzae strain lineage for alternative and novel protein production at
-industrial scale. <em>Applied Microbiology and Biotechnology</em>.
-(peer-reviewed) doi:10.1007/s00253-025-13482-6 [unverified]</li>
+doi:10.1002/biot.70121</li>
 </ul>
 <h2 id="milk-proteins-structure-modification-and-production">4. Milk
 proteins: structure, modification and production</h2>
 <ul>
 <li>Papiz, M.Z. et al. (1986). The structure of beta-lactoglobulin and
 its similarity to plasma retinol-binding protein. <em>Nature</em>.
-(peer-reviewed) doi:10.1038/324383a0 [unverified]</li>
-<li>Perez, M.D. et al. (1995). Interaction of beta-Lactoglobulin with
-Retinol and Fatty Acids and Its Role as a Possible Biological Function
-for This Protein: A Review. <em>Journal of Dairy Science</em>. (review)
-doi:10.3168/jds.s0022-0302(95)76713-3 [unverified]</li>
+(peer-reviewed) doi:10.1038/324383a0</li>
+<li>Pérez et al. (1995). Interaction of beta-Lactoglobulin with Retinol
+and Fatty Acids and Its Role as a Possible Biological Function for This
+Protein: A Review. <em>Journal of Dairy Science</em>. (review)
+doi:10.3168/jds.s0022-0302(95)76713-3</li>
 <li>Holt, C. et al. (1996). Ability of a beta-casein phosphopeptide to
 modulate the precipitation of calcium phosphate by forming amorphous
 dicalcium phosphate nanoclusters. <em>Biochemical Journal</em>.
-(peer-reviewed) doi:10.1042/bj3141035 [unverified]</li>
+(peer-reviewed) doi:10.1042/bj3141035</li>
 <li>Holt, C. et al. (1998). Casein Micelle Substructure and Calcium
 Phosphate Interactions Studied by Sephacryl Column Chromatography.
 <em>Journal of Dairy Science</em>. (peer-reviewed)
-doi:10.3168/jds.s0022-0302(98)75863-1 [unverified]</li>
+doi:10.3168/jds.s0022-0302(98)75863-1</li>
 <li>Holt, C. et al. (1998). A core-shell model of calcium phosphate
 nanoclusters stabilized by beta-casein phosphopeptides derived from
 sedimentation equilibrium and small-angle X-ray and neutron-scattering
 measurements. <em>European Journal of Biochemistry</em>. (peer-reviewed)
-doi:10.1046/j.1432-1327.1998.2520073.x [unverified]</li>
+doi:10.1046/j.1432-1327.1998.2520073.x</li>
 <li>Wu, S.-Y. et al. (1999). beta-Lactoglobulin Binds Palmitate within
 Its Central Cavity. <em>Journal of Biological Chemistry</em>.
-(peer-reviewed) doi:10.1074/jbc.274.1.170 [unverified]</li>
+(peer-reviewed) doi:10.1074/jbc.274.1.170</li>
 <li>Permyakov, E.A.; Berliner, L.J. (2000). alpha-Lactalbumin: structure
 and function. <em>FEBS Letters</em>. (review)
-doi:10.1016/S0014-5793(00)01546-5 [unverified]</li>
+doi:10.1016/S0014-5793(00)01546-5</li>
 <li>Kontopidis, G.A. et al. (2002). The Ligand-binding Site of Bovine
 beta-Lactoglobulin: Evidence for a Function?. <em>Journal of Molecular
-Biology</em>. (peer-reviewed) doi:10.1016/s0022-2836(02)00017-7
-[unverified]</li>
+Biology</em>. (peer-reviewed) doi:10.1016/s0022-2836(02)00017-7</li>
 <li>Kontopidis, G.A. et al. (2004). Invited Review: beta-Lactoglobulin:
 Binding Properties Structure and Function. <em>Journal of Dairy
-Science</em>. (review) doi:10.3168/jds.s0022-0302(04)73222-1
-[unverified]</li>
+Science</em>. (review) doi:10.3168/jds.s0022-0302(04)73222-1</li>
 <li>Follows, D. et al. (2011). Co-adsorption of beta-casein and calcium
 phosphate nanoclusters (CPN) at hydrophilic and hydrophobic
 solid-solution interfaces studied by neutron reflectometry. <em>Food
-Hydrocolloids</em>. (peer-reviewed) doi:10.1016/j.foodhyd.2010.09.001
-[unverified]</li>
+Hydrocolloids</em>. (peer-reviewed)
+doi:10.1016/j.foodhyd.2010.09.001</li>
 <li>Tagliabracci, V.S. et al. (2012). Secreted kinase phosphorylates
 extracellular proteins that regulate biomineralization.
 <em>Science</em>. (peer-reviewed) <a href="https://pubmed.ncbi.nlm.nih.gov/22582013/" class="uri">https://pubmed.ncbi.nlm.nih.gov/22582013/</a></li>
 <li>Holt, C. et al. (2016). Casein and casein micelle structures
 functions and diversity in 20 species. <em>International Dairy
-Journal</em>. (review) doi:10.1016/j.idairyj.2016.01.004
-[unverified]</li>
+Journal</em>. (review) doi:10.1016/j.idairyj.2016.01.004</li>
 <li>Hindmarsh, J.P. et al. (2017). Experimental evidence for previously
 unclassified calcium phosphate structures in the casein micelle.
 <em>Journal of Dairy Science</em>. (peer-reviewed)
-doi:10.3168/jds.2017-12623 [unverified]</li>
-<li>Bijl, E. et al. (2018). A quantitative model of the bovine casein
+doi:10.3168/jds.2017-12623</li>
+<li>Bijl, E. et al. (2019). A quantitative model of the bovine casein
 micelle: ion equilibria and calcium phosphate sequestration by
 individual caseins in bovine milk. <em>European Biophysics Journal</em>.
-(peer-reviewed) doi:10.1007/s00249-018-1330-2 [unverified]</li>
-<li>Keppler, J.K. et al. (2020). Towards recombinantly produced milk
-proteins: Physicochemical and emulsifying properties of engineered whey
-protein beta-lactoglobulin variants. <em>Food Hydrocolloids</em>.
-(peer-reviewed) doi:10.1016/j.foodhyd.2020.106132 [unverified]</li>
+(peer-reviewed) doi:10.1007/s00249-018-1330-2</li>
 <li>Lenton, S. et al. (2020). Structural Biology of Calcium Phosphate
 Nanoclusters Sequestered by Phosphoproteins. <em>Crystals</em>. (review)
-doi:10.3390/cryst10090755 [unverified]</li>
+doi:10.3390/cryst10090755</li>
 <li>Holt, C. (2021). A quantitative calcium phosphate nanocluster model
 of the casein micelle: the average size size distribution and surface
 properties. <em>European Biophysics Journal</em>. (peer-reviewed)
-doi:10.1007/s00249-021-01533-5 [unverified]</li>
+doi:10.1007/s00249-021-01533-5</li>
+<li>Keppler, J.K. et al. (2021). Towards recombinantly produced milk
+proteins: Physicochemical and emulsifying properties of engineered whey
+protein beta-lactoglobulin variants. <em>Food Hydrocolloids</em>.
+(peer-reviewed) doi:10.1016/j.foodhyd.2020.106132</li>
 <li>[author list not retrieved] (2022). Can recombinant milk proteins
 replace those produced by animals?. <em>Current Opinion in
 Biotechnology</em>. (review) <a href="https://www.sciencedirect.com/science/article/pii/S0958166922000106" class="uri">https://www.sciencedirect.com/science/article/pii/S0958166922000106</a></li>
@@ -4882,6 +5148,10 @@ Properties of Milk. <em>PMC record</em>. (review) <a href="https://pmc.ncbi.nlm.
 <li>[author list not retrieved] (2023). Production of phosphorylated and
 functional alphaS1-casein in Komagataella phaffii. <em>Wageningen
 University repository</em>. (peer-reviewed) <a href="https://edepot.wur.nl/700586" class="uri">https://edepot.wur.nl/700586</a></li>
+<li>Anaya et al. (2024). Evaluation of the potential food allergy risks
+of recombinant human lactoferrin expressed in Komagataella phaffii.
+<em>Frontiers in Immunology</em>. (peer-reviewed)
+doi:10.3389/fimmu.2024.1380028</li>
 <li>Balasubramanian, S. (2024). Precision fermentation of milk proteins.
 <em>Technical University of Denmark PhD thesis</em>. (peer-reviewed) <a href="https://backend.orbit.dtu.dk/ws/files/398733846/Thesis_-_Suvasini_Balasubramanian.pdf" class="uri">https://backend.orbit.dtu.dk/ws/files/398733846/Thesis_-_Suvasini_Balasubramanian.pdf</a></li>
 <li>[author list not retrieved] (2024). Structural Analysis of
@@ -4890,10 +5160,6 @@ for TLR4-Stimulation. <em>International Journal of Molecular
 Sciences</em>. (peer-reviewed) <a href="https://www.mdpi.com/1422-0067/25/3/1743" class="uri">https://www.mdpi.com/1422-0067/25/3/1743</a></li>
 <li>[author list not retrieved] (2024). Milk Proteins: from Expression
 to Food. <em>Book</em>. (review) <a href="https://ubblab.weebly.com/uploads/4/7/4/6/47469791/milk_proteins_from_expression_to_food.pdf" class="uri">https://ubblab.weebly.com/uploads/4/7/4/6/47469791/milk_proteins_from_expression_to_food.pdf</a></li>
-<li>[author list not retrieved] (2024). Evaluation of the potential food
-allergy risks of recombinant human lactoferrin expressed in Komagataella
-phaffii. <em>Frontiers in Immunology</em>. (peer-reviewed)
-doi:10.3389/fimmu.2024.1380028 [unverified]</li>
 <li>[author list not retrieved] (2024). Workshop report: a study roadmap
 to evaluate the safety of recombinant human lactoferrin. <em>PubMed
 record</em>. (peer-reviewed) <a href="https://pubmed.ncbi.nlm.nih.gov/38880466/" class="uri">https://pubmed.ncbi.nlm.nih.gov/38880466/</a></li>
@@ -4902,17 +5168,17 @@ Functional Aspects. <em>IntechOpen book chapter</em>. (review) <a href="https://
 <li>Wang, Q. et al. (2024). The formation stability and microstructure
 of calcium phosphate nanoclusters sequestered by casein phosphopeptides.
 <em>Food Hydrocolloids</em>. (peer-reviewed)
-doi:10.1016/j.foodhyd.2024.110315 [unverified]</li>
+doi:10.1016/j.foodhyd.2024.110315</li>
 <li>[author list not retrieved] (2025). Heterologous Caseins: The Role
 of Phosphorylation in Their Functionality and How to Achieve It. <em>PMC
 record</em>. (review) <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12292773/" class="uri">https://pmc.ncbi.nlm.nih.gov/articles/PMC12292773/</a></li>
 <li>[author list not retrieved] (2025). Transplastomic biofactory for
 the production of functional human alpha-lactalbumin for nutritional and
 therapeutic applications. <em>PMC record</em>. (peer-reviewed) <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12923837/" class="uri">https://pmc.ncbi.nlm.nih.gov/articles/PMC12923837/</a></li>
-<li>[author list not retrieved] (2026). Decoding Human Milk Lactoprotein
+<li>Soceanu et al. (2026). Decoding Human Milk Lactoprotein
 Heterogeneity: From Genetic Variation to Proteoforms and Peptidoforms in
 a Comparative Mammalian Context. <em>Biomolecules</em>. (peer-reviewed)
-doi:10.3390/biom16111607 [unverified]</li>
+doi:10.3390/biom16111607</li>
 </ul>
 <h2 id="egg-proteins-leghemoglobin-and-haem-supply">5. Egg proteins,
 leghemoglobin and haem supply</h2>
@@ -4927,7 +5193,7 @@ in Saccharomyces cerevisiae. <em>Metabolic Engineering</em>.
 <li>Jin, Y. et al. (2018). Evaluating Potential Risks of Food Allergy
 and Toxicity of Soy Leghemoglobin Expressed in Pichia pastoris.
 <em>Molecular Nutrition and Food Research</em>. (peer-reviewed)
-doi:10.1002/mnfr.201700297 [unverified]</li>
+doi:10.1002/mnfr.201700297</li>
 <li>US FDA (2019). GRAS Notice 737 Soy leghemoglobin. <em>US FDA</em>.
 (regulatory) <a href="https://www.fda.gov/media/124351/download" class="uri">https://www.fda.gov/media/124351/download</a></li>
 <li>[author list not retrieved] (2021). Improved production of human
@@ -4937,10 +5203,10 @@ Engineering</em>. (peer-reviewed) <a href="https://www.sciencedirect.com/science
 and hen egg ovalbumin by Trichoderma reesei using precision fermentation
 technology and testing of their techno-functional properties. <em>Food
 Research International</em>. (peer-reviewed) <a href="https://www.sciencedirect.com/science/article/pii/S0963996922011899" class="uri">https://www.sciencedirect.com/science/article/pii/S0963996922011899</a></li>
-<li>[author list not retrieved] (2022). High-level secretory production
-of leghemoglobin in Pichia pastoris through enhanced globin expression
-and heme biosynthesis. <em>Bioresource Technology</em>. (peer-reviewed)
-doi:10.1016/j.biortech.2022.127884 [unverified]</li>
+<li>Shao et al. (2022). High-level secretory production of leghemoglobin
+in Pichia pastoris through enhanced globin expression and heme
+biosynthesis. <em>Bioresource Technology</em>. (peer-reviewed)
+doi:10.1016/j.biortech.2022.127884</li>
 <li>[author list not retrieved] (2023). Soy Leghemoglobin: A review of
 its structure production safety aspects and food applications.
 <em>Trends in Food Science and Technology</em>. (review) <a href="https://www.sciencedirect.com/science/article/abs/pii/S092422442300314X" class="uri">https://www.sciencedirect.com/science/article/abs/pii/S092422442300314X</a></li>
@@ -4952,13 +5218,11 @@ protein from Komagataella phaffii (notifier Clara Foods Co. DBA The
 EVERY Company). <em>US FDA GRAS Notice Inventory</em>. (regulatory) <a href="https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=1104&amp;set=GRASNotices" class="uri">https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=1104&amp;set=GRASNotices</a></li>
 <li>Lee, J. et al. (2024). Metabolic Engineering of Saccharomyces
 cerevisiae for Fermentative Production of Heme. <em>Biotechnology
-Journal</em>. (peer-reviewed) doi:10.1002/biot.202400351
-[unverified]</li>
-<li>[author list not retrieved] (2024). The Next Food Revolution Is
-Here: Recombinant Microbial Production of Milk and Egg Proteins by
-Precision Fermentation. <em>Annual Review of Food Science and
-Technology</em>. (review) doi:10.1146/annurev-food-072023-034256
-[unverified]</li>
+Journal</em>. (peer-reviewed) doi:10.1002/biot.202400351</li>
+<li>Nielsen et al. (2024). The Next Food Revolution Is Here: Recombinant
+Microbial Production of Milk and Egg Proteins by Precision Fermentation.
+<em>Annual Review of Food Science and Technology</em>. (review)
+doi:10.1146/annurev-food-072023-034256</li>
 <li>[author list not retrieved] (2024). High-level expression of
 leghemoglobin in Kluyveromyces marxianus by remodeling the heme
 metabolism pathway. <em>ResearchGate record</em>. (peer-reviewed) <a href="https://www.researchgate.net/publication/377656804_High-level_expression_of_leghemoglobin_in_Kluyveromyces_marxianus_by_remodeling_the_heme_metabolism_pathway" class="uri">https://www.researchgate.net/publication/377656804_High-level_expression_of_leghemoglobin_in_Kluyveromyces_marxianus_by_remodeling_the_heme_metabolism_pathway</a></li>
@@ -4970,20 +5234,20 @@ report. <em>Onego Bio company report</em>. (industry) <a href="https://static1.s
 <li>[author list not retrieved] (2025). Scientific and technological
 challenges of recombinant egg protein production. <em>PMC record</em>.
 (review) <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12224593/" class="uri">https://pmc.ncbi.nlm.nih.gov/articles/PMC12224593/</a></li>
-<li>[author list not retrieved] (2026). Egg-Derived Proteins as
-Functional Food Ingredients: Modification Strategies Bioactive Peptides
-Bioavailability and Techno-Functional Applications. <em>Foods</em>.
-(review) doi:10.3390/foods15213817 [unverified]</li>
+<li>Usturoi et al. (2026). Egg-Derived Proteins as Functional Food
+Ingredients: Modification Strategies Bioactive Peptides Bioavailability
+and Techno-Functional Applications. <em>Foods</em>. (review)
+doi:10.3390/foods15213817</li>
 </ul>
 <h2 id="computational-methods">6. Computational methods</h2>
 <ul>
 <li>Sharp, P.M.; Li, W.-H. (1987). The codon adaptation index-a measure
 of directional synonymous codon usage bias and its potential
 applications. <em>Nucleic Acids Research</em>. (peer-reviewed)
-doi:10.1093/nar/15.3.1281 [unverified]</li>
+doi:10.1093/nar/15.3.1281</li>
 <li>Blom, N. et al. (1999). Sequence and structure-based prediction of
 eukaryotic protein phosphorylation sites. <em>Journal of Molecular
-Biology</em>. (software) doi:10.1006/jmbi.1999.3310 [unverified]</li>
+Biology</em>. (software) doi:10.1006/jmbi.1999.3310</li>
 <li>[author list not retrieved] (2002). Synonymous codon usage bias and
 the expression of human glucocerebrosidase in the methylotrophic yeast
 Pichia pastoris. <em>ResearchGate record</em>. (peer-reviewed) <a href="https://www.researchgate.net/publication/11101944_Synonymous_codon_usage_bias_and_the_expression_of_human_glucocerebrosidase_in_the_methylotrophic_yeast_Pichia_pastoris" class="uri">https://www.researchgate.net/publication/11101944_Synonymous_codon_usage_bias_and_the_expression_of_human_glucocerebrosidase_in_the_methylotrophic_yeast_Pichia_pastoris</a></li>
@@ -4993,15 +5257,13 @@ index from a theoretical perspective. <em>Nucleic Acids Research</em>.
 <li>Fernandez-Escamilla, A.-M. et al. (2004). Prediction of
 sequence-dependent and mutational effects on the aggregation of peptides
 and proteins. <em>Nature Biotechnology</em>. (peer-reviewed)
-doi:10.1038/nbt1012 [unverified]</li>
+doi:10.1038/nbt1012</li>
 <li>Reis, M. dos; Savva, R.; Wernisch, L. (2004). Solving the riddle of
 codon usage preferences: a test for translational selection. <em>Nucleic
-Acids Research</em>. (peer-reviewed) doi:10.1093/nar/gkh834
-[unverified]</li>
-<li>Conchillo-Sole, O. et al. (2007). AGGRESCAN: a server for the
-prediction and evaluation of hot spots of aggregation in polypeptides.
-<em>BMC Bioinformatics</em>. (software) doi:10.1186/1471-2105-8-65
-[unverified]</li>
+Acids Research</em>. (peer-reviewed) doi:10.1093/nar/gkh834</li>
+<li>Conchillo-Solé et al. (2007). AGGRESCAN: a server for the prediction
+and evaluation of hot spots of aggregation in polypeptides. <em>BMC
+Bioinformatics</em>. (software) doi:10.1186/1471-2105-8-65</li>
 <li>[author list not retrieved] (2012). Computational prediction of
 N-linked glycosylation incorporating structural properties and patterns.
 <em>Bioinformatics</em>. (peer-reviewed) <a href="https://dx.doi.org/10.1093/bioinformatics/bts426" class="uri">https://dx.doi.org/10.1093/bioinformatics/bts426</a></li>
@@ -5011,15 +5273,15 @@ optimization in human therapeutics. <em>ResearchGate record</em>.
 <li>Sormanni, P.; Aprile, F.A.; Vendruscolo, M. (2015). The CamSol
 Method of Rational Design of Protein Mutants with Enhanced Solubility.
 <em>Journal of Molecular Biology</em>. (peer-reviewed)
-doi:10.1016/j.jmb.2014.09.026 [unverified]</li>
+doi:10.1016/j.jmb.2014.09.026</li>
 <li>Zambrano, R. et al. (2015). AGGRESCAN3D (A3D): server for prediction
 of aggregation properties of protein structures. <em>Nucleic Acids
-Research</em>. (software) doi:10.1093/nar/gkv359 [unverified]</li>
-<li>Fenoy, E. et al. (2018). A generic deep convolutional neural network
+Research</em>. (software) doi:10.1093/nar/gkv359</li>
+<li>Fenoy, E. et al. (2019). A generic deep convolutional neural network
 framework for prediction of receptor-ligand interactions NetPhosPan:
 application to kinase phosphorylation prediction.
-<em>Bioinformatics</em>. (software) doi:10.1093/bioinformatics/bty715
-[unverified]</li>
+<em>Bioinformatics</em>. (software)
+doi:10.1093/bioinformatics/bty715</li>
 <li>[author list not retrieved] (2019). N-GlyDE: a two-stage N-linked
 glycosylation site prediction incorporating gapped dipeptides and
 pattern-based encoding. <em>ResearchGate record</em>. (software) <a href="https://www.researchgate.net/publication/337010389_N-GlyDE_a_two-stage_N-linked_glycosylation_site_prediction_incorporating_gapped_dipeptides_and_pattern-based_encoding" class="uri">https://www.researchgate.net/publication/337010389_N-GlyDE_a_two-stage_N-linked_glycosylation_site_prediction_incorporating_gapped_dipeptides_and_pattern-based_encoding</a></li>
@@ -5029,36 +5291,29 @@ mathematical programming approach. <em>Bioinformatics</em>.
 <li>Santos, J. et al. (2020). Computational prediction of protein
 aggregation: Advances in proteomics conformation-specific algorithms and
 biotechnological applications. <em>Computational and Structural
-Biotechnology Journal</em>. (review) doi:10.1016/j.csbj.2020.05.026
-[unverified]</li>
+Biotechnology Journal</em>. (review) doi:10.1016/j.csbj.2020.05.026</li>
 <li>Wang, D. et al. (2020). MusiteDeep: a deep-learning based webserver
 for protein post-translational modification site prediction and
 visualization. <em>Nucleic Acids Research</em>. (software)
-doi:10.1093/nar/gkaa275 [unverified]</li>
+doi:10.1093/nar/gkaa275</li>
 <li>Emenecker, R.J. et al. (2021). Metapredict: a fast accurate and
 easy-to-use predictor of consensus disorder and structure.
-<em>Biophysical Journal</em>. (software) doi:10.1016/j.bpj.2021.08.039
-[unverified]</li>
-<li>Erdos, G. et al. (2021). IUPred3: prediction of protein disorder
+<em>Biophysical Journal</em>. (software)
+doi:10.1016/j.bpj.2021.08.039</li>
+<li>Erdős et al. (2021). IUPred3: prediction of protein disorder
 enhanced with unambiguous experimental annotation and visualization of
 evolutionary conservation. <em>Nucleic Acids Research</em>. (software)
-doi:10.1093/nar/gkab408 [unverified]</li>
+doi:10.1093/nar/gkab408</li>
 <li>Hu, G. et al. (2021). flDPnn: Accurate intrinsic disorder prediction
 with putative propensities of disorder functions. <em>Nature
-Communications</em>. (software) doi:10.1038/s41467-021-24773-7
-[unverified]</li>
+Communications</em>. (software) doi:10.1038/s41467-021-24773-7</li>
+<li>Huang et al. (2021). Codon pair optimization (CPO): a software tool
+for synthetic gene design based on codon pair bias to improve the
+expression of recombinant proteins in Pichia pastoris. <em>Microbial
+Cell Factories</em>. (software) doi:10.1186/s12934-021-01696-y</li>
 <li>Jumper, J. et al. (2021). Highly accurate protein structure
 prediction with AlphaFold. <em>Nature</em>. (peer-reviewed)
-doi:10.1038/s41586-021-03819-2 [unverified]</li>
-<li>[author list not retrieved] (2021). Codon pair optimization (CPO): a
-software tool for synthetic gene design based on codon pair bias to
-improve the expression of recombinant proteins in Pichia pastoris.
-<em>Microbial Cell Factories</em>. (software)
-doi:10.1186/s12934-021-01696-y [unverified]</li>
-<li>[author list not retrieved] (2021). Codon usage bias regulates gene
-expression and protein conformation in yeast expression system P.
-pastoris. <em>Microbial Cell Factories</em>. (peer-reviewed)
-doi:10.1186/s12934-021-01580-9 [unverified]</li>
+doi:10.1038/s41586-021-03819-2</li>
 <li>[author list not retrieved] (2021). Strong negative correlation
 between codon usage bias and protein structural disorder impedes protein
 expression after codon optimization. <em>Journal of Biotechnology</em>.
@@ -5069,88 +5324,86 @@ gene expression and transcript evolution. <em>PMC record</em>. (review)
 <li>[author list not retrieved] (2021). DeepNGlyPred: A Deep Neural
 Network-Based Approach for Human N-Linked Glycosylation Site Prediction.
 <em>Molecules</em>. (software) <a href="https://www.mdpi.com/1420-3049/26/23/7314" class="uri">https://www.mdpi.com/1420-3049/26/23/7314</a></li>
+<li>Xu et al. (2021). Codon usage bias regulates gene expression and
+protein conformation in yeast expression system P. pastoris.
+<em>Microbial Cell Factories</em>. (peer-reviewed)
+doi:10.1186/s12934-021-01580-9</li>
 <li>Dauparas, J. et al. (2022). Robust deep learning-based protein
 sequence design using ProteinMPNN. <em>Science</em>. (peer-reviewed)
-doi:10.1126/science.add2187 [unverified]</li>
-<li>Ma, R. et al. (2022). KinasePhos 3.0: Redesign and Expansion of the
-Prediction on Kinase-Specific Phosphorylation Sites. <em>Genomics
-Proteomics and Bioinformatics</em>. (software)
-doi:10.1016/j.gpb.2022.06.004 [unverified]</li>
+doi:10.1126/science.add2187</li>
 <li>Navarro, S.; Ventura, S. (2022). Computational methods to predict
 protein aggregation. <em>Current Opinion in Structural Biology</em>.
-(review) doi:10.1016/j.sbi.2022.102343 [unverified]</li>
+(review) doi:10.1016/j.sbi.2022.102343</li>
 <li>Teufel, F. et al. (2022). SignalP 6.0 predicts all five types of
 signal peptides using protein language models. <em>Nature
-Biotechnology</em>. (software) doi:10.1038/s41587-021-01156-3
-[unverified]</li>
+Biotechnology</em>. (software) doi:10.1038/s41587-021-01156-3</li>
 <li>Thumuluri, V. et al. (2022). DeepLoc 2.0: multi-label subcellular
 localization prediction using protein language models. <em>Nucleic Acids
-Research</em>. (software) doi:10.1093/nar/gkac278 [unverified]</li>
+Research</em>. (software) doi:10.1093/nar/gkac278</li>
+<li>Alderson et al. (2023). Systematic identification of conditionally
+folded intrinsically disordered regions by AlphaFold2. <em>Proceedings
+of the National Academy of Sciences</em>. (peer-reviewed)
+doi:10.1073/pnas.2304302120</li>
 <li>Chen, M. et al. (2023). GPS 6.0: an updated server for prediction of
 kinase-specific phosphorylation sites in proteins. <em>Nucleic Acids
-Research</em>. (software) doi:10.1093/nar/gkad383 [unverified]</li>
+Research</em>. (software) doi:10.1093/nar/gkad383</li>
 <li>Esmaili, F. et al. (2023). A Review of Machine Learning and
 Algorithmic Methods for Protein Phosphorylation Site Prediction.
 <em>Genomics Proteomics and Bioinformatics</em>. (review)
-doi:10.1016/j.gpb.2023.03.007 [unverified]</li>
+doi:10.1016/j.gpb.2023.03.007</li>
 <li>Lin, Z. et al. (2023). Evolutionary-scale prediction of atomic-level
 protein structure with a language model. <em>Science</em>.
-(peer-reviewed) doi:10.1126/science.ade2574 [unverified]</li>
+(peer-reviewed) doi:10.1126/science.ade2574</li>
+<li>Ma, R. et al. (2023). KinasePhos 3.0: Redesign and Expansion of the
+Prediction on Kinase-Specific Phosphorylation Sites. <em>Genomics
+Proteomics and Bioinformatics</em>. (software)
+doi:10.1016/j.gpb.2022.06.004</li>
 <li>[author list not retrieved] (2023). LMNglyPred: prediction of human
 N-linked glycosylation sites using embeddings from a pre-trained protein
 language model. <em>Glycobiology</em>. (software) <a href="https://academic.oup.com/glycob/article/33/5/411/7126679" class="uri">https://academic.oup.com/glycob/article/33/5/411/7126679</a></li>
 <li>Oeller, M. et al. (2023). Sequence-based prediction of pH-dependent
 protein solubility using CamSol. <em>Briefings in Bioinformatics</em>.
-(software) doi:10.1093/bib/bbad004 [unverified]</li>
+(software) doi:10.1093/bib/bbad004</li>
 <li>Zhao, B.; Kurgan, L. (2023). Comparative evaluation of AlphaFold2
 and disorder predictors for prediction of intrinsic disorder disorder
 content and fully disordered proteins. <em>Computational and Structural
 Biotechnology Journal</em>. (peer-reviewed)
-doi:10.1016/j.csbj.2023.06.001 [unverified]</li>
+doi:10.1016/j.csbj.2023.06.001</li>
 <li>Abramson, J. et al. (2024). Accurate structure prediction of
 biomolecular interactions with AlphaFold 3. <em>Nature</em>.
-(peer-reviewed) doi:10.1038/s41586-024-07487-w [unverified]</li>
-<li>[author list not retrieved] (2024). Conformational ensembles for
-protein structure prediction. <em>Scientific Reports</em>.
-(peer-reviewed) doi:10.1038/s41598-024-84066-z [unverified]</li>
+(peer-reviewed) doi:10.1038/s41586-024-07487-w</li>
 <li>[author list not retrieved] (2024). Addendum: Accurate structure
 prediction of biomolecular interactions with AlphaFold 3.
 <em>Nature</em>. (peer-reviewed) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11634763/" class="uri">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11634763/</a></li>
 <li>Planas-Iglesias, J. et al. (2024). AggreProt: a web server for
 predicting and engineering aggregation prone regions in proteins.
-<em>Nucleic Acids Research</em>. (software) doi:10.1093/nar/gkae420
-[unverified]</li>
-<li>Wang, J. et al. (2024). Systematic identification of conditionally
-folded intrinsically disordered regions by AlphaFold2. <em>Proceedings
-of the National Academy of Sciences</em>. (peer-reviewed)
-doi:10.1073/pnas.2304302120 [unverified]</li>
+<em>Nucleic Acids Research</em>. (software) doi:10.1093/nar/gkae420</li>
 <li>Wang, J. et al. (2024). Protein Design Using Structure-Prediction
 Networks: AlphaFold and RoseTTAFold as Protein Structure Foundation
 Models. <em>Cold Spring Harbor Perspectives in Biology</em>. (review)
-doi:10.1101/cshperspect.a041472 [unverified]</li>
+doi:10.1101/cshperspect.a041472</li>
 <li>Zalewski, M. et al. (2024). Aggrescan4D: A comprehensive tool for
 pH-dependent analysis and engineering of protein aggregation propensity.
-<em>Protein Science</em>. (software) doi:10.1002/pro.5180
-[unverified]</li>
-<li>[author list not retrieved] (2025). Advantages and Limitations of
-AlphaFold in Structural Biology: Insights from Recent Studies.
-<em>Protein Journal</em>. (review) doi:10.1007/s10930-025-10310-8
-[unverified]</li>
+<em>Protein Science</em>. (software) doi:10.1002/pro.5180</li>
+<li>Li et al. (2025). Advantages and Limitations of AlphaFold in
+Structural Biology: Insights from Recent Studies. <em>Protein
+Journal</em>. (review) doi:10.1007/s10930-025-10310-8</li>
 <li>[author list not retrieved] (2025). DNA Sequence Changes Resulting
 from Codon Optimization Affect Gene Expression in Pichia pastoris by
 Altering Chromatin Accessibility. <em>PMC record</em>. (peer-reviewed)
 <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12029099/" class="uri">https://pmc.ncbi.nlm.nih.gov/articles/PMC12029099/</a></li>
 <li>Rennie, M.L. (2025). Emerging frontiers in protein structure
 prediction following the AlphaFold revolution. <em>Journal of the Royal
-Society Interface</em>. (review) doi:10.1098/rsif.2024.0886
-[unverified]</li>
+Society Interface</em>. (review) doi:10.1098/rsif.2024.0886</li>
+<li>Yang et al. (2025). Conformational ensembles for protein structure
+prediction. <em>Scientific Reports</em>. (peer-reviewed)
+doi:10.1038/s41598-024-84066-z</li>
 <li>Garcia, M. et al. (2026). Evaluating zero-shot prediction of
 monomeric protein design success by AlphaFold ESMFold and ProteinMPNN.
-<em>Protein Science</em>. (peer-reviewed) doi:10.1002/pro.70453
-[unverified]</li>
+<em>Protein Science</em>. (peer-reviewed) doi:10.1002/pro.70453</li>
 <li>Pesce, G. et al. (2026). AGGRESCAN and its evolution: A two-decade
 perspective on protein aggregation prediction. <em>Biophysical
-Reviews</em>. (review) doi:10.1007/s12551-025-01404-9 [unverified]</li>
+Reviews</em>. (review) doi:10.1007/s12551-025-01404-9</li>
 <li>[author list not retrieved]. NetNGlyc 1.0 Server. <em>DTU Health
 Tech</em>. (software) <a href="https://services.healthtech.dtu.dk/services/NetNGlyc-1.0/" class="uri">https://services.healthtech.dtu.dk/services/NetNGlyc-1.0/</a></li>
 </ul>
@@ -5164,128 +5417,120 @@ composition in the proteomes of Escherichia coli and Bacillus subtilis.
 <li>Akashi, H.; Gojobori, T. (2002). Metabolic efficiency and amino acid
 composition in the proteomes of Escherichia coli and Bacillus subtilis.
 <em>Proceedings of the National Academy of Sciences</em>.
-(peer-reviewed) doi:10.1073/pnas.062526999 [unverified]</li>
+(peer-reviewed) doi:10.1073/pnas.062526999</li>
+<li>Barton et al. (2010). Evolutionary Systems Biology of Amino Acid
+Biosynthetic Cost in Yeast. <em>PLOS ONE</em>. (peer-reviewed)
+doi:10.1371/journal.pone.0011935</li>
 <li>Choi, H.S. et al. (2010). In Silico Identification of Gene
 Amplification Targets for Improvement of Lycopene Production.
 <em>Applied and Environmental Microbiology</em>. (peer-reviewed)
-doi:10.1128/aem.00115-10 [unverified]</li>
+doi:10.1128/aem.00115-10</li>
 <li>Lewis, N.E. et al. (2010). Omic data from evolved E. coli are
 consistent with computed optimal growth from genome-scale models.
 <em>Molecular Systems Biology</em>. (peer-reviewed)
-doi:10.1038/msb.2010.47 [unverified]</li>
-<li>[author list not retrieved] (2010). Evolutionary Systems Biology of
-Amino Acid Biosynthetic Cost in Yeast. <em>PLOS ONE</em>.
-(peer-reviewed) doi:10.1371/journal.pone.0011935 [unverified]</li>
+doi:10.1038/msb.2010.47</li>
 <li>[author list not retrieved] (2010). Genome-scale metabolic model of
 methylotrophic yeast Pichia pastoris and its use for in silico analysis
 of heterologous protein production. <em>Microbial Cell Factories</em>.
 (peer-reviewed) <a href="https://www.researchgate.net/publication/227819745_Genome-scale_metabolic_model_of_methylotrophic_yeast_Pichia_pastoris_and_its_use_for_in_silico_analysis_of_heterologous_protein_production" class="uri">https://www.researchgate.net/publication/227819745_Genome-scale_metabolic_model_of_methylotrophic_yeast_Pichia_pastoris_and_its_use_for_in_silico_analysis_of_heterologous_protein_production</a></li>
+<li>Carnicer et al. (2012). Quantitative metabolomics analysis of amino
+acid metabolism in recombinant Pichia pastoris under different oxygen
+availability conditions. <em>Microbial Cell Factories</em>.
+(peer-reviewed) doi:10.1186/1475-2859-11-83</li>
+<li>Jordà et al. (2012). Metabolic flux profiling of recombinant protein
+secreting Pichia pastoris growing on glucose:methanol mixtures.
+<em>Microbial Cell Factories</em>. (peer-reviewed)
+doi:10.1186/1475-2859-11-57</li>
 <li>[author list not retrieved] (2012). Estimation of recombinant
 protein production in Pichia pastoris based on a constraint-based model.
 <em>Journal of Process Control</em>. (peer-reviewed) <a href="https://www.sciencedirect.com/science/article/abs/pii/S0959152412000741" class="uri">https://www.sciencedirect.com/science/article/abs/pii/S0959152412000741</a></li>
-<li>[author list not retrieved] (2012). Metabolic flux profiling of
-recombinant protein secreting Pichia pastoris growing on
-glucose:methanol mixtures. <em>Microbial Cell Factories</em>.
-(peer-reviewed) doi:10.1186/1475-2859-11-57 [unverified]</li>
-<li>[author list not retrieved] (2012). Quantitative metabolomics
-analysis of amino acid metabolism in recombinant Pichia pastoris under
-different oxygen availability conditions. <em>Microbial Cell
-Factories</em>. (peer-reviewed) doi:10.1186/1475-2859-11-83
-[unverified]</li>
 <li>Ebrahim, A. et al. (2013). COBRApy: COnstraints-Based Reconstruction
 and Analysis for Python. <em>BMC Systems Biology</em>. (software)
-doi:10.1186/1752-0509-7-74 [unverified]</li>
+doi:10.1186/1752-0509-7-74</li>
 <li>Feizi, A. et al. (2013). Genome-Scale Modeling of the Protein
 Secretory Machinery in Yeast. <em>PLOS ONE</em>. (peer-reviewed)
-doi:10.1371/journal.pone.0063284 [unverified]</li>
+doi:10.1371/journal.pone.0063284</li>
 <li>O’Brien, E.J. et al. (2013). Genome-scale models of metabolism and
 gene expression extend and refine growth phenotype prediction.
 <em>Molecular Systems Biology</em>. (peer-reviewed)
-doi:10.1038/msb.2013.52 [unverified]</li>
-<li>Irani, Z.A. et al. (2015). Genome-scale metabolic model of Pichia
-pastoris with native and humanized glycosylation of recombinant
-proteins. <em>Biotechnology and Bioengineering</em>. (peer-reviewed)
-doi:10.1002/bit.25863 [unverified]</li>
+doi:10.1038/msb.2013.52</li>
 <li>[author list not retrieved] (2015). Engineering the supply chain for
 protein production/secretion in yeasts and mammalian cells. <em>Journal
 of Industrial Microbiology and Biotechnology</em>. (review) <a href="https://academic.oup.com/jimb/article/42/3/453/5995529?login=false" class="uri">https://academic.oup.com/jimb/article/42/3/453/5995529?login=false</a></li>
+<li>Irani, Z.A. et al. (2016). Genome-scale metabolic model of Pichia
+pastoris with native and humanized glycosylation of recombinant
+proteins. <em>Biotechnology and Bioengineering</em>. (peer-reviewed)
+doi:10.1002/bit.25863</li>
 <li>[author list not retrieved] (2016). Kp1.0: Genome-scale metabolic
 model for Komagataella phaffii. <em>University of Cambridge
 Repository</em>. (software) <a href="https://www.repository.cam.ac.uk/handle/1810/265359" class="uri">https://www.repository.cam.ac.uk/handle/1810/265359</a></li>
-<li>Sanchez, B.J. et al. (2017). Improving the phenotype predictions of
-a yeast genome-scale metabolic model by incorporating enzymatic
+<li>Sánchez et al. (2017). Improving the phenotype predictions of a
+yeast genome-scale metabolic model by incorporating enzymatic
 constraints. <em>Molecular Systems Biology</em>. (peer-reviewed)
-doi:10.15252/msb.20167411 [unverified]</li>
-<li>Tomas-Gamisans, M. et al. (2017). Fine-tuning the P. pastoris
-iMT1026 genome-scale metabolic model for improved prediction of growth
-on methanol or glycerol as sole carbon sources. <em>Microbial
-Biotechnology</em>. (peer-reviewed) doi:10.1111/1751-7915.12871
-[unverified]</li>
+doi:10.15252/msb.20167411</li>
+<li>Tomàs‐Gamisans et al. (2018). Fine-tuning the P. pastoris iMT1026
+genome-scale metabolic model for improved prediction of growth on
+methanol or glycerol as sole carbon sources. <em>Microbial
+Biotechnology</em>. (peer-reviewed) doi:10.1111/1751-7915.12871</li>
 <li>Torres, P. et al. (2019). Contextualized genome-scale model unveils
 high-order metabolic effects of the specific growth rate and oxygenation
 level in recombinant Pichia pastoris. <em>Metabolic Engineering
-Communications</em>. (peer-reviewed) doi:10.1016/j.mec.2019.e00103
-[unverified]</li>
+Communications</em>. (peer-reviewed) doi:10.1016/j.mec.2019.e00103</li>
 <li>Brady, J.R. et al. (2020). Comparative genome-scale analysis of
 Pichia pastoris variants informs selection of an optimal base strain.
 <em>Biotechnology and Bioengineering</em>. (peer-reviewed)
-doi:10.1002/bit.27209 [unverified]</li>
-<li>[author list not retrieved] (2020). Genome-scale reconstructions of
-the mammalian secretory pathway predict metabolic costs and limitations
-of protein secretion. <em>Nature Communications</em>. (peer-reviewed)
-doi:10.1038/s41467-019-13867-y [unverified]</li>
-<li>[author list not retrieved] (2022). Improving recombinant protein
-production by yeast through genome-scale modeling using proteome
-constraints. <em>Nature Communications</em>. (peer-reviewed)
-doi:10.1038/s41467-022-30689-7 [unverified]</li>
+doi:10.1002/bit.27209</li>
+<li>Gutierrez et al. (2020). Genome-scale reconstructions of the
+mammalian secretory pathway predict metabolic costs and limitations of
+protein secretion. <em>Nature Communications</em>. (peer-reviewed)
+doi:10.1038/s41467-019-13867-y</li>
+<li>Li et al. (2022). Improving recombinant protein production by yeast
+through genome-scale modeling using proteome constraints. <em>Nature
+Communications</em>. (peer-reviewed) doi:10.1038/s41467-022-30689-7</li>
 <li>[author list not retrieved] (2023). Pichia pastoris growth-coupled
 heme biosynthesis analysis using metabolic modelling. <em>Scientific
 Reports</em>. (peer-reviewed) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10516909/" class="uri">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10516909/</a></li>
-<li>Russmayer, H. et al. (2023). Customizing amino acid metabolism of
-Pichia pastoris for recombinant protein production. <em>Biotechnology
-Journal</em>. (peer-reviewed) doi:10.1002/biot.202300033
-[unverified]</li>
+<li>Rußmayer et al. (2023). Customizing amino acid metabolism of Pichia
+pastoris for recombinant protein production. <em>Biotechnology
+Journal</em>. (peer-reviewed) doi:10.1002/biot.202300033</li>
 <li>[author list not retrieved] (2024). Characterising the metabolic
 rewiring of extremely slow growing Komagataella phaffii. <em>PubMed
 record</em>. (peer-reviewed) <a href="https://pubmed.ncbi.nlm.nih.gov/38206275/" class="uri">https://pubmed.ncbi.nlm.nih.gov/38206275/</a></li>
-<li>[author list not retrieved] (2024). Protein production dynamics and
+<li>Rebnegger et al. (2024). Protein production dynamics and
 physiological adaptation of recombinant Komagataella phaffii at
 near-zero growth rates. <em>Microbial Cell Factories</em>.
-(peer-reviewed) doi:10.1186/s12934-024-02314-3 [unverified]</li>
+(peer-reviewed) doi:10.1186/s12934-024-02314-3</li>
 <li>Buric, F. et al. (2025). Amino acid sequence encodes protein
 abundance shaped by protein stability at reduced synthesis cost.
-<em>Protein Science</em>. (peer-reviewed) doi:10.1002/pro.5239
-[unverified]</li>
+<em>Protein Science</em>. (peer-reviewed) doi:10.1002/pro.5239</li>
 <li>[author list not retrieved] (2025). Modeling meets metabolic
 engineering: The iPichia consensus model as basis for metabolic studies
 in Komagataella phaffii. <em>Biochemical Engineering Journal</em>.
 (peer-reviewed) <a href="https://www.sciencedirect.com/science/article/abs/pii/S1369703X25003146" class="uri">https://www.sciencedirect.com/science/article/abs/pii/S1369703X25003146</a></li>
-<li>[author list not retrieved] (2026). Curation of
-Gene-Protein-Reaction Associations Enhances the iPichia Genome-Scale
-Metabolic Model of Komagataella phaffii. <em>Biotechnology and
-Bioengineering</em>. (peer-reviewed) doi:10.1002/bit.70402
-[unverified]</li>
-<li>[author list not retrieved] (2026). Metabolic impact of redox
-perturbations on recombinant protein production in Komagataella phaffii
-under methanolic growth conditions. <em>Microbial Cell Factories</em>.
-(peer-reviewed) doi:10.1186/s12934-026-03147-y [unverified]</li>
+<li>Antón et al. (2026). Metabolic impact of redox perturbations on
+recombinant protein production in Komagataella phaffii under methanolic
+growth conditions. <em>Microbial Cell Factories</em>. (peer-reviewed)
+doi:10.1186/s12934-026-03147-y</li>
+<li>Kocabaş (2026). Curation of Gene-Protein-Reaction Associations
+Enhances the iPichia Genome-Scale Metabolic Model of Komagataella
+phaffii. <em>Biotechnology and Bioengineering</em>. (peer-reviewed)
+doi:10.1002/bit.70402</li>
 </ul>
 <h2 id="techno-economics-and-life-cycle-assessment">8. Techno-economics
 and life-cycle assessment</h2>
 <ul>
 <li>Humbird, D. (2021). Scale-up economics for cultured meat.
 <em>Biotechnology and Bioengineering</em>. (peer-reviewed)
-doi:10.1002/bit.27848 [unverified]</li>
+doi:10.1002/bit.27848</li>
 <li>[author list not retrieved] (2022). Biotechnology could provide an
 environmentally more sustainable alternative to egg white protein
 production. <em>VTT press release</em>. (industry) <a href="https://www.vttresearch.com/en/news-and-ideas/biotechnology-could-provide-environmentally-more-sustainable-alternative-egg-white" class="uri">https://www.vttresearch.com/en/news-and-ideas/biotechnology-could-provide-environmentally-more-sustainable-alternative-egg-white</a></li>
 <li>[author list not retrieved] (2023). Single-Cell Protein Production
 from Industrial Off-Gas through Acetate: Techno-Economic Analysis for a
 Coupled Fermentation Approach. <em>Fermentation</em>. (peer-reviewed) <a href="https://www.mdpi.com/2311-5637/9/8/771" class="uri">https://www.mdpi.com/2311-5637/9/8/771</a></li>
-<li>[author list not retrieved] (2024). Techno-Economic Analysis of Gas
-Fermentation for the Production of Single Cell Protein.
-<em>Environmental Science and Technology</em>. (peer-reviewed)
-doi:10.1021/acs.est.3c10312 [unverified]</li>
+<li>Jean et al. (2024). Techno-Economic Analysis of Gas Fermentation for
+the Production of Single Cell Protein. <em>Environmental Science and
+Technology</em>. (peer-reviewed) doi:10.1021/acs.est.3c10312</li>
 <li>[author list not retrieved] (2024). Single cell proteins: A question
 of cost. <em>FoodNavigator</em>. (industry) <a href="https://www.foodnavigator.com/Article/2024/08/15/single-cell-proteins-a-question-of-cost/" class="uri">https://www.foodnavigator.com/Article/2024/08/15/single-cell-proteins-a-question-of-cost/</a></li>
 <li>[author list not retrieved] (2024). How Climate-Friendly is
@@ -5294,43 +5539,40 @@ Queen</em>. (industry) <a href="https://www.greenqueen.com.hk/environment-sustai
 <li>Vegetarian Resource Group (2024). Environmental impacts of
 bioreactors: Part 3 of a series on precision fermentation. <em>VRG
 blog</em>. (industry) <a href="https://www.vrg.org/blog/2024/08/01/environmental-impacts-of-bioreactors-part-3-of-a-series-on-precision-fermentation/" class="uri">https://www.vrg.org/blog/2024/08/01/environmental-impacts-of-bioreactors-part-3-of-a-series-on-precision-fermentation/</a></li>
+<li>Fasihi et al. (2025). Global potential of sustainable single-cell
+protein based on variable renewable electricity. <em>Nature
+Communications</em>. (peer-reviewed) doi:10.1038/s41467-025-56364-1</li>
 <li>GFI Europe (2025). Pathfinding towards precision fermentation
 viability. <em>GFI Europe report</em>. (industry) <a href="https://gfieurope.org/wp-content/uploads/2025/07/Pathfinding-towards-precision-fermentation-viability.pdf" class="uri">https://gfieurope.org/wp-content/uploads/2025/07/Pathfinding-towards-precision-fermentation-viability.pdf</a></li>
 <li>Good Food Institute (2025). Driving down costs: Insights and
 recommendations from a meta-analysis of techno-economic models of
 fermentation-derived ingredients. <em>Good Food Institute report</em>.
 (industry) <a href="https://gfi.org/wp-content/uploads/2025/06/Driving-down-costs-Insights-and-recommendations-from-a-meta-analysis-of-techno-economic-models-of-fermentation-derived-ingredients.pdf" class="uri">https://gfi.org/wp-content/uploads/2025/06/Driving-down-costs-Insights-and-recommendations-from-a-meta-analysis-of-techno-economic-models-of-fermentation-derived-ingredients.pdf</a></li>
-<li>[author list not retrieved] (2025). Biotechnology Approaches to
-Dairy Alternatives Through Precision Fermentation and Cellular
-Agriculture. <em>Food Science of Animal Resources</em>. (review)
-doi:10.5851/kosfa.2025.e33 [unverified]</li>
-<li>[author list not retrieved] (2025). Downstream Processing of Food
-Proteins from Precision Fermentation. <em>Annual Review of Food Science
-and Technology</em>. (review) doi:10.1146/annurev-food-060424-091647
-[unverified]</li>
-<li>[author list not retrieved] (2025). Global potential of sustainable
-single-cell protein based on variable renewable electricity. <em>Nature
-Communications</em>. (peer-reviewed) doi:10.1038/s41467-025-56364-1
-[unverified]</li>
 <li>[author list not retrieved] (2025). Four public cost models exist
 for precision-fermented protein. None sit where the industry does.
 <em>Lifemate Tech analysis</em>. (industry) <a href="https://lifematetech.com/articles/precision-fermentation-cost-data-gap" class="uri">https://lifematetech.com/articles/precision-fermentation-cost-data-gap</a></li>
 <li>[author list not retrieved] (2025). Feedstock isn’t half the cost of
 precision fermentation. Yield is the number that matters. <em>Lifemate
 Tech analysis</em>. (industry) <a href="https://lifematetech.com/articles/fermentation-feedstock-sugar-price-yield" class="uri">https://lifematetech.com/articles/fermentation-feedstock-sugar-price-yield</a></li>
-<li>[author list not retrieved] (2026). Environmental impact assessment
-of dairy protein from precision fermentation. <em>International Journal
-of Life Cycle Assessment</em>. (peer-reviewed)
-doi:10.1007/s11367-026-02765-3 [unverified]</li>
+<li>Purba et al. (2025). Biotechnology in Dairy Alternatives: Current
+Perspectives on Fermentation Technologies for Replacing Regular Milk
+with Artificial Milk. <em>Food Science of Animal Resources</em>.
+(review) doi:10.5851/kosfa.2025.e33</li>
+<li>Keppler et al. (2026). Downstream Processing of Food Proteins from
+Precision Fermentation. <em>Annual Review of Food Science and
+Technology</em>. (review) doi:10.1146/annurev-food-060424-091647</li>
+<li>Mahmoud et al. (2026). Next-generation precision fermentation:
+integrating engineered cell factories bioprocess intensification and
+smart bioprocessing. <em>Applied Microbiology and Biotechnology</em>.
+(review) doi:10.1007/s00253-026-14051-1</li>
 <li>[author list not retrieved] (2026). Techno-economic assessment of
 single-cell protein production at industrial scale from a wide range of
 carbon sources. <em>Chemical Engineering Journal</em>. (peer-reviewed)
 <a href="https://www.sciencedirect.com/science/article/pii/S1385894726081763" class="uri">https://www.sciencedirect.com/science/article/pii/S1385894726081763</a></li>
-<li>[author list not retrieved] (2026). Next-generation precision
-fermentation: integrating engineered cell factories bioprocess
-intensification and smart bioprocessing. <em>Applied Microbiology and
-Biotechnology</em>. (review) doi:10.1007/s00253-026-14051-1
-[unverified]</li>
+<li>Quandt et al. (2026). Environmental impact assessment of dairy
+protein from precision fermentation. <em>International Journal of Life
+Cycle Assessment</em>. (peer-reviewed)
+doi:10.1007/s11367-026-02765-3</li>
 </ul>
 <h2 id="prior-art-predicting-producibility-and-protein-cost">9. Prior
 art: predicting producibility and protein cost</h2>
@@ -5338,43 +5580,40 @@ art: predicting producibility and protein cost</h2>
 <li>[author list not retrieved] (2011). Developability Index: A Rapid In
 Silico Tool for the Screening of Antibody Aggregation Propensity.
 <em>ResearchGate record</em>. (peer-reviewed) <a href="https://www.researchgate.net/publication/51659749_Developability_Index_A_Rapid_In_Silico_Tool_for_the_Screening_of_Antibody_Aggregation_Propensity" class="uri">https://www.researchgate.net/publication/51659749_Developability_Index_A_Rapid_In_Silico_Tool_for_the_Screening_of_Antibody_Aggregation_Propensity</a></li>
-<li>[author list not retrieved] (2013). Presep: Predicting the
-Propensity of a Protein Being Secreted into the Supernatant when
-Expressed in Pichia pastoris. <em>PLOS ONE</em>. (peer-reviewed)
-doi:10.1371/journal.pone.0079749 [unverified]</li>
-<li>[author list not retrieved] (2021). Analysis of 11430 recombinant
-protein production experiments reveals that protein yield is tunable by
+<li>Tian et al. (2013). Presep: Predicting the Propensity of a Protein
+Being Secreted into the Supernatant when Expressed in Pichia pastoris.
+<em>PLOS ONE</em>. (peer-reviewed) doi:10.1371/journal.pone.0079749</li>
+<li>Bhandari et al. (2021). Analysis of 11430 recombinant protein
+production experiments reveals that protein yield is tunable by
 synonymous codon changes of translation initiation sites. <em>PLOS
 Computational Biology</em>. (peer-reviewed)
-doi:10.1371/journal.pcbi.1009461 [unverified]</li>
+doi:10.1371/journal.pcbi.1009461</li>
+<li>Golinski et al. (2021). High-throughput developability assays enable
+library-scale identification of producible protein scaffold variants.
+<em>Proceedings of the National Academy of Sciences</em>.
+(peer-reviewed) doi:10.1073/pnas.2026658118</li>
 <li>[author list not retrieved] (2021). Deep protein representations
 enable recombinant protein expression prediction. <em>Computational and
 Structural Biotechnology Journal</em>. (peer-reviewed) <a href="https://www.sciencedirect.com/science/article/pii/S1476927121001663" class="uri">https://www.sciencedirect.com/science/article/pii/S1476927121001663</a></li>
-<li>[author list not retrieved] (2021). High-throughput developability
-assays enable library-scale identification of producible protein
-scaffold variants. <em>Proceedings of the National Academy of
-Sciences</em>. (peer-reviewed) doi:10.1073/pnas.2026658118
-[unverified]</li>
-<li>[author list not retrieved] (2022). ExpressUrself: A spatial model
-for predicting recombinant protein expression. <em>bioRxiv</em>.
-(preprint) doi:10.1101/2022.12.02.518907 [unverified]</li>
+<li>Dunne et al. (2022). ExpressUrself: A spatial model for predicting
+recombinant expression from mRNA sequence. <em>bioRxiv</em>. (preprint)
+doi:10.1101/2022.12.02.518907</li>
 <li>[author list not retrieved] (2022). PERISCOPE-Opt: Machine
 learning-based prediction of optimal fermentation conditions and yields
 of recombinant periplasmic protein expressed in Escherichia coli.
 <em>Computational and Structural Biotechnology Journal</em>.
 (peer-reviewed) <a href="https://pubmed.ncbi.nlm.nih.gov/35765650" class="uri">https://pubmed.ncbi.nlm.nih.gov/35765650</a></li>
-<li>[author list not retrieved] (2022). Predicting high recombinant
-protein producer strains of Pichia pastoris MutS using the oxygen
-transfer rate as an indicator of metabolic burden. <em>Scientific
-Reports</em>. (peer-reviewed) doi:10.1038/s41598-022-15086-w
-[unverified]</li>
+<li>Wollborn et al. (2022). Predicting high recombinant protein producer
+strains of Pichia pastoris MutS using the oxygen transfer rate as an
+indicator of metabolic burden. <em>Scientific Reports</em>.
+(peer-reviewed) doi:10.1038/s41598-022-15086-w</li>
 <li>[author list not retrieved] (2023). Holistic in silico
 developability assessment of novel classes of biologics.
 <em>bioRxiv</em>. (preprint) <a href="https://www.biorxiv.org/content/10.1101/2023.11.10.566515v2.full.pdf" class="uri">https://www.biorxiv.org/content/10.1101/2023.11.10.566515v2.full.pdf</a></li>
-<li>[author list not retrieved] (2025). Deciphering the determinants of
-recombinant protein expression across the human secretome.
-<em>Proceedings of the National Academy of Sciences</em>.
-(peer-reviewed) doi:10.1073/pnas.2506036122 [unverified]</li>
+<li>Masson et al. (2025). Deciphering the determinants of recombinant
+protein expression across the human secretome. <em>Proceedings of the
+National Academy of Sciences</em>. (peer-reviewed)
+doi:10.1073/pnas.2506036122</li>
 <li>[author list not retrieved] (2025). Can protein expression be
 solved?. <em>Trends in Biotechnology</em>. (review) <a href="https://www.cell.com/trends/biotechnology/fulltext/S0167-7799(25)00166-0" class="uri">https://www.cell.com/trends/biotechnology/fulltext/S0167-7799(25)00166-0</a></li>
 <li>[author list not retrieved] (2025). Deep dive: Fermentation protein
@@ -5383,15 +5622,10 @@ ingredients and food functionality. <em>Good Food Institute</em>.
 <li>Guo, Z. et al. (2026). Toward Rational Design of Precision-Fermented
 Milk Proteins: Integrating Cross-Species Selection Post-Translational
 Modification and AI Optimization. <em>Comprehensive Reviews in Food
-Science and Food Safety</em>. (review) doi:10.1111/1541-4337.70618
-[unverified]</li>
-<li>[author list not retrieved] (2026). Forecasting Host Cells for
-Recombinant Protein Expression. <em>Biochemistry and Molecular
-Biology</em>. (peer-reviewed) doi:10.11648/j.bmb.20261101.11
-[unverified]</li>
-<li>[author list not retrieved] (2026). Advances in the biosynthesis of
-milk proteins fueled by synthetic biology. <em>Springer journal
-article</em>. (review) doi:10.1007/s44462-026-00065-5 [unverified]</li>
+Science and Food Safety</em>. (review) doi:10.1111/1541-4337.70618</li>
+<li>Le (2026). Forecasting Host Cells for Recombinant Protein
+Expression. <em>Biochemistry and Molecular Biology</em>. (peer-reviewed)
+doi:10.11648/j.bmb.20261101.11</li>
 <li>[author list not retrieved] (2026). Engineering Trichoderma reesei
 into a programmable eukaryotic chassis for efficient production of raw
 materials in the food industry. <em>Trends in Food Science and
@@ -5400,6 +5634,9 @@ Technology</em>. (review) <a href="https://www.sciencedirect.com/science/article
 life cycle assessment in guiding precision fermentation towards
 sustainable food production. <em>Trends in Food Science and
 Technology</em>. (review) <a href="https://www.sciencedirect.com/science/article/pii/S0924224425006247" class="uri">https://www.sciencedirect.com/science/article/pii/S0924224425006247</a></li>
+<li>Wang et al. (2026). Advances in the biosynthesis of milk proteins
+fueled by synthetic biology. <em>Agricultural Products Processing and
+Storage</em>. (review) doi:10.1007/s44462-026-00065-5</li>
 </ul>
 </body>
 </html>

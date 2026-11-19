@@ -1,0 +1,12 @@
+test,n_proteins,spearman_rho,p_value
+"external panel, as published",14,-0.7230769230769231,0.0034752946180943048
+"external panel, species-matched high-confidence lactoferrin",14,-0.6,0.023308410879999995
+  and one protein per orthologous pair,12,-0.6433566433566434,0.024003191200713647
+  and high-confidence records only,9,-0.9500000000000001,8.762523965086185e-05
+  and within fed-batch records only,10,-0.709090909090909,0.02166592336753244
+  GLOBULAR ONLY (mean disorder < 0.2),12,-0.4545454545454546,0.13765791634772948
+"external panel, process term partialled out",14,-0.5304067224858378,0.05103339750283346
+"this thesis's corpus, all proteins",25,-0.11615384615384615,0.5803228055887673
+"this thesis's corpus, food and food-adjacent",14,-0.15164835164835166,0.6047905984521367
+"this thesis's corpus, dairy/egg/haem only",10,-0.6121212121212121,0.05997214247725527
+  GLOBULAR ONLY (mean disorder < 0.2),8,-0.4285714285714286,0.2894032248467901
