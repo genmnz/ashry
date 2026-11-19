@@ -58,16 +58,19 @@ FIGURES = {
         "the same protein, at 350 g/L substrate loading, log scale. Labels give the "
         "gap in fold. No published process exceeds 8.3% of its own ceiling."),
     "fig7_ceiling_vs_achievement": (
-        "### 5.2.2 Nobody is close to the ceiling",
-        "**Figure 5.2** The ceiling varies 1.38-fold across 24 proteins; the "
-        "fraction of it achieved varies 628-fold. A property with this little "
-        "variation cannot explain an outcome with that much."),
+        "### 5.2.3 Nobody is close to the ceiling",
+        "**Figure 5.2** The ceiling against the fraction of it achieved, for "
+        "every protein in the corpus. The ceiling varies 1.31-fold (log10 SD "
+        "0.029); utilisation of it varies with a log10 SD of 0.851. A property "
+        "with this little variation cannot explain an outcome with that much."),
     "fig6_charge_hydropathy": (
-        "## 6.2 The positive result: disulfide density",
-        "**Figure 6.1** Charge-hydropathy placement of the panel. The caseins fall "
-        "on the disordered side of the Uversky boundary, as expected; Chapter 6 "
-        "nevertheless finds that predicted disorder carries no association with "
-        "titre among the proteins that have one."),
+        "## 6.2 The result that did not survive",
+        "**Figure 6.1** Charge-hydropathy placement of the panel. The caseins "
+        "fall on the disordered side of the Uversky boundary, as expected; "
+        "Chapter 6 nevertheless finds that disorder as pre-specified carries no "
+        "association with ceiling utilisation, and §6.5 records why the "
+        "association found for an alternative statistic was not reported as a "
+        "finding."),
     "fig5_tea_cost": (
         "## 8.3 What actually drives the cost",
         "**Figure 8.1** Production cost against titre at four levels of realised "
@@ -187,6 +190,44 @@ def institutional_front_matter(inst: dict) -> str:
     return "\n".join(lines)
 
 
+FIG_RE = re.compile(r"^\*\*(Figure [0-9]+\.[0-9]+)\*\*\s+(.+)$", re.M)
+TAB_RE = re.compile(r"^\*\*(Table [0-9]+\.[0-9]+)\s+[—-]\s+(.+?)\*\*\s*$", re.M)
+
+
+def _first_sentence(text: str, limit: int = 150) -> str:
+    text = re.sub(r"\s+", " ", text).strip()
+    cut = text.find(". ")
+    if 0 < cut < limit:
+        return text[:cut]
+    return text if len(text) <= limit else text[:limit].rsplit(" ", 1)[0] + "…"
+
+
+def front_lists(md: str) -> str:
+    """A list of figures and a list of tables, read off the assembled text."""
+    figs, seen = [], set()
+    for num, rest in FIG_RE.findall(md):
+        if num in seen:
+            continue
+        seen.add(num)
+        figs.append((num, _first_sentence(rest)))
+    tabs, seen = [], set()
+    for num, rest in TAB_RE.findall(md):
+        if num in seen:
+            continue
+        seen.add(num)
+        tabs.append((num, _first_sentence(rest)))
+
+    out = ["<div style=\"page-break-after: always\"></div>", "",
+           "## List of figures", ""]
+    out += [f"- **{n}** — {c}" for n, c in figs] or ["- (none)"]
+    out += ["", "<div style=\"page-break-after: always\"></div>", "",
+            "## List of tables", ""]
+    out += [f"- **{n}** — {c}" for n, c in tabs] or ["- (none)"]
+    out += ["", "<div style=\"page-break-after: always\"></div>", ""]
+    print(f"  listed {len(figs)} figures and {len(tabs)} tables")
+    return "\n".join(out)
+
+
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     inst = read_institution()
@@ -199,6 +240,11 @@ def main() -> None:
         md = md.replace(marker, "\n" + front + marker, 1)
     else:
         md = front + md
+    # Lists of figures and tables go after the abstract and acknowledgements,
+    # immediately before Chapter 1, which is where a thesis template puts them.
+    ch1 = "\n# Chapter 1 "
+    if ch1 in md:
+        md = md.replace(ch1, "\n" + front_lists(md) + ch1, 1)
     unfilled = [k for k, ph in TITLE_FIELDS
                 if ph and not inst.get(k)]
     if unfilled:

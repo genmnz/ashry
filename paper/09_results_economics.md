@@ -97,7 +97,31 @@ Third, most of the favourable assessments are **commissioned by producers**. The
 
 The honest summary is that the environmental case for precision fermentation is strong on land and water, conditional on grid decarbonisation for carbon, and that the ranges should be reported as ranges.
 
-## 8.6 What this chapter establishes
+## 8.6 What the within-protein spread means for a cost model
+
+Section 5.2.2 reports that the mean log₁₀ spread in ceiling utilisation *within* a single protein is 0.638, against 0.892 across the whole corpus. Ovalbumin spans 200-fold across four published records of the same protein. That finding has a direct and uncomfortable consequence for any cost model of this industry, including this one.
+
+A techno-economic model takes titre as an input. Table 8.2 shows that cost per kilogram falls almost in proportion to titre, so the titre assumption is the single most consequential number in the model after recovery. If the published titre for a given protein spans two orders of magnitude depending on whose laboratory produced it, then **the cost of producing that protein is not a property of the protein**, and a model that quotes a cost per kilogram for "recombinant ovalbumin" is quoting a cost for one process, not for a molecule.
+
+Three practical consequences follow.
+
+**Cost estimates should be quoted against a titre, not against a protein.** "$43/kg at 10 g L⁻¹" is a defensible statement. "$43/kg for β-lactoglobulin" is not, because it conceals the only assumption that matters. This is one explanation for the three-orders-of-magnitude spread in the published estimates that §2.7.1 describes: the models differ less in their engineering than in which published titre they picked up.
+
+**The achievable cost is bounded by the best process, not the median one.** Since the within-protein spread is large and the mechanism is process rather than molecule, the right input to a forward-looking cost model is the best titre anyone has demonstrated for that protein, not the central tendency of the literature. Using the median under-states what is achievable by roughly the within-protein spread itself.
+
+**Process development has a computable value, and it is large.** At 30% of theoretical yield, moving a process from 2 to 20 g L⁻¹ takes cost from $153 to $25 per kilogram. The within-protein spread in the corpus is of exactly that magnitude for several proteins. The economic value of the process-development work that separates the best published record from the worst is therefore not marginal; for ovalbumin it is the difference between a product and a laboratory curiosity.
+
+## 8.7 How this model sits against the published ones
+
+Four public cost models for precision-fermented protein were identified in the corpus, and trade analysis notes that none of them sits where the industry reports itself to be. It is worth stating plainly where the present model sits relative to them, because an independently built model landing in a published range is weak evidence and landing outside one is informative.
+
+The model built here gives $43/kg at 10 g L⁻¹ with a 5th-to-95th-percentile range of $25–93/kg. The industry analysis most closely matched to product grade places food-grade α-lactalbumin near $24/kg and high-purity grades near $100/kg. The present baseline therefore sits inside that span, towards its lower-middle, and the Monte Carlo interval covers essentially all of it. That is a mild validation of the parameterisation rather than a confirmation of any number: the model was not tuned to the published figure, and it uses a chromatography-free downstream route, which is the assumption most likely to be doing the work.
+
+Where this model differs from the published ones is in what it adds rather than what it concludes. It carries a **stoichiometric floor** — $0.94/kg of glycerol carbon at maximum theoretical yield — which turns the usual question "is this cost plausible?" into the answerable question "what is the ratio of this cost to the thermodynamic minimum?". That ratio is 46-fold at the baseline, and it is a quantity none of the retrieved public models reports. It matters because it separates two very different claims: that precision fermentation is close to a physical limit, and that it is 46 times away from one. The second is the true one, and it is considerably more optimistic.
+
+The model's limitations are stated rather than buried. It is a single-product, single-scale, steady-state model with straight-line depreciation and no working capital, no validation or regulatory cost, no failed-batch allowance and no product-specific downstream route. It assumes a chromatography-free recovery at 70%, which for a protein requiring high purity is optimistic. It takes labour as a fixed annual crew cost independent of titre, which is right for a plant and wrong for a company. And it prices utilities from an aeration and cooling duty computed at the baseline rather than re-solved per scenario. Every one of these would move the absolute number; none of them changes the two conclusions the chapter rests on, which are that titre and recovery dominate and that carbon efficiency does not.
+
+## 8.8 What this chapter establishes
 
 1. The raw-carbon floor for glycerol-fed food protein is about $1/kg; the modelled plant cost is $43/kg at 10 g L⁻¹; the engineering gap is 46-fold.
 2. Titre and downstream recovery dominate the cost; substrate price and carbon efficiency barely matter. This is the economic restatement of Chapter 6's finding that metabolism is not the binding constraint.
