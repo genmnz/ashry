@@ -43,7 +43,7 @@ Applying the inclusion rules of §3.9 to the rebuilt corpus gives **75 high-conf
 | Human interferon λ-1 | 0.07 | 0.616 | 216 | 0.03% | 3,318× |
 | Human serum transferrin | 0.03 | 0.638 | 223 | 0.01% | 7,441× |
 
-Food and food-adjacent proteins are shown in bold; the remainder are human therapeutics, flagged as such in the corpus and analysed separately in §5.2.5.
+Food and food-adjacent proteins are shown in bold; the remainder are human therapeutics, flagged as such in the corpus and analysed separately in §5.2.6.
 
 ### 5.2.1 The headline contrast
 
@@ -58,17 +58,73 @@ Across these 26 proteins, at the central loading:
 
 The two log₁₀ standard deviations are the comparison that matters, because both quantities are then measured in the same units — orders of magnitude — on the same 26 proteins. **The outcome is about thirty times more dispersed than the bound** (0.851 against 0.029). Half the corpus sits between 0.07% and 2.1% of its own ceiling, a 29-fold interquartile spread, while the ceiling's interquartile spread is 6%.
 
-This is the result the thesis exists to state, and unlike the ratio of extremes it is a property of the whole distribution. It is robust to every assumption tested: it holds across the whole scanned range of substrate loading, across the translation-cost scan, whether the product basis or the polypeptide basis is used, and — see §5.2.5 — within the food-protein subset alone, where the 15 food and food-adjacent proteins have median utilisation 0.50% and log₁₀ SD 0.780 against the same 1.31-fold ceiling span.
+This is the result the thesis exists to state, and unlike the ratio of extremes it is a property of the whole distribution. It is robust to every assumption tested: it holds across the whole scanned range of substrate loading, across the translation-cost scan, whether the product basis or the polypeptide basis is used, and — see §5.2.6 — within the food-protein subset alone, where the 15 food and food-adjacent proteins have median utilisation 0.50% and log₁₀ SD 0.780 against the same 1.31-fold ceiling span.
 
 The extremes are still worth naming, as examples rather than as the statistic. The best process in the corpus reached 8.0% of its ceiling; the worst reached 0.013%; the ratio between those two particular records is 593-fold, and the reader should treat that number as an illustration of the spread, not as a measurement of it.
 
-### 5.2.2 Nobody is close to the ceiling
+### 5.2.2 Most of the spread is reproduced at fixed sequence
+
+Table 5.1 reports one record per protein — the best published titre — because that is the fairest way to ask how close the field has come. It is not, however, the right table for asking *what the spread is attached to*. Joining every qualifying record to its ceiling on the UniProt accession rather than on a protein name lets a single protein appear as many times as it has been published, and once it can, something becomes visible that the best-of table hides.
+
+The same protein, in the same host, reaches wildly different titres in different hands.
+
+**Table 5.2 — Within-protein spread in ceiling utilisation, for proteins with three or more qualifying records**
+
+| Protein | Accession | Records | log₁₀ SD within protein | Fold range |
+|---|---|---|---|---|
+| Hen ovalbumin | P01012 | 4 | 1.192 | 200× |
+| Human type III collagen | P02461 | 5 | 0.807 | 88× |
+| Human α-lactalbumin | P00709 | 6 | 0.784 | 115× |
+| **Bovine κ-casein** | P02668 | 5 | 0.758 | 102× |
+| Bovine β-lactoglobulin | P02754 | 4 | 0.589 | 17× |
+| Human serum albumin | P02768 | 6 | 0.532 | 17× |
+| Porcine myoglobin | P02189 | 8 | 0.518 | 38× |
+| Human lactoferrin | P02788 | 7 | 0.484 | 19× |
+| Human interferon α-2b | P01563 | 14 | 0.426 | 32× |
+| Soy leghemoglobin | P02236 | 3 | 0.294 | 4× |
+
+The mean spread *inside* a single protein is **0.638** in log₁₀, against **0.892** across the whole 88-record corpus. Roughly **half the variance in realised production is reproduced within single proteins**, before any protein is compared with any other. Hen ovalbumin alone spans 200-fold; κ-casein, the central test case of §5.3, spans 102-fold across five records.
+
+This reframes the question the thesis asks. If half the dispersion occurs when the sequence does not vary at all, then no quantity derived from the sequence can account for it, and a "producibility index" built from sequence features is predicting something that is only half there.
+
+**The variance decomposition.** A random-intercept model with crossed intercepts for protein identity and study identity, and fixed effects for cultivation mode and host, splits the variance in log₁₀ utilisation across 88 records, 30 proteins and 52 studies:
+
+**Table 5.3 — Variance decomposition of log₁₀ ceiling utilisation**
+
+| Model | Between proteins | Between studies | Residual | Share between proteins |
+|---|---|---|---|---|
+| Intercept only | 0.342 | 0.120 | 0.354 | 41.9% |
+| + cultivation | 0.221 | 0.109 | 0.244 | 38.4% |
+| + cultivation + host | 0.254 | 0.096 | 0.232 | 43.7% |
+| + cultivation + host + sequence features | 0.127 | 0.114 | 0.235 | 26.7% |
+
+Taking the cultivation-and-host model as the reference, **44% of the variance sits between proteins, 16% between studies of the same protein, and 40% within studies.** Adding the seven sequence features of §3.6 halves the between-protein component, from 0.254 to 0.127, while leaving the residual untouched at 0.232 against 0.235. That is the signature of regressors absorbing protein identity rather than predicting from it: the features are acting as a noisy label for which protein a row is, not as a mechanism. Chapter 6 reaches the same conclusion by cross-validation, and this is the more defensible form of it.
+
+Two fixed effects are worth reporting, both relative to a batch bioreactor. Shake flask costs **−0.731** in log₁₀, a factor of 5.4, with *p* = 0.002: cultivation mode is a real and large effect, and it is the one effect in the model that is unambiguously significant. Fed-batch against batch is **+0.195**, *p* = 0.43 — which means that once protein identity is admitted as a random effect, the fed-batch indicator this thesis carries through Chapter 6 weakens to nothing. *T. reesei* against *K. phaffii* is +0.453, *p* = 0.072.
+
+**Intervals, not ratios of extremes.** Every distributional statistic in this chapter is reported with a 4,000-sample bootstrap interval, computed over records rather than over best-of-protein rows:
+
+**Table 5.4 — Distributional statistics with bootstrap intervals (88 records)**
+
+| Quantity | Estimate | 95% interval |
+|---|---|---|
+| Median ceiling utilisation | 0.507% | 0.350% – 1.333% |
+| First quartile | 0.167% | 0.110% – 0.268% |
+| Third quartile | 2.417% | 1.532% – 5.108% |
+| log₁₀ SD of utilisation | 0.892 | 0.751 – 1.017 |
+| log₁₀ SD of the ceiling | 0.0193 | 0.0130 – 0.0245 |
+
+The ratio of the last two is **46**: realised production is about forty-six times more variable, on a log scale, than the stoichiometry that bounds it. The per-protein figures of §5.2.1 (0.851 against 0.029, a ratio near thirty) and these per-record figures are the same statement computed on two defensible denominators, and the interval on the ceiling's dispersion — 0.013 to 0.025 — does not come close to the interval on utilisation's. The conclusion does not depend on which convention is adopted.
+
+**What this does and does not establish.** It establishes an association and a negative result about method: the spread in realised production is mostly not attached to the protein, which rules a sequence-derived index out as a predictor. It does not identify folding, secretion, proteolysis or any other process as the mechanism, and nothing in an 88-record observational corpus could: process conditions, strain background, copy number and quantification method all vary together across studies and cannot be separated from one another at this sample size. The defensible claim is the one stated here — that metabolic stoichiometry does not bound these processes anywhere near their observed range, and that what does vary is a property of the process rather than of the protein.
+
+### 5.2.3 Nobody is close to the ceiling
 
 The best process in the entire corpus — a human-like collagen at 19.4 g L⁻¹ — reached **8.0%** of what the stoichiometry of its host permits. The best food protein, β-lactoglobulin at 13.88 g L⁻¹, reached 6.1%. The median protein reached 0.40%, which is a factor of 250 from its bound. This is worth stating plainly because the field's language sometimes suggests that titres are approaching a biological limit. They are not approaching it; the median published process is more than two orders of magnitude away from it, and the best is more than one.
 
 At a loading of 150 g L⁻¹ the β-lactoglobulin result rises to 14.2% of ceiling and at 500 g L⁻¹ it falls to 4.3%, so the conclusion is not an artefact of the central loading assumption: no plausible loading brings any published process within a factor of seven of its ceiling.
 
-### 5.2.3 Is carbon the right bound? Four alternative bounds, computed
+### 5.2.4 Is carbon the right bound? Four alternative bounds, computed
 
 A comparison is only as good as its denominator. If real fermentations hit an oxygen-transfer wall long before they exhaust their carbon, then measuring titres against a carbon ceiling compares them against a bound that never binds, and the gap is partly an artefact.
 
@@ -126,7 +182,7 @@ Two things follow. **Phosphate does not bind in a standard medium.** Basal salts
 
 #### Heat removal, the one check that cannot be dismissed outright
 
-Oxygen uptake is the standard proxy for fermenter heat load, because aerobic catabolism releases a nearly substrate-independent 440–490 kJ per mole of O₂. At the oxygen demands of §5.2.3 this is **4.3–4.7 kJ per gram of product**. A jacketed production vessel with internal coils removes roughly 5–20 kW m⁻³:
+Oxygen uptake is the standard proxy for fermenter heat load, because aerobic catabolism releases a nearly substrate-independent 440–490 kJ per mole of O₂. At the oxygen demands of §5.2.4 this is **4.3–4.7 kJ per gram of product**. A jacketed production vessel with internal coils removes roughly 5–20 kW m⁻³:
 
 | Cooling capacity (kW m⁻³) | Heat-limited ceiling (g L⁻¹) | Carbon ceiling (g L⁻¹) | Binding bound |
 |---|---|---|---|
@@ -139,7 +195,7 @@ Carbon is tighter in all 36 combinations, but the margin at the low-cooling end 
 
 And this calculation is **non-conservative**, which must be said plainly. It counts only the oxygen drawn by product synthesis, so it understates the heat a real process must remove and therefore overstates the heat ceiling. Growth and maintenance respiration in a high-cell-density fed-batch dominate total oxygen uptake, often by an order of magnitude, so the true heat-limited ceiling is well below the figures tabulated above and may be the tightest bound of all at a large scale with poor cooling. What this calculation establishes is the narrower claim that *the heat of product synthesis alone* does not bind. Unlike oxygen, heat removal cannot be dismissed as a candidate constraint on this evidence; it is simply not a constraint on the quantity Table 5.1 measures. Bounding it properly requires a whole-process energy balance with growth and maintenance included, which is beyond a product-level stoichiometric model and is named as such in §9.3.
 
-### 5.2.4 The ordering is not the expected one
+### 5.2.5 The ordering is not the expected one
 
 Chapter 2 declared the expectation in advance: the published expert judgement is that whey proteins are the most tractable targets and caseins and lactoferrin the least. The measurement partly contradicts it.
 
@@ -147,7 +203,7 @@ Chapter 2 declared the expectation in advance: the published expert judgement is
 
 Two readings are available and the data here cannot separate them. Either α-lactalbumin is genuinely difficult — four disulfides in 123 residues is a high disulfide density for a food protein — or it has received far less engineering effort than β-lactoglobulin, which has a commercial product behind it. The first reading was the more attractive one while disulfide density appeared to predict titre; Chapter 6 withdraws that finding, which leaves the effort reading carrying most of the weight. It is developed in §6.5, where it becomes the chapter's main conclusion rather than a caveat.
 
-### 5.2.5 Food proteins and therapeutics, separated
+### 5.2.6 Food proteins and therapeutics, separated
 
 Eleven of the 26 proteins in Table 5.1 are human therapeutics: interferons, interleukins, colony-stimulating factors, insulin, transferrin, albumin. Pooling them with food proteins is a confound rather than a convenience, because a therapeutic is developed under a cost structure and a regulatory regime that justify effort no food protein can. Reclassifying one row from one group to the other would also move a max-over-min ratio, which is a further reason not to rest the headline on one.
 
@@ -160,7 +216,7 @@ The corpus carries an explicit flag, so the analysis is simply repeated on the 1
 
 Nothing of substance changes. The food proteins are if anything slightly *better* utilised at the median, their dispersion is almost as wide, and the ceiling span is identical because the ceiling is set by composition rather than by product category. The decomposition is therefore not an artefact of mixing two markets.
 
-## 5.3 The caseins: from an absence to a measurement
+## 5.3 The caseins: the central test case
 
 The caseins were, until the corpus was rebuilt, absent from Table 5.1 altogether, and this section reported that absence as a result. It is worth recording what happened to that claim, because the correction runs in both directions and the second half of it is new.
 
@@ -200,10 +256,11 @@ Including any of these inflates apparent performance. Excluding them costs sampl
 ## 5.5 What this chapter establishes
 
 1. No published process for any protein in these hosts has reached more than **8.0%** of its stoichiometric ceiling. The median reached 0.40%, and half the corpus lies between 0.07% and 2.1%.
-2. The stoichiometric ceiling has a log₁₀ standard deviation of **0.029** across 26 proteins; utilisation of it has a log₁₀ standard deviation of **0.851**. The outcome is about thirty times more dispersed than the bound, which excludes metabolic cost as the explanation of the ordering. Reported as a distribution rather than as a ratio of extremes, the conclusion does not depend on any single record.
+2. The stoichiometric ceiling has a log₁₀ standard deviation of **0.029** across 26 proteins; utilisation of it has a log₁₀ standard deviation of **0.851**. Computed per record rather than per protein, with bootstrap intervals, the same contrast is 0.0193 (0.0130–0.0245) against 0.892 (0.751–1.017), a ratio of 46. The outcome is about thirty times more dispersed than the bound, which excludes metabolic cost as the explanation of the ordering. Reported as a distribution rather than as a ratio of extremes, the conclusion does not depend on any single record.
 3. Carbon, not oxygen, is the binding bound at the product level in all 36 protein-by-transfer-rate combinations tested, and the same holds against phosphate at any realistic supply and against the heat of product synthesis at any realistic cooling capacity. Nitrogen binds before carbon in a batch, but not in the fed-batch processes these titres came from. Substituting any of these bounds rescales the median without touching the dispersion. Two caveats are carried rather than buried: phosphate is the only bound that varies strongly between proteins, twelve-fold against carbon's 1.31-fold, and binds on the caseins below 2 g P L⁻¹; and the heat bound counts only product-associated respiration, so it is an upper bound on an upper bound and heat removal remains an open question at scale.
 4. Separating food proteins from human therapeutics changes nothing material: 15 food and food-adjacent proteins, median utilisation 0.50%, log₁₀ SD 0.780, identical ceiling span.
 5. The published expert ordering of food proteins by tractability is partly contradicted: α-lactalbumin, a "tractable" whey protein, sits at 0.31% of its ceiling, below lactoferrin, ovalbumin and lysozyme.
 6. Intact κ-casein does have published titres, 28–133 mg L⁻¹ in *K. phaffii*, and it has among the *highest* ceilings and the lowest utilisation in the corpus. α-S2- and β-casein still have none in any microbial host.
+7. **About half the dispersion in realised production is reproduced within single proteins.** The mean log₁₀ spread inside one protein is 0.638 against 0.892 corpus-wide; hen ovalbumin spans 200-fold across four records and κ-casein 102-fold across five. A variance decomposition attributes 44% of the variance to protein identity, 16% to study identity and 40% to within-study residual, and adding sequence features halves the between-protein component without touching the residual. Since half the spread occurs where the sequence does not vary, no sequence-derived quantity can account for it.
 
 The gap is therefore real, large, well characterised as a distribution, and unexplained by anything computed so far. The next chapter asks what it tracks, and reports that the answer is not the protein.

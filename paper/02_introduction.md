@@ -36,7 +36,11 @@ The same ambiguity runs through every other claim in the field. Is N-glycosylati
 
 The question this thesis asks is:
 
-> **For each protein in the panel, how much of the distance between what is theoretically possible and what has actually been achieved is explained by the cost of building the molecule, and how much is not?**
+> **Why do recombinant proteins with remarkably similar stoichiometric production ceilings exhibit such dramatically different levels of realised production?**
+
+The question is put that way because the premise is itself a result, and it is the first thing the thesis establishes. Across 26 proteins the stoichiometric ceiling has a log₁₀ standard deviation of 0.029 — a 1.31-fold range from the cheapest to the most expensive — while utilisation of that ceiling has a log₁₀ standard deviation of 0.839 and an interquartile range from 0.07% to 2.1%. The outcome is roughly thirty times more dispersed than the bound. Once that is measured, "why are some food proteins harder to make?" stops being a question about cost, because cost has been shown not to vary enough to be the answer.
+
+The answer the thesis reaches is that the dispersion is mostly not a property of the protein. Joining every qualifying published record to its own protein's ceiling — so that one protein appears as many times as it has been published — shows that the mean spread *within* a single protein is 0.638 in log₁₀ against 0.892 across the whole corpus. Hen ovalbumin spans 200-fold across four records; κ-casein spans 102-fold across five. Roughly half the variation in realised production is reproduced where the sequence does not vary at all, and a variance decomposition with crossed random effects for protein and study puts 44% of the variance between proteins, 16% between studies of the same protein and 40% within studies. Cultivation mode is the one large, unambiguous fixed effect: a shake flask costs a factor of five against a batch bioreactor. This is an association and a negative result about method, not an identification of a mechanism, and §5.2.2 and §6.6 are careful about the difference.
 
 This is made answerable by a decomposition in three steps.
 
@@ -54,11 +58,13 @@ Computing per-protein biosynthetic costs in a metabolic model is established pra
 
 None of those steps is claimed here as a discovery. They are used as instruments, with citation, in Chapters 3 and 4.
 
-What has not been done, and what this thesis contributes, is the decomposition itself:
+What has not been done, and what this thesis contributes, is the decomposition itself, together with the evidence base that makes it checkable:
 
-1. **Per-protein stoichiometric ceilings for this panel of named food proteins** in *K. phaffii*, resolved by carbon source and by post-translational component, including the separation of the glycoprotein mass yield from the polypeptide yield that a food application actually cares about.
-2. **Each published titre expressed as a fraction of its own protein's ceiling**, over a curated and quotation-backed titre corpus — which turns the field's incommensurable numbers into a single measurable quantity, the gap.
-3. **A direct test of what the residual gap tracks**, including the negative results, which turn out to be the informative ones.
+1. **A curated, quotation-backed corpus of 306 published secretion titres**, which is a contribution in its own right rather than supporting material. Every record carries the verbatim sentence from its source that states the number, a DOI resolved against Crossref and confirmed at doi.org, the host and strain, the cultivation mode, a confidence grade, and a classification as food protein, food or industrial enzyme, research reagent or human therapeutic. No compilation of this kind existed for these hosts. Its design is load-bearing rather than decorative: §5.3 and Appendix F each document a conclusion that would have been wrong without it, and in one case it was the quoted sentence — the words "cell lysis, and purification" — that exposed an intracellular yield recorded as a secretion titre.
+2. **Per-protein stoichiometric ceilings for named food proteins** in *K. phaffii*, resolved by carbon source and by post-translational component, including the separation of the glycoprotein mass yield from the polypeptide yield that a food application actually cares about.
+3. **Each published titre expressed as a fraction of its own protein's ceiling**, which converts the field's incommensurable numbers into one comparable quantity, and the attribution of the residual — including the negative results, which turn out to be the informative ones, and two candidate positive findings that were withdrawn under audit rather than published.
+
+The caseins are the central test case throughout rather than an illustration. They are the commercially most important class in the panel, the class the field names as hardest, the class whose difficulty is conventionally attributed to disorder, and — until this work — the class with almost no published quantitative titre. They are also the class where the decomposition speaks most clearly, because they are metabolically among the *cheapest* proteins to build and among the worst produced.
 
 ## 1.6 Structure of the thesis
 

@@ -91,17 +91,43 @@ The consequence is visible in the designs themselves. Scoring the same nine maxi
 
 Three designs were generated per protein: a maximum-CAI design using the most adapted codon everywhere; a **harmonised** design sampling codons in proportion to host usage subject to design filters (no homopolymer run of six or more nucleotides, GC content between 35 and 60 per cent in every 50-nucleotide window, no internal BamHI, EcoRI, XhoI, NotI, SacI or SalI sites, no AATAAA or TATATA motifs); and a uniform-synonymous null as a negative control. The harmonised sequences are the ones proposed for synthesis and are in `results/constructs/`. All designs are deterministic given the random seed recorded in the code.
 
-## 3.8 The titre database
+## 3.8 The titre corpus
 
-No suitable compilation of published titres for food proteins in these hosts existed, so one was built. Records were retrieved principally through the Europe PMC REST article interface, with publisher and PubMed landing pages as fallbacks.
+### 3.8.1 Why it had to be built
 
-Each record carries: protein and source organism; UniProt accession where the identification was unambiguous; host and strain; secretion leader and promoter where reported; cultivation mode; the titre as reported and normalised to mg L⁻¹; whether the product was secreted; year, first author, journal and DOI; **a verbatim quotation of the sentence stating the titre**; and a confidence grade. Nothing was entered from memory.
+The measurement at the centre of this thesis divides a published titre by a computed ceiling. The computed side is reproducible by anyone with the model and the sequence. The published side is not, because the numbers are scattered across three decades of literature in units that do not match, under protein names that do not match, from cultivations that are not comparable, and — as §3.8.4 shows — sometimes mean something other than what a reader assumes. No compilation adequate to the task existed for these hosts, so one was built from primary sources, and it is reported here as a result of the work rather than as its supporting material.
 
-The database contains 109 host-panel records (96 high confidence, 12 medium, 1 low) and 32 records specific to the panel proteins across any microbial host. Ninety-one records are from *K. phaffii* or *P. pastoris* and eight from *T. reesei*.
+The corpus holds **306 records** drawn from **167 distinct publications** spanning **1990 to 2027**, covering **29 distinct protein targets** across **15 host species**. Reported titres span more than six orders of magnitude, from 0.027 mg L⁻¹ to 125 g L⁻¹.
 
-Three documented hazards are carried into the analysis rather than silently averaged away. Some high reported figures are **total extracellular protein** rather than product mass, and are flagged per row. Multi-stage results from a single study are **not independent**, and eight such sets are identified. Within-study flask-to-bioreactor ratios of 8- to 88-fold mean that **cultivation modes must not be pooled**, which is why Chapter 6 carries an explicit fed-batch indicator.
+### 3.8.2 What each record carries
 
-Two gaps are material and are reported as gaps: no primary volumetric titre was found for β-casein or α-S2-casein in any microbial host, and secretion of ovalbumin in *K. phaffii* has been demonstrated without a stated titre.
+Every record carries, where the source states it: the protein name as published and a canonical name; a UniProt accession where identification was unambiguous (194 of 306); source organism; host species, canonicalised host, and strain; promoter and secretion leader; gene copy number; cellular localisation of the product; cultivation mode and carbon source; the titre as reported and normalised to mg L⁻¹; the basis on which it was reported; the quantification method; volumetric productivity where derivable; year, reference, source title, DOI and PMID; a confidence grade; free-text notes; and the file-level provenance of the row.
+
+Two fields do more work than the rest.
+
+**The evidence quotation.** Every one of the 306 records carries a verbatim quotation of the sentence in its source that states the number. This is not decoration. A normalised figure in a spreadsheet is unfalsifiable: a reader cannot tell whether 2.5 g L⁻¹ was the product, the total extracellular protein, a cell-lysate yield or a per-gram-biomass figure converted on an assumption the compiler did not record. The quotation makes each row auditable against its source in one step, and §3.8.4 records the cases where that audit changed an answer.
+
+**The product-class field.** Each record is classified as food protein (129), other (71), human therapeutic (61), industrial enzyme (23), food enzyme (13) or research reagent (9), and separately flagged therapeutic or not (61 against 245). The reason is that therapeutic proteins are produced under a different economic regime: a monoclonal antibody fragment worth thousands of dollars per gram justifies strain-engineering effort that a dairy protein worth tens of dollars per kilogram does not, so a correlation fitted across both classes can be reading commercial incentive rather than molecular difficulty. The classification exists so that every association reported in Chapter 6 can be, and is, refitted on the food subset alone.
+
+### 3.8.3 Confidence grading
+
+Records are graded **high** (207), **medium** (78), **low** (18) or **unverified** (3). A high grade requires that the titre be stated numerically in the source for a defined volumetric basis, that the host and product be identifiable, and that the quotation support the number without inference. Medium covers numbers requiring a stated unit conversion or a secondary source. Low covers numbers recoverable only approximately — read from a figure, or reported as a range. The three unverified rows are retained, flagged, and excluded from every analysis. The quantitative analyses in Chapters 5 and 6 use high-confidence secreted records only; the remainder provide context and the negative-space mapping of Chapter 7.
+
+### 3.8.4 Hazards carried into the analysis rather than averaged away
+
+Four hazards are documented per row rather than silently smoothed.
+
+**Basis mismatch.** Some high reported figures are total extracellular protein, not product mass. These are flagged in `titer_basis` and excluded from utilisation calculations.
+
+**Localisation mismatch.** Twenty-two records are intracellular and five explicitly not secreted. A secretion analysis that pools these overstates what secretion achieves. One such case was caught only by its quotation: a record entered as a secretion titre carried a sentence containing the words "cell lysis, and purification", which places the number downstream of a lysis step and therefore inside the cell. Appendix F documents the episode and what it cost.
+
+**Non-independence.** Multi-stage optimisation results from a single study are not independent observations. Thirty-three records are flagged against an earlier row by `duplicate_of`, and study identity is retained so that heterogeneity at the study level can be modelled rather than assumed away.
+
+**Cultivation incomparability.** Within-study flask-to-bioreactor ratios in this corpus run from roughly 8-fold to 88-fold. Cultivation mode is therefore never pooled: Chapter 6 carries an explicit fed-batch indicator and reports every association both with and without it.
+
+### 3.8.5 Gaps, reported as gaps
+
+Two gaps in the literature are material to the panel and are reported rather than filled by inference. No primary volumetric titre was found for β-casein or α-S2-casein in any microbial host. Secretion of ovalbumin in *K. phaffii* has been demonstrated without a stated titre. These absences are not failures of retrieval; they are the shape of the field, and Chapter 7 treats them as findings.
 
 ## 3.9 The ceiling–gap measurement
 

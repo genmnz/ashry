@@ -126,7 +126,9 @@ With those corrected, the reported association is **ρ = −0.483, p = 0.117, wi
 
 ## 6.6 What the variance is actually in
 
-Three sources, none of them properties of the molecule, dominate.
+Section 5.2.2 gives this question a quantitative answer. A crossed random-effects model over 88 records, 30 proteins and 52 studies places 44% of the variance in log₁₀ utilisation between proteins, 16% between studies of the same protein and 40% within studies, and the mean log₁₀ spread inside a single protein is 0.638 against 0.892 corpus-wide. Adding the seven sequence features halves the between-protein component, from 0.254 to 0.127, while the residual does not move (0.232 against 0.235). A regressor that absorbs the random intercept without reducing the residual is relabelling the groups, not predicting from them — which is the same conclusion §6.4 reaches by cross-validation, in the form that a reviewer is least able to argue with.
+
+Within that frame, three sources dominate, and none of them is a property of the molecule.
 
 **Engineering effort.** β-lactoglobulin reaches 6.1% of its ceiling and human α-lactalbumin 0.31%, a twentyfold difference between two small whey proteins of similar size and nearly identical stoichiometric cost. The record for β-lactoglobulin comes from a study that rewired host metabolism using omics guidance; the α-lactalbumin records come from smaller studies of chaperone co-expression and CRISPR editing efficiency. These are not comparable levels of investment, and the corpus contains no measure of investment to control for. The nested-control result of §6.4 is the quantitative version of this paragraph: the one variable in the corpus that does carry information is a variable about the experiment, not about the protein.
 

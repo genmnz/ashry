@@ -1,6 +1,6 @@
 # Precision Fermentation: Microbial Cell Factories for Animal-Free Dairy, Heme and Alternative Proteins
 
-### The ceiling–gap decomposition: how far below its stoichiometric limit is each food protein, and why
+### Why do proteins with nearly identical stoichiometric ceilings reach such different titres? A ceiling–utilisation decomposition for food proteins in *Komagataella phaffii*
 
 **التخمير الدقيق: مصانع خلوية ميكروبية لإنتاج بروتينات الألبان والهيم والبروتينات البديلة دون الحاجة إلى الحيوانات**
 
