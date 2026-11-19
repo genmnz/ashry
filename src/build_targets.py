@@ -17,7 +17,7 @@ import csv
 import json
 from pathlib import Path
 
-from protein_cost import ProteinSpec, composition_table, read_fasta
+from thesis_model import ProteinSpec, composition_table, read_fasta
 from targets import TARGETS
 
 REPO = Path(__file__).resolve().parents[1]

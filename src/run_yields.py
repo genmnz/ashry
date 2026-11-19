@@ -13,7 +13,7 @@ import csv
 import json
 from pathlib import Path
 
-from protein_cost import (
+from thesis_model import (
     ProteinSpec, SUBSTRATES, load_model, read_fasta, yield_analysis,
 )
 from targets import TARGETS_BY_KEY

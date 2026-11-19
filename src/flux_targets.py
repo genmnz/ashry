@@ -32,7 +32,7 @@ from pathlib import Path
 
 import cobra
 
-from protein_cost import AA_MET, ProteinSpec, add_protein_reactions, load_model, read_fasta, set_substrate
+from thesis_model import AA_MET, ProteinSpec, add_protein_reactions, load_model, read_fasta, set_substrate
 from targets import TARGETS_BY_KEY
 
 REPO = Path(__file__).resolve().parents[1]

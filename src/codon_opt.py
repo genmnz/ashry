@@ -205,7 +205,7 @@ def reverse_translate_uniform(protein: str, table: dict, seed: int = 7) -> str:
 def main() -> None:
     import csv
 
-    from protein_cost import read_fasta
+    from thesis_model import read_fasta
 
     table = load_table()
     seqs = read_fasta(REPO / "data" / "sequences" / "targets.fasta")

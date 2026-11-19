@@ -34,7 +34,7 @@ import pandas as pd
 from corpus import drop_fragments, food_subset, load_titres
 import uniprot_annotations
 from producibility import count_disulfides_unknown, sequence_library
-from protein_cost import ProteinSpec, load_model, yield_analysis
+from thesis_model import ProteinSpec, load_model, yield_analysis
 
 REPO = Path(__file__).resolve().parents[1]
 TABLES = REPO / "results" / "tables"

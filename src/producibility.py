@@ -40,8 +40,8 @@ from scipy import stats
 
 from corpus import drop_fragments, food_subset, load_titres
 import uniprot_annotations
-from features import featurise
-from protein_cost import ProteinSpec, read_fasta, yield_analysis, load_model
+from thesis_features import featurise
+from thesis_model import ProteinSpec, read_fasta, yield_analysis, load_model
 
 REPO = Path(__file__).resolve().parents[1]
 TABLES = REPO / "results" / "tables"

@@ -154,7 +154,7 @@ def featurise(name: str, seq: str, annotation: dict | None = None) -> dict:
 def main() -> None:
     import csv
 
-    from protein_cost import read_fasta
+    from thesis_model import read_fasta
 
     meta = {m["key"]: m for m in json.loads(
         (REPO / "data" / "sequences" / "targets_metadata.json").read_text())}
