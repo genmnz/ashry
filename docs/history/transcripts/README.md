@@ -12,7 +12,7 @@ appear below.
 
 | File | Size | SHA-256 (first 16) |
 |---|---|---|
-| `-home-user/ae1ee774-8ef2-5a0c-85ce-688089c65a13/ccr-tip.json` | 0 KB | `71937e44a7fe378b` |
+| `-home-user/ae1ee774-8ef2-5a0c-85ce-688089c65a13/ccr-tip.json` | 0 KB | `b45e4f9a359b21ab` |
 | `-home-user/ae1ee774-8ef2-5a0c-85ce-688089c65a13/subagents/agent-a330e2b36a5c7a6f2.jsonl` | 1033 KB | `bb7701270465a95a` |
 | `-home-user/ae1ee774-8ef2-5a0c-85ce-688089c65a13/subagents/agent-a330e2b36a5c7a6f2.meta.json` | 0 KB | `c61ec82464ef3712` |
 | `-home-user/ae1ee774-8ef2-5a0c-85ce-688089c65a13/subagents/agent-a330e2b36a5c7a6f2.prefix.json` | 19 KB | `7ad38951b4b3e044` |
@@ -35,4 +35,4 @@ appear below.
 | `-home-user/ae1ee774-8ef2-5a0c-85ce-688089c65a13/tool-results/btzgi2qeu.txt` | 29 KB | `b4706a76c2290f88` |
 | `-home-user/ae1ee774-8ef2-5a0c-85ce-688089c65a13/tool-results/bu38wsr1s.txt` | 63 KB | `200bfc506e772ad3` |
 | `-home-user/ae1ee774-8ef2-5a0c-85ce-688089c65a13/tool-results/bugbjhzer.txt` | 29 KB | `39197a5bfc598db5` |
-| `-home-user/ae1ee774-8ef2-5a0c-85ce-688089c65a13.jsonl` | 8491 KB | `aaf229b2f4f7a8bd` |
+| `-home-user/ae1ee774-8ef2-5a0c-85ce-688089c65a13.jsonl` | 8948 KB | `df71a1722aafb704` |
