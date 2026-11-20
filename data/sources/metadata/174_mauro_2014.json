@@ -1,0 +1,22 @@
+{
+  "key": "174_mauro_2014",
+  "cluster": "6",
+  "authors": "Mauro et al.",
+  "year": "2014",
+  "title": "A critical analysis of codon optimization in human therapeutics",
+  "venue": "Trends in Molecular Medicine",
+  "type": "review",
+  "doi": "10.1016/j.molmed.2014.09.003",
+  "url": "https://doi.org/10.1016/j.molmed.2014.09.003",
+  "openalex": {
+    "pmcid": "4253638",
+    "pmid": "25263172",
+    "oa_status": "green",
+    "license": null,
+    "pdf_url": null,
+    "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/4253638",
+    "version": "acceptedVersion",
+    "host": "Europe PMC (PubMed Central)"
+  },
+  "wayback": ""
+}

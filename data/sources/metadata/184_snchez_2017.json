@@ -1,0 +1,22 @@
+{
+  "key": "184_snchez_2017",
+  "cluster": "7",
+  "authors": "S\u00e1nchez et al.",
+  "year": "2017",
+  "title": "Improving the phenotype predictions of a yeast genome-scale metabolic model by incorporating enzymatic constraints",
+  "venue": "Molecular Systems Biology",
+  "type": "peer-reviewed",
+  "doi": "10.15252/msb.20167411",
+  "url": "https://doi.org/10.15252/msb.20167411",
+  "openalex": {
+    "pmcid": "5572397",
+    "pmid": "28779005",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.15252/msb.20167411",
+    "landing_page_url": "https://doi.org/10.15252/msb.20167411",
+    "version": "publishedVersion",
+    "host": "Molecular Systems Biology"
+  },
+  "wayback": ""
+}

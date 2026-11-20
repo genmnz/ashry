@@ -1,0 +1,22 @@
+{
+  "key": "102_esmaili_2023",
+  "cluster": "6",
+  "authors": "Esmaili, F. et al.",
+  "year": "2023",
+  "title": "A Review of Machine Learning and Algorithmic Methods for Protein Phosphorylation Site Prediction",
+  "venue": "Genomics Proteomics and Bioinformatics",
+  "type": "review",
+  "doi": "10.1016/j.gpb.2023.03.007",
+  "url": "https://doi.org/10.1016/j.gpb.2023.03.007",
+  "openalex": {
+    "pmcid": "11082408",
+    "pmid": "37863385",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": null,
+    "landing_page_url": "https://doi.org/10.1016/j.gpb.2023.03.007",
+    "version": "publishedVersion",
+    "host": "Genomics Proteomics & Bioinformatics"
+  },
+  "wayback": ""
+}

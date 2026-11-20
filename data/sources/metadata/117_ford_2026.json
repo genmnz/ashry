@@ -1,0 +1,22 @@
+{
+  "key": "117_ford_2026",
+  "cluster": "2",
+  "authors": "Ford et al.",
+  "year": "2026",
+  "title": "Deletion of low-essentiality secretion-associated genes enhances recombinant protein production in Komagataella phaffii",
+  "venue": "Microbial Cell Factories",
+  "type": "peer-reviewed",
+  "doi": "10.1186/s12934-026-03009-7",
+  "url": "https://doi.org/10.1186/s12934-026-03009-7",
+  "openalex": {
+    "pmcid": "13343958",
+    "pmid": "42116141",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": null,
+    "landing_page_url": "https://doi.org/10.1186/s12934-026-03009-7",
+    "version": "publishedVersion",
+    "host": "Microbial Cell Factories"
+  },
+  "wayback": ""
+}

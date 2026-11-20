@@ -1,0 +1,22 @@
+{
+  "key": "211_bolmanis_2023",
+  "cluster": "5",
+  "authors": "Bolmanis et al.",
+  "year": "2023",
+  "title": "Production and Purification of Soy Leghemoglobin from Pichia pastoris Cultivated in Different Expression Media",
+  "venue": "Processes",
+  "type": "peer-reviewed",
+  "doi": "10.3390/pr11113215",
+  "url": "https://doi.org/10.3390/pr11113215",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://www.mdpi.com/2227-9717/11/11/3215/pdf?version=1699785742",
+    "landing_page_url": "https://doi.org/10.3390/pr11113215",
+    "version": "publishedVersion",
+    "host": "Processes"
+  },
+  "wayback": ""
+}

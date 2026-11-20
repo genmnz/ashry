@@ -1,0 +1,22 @@
+{
+  "key": "038_holt_1996",
+  "cluster": "4",
+  "authors": "Holt, C. et al.",
+  "year": "1996",
+  "title": "Ability of a beta-casein phosphopeptide to modulate the precipitation of calcium phosphate by forming amorphous dicalcium phosphate nanoclusters",
+  "venue": "Biochemical Journal",
+  "type": "peer-reviewed",
+  "doi": "10.1042/bj3141035",
+  "url": "https://doi.org/10.1042/bj3141035",
+  "openalex": {
+    "pmcid": "1217110",
+    "pmid": "8615755",
+    "oa_status": "green",
+    "license": null,
+    "pdf_url": null,
+    "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1217110/",
+    "version": "publishedVersion",
+    "host": "PubMed Central"
+  },
+  "wayback": ""
+}

@@ -1,0 +1,22 @@
+{
+  "key": "106_yang_2025",
+  "cluster": "6",
+  "authors": "Yang et al.",
+  "year": "2025",
+  "title": "Conformational ensembles for protein structure prediction",
+  "venue": "Scientific Reports",
+  "type": "peer-reviewed",
+  "doi": "10.1038/s41598-024-84066-z",
+  "url": "https://doi.org/10.1038/s41598-024-84066-z",
+  "openalex": {
+    "pmcid": "11904239",
+    "pmid": "40074747",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": null,
+    "landing_page_url": "https://doi.org/10.1038/s41598-024-84066-z",
+    "version": "publishedVersion",
+    "host": "Scientific Reports"
+  },
+  "wayback": ""
+}

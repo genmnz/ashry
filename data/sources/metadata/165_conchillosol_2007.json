@@ -1,0 +1,21 @@
+{
+  "key": "165_conchillosol_2007",
+  "cluster": "6",
+  "authors": "Conchillo-Sol\u00e9 et al.",
+  "year": "2007",
+  "title": "AGGRESCAN: a server for the prediction and evaluation of hot spots of aggregation in polypeptides",
+  "venue": "BMC Bioinformatics",
+  "type": "software",
+  "doi": "10.1186/1471-2105-8-65",
+  "url": "https://doi.org/10.1186/1471-2105-8-65",
+  "openalex": {
+    "pmcid": "1828741",
+    "pmid": "17324296",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/1471-2105-8-65",
+    "landing_page_url": "https://doi.org/10.1186/1471-2105-8-65",
+    "version": "publishedVersion",
+    "host": "BMC Bioinformatics"
+  }
+}

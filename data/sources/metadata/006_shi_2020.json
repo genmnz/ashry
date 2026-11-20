@@ -1,0 +1,21 @@
+{
+  "key": "006_shi_2020",
+  "cluster": "2",
+  "authors": "Shi, L. et al.",
+  "year": "2020",
+  "title": "Transcriptional regulatory networks of methanol-independent protein expression in Pichia pastoris under the AOX1 promoter with trans-acting elements engineering",
+  "venue": "Bioresources and Bioprocessing",
+  "type": "peer-reviewed",
+  "doi": "10.1186/s40643-020-00306-w",
+  "url": "https://doi.org/10.1186/s40643-020-00306-w",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://link.springer.com/content/pdf/10.1186/s40643-020-00306-w.pdf",
+    "landing_page_url": "https://doi.org/10.1186/s40643-020-00306-w",
+    "version": "publishedVersion",
+    "host": "Bioresources and Bioprocessing"
+  }
+}

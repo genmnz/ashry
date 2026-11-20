@@ -1,0 +1,22 @@
+{
+  "key": "175_sinclair_2002",
+  "cluster": "6",
+  "authors": "Sinclair et al.",
+  "year": "2002",
+  "title": "Synonymous codon usage bias and the expression of human glucocerebrosidase in the methylotrophic yeast Pichia pastoris",
+  "venue": "Protein Expression and Purification",
+  "type": "peer-reviewed",
+  "doi": "10.1016/s1046-5928(02)00526-0",
+  "url": "https://doi.org/10.1016/s1046-5928(02)00526-0",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "12356476",
+    "oa_status": "closed",
+    "license": null,
+    "pdf_url": null,
+    "landing_page_url": null,
+    "version": null,
+    "host": null
+  },
+  "wayback": ""
+}

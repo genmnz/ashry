@@ -1,0 +1,21 @@
+{
+  "key": "202_mahmoud_2026",
+  "cluster": "8",
+  "authors": "Mahmoud et al.",
+  "year": "2026",
+  "title": "Next-generation precision fermentation: integrating engineered cell factories bioprocess intensification and smart bioprocessing",
+  "venue": "Applied Microbiology and Biotechnology",
+  "type": "review",
+  "doi": "10.1007/s00253-026-14051-1",
+  "url": "https://doi.org/10.1007/s00253-026-14051-1",
+  "openalex": {
+    "pmcid": "13722665",
+    "pmid": "42961475",
+    "oa_status": "gold",
+    "license": "cc-by-nc-nd",
+    "pdf_url": "https://link.springer.com/content/pdf/10.1007/s00253-026-14051-1.pdf",
+    "landing_page_url": "https://doi.org/10.1007/s00253-026-14051-1",
+    "version": "publishedVersion",
+    "host": "Applied Microbiology and Biotechnology"
+  }
+}

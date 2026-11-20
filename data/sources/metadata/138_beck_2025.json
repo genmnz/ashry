@@ -1,0 +1,21 @@
+{
+  "key": "138_beck_2025",
+  "cluster": "5",
+  "authors": "Beck et al.",
+  "year": "2025",
+  "title": "Scientific and technological challenges of recombinant egg protein production",
+  "venue": "BMC Biotechnology",
+  "type": "review",
+  "doi": "10.1186/s12896-025-01002-3",
+  "url": "https://doi.org/10.1186/s12896-025-01002-3",
+  "openalex": {
+    "pmcid": "12224593",
+    "pmid": "40604696",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://bmcbiotechnol.biomedcentral.com/counter/pdf/10.1186/s12896-025-01002-3",
+    "landing_page_url": "https://doi.org/10.1186/s12896-025-01002-3",
+    "version": "publishedVersion",
+    "host": "BMC Biotechnology"
+  }
+}

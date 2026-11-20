@@ -1,0 +1,21 @@
+{
+  "key": "014_fauzee_2023",
+  "cluster": "2",
+  "authors": "Fauzee, Y.N.B.M. et al.",
+  "year": "2023",
+  "title": "Endoplasmic stress sensor Ire1 is involved in cytosolic/nuclear protein quality control in Pichia pastoris cells independent of HAC1",
+  "venue": "Frontiers in Microbiology",
+  "type": "peer-reviewed",
+  "doi": "10.3389/fmicb.2023.1157146",
+  "url": "https://doi.org/10.3389/fmicb.2023.1157146",
+  "openalex": {
+    "pmcid": "10321714",
+    "pmid": "37415818",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://www.frontiersin.org/articles/10.3389/fmicb.2023.1157146/pdf",
+    "landing_page_url": "https://doi.org/10.3389/fmicb.2023.1157146",
+    "version": "publishedVersion",
+    "host": "Frontiers in Microbiology"
+  }
+}

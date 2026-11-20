@@ -1,0 +1,22 @@
+{
+  "key": "004_noseda_2013",
+  "cluster": "2",
+  "authors": "Noseda, D.G. et al.",
+  "year": "2013",
+  "title": "Cloning expression and optimized production in a bioreactor of bovine chymosin B in Pichia (Komagataella) pastoris under AOX1 promoter",
+  "venue": "Protein Expression and Purification",
+  "type": "peer-reviewed",
+  "doi": "10.1016/j.pep.2013.08.018",
+  "url": "https://doi.org/10.1016/j.pep.2013.08.018",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "24141135",
+    "oa_status": "green",
+    "license": "cc-by-nc-sa",
+    "pdf_url": null,
+    "landing_page_url": "http://hdl.handle.net/11336/94900",
+    "version": "submittedVersion",
+    "host": "CONICET Digital (CONICET)"
+  },
+  "wayback": ""
+}

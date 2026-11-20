@@ -1,0 +1,21 @@
+{
+  "key": "167_huang_2021",
+  "cluster": "6",
+  "authors": "Huang et al.",
+  "year": "2021",
+  "title": "Codon pair optimization (CPO): a software tool for synthetic gene design based on codon pair bias to improve the expression of recombinant proteins in Pichia pastoris",
+  "venue": "Microbial Cell Factories",
+  "type": "software",
+  "doi": "10.1186/s12934-021-01696-y",
+  "url": "https://doi.org/10.1186/s12934-021-01696-y",
+  "openalex": {
+    "pmcid": "8567542",
+    "pmid": "34736476",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://microbialcellfactories.biomedcentral.com/track/pdf/10.1186/s12934-021-01696-y",
+    "landing_page_url": "https://doi.org/10.1186/s12934-021-01696-y",
+    "version": "publishedVersion",
+    "host": "Microbial Cell Factories"
+  }
+}

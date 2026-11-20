@@ -1,0 +1,22 @@
+{
+  "key": "098_santos_2020",
+  "cluster": "6",
+  "authors": "Santos, J. et al.",
+  "year": "2020",
+  "title": "Computational prediction of protein aggregation: Advances in proteomics conformation-specific algorithms and biotechnological applications",
+  "venue": "Computational and Structural Biotechnology Journal",
+  "type": "review",
+  "doi": "10.1016/j.csbj.2020.05.026",
+  "url": "https://doi.org/10.1016/j.csbj.2020.05.026",
+  "openalex": {
+    "pmcid": "7322485",
+    "pmid": "32637039",
+    "oa_status": "gold",
+    "license": "cc-by-nc-nd",
+    "pdf_url": "http://www.csbj.org/article/S2001037020302919/pdf",
+    "landing_page_url": "https://doi.org/10.1016/j.csbj.2020.05.026",
+    "version": "publishedVersion",
+    "host": "Computational and Structural Biotechnology Journal"
+  },
+  "wayback": ""
+}

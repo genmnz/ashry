@@ -1,0 +1,22 @@
+{
+  "key": "169_lu_2025",
+  "cluster": "6",
+  "authors": "Lu et al.",
+  "year": "2025",
+  "title": "DNA Sequence Changes Resulting from Codon Optimization Affect Gene Expression in Pichia pastoris by Altering Chromatin Accessibility",
+  "venue": "Journal of Fungi",
+  "type": "peer-reviewed",
+  "doi": "10.3390/jof11040282",
+  "url": "https://doi.org/10.3390/jof11040282",
+  "openalex": {
+    "pmcid": "12029099",
+    "pmid": "40278103",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://www.mdpi.com/2309-608X/11/4/282/pdf?version=1743676735",
+    "landing_page_url": "https://doi.org/10.3390/jof11040282",
+    "version": "publishedVersion",
+    "host": "Journal of Fungi"
+  },
+  "wayback": ""
+}

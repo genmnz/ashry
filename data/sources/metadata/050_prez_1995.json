@@ -1,0 +1,22 @@
+{
+  "key": "050_prez_1995",
+  "cluster": "4",
+  "authors": "P\u00e9rez et al.",
+  "year": "1995",
+  "title": "Interaction of beta-Lactoglobulin with Retinol and Fatty Acids and Its Role as a Possible Biological Function for This Protein: A Review",
+  "venue": "Journal of Dairy Science",
+  "type": "review",
+  "doi": "10.3168/jds.s0022-0302(95)76713-3",
+  "url": "https://doi.org/10.3168/jds.s0022-0302(95)76713-3",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "7622732",
+    "oa_status": "bronze",
+    "license": null,
+    "pdf_url": "https://doi.org/10.3168/jds.s0022-0302(95)76713-3",
+    "landing_page_url": "https://doi.org/10.3168/jds.s0022-0302(95)76713-3",
+    "version": "publishedVersion",
+    "host": "Journal of Dairy Science"
+  },
+  "wayback": ""
+}

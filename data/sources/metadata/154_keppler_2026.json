@@ -1,0 +1,22 @@
+{
+  "key": "154_keppler_2026",
+  "cluster": "8",
+  "authors": "Keppler et al.",
+  "year": "2026",
+  "title": "Downstream Processing of Food Proteins from Precision Fermentation",
+  "venue": "Annual Review of Food Science and Technology",
+  "type": "review",
+  "doi": "10.1146/annurev-food-060424-091647",
+  "url": "https://doi.org/10.1146/annurev-food-060424-091647",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "41428993",
+    "oa_status": "hybrid",
+    "license": "cc-by-nc-nd",
+    "pdf_url": null,
+    "landing_page_url": "https://doi.org/10.1146/annurev-food-060424-091647",
+    "version": "publishedVersion",
+    "host": "Annual Review of Food Science and Technology"
+  },
+  "wayback": ""
+}

@@ -1,0 +1,22 @@
+{
+  "key": "164_reis_2004",
+  "cluster": "6",
+  "authors": "Reis, M. dos; Savva, R.; Wernisch, L.",
+  "year": "2004",
+  "title": "Solving the riddle of codon usage preferences: a test for translational selection",
+  "venue": "Nucleic Acids Research",
+  "type": "peer-reviewed",
+  "doi": "10.1093/nar/gkh834",
+  "url": "https://doi.org/10.1093/nar/gkh834",
+  "openalex": {
+    "pmcid": "521650",
+    "pmid": "15448185",
+    "oa_status": "bronze",
+    "license": null,
+    "pdf_url": "https://academic.oup.com/nar/article-pdf/32/17/5036/4156320/gkh834.pdf",
+    "landing_page_url": "https://doi.org/10.1093/nar/gkh834",
+    "version": "publishedVersion",
+    "host": "Nucleic Acids Research"
+  },
+  "wayback": ""
+}

@@ -1,0 +1,22 @@
+{
+  "key": "141_liu_2014",
+  "cluster": "5",
+  "authors": "Liu et al.",
+  "year": "2014",
+  "title": "Balanced globin protein expression and heme biosynthesis improve production of human hemoglobin in Saccharomyces cerevisiae",
+  "venue": "Metabolic Engineering",
+  "type": "peer-reviewed",
+  "doi": "10.1016/j.ymben.2013.10.010",
+  "url": "https://doi.org/10.1016/j.ymben.2013.10.010",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "24188961",
+    "oa_status": "green",
+    "license": null,
+    "pdf_url": "http://publications.lib.chalmers.se/records/fulltext/193303/local_193303.pdf",
+    "landing_page_url": "https://research.chalmers.se/en/publication/193303",
+    "version": "submittedVersion",
+    "host": "Chalmers Research (Chalmers University of Technology)"
+  },
+  "wayback": ""
+}

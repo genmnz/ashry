@@ -1,0 +1,21 @@
+{
+  "key": "016_raschmanov_2021",
+  "cluster": "2",
+  "authors": "Raschmanov\u00e1 et al.",
+  "year": "2021",
+  "title": "Engineering of the unfolded protein response pathway in Pichia pastoris: enhancing production of secreted recombinant proteins",
+  "venue": "Applied Microbiology and Biotechnology",
+  "type": "review",
+  "doi": "10.1007/s00253-021-11336-5",
+  "url": "https://doi.org/10.1007/s00253-021-11336-5",
+  "openalex": {
+    "pmcid": "8195892",
+    "pmid": "34037840",
+    "oa_status": "hybrid",
+    "license": "cc-by",
+    "pdf_url": "https://link.springer.com/content/pdf/10.1007/s00253-021-11336-5.pdf",
+    "landing_page_url": "https://doi.org/10.1007/s00253-021-11336-5",
+    "version": "publishedVersion",
+    "host": "Applied Microbiology and Biotechnology"
+  }
+}

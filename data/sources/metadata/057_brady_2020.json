@@ -1,0 +1,22 @@
+{
+  "key": "057_brady_2020",
+  "cluster": "7",
+  "authors": "Brady, J.R. et al.",
+  "year": "2020",
+  "title": "Comparative genome-scale analysis of Pichia pastoris variants informs selection of an optimal base strain",
+  "venue": "Biotechnology and Bioengineering",
+  "type": "peer-reviewed",
+  "doi": "10.1002/bit.27209",
+  "url": "https://doi.org/10.1002/bit.27209",
+  "openalex": {
+    "pmcid": "7003935",
+    "pmid": "31654411",
+    "oa_status": "hybrid",
+    "license": "cc-by",
+    "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/bit.27209",
+    "landing_page_url": "https://doi.org/10.1002/bit.27209",
+    "version": "publishedVersion",
+    "host": "Biotechnology and Bioengineering"
+  },
+  "wayback": ""
+}

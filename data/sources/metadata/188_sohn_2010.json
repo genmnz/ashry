@@ -1,0 +1,22 @@
+{
+  "key": "188_sohn_2010",
+  "cluster": "7",
+  "authors": "Sohn et al.",
+  "year": "2010",
+  "title": "Genome-scale metabolic model of methylotrophic yeast Pichia pastoris and its use for in silico analysis of heterologous protein production",
+  "venue": "Biotechnology Journal",
+  "type": "peer-reviewed",
+  "doi": "10.1002/biot.201000078",
+  "url": "https://doi.org/10.1002/biot.201000078",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "20503221",
+    "oa_status": "hybrid",
+    "license": "other-oa",
+    "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/biot.201000078",
+    "landing_page_url": "https://doi.org/10.1002/biot.201000078",
+    "version": "publishedVersion",
+    "host": "Biotechnology Journal"
+  },
+  "wayback": ""
+}

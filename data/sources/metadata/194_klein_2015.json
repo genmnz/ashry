@@ -1,0 +1,22 @@
+{
+  "key": "194_klein_2015",
+  "cluster": "7",
+  "authors": "Klein et al.",
+  "year": "2015",
+  "title": "Engineering the supply chain for protein production/secretion in yeasts and mammalian cells",
+  "venue": "Journal of Industrial Microbiology and Biotechnology",
+  "type": "review",
+  "doi": "10.1007/s10295-014-1569-2",
+  "url": "https://doi.org/10.1007/s10295-014-1569-2",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "25561318",
+    "oa_status": "bronze",
+    "license": null,
+    "pdf_url": "https://academic.oup.com/jimb/article-pdf/42/3/453/36811975/jimb0453.pdf",
+    "landing_page_url": "https://doi.org/10.1007/s10295-014-1569-2",
+    "version": "publishedVersion",
+    "host": "Journal of Industrial Microbiology & Biotechnology"
+  },
+  "wayback": ""
+}

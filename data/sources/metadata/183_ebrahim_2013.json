@@ -1,0 +1,21 @@
+{
+  "key": "183_ebrahim_2013",
+  "cluster": "7",
+  "authors": "Ebrahim, A. et al.",
+  "year": "2013",
+  "title": "COBRApy: COnstraints-Based Reconstruction and Analysis for Python",
+  "venue": "BMC Systems Biology",
+  "type": "software",
+  "doi": "10.1186/1752-0509-7-74",
+  "url": "https://doi.org/10.1186/1752-0509-7-74",
+  "openalex": {
+    "pmcid": "3751080",
+    "pmid": "23927696",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://bmcsystbiol.biomedcentral.com/counter/pdf/10.1186/1752-0509-7-74",
+    "landing_page_url": "https://doi.org/10.1186/1752-0509-7-74",
+    "version": "publishedVersion",
+    "host": "BMC Systems Biology"
+  }
+}

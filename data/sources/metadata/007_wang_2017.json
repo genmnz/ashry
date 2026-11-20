@@ -1,0 +1,21 @@
+{
+  "key": "007_wang_2017",
+  "cluster": "2",
+  "authors": "Wang, J. et al.",
+  "year": "2017",
+  "title": "Methanol-Independent Protein Expression by AOX1 Promoter with trans-Acting Elements Engineering and Glucose-Glycerol-Shift Induction in Pichia pastoris",
+  "venue": "Scientific Reports",
+  "type": "peer-reviewed",
+  "doi": "10.1038/srep41850",
+  "url": "https://doi.org/10.1038/srep41850",
+  "openalex": {
+    "pmcid": "5288789",
+    "pmid": "28150747",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://www.nature.com/articles/srep41850.pdf",
+    "landing_page_url": "https://doi.org/10.1038/srep41850",
+    "version": "publishedVersion",
+    "host": "Scientific Reports"
+  }
+}

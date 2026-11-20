@@ -1,0 +1,22 @@
+{
+  "key": "089_zhao_2023",
+  "cluster": "6",
+  "authors": "Zhao, B.; Kurgan, L.",
+  "year": "2023",
+  "title": "Comparative evaluation of AlphaFold2 and disorder predictors for prediction of intrinsic disorder disorder content and fully disordered proteins",
+  "venue": "Computational and Structural Biotechnology Journal",
+  "type": "peer-reviewed",
+  "doi": "10.1016/j.csbj.2023.06.001",
+  "url": "https://doi.org/10.1016/j.csbj.2023.06.001",
+  "openalex": {
+    "pmcid": "10782001",
+    "pmid": "38213902",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "http://www.csbj.org/article/S2001037023002143/pdf",
+    "landing_page_url": "https://doi.org/10.1016/j.csbj.2023.06.001",
+    "version": "publishedVersion",
+    "host": "Computational and Structural Biotechnology Journal"
+  },
+  "wayback": ""
+}

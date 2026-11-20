@@ -1,0 +1,22 @@
+{
+  "key": "088_emenecker_2021",
+  "cluster": "6",
+  "authors": "Emenecker, R.J. et al.",
+  "year": "2021",
+  "title": "Metapredict: a fast accurate and easy-to-use predictor of consensus disorder and structure",
+  "venue": "Biophysical Journal",
+  "type": "software",
+  "doi": "10.1016/j.bpj.2021.08.039",
+  "url": "https://doi.org/10.1016/j.bpj.2021.08.039",
+  "openalex": {
+    "pmcid": "8553642",
+    "pmid": "34480923",
+    "oa_status": "bronze",
+    "license": null,
+    "pdf_url": null,
+    "landing_page_url": "https://doi.org/10.1016/j.bpj.2021.08.039",
+    "version": "publishedVersion",
+    "host": "Biophysical Journal"
+  },
+  "wayback": ""
+}

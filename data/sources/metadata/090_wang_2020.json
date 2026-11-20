@@ -1,0 +1,22 @@
+{
+  "key": "090_wang_2020",
+  "cluster": "6",
+  "authors": "Wang, D. et al.",
+  "year": "2020",
+  "title": "MusiteDeep: a deep-learning based webserver for protein post-translational modification site prediction and visualization",
+  "venue": "Nucleic Acids Research",
+  "type": "software",
+  "doi": "10.1093/nar/gkaa275",
+  "url": "https://doi.org/10.1093/nar/gkaa275",
+  "openalex": {
+    "pmcid": "7319475",
+    "pmid": "32324217",
+    "oa_status": "gold",
+    "license": "cc-by-nc",
+    "pdf_url": "https://academic.oup.com/nar/article-pdf/48/W1/W140/33432850/gkaa275.pdf",
+    "landing_page_url": "https://doi.org/10.1093/nar/gkaa275",
+    "version": "publishedVersion",
+    "host": "Nucleic Acids Research"
+  },
+  "wayback": ""
+}

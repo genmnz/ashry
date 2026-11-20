@@ -1,0 +1,21 @@
+{
+  "key": "028_moser_2017",
+  "cluster": "2",
+  "authors": "Moser, J.W. et al.",
+  "year": "2017",
+  "title": "The adaptive landscape of wildtype and glycosylation-deficient populations of the industrial yeast Pichia pastoris",
+  "venue": "BMC Genomics",
+  "type": "peer-reviewed",
+  "doi": "10.1186/s12864-017-3952-7",
+  "url": "https://doi.org/10.1186/s12864-017-3952-7",
+  "openalex": {
+    "pmcid": "5553748",
+    "pmid": "28797224",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://bmcgenomics.biomedcentral.com/track/pdf/10.1186/s12864-017-3952-7",
+    "landing_page_url": "https://doi.org/10.1186/s12864-017-3952-7",
+    "version": "publishedVersion",
+    "host": "BMC Genomics"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "key": "123_rantasalo_2019",
+  "cluster": "3",
+  "authors": "Rantasalo et al.",
+  "year": "2019",
+  "title": "Novel genetic tools that enable highly pure protein production in Trichoderma reesei",
+  "venue": "Scientific Reports",
+  "type": "peer-reviewed",
+  "doi": "10.1038/s41598-019-41573-8",
+  "url": "https://doi.org/10.1038/s41598-019-41573-8",
+  "openalex": {
+    "pmcid": "6430808",
+    "pmid": "30902998",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://www.nature.com/articles/s41598-019-41573-8.pdf",
+    "landing_page_url": "https://doi.org/10.1038/s41598-019-41573-8",
+    "version": "publishedVersion",
+    "host": "Scientific Reports"
+  }
+}

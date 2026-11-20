@@ -1,0 +1,22 @@
+{
+  "key": "008_barrigon_2015",
+  "cluster": "2",
+  "authors": "Barrigon, J.M. et al.",
+  "year": "2015",
+  "title": "A macrokinetic model-based comparative meta-analysis of recombinant protein production by Pichia pastoris under AOX1 promoter",
+  "venue": "Biotechnology and Bioengineering",
+  "type": "peer-reviewed",
+  "doi": "10.1002/bit.25518",
+  "url": "https://doi.org/10.1002/bit.25518",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "25546846",
+    "oa_status": "closed",
+    "license": null,
+    "pdf_url": null,
+    "landing_page_url": null,
+    "version": null,
+    "host": null
+  },
+  "wayback": ""
+}

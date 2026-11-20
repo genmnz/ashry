@@ -1,0 +1,22 @@
+{
+  "key": "024_choi_2008",
+  "cluster": "2",
+  "authors": "Choi, B.-K. et al.",
+  "year": "2008",
+  "title": "Recombinant human lactoferrin expressed in glycoengineered Pichia pastoris: effect of terminal N-acetylneuraminic acid on in vitro secretory leukocyte protease inhibitor",
+  "venue": "Glycoconjugate Journal",
+  "type": "peer-reviewed",
+  "doi": "10.1007/s10719-008-9123-y",
+  "url": "https://doi.org/10.1007/s10719-008-9123-y",
+  "openalex": {
+    "pmcid": "2551750",
+    "pmid": "18365311",
+    "oa_status": "green",
+    "license": null,
+    "pdf_url": null,
+    "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2551750/",
+    "version": "acceptedVersion",
+    "host": "PubMed Central"
+  },
+  "wayback": ""
+}

@@ -1,0 +1,22 @@
+{
+  "key": "140_ishchuk_2021",
+  "cluster": "5",
+  "authors": "Ishchuk et al.",
+  "year": "2021",
+  "title": "Improved production of human hemoglobin in yeast by engineering hemoglobin degradation",
+  "venue": "Metabolic Engineering",
+  "type": "peer-reviewed",
+  "doi": "10.1016/j.ymben.2021.05.002",
+  "url": "https://doi.org/10.1016/j.ymben.2021.05.002",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "33984513",
+    "oa_status": "hybrid",
+    "license": "cc-by",
+    "pdf_url": "https://www.sciencedirect.com/science/article/pii/S1096717621000781/pdf",
+    "landing_page_url": "https://doi.org/10.1016/j.ymben.2021.05.002",
+    "version": "publishedVersion",
+    "host": "Metabolic Engineering"
+  },
+  "wayback": ""
+}

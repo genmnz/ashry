@@ -1,0 +1,22 @@
+{
+  "key": "191_rumayer_2023",
+  "cluster": "7",
+  "authors": "Ru\u00dfmayer et al.",
+  "year": "2023",
+  "title": "Customizing amino acid metabolism of Pichia pastoris for recombinant protein production",
+  "venue": "Biotechnology Journal",
+  "type": "peer-reviewed",
+  "doi": "10.1002/biot.202300033",
+  "url": "https://doi.org/10.1002/biot.202300033",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "37668396",
+    "oa_status": "hybrid",
+    "license": "cc-by-nc",
+    "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/biot.202300033",
+    "landing_page_url": "https://doi.org/10.1002/biot.202300033",
+    "version": "publishedVersion",
+    "host": "Biotechnology Journal"
+  },
+  "wayback": ""
+}

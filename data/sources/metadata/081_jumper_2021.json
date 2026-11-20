@@ -1,0 +1,21 @@
+{
+  "key": "081_jumper_2021",
+  "cluster": "6",
+  "authors": "Jumper, J. et al.",
+  "year": "2021",
+  "title": "Highly accurate protein structure prediction with AlphaFold",
+  "venue": "Nature",
+  "type": "peer-reviewed",
+  "doi": "10.1038/s41586-021-03819-2",
+  "url": "https://doi.org/10.1038/s41586-021-03819-2",
+  "openalex": {
+    "pmcid": "8371605",
+    "pmid": "34265844",
+    "oa_status": "hybrid",
+    "license": "cc-by",
+    "pdf_url": "https://www.nature.com/articles/s41586-021-03819-2.pdf",
+    "landing_page_url": "https://doi.org/10.1038/s41586-021-03819-2",
+    "version": "publishedVersion",
+    "host": "Nature"
+  }
+}

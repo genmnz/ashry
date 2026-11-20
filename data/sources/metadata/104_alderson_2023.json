@@ -1,0 +1,22 @@
+{
+  "key": "104_alderson_2023",
+  "cluster": "6",
+  "authors": "Alderson et al.",
+  "year": "2023",
+  "title": "Systematic identification of conditionally folded intrinsically disordered regions by AlphaFold2",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "type": "peer-reviewed",
+  "doi": "10.1073/pnas.2304302120",
+  "url": "https://doi.org/10.1073/pnas.2304302120",
+  "openalex": {
+    "pmcid": "10622901",
+    "pmid": "37878721",
+    "oa_status": "hybrid",
+    "license": "cc-by",
+    "pdf_url": null,
+    "landing_page_url": "https://doi.org/10.1073/pnas.2304302120",
+    "version": "publishedVersion",
+    "host": "Proceedings of the National Academy of Sciences"
+  },
+  "wayback": ""
+}

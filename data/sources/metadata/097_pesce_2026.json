@@ -1,0 +1,21 @@
+{
+  "key": "097_pesce_2026",
+  "cluster": "6",
+  "authors": "Pesce, G. et al.",
+  "year": "2026",
+  "title": "AGGRESCAN and its evolution: A two-decade perspective on protein aggregation prediction",
+  "venue": "Biophysical Reviews",
+  "type": "review",
+  "doi": "10.1007/s12551-025-01404-9",
+  "url": "https://doi.org/10.1007/s12551-025-01404-9",
+  "openalex": {
+    "pmcid": "13031676",
+    "pmid": "41909611",
+    "oa_status": "hybrid",
+    "license": "cc-by",
+    "pdf_url": "https://link.springer.com/content/pdf/10.1007/s12551-025-01404-9.pdf",
+    "landing_page_url": "https://doi.org/10.1007/s12551-025-01404-9",
+    "version": "publishedVersion",
+    "host": "Biophysical Reviews"
+  }
+}

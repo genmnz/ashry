@@ -1,0 +1,22 @@
+{
+  "key": "012_zhang_2024",
+  "cluster": "2",
+  "authors": "Zhang, Y.-S. et al.",
+  "year": "2024",
+  "title": "Engineering protein translocation and unfolded protein response enhanced human PH-20 secretion in Pichia pastoris",
+  "venue": "Applied Microbiology and Biotechnology",
+  "type": "peer-reviewed",
+  "doi": "10.1007/s00253-023-12878-6",
+  "url": "https://doi.org/10.1007/s00253-023-12878-6",
+  "openalex": {
+    "pmcid": "13497781",
+    "pmid": "38175240",
+    "oa_status": "gold",
+    "license": null,
+    "pdf_url": "https://link.springer.com/content/pdf/10.1007/s00253-023-12878-6.pdf",
+    "landing_page_url": "https://doi.org/10.1007/s00253-023-12878-6",
+    "version": "publishedVersion",
+    "host": "Applied Microbiology and Biotechnology"
+  },
+  "wayback": ""
+}

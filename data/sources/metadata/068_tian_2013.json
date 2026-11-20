@@ -1,0 +1,21 @@
+{
+  "key": "068_tian_2013",
+  "cluster": "9",
+  "authors": "Tian et al.",
+  "year": "2013",
+  "title": "Presep: Predicting the Propensity of a Protein Being Secreted into the Supernatant when Expressed in Pichia pastoris",
+  "venue": "PLOS ONE",
+  "type": "peer-reviewed",
+  "doi": "10.1371/journal.pone.0079749",
+  "url": "https://doi.org/10.1371/journal.pone.0079749",
+  "openalex": {
+    "pmcid": "3836778",
+    "pmid": "24278168",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0079749&type=printable",
+    "landing_page_url": "https://doi.org/10.1371/journal.pone.0079749",
+    "version": "publishedVersion",
+    "host": "PLoS ONE"
+  }
+}

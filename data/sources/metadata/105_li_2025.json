@@ -1,0 +1,21 @@
+{
+  "key": "105_li_2025",
+  "cluster": "6",
+  "authors": "Li et al.",
+  "year": "2025",
+  "title": "Advantages and Limitations of AlphaFold in Structural Biology: Insights from Recent Studies",
+  "venue": "Protein Journal",
+  "type": "review",
+  "doi": "10.1007/s10930-025-10310-8",
+  "url": "https://doi.org/10.1007/s10930-025-10310-8",
+  "openalex": {
+    "pmcid": "12956938",
+    "pmid": "41326937",
+    "oa_status": "hybrid",
+    "license": "cc-by-nc-nd",
+    "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10930-025-10310-8.pdf",
+    "landing_page_url": "https://doi.org/10.1007/s10930-025-10310-8",
+    "version": "publishedVersion",
+    "host": "The Protein Journal"
+  }
+}

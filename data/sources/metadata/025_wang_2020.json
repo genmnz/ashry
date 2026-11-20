@@ -1,0 +1,21 @@
+{
+  "key": "025_wang_2020",
+  "cluster": "2",
+  "authors": "Wang, S. et al.",
+  "year": "2020",
+  "title": "Homogeneous production and characterization of recombinant N-GlcNAc-protein in Pichia pastoris",
+  "venue": "Microbial Cell Factories",
+  "type": "peer-reviewed",
+  "doi": "10.1186/s12934-020-1280-0",
+  "url": "https://doi.org/10.1186/s12934-020-1280-0",
+  "openalex": {
+    "pmcid": "6956495",
+    "pmid": "31931833",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://microbialcellfactories.biomedcentral.com/track/pdf/10.1186/s12934-020-1280-0",
+    "landing_page_url": "https://doi.org/10.1186/s12934-020-1280-0",
+    "version": "publishedVersion",
+    "host": "Microbial Cell Factories"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "key": "085_thumuluri_2022",
+  "cluster": "6",
+  "authors": "Thumuluri, V. et al.",
+  "year": "2022",
+  "title": "DeepLoc 2.0: multi-label subcellular localization prediction using protein language models",
+  "venue": "Nucleic Acids Research",
+  "type": "software",
+  "doi": "10.1093/nar/gkac278",
+  "url": "https://doi.org/10.1093/nar/gkac278",
+  "openalex": {
+    "pmcid": "9252801",
+    "pmid": "35489069",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://academic.oup.com/nar/article-pdf/50/W1/W228/44378499/gkac278.pdf",
+    "landing_page_url": "https://doi.org/10.1093/nar/gkac278",
+    "version": "publishedVersion",
+    "host": "Nucleic Acids Research"
+  },
+  "wayback": ""
+}

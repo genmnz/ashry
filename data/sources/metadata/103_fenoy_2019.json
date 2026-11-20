@@ -1,0 +1,22 @@
+{
+  "key": "103_fenoy_2019",
+  "cluster": "6",
+  "authors": "Fenoy, E. et al.",
+  "year": "2019",
+  "title": "A generic deep convolutional neural network framework for prediction of receptor-ligand interactions NetPhosPan: application to kinase phosphorylation prediction",
+  "venue": "Bioinformatics",
+  "type": "software",
+  "doi": "10.1093/bioinformatics/bty715",
+  "url": "https://doi.org/10.1093/bioinformatics/bty715",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "30169744",
+    "oa_status": "hybrid",
+    "license": "public-domain",
+    "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/35/7/1098/48968423/bioinformatics_35_7_1098.pdf",
+    "landing_page_url": "https://doi.org/10.1093/bioinformatics/bty715",
+    "version": "publishedVersion",
+    "host": "Bioinformatics"
+  },
+  "wayback": ""
+}

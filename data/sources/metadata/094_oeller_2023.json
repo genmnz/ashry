@@ -1,0 +1,22 @@
+{
+  "key": "094_oeller_2023",
+  "cluster": "6",
+  "authors": "Oeller, M. et al.",
+  "year": "2023",
+  "title": "Sequence-based prediction of pH-dependent protein solubility using CamSol",
+  "venue": "Briefings in Bioinformatics",
+  "type": "software",
+  "doi": "10.1093/bib/bbad004",
+  "url": "https://doi.org/10.1093/bib/bbad004",
+  "openalex": {
+    "pmcid": "10025429",
+    "pmid": "36719110",
+    "oa_status": "hybrid",
+    "license": "cc-by-nc",
+    "pdf_url": "https://academic.oup.com/bib/article-pdf/24/2/bbad004/49560164/bbad004.pdf",
+    "landing_page_url": "https://doi.org/10.1093/bib/bbad004",
+    "version": "publishedVersion",
+    "host": "Briefings in Bioinformatics"
+  },
+  "wayback": ""
+}

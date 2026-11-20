@@ -1,0 +1,21 @@
+{
+  "key": "122_pakula_2016",
+  "cluster": "3",
+  "authors": "Pakula et al.",
+  "year": "2016",
+  "title": "Genome wide analysis of protein production load in Trichoderma reesei",
+  "venue": "Biotechnology for Biofuels",
+  "type": "peer-reviewed",
+  "doi": "10.1186/s13068-016-0547-5",
+  "url": "https://doi.org/10.1186/s13068-016-0547-5",
+  "openalex": {
+    "pmcid": "4924338",
+    "pmid": "27354857",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://link.springer.com/content/pdf/10.1186/s13068-016-0547-5.pdf",
+    "landing_page_url": "https://doi.org/10.1186/s13068-016-0547-5",
+    "version": "publishedVersion",
+    "host": "Biotechnology for Biofuels"
+  }
+}

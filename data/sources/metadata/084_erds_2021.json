@@ -1,0 +1,22 @@
+{
+  "key": "084_erds_2021",
+  "cluster": "6",
+  "authors": "Erd\u0151s et al.",
+  "year": "2021",
+  "title": "IUPred3: prediction of protein disorder enhanced with unambiguous experimental annotation and visualization of evolutionary conservation",
+  "venue": "Nucleic Acids Research",
+  "type": "software",
+  "doi": "10.1093/nar/gkab408",
+  "url": "https://doi.org/10.1093/nar/gkab408",
+  "openalex": {
+    "pmcid": "8262696",
+    "pmid": "34048569",
+    "oa_status": "gold",
+    "license": "cc-by-nc",
+    "pdf_url": "https://academic.oup.com/nar/article-pdf/49/W1/W297/38842399/gkab408.pdf",
+    "landing_page_url": "https://doi.org/10.1093/nar/gkab408",
+    "version": "publishedVersion",
+    "host": "Nucleic Acids Research"
+  },
+  "wayback": ""
+}

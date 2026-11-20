@@ -66,6 +66,30 @@ components.
 | `results/tables/` | Every output table and results write-up. |
 | `paper/` | The manuscript: one Markdown file per chapter, the Word template and the HTML stylesheet. `python3 src/make_docx_template.py && python3 src/build_thesis.py` writes `paper/build/thesis.{md,html,docx}`. |
 
+## Running it
+
+    python3 -m pip install -r requirements.txt   # pinned; metapredict's version changes its predictions
+    python3 src/uniprot_features.py              # self-test, must pass first
+    python3 src/variance_decomposition.py        # the headline result
+
+`src/README.md` gives the full run order and says which three scripts need
+network access.
+
+## What is stored here, and what could not be
+
+The repository is meant to stand on its own. The sequences, the structures, the
+metabolic models, the titre corpus, the bibliography, the figures, the
+manuscript and the working transcripts are all in it.
+
+| Path | What is in it |
+|---|---|
+| `data/sources/` | A local copy of every cited source that may be redistributed, and resolved metadata plus the DOI for every one that may not. `data/sources/MANIFEST.md` lists all 230 entries with the reason in each case. |
+| `docs/history/` | The session transcripts that produced the work, redacted, and a readable work log derived from them. |
+
+Where a paper is not stored, that is a licensing limit rather than a gap: the
+DOI, the URL and the resolved metadata are recorded for it, which is what makes
+the citation checkable.
+
 ## Reading order for the results
 
 1. `results/tables/variance_decomposition.md` — the headline, with bootstrap

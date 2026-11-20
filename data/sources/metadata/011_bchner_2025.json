@@ -1,0 +1,21 @@
+{
+  "key": "011_bchner_2025",
+  "cluster": "2",
+  "authors": "B\u00fcchner et al.",
+  "year": "2025",
+  "title": "Higher induction temperatures and the native secretion signal peptide promote rye prolamin 75k gamma-secalin production in Komagataella phaffii",
+  "venue": "Microbial Cell Factories",
+  "type": "peer-reviewed",
+  "doi": "10.1186/s12934-025-02809-7",
+  "url": "https://doi.org/10.1186/s12934-025-02809-7",
+  "openalex": {
+    "pmcid": "12351904",
+    "pmid": "40804719",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://microbialcellfactories.biomedcentral.com/counter/pdf/10.1186/s12934-025-02809-7",
+    "landing_page_url": "https://doi.org/10.1186/s12934-025-02809-7",
+    "version": "publishedVersion",
+    "host": "Microbial Cell Factories"
+  }
+}

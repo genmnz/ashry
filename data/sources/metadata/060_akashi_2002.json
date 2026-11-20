@@ -1,0 +1,22 @@
+{
+  "key": "060_akashi_2002",
+  "cluster": "7",
+  "authors": "Akashi, H.; Gojobori, T.",
+  "year": "2002",
+  "title": "Metabolic efficiency and amino acid composition in the proteomes of Escherichia coli and Bacillus subtilis",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "type": "peer-reviewed",
+  "doi": "10.1073/pnas.062526999",
+  "url": "https://doi.org/10.1073/pnas.062526999",
+  "openalex": {
+    "pmcid": "122586",
+    "pmid": "11904428",
+    "oa_status": "green",
+    "license": null,
+    "pdf_url": null,
+    "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/122586",
+    "version": "publishedVersion",
+    "host": "Europe PMC (PubMed Central)"
+  },
+  "wayback": ""
+}

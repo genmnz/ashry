@@ -1,0 +1,22 @@
+{
+  "key": "043_hindmarsh_2017",
+  "cluster": "4",
+  "authors": "Hindmarsh, J.P. et al.",
+  "year": "2017",
+  "title": "Experimental evidence for previously unclassified calcium phosphate structures in the casein micelle",
+  "venue": "Journal of Dairy Science",
+  "type": "peer-reviewed",
+  "doi": "10.3168/jds.2017-12623",
+  "url": "https://doi.org/10.3168/jds.2017-12623",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "28690066",
+    "oa_status": "bronze",
+    "license": null,
+    "pdf_url": "http://www.journalofdairyscience.org/article/S0022030217306379/pdf",
+    "landing_page_url": "https://doi.org/10.3168/jds.2017-12623",
+    "version": "publishedVersion",
+    "host": "Journal of Dairy Science"
+  },
+  "wayback": ""
+}

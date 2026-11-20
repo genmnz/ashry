@@ -1,0 +1,22 @@
+{
+  "key": "198_lauer_2012",
+  "cluster": "9",
+  "authors": "Lauer et al.",
+  "year": "2012",
+  "title": "Developability Index: A Rapid In Silico Tool for the Screening of Antibody Aggregation Propensity",
+  "venue": "Journal of Pharmaceutical Sciences",
+  "type": "peer-reviewed",
+  "doi": "10.1002/jps.22758",
+  "url": "https://doi.org/10.1002/jps.22758",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "21935950",
+    "oa_status": "closed",
+    "license": null,
+    "pdf_url": null,
+    "landing_page_url": null,
+    "version": null,
+    "host": null
+  },
+  "wayback": ""
+}

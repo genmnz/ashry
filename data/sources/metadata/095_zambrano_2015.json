@@ -1,0 +1,22 @@
+{
+  "key": "095_zambrano_2015",
+  "cluster": "6",
+  "authors": "Zambrano, R. et al.",
+  "year": "2015",
+  "title": "AGGRESCAN3D (A3D): server for prediction of aggregation properties of protein structures",
+  "venue": "Nucleic Acids Research",
+  "type": "software",
+  "doi": "10.1093/nar/gkv359",
+  "url": "https://doi.org/10.1093/nar/gkv359",
+  "openalex": {
+    "pmcid": "4489226",
+    "pmid": "25883144",
+    "oa_status": "gold",
+    "license": "cc-by-nc",
+    "pdf_url": "https://academic.oup.com/nar/article-pdf/43/W1/W306/17435833/gkv359.pdf",
+    "landing_page_url": "https://doi.org/10.1093/nar/gkv359",
+    "version": "publishedVersion",
+    "host": "Nucleic Acids Research"
+  },
+  "wayback": ""
+}

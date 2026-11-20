@@ -1,0 +1,22 @@
+{
+  "key": "109_rennie_2025",
+  "cluster": "6",
+  "authors": "Rennie, M.L.",
+  "year": "2025",
+  "title": "Emerging frontiers in protein structure prediction following the AlphaFold revolution",
+  "venue": "Journal of the Royal Society Interface",
+  "type": "review",
+  "doi": "10.1098/rsif.2024.0886",
+  "url": "https://doi.org/10.1098/rsif.2024.0886",
+  "openalex": {
+    "pmcid": "11999738",
+    "pmid": "40233800",
+    "oa_status": "hybrid",
+    "license": "cc-by",
+    "pdf_url": null,
+    "landing_page_url": "https://doi.org/10.1098/rsif.2024.0886",
+    "version": "publishedVersion",
+    "host": "Journal of The Royal Society Interface"
+  },
+  "wayback": ""
+}

@@ -1,0 +1,22 @@
+{
+  "key": "052_keppler_2021",
+  "cluster": "4",
+  "authors": "Keppler, J.K. et al.",
+  "year": "2021",
+  "title": "Towards recombinantly produced milk proteins: Physicochemical and emulsifying properties of engineered whey protein beta-lactoglobulin variants",
+  "venue": "Food Hydrocolloids",
+  "type": "peer-reviewed",
+  "doi": "10.1016/j.foodhyd.2020.106132",
+  "url": "https://doi.org/10.1016/j.foodhyd.2020.106132",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "",
+    "oa_status": "hybrid",
+    "license": "cc-by",
+    "pdf_url": "https://www.sciencedirect.com/science/article/pii/S0268005X20306871/pdf",
+    "landing_page_url": "https://doi.org/10.1016/j.foodhyd.2020.106132",
+    "version": "publishedVersion",
+    "host": "Food Hydrocolloids"
+  },
+  "wayback": ""
+}

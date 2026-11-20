@@ -1,0 +1,21 @@
+{
+  "key": "158_fasihi_2025",
+  "cluster": "8",
+  "authors": "Fasihi et al.",
+  "year": "2025",
+  "title": "Global potential of sustainable single-cell protein based on variable renewable electricity",
+  "venue": "Nature Communications",
+  "type": "peer-reviewed",
+  "doi": "10.1038/s41467-025-56364-1",
+  "url": "https://doi.org/10.1038/s41467-025-56364-1",
+  "openalex": {
+    "pmcid": "11811160",
+    "pmid": "39929835",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://www.nature.com/articles/s41467-025-56364-1.pdf",
+    "landing_page_url": "https://doi.org/10.1038/s41467-025-56364-1",
+    "version": "publishedVersion",
+    "host": "Nature Communications"
+  }
+}

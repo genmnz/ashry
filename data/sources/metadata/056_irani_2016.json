@@ -1,0 +1,22 @@
+{
+  "key": "056_irani_2016",
+  "cluster": "7",
+  "authors": "Irani, Z.A. et al.",
+  "year": "2016",
+  "title": "Genome-scale metabolic model of Pichia pastoris with native and humanized glycosylation of recombinant proteins",
+  "venue": "Biotechnology and Bioengineering",
+  "type": "peer-reviewed",
+  "doi": "10.1002/bit.25863",
+  "url": "https://doi.org/10.1002/bit.25863",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "26480251",
+    "oa_status": "green",
+    "license": null,
+    "pdf_url": "http://publications.lib.chalmers.se/records/fulltext/235744/local_235744.pdf",
+    "landing_page_url": "http://publications.lib.chalmers.se/publication/235744-genome-scale-metabolic-model-of-pichia-pastoris-with-native-and-humanized-glycosylation-of-recombina",
+    "version": "submittedVersion",
+    "host": "Chalmers Publication Library (Chalmers University of Technology)"
+  },
+  "wayback": ""
+}

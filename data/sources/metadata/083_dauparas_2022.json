@@ -1,0 +1,21 @@
+{
+  "key": "083_dauparas_2022",
+  "cluster": "6",
+  "authors": "Dauparas, J. et al.",
+  "year": "2022",
+  "title": "Robust deep learning-based protein sequence design using ProteinMPNN",
+  "venue": "Science",
+  "type": "peer-reviewed",
+  "doi": "10.1126/science.add2187",
+  "url": "https://doi.org/10.1126/science.add2187",
+  "openalex": {
+    "pmcid": "9997061",
+    "pmid": "36108050",
+    "oa_status": "green",
+    "license": "cc-by-nc-nd",
+    "pdf_url": "https://www.biorxiv.org/content/biorxiv/early/2022/06/04/2022.06.03.494563.full.pdf",
+    "landing_page_url": "https://doi.org/10.1101/2022.06.03.494563",
+    "version": "submittedVersion",
+    "host": "bioRxiv (Cold Spring Harbor Laboratory)"
+  }
+}

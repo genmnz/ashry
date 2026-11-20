@@ -1,0 +1,22 @@
+{
+  "key": "023_li_2006",
+  "cluster": "2",
+  "authors": "Li, H. et al.",
+  "year": "2006",
+  "title": "Optimization of humanized IgGs in glycoengineered Pichia pastoris",
+  "venue": "Nature Biotechnology",
+  "type": "peer-reviewed",
+  "doi": "10.1038/nbt1178",
+  "url": "https://doi.org/10.1038/nbt1178",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "16429149",
+    "oa_status": "closed",
+    "license": null,
+    "pdf_url": null,
+    "landing_page_url": null,
+    "version": null,
+    "host": null
+  },
+  "wayback": ""
+}

@@ -1,0 +1,22 @@
+{
+  "key": "180_chuang_2012",
+  "cluster": "6",
+  "authors": "Chuang et al.",
+  "year": "2012",
+  "title": "Computational prediction of N-linked glycosylation incorporating structural properties and patterns",
+  "venue": "Bioinformatics",
+  "type": "peer-reviewed",
+  "doi": "10.1093/bioinformatics/bts426",
+  "url": "https://doi.org/10.1093/bioinformatics/bts426",
+  "openalex": {
+    "pmcid": "3426846",
+    "pmid": "22782545",
+    "oa_status": "bronze",
+    "license": null,
+    "pdf_url": "https://academic.oup.com/bioinformatics/article-pdf/28/17/2249/48874126/bioinformatics_28_17_2249.pdf",
+    "landing_page_url": "https://doi.org/10.1093/bioinformatics/bts426",
+    "version": "publishedVersion",
+    "host": "Bioinformatics"
+  },
+  "wayback": ""
+}

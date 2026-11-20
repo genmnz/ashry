@@ -1,0 +1,21 @@
+{
+  "key": "018_dragosits_2010",
+  "cluster": "2",
+  "authors": "Dragosits, M. et al.",
+  "year": "2010",
+  "title": "The response to unfolded protein is involved in osmotolerance of Pichia pastoris",
+  "venue": "BMC Genomics",
+  "type": "peer-reviewed",
+  "doi": "10.1186/1471-2164-11-207",
+  "url": "https://doi.org/10.1186/1471-2164-11-207",
+  "openalex": {
+    "pmcid": "2867824",
+    "pmid": "20346137",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://bmcgenomics.biomedcentral.com/counter/pdf/10.1186/1471-2164-11-207",
+    "landing_page_url": "https://doi.org/10.1186/1471-2164-11-207",
+    "version": "publishedVersion",
+    "host": "BMC Genomics"
+  }
+}

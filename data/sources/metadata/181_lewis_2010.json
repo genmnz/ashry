@@ -1,0 +1,22 @@
+{
+  "key": "181_lewis_2010",
+  "cluster": "7",
+  "authors": "Lewis, N.E. et al.",
+  "year": "2010",
+  "title": "Omic data from evolved E. coli are consistent with computed optimal growth from genome-scale models",
+  "venue": "Molecular Systems Biology",
+  "type": "peer-reviewed",
+  "doi": "10.1038/msb.2010.47",
+  "url": "https://doi.org/10.1038/msb.2010.47",
+  "openalex": {
+    "pmcid": "2925526",
+    "pmid": "20664636",
+    "oa_status": "gold",
+    "license": "other-oa",
+    "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1038/msb.2010.47",
+    "landing_page_url": "https://doi.org/10.1038/msb.2010.47",
+    "version": "publishedVersion",
+    "host": "Molecular Systems Biology"
+  },
+  "wayback": ""
+}

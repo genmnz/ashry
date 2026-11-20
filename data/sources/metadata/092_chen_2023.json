@@ -1,0 +1,22 @@
+{
+  "key": "092_chen_2023",
+  "cluster": "6",
+  "authors": "Chen, M. et al.",
+  "year": "2023",
+  "title": "GPS 6.0: an updated server for prediction of kinase-specific phosphorylation sites in proteins",
+  "venue": "Nucleic Acids Research",
+  "type": "software",
+  "doi": "10.1093/nar/gkad383",
+  "url": "https://doi.org/10.1093/nar/gkad383",
+  "openalex": {
+    "pmcid": "10320111",
+    "pmid": "37158278",
+    "oa_status": "gold",
+    "license": "cc-by-nc",
+    "pdf_url": "https://academic.oup.com/nar/advance-article-pdf/doi/10.1093/nar/gkad383/50252292/gkad383.pdf",
+    "landing_page_url": "https://doi.org/10.1093/nar/gkad383",
+    "version": "publishedVersion",
+    "host": "Nucleic Acids Research"
+  },
+  "wayback": ""
+}

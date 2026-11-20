@@ -1,0 +1,21 @@
+{
+  "key": "199_wang_2026",
+  "cluster": "9",
+  "authors": "Wang et al.",
+  "year": "2026",
+  "title": "Advances in the biosynthesis of milk proteins fueled by synthetic biology",
+  "venue": "Agricultural Products Processing and Storage",
+  "type": "review",
+  "doi": "10.1007/s44462-026-00065-5",
+  "url": "https://doi.org/10.1007/s44462-026-00065-5",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "",
+    "oa_status": "gold",
+    "license": "cc-by-nc-nd",
+    "pdf_url": "https://link.springer.com/content/pdf/10.1007/s44462-026-00065-5.pdf",
+    "landing_page_url": "https://doi.org/10.1007/s44462-026-00065-5",
+    "version": "publishedVersion",
+    "host": "Agricultural Products Processing and Storage"
+  }
+}

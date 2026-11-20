@@ -1,0 +1,22 @@
+{
+  "key": "108_garcia_2026",
+  "cluster": "6",
+  "authors": "Garcia, M. et al.",
+  "year": "2026",
+  "title": "Evaluating zero-shot prediction of monomeric protein design success by AlphaFold ESMFold and ProteinMPNN",
+  "venue": "Protein Science",
+  "type": "peer-reviewed",
+  "doi": "10.1002/pro.70453",
+  "url": "https://doi.org/10.1002/pro.70453",
+  "openalex": {
+    "pmcid": "12817478",
+    "pmid": "41556605",
+    "oa_status": "hybrid",
+    "license": "cc-by",
+    "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/pro.70453",
+    "landing_page_url": "https://doi.org/10.1002/pro.70453",
+    "version": "publishedVersion",
+    "host": "Protein Science"
+  },
+  "wayback": ""
+}

@@ -1,0 +1,22 @@
+{
+  "key": "042_lenton_2020",
+  "cluster": "4",
+  "authors": "Lenton, S. et al.",
+  "year": "2020",
+  "title": "Structural Biology of Calcium Phosphate Nanoclusters Sequestered by Phosphoproteins",
+  "venue": "Crystals",
+  "type": "review",
+  "doi": "10.3390/cryst10090755",
+  "url": "https://doi.org/10.3390/cryst10090755",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://www.mdpi.com/2073-4352/10/9/755/pdf?version=1598863911",
+    "landing_page_url": "https://dx.doi.org/10.3390/cryst10090755",
+    "version": "publishedVersion",
+    "host": "Crystals"
+  },
+  "wayback": ""
+}

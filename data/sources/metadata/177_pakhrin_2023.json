@@ -1,0 +1,22 @@
+{
+  "key": "177_pakhrin_2023",
+  "cluster": "6",
+  "authors": "Pakhrin et al.",
+  "year": "2023",
+  "title": "LMNglyPred: prediction of human N-linked glycosylation sites using embeddings from a pre-trained protein language model",
+  "venue": "Glycobiology",
+  "type": "software",
+  "doi": "10.1093/glycob/cwad033",
+  "url": "https://doi.org/10.1093/glycob/cwad033",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "37067908",
+    "oa_status": "closed",
+    "license": null,
+    "pdf_url": null,
+    "landing_page_url": null,
+    "version": null,
+    "host": null
+  },
+  "wayback": ""
+}

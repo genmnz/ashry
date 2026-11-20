@@ -1,0 +1,22 @@
+{
+  "key": "096_zalewski_2024",
+  "cluster": "6",
+  "authors": "Zalewski, M. et al.",
+  "year": "2024",
+  "title": "Aggrescan4D: A comprehensive tool for pH-dependent analysis and engineering of protein aggregation propensity",
+  "venue": "Protein Science",
+  "type": "software",
+  "doi": "10.1002/pro.5180",
+  "url": "https://doi.org/10.1002/pro.5180",
+  "openalex": {
+    "pmcid": "11425640",
+    "pmid": "39324697",
+    "oa_status": "hybrid",
+    "license": "cc-by-nc-nd",
+    "pdf_url": null,
+    "landing_page_url": "https://doi.org/10.1002/pro.5180",
+    "version": "publishedVersion",
+    "host": "Protein Science"
+  },
+  "wayback": ""
+}

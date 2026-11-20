@@ -1,0 +1,22 @@
+{
+  "key": "134_tagliabracci_2012",
+  "cluster": "4",
+  "authors": "Tagliabracci, V.S. et al.",
+  "year": "2012",
+  "title": "Secreted kinase phosphorylates extracellular proteins that regulate biomineralization",
+  "venue": "Science",
+  "type": "peer-reviewed",
+  "doi": "10.1126/science.1217817",
+  "url": "https://doi.org/10.1126/science.1217817",
+  "openalex": {
+    "pmcid": "3754843",
+    "pmid": "22582013",
+    "oa_status": "green",
+    "license": null,
+    "pdf_url": null,
+    "landing_page_url": "http://europepmc.org/articles/PMC3754843",
+    "version": "acceptedVersion",
+    "host": "Europe PMC (PubMed Central)"
+  },
+  "wayback": ""
+}

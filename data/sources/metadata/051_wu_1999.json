@@ -1,0 +1,22 @@
+{
+  "key": "051_wu_1999",
+  "cluster": "4",
+  "authors": "Wu, S.-Y. et al.",
+  "year": "1999",
+  "title": "beta-Lactoglobulin Binds Palmitate within Its Central Cavity",
+  "venue": "Journal of Biological Chemistry",
+  "type": "peer-reviewed",
+  "doi": "10.1074/jbc.274.1.170",
+  "url": "https://doi.org/10.1074/jbc.274.1.170",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "9867826",
+    "oa_status": "hybrid",
+    "license": "cc-by",
+    "pdf_url": "http://www.jbc.org/article/S0021925818370686/pdf",
+    "landing_page_url": "https://doi.org/10.1074/jbc.274.1.170",
+    "version": "publishedVersion",
+    "host": "Journal of Biological Chemistry"
+  },
+  "wayback": ""
+}

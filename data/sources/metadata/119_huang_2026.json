@@ -1,0 +1,22 @@
+{
+  "key": "119_huang_2026",
+  "cluster": "2",
+  "authors": "Huang et al.",
+  "year": "2026",
+  "title": "Systematic optimization of Komagataella phaffii (Pichia pastoris) for high-efficiency recombinant protein production: Advancements in strain engineering fermentation optimization and AI-driven technologies",
+  "venue": "Engineering Microbiology",
+  "type": "review",
+  "doi": "10.1016/j.engmic.2026.100305",
+  "url": "https://doi.org/10.1016/j.engmic.2026.100305",
+  "openalex": {
+    "pmcid": "13634273",
+    "pmid": "42830927",
+    "oa_status": "gold",
+    "license": "cc-by-nc-nd",
+    "pdf_url": "https://www.sciencedirect.com/science/article/pii/S2667370326000457/pdf",
+    "landing_page_url": "https://doi.org/10.1016/j.engmic.2026.100305",
+    "version": "publishedVersion",
+    "host": "Engineering Microbiology"
+  },
+  "wayback": ""
+}

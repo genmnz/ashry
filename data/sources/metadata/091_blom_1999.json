@@ -1,0 +1,22 @@
+{
+  "key": "091_blom_1999",
+  "cluster": "6",
+  "authors": "Blom, N. et al.",
+  "year": "1999",
+  "title": "Sequence and structure-based prediction of eukaryotic protein phosphorylation sites",
+  "venue": "Journal of Molecular Biology",
+  "type": "software",
+  "doi": "10.1006/jmbi.1999.3310",
+  "url": "https://doi.org/10.1006/jmbi.1999.3310",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "10600390",
+    "oa_status": "closed",
+    "license": null,
+    "pdf_url": null,
+    "landing_page_url": null,
+    "version": null,
+    "host": null
+  },
+  "wayback": ""
+}

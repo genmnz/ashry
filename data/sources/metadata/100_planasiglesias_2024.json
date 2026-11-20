@@ -1,0 +1,22 @@
+{
+  "key": "100_planasiglesias_2024",
+  "cluster": "6",
+  "authors": "Planas-Iglesias, J. et al.",
+  "year": "2024",
+  "title": "AggreProt: a web server for predicting and engineering aggregation prone regions in proteins",
+  "venue": "Nucleic Acids Research",
+  "type": "software",
+  "doi": "10.1093/nar/gkae420",
+  "url": "https://doi.org/10.1093/nar/gkae420",
+  "openalex": {
+    "pmcid": "11223854",
+    "pmid": "38801076",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://academic.oup.com/nar/advance-article-pdf/doi/10.1093/nar/gkae420/57926287/gkae420.pdf",
+    "landing_page_url": "https://doi.org/10.1093/nar/gkae420",
+    "version": "publishedVersion",
+    "host": "Nucleic Acids Research"
+  },
+  "wayback": ""
+}

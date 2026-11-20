@@ -1,0 +1,22 @@
+{
+  "key": "132_hettinga_2022",
+  "cluster": "4",
+  "authors": "Hettinga et al.",
+  "year": "2022",
+  "title": "Can recombinant milk proteins replace those produced by animals?",
+  "venue": "Current Opinion in Biotechnology",
+  "type": "review",
+  "doi": "10.1016/j.copbio.2022.102690",
+  "url": "https://doi.org/10.1016/j.copbio.2022.102690",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "35104717",
+    "oa_status": "hybrid",
+    "license": "cc-by",
+    "pdf_url": "https://www.sciencedirect.com/science/article/pii/S0958166922000106/pdf",
+    "landing_page_url": "https://doi.org/10.1016/j.copbio.2022.102690",
+    "version": "publishedVersion",
+    "host": "Current Opinion in Biotechnology"
+  },
+  "wayback": ""
+}

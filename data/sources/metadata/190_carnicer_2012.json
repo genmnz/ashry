@@ -1,0 +1,21 @@
+{
+  "key": "190_carnicer_2012",
+  "cluster": "7",
+  "authors": "Carnicer et al.",
+  "year": "2012",
+  "title": "Quantitative metabolomics analysis of amino acid metabolism in recombinant Pichia pastoris under different oxygen availability conditions",
+  "venue": "Microbial Cell Factories",
+  "type": "peer-reviewed",
+  "doi": "10.1186/1475-2859-11-83",
+  "url": "https://doi.org/10.1186/1475-2859-11-83",
+  "openalex": {
+    "pmcid": "3538582",
+    "pmid": "22704468",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://microbialcellfactories.biomedcentral.com/counter/pdf/10.1186/1475-2859-11-83",
+    "landing_page_url": "https://doi.org/10.1186/1475-2859-11-83",
+    "version": "publishedVersion",
+    "host": "Microbial Cell Factories"
+  }
+}

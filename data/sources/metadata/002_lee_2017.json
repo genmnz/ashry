@@ -1,0 +1,22 @@
+{
+  "key": "002_lee_2017",
+  "cluster": "2",
+  "authors": "Lee, J.Y. et al.",
+  "year": "2017",
+  "title": "Auto-induction of Pichia pastoris AOX1 promoter for membrane protein expression",
+  "venue": "Protein Expression and Purification",
+  "type": "peer-reviewed",
+  "doi": "10.1016/j.pep.2017.06.006",
+  "url": "https://doi.org/10.1016/j.pep.2017.06.006",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "28619526",
+    "oa_status": "closed",
+    "license": null,
+    "pdf_url": null,
+    "landing_page_url": null,
+    "version": null,
+    "host": null
+  },
+  "wayback": ""
+}

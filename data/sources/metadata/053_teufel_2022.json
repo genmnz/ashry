@@ -1,0 +1,21 @@
+{
+  "key": "053_teufel_2022",
+  "cluster": "6",
+  "authors": "Teufel, F. et al.",
+  "year": "2022",
+  "title": "SignalP 6.0 predicts all five types of signal peptides using protein language models",
+  "venue": "Nature Biotechnology",
+  "type": "software",
+  "doi": "10.1038/s41587-021-01156-3",
+  "url": "https://doi.org/10.1038/s41587-021-01156-3",
+  "openalex": {
+    "pmcid": "9287161",
+    "pmid": "34980915",
+    "oa_status": "hybrid",
+    "license": "cc-by",
+    "pdf_url": "https://www.nature.com/articles/s41587-021-01156-3.pdf",
+    "landing_page_url": "https://doi.org/10.1038/s41587-021-01156-3",
+    "version": "publishedVersion",
+    "host": "Nature Biotechnology"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "key": "062_humbird_2021",
+  "cluster": "8",
+  "authors": "Humbird, D.",
+  "year": "2021",
+  "title": "Scale-up economics for cultured meat",
+  "venue": "Biotechnology and Bioengineering",
+  "type": "peer-reviewed",
+  "doi": "10.1002/bit.27848",
+  "url": "https://doi.org/10.1002/bit.27848",
+  "openalex": {
+    "pmcid": "8362201",
+    "pmid": "34101164",
+    "oa_status": "hybrid",
+    "license": "cc-by",
+    "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/bit.27848",
+    "landing_page_url": "https://doi.org/10.1002/bit.27848",
+    "version": "publishedVersion",
+    "host": "Biotechnology and Bioengineering"
+  },
+  "wayback": ""
+}

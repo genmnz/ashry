@@ -1,0 +1,21 @@
+{
+  "key": "186_feizi_2013",
+  "cluster": "7",
+  "authors": "Feizi, A. et al.",
+  "year": "2013",
+  "title": "Genome-Scale Modeling of the Protein Secretory Machinery in Yeast",
+  "venue": "PLOS ONE",
+  "type": "peer-reviewed",
+  "doi": "10.1371/journal.pone.0063284",
+  "url": "https://doi.org/10.1371/journal.pone.0063284",
+  "openalex": {
+    "pmcid": "3646752",
+    "pmid": "23667601",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0063284&type=printable",
+    "landing_page_url": "https://doi.org/10.1371/journal.pone.0063284",
+    "version": "publishedVersion",
+    "host": "PLoS ONE"
+  }
+}

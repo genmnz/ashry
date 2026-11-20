@@ -1,0 +1,21 @@
+{
+  "key": "009_zou_2022",
+  "cluster": "2",
+  "authors": "Zou, C. et al.",
+  "year": "2022",
+  "title": "The alpha-mating factor secretion signals and endogenous signal peptides for recombinant protein secretion in Komagataella phaffii",
+  "venue": "Biotechnology for Biofuels and Bioproducts",
+  "type": "peer-reviewed",
+  "doi": "10.1186/s13068-022-02243-6",
+  "url": "https://doi.org/10.1186/s13068-022-02243-6",
+  "openalex": {
+    "pmcid": "9756452",
+    "pmid": "36527112",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://biotechnologyforbiofuels.biomedcentral.com/counter/pdf/10.1186/s13068-022-02243-6",
+    "landing_page_url": "https://doi.org/10.1186/s13068-022-02243-6",
+    "version": "publishedVersion",
+    "host": "Biotechnology for Biofuels and Bioproducts"
+  }
+}

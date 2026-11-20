@@ -1,0 +1,21 @@
+{
+  "key": "114_rebnegger_2024",
+  "cluster": "7",
+  "authors": "Rebnegger et al.",
+  "year": "2024",
+  "title": "Protein production dynamics and physiological adaptation of recombinant Komagataella phaffii at near-zero growth rates",
+  "venue": "Microbial Cell Factories",
+  "type": "peer-reviewed",
+  "doi": "10.1186/s12934-024-02314-3",
+  "url": "https://doi.org/10.1186/s12934-024-02314-3",
+  "openalex": {
+    "pmcid": "10851509",
+    "pmid": "38331812",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://microbialcellfactories.biomedcentral.com/counter/pdf/10.1186/s12934-024-02314-3",
+    "landing_page_url": "https://doi.org/10.1186/s12934-024-02314-3",
+    "version": "publishedVersion",
+    "host": "Microbial Cell Factories"
+  }
+}

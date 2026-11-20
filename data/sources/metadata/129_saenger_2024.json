@@ -1,0 +1,22 @@
+{
+  "key": "129_saenger_2024",
+  "cluster": "4",
+  "authors": "Saenger et al.",
+  "year": "2024",
+  "title": "Structural Analysis of Breast-Milk alphaS1-Casein: An alpha-Helical Conformation Is Required for TLR4-Stimulation",
+  "venue": "International Journal of Molecular Sciences",
+  "type": "peer-reviewed",
+  "doi": "10.3390/ijms25031743",
+  "url": "https://doi.org/10.3390/ijms25031743",
+  "openalex": {
+    "pmcid": "10855866",
+    "pmid": "38339021",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://www.mdpi.com/1422-0067/25/3/1743/pdf?version=1706755333",
+    "landing_page_url": "https://doi.org/10.3390/ijms25031743",
+    "version": "publishedVersion",
+    "host": "International Journal of Molecular Sciences"
+  },
+  "wayback": ""
+}

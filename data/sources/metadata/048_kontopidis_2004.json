@@ -1,0 +1,22 @@
+{
+  "key": "048_kontopidis_2004",
+  "cluster": "4",
+  "authors": "Kontopidis, G.A. et al.",
+  "year": "2004",
+  "title": "Invited Review: beta-Lactoglobulin: Binding Properties Structure and Function",
+  "venue": "Journal of Dairy Science",
+  "type": "review",
+  "doi": "10.3168/jds.s0022-0302(04)73222-1",
+  "url": "https://doi.org/10.3168/jds.s0022-0302(04)73222-1",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "15259212",
+    "oa_status": "bronze",
+    "license": null,
+    "pdf_url": "http://www.journalofdairyscience.org/article/S0022030204732221/pdf",
+    "landing_page_url": "https://doi.org/10.3168/jds.s0022-0302(04)73222-1",
+    "version": "publishedVersion",
+    "host": "Journal of Dairy Science"
+  },
+  "wayback": ""
+}

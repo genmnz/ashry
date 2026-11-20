@@ -1,0 +1,21 @@
+{
+  "key": "071_dunne_2022",
+  "cluster": "9",
+  "authors": "Dunne et al.",
+  "year": "2022",
+  "title": "ExpressUrself: A spatial model for predicting recombinant expression from mRNA sequence",
+  "venue": "bioRxiv",
+  "type": "preprint",
+  "doi": "10.1101/2022.12.02.518907",
+  "url": "https://doi.org/10.1101/2022.12.02.518907",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "",
+    "oa_status": "green",
+    "license": "cc-by-nc-nd",
+    "pdf_url": "https://www.biorxiv.org/content/biorxiv/early/2022/12/04/2022.12.02.518907.full.pdf",
+    "landing_page_url": "https://doi.org/10.1101/2022.12.02.518907",
+    "version": "submittedVersion",
+    "host": "bioRxiv (Cold Spring Harbor Laboratory)"
+  }
+}

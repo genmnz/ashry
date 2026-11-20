@@ -1,0 +1,21 @@
+{
+  "key": "061_li_2022",
+  "cluster": "7",
+  "authors": "Li et al.",
+  "year": "2022",
+  "title": "Improving recombinant protein production by yeast through genome-scale modeling using proteome constraints",
+  "venue": "Nature Communications",
+  "type": "peer-reviewed",
+  "doi": "10.1038/s41467-022-30689-7",
+  "url": "https://doi.org/10.1038/s41467-022-30689-7",
+  "openalex": {
+    "pmcid": "9142503",
+    "pmid": "35624178",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://www.nature.com/articles/s41467-022-30689-7.pdf",
+    "landing_page_url": "https://doi.org/10.1038/s41467-022-30689-7",
+    "version": "publishedVersion",
+    "host": "Nature Communications"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "key": "160_le_2026",
+  "cluster": "9",
+  "authors": "Le",
+  "year": "2026",
+  "title": "Forecasting Host Cells for Recombinant Protein Expression",
+  "venue": "Biochemistry and Molecular Biology",
+  "type": "peer-reviewed",
+  "doi": "10.11648/j.bmb.20261101.11",
+  "url": "https://doi.org/10.11648/j.bmb.20261101.11",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "",
+    "oa_status": "diamond",
+    "license": "cc-by",
+    "pdf_url": "http://article.sciencepg.com/pdf/j.bmb.20261101.11",
+    "landing_page_url": "https://doi.org/10.11648/j.bmb.20261101.11",
+    "version": "publishedVersion",
+    "host": "Biochemistry and Molecular Biology"
+  }
+}

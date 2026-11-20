@@ -1,0 +1,22 @@
+{
+  "key": "059_tortajada_2012",
+  "cluster": "7",
+  "authors": "Tortajada et al.",
+  "year": "2012",
+  "title": "Estimation of recombinant protein production in Pichia pastoris based on a constraint-based model",
+  "venue": "Journal of Process Control",
+  "type": "peer-reviewed",
+  "doi": "10.1016/j.jprocont.2012.03.009",
+  "url": "https://doi.org/10.1016/j.jprocont.2012.03.009",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "",
+    "oa_status": "green",
+    "license": "cc-by-nc-nd",
+    "pdf_url": null,
+    "landing_page_url": "http://hdl.handle.net/10251/140830",
+    "version": "submittedVersion",
+    "host": "RiuNet (Universitat Polit\u00e8cnica de Val\u00e8ncia)"
+  },
+  "wayback": ""
+}

@@ -1,0 +1,22 @@
+{
+  "key": "111_kocaba_2026",
+  "cluster": "7",
+  "authors": "Kocaba\u015f",
+  "year": "2026",
+  "title": "Curation of Gene-Protein-Reaction Associations Enhances the iPichia Genome-Scale Metabolic Model of Komagataella phaffii",
+  "venue": "Biotechnology and Bioengineering",
+  "type": "peer-reviewed",
+  "doi": "10.1002/bit.70402",
+  "url": "https://doi.org/10.1002/bit.70402",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "42844802",
+    "oa_status": "hybrid",
+    "license": "other-oa",
+    "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/bit.70402",
+    "landing_page_url": "https://doi.org/10.1002/bit.70402",
+    "version": "publishedVersion",
+    "host": "Biotechnology and Bioengineering"
+  },
+  "wayback": ""
+}

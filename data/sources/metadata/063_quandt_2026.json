@@ -1,0 +1,21 @@
+{
+  "key": "063_quandt_2026",
+  "cluster": "8",
+  "authors": "Quandt et al.",
+  "year": "2026",
+  "title": "Environmental impact assessment of dairy protein from precision fermentation",
+  "venue": "International Journal of Life Cycle Assessment",
+  "type": "peer-reviewed",
+  "doi": "10.1007/s11367-026-02765-3",
+  "url": "https://doi.org/10.1007/s11367-026-02765-3",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "",
+    "oa_status": "hybrid",
+    "license": "cc-by",
+    "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11367-026-02765-3.pdf",
+    "landing_page_url": "https://doi.org/10.1007/s11367-026-02765-3",
+    "version": "publishedVersion",
+    "host": "The International Journal of Life Cycle Assessment"
+  }
+}

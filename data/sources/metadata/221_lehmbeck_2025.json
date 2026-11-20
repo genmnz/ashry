@@ -1,0 +1,21 @@
+{
+  "key": "221_lehmbeck_2025",
+  "cluster": "3",
+  "authors": "Lehmbeck et al.",
+  "year": "2025",
+  "title": "Mycotoxin-free Aspergillus oryzae strain lineage for alternative and novel protein production at industrial scale",
+  "venue": "Applied Microbiology and Biotechnology",
+  "type": "peer-reviewed",
+  "doi": "10.1007/s00253-025-13482-6",
+  "url": "https://doi.org/10.1007/s00253-025-13482-6",
+  "openalex": {
+    "pmcid": "11993488",
+    "pmid": "40220078",
+    "oa_status": "gold",
+    "license": "cc-by-nc-nd",
+    "pdf_url": "https://link.springer.com/content/pdf/10.1007/s00253-025-13482-6.pdf",
+    "landing_page_url": "https://doi.org/10.1007/s00253-025-13482-6",
+    "version": "publishedVersion",
+    "host": "Applied Microbiology and Biotechnology"
+  }
+}

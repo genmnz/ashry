@@ -1,0 +1,21 @@
+{
+  "key": "168_xu_2021",
+  "cluster": "6",
+  "authors": "Xu et al.",
+  "year": "2021",
+  "title": "Codon usage bias regulates gene expression and protein conformation in yeast expression system P. pastoris",
+  "venue": "Microbial Cell Factories",
+  "type": "peer-reviewed",
+  "doi": "10.1186/s12934-021-01580-9",
+  "url": "https://doi.org/10.1186/s12934-021-01580-9",
+  "openalex": {
+    "pmcid": "8077831",
+    "pmid": "33902585",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://microbialcellfactories.biomedcentral.com/track/pdf/10.1186/s12934-021-01580-9",
+    "landing_page_url": "https://doi.org/10.1186/s12934-021-01580-9",
+    "version": "publishedVersion",
+    "host": "Microbial Cell Factories"
+  }
+}

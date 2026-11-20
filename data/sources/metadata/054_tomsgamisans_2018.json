@@ -1,0 +1,22 @@
+{
+  "key": "054_tomsgamisans_2018",
+  "cluster": "7",
+  "authors": "Tom\u00e0s\u2010Gamisans et al.",
+  "year": "2018",
+  "title": "Fine-tuning the P. pastoris iMT1026 genome-scale metabolic model for improved prediction of growth on methanol or glycerol as sole carbon sources",
+  "venue": "Microbial Biotechnology",
+  "type": "peer-reviewed",
+  "doi": "10.1111/1751-7915.12871",
+  "url": "https://doi.org/10.1111/1751-7915.12871",
+  "openalex": {
+    "pmcid": "5743807",
+    "pmid": "29160039",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://sfamjournals.onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1751-7915.12871",
+    "landing_page_url": "https://doi.org/10.1111/1751-7915.12871",
+    "version": "publishedVersion",
+    "host": "Microbial Biotechnology"
+  },
+  "wayback": ""
+}

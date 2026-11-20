@@ -1,0 +1,22 @@
+{
+  "key": "069_bhandari_2021",
+  "cluster": "9",
+  "authors": "Bhandari et al.",
+  "year": "2021",
+  "title": "Analysis of 11430 recombinant protein production experiments reveals that protein yield is tunable by synonymous codon changes of translation initiation sites",
+  "venue": "PLOS Computational Biology",
+  "type": "peer-reviewed",
+  "doi": "10.1371/journal.pcbi.1009461",
+  "url": "https://doi.org/10.1371/journal.pcbi.1009461",
+  "openalex": {
+    "pmcid": "8519471",
+    "pmid": "34610008",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": null,
+    "landing_page_url": "https://doi.org/10.1371/journal.pcbi.1009461",
+    "version": "publishedVersion",
+    "host": "PLoS Computational Biology"
+  },
+  "wayback": ""
+}

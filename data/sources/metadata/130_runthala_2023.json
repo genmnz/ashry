@@ -1,0 +1,22 @@
+{
+  "key": "130_runthala_2023",
+  "cluster": "4",
+  "authors": "Runthala et al.",
+  "year": "2023",
+  "title": "Caseins: Versatility of Their Micellar Organization in Relation to the Functional and Nutritional Properties of Milk",
+  "venue": "Molecules",
+  "type": "review",
+  "doi": "10.3390/molecules28052023",
+  "url": "https://doi.org/10.3390/molecules28052023",
+  "openalex": {
+    "pmcid": "10004547",
+    "pmid": "36903269",
+    "oa_status": "gold",
+    "license": "cc-by",
+    "pdf_url": "https://www.mdpi.com/1420-3049/28/5/2023/pdf?version=1677509626",
+    "landing_page_url": "https://doi.org/10.3390/molecules28052023",
+    "version": "publishedVersion",
+    "host": "Molecules"
+  },
+  "wayback": ""
+}

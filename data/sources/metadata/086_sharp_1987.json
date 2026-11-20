@@ -1,0 +1,22 @@
+{
+  "key": "086_sharp_1987",
+  "cluster": "6",
+  "authors": "Sharp, P.M.; Li, W.-H.",
+  "year": "1987",
+  "title": "The codon adaptation index-a measure of directional synonymous codon usage bias and its potential applications",
+  "venue": "Nucleic Acids Research",
+  "type": "peer-reviewed",
+  "doi": "10.1093/nar/15.3.1281",
+  "url": "https://doi.org/10.1093/nar/15.3.1281",
+  "openalex": {
+    "pmcid": "340524",
+    "pmid": "3547335",
+    "oa_status": "green",
+    "license": "other-oa",
+    "pdf_url": "https://www.research.ed.ac.uk/files/8036496/NAR_2007_Sharp_P.pdf",
+    "landing_page_url": "https://www.research.ed.ac.uk/en/publications/cdc1e4fd-ef11-4349-9bb4-740dfb0dcbfd",
+    "version": "publishedVersion",
+    "host": "Edinburgh Research Explorer (University of Edinburgh)"
+  },
+  "wayback": ""
+}

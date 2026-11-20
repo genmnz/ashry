@@ -1,0 +1,22 @@
+{
+  "key": "113_coltman_2023",
+  "cluster": "7",
+  "authors": "Coltman et al.",
+  "year": "2023",
+  "title": "Characterising the metabolic rewiring of extremely slow growing Komagataella phaffii",
+  "venue": "PubMed record",
+  "type": "peer-reviewed",
+  "doi": "10.1101/2023.09.04.556224",
+  "url": "https://doi.org/10.1101/2023.09.04.556224",
+  "openalex": {
+    "pmcid": "10832545",
+    "pmid": "38206275",
+    "oa_status": "gold",
+    "license": "cc-by-nc",
+    "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/1751-7915.14386",
+    "landing_page_url": "https://doi.org/10.1111/1751-7915.14386",
+    "version": "publishedVersion",
+    "host": "Microbial Biotechnology"
+  },
+  "wayback": ""
+}

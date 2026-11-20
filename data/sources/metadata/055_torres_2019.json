@@ -1,0 +1,22 @@
+{
+  "key": "055_torres_2019",
+  "cluster": "7",
+  "authors": "Torres, P. et al.",
+  "year": "2019",
+  "title": "Contextualized genome-scale model unveils high-order metabolic effects of the specific growth rate and oxygenation level in recombinant Pichia pastoris",
+  "venue": "Metabolic Engineering Communications",
+  "type": "peer-reviewed",
+  "doi": "10.1016/j.mec.2019.e00103",
+  "url": "https://doi.org/10.1016/j.mec.2019.e00103",
+  "openalex": {
+    "pmcid": "6838487",
+    "pmid": "31720218",
+    "oa_status": "gold",
+    "license": "cc-by-nc-nd",
+    "pdf_url": null,
+    "landing_page_url": "https://doi.org/10.1016/j.mec.2019.e00103",
+    "version": "publishedVersion",
+    "host": "Metabolic Engineering Communications"
+  },
+  "wayback": ""
+}

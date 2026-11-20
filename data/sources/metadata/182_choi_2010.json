@@ -1,0 +1,22 @@
+{
+  "key": "182_choi_2010",
+  "cluster": "7",
+  "authors": "Choi, H.S. et al.",
+  "year": "2010",
+  "title": "In Silico Identification of Gene Amplification Targets for Improvement of Lycopene Production",
+  "venue": "Applied and Environmental Microbiology",
+  "type": "peer-reviewed",
+  "doi": "10.1128/aem.00115-10",
+  "url": "https://doi.org/10.1128/aem.00115-10",
+  "openalex": {
+    "pmcid": "2869140",
+    "pmid": "20348305",
+    "oa_status": "green",
+    "license": null,
+    "pdf_url": null,
+    "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/2869140",
+    "version": "publishedVersion",
+    "host": "Europe PMC (PubMed Central)"
+  },
+  "wayback": ""
+}

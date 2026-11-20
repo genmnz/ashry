@@ -1,0 +1,22 @@
+{
+  "key": "170_liu_2022",
+  "cluster": "6",
+  "authors": "Liu et al.",
+  "year": "2022",
+  "title": "Strong negative correlation between codon usage bias and protein structural disorder impedes protein expression after codon optimization",
+  "venue": "Journal of Biotechnology",
+  "type": "peer-reviewed",
+  "doi": "10.1016/j.jbiotec.2021.11.001",
+  "url": "https://doi.org/10.1016/j.jbiotec.2021.11.001",
+  "openalex": {
+    "pmcid": "",
+    "pmid": "34763006",
+    "oa_status": "closed",
+    "license": null,
+    "pdf_url": null,
+    "landing_page_url": null,
+    "version": null,
+    "host": null
+  },
+  "wayback": ""
+}

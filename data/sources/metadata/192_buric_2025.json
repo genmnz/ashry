@@ -1,0 +1,22 @@
+{
+  "key": "192_buric_2025",
+  "cluster": "7",
+  "authors": "Buric, F. et al.",
+  "year": "2025",
+  "title": "Amino acid sequence encodes protein abundance shaped by protein stability at reduced synthesis cost",
+  "venue": "Protein Science",
+  "type": "peer-reviewed",
+  "doi": "10.1002/pro.5239",
+  "url": "https://doi.org/10.1002/pro.5239",
+  "openalex": {
+    "pmcid": "11635393",
+    "pmid": "39665261",
+    "oa_status": "hybrid",
+    "license": "cc-by",
+    "pdf_url": null,
+    "landing_page_url": "https://doi.org/10.1002/pro.5239",
+    "version": "publishedVersion",
+    "host": "Protein Science"
+  },
+  "wayback": ""
+}
