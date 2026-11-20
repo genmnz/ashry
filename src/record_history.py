@@ -16,7 +16,10 @@ What is redacted:
 
 * every email address except `noreply@anthropic.com`, which is a placeholder
   and identifies nobody;
-* the display name of the person the session worked for, passed as --name;
+* any literal string passed with --name, which is how the display name and
+  the local part of an email address are removed: a bare token like that is
+  identifying but matches no pattern, and it survives in the text of commands
+  the session itself ran;
 * claude.ai session links, which identify an account's session;
 * anything shaped like an API token (GitHub, Anthropic, AWS, a bearer header).
 
@@ -180,7 +183,10 @@ def worklog(names: list[str]) -> int:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--name", action="append", default=[],
-                    help="a display name to redact; repeatable")
+                    help="a literal string to redact wherever it appears as a "
+                         "whole word: a display name, an email's local part, "
+                         "a host. Repeatable. Not stored anywhere, so that "
+                         "this script can be committed and the values cannot.")
     args = ap.parse_args()
 
     if OUT.exists():
